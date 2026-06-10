@@ -1,0 +1,26 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Bath Film Club',
+  description = 'A monthly film discussion group in Bath. Join us on Discord.',
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title === 'Bath Film Club' ? title : `${title} — Bath Film Club`}</title>
+    <link rel="icon" type="image/jpeg" href="/assets/logo.jpg" />
+  </head>
+  <body class="min-h-screen">
+    <slot />
+  </body>
+</html>
