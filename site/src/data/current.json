@@ -1,0 +1,125 @@
+{
+  "slug": "2026-06-time-travel",
+  "title": "Time Travel",
+  "description": "Films that bend, break, or race against time — from temporal paradoxes to alternate histories.",
+  "month": "2026-06",
+  "meeting": {
+    "date": "2026-06-23",
+    "time": "19:30"
+  },
+  "films": [
+    {
+      "film": {
+        "tmdbId": 603,
+        "title": "The Matrix",
+        "year": 1999,
+        "runtime": 136,
+        "genres": ["Action", "Science Fiction"],
+        "synopsis": "A computer hacker learns that reality as he knows it is a simulation.",
+        "director": "Lana Wachowski",
+        "producers": ["Joel Silver"],
+        "cast": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"],
+        "posterPath": "/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+        "rating": 8.2,
+        "trailerKey": "vKQi3bBA1y8"
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 278,
+        "title": "The Shawshank Redemption",
+        "year": 1994,
+        "runtime": 142,
+        "genres": ["Drama", "Crime"],
+        "synopsis": "Two imprisoned men bond over a number of years.",
+        "director": "Frank Darabont",
+        "producers": ["Niki Marvin"],
+        "cast": ["Tim Robbins", "Morgan Freeman"],
+        "posterPath": "/9cqNxx0GxF0bAY74W56AFaFuRSL.jpg",
+        "rating": 9.3
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 550,
+        "title": "Fight Club",
+        "year": 1999,
+        "runtime": 139,
+        "genres": ["Drama", "Thriller"],
+        "synopsis": "An insomniac office worker forms an underground fight club.",
+        "director": "David Fincher",
+        "producers": ["Art Linson", "Cean Chaffin"],
+        "cast": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"],
+        "posterPath": "/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg",
+        "rating": 8.4
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 13,
+        "title": "Forrest Gump",
+        "year": 1994,
+        "runtime": 142,
+        "genres": ["Drama", "Comedy", "Romance"],
+        "synopsis": "The history of the United States from the 1950s to the 1970s unfolds through the perspective of an Alabama man.",
+        "director": "Robert Zemeckis",
+        "producers": ["Wendy Finerman", "Steve Tisch"],
+        "cast": ["Tom Hanks", "Robin Wright", "Gary Sinise"],
+        "posterPath": "/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+        "rating": 8.5
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 389,
+        "title": "12 Angry Men",
+        "year": 1957,
+        "runtime": 96,
+        "genres": ["Drama"],
+        "synopsis": "A jury holdout attempts to prevent a miscarriage of justice.",
+        "director": "Sidney Lumet",
+        "producers": ["Henry Fonda", "Reginald Rose"],
+        "cast": ["Henry Fonda", "Lee J. Cobb", "Martin Balsam"],
+        "posterPath": "/ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg",
+        "rating": 9.0
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 807,
+        "title": "Se7en",
+        "year": 1995,
+        "runtime": 127,
+        "genres": ["Crime", "Mystery", "Thriller"],
+        "synopsis": "Two detectives hunt a serial killer who uses the seven deadly sins as his motives.",
+        "director": "David Fincher",
+        "producers": ["Arnold Kopelson", "Phyllis Carlyle"],
+        "cast": ["Brad Pitt", "Morgan Freeman", "Kevin Spacey"],
+        "posterPath": "/6yoghtyTpznpBik8EngEmJskVUO.jpg",
+        "rating": 8.4
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 240,
+        "title": "The Godfather Part II",
+        "year": 1974,
+        "runtime": 202,
+        "genres": ["Drama", "Crime"],
+        "synopsis": "The early life and career of Vito Corleone in 1920s New York.",
+        "director": "Francis Ford Coppola",
+        "producers": ["Francis Ford Coppola", "Gray Frederickson"],
+        "cast": ["Al Pacino", "Robert De Niro", "Robert Duvall"],
+        "posterPath": "/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg",
+        "rating": 9.0
+      },
+      "status": "nominated"
+    }
+  ]
+}

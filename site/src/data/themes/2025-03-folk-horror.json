@@ -1,0 +1,108 @@
+{
+  "slug": "2025-03-folk-horror",
+  "title": "Folk Horror",
+  "description": "A subgenre rooted in rural landscapes, ancient rituals, and the dread of communities apart from modernity.",
+  "month": "2025-03",
+  "meeting": {
+    "date": "2025-03-17",
+    "time": "19:30"
+  },
+  "films": [
+    {
+      "film": {
+        "tmdbId": 49018,
+        "title": "The Wicker Man",
+        "year": 1973,
+        "runtime": 88,
+        "genres": ["Horror", "Mystery", "Thriller"],
+        "synopsis": "A police sergeant travels to a remote island to investigate a missing girl.",
+        "director": "Robin Hardy",
+        "producers": ["Peter Snell"],
+        "cast": ["Edward Woodward", "Christopher Lee", "Britt Ekland"],
+        "posterPath": "/4Fvj4p3V2fF0pF3YdkGj1TlDFuW.jpg",
+        "rating": 7.5
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 530385,
+        "title": "Midsommar",
+        "year": 2019,
+        "runtime": 148,
+        "genres": ["Horror", "Drama", "Mystery"],
+        "synopsis": "A couple travels to Sweden to visit a midsummer festival that turns sinister.",
+        "director": "Ari Aster",
+        "producers": ["Lars Knudsen", "Patrik Andersson"],
+        "cast": ["Florence Pugh", "Jack Reynor", "Vilhelm Blomgren"],
+        "posterPath": "/7LEI8ulZzO5gy9Ww2NVCrKmHeDZ.jpg",
+        "rating": 7.1
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 346648,
+        "title": "The Witch",
+        "year": 2015,
+        "runtime": 92,
+        "genres": ["Horror", "Mystery", "Drama"],
+        "synopsis": "A Puritan family encounter forces of evil in the woods beyond their farm.",
+        "director": "Robert Eggers",
+        "producers": ["Daniel Bekerman", "Jay Van Hoy"],
+        "cast": ["Anya Taylor-Joy", "Ralph Ineson", "Kate Dickie"],
+        "posterPath": "/zhLKlUaF1SEpO58ppHIAyENkwgw.jpg",
+        "rating": 6.8
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 69428,
+        "title": "Kill List",
+        "year": 2011,
+        "runtime": 95,
+        "genres": ["Horror", "Thriller", "Crime"],
+        "synopsis": "A former soldier turned hitman takes on a new assignment with his partner.",
+        "director": "Ben Wheatley",
+        "producers": ["Andrew Starke"],
+        "cast": ["Neil Maskell", "Michael Smiley", "MyAnna Buring"],
+        "posterPath": "/5qHoazZiaLe7oFBok7XlUBg6tXO.jpg",
+        "rating": 6.5
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 43074,
+        "title": "Blood on Satan's Claw",
+        "year": 1971,
+        "runtime": 93,
+        "genres": ["Horror"],
+        "synopsis": "A demonic claw is unearthed in a 17th century English village.",
+        "director": "Piers Haggard",
+        "producers": ["Malcolm B. Heyworth", "Peter L. Andrews"],
+        "cast": ["Patrick Wymark", "Linda Hayden", "Barry Andrews"],
+        "posterPath": "/oRBhKWDjcKF8O3dNQQHRXgHEEjA.jpg",
+        "rating": 6.2
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 68718,
+        "title": "The Wailing",
+        "year": 2016,
+        "runtime": 156,
+        "genres": ["Horror", "Mystery", "Thriller"],
+        "synopsis": "A stranger arrives in a small Korean village, and the locals begin to die.",
+        "director": "Na Hong-jin",
+        "producers": ["Syd Lim"],
+        "cast": ["Kwak Do-won", "Hwang Jung-min", "Chun Woo-hee"],
+        "posterPath": "/dVB1bHHEAjrSBBQ5igvbJVA0lBi.jpg",
+        "rating": 7.8
+      },
+      "status": "nominated"
+    }
+  ]
+}
