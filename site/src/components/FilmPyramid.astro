@@ -1,0 +1,18 @@
+---
+import type { ThemeFilm } from '@bathfilmclub/types';
+import { getPyramidRows } from '../utils/pyramid';
+import { PyramidIsland } from './PyramidIsland';
+
+interface Props {
+  films: ThemeFilm[];
+}
+
+const { films } = Astro.props;
+const { selected, shortlisted, nominated } = getPyramidRows(films);
+---
+<PyramidIsland
+  selected={selected}
+  shortlisted={shortlisted}
+  nominated={nominated}
+  client:load
+/>
