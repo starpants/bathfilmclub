@@ -16,7 +16,7 @@ themesRouter.put('/current', async (req, res) => {
   }
   const current = await storage.readCurrentCycle();
   const slug = current?.slug ?? `${month}-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
-  const updated: Theme = { ...current, ...req.body, slug };
+  const updated: Theme = { ...current, slug, title: title!, month: month!, films: films! };
   await storage.writeCurrentCycle(updated);
   res.json(updated);
 });

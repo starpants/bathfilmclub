@@ -83,6 +83,23 @@ describe('API routes', () => {
     expect(res.status).toBe(200);
   });
 
+  it('POST /api/films returns 409 if film already in cycle', async () => {
+    const { storage } = await import('../storage.js');
+    vi.mocked(storage.readCurrentCycle).mockResolvedValueOnce({
+      ...theme,
+      films: [{ film: { tmdbId: 603, title: 'The Matrix', year: 1999, runtime: 136, genres: [], synopsis: '', director: '', producers: [], cast: [], posterPath: '' }, status: 'nominated' as const }],
+    });
+    const res = await request(app).post('/api/films').send({ tmdbId: 603, status: 'nominated' });
+    expect(res.status).toBe(409);
+  });
+
+  it('PATCH /api/films/:tmdbId/status returns 404 if no active cycle', async () => {
+    const { storage } = await import('../storage.js');
+    vi.mocked(storage.readCurrentCycle).mockResolvedValueOnce(null);
+    const res = await request(app).patch('/api/films/603/status').send({ status: 'shortlisted' });
+    expect(res.status).toBe(404);
+  });
+
   it('POST /api/films rejects invalid status', async () => {
     const res = await request(app)
       .post('/api/films')
