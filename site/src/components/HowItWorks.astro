@@ -1,0 +1,23 @@
+<section class="border-t border-neutral-200 py-16">
+  <div class="space-y-8">
+    <h2 class="section-label text-base">How It Works</h2>
+    <p class="font-body text-neutral-600 max-w-lg">
+      Bath Film Club is a monthly discussion group. Each month we explore a new theme through film.
+    </p>
+    <ol class="flex flex-col md:flex-row">
+      {[
+        { step: '01', label: 'Theme', desc: 'A theme is chosen for the month.' },
+        { step: '02', label: 'Nominations', desc: 'Members nominate up to two films.' },
+        { step: '03', label: 'Shortlist', desc: 'Five films are selected at random.' },
+        { step: '04', label: 'Voting', desc: 'Members vote on the shortlist.' },
+        { step: '05', label: 'Discussion', desc: 'The top two films are watched and discussed.' },
+      ].map(({ step, label, desc }) => (
+        <li class="flex-1 border border-neutral-200 p-5 border-b-0 md:border-b md:border-r-0 last:border-b last:md:border-r">
+          <span class="font-heading font-bold text-3xl text-neutral-200 block mb-2">{step}</span>
+          <span class="font-heading font-semibold text-sm block mb-1">{label}</span>
+          <span class="font-body text-xs text-neutral-600">{desc}</span>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>

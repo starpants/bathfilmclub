@@ -1,10 +1,78 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import FilmPyramid from '../components/FilmPyramid.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import { getCurrentCycle, formatMonth, formatMeetingDate } from '../utils/data';
+
+const cycle = await getCurrentCycle();
 ---
 <Layout>
   <Header />
-  <main class="max-w-site mx-auto px-6 py-12">
-    <p class="font-body text-neutral-600">Homepage coming soon.</p>
+
+  <!-- Hero -->
+  <section class="bg-brand-black text-white py-20">
+    <div class="max-w-site mx-auto px-6 space-y-6">
+      <h1 class="font-heading font-bold text-5xl md:text-7xl leading-none tracking-tight">
+        Bath<br />Film Club
+      </h1>
+      <p class="font-body text-neutral-300 max-w-md text-lg leading-relaxed">
+        A monthly film discussion group in Bath. Each month a new theme, a new selection, a new conversation.
+      </p>
+      <a
+        href="https://discord.gg/bathfilmclub"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-discord"
+      >
+        Join on Discord
+      </a>
+    </div>
+  </section>
+
+  <main class="max-w-site mx-auto px-6 py-16 space-y-16">
+
+    {cycle ? (
+      <>
+        <!-- Current Theme -->
+        <section>
+          <h2 class="section-label mb-4">Current Theme</h2>
+          <h3 class="font-heading font-bold text-4xl md:text-5xl">{cycle.title}</h3>
+          {cycle.description && (
+            <p class="font-body text-neutral-600 mt-3 max-w-2xl leading-relaxed">
+              {cycle.description}
+            </p>
+          )}
+        </section>
+
+        <!-- Upcoming Meeting -->
+        {cycle.meeting && (
+          <section>
+            <h2 class="section-label mb-4">Upcoming Meeting</h2>
+            <div class="space-y-1">
+              <p class="font-heading font-semibold text-lg">
+                {formatMeetingDate(cycle.meeting.date)}
+              </p>
+              <p class="font-body text-neutral-600">{cycle.meeting.time}</p>
+            </div>
+          </section>
+        )}
+
+        <!-- Film Selection Pyramid -->
+        <section>
+          <h2 class="section-label mb-8">Current Selection</h2>
+          <FilmPyramid films={cycle.films} />
+        </section>
+      </>
+    ) : (
+      <section>
+        <h2 class="section-label mb-4">Current Theme</h2>
+        <p class="font-body text-neutral-500 italic">
+          The next theme hasn't been announced yet. Join Discord to be the first to know.
+        </p>
+      </section>
+    )}
+
+    <HowItWorks />
   </main>
 </Layout>
