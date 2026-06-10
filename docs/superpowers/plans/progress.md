@@ -29,9 +29,9 @@
 - [x] Task 14: Storage utilities (TDD)
 - [x] Task 15: TMDb API client (TDD)
 - [x] Task 16: API routes (TDD)
-- [ ] Task 17: Admin React app with API client and routing
-- [ ] Task 18: Admin UI — Current cycle management
-- [ ] Task 19: Admin UI — Archive management
+- [x] Task 17: Admin React app with API client and routing
+- [x] Task 18: Admin UI — Current cycle management
+- [x] Task 19: Admin UI — Archive management
 - [x] Task 20: End-to-end smoke test + deployment config
 
 ## Notes
