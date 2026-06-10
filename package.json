@@ -1,7 +1,11 @@
 {
   "name": "bathfilmclub",
   "private": true,
-  "workspaces": ["packages/*", "site", "admin"],
+  "workspaces": [
+    "packages/*",
+    "site",
+    "admin"
+  ],
   "scripts": {
     "site:dev": "npm run dev --workspace=site",
     "site:build": "npm run build --workspace=site",
@@ -12,5 +16,8 @@
   "engines": {
     "node": ">=20.0.0",
     "npm": ">=10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
   }
 }

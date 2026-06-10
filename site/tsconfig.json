@@ -1,0 +1,9 @@
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@bathfilmclub/types": ["../packages/types/src/index.ts"]
+    }
+  }
+}
