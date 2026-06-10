@@ -1,9 +1,9 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import type { FilmStatus } from '@bathfilmclub/types';
 import { api, type TmdbSearchResult } from '../api';
 
 interface Props {
-  onAdd: (tmdbId: number, status: FilmStatus) => void;
+  onAdd: (tmdbId: number, status: FilmStatus) => Promise<void>;
 }
 
 const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w92';
@@ -14,6 +14,8 @@ export function FilmSearch({ onAdd }: Props) {
   const [loading, setLoading] = useState(false);
   const [pendingId, setPendingId] = useState<number | null>(null);
   const debounce = useRef<ReturnType<typeof setTimeout>>();
+
+  useEffect(() => () => clearTimeout(debounce.current), []);
 
   const search = (q: string) => {
     setQuery(q);

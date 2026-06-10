@@ -19,14 +19,22 @@ export function FilmList({ films, onUpdated }: Props) {
   );
 
   const updateStatus = async (tmdbId: number, status: FilmStatus) => {
-    await api.updateFilmStatus(tmdbId, status);
-    onUpdated();
+    try {
+      await api.updateFilmStatus(tmdbId, status);
+      onUpdated();
+    } catch (e) {
+      console.error('Failed to update status:', e instanceof Error ? e.message : String(e));
+    }
   };
 
   const remove = async (tmdbId: number) => {
     if (!confirm('Remove this film?')) return;
-    await api.removeFilm(tmdbId);
-    onUpdated();
+    try {
+      await api.removeFilm(tmdbId);
+      onUpdated();
+    } catch (e) {
+      console.error('Failed to remove film:', e instanceof Error ? e.message : String(e));
+    }
   };
 
   return (

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import type { ReactNode } from 'react';
 import type { Theme } from '@bathfilmclub/types';
 import { api } from '../api';
 
@@ -7,7 +8,7 @@ interface Props {
   onSaved: (theme: Theme) => void;
 }
 
-function field(label: string, el: React.ReactNode) {
+function field(label: string, el: ReactNode) {
   return (
     <label style={{ display: 'block', marginBottom: '1rem' }}>
       <span style={{ display: 'block', fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.3rem', color: '#666' }}>
