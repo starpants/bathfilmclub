@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "outDir": "./dist",
+    "rootDir": ".",
+    "jsx": "react-jsx",
+    "types": ["node"],
+    "paths": {
+      "@bathfilmclub/types": ["../packages/types/src/index.ts"]
+    }
+  },
+  "include": ["server", "client/src"]
+}
