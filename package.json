@@ -6,6 +6,11 @@
     "site:dev": "npm run dev --workspace=site",
     "site:build": "npm run build --workspace=site",
     "site:preview": "npm run preview --workspace=site",
-    "admin": "npm run dev --workspace=admin"
+    "admin:dev": "npm run dev --workspace=admin",
+    "admin:build": "npm run build --workspace=admin"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
   }
 }
