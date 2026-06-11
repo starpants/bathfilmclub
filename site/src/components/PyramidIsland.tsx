@@ -21,9 +21,9 @@ function FilmRow({ films, label, onSelect, cardWidth = 'w-24 md:w-28', bgClass }
   return (
     <div className={`py-10 ${bgClass}`}>
       <div className="max-w-[1200px] mx-auto px-6 space-y-3">
-        <p className="section-label text-xl justify-center p-2 bg-brand-red text-brand-white mb-12">
+        <h4 className="pyramid-subtitle text-xl justify-center p-2 bg-brand-red text-brand-white mb-12">
           {label}
-        </p>
+        </h4>
         {films.length === 0 ? (
           <p className="text-neutral-400 font-body text-sm italic text-center">
             Not yet determined

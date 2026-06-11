@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Urbanist:wght@500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -21,13 +21,18 @@
 }
 
 @layer components {
+  .pyramid-subtitle {
+    @apply flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-widest text-neutral-400;
+  }
+
   /* Square motif from logo — used as section markers */
   .section-label {
     @apply flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-widest text-neutral-400;
   }
+
   .section-label::before {
     content: '■';
-    @apply text-brand-red;
+    @apply text-brand-red text-3xl leading-none;
   }
 
   .btn-discord {

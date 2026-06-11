@@ -9,7 +9,7 @@ interface Props {
 const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w342';
 
 export function FilmCard({ film, status, onSelect }: Props) {
-  const showTag = status === 'selected' || status === 'shortlisted';
+  const showTag = status === 'shortlisted' || status === 'nominated';
 
   return (
     <button

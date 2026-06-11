@@ -6,7 +6,7 @@ export default {
     extend: {
       colors: {
         brand: {
-          red: '#B11226',
+          red: '#860909',
           black: '#000000',
           white: '#FFFFFF',
         },
@@ -23,7 +23,7 @@ export default {
         },
       },
       fontFamily: {
-        heading: ['Space Grotesk', 'sans-serif'],
+        heading: ['Urbanist', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
       },
       maxWidth: {
