@@ -18,15 +18,15 @@ const { theme } = Astro.props;
 
 // Group all themes by year for the sidebar
 const allThemes = await getAllThemes();
-const byYear = allThemes.reduce<Record<string, Theme[]>>((acc, t) => {
-  const year = t.month.split('-')[0];
+const byYear = allThemes.reduce<Record<string, Theme[]>>((acc, t: Theme) => {
+  const year = t.month.split('-')[0] as string;
   if (!acc[year]) acc[year] = [];
   acc[year].push(t);
   return acc;
 }, {});
 const years = Object.keys(byYear).sort((a, b) => parseInt(b) - parseInt(a));
 ---
-<Layout title={theme.title} description={theme.description}>
+<Layout title={theme.title} description={theme.description ?? ''}>
   <Header />
   <div class="max-w-site mx-auto px-6 py-16">
     <div class="flex gap-16">
@@ -39,7 +39,7 @@ const years = Object.keys(byYear).sort((a, b) => parseInt(b) - parseInt(a));
               {year}
             </p>
             <ul class="space-y-1">
-              {byYear[year].map((t) => (
+              {byYear[year]?.map((t) => (
                 <li>
                   <a
                     href={`/theme/${t.slug}`}
