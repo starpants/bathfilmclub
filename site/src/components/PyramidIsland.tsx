@@ -42,9 +42,26 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
   return (
     <>
       <div>
-        <FilmRow films={selected} label="Selected Films" onSelect={setActiveFilm} cardWidth="w-36 md:w-[168px]" bgClass="bg-neutral-600" />
-        <FilmRow films={shortlisted} label="Shortlisted Films" onSelect={setActiveFilm} cardWidth="w-[120px] md:w-[140px]" bgClass="bg-neutral-800" />
-        <FilmRow films={nominated} label="Nominated Films" onSelect={setActiveFilm} bgClass="bg-neutral-900" />
+        <FilmRow
+          films={selected}
+          label="Selected Films"
+          onSelect={setActiveFilm}
+          cardWidth="w-36 md:w-[168px]"
+          bgClass="bg-neutral-700"
+        />
+        <FilmRow
+          films={shortlisted}
+          label="Shortlisted Films"
+          onSelect={setActiveFilm}
+          cardWidth="w-[120px] md:w-[140px]"
+          bgClass="bg-neutral-800"
+        />
+        <FilmRow
+          films={nominated}
+          label="Nominated Films"
+          onSelect={setActiveFilm}
+          bgClass="bg-neutral-900"
+        />
       </div>
       <FilmPanel film={activeFilm} onClose={() => setActiveFilm(null)} />
     </>
