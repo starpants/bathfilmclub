@@ -86,6 +86,7 @@ bathfilmclub/                              ← project root
 ### Task 1: Monorepo scaffold + git init
 
 **Files:**
+
 - Create: `package.json`
 - Create: `tsconfig.base.json`
 - Create: `.gitignore`
@@ -101,6 +102,7 @@ git init
 ```
 
 Create `package.json`:
+
 ```json
 {
   "name": "bathfilmclub",
@@ -118,6 +120,7 @@ Create `package.json`:
 - [ ] **Step 2: Create shared tsconfig**
 
 Create `tsconfig.base.json`:
+
 ```json
 {
   "compilerOptions": {
@@ -134,6 +137,7 @@ Create `tsconfig.base.json`:
 - [ ] **Step 3: Create .gitignore**
 
 Create `.gitignore`:
+
 ```
 node_modules/
 dist/
@@ -147,6 +151,7 @@ site/.astro/
 - [ ] **Step 4: Create .prettierrc**
 
 Create `.prettierrc`:
+
 ```json
 {
   "semi": true,
@@ -159,6 +164,7 @@ Create `.prettierrc`:
 - [ ] **Step 5: Create the types package**
 
 Create `packages/types/package.json`:
+
 ```json
 {
   "name": "@bathfilmclub/types",
@@ -191,6 +197,7 @@ git commit -m "chore: monorepo scaffold with npm workspaces"
 ### Task 2: Shared TypeScript types
 
 **Files:**
+
 - Modify: `packages/types/src/index.ts`
 
 These interfaces are the contract between the admin tool and the website. Get them right before building either side.
@@ -198,21 +205,22 @@ These interfaces are the contract between the admin tool and the website. Get th
 - [ ] **Step 1: Write the types**
 
 Replace `packages/types/src/index.ts` with:
+
 ```typescript
 export interface Film {
   tmdbId: number;
   title: string;
   year: number;
-  runtime: number;       // minutes
+  runtime: number; // minutes
   genres: string[];
   synopsis: string;
   director: string;
-  producers: string[];   // up to 3
-  cast: string[];        // top 5 billed
-  posterPath: string;    // TMDb path e.g. "/abc123.jpg" — prefix with TMDb image base URL
+  producers: string[]; // up to 3
+  cast: string[]; // top 5 billed
+  posterPath: string; // TMDb path e.g. "/abc123.jpg" — prefix with TMDb image base URL
   backdropPath?: string;
-  rating?: number;       // TMDb vote_average, one decimal place
-  trailerKey?: string;   // YouTube video key
+  rating?: number; // TMDb vote_average, one decimal place
+  trailerKey?: string; // YouTube video key
 }
 
 export type FilmStatus = 'nominated' | 'shortlisted' | 'selected';
@@ -223,15 +231,15 @@ export interface ThemeFilm {
 }
 
 export interface Meeting {
-  date: string;  // ISO 8601 date "2026-06-15"
-  time: string;  // 24-hour "19:30"
+  date: string; // ISO 8601 date "2026-06-15"
+  time: string; // 24-hour "19:30"
 }
 
 export interface Theme {
-  slug: string;       // "2026-06-time-travel" — YYYY-MM-kebab-title
+  slug: string; // "2026-06-time-travel" — YYYY-MM-kebab-title
   title: string;
   description?: string;
-  month: string;      // "2026-06" — YYYY-MM, used for archive grouping and sort
+  month: string; // "2026-06" — YYYY-MM, used for archive grouping and sort
   meeting?: Meeting;
   films: ThemeFilm[]; // all films regardless of status
 }
@@ -244,6 +252,7 @@ npx tsc --project packages/types/tsconfig.json --noEmit 2>/dev/null || npx tsc -
 ```
 
 If no tsconfig exists yet in packages/types, create `packages/types/tsconfig.json`:
+
 ```json
 {
   "extends": "../../tsconfig.base.json",
@@ -255,6 +264,7 @@ If no tsconfig exists yet in packages/types, create `packages/types/tsconfig.jso
 ```
 
 Then run:
+
 ```bash
 cd packages/types && npx tsc --noEmit
 ```
@@ -273,6 +283,7 @@ git commit -m "feat: add shared TypeScript types (Film, Theme, Meeting)"
 ### Task 3: Sample data files
 
 **Files:**
+
 - Create: `site/src/data/current.json`
 - Create: `site/src/data/themes/2025-03-folk-horror.json`
 - Create: `site/src/data/themes/.gitkeep`
@@ -288,6 +299,7 @@ mkdir -p site/src/data/themes
 - [ ] **Step 2: Create current.json**
 
 Create `site/src/data/current.json`:
+
 ```json
 {
   "slug": "2026-06-time-travel",
@@ -419,6 +431,7 @@ Create `site/src/data/current.json`:
 - [ ] **Step 3: Create one archived theme**
 
 Create `site/src/data/themes/2025-03-folk-horror.json`:
+
 ```json
 {
   "slug": "2025-03-folk-horror",
@@ -544,6 +557,7 @@ git commit -m "chore: add sample data files for development"
 ### Task 4: Astro project setup with React and Tailwind
 
 **Files:**
+
 - Create: `site/package.json`
 - Create: `site/astro.config.ts`
 - Create: `site/tailwind.config.ts`
@@ -573,6 +587,7 @@ Expected: `@astrojs/react`, `@astrojs/tailwind`, `tailwindcss` added to site/pac
 - [ ] **Step 3: Add shared types as a workspace dependency**
 
 Add to `site/package.json` dependencies:
+
 ```json
 {
   "dependencies": {
@@ -582,6 +597,7 @@ Add to `site/package.json` dependencies:
 ```
 
 Then run from root:
+
 ```bash
 npm install
 ```
@@ -591,6 +607,7 @@ Expected: `node_modules/@bathfilmclub/types` symlinked to `packages/types`.
 - [ ] **Step 4: Configure astro.config.ts**
 
 Replace `site/astro.config.ts` content:
+
 ```typescript
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
@@ -605,6 +622,7 @@ export default defineConfig({
 - [ ] **Step 5: Configure tsconfig.json for the site**
 
 Replace `site/tsconfig.json`:
+
 ```json
 {
   "extends": "astro/tsconfigs/strictest",
@@ -637,12 +655,14 @@ git commit -m "feat: initialise Astro site with React and Tailwind integrations"
 ### Task 5: Design system — fonts, colours, base styles
 
 **Files:**
+
 - Modify: `site/tailwind.config.ts`
 - Modify: `site/src/styles/global.css` (create if absent)
 
 - [ ] **Step 1: Configure Tailwind with the project's design tokens**
 
 Replace `site/tailwind.config.ts`:
+
 ```typescript
 import type { Config } from 'tailwindcss';
 
@@ -683,6 +703,7 @@ export default {
 - [ ] **Step 2: Create global CSS with font imports and base resets**
 
 Create `site/src/styles/global.css`:
+
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
 
@@ -696,7 +717,12 @@ Create `site/src/styles/global.css`:
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading;
   }
 }
@@ -712,7 +738,7 @@ Create `site/src/styles/global.css`:
   }
 
   .btn-discord {
-    @apply inline-flex items-center gap-2 bg-brand-red text-white font-heading font-600 text-sm px-5 py-3 hover:bg-red-800 transition-colors;
+    @apply inline-flex items-center gap-2 bg-brand-red text-white font-heading font-600 text-xl px-5 py-3 hover:bg-red-800 transition-colors;
   }
 }
 ```
@@ -737,6 +763,7 @@ git commit -m "feat: configure design system — Space Grotesk, Inter, brand col
 ### Task 6: Layout.astro and Header.astro
 
 **Files:**
+
 - Create: `site/src/layouts/Layout.astro`
 - Create: `site/src/components/Header.astro`
 - Modify: `site/src/pages/index.astro`
@@ -744,6 +771,7 @@ git commit -m "feat: configure design system — Space Grotesk, Inter, brand col
 - [ ] **Step 1: Create Layout.astro**
 
 Create `site/src/layouts/Layout.astro`:
+
 ```astro
 ---
 import '../styles/global.css';
@@ -783,6 +811,7 @@ cp BathFilmClub_Logo.jpg site/public/assets/logo.jpg
 - [ ] **Step 3: Create Header.astro**
 
 Create `site/src/components/Header.astro`:
+
 ```astro
 ---
 interface Props {
@@ -822,6 +851,7 @@ const { discordUrl = 'https://discord.gg/bathfilmclub' } = Astro.props;
 - [ ] **Step 4: Wire up Layout and Header in index.astro**
 
 Replace `site/src/pages/index.astro`:
+
 ```astro
 ---
 import Layout from '../layouts/Layout.astro';
@@ -842,6 +872,7 @@ npm run site:dev
 ```
 
 Open `http://localhost:4321`. Verify:
+
 - Logo appears top-left
 - "Archive" link and "Join Discord" button appear top-right
 - No layout errors in console
@@ -860,6 +891,7 @@ git commit -m "feat: Layout and Header components"
 ### Task 7: Data utilities + pyramid logic (TDD)
 
 **Files:**
+
 - Create: `site/src/utils/pyramid.ts`
 - Create: `site/src/utils/pyramid.test.ts`
 - Create: `site/src/utils/data.ts`
@@ -868,6 +900,7 @@ git commit -m "feat: Layout and Header components"
 - [ ] **Step 1: Add Vitest to the site**
 
 Add to `site/package.json` devDependencies:
+
 ```json
 {
   "devDependencies": {
@@ -877,6 +910,7 @@ Add to `site/package.json` devDependencies:
 ```
 
 Create `site/vitest.config.ts`:
+
 ```typescript
 import { defineConfig } from 'vitest/config';
 
@@ -892,6 +926,7 @@ npm install --workspace=site
 ```
 
 Add to `site/package.json` scripts:
+
 ```json
 {
   "scripts": {
@@ -904,6 +939,7 @@ Add to `site/package.json` scripts:
 - [ ] **Step 2: Write failing tests for getPyramidRows**
 
 Create `site/src/utils/pyramid.test.ts`:
+
 ```typescript
 import { describe, it, expect } from 'vitest';
 import { getPyramidRows } from './pyramid';
@@ -985,6 +1021,7 @@ Expected: FAIL — `Cannot find module './pyramid'`
 - [ ] **Step 4: Implement getPyramidRows**
 
 Create `site/src/utils/pyramid.ts`:
+
 ```typescript
 import type { ThemeFilm } from '@bathfilmclub/types';
 
@@ -1014,6 +1051,7 @@ Expected: All 5 tests PASS.
 - [ ] **Step 6: Create data.ts for loading JSON files in Astro**
 
 Create `site/src/utils/data.ts`:
+
 ```typescript
 import type { Theme } from '@bathfilmclub/types';
 
@@ -1071,6 +1109,7 @@ git commit -m "feat: data utilities and pyramid row logic with tests"
 ### Task 8: FilmCard and FilmPanel React components
 
 **Files:**
+
 - Create: `site/src/components/FilmCard.tsx`
 - Create: `site/src/components/FilmPanel.tsx`
 
@@ -1081,6 +1120,7 @@ The TMDb image base URL: `https://image.tmdb.org/t/p/w342` for card posters, `ht
 - [ ] **Step 1: Create FilmCard.tsx**
 
 Create `site/src/components/FilmCard.tsx`:
+
 ```tsx
 import type { Film, FilmStatus } from '@bathfilmclub/types';
 
@@ -1134,6 +1174,7 @@ export function FilmCard({ film, status, onSelect }: Props) {
 - [ ] **Step 2: Create FilmPanel.tsx**
 
 Create `site/src/components/FilmPanel.tsx`:
+
 ```tsx
 import { useEffect } from 'react';
 import type { Film } from '@bathfilmclub/types';
@@ -1163,7 +1204,9 @@ export function FilmPanel({ film, onClose }: Props) {
     } else {
       document.body.style.overflow = '';
     }
-    return () => { document.body.style.overflow = ''; };
+    return () => {
+      document.body.style.overflow = '';
+    };
   }, [film]);
 
   if (!film) return null;
@@ -1190,7 +1233,14 @@ export function FilmPanel({ film, onClose }: Props) {
           className="absolute top-4 right-4 z-10 p-2 hover:text-brand-red transition-colors"
           aria-label="Close panel"
         >
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
             <path d="M4 4l12 12M16 4L4 16" />
           </svg>
         </button>
@@ -1218,7 +1268,10 @@ export function FilmPanel({ film, onClose }: Props) {
           {film.genres.length > 0 && (
             <div className="flex flex-wrap gap-2">
               {film.genres.map((g) => (
-                <span key={g} className="text-xs font-heading uppercase tracking-wide border border-neutral-300 px-2 py-1">
+                <span
+                  key={g}
+                  className="text-xs font-heading uppercase tracking-wide border border-neutral-300 px-2 py-1"
+                >
                   {g}
                 </span>
               ))}
@@ -1231,18 +1284,24 @@ export function FilmPanel({ film, onClose }: Props) {
 
           <dl className="space-y-3 text-sm">
             <div>
-              <dt className="font-heading font-600 text-xs uppercase tracking-widest text-neutral-400">Director</dt>
+              <dt className="font-heading font-600 text-xs uppercase tracking-widest text-neutral-400">
+                Director
+              </dt>
               <dd className="font-body mt-0.5">{film.director}</dd>
             </div>
             {film.producers.length > 0 && (
               <div>
-                <dt className="font-heading font-600 text-xs uppercase tracking-widest text-neutral-400">Producers</dt>
+                <dt className="font-heading font-600 text-xs uppercase tracking-widest text-neutral-400">
+                  Producers
+                </dt>
                 <dd className="font-body mt-0.5">{film.producers.join(', ')}</dd>
               </div>
             )}
             {film.cast.length > 0 && (
               <div>
-                <dt className="font-heading font-600 text-xs uppercase tracking-widest text-neutral-400">Cast</dt>
+                <dt className="font-heading font-600 text-xs uppercase tracking-widest text-neutral-400">
+                  Cast
+                </dt>
                 <dd className="font-body mt-0.5">{film.cast.join(', ')}</dd>
               </div>
             )}
@@ -1285,6 +1344,7 @@ git commit -m "feat: FilmCard and FilmPanel React components"
 ### Task 9: FilmPyramid component
 
 **Files:**
+
 - Create: `site/src/components/FilmPyramid.astro`
 - Create: `site/src/components/PyramidIsland.tsx`
 
@@ -1293,6 +1353,7 @@ FilmPyramid is a static Astro component that lays out the three rows. PyramidIsl
 - [ ] **Step 1: Create PyramidIsland.tsx**
 
 Create `site/src/components/PyramidIsland.tsx`:
+
 ```tsx
 import { useState } from 'react';
 import type { ThemeFilm, Film } from '@bathfilmclub/types';
@@ -1321,9 +1382,7 @@ function FilmRow({
     <div className="space-y-3">
       <p className="section-label">{label}</p>
       {isEmpty ? (
-        <p className="text-neutral-400 font-body text-sm italic">
-          Not yet determined
-        </p>
+        <p className="text-neutral-400 font-body text-sm italic">Not yet determined</p>
       ) : (
         <div className="flex flex-wrap gap-3">
           {films.map(({ film, status }) => (
@@ -1343,21 +1402,9 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
   return (
     <>
       <div className="space-y-8">
-        <FilmRow
-          films={selected}
-          label="Selected Films"
-          onSelect={setActiveFilm}
-        />
-        <FilmRow
-          films={shortlisted}
-          label="Shortlisted Films"
-          onSelect={setActiveFilm}
-        />
-        <FilmRow
-          films={nominated}
-          label="Nominated Films"
-          onSelect={setActiveFilm}
-        />
+        <FilmRow films={selected} label="Selected Films" onSelect={setActiveFilm} />
+        <FilmRow films={shortlisted} label="Shortlisted Films" onSelect={setActiveFilm} />
+        <FilmRow films={nominated} label="Nominated Films" onSelect={setActiveFilm} />
       </div>
       <FilmPanel film={activeFilm} onClose={() => setActiveFilm(null)} />
     </>
@@ -1368,6 +1415,7 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
 - [ ] **Step 2: Create FilmPyramid.astro**
 
 Create `site/src/components/FilmPyramid.astro`:
+
 ```astro
 ---
 import type { ThemeFilm } from '@bathfilmclub/types';
@@ -1411,14 +1459,16 @@ git commit -m "feat: FilmPyramid component with interactive React island"
 ### Task 10: Homepage
 
 **Files:**
+
 - Create: `site/src/components/HowItWorks.astro`
 - Modify: `site/src/pages/index.astro`
 
 - [ ] **Step 1: Create HowItWorks.astro**
 
 Create `site/src/components/HowItWorks.astro`:
+
 ```astro
-<section class="border-t border-neutral-200 py-16">
+<section class="py-16">
   <div class="space-y-8">
     <h2 class="section-label text-base">How It Works</h2>
     <p class="font-body text-neutral-600 max-w-lg">
@@ -1446,6 +1496,7 @@ Create `site/src/components/HowItWorks.astro`:
 - [ ] **Step 2: Build the complete homepage**
 
 Replace `site/src/pages/index.astro`:
+
 ```astro
 ---
 import Layout from '../layouts/Layout.astro';
@@ -1534,6 +1585,7 @@ npm run site:dev
 ```
 
 Open `http://localhost:4321`. Verify:
+
 - Black hero section with title, description, Discord button
 - "Current Theme" section shows "Time Travel"
 - Meeting date displays correctly
@@ -1556,6 +1608,7 @@ git commit -m "feat: homepage with hero, current theme, film pyramid, and how-it
 ### Task 11: Archive page
 
 **Files:**
+
 - Create: `site/src/components/ArchiveList.tsx`
 - Create: `site/src/pages/archive.astro`
 
@@ -1564,6 +1617,7 @@ ArchiveList is a React island handling both the collapsible rows and the search 
 - [ ] **Step 1: Create ArchiveList.tsx**
 
 Create `site/src/components/ArchiveList.tsx`:
+
 ```tsx
 import { useState, useMemo } from 'react';
 import type { Theme } from '@bathfilmclub/types';
@@ -1650,7 +1704,9 @@ export function ArchiveList({ themes }: Props) {
       {/* Search results */}
       {isSearching && (
         <div className="space-y-2">
-          <p className="section-label">{searchResults.length} result{searchResults.length !== 1 ? 's' : ''}</p>
+          <p className="section-label">
+            {searchResults.length} result{searchResults.length !== 1 ? 's' : ''}
+          </p>
           {searchResults.length === 0 ? (
             <p className="font-body text-sm text-neutral-500 italic">No results found.</p>
           ) : (
@@ -1661,7 +1717,10 @@ export function ArchiveList({ themes }: Props) {
                     <p className="font-heading font-600 text-base">{r.filmTitle}</p>
                   )}
                   <p className="font-body text-sm text-neutral-600">
-                    Theme: <a href={`/theme/${r.slug}`} className="underline hover:text-brand-red">{r.themeTitle}</a>
+                    Theme:{' '}
+                    <a href={`/theme/${r.slug}`} className="underline hover:text-brand-red">
+                      {r.themeTitle}
+                    </a>
                   </p>
                   {r.director !== '—' && (
                     <p className="font-body text-sm text-neutral-600">Director: {r.director}</p>
@@ -1751,6 +1810,7 @@ export function ArchiveList({ themes }: Props) {
 - [ ] **Step 2: Create archive.astro**
 
 Create `site/src/pages/archive.astro`:
+
 ```astro
 ---
 import Layout from '../layouts/Layout.astro';
@@ -1779,6 +1839,7 @@ npm run site:dev
 ```
 
 Open `http://localhost:4321/archive`. Verify:
+
 - "Folk Horror" theme appears in the archive list
 - Clicking the row expands it to show description, poster thumbnails, "View Theme" link
 - Clicking again collapses it
@@ -1799,11 +1860,13 @@ git commit -m "feat: archive page with collapsible rows and search"
 ### Task 12: Theme detail page
 
 **Files:**
+
 - Create: `site/src/pages/theme/[slug].astro`
 
 - [ ] **Step 1: Create the theme detail page**
 
 Create `site/src/pages/theme/[slug].astro`:
+
 ```astro
 ---
 import Layout from '../../layouts/Layout.astro';
@@ -1922,6 +1985,7 @@ npm run site:dev
 ```
 
 Open `http://localhost:4321/theme/2025-03-folk-horror`. Verify:
+
 - Theme title "Folk Horror" appears prominently
 - Meeting date renders correctly
 - Film pyramid shows all rows
@@ -1945,6 +2009,7 @@ git commit -m "feat: theme detail page with film pyramid and year sidebar"
 ### Task 13: Admin project scaffold
 
 **Files:**
+
 - Create: `admin/package.json`
 - Create: `admin/tsconfig.json`
 - Create: `admin/.env.example`
@@ -1958,6 +2023,7 @@ The admin tool is a local-only web server. You need a TMDb API key. Get one free
 - [ ] **Step 1: Create admin/package.json**
 
 Create `admin/package.json`:
+
 ```json
 {
   "name": "@bathfilmclub/admin",
@@ -1996,6 +2062,7 @@ Create `admin/package.json`:
 - [ ] **Step 2: Create admin/tsconfig.json**
 
 Create `admin/tsconfig.json`:
+
 ```json
 {
   "extends": "../tsconfig.base.json",
@@ -2016,6 +2083,7 @@ Create `admin/tsconfig.json`:
 - [ ] **Step 3: Create .env.example**
 
 Create `admin/.env.example`:
+
 ```
 TMDB_API_KEY=your_tmdb_api_key_here
 DATA_DIR=../site/src/data
@@ -2023,6 +2091,7 @@ PORT=3001
 ```
 
 Create the actual `.env` file from the example (user must fill in their API key):
+
 ```bash
 cp admin/.env.example admin/.env
 ```
@@ -2030,6 +2099,7 @@ cp admin/.env.example admin/.env
 - [ ] **Step 4: Create the Express server entry point**
 
 Create `admin/server/index.ts`:
+
 ```typescript
 import 'dotenv/config';
 import express from 'express';
@@ -2062,18 +2132,21 @@ export { app };
 - [ ] **Step 5: Create placeholder route files**
 
 Create `admin/server/routes/themes.ts`:
+
 ```typescript
 import { Router } from 'express';
 export const themesRouter = Router();
 ```
 
 Create `admin/server/routes/films.ts`:
+
 ```typescript
 import { Router } from 'express';
 export const filmsRouter = Router();
 ```
 
 Create `admin/server/routes/search.ts`:
+
 ```typescript
 import { Router } from 'express';
 export const searchRouter = Router();
@@ -2082,6 +2155,7 @@ export const searchRouter = Router();
 - [ ] **Step 6: Create the Vite React client**
 
 Create `admin/client/index.html`:
+
 ```html
 <!doctype html>
 <html lang="en">
@@ -2098,6 +2172,7 @@ Create `admin/client/index.html`:
 ```
 
 Create `admin/client/vite.config.ts`:
+
 ```typescript
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
@@ -2118,6 +2193,7 @@ export default defineConfig({
 ```
 
 Create `admin/client/src/main.tsx`:
+
 ```tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -2164,12 +2240,14 @@ git commit -m "feat: admin tool scaffold — Express server and Vite React clien
 ### Task 14: Storage utilities (TDD)
 
 **Files:**
+
 - Create: `admin/server/storage.ts`
 - Create: `admin/server/__tests__/storage.test.ts`
 
 - [ ] **Step 1: Write failing tests for storage**
 
 Create `admin/server/__tests__/storage.test.ts`:
+
 ```typescript
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { mkdtemp, rm, mkdir, writeFile } from 'fs/promises';
@@ -2209,10 +2287,7 @@ describe('storage', () => {
     });
 
     it('returns parsed theme when current.json exists', async () => {
-      await writeFile(
-        path.join(tmpDir, 'current.json'),
-        JSON.stringify(sampleTheme)
-      );
+      await writeFile(path.join(tmpDir, 'current.json'), JSON.stringify(sampleTheme));
       const storage = await makeStorage(tmpDir);
       const result = await storage.readCurrentCycle();
       expect(result?.slug).toBe('2026-06-test');
@@ -2286,6 +2361,7 @@ Expected: FAIL — `Cannot find module '../storage.js'`
 - [ ] **Step 3: Implement storage.ts**
 
 Create `admin/server/storage.ts`:
+
 ```typescript
 import { readFile, writeFile, readdir, mkdir } from 'fs/promises';
 import path from 'path';
@@ -2349,7 +2425,9 @@ export function createStorage(dataDir: string): Storage {
   };
 }
 
-export const storage = createStorage(process.env.DATA_DIR ?? path.join('..', 'site', 'src', 'data'));
+export const storage = createStorage(
+  process.env.DATA_DIR ?? path.join('..', 'site', 'src', 'data')
+);
 ```
 
 - [ ] **Step 4: Run tests — verify they pass**
@@ -2372,12 +2450,14 @@ git commit -m "feat: storage utilities with TDD — JSON file I/O for themes"
 ### Task 15: TMDb API client (TDD)
 
 **Files:**
+
 - Create: `admin/server/tmdb.ts`
 - Create: `admin/server/__tests__/tmdb.test.ts`
 
 - [ ] **Step 1: Write failing tests**
 
 Create `admin/server/__tests__/tmdb.test.ts`:
+
 ```typescript
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 
@@ -2394,15 +2474,16 @@ describe('TMDb client', () => {
     it('returns up to 10 results', async () => {
       mockFetch.mockResolvedValueOnce({
         ok: true,
-        json: () => Promise.resolve({
-          results: Array.from({ length: 15 }, (_, i) => ({
-            id: i + 1,
-            title: `Film ${i + 1}`,
-            release_date: '2024-01-01',
-            poster_path: `/poster-${i}.jpg`,
-            overview: 'A film.',
-          })),
-        }),
+        json: () =>
+          Promise.resolve({
+            results: Array.from({ length: 15 }, (_, i) => ({
+              id: i + 1,
+              title: `Film ${i + 1}`,
+              release_date: '2024-01-01',
+              poster_path: `/poster-${i}.jpg`,
+              overview: 'A film.',
+            })),
+          }),
       });
       const { searchFilms } = await import('../tmdb.js');
       const results = await searchFilms('test');
@@ -2452,9 +2533,7 @@ describe('TMDb client', () => {
         ],
       };
       const videosResponse = {
-        results: [
-          { type: 'Trailer', site: 'YouTube', key: 'gD6cutOB60k' },
-        ],
+        results: [{ type: 'Trailer', site: 'YouTube', key: 'gD6cutOB60k' }],
       };
 
       mockFetch
@@ -2491,6 +2570,7 @@ Expected: FAIL — `Cannot find module '../tmdb.js'`
 - [ ] **Step 3: Implement tmdb.ts**
 
 Create `admin/server/tmdb.ts`:
+
 ```typescript
 import type { Film } from '@bathfilmclub/types';
 
@@ -2520,15 +2600,22 @@ export async function searchFilms(query: string): Promise<TmdbSearchResult[]> {
 
 export async function getFilmDetails(tmdbId: number): Promise<Film> {
   interface Details {
-    title: string; release_date: string; runtime: number;
-    genres: { id: number; name: string }[]; overview: string;
-    poster_path: string | null; backdrop_path: string | null; vote_average: number;
+    title: string;
+    release_date: string;
+    runtime: number;
+    genres: { id: number; name: string }[];
+    overview: string;
+    poster_path: string | null;
+    backdrop_path: string | null;
+    vote_average: number;
   }
   interface Credits {
     crew: { job: string; name: string }[];
     cast: { name: string; order: number }[];
   }
-  interface Videos { results: { type: string; site: string; key: string }[] }
+  interface Videos {
+    results: { type: string; site: string; key: string }[];
+  }
 
   const [details, credits, videos] = await Promise.all([
     tmdbFetch<Details>(`/movie/${tmdbId}`),
@@ -2585,6 +2672,7 @@ git commit -m "feat: TMDb API client with tests"
 ### Task 16: API routes (TDD)
 
 **Files:**
+
 - Modify: `admin/server/routes/themes.ts`
 - Modify: `admin/server/routes/films.ts`
 - Modify: `admin/server/routes/search.ts`
@@ -2593,6 +2681,7 @@ git commit -m "feat: TMDb API client with tests"
 - [ ] **Step 1: Write failing route tests**
 
 Create `admin/server/__tests__/routes.test.ts`:
+
 ```typescript
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import request from 'supertest';
@@ -2621,7 +2710,13 @@ vi.mock('../storage.js', () => {
 // Mock TMDb so tests don't make real HTTP calls
 vi.mock('../tmdb.js', () => ({
   searchFilms: vi.fn().mockResolvedValue([
-    { id: 603, title: 'The Matrix', release_date: '1999-03-30', poster_path: '/poster.jpg', overview: 'A film.' },
+    {
+      id: 603,
+      title: 'The Matrix',
+      release_date: '1999-03-30',
+      poster_path: '/poster.jpg',
+      overview: 'A film.',
+    },
   ]),
   getFilmDetails: vi.fn().mockResolvedValue({
     tmdbId: 603,
@@ -2656,16 +2751,12 @@ describe('GET /api/themes/current', () => {
 describe('PUT /api/themes/current', () => {
   it('updates the current cycle', async () => {
     const update = { title: 'Updated', month: '2026-07', films: [] };
-    const res = await request(app)
-      .put('/api/themes/current')
-      .send(update);
+    const res = await request(app).put('/api/themes/current').send(update);
     expect(res.status).toBe(200);
   });
 
   it('rejects missing required fields', async () => {
-    const res = await request(app)
-      .put('/api/themes/current')
-      .send({ title: 'No month' });
+    const res = await request(app).put('/api/themes/current').send({ title: 'No month' });
     expect(res.status).toBe(400);
   });
 });
@@ -2687,25 +2778,19 @@ describe('GET /api/themes', () => {
 
 describe('POST /api/films', () => {
   it('adds a film fetched from TMDb to the current cycle', async () => {
-    const res = await request(app)
-      .post('/api/films')
-      .send({ tmdbId: 603, status: 'nominated' });
+    const res = await request(app).post('/api/films').send({ tmdbId: 603, status: 'nominated' });
     expect(res.status).toBe(200);
   });
 
   it('rejects invalid status', async () => {
-    const res = await request(app)
-      .post('/api/films')
-      .send({ tmdbId: 603, status: 'invalid' });
+    const res = await request(app).post('/api/films').send({ tmdbId: 603, status: 'invalid' });
     expect(res.status).toBe(400);
   });
 });
 
 describe('PATCH /api/films/:tmdbId/status', () => {
   it('updates a film status', async () => {
-    const res = await request(app)
-      .patch('/api/films/603/status')
-      .send({ status: 'shortlisted' });
+    const res = await request(app).patch('/api/films/603/status').send({ status: 'shortlisted' });
     expect(res.status).toBe(200);
   });
 });
@@ -2742,6 +2827,7 @@ Expected: FAIL — routes return 404 (not yet implemented).
 - [ ] **Step 3: Implement themes routes**
 
 Replace `admin/server/routes/themes.ts`:
+
 ```typescript
 import { Router } from 'express';
 import { storage } from '../storage.js';
@@ -2760,7 +2846,12 @@ themesRouter.put('/current', async (req, res) => {
     return res.status(400).json({ error: 'title, month, and films are required' });
   }
   const current = await storage.readCurrentCycle();
-  const slug = current?.slug ?? `${month}-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+  const slug =
+    current?.slug ??
+    `${month}-${title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '')}`;
   const updated: Theme = { ...current, ...req.body, slug };
   await storage.writeCurrentCycle(updated);
   res.json(updated);
@@ -2780,6 +2871,7 @@ themesRouter.get('/', async (_req, res) => {
 - [ ] **Step 4: Implement films routes**
 
 Replace `admin/server/routes/films.ts`:
+
 ```typescript
 import { Router } from 'express';
 import { storage } from '../storage.js';
@@ -2816,9 +2908,7 @@ filmsRouter.patch('/:tmdbId/status', async (req, res) => {
   if (!current) return res.status(404).json({ error: 'No active cycle' });
   const updated = {
     ...current,
-    films: current.films.map((f) =>
-      f.film.tmdbId === tmdbId ? { ...f, status } : f
-    ),
+    films: current.films.map((f) => (f.film.tmdbId === tmdbId ? { ...f, status } : f)),
   };
   await storage.writeCurrentCycle(updated);
   res.json(updated);
@@ -2837,6 +2927,7 @@ filmsRouter.delete('/:tmdbId', async (req, res) => {
 - [ ] **Step 5: Implement search route**
 
 Replace `admin/server/routes/search.ts`:
+
 ```typescript
 import { Router } from 'express';
 import { searchFilms } from '../tmdb.js';
@@ -2875,6 +2966,7 @@ git commit -m "feat: admin API routes for themes, films, and TMDb search"
 ### Task 17: Admin React app with API client and routing
 
 **Files:**
+
 - Create: `admin/client/src/api.ts`
 - Modify: `admin/client/src/main.tsx`
 - Create: `admin/client/src/App.tsx`
@@ -2882,6 +2974,7 @@ git commit -m "feat: admin API routes for themes, films, and TMDb search"
 - [ ] **Step 1: Create typed API client**
 
 Create `admin/client/src/api.ts`:
+
 ```typescript
 import type { Theme, ThemeFilm, FilmStatus } from '@bathfilmclub/types';
 
@@ -2909,16 +3002,17 @@ export const api = {
   getCurrentCycle: () => apiFetch<Theme | null>('/themes/current'),
   updateCurrentCycle: (data: Partial<Theme>) =>
     apiFetch<Theme>('/themes/current', { method: 'PUT', body: JSON.stringify(data) }),
-  archiveCycle: () =>
-    apiFetch<{ ok: boolean }>('/themes/archive', { method: 'POST' }),
+  archiveCycle: () => apiFetch<{ ok: boolean }>('/themes/archive', { method: 'POST' }),
   getAllThemes: () => apiFetch<Theme[]>('/themes'),
 
   addFilm: (tmdbId: number, status: FilmStatus) =>
     apiFetch<ThemeFilm>('/films', { method: 'POST', body: JSON.stringify({ tmdbId, status }) }),
   updateFilmStatus: (tmdbId: number, status: FilmStatus) =>
-    apiFetch<Theme>(`/films/${tmdbId}/status`, { method: 'PATCH', body: JSON.stringify({ status }) }),
-  removeFilm: (tmdbId: number) =>
-    apiFetch<Theme>(`/films/${tmdbId}`, { method: 'DELETE' }),
+    apiFetch<Theme>(`/films/${tmdbId}/status`, {
+      method: 'PATCH',
+      body: JSON.stringify({ status }),
+    }),
+  removeFilm: (tmdbId: number) => apiFetch<Theme>(`/films/${tmdbId}`, { method: 'DELETE' }),
 
   search: (q: string) => apiFetch<TmdbSearchResult[]>(`/search?q=${encodeURIComponent(q)}`),
 };
@@ -2927,6 +3021,7 @@ export const api = {
 - [ ] **Step 2: Create App.tsx with simple tab navigation**
 
 Create `admin/client/src/App.tsx`:
+
 ```tsx
 import { useState } from 'react';
 import { CurrentCyclePanel } from './components/CurrentCycle';
@@ -2938,9 +3033,15 @@ export function App() {
   const [tab, setTab] = useState<Tab>('current');
 
   return (
-    <div style={{ fontFamily: 'Inter, sans-serif', maxWidth: 900, margin: '0 auto', padding: '2rem' }}>
-      <header style={{ borderBottom: '2px solid #000', paddingBottom: '1rem', marginBottom: '2rem' }}>
-        <h1 style={{ fontSize: '1.5rem', fontWeight: 700, fontFamily: 'Space Grotesk, sans-serif' }}>
+    <div
+      style={{ fontFamily: 'Inter, sans-serif', maxWidth: 900, margin: '0 auto', padding: '2rem' }}
+    >
+      <header
+        style={{ borderBottom: '2px solid #000', paddingBottom: '1rem', marginBottom: '2rem' }}
+      >
+        <h1
+          style={{ fontSize: '1.5rem', fontWeight: 700, fontFamily: 'Space Grotesk, sans-serif' }}
+        >
           ■ Bath Film Club Admin
         </h1>
         <nav style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
@@ -2977,6 +3078,7 @@ export function App() {
 - [ ] **Step 3: Update main.tsx**
 
 Replace `admin/client/src/main.tsx`:
+
 ```tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -2985,7 +3087,8 @@ import { App } from './App';
 // Load Google Fonts
 const link = document.createElement('link');
 link.rel = 'stylesheet';
-link.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap';
+link.href =
+  'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap';
 document.head.appendChild(link);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -3007,6 +3110,7 @@ git commit -m "feat: admin app shell with tab navigation and typed API client"
 ### Task 18: Admin UI — Current cycle management
 
 **Files:**
+
 - Create: `admin/client/src/components/CurrentCycle.tsx`
 - Create: `admin/client/src/components/ThemeEditor.tsx`
 - Create: `admin/client/src/components/FilmSearch.tsx`
@@ -3015,6 +3119,7 @@ git commit -m "feat: admin app shell with tab navigation and typed API client"
 - [ ] **Step 1: Create ThemeEditor.tsx**
 
 Create `admin/client/src/components/ThemeEditor.tsx`:
+
 ```tsx
 import { useState } from 'react';
 import type { Theme } from '@bathfilmclub/types';
@@ -3028,7 +3133,17 @@ interface Props {
 function field(label: string, el: React.ReactNode) {
   return (
     <label style={{ display: 'block', marginBottom: '1rem' }}>
-      <span style={{ display: 'block', fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.3rem', color: '#666' }}>
+      <span
+        style={{
+          display: 'block',
+          fontSize: '0.7rem',
+          fontWeight: 600,
+          textTransform: 'uppercase',
+          letterSpacing: '0.1em',
+          marginBottom: '0.3rem',
+          color: '#666',
+        }}
+      >
         {label}
       </span>
       {el}
@@ -3037,7 +3152,12 @@ function field(label: string, el: React.ReactNode) {
 }
 
 const inputStyle: React.CSSProperties = {
-  width: '100%', padding: '0.5rem', border: '1px solid #ccc', fontSize: '0.9rem', fontFamily: 'inherit', boxSizing: 'border-box',
+  width: '100%',
+  padding: '0.5rem',
+  border: '1px solid #ccc',
+  fontSize: '0.9rem',
+  fontFamily: 'inherit',
+  boxSizing: 'border-box',
 };
 
 export function ThemeEditor({ theme, onSaved }: Props) {
@@ -3074,16 +3194,68 @@ export function ThemeEditor({ theme, onSaved }: Props) {
 
   return (
     <div>
-      {field('Title', <input style={inputStyle} value={title} onChange={(e) => setTitle(e.target.value)} placeholder="e.g. Time Travel" />)}
-      {field('Month (YYYY-MM)', <input style={inputStyle} value={month} onChange={(e) => setMonth(e.target.value)} placeholder="2026-06" pattern="\d{4}-\d{2}" />)}
-      {field('Description (optional)', <textarea style={{ ...inputStyle, minHeight: 80, resize: 'vertical' }} value={description} onChange={(e) => setDescription(e.target.value)} />)}
-      {field('Meeting Date', <input type="date" style={inputStyle} value={meetingDate} onChange={(e) => setMeetingDate(e.target.value)} />)}
-      {field('Meeting Time', <input type="time" style={inputStyle} value={meetingTime} onChange={(e) => setMeetingTime(e.target.value)} />)}
-      {error && <p style={{ color: '#B11226', fontSize: '0.85rem', marginBottom: '1rem' }}>{error}</p>}
+      {field(
+        'Title',
+        <input
+          style={inputStyle}
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          placeholder="e.g. Time Travel"
+        />
+      )}
+      {field(
+        'Month (YYYY-MM)',
+        <input
+          style={inputStyle}
+          value={month}
+          onChange={(e) => setMonth(e.target.value)}
+          placeholder="2026-06"
+          pattern="\d{4}-\d{2}"
+        />
+      )}
+      {field(
+        'Description (optional)',
+        <textarea
+          style={{ ...inputStyle, minHeight: 80, resize: 'vertical' }}
+          value={description}
+          onChange={(e) => setDescription(e.target.value)}
+        />
+      )}
+      {field(
+        'Meeting Date',
+        <input
+          type="date"
+          style={inputStyle}
+          value={meetingDate}
+          onChange={(e) => setMeetingDate(e.target.value)}
+        />
+      )}
+      {field(
+        'Meeting Time',
+        <input
+          type="time"
+          style={inputStyle}
+          value={meetingTime}
+          onChange={(e) => setMeetingTime(e.target.value)}
+        />
+      )}
+      {error && (
+        <p style={{ color: '#B11226', fontSize: '0.85rem', marginBottom: '1rem' }}>{error}</p>
+      )}
       <button
         onClick={save}
         disabled={saving}
-        style={{ background: '#000', color: '#fff', border: 'none', padding: '0.6rem 1.5rem', fontFamily: 'Space Grotesk, sans-serif', fontWeight: 600, fontSize: '0.8rem', textTransform: 'uppercase', cursor: 'pointer' }}
+        style={{
+          background: '#000',
+          color: '#fff',
+          border: 'none',
+          padding: '0.6rem 1.5rem',
+          fontFamily: 'Space Grotesk, sans-serif',
+          fontWeight: 600,
+          fontSize: '0.8rem',
+          textTransform: 'uppercase',
+          cursor: 'pointer',
+        }}
       >
         {saving ? 'Saving…' : 'Save Theme'}
       </button>
@@ -3095,6 +3267,7 @@ export function ThemeEditor({ theme, onSaved }: Props) {
 - [ ] **Step 2: Create FilmSearch.tsx**
 
 Create `admin/client/src/components/FilmSearch.tsx`:
+
 ```tsx
 import { useState, useRef } from 'react';
 import type { FilmStatus } from '@bathfilmclub/types';
@@ -3116,7 +3289,10 @@ export function FilmSearch({ onAdd }: Props) {
   const search = (q: string) => {
     setQuery(q);
     clearTimeout(debounce.current);
-    if (q.trim().length < 2) { setResults([]); return; }
+    if (q.trim().length < 2) {
+      setResults([]);
+      return;
+    }
     debounce.current = setTimeout(async () => {
       setLoading(true);
       try {
@@ -3145,15 +3321,36 @@ export function FilmSearch({ onAdd }: Props) {
         value={query}
         onChange={(e) => search(e.target.value)}
         placeholder="Search TMDb…"
-        style={{ width: '100%', padding: '0.5rem', border: '1px solid #ccc', fontSize: '0.9rem', fontFamily: 'inherit', boxSizing: 'border-box', marginBottom: '0.5rem' }}
+        style={{
+          width: '100%',
+          padding: '0.5rem',
+          border: '1px solid #ccc',
+          fontSize: '0.9rem',
+          fontFamily: 'inherit',
+          boxSizing: 'border-box',
+          marginBottom: '0.5rem',
+        }}
       />
       {loading && <p style={{ fontSize: '0.8rem', color: '#666' }}>Searching…</p>}
       {results.length > 0 && (
         <ul style={{ listStyle: 'none', padding: 0, margin: 0, border: '1px solid #eee' }}>
           {results.map((r) => (
-            <li key={r.id} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.5rem', borderBottom: '1px solid #eee' }}>
+            <li
+              key={r.id}
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.75rem',
+                padding: '0.5rem',
+                borderBottom: '1px solid #eee',
+              }}
+            >
               {r.poster_path ? (
-                <img src={`${TMDB_IMAGE_BASE}${r.poster_path}`} alt="" style={{ width: 30, height: 45, objectFit: 'cover' }} />
+                <img
+                  src={`${TMDB_IMAGE_BASE}${r.poster_path}`}
+                  alt=""
+                  style={{ width: 30, height: 45, objectFit: 'cover' }}
+                />
               ) : (
                 <div style={{ width: 30, height: 45, background: '#eee' }} />
               )}
@@ -3166,7 +3363,15 @@ export function FilmSearch({ onAdd }: Props) {
                     key={s}
                     disabled={pendingId === r.id}
                     onClick={() => add(r.id, s)}
-                    style={{ fontSize: '0.7rem', padding: '0.2rem 0.5rem', border: '1px solid #000', background: 'transparent', cursor: 'pointer', fontFamily: 'Space Grotesk, sans-serif', textTransform: 'capitalize' }}
+                    style={{
+                      fontSize: '0.7rem',
+                      padding: '0.2rem 0.5rem',
+                      border: '1px solid #000',
+                      background: 'transparent',
+                      cursor: 'pointer',
+                      fontFamily: 'Space Grotesk, sans-serif',
+                      textTransform: 'capitalize',
+                    }}
                   >
                     {s}
                   </button>
@@ -3184,6 +3389,7 @@ export function FilmSearch({ onAdd }: Props) {
 - [ ] **Step 3: Create FilmList.tsx**
 
 Create `admin/client/src/components/FilmList.tsx`:
+
 ```tsx
 import type { ThemeFilm, FilmStatus } from '@bathfilmclub/types';
 import { api } from '../api';
@@ -3219,14 +3425,36 @@ export function FilmList({ films, onUpdated }: Props) {
   return (
     <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
       {sorted.map(({ film, status }) => (
-        <li key={film.tmdbId} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.5rem 0', borderBottom: '1px solid #f0f0f0' }}>
+        <li
+          key={film.tmdbId}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem',
+            padding: '0.5rem 0',
+            borderBottom: '1px solid #f0f0f0',
+          }}
+        >
           {film.posterPath ? (
-            <img src={`${TMDB_IMAGE_BASE}${film.posterPath}`} alt="" style={{ width: 30, height: 45, objectFit: 'cover' }} />
+            <img
+              src={`${TMDB_IMAGE_BASE}${film.posterPath}`}
+              alt=""
+              style={{ width: 30, height: 45, objectFit: 'cover' }}
+            />
           ) : (
             <div style={{ width: 30, height: 45, background: '#eee' }} />
           )}
           <div style={{ flex: 1, minWidth: 0 }}>
-            <p style={{ margin: 0, fontSize: '0.85rem', fontWeight: 600, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+            <p
+              style={{
+                margin: 0,
+                fontSize: '0.85rem',
+                fontWeight: 600,
+                overflow: 'hidden',
+                textOverflow: 'ellipsis',
+                whiteSpace: 'nowrap',
+              }}
+            >
               {film.title} <span style={{ color: '#999', fontWeight: 400 }}>({film.year})</span>
             </p>
             <p style={{ margin: 0, fontSize: '0.75rem', color: '#666' }}>{film.director}</p>
@@ -3234,7 +3462,12 @@ export function FilmList({ films, onUpdated }: Props) {
           <select
             value={status}
             onChange={(e) => updateStatus(film.tmdbId, e.target.value as FilmStatus)}
-            style={{ fontSize: '0.75rem', border: '1px solid #ccc', padding: '0.2rem', fontFamily: 'inherit' }}
+            style={{
+              fontSize: '0.75rem',
+              border: '1px solid #ccc',
+              padding: '0.2rem',
+              fontFamily: 'inherit',
+            }}
           >
             <option value="nominated">Nominated</option>
             <option value="shortlisted">Shortlisted</option>
@@ -3242,7 +3475,14 @@ export function FilmList({ films, onUpdated }: Props) {
           </select>
           <button
             onClick={() => remove(film.tmdbId)}
-            style={{ fontSize: '0.75rem', color: '#B11226', background: 'none', border: 'none', cursor: 'pointer', padding: '0 0.25rem' }}
+            style={{
+              fontSize: '0.75rem',
+              color: '#B11226',
+              background: 'none',
+              border: 'none',
+              cursor: 'pointer',
+              padding: '0 0.25rem',
+            }}
             title="Remove"
           >
             ✕
@@ -3257,6 +3497,7 @@ export function FilmList({ films, onUpdated }: Props) {
 - [ ] **Step 4: Create CurrentCycle.tsx**
 
 Create `admin/client/src/components/CurrentCycle.tsx`:
+
 ```tsx
 import { useState, useEffect, useCallback } from 'react';
 import type { Theme, FilmStatus } from '@bathfilmclub/types';
@@ -3281,7 +3522,9 @@ export function CurrentCyclePanel() {
     }
   }, []);
 
-  useEffect(() => { load(); }, [load]);
+  useEffect(() => {
+    load();
+  }, [load]);
 
   const addFilm = async (tmdbId: number, status: FilmStatus) => {
     await api.addFilm(tmdbId, status);
@@ -3289,7 +3532,12 @@ export function CurrentCyclePanel() {
   };
 
   const archive = async () => {
-    if (!confirm('Archive the current cycle? It will move to the archive and the current cycle will be cleared.')) return;
+    if (
+      !confirm(
+        'Archive the current cycle? It will move to the archive and the current cycle will be cleared.'
+      )
+    )
+      return;
     setArchiving(true);
     try {
       await api.archiveCycle();
@@ -3306,15 +3554,37 @@ export function CurrentCyclePanel() {
 
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '1.5rem' }}>
-        <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, fontSize: '1.2rem', margin: 0 }}>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'baseline',
+          marginBottom: '1.5rem',
+        }}
+      >
+        <h2
+          style={{
+            fontFamily: 'Space Grotesk, sans-serif',
+            fontWeight: 700,
+            fontSize: '1.2rem',
+            margin: 0,
+          }}
+        >
           {cycle ? cycle.title : 'No active cycle'}
         </h2>
         {cycle && (
           <button
             onClick={archive}
             disabled={archiving}
-            style={{ fontSize: '0.75rem', color: '#B11226', background: 'none', border: '1px solid #B11226', padding: '0.3rem 0.75rem', cursor: 'pointer', fontFamily: 'Space Grotesk, sans-serif' }}
+            style={{
+              fontSize: '0.75rem',
+              color: '#B11226',
+              background: 'none',
+              border: '1px solid #B11226',
+              padding: '0.3rem 0.75rem',
+              cursor: 'pointer',
+              fontFamily: 'Space Grotesk, sans-serif',
+            }}
           >
             {archiving ? 'Archiving…' : 'Archive Cycle'}
           </button>
@@ -3326,27 +3596,50 @@ export function CurrentCyclePanel() {
           <button
             key={s}
             onClick={() => setSection(s)}
-            style={{ fontSize: '0.75rem', padding: '0.3rem 0.75rem', background: section === s ? '#000' : 'transparent', color: section === s ? '#fff' : '#000', border: '1px solid #000', cursor: 'pointer', fontFamily: 'Space Grotesk, sans-serif', textTransform: 'capitalize' }}
+            style={{
+              fontSize: '0.75rem',
+              padding: '0.3rem 0.75rem',
+              background: section === s ? '#000' : 'transparent',
+              color: section === s ? '#fff' : '#000',
+              border: '1px solid #000',
+              cursor: 'pointer',
+              fontFamily: 'Space Grotesk, sans-serif',
+              textTransform: 'capitalize',
+            }}
           >
             {s === 'theme' ? 'Theme Details' : 'Films'}
           </button>
         ))}
       </div>
 
-      {section === 'theme' && (
-        <ThemeEditor theme={cycle} onSaved={(t) => setCycle(t)} />
-      )}
+      {section === 'theme' && <ThemeEditor theme={cycle} onSaved={(t) => setCycle(t)} />}
 
       {section === 'films' && cycle && (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           <div>
-            <h3 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.75rem' }}>
+            <h3
+              style={{
+                fontFamily: 'Space Grotesk, sans-serif',
+                fontSize: '0.75rem',
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em',
+                marginBottom: '0.75rem',
+              }}
+            >
               Add Film
             </h3>
             <FilmSearch onAdd={addFilm} />
           </div>
           <div>
-            <h3 style={{ fontFamily: 'Space Grotesk, sans-serif', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.75rem' }}>
+            <h3
+              style={{
+                fontFamily: 'Space Grotesk, sans-serif',
+                fontSize: '0.75rem',
+                textTransform: 'uppercase',
+                letterSpacing: '0.1em',
+                marginBottom: '0.75rem',
+              }}
+            >
               Films in Cycle ({cycle.films.length})
             </h3>
             <FilmList films={cycle.films} onUpdated={load} />
@@ -3376,11 +3669,13 @@ git commit -m "feat: admin UI — current cycle management with theme editor and
 ### Task 19: Admin UI — Archive management
 
 **Files:**
+
 - Create: `admin/client/src/components/ArchiveManager.tsx`
 
 - [ ] **Step 1: Create ArchiveManager.tsx**
 
 Create `admin/client/src/components/ArchiveManager.tsx`:
+
 ```tsx
 import { useState, useEffect } from 'react';
 import type { Theme } from '@bathfilmclub/types';
@@ -3391,7 +3686,8 @@ const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w92';
 function formatMonth(month: string): string {
   const [year, m] = month.split('-');
   return new Date(parseInt(year), parseInt(m) - 1, 1).toLocaleDateString('en-GB', {
-    month: 'long', year: 'numeric',
+    month: 'long',
+    year: 'numeric',
   });
 }
 
@@ -3401,7 +3697,8 @@ export function ArchivePanel() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    api.getAllThemes()
+    api
+      .getAllThemes()
       .then(setThemes)
       .catch((e) => setError(e.message))
       .finally(() => setLoading(false));
@@ -3410,12 +3707,23 @@ export function ArchivePanel() {
   if (loading) return <p style={{ color: '#666' }}>Loading…</p>;
   if (error) return <p style={{ color: '#B11226' }}>Error: {error}</p>;
   if (themes.length === 0) {
-    return <p style={{ color: '#999', fontStyle: 'italic', fontSize: '0.85rem' }}>No archived themes yet.</p>;
+    return (
+      <p style={{ color: '#999', fontStyle: 'italic', fontSize: '0.85rem' }}>
+        No archived themes yet.
+      </p>
+    );
   }
 
   return (
     <div>
-      <h2 style={{ fontFamily: 'Space Grotesk, sans-serif', fontWeight: 700, fontSize: '1.2rem', marginBottom: '1.5rem' }}>
+      <h2
+        style={{
+          fontFamily: 'Space Grotesk, sans-serif',
+          fontWeight: 700,
+          fontSize: '1.2rem',
+          marginBottom: '1.5rem',
+        }}
+      >
         Archive ({themes.length} themes)
       </h2>
       <ul style={{ listStyle: 'none', padding: 0 }}>
@@ -3423,9 +3731,17 @@ export function ArchivePanel() {
           const selected = theme.films.filter((f) => f.status === 'selected');
           return (
             <li key={theme.slug} style={{ borderBottom: '1px solid #eee', padding: '1rem 0' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'flex-start',
+                }}
+              >
                 <div>
-                  <p style={{ margin: 0, fontFamily: 'Space Grotesk, sans-serif', fontWeight: 600 }}>
+                  <p
+                    style={{ margin: 0, fontFamily: 'Space Grotesk, sans-serif', fontWeight: 600 }}
+                  >
                     {theme.title}
                   </p>
                   <p style={{ margin: '0.2rem 0 0', fontSize: '0.75rem', color: '#666' }}>
@@ -3433,11 +3749,16 @@ export function ArchivePanel() {
                   </p>
                 </div>
                 <div style={{ display: 'flex', gap: '0.5rem' }}>
-                  {selected.map(({ film }) => (
+                  {selected.map(({ film }) =>
                     film.posterPath ? (
-                      <img key={film.tmdbId} src={`${TMDB_IMAGE_BASE}${film.posterPath}`} alt={film.title} style={{ width: 20, height: 30, objectFit: 'cover' }} />
+                      <img
+                        key={film.tmdbId}
+                        src={`${TMDB_IMAGE_BASE}${film.posterPath}`}
+                        alt={film.title}
+                        style={{ width: 20, height: 30, objectFit: 'cover' }}
+                      />
                     ) : null
-                  ))}
+                  )}
                 </div>
               </div>
             </li>
@@ -3463,6 +3784,7 @@ git commit -m "feat: admin UI — archive panel"
 ### Task 20: End-to-end smoke test + deployment config
 
 **Files:**
+
 - Create: `site/public/_headers` (Cloudflare Pages headers)
 - Create: `site/public/_redirects`
 - Create: `wrangler.toml` (optional — for Cloudflare Pages config)
@@ -3470,6 +3792,7 @@ git commit -m "feat: admin UI — archive panel"
 - [ ] **Step 1: Start the admin server and verify the full flow**
 
 First, add your real TMDb API key to `admin/.env`:
+
 ```
 TMDB_API_KEY=<your real key>
 DATA_DIR=../site/src/data
@@ -3477,11 +3800,13 @@ PORT=3001
 ```
 
 Start the admin server:
+
 ```bash
 npm run admin
 ```
 
 Open `http://localhost:3000`. Verify in order:
+
 1. "Theme Details" section shows the current theme (Time Travel) loaded from sample data
 2. Edit the title, save — the JSON file `site/src/data/current.json` updates on disk
 3. Switch to "Films" tab
@@ -3508,6 +3833,7 @@ npm run site:preview
 ```
 
 Open `http://localhost:4321`. Verify:
+
 - Homepage reflects the current data (any changes made via admin are present)
 - Film pyramid renders correctly
 - Archive page shows Folk Horror
@@ -3519,6 +3845,7 @@ Stop the preview server.
 - [ ] **Step 4: Add Cloudflare Pages headers for caching**
 
 Create `site/public/_headers`:
+
 ```
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
@@ -3531,6 +3858,7 @@ Create `site/public/_headers`:
 ```
 
 Create `site/public/_redirects`:
+
 ```
 /* /index.html 404
 ```
@@ -3568,28 +3896,28 @@ The admin tool runs only locally via `npm run admin`. It is never deployed.
 
 **Spec coverage check:**
 
-| Requirement | Covered by |
-|---|---|
-| Homepage: hero, current theme, meeting, film pyramid | Task 10 |
-| Film pyramid with 3 rows (selected/shortlisted/nominated) | Tasks 9–10 |
-| Empty rows when cycle is partially progressed | Task 7 (pyramid logic), Tasks 9–10 |
-| Slide-out film detail panel | Task 8 |
-| How the Club Works section | Task 10 |
-| Archive with collapsible rows | Task 11 |
-| Archive search by film/theme/director | Task 11 |
-| Theme detail page with sidebar | Task 12 |
-| TMDb film data retrieval | Task 15 |
-| Local admin tool (web server) | Tasks 13–19 |
-| Admin: create/edit themes, meeting details | Task 17–18 |
-| Admin: TMDb search and film selection | Task 18 |
-| Admin: assign film status (nominated/shortlisted/selected) | Tasks 16, 18 |
-| Admin: archive management | Task 16, 19 |
-| Responsive mobile-first layout | Tailwind responsive prefixes used throughout Tasks 5–12 |
-| Design system: Space Grotesk, Inter, black/white/red | Task 5 |
-| Square motif as section markers | Task 5 (`section-label` class) |
-| Static build, no auth, Cloudflare Pages | Tasks 4, 20 |
-| Archive scales to 20+ years | Glob-based loading in data.ts; no fixed limits |
-| No admin functionality in public site | Confirmed — admin is a separate local tool |
+| Requirement                                                | Covered by                                              |
+| ---------------------------------------------------------- | ------------------------------------------------------- |
+| Homepage: hero, current theme, meeting, film pyramid       | Task 10                                                 |
+| Film pyramid with 3 rows (selected/shortlisted/nominated)  | Tasks 9–10                                              |
+| Empty rows when cycle is partially progressed              | Task 7 (pyramid logic), Tasks 9–10                      |
+| Slide-out film detail panel                                | Task 8                                                  |
+| How the Club Works section                                 | Task 10                                                 |
+| Archive with collapsible rows                              | Task 11                                                 |
+| Archive search by film/theme/director                      | Task 11                                                 |
+| Theme detail page with sidebar                             | Task 12                                                 |
+| TMDb film data retrieval                                   | Task 15                                                 |
+| Local admin tool (web server)                              | Tasks 13–19                                             |
+| Admin: create/edit themes, meeting details                 | Task 17–18                                              |
+| Admin: TMDb search and film selection                      | Task 18                                                 |
+| Admin: assign film status (nominated/shortlisted/selected) | Tasks 16, 18                                            |
+| Admin: archive management                                  | Task 16, 19                                             |
+| Responsive mobile-first layout                             | Tailwind responsive prefixes used throughout Tasks 5–12 |
+| Design system: Space Grotesk, Inter, black/white/red       | Task 5                                                  |
+| Square motif as section markers                            | Task 5 (`section-label` class)                          |
+| Static build, no auth, Cloudflare Pages                    | Tasks 4, 20                                             |
+| Archive scales to 20+ years                                | Glob-based loading in data.ts; no fixed limits          |
+| No admin functionality in public site                      | Confirmed — admin is a separate local tool              |
 
 **No placeholders present.** All code blocks contain complete implementations.
 

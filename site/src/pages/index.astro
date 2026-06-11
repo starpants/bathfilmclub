@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import FilmPyramid from '../components/FilmPyramid.astro';
 import HowItWorks from '../components/HowItWorks.astro';
 import SectionTitle from '../components/SectionTitle.astro';
-import { getCurrentCycle, formatMonth, formatMeetingDate } from '../utils/data';
+import { getCurrentCycle, formatMeetingDate } from '../utils/data';
 
 const cycle = await getCurrentCycle();
 ---
@@ -12,23 +12,31 @@ const cycle = await getCurrentCycle();
   <Header />
 
   <!-- Hero -->
-  <section class="py-20">
-    <div class="max-w-site mx-auto px-6 space-y-6">
-      <img src="/assets/logo.jpg" alt="Bath Film Club" class="h-20 w-20 object-cover" />
-      <h1 class="font-heading font-bold text-5xl md:text-7xl leading-none tracking-tight">
-        Bath<br />Film Club
-      </h1>
-      <p class="font-body text-neutral-300 max-w-md text-lg leading-relaxed">
-        A monthly film discussion group in Bath. Each month a new theme, a new selection, a new conversation.
-      </p>
-      <a
-        href="https://discord.gg/bathfilmclub"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-discord"
-      >
-        Join on Discord
-      </a>
+  <section class="py-0">
+    <div class="max-w-site mx-auto px-6">
+      <div class="flex flex-col md:flex-row">
+        <div class="flex-[2] p-8 flex items-center">
+          <img src="/assets/BathFilmClub_Logo.svg" alt="Bath Film Club" class="w-full" />
+        </div>
+        <div class="flex-[3] p-8 space-y-4 content-center">
+          <!-- <h1 class="font-heading font-bold text-5xl md:text-7xl leading-none tracking-tight">Bath Film Club</h1> -->
+  
+          <div class="flex flex-wrap h-1/2 content-between">
+            <p class="font-body text-neutral-300 text-xl md:text-2xl leading-relaxed">
+            A monthly film discussion group in Bath. Each month a new theme, a new selection, a new conversation.
+          </p>
+        <a
+            href="https://discord.gg/bathfilmclub"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-discord"
+          >
+            Join on Discord
+          </a>
+          </div>
+  
+        </div>
+      </div>
     </div>
   </section>
 
@@ -42,15 +50,15 @@ const cycle = await getCurrentCycle();
           <SectionTitle title="Current Theme" class="mb-4" />
           {cycle.description ? (
             <div class="flex flex-col md:flex-row">
-              <div class="flex-[2] border border-neutral-800 p-5 border-b-0 md:border-b md:border-r-0">
+              <div class="flex-[2] border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0">
                 <h3 class="font-heading font-bold text-4xl md:text-5xl leading-tight">{cycle.title}</h3>
               </div>
-              <div class="flex-[3] border border-neutral-800 p-5">
+              <div class="flex-[3] border border-neutral-600 p-5">
                 <p class="font-body text-neutral-400 leading-relaxed">{cycle.description}</p>
               </div>
             </div>
           ) : (
-            <div class="border border-neutral-800 p-5">
+            <div class="border border-neutral-600 p-5">
               <h3 class="font-heading font-bold text-4xl md:text-5xl leading-tight">{cycle.title}</h3>
             </div>
           )}
@@ -61,11 +69,11 @@ const cycle = await getCurrentCycle();
           <section>
             <SectionTitle title="Upcoming Meeting" class="mb-4" />
             <div class="flex flex-col md:flex-row">
-              <div class="flex-[2] border border-neutral-800 p-5 border-b-0 md:border-b md:border-r-0">
+              <div class="flex-[2] border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0">
                 <p class="font-heading font-semibold text-lg leading-tight">{formatMeetingDate(cycle.meeting.date)}</p>
                 <p class="font-body text-neutral-400 text-sm mt-1">{cycle.meeting.time}</p>
               </div>
-              <div class="flex-[3] border border-neutral-800 p-5">
+              <div class="flex-[3] border border-neutral-600 p-5">
                 {cycle.meeting.venue ? (
                   <p class="font-body text-neutral-400 leading-relaxed">{cycle.meeting.venue}</p>
                 ) : (
@@ -76,10 +84,6 @@ const cycle = await getCurrentCycle();
           </section>
         )}
 
-        <!-- Film Selection Pyramid -->
-        <section>
-          <FilmPyramid films={cycle.films} />
-        </section>
       </>
     ) : (
       <section>
@@ -91,4 +95,6 @@ const cycle = await getCurrentCycle();
     )}
 
   </main>
+
+  {cycle && <FilmPyramid films={cycle.films} />}
 </Layout>
