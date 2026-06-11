@@ -1,9 +1,10 @@
 {
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
-    "baseUrl": ".",
+    "rootDir": "..",
     "paths": {
       "@bathfilmclub/types": ["../packages/types/src/index.ts"]
     }
-  }
+  },
+  "include": ["src"]
 }

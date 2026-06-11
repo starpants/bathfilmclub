@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/Av/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/skills/subagent-driven-development/**)",
+      "Bash(git commit *)",
+      "Bash(npx tsc *)",
+      "Bash(node -e ' *)",
+      "Bash(npm test *)",
+      "Bash(npm run *)",
+      "Bash(npm ls *)",
+      "Bash(cat)",
+      "Bash(node /tmp/check_factory.js)"
+    ]
+  }
+}
