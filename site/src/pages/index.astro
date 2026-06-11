@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import FilmPyramid from '../components/FilmPyramid.astro';
 import HowItWorks from '../components/HowItWorks.astro';
+import SectionTitle from '../components/SectionTitle.astro';
 import { getCurrentCycle, formatMonth, formatMeetingDate } from '../utils/data';
 
 const cycle = await getCurrentCycle();
@@ -11,8 +12,9 @@ const cycle = await getCurrentCycle();
   <Header />
 
   <!-- Hero -->
-  <section class="bg-brand-black text-white py-20">
+  <section class="py-20">
     <div class="max-w-site mx-auto px-6 space-y-6">
+      <img src="/assets/logo.jpg" alt="Bath Film Club" class="h-20 w-20 object-cover" />
       <h1 class="font-heading font-bold text-5xl md:text-7xl leading-none tracking-tight">
         Bath<br />Film Club
       </h1>
@@ -31,48 +33,62 @@ const cycle = await getCurrentCycle();
   </section>
 
   <main class="max-w-site mx-auto px-6 py-16 space-y-16">
+    <HowItWorks />
 
     {cycle ? (
       <>
         <!-- Current Theme -->
         <section>
-          <h2 class="section-label mb-4">Current Theme</h2>
-          <h3 class="font-heading font-bold text-4xl md:text-5xl">{cycle.title}</h3>
-          {cycle.description && (
-            <p class="font-body text-neutral-600 mt-3 max-w-2xl leading-relaxed">
-              {cycle.description}
-            </p>
+          <SectionTitle title="Current Theme" class="mb-4" />
+          {cycle.description ? (
+            <div class="flex flex-col md:flex-row">
+              <div class="flex-[2] border border-neutral-800 p-5 border-b-0 md:border-b md:border-r-0">
+                <h3 class="font-heading font-bold text-4xl md:text-5xl leading-tight">{cycle.title}</h3>
+              </div>
+              <div class="flex-[3] border border-neutral-800 p-5">
+                <p class="font-body text-neutral-400 leading-relaxed">{cycle.description}</p>
+              </div>
+            </div>
+          ) : (
+            <div class="border border-neutral-800 p-5">
+              <h3 class="font-heading font-bold text-4xl md:text-5xl leading-tight">{cycle.title}</h3>
+            </div>
           )}
         </section>
 
         <!-- Upcoming Meeting -->
         {cycle.meeting && (
           <section>
-            <h2 class="section-label mb-4">Upcoming Meeting</h2>
-            <div class="space-y-1">
-              <p class="font-heading font-semibold text-lg">
-                {formatMeetingDate(cycle.meeting.date)}
-              </p>
-              <p class="font-body text-neutral-600">{cycle.meeting.time}</p>
+            <SectionTitle title="Upcoming Meeting" class="mb-4" />
+            <div class="flex flex-col md:flex-row">
+              <div class="flex-[2] border border-neutral-800 p-5 border-b-0 md:border-b md:border-r-0">
+                <p class="font-heading font-semibold text-lg leading-tight">{formatMeetingDate(cycle.meeting.date)}</p>
+                <p class="font-body text-neutral-400 text-sm mt-1">{cycle.meeting.time}</p>
+              </div>
+              <div class="flex-[3] border border-neutral-800 p-5">
+                {cycle.meeting.venue ? (
+                  <p class="font-body text-neutral-400 leading-relaxed">{cycle.meeting.venue}</p>
+                ) : (
+                  <p class="font-body text-neutral-500 italic text-sm">Venue to be confirmed.</p>
+                )}
+              </div>
             </div>
           </section>
         )}
 
         <!-- Film Selection Pyramid -->
         <section>
-          <h2 class="section-label mb-8">Current Selection</h2>
           <FilmPyramid films={cycle.films} />
         </section>
       </>
     ) : (
       <section>
         <h2 class="section-label mb-4">Current Theme</h2>
-        <p class="font-body text-neutral-500 italic">
+        <p class="font-body text-neutral-400 italic">
           The next theme hasn't been announced yet. Join Discord to be the first to know.
         </p>
       </section>
     )}
 
-    <HowItWorks />
   </main>
 </Layout>

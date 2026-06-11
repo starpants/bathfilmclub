@@ -22,8 +22,9 @@ export interface ThemeFilm {
 }
 
 export interface Meeting {
-  date: string;  // ISO 8601 date "2026-06-15"
-  time: string;  // 24-hour "19:30"
+  date: string;   // ISO 8601 date "2026-06-15"
+  time: string;   // 24-hour "19:30"
+  venue?: string;
 }
 
 export interface Theme {

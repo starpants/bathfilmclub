@@ -76,7 +76,7 @@ export function ArchiveList({ themes }: Props) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search by film, theme, or director…"
-          className="w-full border border-neutral-300 px-4 py-3 font-body text-sm focus:outline-none focus:border-brand-black placeholder:text-neutral-400"
+          className="w-full border border-neutral-700 bg-transparent px-4 py-3 font-body text-sm focus:outline-none focus:border-white placeholder:text-neutral-500"
         />
       </div>
 
@@ -85,22 +85,22 @@ export function ArchiveList({ themes }: Props) {
         <div className="space-y-2">
           <p className="section-label">{searchResults.length} result{searchResults.length !== 1 ? 's' : ''}</p>
           {searchResults.length === 0 ? (
-            <p className="font-body text-sm text-neutral-500 italic">No results found.</p>
+            <p className="font-body text-sm text-neutral-400 italic">No results found.</p>
           ) : (
-            <ul className="divide-y divide-neutral-100">
+            <ul className="divide-y divide-neutral-800">
               {searchResults.map((r, i) => (
                 <li key={i} className="py-4">
                   {r.filmTitle !== '—' && (
                     <p className="font-heading font-semibold text-base">{r.filmTitle}</p>
                   )}
-                  <p className="font-body text-sm text-neutral-600">
+                  <p className="font-body text-sm text-neutral-400">
                     Theme:{' '}
                     <a href={`/theme/${r.slug}`} className="underline hover:text-brand-red">
                       {r.themeTitle}
                     </a>
                   </p>
                   {r.director !== '—' && (
-                    <p className="font-body text-sm text-neutral-600">Director: {r.director}</p>
+                    <p className="font-body text-sm text-neutral-400">Director: {r.director}</p>
                   )}
                   <p className="font-body text-xs text-neutral-400 mt-1">
                     {formatMonth(r.month)} · {r.status}
@@ -114,7 +114,7 @@ export function ArchiveList({ themes }: Props) {
 
       {/* Archive list */}
       {!isSearching && (
-        <ul className="divide-y divide-neutral-200">
+        <ul className="divide-y divide-neutral-800">
           {themes.map((theme) => {
             const isOpen = openSlug === theme.slug;
             const selectedFilms = theme.films.filter((f) => f.status === 'selected');
@@ -139,7 +139,7 @@ export function ArchiveList({ themes }: Props) {
                 {isOpen && (
                   <div className="pb-6 space-y-4 pl-32">
                     {theme.description && (
-                      <p className="font-body text-sm text-neutral-600 max-w-prose">
+                      <p className="font-body text-sm text-neutral-400 max-w-prose">
                         {theme.description}
                       </p>
                     )}
@@ -149,7 +149,7 @@ export function ArchiveList({ themes }: Props) {
                         <div className="flex gap-3">
                           {selectedFilms.map(({ film }) => (
                             <div key={film.tmdbId} className="w-16">
-                              <div className="aspect-[2/3] overflow-hidden bg-neutral-100">
+                              <div className="aspect-[2/3] overflow-hidden bg-neutral-800">
                                 {film.posterPath ? (
                                   <img
                                     src={`${TMDB_IMAGE_BASE}${film.posterPath}`}
@@ -158,7 +158,7 @@ export function ArchiveList({ themes }: Props) {
                                     loading="lazy"
                                   />
                                 ) : (
-                                  <div className="w-full h-full bg-neutral-200" />
+                                  <div className="w-full h-full bg-neutral-800" />
                                 )}
                               </div>
                             </div>

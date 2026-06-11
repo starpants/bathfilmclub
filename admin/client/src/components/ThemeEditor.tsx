@@ -29,6 +29,7 @@ export function ThemeEditor({ theme, onSaved }: Props) {
   const [month, setMonth] = useState(theme?.month ?? '');
   const [meetingDate, setMeetingDate] = useState(theme?.meeting?.date ?? '');
   const [meetingTime, setMeetingTime] = useState(theme?.meeting?.time ?? '19:30');
+  const [meetingVenue, setMeetingVenue] = useState(theme?.meeting?.venue ?? '');
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
 
@@ -44,7 +45,7 @@ export function ThemeEditor({ theme, onSaved }: Props) {
         title: title.trim(),
         description: description.trim() || undefined,
         month: month.trim(),
-        meeting: meetingDate ? { date: meetingDate, time: meetingTime } : undefined,
+        meeting: meetingDate ? { date: meetingDate, time: meetingTime, venue: meetingVenue.trim() || undefined } : undefined,
         films: theme?.films ?? [],
       });
       onSaved(updated);
@@ -62,6 +63,7 @@ export function ThemeEditor({ theme, onSaved }: Props) {
       {field('Description (optional)', <textarea style={{ ...inputStyle, minHeight: 80, resize: 'vertical' }} value={description} onChange={(e) => setDescription(e.target.value)} />)}
       {field('Meeting Date', <input type="date" style={inputStyle} value={meetingDate} onChange={(e) => setMeetingDate(e.target.value)} />)}
       {field('Meeting Time', <input type="time" style={inputStyle} value={meetingTime} onChange={(e) => setMeetingTime(e.target.value)} />)}
+      {field('Meeting Venue (optional)', <input style={inputStyle} value={meetingVenue} onChange={(e) => setMeetingVenue(e.target.value)} placeholder="e.g. The Raven Pub, 7 Queen St, Bath BA1 1HE" />)}
       {error && <p style={{ color: '#B11226', fontSize: '0.85rem', marginBottom: '1rem' }}>{error}</p>}
       <button
         onClick={save}

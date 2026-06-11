@@ -1,0 +1,8 @@
+---
+interface Props {
+  title: string;
+  class?: string;
+}
+const { title, class: className } = Astro.props;
+---
+<h2 class:list={['section-label text-base', className]}>{title}</h2>

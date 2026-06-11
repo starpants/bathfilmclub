@@ -6,7 +6,7 @@
 
 @layer base {
   html {
-    @apply font-body text-brand-black bg-brand-white;
+    @apply font-body text-white bg-brand-black;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -18,7 +18,7 @@
 @layer components {
   /* Square motif from logo — used as section markers */
   .section-label {
-    @apply flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-widest text-neutral-600;
+    @apply flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-widest text-neutral-400;
   }
   .section-label::before {
     content: '■';
