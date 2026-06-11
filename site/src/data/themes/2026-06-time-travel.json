@@ -1,0 +1,153 @@
+{
+  "slug": "2026-06-time-travel",
+  "title": "Black And White",
+  "description": "Main body of film is in black and white, either entirety or majority",
+  "month": "2026-06",
+  "meeting": {
+    "date": "2026-07-08",
+    "time": "19:15",
+    "venue": "The Raven Pub, 7 Queen St, Bath BA1 1HE"
+  },
+  "films": [
+    {
+      "film": {
+        "tmdbId": 588087,
+        "title": "A Girl Walks Home Alone at Night",
+        "year": 2011,
+        "runtime": 8,
+        "genres": [
+          "Horror"
+        ],
+        "synopsis": "A girl walks home alone at night and a man follows her with insidious intentions, but when he gets to her apartment, she turns the tables in the most surprising way…with her fangs.",
+        "director": "Ana Lily Amirpour",
+        "producers": [],
+        "cast": [
+          "Nazanin Boniadi",
+          "Marshall Manesh"
+        ],
+        "posterPath": "/Afa0eZ6XdwYLGM2eIANtnGMy03q.jpg",
+        "backdropPath": "/a5sWhjuumhxYiRDf0MU4wDyzve2.jpg",
+        "rating": 6.4
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 15,
+        "title": "Citizen Kane",
+        "year": 1941,
+        "runtime": 119,
+        "genres": [
+          "Mystery",
+          "Drama"
+        ],
+        "synopsis": "Newspaper magnate Charles Foster Kane is taken from his mother as a boy and made the ward of a rich industrialist. As a result, every well-meaning, tyrannical or self-destructive move he makes for the rest of his life appears in some way to be a reaction to that deeply wounding event.",
+        "director": "Orson Welles",
+        "producers": [
+          "Orson Welles"
+        ],
+        "cast": [
+          "Orson Welles",
+          "Joseph Cotten",
+          "Dorothy Comingore",
+          "Ray Collins",
+          "George Coulouris"
+        ],
+        "posterPath": "/sav0jxhqiH0bPr2vZFU0Kjt2nZL.jpg",
+        "backdropPath": "/ruF3Lmd4A8MHbnEBE6lxPMbsHGL.jpg",
+        "rating": 8,
+        "trailerKey": "fAcLNMkzfTE"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 935,
+        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        "year": 1964,
+        "runtime": 95,
+        "genres": [
+          "Comedy",
+          "War"
+        ],
+        "synopsis": "After the insane General Jack D. Ripper initiates a nuclear strike on the Soviet Union, a war room full of politicians, generals and a Russian diplomat all frantically try to stop it.",
+        "director": "Stanley Kubrick",
+        "producers": [
+          "Stanley Kubrick",
+          "Victor Lyndon"
+        ],
+        "cast": [
+          "Peter Sellers",
+          "George C. Scott",
+          "Sterling Hayden",
+          "Keenan Wynn",
+          "Slim Pickens"
+        ],
+        "posterPath": "/6x7MzQ6BOMlRzam1StcmPO9v61g.jpg",
+        "backdropPath": "/7i0L2ee4Iy0aXV6vR5u1ZmblOrx.jpg",
+        "rating": 8.1,
+        "trailerKey": "XjLsIWZdWmc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 14320,
+        "title": "Great Expectations",
+        "year": 1946,
+        "runtime": 118,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "In this Dickens adaptation, orphan Pip discovers through lawyer Mr. Jaggers that a mysterious benefactor wishes to ensure that he becomes a gentleman. Reunited with his childhood patron, Miss Havisham, and his first love, the beautiful but emotionally cold Estella, he discovers that the elderly spinster has gone mad from having been left at the altar as a young woman, and has made her charge into a warped, unfeeling heartbreaker.",
+        "director": "David Lean",
+        "producers": [
+          "Ronald Neame"
+        ],
+        "cast": [
+          "John Mills",
+          "Valerie Hobson",
+          "Tony Wager",
+          "Jean Simmons",
+          "Bernard Miles"
+        ],
+        "posterPath": "/ynaFuVvW2jaG06pMV67dOhzMYfJ.jpg",
+        "backdropPath": "/5SdVucbeGF5xAHT496uPRPZVJD6.jpg",
+        "rating": 7.3,
+        "trailerKey": "ueGOsCoG5b8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 16284,
+        "title": "Ice Cold in Alex",
+        "year": 1958,
+        "runtime": 125,
+        "genres": [
+          "War",
+          "Adventure",
+          "Drama"
+        ],
+        "synopsis": "A group of army personnel and nurses attempt a dangerous and arduous trek across the deserts of North Africa during the second world war. The leader of the team dreams of his ice cold beer when he reaches Alexandria.",
+        "director": "J. Lee Thompson",
+        "producers": [
+          "W.A. Whittaker"
+        ],
+        "cast": [
+          "John Mills",
+          "Sylvia Syms",
+          "Anthony Quayle",
+          "Harry Andrews",
+          "Diane Clare"
+        ],
+        "posterPath": "/lkqTxSL9JwyyXDu5yeOoj5mzsVc.jpg",
+        "backdropPath": "/1fvSrGEt1UsxENnZ3wHYKuFT87n.jpg",
+        "rating": 7.3,
+        "trailerKey": "qaJ5UBi4z2c"
+      },
+      "status": "nominated"
+    }
+  ]
+}

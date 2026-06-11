@@ -1,0 +1,747 @@
+{
+  "slug": "2026-05-space-travel",
+  "title": "Space Travel",
+  "description": "Films set predominately in space",
+  "month": "2026-05",
+  "meeting": {
+    "date": "2026-06-25",
+    "time": "19:30",
+    "venue": "The Raven Pub, 7 Queen St, Bath BA1 1HE"
+  },
+  "films": [
+    {
+      "film": {
+        "tmdbId": 62,
+        "title": "2001: A Space Odyssey",
+        "year": 1968,
+        "runtime": 149,
+        "genres": [
+          "Science Fiction",
+          "Mystery",
+          "Adventure"
+        ],
+        "synopsis": "Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world's most advanced super computer.",
+        "director": "Stanley Kubrick",
+        "producers": [
+          "Victor Lyndon",
+          "Stanley Kubrick"
+        ],
+        "cast": [
+          "Keir Dullea",
+          "Gary Lockwood",
+          "William Sylvester",
+          "Douglas Rain",
+          "Daniel Richter"
+        ],
+        "posterPath": "/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+        "backdropPath": "/w5IDXtifKntw0ajv2co7jFlTQDM.jpg",
+        "rating": 8,
+        "trailerKey": "kR2r-A9H3Kg"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 348,
+        "title": "Alien",
+        "year": 1979,
+        "runtime": 117,
+        "genres": [
+          "Horror",
+          "Science Fiction"
+        ],
+        "synopsis": "During its return to the earth, commercial spaceship Nostromo intercepts a distress signal from a distant planet. When a three-member team of the crew discovers a chamber containing thousands of eggs on the planet, a creature inside one of the eggs attacks an explorer. The entire crew is unaware of the impending nightmare set to descend upon them when the alien parasite planted inside its unfortunate host is birthed.",
+        "director": "Ridley Scott",
+        "producers": [
+          "Gordon Carroll",
+          "David Giler",
+          "Walter Hill"
+        ],
+        "cast": [
+          "Tom Skerritt",
+          "Sigourney Weaver",
+          "Veronica Cartwright",
+          "Harry Dean Stanton",
+          "John Hurt"
+        ],
+        "posterPath": "/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
+        "backdropPath": "/AmR3JG1VQVxU8TfAvljUhfSFUOx.jpg",
+        "rating": 8.2,
+        "trailerKey": "bM01Al2SWx4"
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 496743,
+        "title": "Aniara",
+        "year": 2019,
+        "runtime": 106,
+        "genres": [
+          "Science Fiction",
+          "Drama"
+        ],
+        "synopsis": "A ship carrying settlers to a new home on Mars after Earth is rendered uninhabitable is knocked off-course, causing the passengers to consider their place in the universe.",
+        "director": "Pella Kågerman",
+        "producers": [
+          "Annika Rogell"
+        ],
+        "cast": [
+          "Emelie Garbers",
+          "Arvin Kananian",
+          "Bianca Cruzeiro",
+          "Anneli Martini",
+          "Jennie Silfverhjelm"
+        ],
+        "posterPath": "/pEpEJe8NTmwWL0hwYkZguTzEqzt.jpg",
+        "backdropPath": "/mz8xBEIl1l18e2ToNlV1Tt5HVmJ.jpg",
+        "rating": 6.1,
+        "trailerKey": "3MIlE9R00ik"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 664996,
+        "title": "Apollo 10½: A Space Age Childhood",
+        "year": 2022,
+        "runtime": 99,
+        "genres": [
+          "Animation",
+          "Comedy",
+          "Drama"
+        ],
+        "synopsis": "A man narrates stories of his life as a 10-year-old boy in 1969 Houston, weaving tales of nostalgia with a fantastical account of a journey to the moon.",
+        "director": "Richard Linklater",
+        "producers": [
+          "Richard Linklater",
+          "Mike Blizzard",
+          "Tommy Pallotta"
+        ],
+        "cast": [
+          "Milo Coy",
+          "Jack Black",
+          "Lee Eddy",
+          "Bill Wise",
+          "Natalie L'Amoreaux"
+        ],
+        "posterPath": "/ms3qa9LH9kosaGCSe22NJ7fDPv9.jpg",
+        "backdropPath": "/3yAoVcQR1i7Zgm7yNxy58i3RzCi.jpg",
+        "rating": 7,
+        "trailerKey": "Dzuz5s_Qk-A"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 568,
+        "title": "Apollo 13",
+        "year": 1995,
+        "runtime": 140,
+        "genres": [
+          "Drama",
+          "History"
+        ],
+        "synopsis": "The true story of technical troubles that scuttle the Apollo 13 lunar mission in 1970, risking the lives of astronaut Jim Lovell and his crew, with the failed journey turning into a thrilling saga of heroism. Drifting more than 200,000 miles from Earth, the astronauts work furiously with the ground crew to avert tragedy.",
+        "director": "Ron Howard",
+        "producers": [
+          "Brian Grazer"
+        ],
+        "cast": [
+          "Tom Hanks",
+          "Bill Paxton",
+          "Kevin Bacon",
+          "Gary Sinise",
+          "Ed Harris"
+        ],
+        "posterPath": "/tVeKscCm2fY1xDXZk8PgnZ87h9S.jpg",
+        "backdropPath": "/n0FDJI9c0uWiZwm8wgXVjaMBn96.jpg",
+        "rating": 7.5,
+        "trailerKey": "B1KJ9XeZuxA"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11935,
+        "title": "Capricorn One",
+        "year": 1977,
+        "runtime": 123,
+        "genres": [
+          "Drama",
+          "Action",
+          "Thriller",
+          "Science Fiction"
+        ],
+        "synopsis": "In order to protect the reputation of the American space program, a team of NASA administrators turn the first Mars mission into a phony Mars landing. Under threat of harm to their families the astronauts play their part in the deception on a staged set in a deserted military base. But once the real ship returns to Earth and burns up on re-entry, the astronauts become liabilities. Now, with the help of a crusading reporter, they must battle a sinister conspiracy that will stop at nothing to keep the truth hidden.",
+        "director": "Peter Hyams",
+        "producers": [
+          "Paul Lazarus III"
+        ],
+        "cast": [
+          "Elliott Gould",
+          "James Brolin",
+          "Brenda Vaccaro",
+          "Sam Waterston",
+          "O. J. Simpson"
+        ],
+        "posterPath": "/bxsCARg2rxQ2PzFW5ZsADLT9e9c.jpg",
+        "backdropPath": "/d4qAHbs8wLBnRatYCPvtp3F48bO.jpg",
+        "rating": 6.8,
+        "trailerKey": "UwmbGtmpQyM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 686,
+        "title": "Contact",
+        "year": 1997,
+        "runtime": 150,
+        "genres": [
+          "Drama",
+          "Science Fiction",
+          "Mystery"
+        ],
+        "synopsis": "A radio astronomer receives the first extraterrestrial radio signal ever picked up on Earth. As the world powers scramble to decipher the message and decide upon a course of action, she must make some difficult decisions between her beliefs, the truth, and reality.",
+        "director": "Robert Zemeckis",
+        "producers": [
+          "Steve Starkey",
+          "Robert Zemeckis"
+        ],
+        "cast": [
+          "Jodie Foster",
+          "Matthew McConaughey",
+          "James Woods",
+          "John Hurt",
+          "Tom Skerritt"
+        ],
+        "posterPath": "/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg",
+        "backdropPath": "/yFkUPqBuUnbhYbQL8VFpTrAT9za.jpg",
+        "rating": 7.4,
+        "trailerKey": "s3hcz8OCd-Q"
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 1410,
+        "title": "Dark Star",
+        "year": 1974,
+        "runtime": 83,
+        "genres": [
+          "Comedy",
+          "Science Fiction"
+        ],
+        "synopsis": "A group of scientists are sent on a mission to destroy unstable planets. Twenty years into their mission, they have to battle their alien mascot as well as a \"sensitive\" and intelligent bombing device that starts to question the meaning of its existence.",
+        "director": "John Carpenter",
+        "producers": [
+          "John Carpenter"
+        ],
+        "cast": [
+          "Brian Narelle",
+          "Cal Kuniholm",
+          "Dan O'Bannon",
+          "Dre Pahich",
+          "Adam Beckenbaugh"
+        ],
+        "posterPath": "/aiqLBiH0IWrog2Q78dZTT8Ad9Sp.jpg",
+        "backdropPath": "/5I6yjyIKzAeQd5C1ynJnfWCK22u.jpg",
+        "rating": 6,
+        "trailerKey": "lwISbJfRNz0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 8413,
+        "title": "Event Horizon",
+        "year": 1997,
+        "runtime": 96,
+        "genres": [
+          "Horror",
+          "Science Fiction",
+          "Mystery"
+        ],
+        "synopsis": "In 2047, a group of astronauts are sent to investigate and salvage the starship Event Horizon which disappeared mysteriously seven years before on its maiden voyage. However, it soon becomes evident that something sinister resides in its corridors.",
+        "director": "Paul W. S. Anderson",
+        "producers": [
+          "Lawrence Gordon",
+          "Jeremy Bolt",
+          "Lloyd Levin"
+        ],
+        "cast": [
+          "Laurence Fishburne",
+          "Sam Neill",
+          "Kathleen Quinlan",
+          "Joely Richardson",
+          "Richard T. Jones"
+        ],
+        "posterPath": "/qfluaDXv0cIdLwgQWzNB2piHL2q.jpg",
+        "backdropPath": "/nByMcYBhChTs2TF9fEFcTSsjme5.jpg",
+        "rating": 6.6,
+        "trailerKey": "akirNvE4EKQ"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 369972,
+        "title": "First Man",
+        "year": 2018,
+        "runtime": 141,
+        "genres": [
+          "History",
+          "Drama"
+        ],
+        "synopsis": "A look at the life of the astronaut, Neil Armstrong, and the legendary space mission that led him to become the first man to walk on the Moon on July 20, 1969.",
+        "director": "Damien Chazelle",
+        "producers": [
+          "Isaac Klausner",
+          "Marty Bowen",
+          "Damien Chazelle"
+        ],
+        "cast": [
+          "Ryan Gosling",
+          "Claire Foy",
+          "Jason Clarke",
+          "Kyle Chandler",
+          "Corey Stoll"
+        ],
+        "posterPath": "/i91mfvFcPPlaegcbOyjGgiWfZzh.jpg",
+        "backdropPath": "/jrudoaXcoLyHRPdolyOGemXgPEs.jpg",
+        "rating": 7,
+        "trailerKey": "TVowQ4LgwLk"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 49047,
+        "title": "Gravity",
+        "year": 2013,
+        "runtime": 91,
+        "genres": [
+          "Science Fiction",
+          "Thriller",
+          "Drama"
+        ],
+        "synopsis": "Dr Ryan Stone, an engineer on her first space mission, and Matt Kowalski, an astronaut on his final expedition, have to survive in space after they are hit by debris while spacewalking.",
+        "director": "Alfonso Cuarón",
+        "producers": [
+          "Alfonso Cuarón",
+          "David Heyman"
+        ],
+        "cast": [
+          "Sandra Bullock",
+          "George Clooney",
+          "Ed Harris",
+          "Orto Ignatiussen",
+          "Phaldut Sharma"
+        ],
+        "posterPath": "/kZ2nZw8D681aphje8NJi8EfbL1U.jpg",
+        "backdropPath": "/a2n6bKD7qhCPCAEALgsAhWOAQcc.jpg",
+        "rating": 7.2,
+        "trailerKey": "OiTiKOy59o4"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 157336,
+        "title": "Interstellar",
+        "year": 2014,
+        "runtime": 169,
+        "genres": [
+          "Adventure",
+          "Drama",
+          "Science Fiction"
+        ],
+        "synopsis": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
+        "director": "Christopher Nolan",
+        "producers": [
+          "Christopher Nolan",
+          "Lynda Obst",
+          "Emma Thomas"
+        ],
+        "cast": [
+          "Matthew McConaughey",
+          "Anne Hathaway",
+          "Michael Caine",
+          "Jessica Chastain",
+          "Casey Affleck"
+        ],
+        "posterPath": "/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
+        "backdropPath": "/2ssWTSVklAEc98frZUQhgtGHx7s.jpg",
+        "rating": 8.5,
+        "trailerKey": "LY19rHKAaAg"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 17431,
+        "title": "Moon",
+        "year": 2009,
+        "runtime": 97,
+        "genres": [
+          "Science Fiction",
+          "Drama"
+        ],
+        "synopsis": "With only three weeks left in his three-year contract, Sam Bell is eager to return to Earth. Stationed alone at a Moon-based facility with his computer assistant GERTY, an unexpected accident sets off a series of unsettling events that shake his isolation.",
+        "director": "Duncan Jones",
+        "producers": [
+          "Stuart Fenegan",
+          "Trudie Styler",
+          "Nicky Bentham"
+        ],
+        "cast": [
+          "Sam Rockwell",
+          "Kevin Spacey",
+          "Dominique McElligott",
+          "Rosie Shaw",
+          "Adrienne Shaw"
+        ],
+        "posterPath": "/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg",
+        "backdropPath": "/mvUAo9ACgmLpS4Ofc2IwD4n7WCt.jpg",
+        "rating": 7.6,
+        "trailerKey": "N0tKKsgip-Y"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 27072,
+        "title": "On the Silver Globe",
+        "year": 1989,
+        "runtime": 165,
+        "genres": [
+          "Science Fiction",
+          "Drama"
+        ],
+        "synopsis": "A small group of cosmic explorers, including a woman, leaves Earth to start a new civilization. They do not realize that within themselves they carry the end of their own dream. They die one by one, while their children revert to a primitive native culture, creating new myths and a new god.",
+        "director": "Andrzej Żuławski",
+        "producers": [],
+        "cast": [
+          "Andrzej Seweryn",
+          "Michał Bajor",
+          "Jerzy Trela",
+          "Grażyna Dyląg",
+          "Maria Pakulnis"
+        ],
+        "posterPath": "/4zzam82e6rCY2Ktm0fyRoseHhkh.jpg",
+        "backdropPath": "/5nZ0ax5n5k9MogcGX3IxVjlCMRt.jpg",
+        "rating": 7.7,
+        "trailerKey": "CvxZfP7wHEY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 10540,
+        "title": "Outland",
+        "year": 1981,
+        "runtime": 110,
+        "genres": [
+          "Science Fiction",
+          "Action",
+          "Thriller",
+          "Crime",
+          "Western"
+        ],
+        "synopsis": "On the sunless moon Io, Marshall William T. O’Niel goes toe-to-toe with the corrupt manager of a mining colony and his gang of roughnecks while investigating a rash of worker suicides.",
+        "director": "Peter Hyams",
+        "producers": [
+          "Richard A. Roth"
+        ],
+        "cast": [
+          "Sean Connery",
+          "Peter Boyle",
+          "Frances Sternhagen",
+          "James B. Sikking",
+          "Kika Markham"
+        ],
+        "posterPath": "/qmjlDkV8CfCboa8WV06ytZaThqx.jpg",
+        "backdropPath": "/6m1ol0YFN35kXQ2KNz5LDWwaD56.jpg",
+        "rating": 6.4,
+        "trailerKey": "Z7OzKVHzfiI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 687163,
+        "title": "Project Hail Mary",
+        "year": 2026,
+        "runtime": 157,
+        "genres": [
+          "Science Fiction",
+          "Adventure"
+        ],
+        "synopsis": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+        "director": "Phil Lord",
+        "producers": [
+          "Rachel O'Connor",
+          "Ryan Gosling",
+          "Amy Pascal"
+        ],
+        "cast": [
+          "Ryan Gosling",
+          "Sandra Hüller",
+          "James Ortiz",
+          "Lionel Boyce",
+          "Milana Vayntrub"
+        ],
+        "posterPath": "/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+        "backdropPath": "/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
+        "rating": 8.7,
+        "trailerKey": "NKYea63tQmI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 20043,
+        "title": "Royal Space Force - The Wings of Honneamise",
+        "year": 1987,
+        "runtime": 121,
+        "genres": [
+          "Animation",
+          "Science Fiction"
+        ],
+        "synopsis": "On a future Earth, war between the Kingdom of Honneamise and its rival, The Republic, is inevitable. As evolving technology creates new ways to wage war, a small group seeks to propel mankind into space in their world’s first spaceflight program. For astronaut candidate Shirotsugh Lhadatt, it’s a personal odyssey as he grows from an aimless young man into a leader willing to put everything on the line in order to move the human race forward and away from the brink of Armageddon.",
+        "director": "Hiroyuki Yamaga",
+        "producers": [
+          "Hiroaki Inoue",
+          "Hirohiko Sueyoshi"
+        ],
+        "cast": [
+          "Leo Morimoto",
+          "Mitsuki Yayoi",
+          "Aya Murata",
+          "Kazuyuki Sogabe",
+          "Masato Hirano"
+        ],
+        "posterPath": "/h5naABij9ghj6CLcpBYBkxMGYGX.jpg",
+        "backdropPath": "/sCPRp4j5YzLTCIG72PRZM8LLgHh.jpg",
+        "rating": 6.9,
+        "trailerKey": "IMSGLZ-1Rmo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 811,
+        "title": "Silent Running",
+        "year": 1972,
+        "runtime": 89,
+        "genres": [
+          "Adventure",
+          "Science Fiction",
+          "Drama"
+        ],
+        "synopsis": "After the entire flora goes extinct, ecologist Lowell maintains a greenhouse aboard a space station for the future with his android companions. However, he rebels after being ordered to destroy the greenhouse in favor of carrying cargo, a decision that puts him at odds with everyone but his mechanical companions.",
+        "director": "Douglas Trumbull",
+        "producers": [
+          "Marty Hornstein",
+          "Michael Gruskoff",
+          "Douglas Trumbull"
+        ],
+        "cast": [
+          "Bruce Dern",
+          "Cliff Potts",
+          "Ron Rifkin",
+          "Jesse Vint",
+          "Mark Persons"
+        ],
+        "posterPath": "/ahasZ5HILZHtlrl6cbXgpfk0y8H.jpg",
+        "backdropPath": "/5QTwfS9vcr22Nl7PCcUro7dEMFq.jpg",
+        "rating": 6.4,
+        "trailerKey": "X1C3YB4dJnU"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 593,
+        "title": "Solaris",
+        "year": 1972,
+        "runtime": 167,
+        "genres": [
+          "Drama",
+          "Science Fiction",
+          "Mystery"
+        ],
+        "synopsis": "A psychologist is sent to a space station orbiting a planet called Solaris to investigate the death of a doctor and the mental problems of cosmonauts on the station. He soon discovers that the water on the planet is a type of brain which brings out repressed memories and obsessions.",
+        "director": "Andrei Tarkovsky",
+        "producers": [],
+        "cast": [
+          "Natalya Bondarchuk",
+          "Donatas Banionis",
+          "Jüri Järvet",
+          "Vladislav Dvorzhetsky",
+          "Mykola Hrynko"
+        ],
+        "posterPath": "/pgqj7QoBPWFLLKtLEpPmFYFRMgB.jpg",
+        "backdropPath": "/jZv1u7uzpOE5JOc2MmrvPUZWoyb.jpg",
+        "rating": 7.8,
+        "trailerKey": "jfzGX6266Vo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 563,
+        "title": "Starship Troopers",
+        "year": 1997,
+        "runtime": 129,
+        "genres": [
+          "Adventure",
+          "Action",
+          "Thriller",
+          "Science Fiction"
+        ],
+        "synopsis": "Set in the future, the story follows a young soldier named Johnny Rico and his exploits in the Mobile Infantry. Rico's military career progresses from recruit to non-commissioned officer and finally to officer against the backdrop of an interstellar war between mankind and an arachnoid species known as \"the Bugs.\"",
+        "director": "Paul Verhoeven",
+        "producers": [
+          "Jon Davison",
+          "Alan Marshall"
+        ],
+        "cast": [
+          "Casper Van Dien",
+          "Dina Meyer",
+          "Denise Richards",
+          "Jake Busey",
+          "Neil Patrick Harris"
+        ],
+        "posterPath": "/cxCmv23O7p3hyHwqoktHYkZcGsY.jpg",
+        "backdropPath": "/7iEfnj3rfyunky6BzvnlwqfoEF0.jpg",
+        "rating": 7.1,
+        "trailerKey": "zPYuV_jGk7M"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 1272,
+        "title": "Sunshine",
+        "year": 2007,
+        "runtime": 108,
+        "genres": [
+          "Science Fiction",
+          "Thriller"
+        ],
+        "synopsis": "Fifty years into the future, the sun is dying, and Earth is threatened by arctic temperatures. A team of astronauts is sent to revive the Sun — but the mission fails. Seven years later, a new team is sent to finish the mission as mankind’s last hope.",
+        "director": "Danny Boyle",
+        "producers": [
+          "Andrew Macdonald"
+        ],
+        "cast": [
+          "Cillian Murphy",
+          "Rose Byrne",
+          "Chris Evans",
+          "Michelle Yeoh",
+          "Cliff Curtis"
+        ],
+        "posterPath": "/oKGGeJ8qvm0UmClz43VJ31fzPP7.jpg",
+        "backdropPath": "/5AIAnucJKZ3sHpm7r1ykFVIoUHK.jpg",
+        "rating": 7,
+        "trailerKey": "Ig1BU6PUt0A"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 828,
+        "title": "The Day the Earth Stood Still",
+        "year": 1951,
+        "runtime": 92,
+        "genres": [
+          "Science Fiction",
+          "Thriller",
+          "Drama"
+        ],
+        "synopsis": "An alien and a robot land on Earth after World War II and tell mankind to be peaceful or face destruction.",
+        "director": "Robert Wise",
+        "producers": [
+          "Julian Blaustein"
+        ],
+        "cast": [
+          "Michael Rennie",
+          "Patricia Neal",
+          "Billy Gray",
+          "Sam Jaffe",
+          "Hugh Marlowe"
+        ],
+        "posterPath": "/eslDNzf0LF1m9GsgUXlmyfTcC6Y.jpg",
+        "backdropPath": "/qwZRvb0DJ5IwDoRuKDRCBuHWzkw.jpg",
+        "rating": 7.5,
+        "trailerKey": "sU_wBld7FPo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 286217,
+        "title": "The Martian",
+        "year": 2015,
+        "runtime": 141,
+        "genres": [
+          "Science Fiction",
+          "Drama",
+          "Adventure"
+        ],
+        "synopsis": "During a manned mission to Mars, Astronaut Mark Watney is presumed dead after a fierce storm and left behind by his crew. But Watney has survived and finds himself stranded and alone on the hostile planet. With only meager supplies, he must draw upon his ingenuity, wit and spirit to subsist and find a way to signal to Earth that he is alive.",
+        "director": "Ridley Scott",
+        "producers": [
+          "Aditya Sood",
+          "Simon Kinberg",
+          "Ridley Scott"
+        ],
+        "cast": [
+          "Matt Damon",
+          "Jessica Chastain",
+          "Kristen Wiig",
+          "Jeff Daniels",
+          "Michael Peña"
+        ],
+        "posterPath": "/fASz8A0yFE3QB6LgGoOfwvFSseV.jpg",
+        "backdropPath": "/lzMS0CI3FLQYC5EgJoWeIaEt0lm.jpg",
+        "rating": 7.7,
+        "trailerKey": "ej3ioOneTy8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 10681,
+        "title": "WALL·E",
+        "year": 2008,
+        "runtime": 98,
+        "genres": [
+          "Animation",
+          "Family",
+          "Science Fiction"
+        ],
+        "synopsis": "After hundreds of years doing what he was built for, WALL•E— a robot designed to clean up the earth—discovers a new purpose in life when he meets a sleek search robot named EVE. EVE comes to realize that WALL•E has inadvertently stumbled upon the key to the planet's future, and races back to space to report to the humans. Meanwhile, WALL•E chases EVE across the galaxy and sets into motion one of the most imaginative adventures ever brought to the big screen.",
+        "director": "Andrew Stanton",
+        "producers": [
+          "Jim Morris",
+          "Lindsey Collins"
+        ],
+        "cast": [
+          "Ben Burtt",
+          "Elissa Knight",
+          "Jeff Garlin",
+          "Fred Willard",
+          "John Ratzenberger"
+        ],
+        "posterPath": "/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg",
+        "backdropPath": "/nYs4ZwnJBK4AgljhvzwNz7fpr3E.jpg",
+        "rating": 8.1,
+        "trailerKey": "Tbr_L9Gap_M"
+      },
+      "status": "nominated"
+    }
+  ]
+}

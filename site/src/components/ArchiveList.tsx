@@ -95,7 +95,7 @@ export function ArchiveList({ themes }: Props) {
                   )}
                   <p className="font-body text-sm text-neutral-400">
                     Theme:{' '}
-                    <a href={`/theme/${r.slug}`} className="underline hover:text-brand-red">
+                    <a href={`/theme/${r.slug}`} className="text-white interactive-item">
                       {r.themeTitle}
                     </a>
                   </p>
@@ -121,7 +121,7 @@ export function ArchiveList({ themes }: Props) {
             return (
               <li key={theme.slug}>
                 <button
-                  className="w-full flex items-center justify-between py-5 text-left group"
+                  className="w-full flex items-center justify-between py-5 text-left"
                   onClick={() => toggle(theme.slug)}
                   aria-expanded={isOpen}
                 >
@@ -129,7 +129,7 @@ export function ArchiveList({ themes }: Props) {
                     <span className="font-body text-sm text-neutral-400 w-28 shrink-0">
                       {formatMonth(theme.month)}
                     </span>
-                    <span className="font-heading font-semibold text-lg group-hover:text-brand-red transition-colors">
+                    <span className="font-heading font-semibold text-lg text-white interactive-item">
                       {theme.title}
                     </span>
                   </span>
@@ -168,7 +168,7 @@ export function ArchiveList({ themes }: Props) {
                     )}
                     <a
                       href={`/theme/${theme.slug}`}
-                      className="inline-block font-heading font-semibold text-sm text-brand-red hover:underline"
+                      className="inline-block font-heading font-semibold text-sm text-white interactive-item"
                     >
                       View Theme →
                     </a>

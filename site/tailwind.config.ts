@@ -9,6 +9,8 @@ export default {
           red: '#860909',
           black: '#000000',
           white: '#FFFFFF',
+          green: '#22C55E',
+          mustard: '#EABB16',
         },
         neutral: {
           50: '#FAFAFA',

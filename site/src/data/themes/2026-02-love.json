@@ -1,0 +1,877 @@
+{
+  "slug": "2026-02-love",
+  "title": "Love",
+  "month": "2026-02",
+  "meeting": {
+    "date": "2026-02-26",
+    "time": "19:15"
+  },
+  "films": [
+    {
+      "film": {
+        "tmdbId": 453,
+        "title": "A Beautiful Mind",
+        "year": 2001,
+        "runtime": 135,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "From the heights of notoriety to the depths of depravity, John Forbes Nash Jr. experiences it all. As a brilliant but socially awkward mathematician, he made a groundbreaking discovery early in his career and stands on the brink of international acclaim. But as the handsome and arrogant Nash accepts secret work in cryptography, he becomes entangled in a mysterious conspiracy. His life takes a nightmarish turn and he soon finds himself on a painful and harrowing journey of self-discovery.",
+        "director": "Ron Howard",
+        "producers": [
+          "Brian Grazer",
+          "Ron Howard"
+        ],
+        "cast": [
+          "Russell Crowe",
+          "Jennifer Connelly",
+          "Ed Harris",
+          "Paul Bettany",
+          "Christopher Plummer"
+        ],
+        "posterPath": "/rEIg5yJdNOt9fmX4P8gU9LeNoTQ.jpg",
+        "backdropPath": "/hCJFWTPghXCwwSpvPpAoIB8318Q.jpg",
+        "rating": 7.9,
+        "trailerKey": "yC2VpkVMtXY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 80,
+        "title": "Before Sunset",
+        "year": 2004,
+        "runtime": 80,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "Nine years later, Jesse travels across Europe giving readings from a book he wrote about the night he spent in Vienna with Celine. After his reading in Paris, Celine finds him, and they spend part of the day together before Jesse has to again leave for a flight. They are both in relationships now, and Jesse has a son, but as their strong feelings for each other start to return, both confess a longing for more.",
+        "director": "Richard Linklater",
+        "producers": [
+          "Anne Walker-McBay",
+          "Richard Linklater"
+        ],
+        "cast": [
+          "Ethan Hawke",
+          "Julie Delpy",
+          "Vernon Dobtcheff",
+          "Louise Lemoine Torrès",
+          "Rodolphe Pauly"
+        ],
+        "posterPath": "/4sW5XH9ZfYXpvFzev00S1IGAEbg.jpg",
+        "backdropPath": "/tcZi0LQc5iu2u6i5aOWyj9NBBvl.jpg",
+        "rating": 7.8,
+        "trailerKey": "jx0UWbMMZOQ"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 477044,
+        "title": "Bergman Island",
+        "year": 2021,
+        "runtime": 113,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "An English-German filmmaking couple retreat to Fårö for the summer to each write screenplays for their upcoming films in an act of pilgrimage to the place that inspired Ingmar Bergman. As the summer and their screenplays advance, the lines between reality and fiction start to blur against the backdrop of the Island's wild landscape.",
+        "director": "Mia Hansen-Løve",
+        "producers": [
+          "Charles Gillibert",
+          "Rodrigo Teixeira"
+        ],
+        "cast": [
+          "Vicky Krieps",
+          "Tim Roth",
+          "Mia Wasikowska",
+          "Anders Danielsen Lie",
+          "Hampus Nordenson"
+        ],
+        "posterPath": "/q8bQfC7SbaTDVKywhCiNL3ZVSyy.jpg",
+        "backdropPath": "/e1X1veoQ5Hs45KoOjr80QMwVSgg.jpg",
+        "rating": 6.3,
+        "trailerKey": "1260sBhkXW0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 145,
+        "title": "Breaking the Waves",
+        "year": 1996,
+        "runtime": 159,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "In a small, conservative Scottish village, an oilman is paralyzed in an accident. His wife, who prayed for his return, feels guilty; even more, when he urges her to have sex with another.",
+        "director": "Lars von Trier",
+        "producers": [
+          "Peter Aalbæk Jensen",
+          "Vibeke Windeløv"
+        ],
+        "cast": [
+          "Emily Watson",
+          "Stellan Skarsgård",
+          "Katrin Cartlidge",
+          "Jean-Marc Barr",
+          "Adrian Rawlins"
+        ],
+        "posterPath": "/dQWMcdHXUOSHtr7ypOCa5T79JMS.jpg",
+        "backdropPath": "/nY2faCdUVHzuH6FmDI6QsAURE68.jpg",
+        "rating": 7.5,
+        "trailerKey": "dPmWixRLFPQ"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 142,
+        "title": "Brokeback Mountain",
+        "year": 2005,
+        "runtime": 134,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "In 1960s Wyoming, two men develop a strong emotional and sexual relationship that endures as a lifelong connection complicating their lives as they get married and start families of their own.",
+        "director": "Ang Lee",
+        "producers": [
+          "Diana Ossana",
+          "James Schamus"
+        ],
+        "cast": [
+          "Heath Ledger",
+          "Jake Gyllenhaal",
+          "Michelle Williams",
+          "Anne Hathaway",
+          "Randy Quaid"
+        ],
+        "posterPath": "/aByfQOQBNa4CMFwIgq3QrqY2ZHh.jpg",
+        "backdropPath": "/vXzqV2RtJlT9WhNEM4NYWCEC6ZI.jpg",
+        "rating": 7.8,
+        "trailerKey": "xZvu-SczR1Y"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11104,
+        "title": "Chungking Express",
+        "year": 1994,
+        "runtime": 103,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "synopsis": "Two melancholic Hong Kong policemen fall in love: one with a mysterious underworld figure, the other with a beautiful and ethereal server at a late-night restaurant.",
+        "director": "Wong Kar-Wai",
+        "producers": [
+          "Yi-kan Chan",
+          "Jeffrey Lau Chun-Wai"
+        ],
+        "cast": [
+          "Brigitte Lin",
+          "Takeshi Kaneshiro",
+          "Tony Leung Chiu-wai",
+          "Faye Wong",
+          "Valerie Chow"
+        ],
+        "posterPath": "/43I9DcNoCzpyzK8JCkJYpHqHqGG.jpg",
+        "backdropPath": "/vuglA60RqvpHK9rIcG8sXaiWw1L.jpg",
+        "rating": 8,
+        "trailerKey": "P9Mxf_6pVA0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 2288,
+        "title": "Closer",
+        "year": 2004,
+        "runtime": 104,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "The relationships of two couples become complicated and deceitful when the man from one couple meets the woman of the other.",
+        "director": "Mike Nichols",
+        "producers": [
+          "Cary Brokaw",
+          "Mike Nichols",
+          "John Calley"
+        ],
+        "cast": [
+          "Jude Law",
+          "Natalie Portman",
+          "Julia Roberts",
+          "Clive Owen",
+          "Colin Stinton"
+        ],
+        "posterPath": "/fGGaokx4k00S0J603VG53Qlr9jz.jpg",
+        "backdropPath": "/s7oDV92ltdecJ7BTfGSOgsDi900.jpg",
+        "rating": 6.8,
+        "trailerKey": "bZ6nilkuYeo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 707103,
+        "title": "Emily",
+        "year": 2022,
+        "runtime": 130,
+        "genres": [
+          "History",
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "The imagined life of one of the world’s most famous authors, Emily Brontë, as she finds her voice and writes the literary classic Wuthering Heights. Explore the relationships that inspired her – her raw, passionate sisterhood with Charlotte and Anne; her first aching, forbidden love for Weightman and her care for her maverick brother whom she idolises.",
+        "director": "Frances O'Connor",
+        "producers": [
+          "David Barron",
+          "Piers Tempest",
+          "Jo Bamford"
+        ],
+        "cast": [
+          "Emma Mackey",
+          "Fionn Whitehead",
+          "Oliver Jackson-Cohen",
+          "Alexandra Dowling",
+          "Gemma Jones"
+        ],
+        "posterPath": "/tgVBMIiJczfBWINRRd9yxE8ESln.jpg",
+        "backdropPath": "/7DrLrDf3vVVjgOGRUf37knUu7Rx.jpg",
+        "rating": 6.9,
+        "trailerKey": "lCa5rx_8WCc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 38,
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "year": 2004,
+        "runtime": 108,
+        "genres": [
+          "Science Fiction",
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "Joel Barish, heartbroken that his girlfriend underwent a procedure to erase him from her memory, decides to do the same. However, as he watches his memories of her fade away, he realises that he still loves her, and may be too late to correct his mistake.",
+        "director": "Michel Gondry",
+        "producers": [
+          "Anthony Bregman",
+          "Steve Golin"
+        ],
+        "cast": [
+          "Jim Carrey",
+          "Kate Winslet",
+          "Kirsten Dunst",
+          "Mark Ruffalo",
+          "Elijah Wood"
+        ],
+        "posterPath": "/5MwkWH9tYHv3mV9OdYTMR5qreIz.jpg",
+        "backdropPath": "/W1ffLQGHoxfAOq0ZYdPtJlvAdb.jpg",
+        "rating": 8.1,
+        "trailerKey": "c2e-bj6qy8Y"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 1259102,
+        "title": "Eternity",
+        "year": 2025,
+        "runtime": 114,
+        "genres": [
+          "Romance",
+          "Comedy",
+          "Drama"
+        ],
+        "synopsis": "In an afterlife where souls have one week to decide where to spend eternity, Joan is faced with the impossible choice between the man she spent her life with and her first love, who died young and has waited decades for her to arrive.",
+        "director": "David Freyne",
+        "producers": [
+          "Tim White",
+          "Trevor White"
+        ],
+        "cast": [
+          "Elizabeth Olsen",
+          "Miles Teller",
+          "Callum Turner",
+          "Da'Vine Joy Randolph",
+          "John Early"
+        ],
+        "posterPath": "/yiwGcjfDKXD5PqQnyKUU9kspWQQ.jpg",
+        "backdropPath": "/fuacZLpnohQtLD0AhtCErcPVL98.jpg",
+        "rating": 7.1,
+        "trailerKey": "GzkoY6hUvQQ"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 343,
+        "title": "Harold and Maude",
+        "year": 1971,
+        "runtime": 92,
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "A deadpan young man obsessed with death meets an eccentric septuagenarian who teaches him to live life to the fullest.",
+        "director": "Hal Ashby",
+        "producers": [
+          "Colin Higgins",
+          "Charles Mulvehill"
+        ],
+        "cast": [
+          "Ruth Gordon",
+          "Bud Cort",
+          "Vivian Pickles",
+          "Cyril Cusack",
+          "Charles Tyner"
+        ],
+        "posterPath": "/t7qEuGwDjcYu8ajaKZ68DeDnOxw.jpg",
+        "backdropPath": "/jKgfnnCATAg4fxMfS0LZThmqOZB.jpg",
+        "rating": 7.6,
+        "trailerKey": "FYBlob_d2t8"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 152601,
+        "title": "Her",
+        "year": 2013,
+        "runtime": 126,
+        "genres": [
+          "Romance",
+          "Science Fiction",
+          "Drama"
+        ],
+        "synopsis": "In the not so distant future, Theodore, a lonely writer, purchases a newly developed operating system designed to meet the user's every need. To Theodore's surprise, a romantic relationship develops between him and his operating system. This unconventional love story blends science fiction and romance in a sweet tale that explores the nature of love and the ways that technology isolates and connects us all.",
+        "director": "Spike Jonze",
+        "producers": [
+          "Vincent Landay",
+          "Megan Ellison",
+          "Spike Jonze"
+        ],
+        "cast": [
+          "Joaquin Phoenix",
+          "Scarlett Johansson",
+          "Lynn Adrianna",
+          "Lisa Renee Pitts",
+          "Gabe Gomez"
+        ],
+        "posterPath": "/eCOtqtfvn7mxGl6nfmq4b1exJRc.jpg",
+        "backdropPath": "/nG5zmbVeYlcDhckrPAe06fArywn.jpg",
+        "rating": 7.8,
+        "trailerKey": "ne6p6MfLBxc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 5488,
+        "title": "I'm a Cyborg, But That's OK",
+        "year": 2006,
+        "runtime": 105,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "synopsis": "Young-goon, mentally deranged and frequently electro-charging herself with a transistor radio, has been admitted into a mental institution. Firmly believing herself to be a cyborg, she refuses to consume like a human being. Il-soon is another patient, who catches the eye of Young-goon and soon becomes a close friend. Il-soon is now confronted with the biggest task: to cure Young-goon's mental problem and have her eat real food.",
+        "director": "Park Chan-wook",
+        "producers": [
+          "Chun-yeong Lee",
+          "Park Chan-wook"
+        ],
+        "cast": [
+          "Lim Soo-jung",
+          "Rain",
+          "Oh Dal-su",
+          "Lee Yeong-mi",
+          "Kim Chun-gi"
+        ],
+        "posterPath": "/9uDGx2lzjROf3335CGKdCYs6WD5.jpg",
+        "backdropPath": "/eLgZPEG4994T2gjB1YtgQJrp8b3.jpg",
+        "rating": 7,
+        "trailerKey": "E1Wn7GfJnnA"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 5879,
+        "title": "In the Realm of the Senses",
+        "year": 1976,
+        "runtime": 105,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "A passionate telling of the story of Sada Abe, a woman whose affair with her master led to an obsessive and ultimately destructive sexual relationship.",
+        "director": "Nagisa Ōshima",
+        "producers": [
+          "Anatole Dauman"
+        ],
+        "cast": [
+          "Eiko Matsuda",
+          "Tatsuya Fuji",
+          "Aoi Nakajima",
+          "Yasuko Matsui",
+          "Meika Seri"
+        ],
+        "posterPath": "/AiFQbgjgSXWPfbi9iIYT39iXWMW.jpg",
+        "backdropPath": "/g3L6tOvJIRWSkxnhmoEW1SKEvW3.jpg",
+        "rating": 6.6,
+        "trailerKey": "w-o8EKjXJPQ"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 773,
+        "title": "Little Miss Sunshine",
+        "year": 2006,
+        "runtime": 102,
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "synopsis": "A family loaded with quirky, colorful characters piles into an old van and road trips to California for little Olive to compete in a beauty pageant.",
+        "director": "Valerie Faris",
+        "producers": [
+          "Peter Saraf",
+          "Albert Berger",
+          "Marc Turtletaub"
+        ],
+        "cast": [
+          "Greg Kinnear",
+          "Toni Collette",
+          "Steve Carell",
+          "Paul Dano",
+          "Abigail Breslin"
+        ],
+        "posterPath": "/niNdhTpPHSgw22tK0PLjQMV640v.jpg",
+        "backdropPath": "/yE376O0gMgUE7wX1PQ9bbTPVvFq.jpg",
+        "rating": 7.7,
+        "trailerKey": "oabGaaCLZ5g"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 43933,
+        "title": "Monsters",
+        "year": 2010,
+        "runtime": 94,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Science Fiction"
+        ],
+        "synopsis": "Six years ago NASA discovered the possibility of alien life within our solar system. A probe was launched to collect samples, but crashed upon re-entry over Central America. Soon after, new life forms began to appear and half of Mexico was quarantined as an infected zone. Today, the American and Mexican military still struggle to contain \"the creatures,\" while a journalist agrees to escort a shaken tourist through the infected zone in Mexico to the safety of the U.S. border.",
+        "director": "Gareth Edwards",
+        "producers": [
+          "Allan Niblo",
+          "James Richardson"
+        ],
+        "cast": [
+          "Scoot McNairy",
+          "Whitney Able",
+          "Mario Zuniga Benavides",
+          "Annalee Jefferies",
+          "Justin Hall"
+        ],
+        "posterPath": "/qpJyTxR33KG9qFmXoCD5AUTToPl.jpg",
+        "backdropPath": "/imiBIsvNU3TbMB3sbqKanKODS33.jpg",
+        "rating": 6.2,
+        "trailerKey": "Ol6j9xlQN1w"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 824,
+        "title": "Moulin Rouge!",
+        "year": 2001,
+        "runtime": 128,
+        "genres": [
+          "Drama",
+          "Romance",
+          "Music"
+        ],
+        "synopsis": "A celebration of love and creative inspiration takes place in the infamous, gaudy and glamorous Parisian nightclub, at the cusp of the 20th century. A young poet, who is plunged into the heady world of Moulin Rouge, begins a passionate affair with the club's most notorious and beautiful star.",
+        "director": "Baz Luhrmann",
+        "producers": [
+          "Fred Baron",
+          "Martin Brown",
+          "Baz Luhrmann"
+        ],
+        "cast": [
+          "Ewan McGregor",
+          "Nicole Kidman",
+          "John Leguizamo",
+          "Jim Broadbent",
+          "Richard Roxburgh"
+        ],
+        "posterPath": "/2kjM5CUZRIU5yOANUowrbJcRL9L.jpg",
+        "backdropPath": "/vvcLSgiviCIU0J0UcwLqWdU8Iup.jpg",
+        "rating": 7.5,
+        "trailerKey": "2PpgPxjzbkA"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 1234591,
+        "title": "My Favourite Cake",
+        "year": 2024,
+        "runtime": 97,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "synopsis": "Mahin lives alone in Tehran since her husband’s death and her daughter’s departure for Europe, until an afternoon tea with friends leads her to break her solitary routine and revitalize her love life.",
+        "director": "Maryam Moghaddam",
+        "producers": [
+          "Etienne de Ricaud",
+          "Behtash Sanaeeha",
+          "Christopher Zitterbart"
+        ],
+        "cast": [
+          "Lily Farhadpour",
+          "Esmaeel Mehrabi",
+          "Mansoureh Ilkhani",
+          "Soraya Orang",
+          "Homa Mottahedin"
+        ],
+        "posterPath": "/gs6XHzRPZWBMUbFkZUwMDgNz0li.jpg",
+        "backdropPath": "/3p1bD9QYA41lb5MBijhYee70Fxz.jpg",
+        "rating": 7.3,
+        "trailerKey": "xtXuKWlOPzY"
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 587792,
+        "title": "Palm Springs",
+        "year": 2020,
+        "runtime": 90,
+        "genres": [
+          "Comedy",
+          "Romance",
+          "Science Fiction"
+        ],
+        "synopsis": "When carefree Nyles and reluctant maid of honor Sarah have a chance encounter at a Palm Springs wedding, things get complicated when they find themselves unable to escape the venue, themselves, or each other.",
+        "director": "Max Barbakow",
+        "producers": [
+          "Andy Samberg",
+          "Jorma Taccone",
+          "Becky Sloviter"
+        ],
+        "cast": [
+          "Andy Samberg",
+          "Cristin Milioti",
+          "J.K. Simmons",
+          "Peter Gallagher",
+          "Meredith Hagner"
+        ],
+        "posterPath": "/gnAfqiV7yO3Jq9IntTmwkcaICqc.jpg",
+        "backdropPath": "/d7JUXVvjvVCXWs1mlpyO5ESdWdT.jpg",
+        "rating": 7.3,
+        "trailerKey": "CpBLtXduh_k"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 666277,
+        "title": "Past Lives",
+        "year": 2023,
+        "runtime": 106,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "After decades apart, childhood friends Nora and Hae Sung are reunited in New York for one fateful weekend as they confront notions of destiny, love, and the choices that make a life.",
+        "director": "Celine Song",
+        "producers": [
+          "Pamela Koffler",
+          "David Hinojosa",
+          "Christine Vachon"
+        ],
+        "cast": [
+          "Greta Lee",
+          "Teo Yoo",
+          "John Magaro",
+          "Moon Seung-ah",
+          "Leem Seung-min"
+        ],
+        "posterPath": "/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+        "backdropPath": "/7HR38hMBl23lf38MAN63y4pKsHz.jpg",
+        "rating": 7.7,
+        "trailerKey": "kA244xewjcI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 400617,
+        "title": "Phantom Thread",
+        "year": 2017,
+        "runtime": 130,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "In 1950s London, a renowned dressmaker's meticulous lifestyle begins drastically changing as his relationship with his young muse intensifies.",
+        "director": "Paul Thomas Anderson",
+        "producers": [
+          "Megan Ellison",
+          "JoAnne Sellar",
+          "Paul Thomas Anderson"
+        ],
+        "cast": [
+          "Daniel Day-Lewis",
+          "Vicky Krieps",
+          "Lesley Manville",
+          "Camilla Rutherford",
+          "Gina McKee"
+        ],
+        "posterPath": "/hgoWjp9Sh0MI97eAMZCnIoVfgvq.jpg",
+        "backdropPath": "/sJZd1H4cl2Nxhj0nutVCK5pMczL.jpg",
+        "rating": 7.3,
+        "trailerKey": "xNsiQMeSvMk"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 531428,
+        "title": "Portrait of a Lady on Fire",
+        "year": 2019,
+        "runtime": 121,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.",
+        "director": "Céline Sciamma",
+        "producers": [
+          "Bénédicte Couvreur"
+        ],
+        "cast": [
+          "Noémie Merlant",
+          "Adèle Haenel",
+          "Luàna Bajrami",
+          "Valeria Golino",
+          "Christel Baras"
+        ],
+        "posterPath": "/2LquGwEhbg3soxSCs9VNyh5VJd9.jpg",
+        "backdropPath": "/ivJ5UzT6IzucLVfbZwCCwiJJoBz.jpg",
+        "rating": 8.1,
+        "trailerKey": "R-fQPTwma9o"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 8051,
+        "title": "Punch-Drunk Love",
+        "year": 2002,
+        "runtime": 96,
+        "genres": [
+          "Romance",
+          "Drama",
+          "Comedy"
+        ],
+        "synopsis": "A socially awkward and volatile small business owner meets the love of his life after being threatened by a gang of scammers.",
+        "director": "Paul Thomas Anderson",
+        "producers": [
+          "Paul Thomas Anderson",
+          "JoAnne Sellar",
+          "Daniel Lupi"
+        ],
+        "cast": [
+          "Adam Sandler",
+          "Emily Watson",
+          "Philip Seymour Hoffman",
+          "Luis Guzmán",
+          "Mary Lynn Rajskub"
+        ],
+        "posterPath": "/htYp4yqFu4rzBEIa6j9jP8miDm3.jpg",
+        "backdropPath": "/q8GwhIAttJwqmjDtbLW8JvEMMdw.jpg",
+        "rating": 7.1,
+        "trailerKey": "9pG2nfxoUcs"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 4148,
+        "title": "Revolutionary Road",
+        "year": 2008,
+        "runtime": 119,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "A young couple living in a Connecticut suburb during the mid-1950s struggle to come to terms with their personal problems while trying to raise their two children. Based on a novel by Richard Yates.",
+        "director": "Sam Mendes",
+        "producers": [
+          "John N. Hart",
+          "Scott Rudin",
+          "Bobby Cohen"
+        ],
+        "cast": [
+          "Leonardo DiCaprio",
+          "Kate Winslet",
+          "Kathy Bates",
+          "Michael Shannon",
+          "Kathryn Hahn"
+        ],
+        "posterPath": "/cvkD3yiVXLg3as8EAG3LaTycONQ.jpg",
+        "backdropPath": "/ra9aXj8PpUbUHwwTRSl5zsL6WHM.jpg",
+        "rating": 7,
+        "trailerKey": "J_l8p1cjJ5o"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 104,
+        "title": "Run Lola Run",
+        "year": 1998,
+        "runtime": 80,
+        "genres": [
+          "Action",
+          "Drama",
+          "Thriller"
+        ],
+        "synopsis": "Lola receives a phone call from her boyfriend Manni. He lost 100,000 DM in a subway train that belongs to a very bad guy. She has 20 minutes to raise this amount and meet Manni. Otherwise, he will rob a store to get the money. Three different alternatives may happen depending on some minor event along Lola's run.",
+        "director": "Tom Tykwer",
+        "producers": [
+          "Stefan Arndt",
+          "Gebhard Henke",
+          "Andreas Schreitmüller"
+        ],
+        "cast": [
+          "Franka Potente",
+          "Moritz Bleibtreu",
+          "Herbert Knaup",
+          "Nina Petri",
+          "Armin Rohde"
+        ],
+        "posterPath": "/v0giIi4bTILVhNhJajet3WWY3FA.jpg",
+        "backdropPath": "/wRcm3iwi4BeMN59U4fjO7u3dOVI.jpg",
+        "rating": 7.3,
+        "trailerKey": "ZCYnsUdO6H0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 505192,
+        "title": "Shoplifters",
+        "year": 2018,
+        "runtime": 120,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Thriller"
+        ],
+        "synopsis": "In the outskirts of Tokyo, a poor but close-knit group living on the fringes of society survives through shoplifting and odd jobs. When Osamu and his son take in a neglected young girl, their already fragile existence begins to unravel. As the family grows attached to her, buried secrets surface, forcing them to confront the true meaning of love, belonging, and what makes a family.",
+        "director": "Hirokazu Kore-eda",
+        "producers": [
+          "Hirokazu Kore-eda",
+          "Kaoru Matsuzaki",
+          "Akihiko Yose"
+        ],
+        "cast": [
+          "Lily Franky",
+          "Sakura Ando",
+          "Mayu Matsuoka",
+          "Kairi Jo",
+          "Miyu Sasaki"
+        ],
+        "posterPath": "/4nfRUOv3LX5zLn98WS1WqVBk9E9.jpg",
+        "backdropPath": "/k49RhOmaKfoybjR3vBSaOJrIGmc.jpg",
+        "rating": 7.8,
+        "trailerKey": "wuaoRzuVqI0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 10436,
+        "title": "The Age of Innocence",
+        "year": 1993,
+        "runtime": 138,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "In 19th century New York high society, a young lawyer falls in love with a woman separated from her husband, while he is engaged to the woman's cousin.",
+        "director": "Martin Scorsese",
+        "producers": [
+          "Barbara De Fina"
+        ],
+        "cast": [
+          "Daniel Day-Lewis",
+          "Michelle Pfeiffer",
+          "Winona Ryder",
+          "Alexis Smith",
+          "Geraldine Chaplin"
+        ],
+        "posterPath": "/5Tuyt26v7qNR8Cl3m7ZRx36rduf.jpg",
+        "backdropPath": "/kMJlMlf1jYdk7L7YTSi231rjBtk.jpg",
+        "rating": 7,
+        "trailerKey": "I3Mx8OSlNYM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1098378,
+        "title": "Your Monster",
+        "year": 2024,
+        "runtime": 104,
+        "genres": [
+          "Romance",
+          "Comedy",
+          "Horror"
+        ],
+        "synopsis": "After her life falls apart, soft-spoken actress Laura Franco finds her voice again when she meets a terrifying, yet weirdly charming, monster living in her closet.",
+        "director": "Caroline Lindy",
+        "producers": [
+          "Kayla Foster",
+          "Caroline Lindy",
+          "Kira Carstensen"
+        ],
+        "cast": [
+          "Melissa Barrera",
+          "Tommy Dewey",
+          "Edmund Donovan",
+          "Kayla Foster",
+          "Taylor Trensch"
+        ],
+        "posterPath": "/nHlHRntqfDM0ORsfgPL28u4GiTT.jpg",
+        "backdropPath": "/uiEgyO6bFsNRt4CGd8VJwXcBnmD.jpg",
+        "rating": 6.6,
+        "trailerKey": "PRbpP1i99YE"
+      },
+      "status": "selected"
+    }
+  ]
+}

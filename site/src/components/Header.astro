@@ -2,19 +2,24 @@
 ---
 <header class="border-b border-neutral-600">
   <div class="max-w-site mx-auto px-6 h-16 flex items-center justify-end">
-    <nav class="flex items-center gap-8">
-      <a
-        href="/"
-        class="font-heading font-semibold text-sm uppercase tracking-wide hover:text-brand-red transition-colors"
-      >
-        Home
-      </a>
-      <a
-        href="/archive"
-        class="font-heading font-semibold text-sm uppercase tracking-wide hover:text-brand-red transition-colors"
-      >
-        Archive
-      </a>
+    <nav class="flex items-center gap-4">
+      {[
+        { href: '/', label: 'Home' },
+        { href: '/archive', label: 'Archive' },
+      ].map(({ href, label }) => {
+        const isActive = Astro.url.pathname === href;
+        return (
+          <a
+            href={href}
+            class:list={[
+              'font-heading font-semibold text-sm uppercase tracking-wide text-white interactive-item',
+              { active: isActive },
+            ]}
+          >
+            {label}
+          </a>
+        );
+      })}
     </nav>
   </div>
 </header>

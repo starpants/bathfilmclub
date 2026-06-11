@@ -44,8 +44,8 @@ const years = Object.keys(byYear).sort((a, b) => parseInt(b) - parseInt(a));
                   <a
                     href={`/theme/${t.slug}`}
                     class:list={[
-                      'block font-body text-sm py-1 hover:text-brand-red transition-colors',
-                      t.slug === theme.slug ? 'font-semibold text-brand-red' : 'text-neutral-400',
+                      'block font-body text-sm text-neutral-400 interactive-item',
+                      { active: t.slug === theme.slug, 'font-semibold': t.slug === theme.slug },
                     ]}
                   >
                     {t.title}
@@ -73,7 +73,6 @@ const years = Object.keys(byYear).sort((a, b) => parseInt(b) - parseInt(a));
           <div>
             <h2 class="section-label mb-3">Meeting</h2>
             <p class="font-heading font-semibold text-lg">{formatMeetingDate(theme.meeting.date)}</p>
-            <p class="font-body text-neutral-400 text-sm">{theme.meeting.time}</p>
           </div>
         )}
 

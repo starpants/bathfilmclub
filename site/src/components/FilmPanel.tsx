@@ -71,7 +71,7 @@ export function FilmPanel({ film, onClose }: Props) {
               {film.genres.length > 0 && (
                 <div className="flex flex-wrap gap-2">
                   {film.genres.map((g) => (
-                    <span key={g} className="text-xs font-heading uppercase tracking-wide border border-neutral-300 px-2 py-1">
+                    <span key={g} className="text-xs font-heading uppercase tracking-wide border border-neutral-300 px-2 py-1 text-neutral-900">
                       {g}
                     </span>
                   ))}
@@ -85,18 +85,18 @@ export function FilmPanel({ film, onClose }: Props) {
               <dl className="space-y-3 text-sm">
                 <div>
                   <dt className="font-heading font-semibold text-xs uppercase tracking-widest text-neutral-400">Director</dt>
-                  <dd className="font-body mt-0.5">{film.director}</dd>
+                  <dd className="font-body mt-0.5 text-neutral-900">{film.director}</dd>
                 </div>
                 {film.producers.length > 0 && (
                   <div>
                     <dt className="font-heading font-semibold text-xs uppercase tracking-widest text-neutral-400">Producers</dt>
-                    <dd className="font-body mt-0.5">{film.producers.join(', ')}</dd>
+                    <dd className="font-body mt-0.5 text-neutral-900">{film.producers.join(', ')}</dd>
                   </div>
                 )}
                 {film.cast.length > 0 && (
                   <div>
                     <dt className="font-heading font-semibold text-xs uppercase tracking-widest text-neutral-400">Cast</dt>
-                    <dd className="font-body mt-0.5">{film.cast.join(', ')}</dd>
+                    <dd className="font-body mt-0.5 text-neutral-900">{film.cast.join(', ')}</dd>
                   </div>
                 )}
               </dl>

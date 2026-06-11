@@ -1,4 +1,4 @@
-import { readFile, writeFile, readdir, mkdir } from 'fs/promises';
+import { readFile, writeFile, readdir, mkdir, rm } from 'fs/promises';
 import path from 'path';
 import type { Theme } from '@bathfilmclub/types';
 
@@ -6,7 +6,9 @@ export interface Storage {
   readCurrentCycle(): Promise<Theme | null>;
   writeCurrentCycle(theme: Theme | null): Promise<void>;
   readAllThemes(): Promise<Theme[]>;
+  readTheme(slug: string): Promise<Theme | null>;
   writeTheme(theme: Theme): Promise<void>;
+  deleteTheme(slug: string): Promise<void>;
   archiveCurrentCycle(): Promise<void>;
 }
 
@@ -14,6 +16,12 @@ export function createStorage(dataDir: string): Storage {
   const currentPath = () => path.join(dataDir, 'current.json');
   const themePath = (slug: string) => path.join(dataDir, 'themes', `${slug}.json`);
   const themesDir = () => path.join(dataDir, 'themes');
+
+  const validateSlug = (slug: string) => {
+    if (!/^[a-z0-9-]+$/.test(slug)) {
+      throw new Error('Invalid theme slug');
+    }
+  };
 
   return {
     async readCurrentCycle() {
@@ -46,9 +54,24 @@ export function createStorage(dataDir: string): Storage {
       }
     },
 
+    async readTheme(slug) {
+      validateSlug(slug);
+      try {
+        const raw = await readFile(themePath(slug), 'utf-8');
+        return JSON.parse(raw) as Theme;
+      } catch {
+        return null;
+      }
+    },
+
     async writeTheme(theme) {
       await mkdir(themesDir(), { recursive: true });
       await writeFile(themePath(theme.slug), JSON.stringify(theme, null, 2));
+    },
+
+    async deleteTheme(slug) {
+      validateSlug(slug);
+      await rm(themePath(slug));
     },
 
     async archiveCurrentCycle() {

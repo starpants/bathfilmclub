@@ -35,6 +35,15 @@
     @apply text-brand-red text-3xl leading-none;
   }
 
+  /* Consistent interactive element style: outline box on hover, filled on active */
+  .interactive-item {
+    @apply py-1 px-2 transition-all border border-transparent hover:border-white hover:bg-brand-black;
+  }
+
+  .interactive-item.active {
+    @apply text-brand-black bg-white border-white;
+  }
+
   .btn-discord {
     @apply inline-flex items-center gap-2 bg-brand-red text-white font-heading font-semibold text-xl px-5 py-3 hover:bg-red-800 transition-colors;
   }

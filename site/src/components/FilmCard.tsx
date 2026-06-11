@@ -4,12 +4,12 @@ interface Props {
   film: Film;
   status: FilmStatus;
   onSelect: (film: Film) => void;
+  showTag?: boolean;
 }
 
 const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w342';
 
-export function FilmCard({ film, status, onSelect }: Props) {
-  const showTag = status === 'shortlisted' || status === 'nominated';
+export function FilmCard({ film, status, onSelect, showTag = true }: Props) {
 
   return (
     <button
@@ -38,7 +38,17 @@ export function FilmCard({ film, status, onSelect }: Props) {
           {film.title}
         </p>
       </div>
-      {showTag && (
+      {showTag && status === 'selected' && (
+        <span className="mt-1 inline-block border border-brand-green text-brand-green text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
+          {status}
+        </span>
+      )}
+      {showTag && status === 'shortlisted' && (
+        <span className="mt-1 inline-block border border-brand-mustard text-brand-mustard text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
+          {status}
+        </span>
+      )}
+      {showTag && status === 'nominated' && (
         <span className="mt-1 inline-block border border-neutral-700 text-neutral-500 text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
           {status}
         </span>

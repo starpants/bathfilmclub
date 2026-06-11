@@ -1,0 +1,753 @@
+{
+  "slug": "2026-03-marmite",
+  "title": "Marmite",
+  "description": "Films that split the audience opinion",
+  "month": "2026-03",
+  "meeting": {
+    "date": "2026-03-20",
+    "time": "19:15",
+    "venue": "The Raven Pub, 7 Queen St, Bath BA1 1HE"
+  },
+  "films": [
+    {
+      "film": {
+        "tmdbId": 148144,
+        "title": "After Hours",
+        "year": 1985,
+        "runtime": 26,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "A sensitive portrayal of a young office worker who alleges sexual abuse by her employer. She loses her job as a result of her claims. This dramatised situation looks at the ways in which an employee can be victimised in an office environment without those around being aware of the situation.",
+        "director": "Jane Campion",
+        "producers": [],
+        "cast": [
+          "Anna Maria Monticelli",
+          "Don Reid",
+          "Danielle Pearse",
+          "Russell Newman",
+          "Carole Skinner"
+        ],
+        "posterPath": "/ztYoURG6newKiHKnNh5TOrMdHU7.jpg",
+        "rating": 6.2
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 15916,
+        "title": "Angel's Egg",
+        "year": 1985,
+        "runtime": 71,
+        "genres": [
+          "Animation",
+          "Fantasy",
+          "Mystery",
+          "Science Fiction"
+        ],
+        "synopsis": "In the ruins of a strange city, a young girl takes care of a large egg she holds carefully in her arms. She bonds with a boy who is searching for a bird he saw in a dream.",
+        "director": "Mamoru Oshii",
+        "producers": [
+          "Koki Miura",
+          "Hiroshi Hasegawa",
+          "Yutaka Wada"
+        ],
+        "cast": [
+          "Keiichi Noda",
+          "Mako Hyodo",
+          "Jinpachi Nezu"
+        ],
+        "posterPath": "/dcEUGvckbePFzPKhGXnS9T3kZMG.jpg",
+        "backdropPath": "/nZn384qWYugXu6U1N8Ya0Iv0NXE.jpg",
+        "rating": 7.7,
+        "trailerKey": "SqyVGzaQFpQ"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 28,
+        "title": "Apocalypse Now",
+        "year": 1979,
+        "runtime": 147,
+        "genres": [
+          "Drama",
+          "War"
+        ],
+        "synopsis": "At the height of the Vietnam war, Captain Benjamin Willard is sent on a dangerous mission that, officially, \"does not exist, nor will it ever exist.\" His goal is to locate - and eliminate - a mysterious Green Beret Colonel named Walter Kurtz, who has been leading his personal army on illegal guerrilla missions into enemy territory.",
+        "director": "Francis Ford Coppola",
+        "producers": [
+          "Francis Ford Coppola"
+        ],
+        "cast": [
+          "Martin Sheen",
+          "Marlon Brando",
+          "Frederic Forrest",
+          "Albert Hall",
+          "Laurence Fishburne"
+        ],
+        "posterPath": "/gQB8Y5RCMkv2zwzFHbUJX3kAhvA.jpg",
+        "backdropPath": "/49fzLedFVKgGgFChLMuulDJBY1c.jpg",
+        "rating": 8.3,
+        "trailerKey": "9l-ViOOFH-s"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 95,
+        "title": "Armageddon",
+        "year": 1998,
+        "runtime": 151,
+        "genres": [
+          "Action",
+          "Science Fiction",
+          "Adventure"
+        ],
+        "synopsis": "When an asteroid threatens to collide with Earth, NASA honcho Dan Truman determines the only way to stop it is to drill into its surface and detonate a nuclear bomb. This leads him to renowned driller Harry Stamper, who agrees to helm the dangerous space mission provided he can bring along his own hotshot crew. Among them is the cocksure A.J. who Harry thinks isn't good enough for his daughter, until the mission proves otherwise.",
+        "director": "Michael Bay",
+        "producers": [
+          "Jerry Bruckheimer",
+          "Michael Bay",
+          "Gale Anne Hurd"
+        ],
+        "cast": [
+          "Bruce Willis",
+          "Billy Bob Thornton",
+          "Ben Affleck",
+          "Liv Tyler",
+          "Will Patton"
+        ],
+        "posterPath": "/eTM3qtGhDU8cvjpoa6KEt5E2auU.jpg",
+        "backdropPath": "/1cO6OQJxz7YhTZ4V1OlkYfebeJa.jpg",
+        "rating": 6.8,
+        "trailerKey": "pCWKG2HVqRE"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 19995,
+        "title": "Avatar",
+        "year": 2009,
+        "runtime": 162,
+        "genres": [
+          "Science Fiction",
+          "Action",
+          "Adventure"
+        ],
+        "synopsis": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
+        "director": "James Cameron",
+        "producers": [
+          "James Cameron",
+          "Jon Landau"
+        ],
+        "cast": [
+          "Sam Worthington",
+          "Zoe Saldaña",
+          "Sigourney Weaver",
+          "Stephen Lang",
+          "Michelle Rodriguez"
+        ],
+        "posterPath": "/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg",
+        "backdropPath": "/vL5LR6WdxWPjLPFRLe133jXWsh5.jpg",
+        "rating": 7.6,
+        "trailerKey": "jm2sNLIPPvA"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 496,
+        "title": "Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan",
+        "year": 2006,
+        "runtime": 84,
+        "genres": [
+          "Comedy"
+        ],
+        "synopsis": "Kazakh journalist Borat Sagdiyev travels to America to make a documentary. As he zigzags across the nation, Borat meets real people in real situations with hysterical consequences. His backwards behavior generates strong reactions around him exposing prejudices and hypocrisies in American culture.",
+        "director": "Larry Charles",
+        "producers": [
+          "Sacha Baron Cohen",
+          "Jay Roach"
+        ],
+        "cast": [
+          "Sacha Baron Cohen",
+          "Ken Davitian",
+          "Luenell",
+          "Pamela Anderson",
+          "Bob Barr"
+        ],
+        "posterPath": "/kfkyALfD4G1mlBJI1lOt2QCra4i.jpg",
+        "backdropPath": "/jJYOr36wS1B6EyGjLY17r9kNHHh.jpg",
+        "rating": 6.8,
+        "trailerKey": "vlnUa_dNsRQ"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 68,
+        "title": "Brazil",
+        "year": 1985,
+        "runtime": 143,
+        "genres": [
+          "Comedy",
+          "Science Fiction"
+        ],
+        "synopsis": "Low-level bureaucrat Sam Lowry escapes the monotony of his day-to-day life through a recurring daydream of himself as a virtuous hero saving a beautiful damsel. Investigating a case that led to the wrongful arrest and eventual death of an innocent man instead of wanted terrorist Harry Tuttle, he meets the woman from his daydream, and in trying to help her gets caught in a web of mistaken identities, mindless bureaucracy and lies.",
+        "director": "Terry Gilliam",
+        "producers": [
+          "Patrick Cassavetti",
+          "Arnon Milchan"
+        ],
+        "cast": [
+          "Jonathan Pryce",
+          "Robert De Niro",
+          "Katherine Helmond",
+          "Ian Holm",
+          "Bob Hoskins"
+        ],
+        "posterPath": "/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
+        "backdropPath": "/9IYyCLf5NNAQFK9pNtqzEU9HWzM.jpg",
+        "rating": 7.7,
+        "trailerKey": "A_7ATU9dslE"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 884,
+        "title": "Crash",
+        "year": 1996,
+        "runtime": 100,
+        "genres": [
+          "Thriller",
+          "Drama"
+        ],
+        "synopsis": "A car crash victim inexplicably finds himself aroused by car accidents and becomes involved with an underground subculture of like-minded souls.",
+        "director": "David Cronenberg",
+        "producers": [
+          "David Cronenberg"
+        ],
+        "cast": [
+          "James Spader",
+          "Holly Hunter",
+          "Elias Koteas",
+          "Deborah Kara Unger",
+          "Rosanna Arquette"
+        ],
+        "posterPath": "/gpai5oUFyFGLHOCsYTvVMqlbY7A.jpg",
+        "backdropPath": "/vQNknPEVSAui6IL6eUlDBPfUzcW.jpg",
+        "rating": 6.5,
+        "trailerKey": "9dIC-lDgpZU"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11880,
+        "title": "Dog Soldiers",
+        "year": 2002,
+        "runtime": 105,
+        "genres": [
+          "Horror",
+          "Action",
+          "Thriller"
+        ],
+        "synopsis": "A band of soldiers is dispatched to war games deep in the woods. When they stumble across a rival team slaughtered in camp, they realize they're not alone.",
+        "director": "Neil Marshall",
+        "producers": [
+          "David E. Allen",
+          "Christopher Figg",
+          "Tom Reeve"
+        ],
+        "cast": [
+          "Sean Pertwee",
+          "Kevin McKidd",
+          "Emma Cleasby",
+          "Liam Cunningham",
+          "Thomas Lockyer"
+        ],
+        "posterPath": "/fYHUYWglzq8Ax0EaDWqg9emjL7T.jpg",
+        "backdropPath": "/direyV1rkzuPZNR8k6Z3mHWK3hJ.jpg",
+        "rating": 6.7,
+        "trailerKey": "PQ6nNs0Wl7s"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 646380,
+        "title": "Don't Look Up",
+        "year": 2021,
+        "runtime": 138,
+        "genres": [
+          "Comedy",
+          "Science Fiction",
+          "Drama"
+        ],
+        "synopsis": "Two astronomers go on a media tour to warn humankind of a planet-killing comet hurtling toward Earth. The response from a distracted world: Meh.",
+        "director": "Adam McKay",
+        "producers": [
+          "Adam McKay",
+          "Kevin J. Messick"
+        ],
+        "cast": [
+          "Leonardo DiCaprio",
+          "Jennifer Lawrence",
+          "Meryl Streep",
+          "Cate Blanchett",
+          "Rob Morgan"
+        ],
+        "posterPath": "/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
+        "backdropPath": "/nvxrQQspxmSblCYDtvDAbVFX8Jt.jpg",
+        "rating": 7.1,
+        "trailerKey": "RbIxYm3mKzI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 648878,
+        "title": "Eddington",
+        "year": 2025,
+        "runtime": 148,
+        "genres": [
+          "Western",
+          "Comedy",
+          "Crime"
+        ],
+        "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+        "director": "Ari Aster",
+        "producers": [
+          "Lars Knudsen",
+          "Ari Aster",
+          "Ann Ruark"
+        ],
+        "cast": [
+          "Joaquin Phoenix",
+          "Deirdre O'Connell",
+          "Emma Stone",
+          "Micheal Ward",
+          "Pedro Pascal"
+        ],
+        "posterPath": "/4GIqZUgPZ146BhibsPHMHef2nXX.jpg",
+        "backdropPath": "/5PJkK2iVXRO1ydrtgwuJdevmnOe.jpg",
+        "rating": 6.5,
+        "trailerKey": "ytyBfsqN3eI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 98,
+        "title": "Gladiator",
+        "year": 2000,
+        "runtime": 155,
+        "genres": [
+          "Action",
+          "Drama",
+          "Adventure"
+        ],
+        "synopsis": "After the death of Emperor Marcus Aurelius, his devious son takes power and demotes Maximus, one of Rome's most capable generals who Marcus preferred. Eventually, Maximus is forced to become a gladiator and battle to the death against other men for the amusement of paying audiences.",
+        "director": "Ridley Scott",
+        "producers": [
+          "Branko Lustig",
+          "Douglas Wick",
+          "David Franzoni"
+        ],
+        "cast": [
+          "Russell Crowe",
+          "Joaquin Phoenix",
+          "Connie Nielsen",
+          "Oliver Reed",
+          "Richard Harris"
+        ],
+        "posterPath": "/wN2xWp1eIwCKOD0BHTcErTBv1Uq.jpg",
+        "backdropPath": "/jhk6D8pim3yaByu1801kMoxXFaX.jpg",
+        "rating": 8.2,
+        "trailerKey": "P5ieIbInFpg"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 780609,
+        "title": "Men",
+        "year": 2022,
+        "runtime": 100,
+        "genres": [
+          "Horror",
+          "Thriller",
+          "Fantasy"
+        ],
+        "synopsis": "In the aftermath of a personal tragedy, Harper retreats alone to the beautiful English countryside, hoping to find a place to heal. But someone — or something — from the surrounding woods appears to be stalking her, and what begins as simmering dread becomes a fully-formed nightmare, inhabited by her darkest memories and fears.",
+        "director": "Alex Garland",
+        "producers": [
+          "Allon Reich",
+          "Andrew Macdonald"
+        ],
+        "cast": [
+          "Jessie Buckley",
+          "Rory Kinnear",
+          "Paapa Essiedu",
+          "Gayle Rankin",
+          "Sarah Twomey"
+        ],
+        "posterPath": "/jo1Kv3P3UgDVk7JnUFr2Cl8WWUM.jpg",
+        "backdropPath": "/4N2FuCTuqH3h4dw9XPFtsnDPSz7.jpg",
+        "rating": 6.1,
+        "trailerKey": "pt81CJcWZy8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 9353,
+        "title": "Nacho Libre",
+        "year": 2006,
+        "runtime": 92,
+        "genres": [
+          "Comedy",
+          "Action",
+          "Family"
+        ],
+        "synopsis": "Ignacio, a disrespected cook at a Mexican monastery, can barely afford to feed the orphans who live there. Inspired by a local wrestling hero, he decides to moonlight as the not-so-famous Luchador \"Nacho Libre\" to earn money for the monastery -- not to mention the admiration of beautiful nun Sister Encarnación.",
+        "director": "Jared Hess",
+        "producers": [
+          "Jack Black",
+          "Mike White",
+          "David Klawans"
+        ],
+        "cast": [
+          "Jack Black",
+          "Ana de la Reguera",
+          "Héctor Jiménez",
+          "Darius Rose",
+          "Moisés Arias"
+        ],
+        "posterPath": "/kh7B91bMl2lZ0mH9WhPfaNUIEQH.jpg",
+        "backdropPath": "/nNCleqiADKVMKWDC5G7hjYcVCmv.jpg",
+        "rating": 6.5,
+        "trailerKey": "m2Vh4tfnvKk"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 8193,
+        "title": "Napoleon Dynamite",
+        "year": 2004,
+        "runtime": 95,
+        "genres": [
+          "Comedy"
+        ],
+        "synopsis": "A listless and alienated teenager decides to help his new friend win the class presidency in their small western high school, while he must deal with his bizarre family life back home.",
+        "director": "Jared Hess",
+        "producers": [
+          "Sean Covel",
+          "Jeremy Coon",
+          "Chris Wyatt"
+        ],
+        "cast": [
+          "Jon Heder",
+          "Efren Ramirez",
+          "Tina Majorino",
+          "Aaron Ruell",
+          "Jon Gries"
+        ],
+        "posterPath": "/6Iv6Uwa2SBLN0dSGM00rdrwN4MJ.jpg",
+        "backdropPath": "/vVMMgWiQkXNB6YpE1ecs8FsXDh2.jpg",
+        "rating": 6.8,
+        "trailerKey": "W1IgJoRJ34Q"
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 639933,
+        "title": "The Northman",
+        "year": 2022,
+        "runtime": 137,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Fantasy"
+        ],
+        "synopsis": "Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.",
+        "director": "Robert Eggers",
+        "producers": [
+          "Robert Eggers",
+          "Alexander Skarsgård",
+          "Leifur B. Dagfinnsson"
+        ],
+        "cast": [
+          "Alexander Skarsgård",
+          "Nicole Kidman",
+          "Claes Bang",
+          "Ethan Hawke",
+          "Anya Taylor-Joy"
+        ],
+        "posterPath": "/aSSJMnHknzKjlZ6zybwD7eyJ4Po.jpg",
+        "backdropPath": "/fMiEp00v8gGWEceL4QeLu6H6z69.jpg",
+        "rating": 7,
+        "trailerKey": "6WrpvCmv0hk"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 23169,
+        "title": "Remember Me",
+        "year": 2010,
+        "runtime": 113,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "Still reeling from a heartbreaking family event and his parents' subsequent divorce, Tyler Hawkins discovers a fresh lease on life when he meets Ally Craig, a gregarious beauty who witnessed her mother's death. But as the couple draws closer, the fallout from their separate tragedies jeopardizes their love.",
+        "director": "Allen Coulter",
+        "producers": [
+          "Trevor Engelson",
+          "Nick Osborne"
+        ],
+        "cast": [
+          "Robert Pattinson",
+          "Emilie de Ravin",
+          "Pierce Brosnan",
+          "Lena Olin",
+          "Chris Cooper"
+        ],
+        "posterPath": "/j7umuMiLCHvWT7wYhFKJOTFSokF.jpg",
+        "backdropPath": "/kbxk09QgBJfJjnp66ey3JCEshKf.jpg",
+        "rating": 7.1,
+        "trailerKey": "oRUo4cWejYM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1381,
+        "title": "The Fountain",
+        "year": 2006,
+        "runtime": 96,
+        "genres": [
+          "Drama",
+          "Adventure",
+          "Science Fiction",
+          "Romance"
+        ],
+        "synopsis": "Spanning over one thousand years, and three parallel stories, The Fountain is a story of love, death, spirituality, and the fragility of our existence in this world.",
+        "director": "Darren Aronofsky",
+        "producers": [
+          "Arnon Milchan",
+          "Iain Smith"
+        ],
+        "cast": [
+          "Hugh Jackman",
+          "Rachel Weisz",
+          "Ellen Burstyn",
+          "Mark Margolis",
+          "Stephen McHattie"
+        ],
+        "posterPath": "/4XTf8GuCVLWolubANaKkpk62YPq.jpg",
+        "backdropPath": "/9RNJ0pKYA8EQiMa0lFZ68gzeElH.jpg",
+        "rating": 6.9,
+        "trailerKey": "pT1B1ykme2M"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 559907,
+        "title": "The Green Knight",
+        "year": 2021,
+        "runtime": 130,
+        "genres": [
+          "Adventure",
+          "Drama",
+          "Fantasy"
+        ],
+        "synopsis": "An epic fantasy adventure based on the timeless Arthurian legend, The Green Knight tells the story of Sir Gawain, King Arthur's reckless and headstrong nephew, who embarks on a daring quest to confront the eponymous Green Knight, a gigantic emerald-skinned stranger and tester of men.",
+        "director": "David Lowery",
+        "producers": [
+          "David Lowery",
+          "Toby Halbrooks",
+          "James M. Johnston"
+        ],
+        "cast": [
+          "Dev Patel",
+          "Alicia Vikander",
+          "Joel Edgerton",
+          "Sarita Choudhury",
+          "Sean Harris"
+        ],
+        "posterPath": "/if4hw3Ou5Sav9Em7WWHj66mnywp.jpg",
+        "backdropPath": "/kIQc0kkqIYTo65x5XjlKgqdDQ6a.jpg",
+        "rating": 6.6,
+        "trailerKey": "sS6ksY8xWCY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 181808,
+        "title": "Star Wars: The Last Jedi",
+        "year": 2017,
+        "runtime": 152,
+        "genres": [
+          "Adventure",
+          "Action",
+          "Science Fiction"
+        ],
+        "synopsis": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.",
+        "director": "Rian Johnson",
+        "producers": [
+          "Ram Bergman",
+          "Leifur B. Dagfinnsson",
+          "Andres Jauernick"
+        ],
+        "cast": [
+          "Mark Hamill",
+          "Carrie Fisher",
+          "Adam Driver",
+          "Daisy Ridley",
+          "John Boyega"
+        ],
+        "posterPath": "/ySaaKHOLAQU5HoZqWmzDIj1VvZ1.jpg",
+        "backdropPath": "/bIUaCtWaRgd78SnoHJDI8TNf7Sd.jpg",
+        "rating": 6.8,
+        "trailerKey": "Q0CbN8sfihY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 25037,
+        "title": "The Life and Death of Colonel Blimp",
+        "year": 1943,
+        "runtime": 163,
+        "genres": [
+          "War",
+          "Drama",
+          "Romance",
+          "Comedy"
+        ],
+        "synopsis": "General Candy, who's overseeing an English squad in 1943, is a veteran leader who doesn't have the respect of the men he's training and is considered out-of-touch with what's needed to win the war. But it wasn't always this way. Flashing back to his early career in the Boer War and World War I, we see a dashing young officer whose life has been shaped by three different women, and by a lasting friendship with a German soldier.",
+        "director": "Michael Powell",
+        "producers": [
+          "Michael Powell",
+          "Emeric Pressburger"
+        ],
+        "cast": [
+          "Roger Livesey",
+          "Deborah Kerr",
+          "Anton Walbrook",
+          "Roland Culver",
+          "James McKechnie"
+        ],
+        "posterPath": "/kgyd5uyndsXiLYKlVgH0sm7Jfkv.jpg",
+        "backdropPath": "/ojYxYkbO939H9OSayf5IKvbFA6i.jpg",
+        "rating": 7.5
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 254320,
+        "title": "The Lobster",
+        "year": 2015,
+        "runtime": 119,
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "In a dystopian near future, single people, according to the laws of The City, are taken to The Hotel, where they are obliged to find a romantic partner in forty-five days or are transformed into animals and sent off into The Woods.",
+        "director": "Yorgos Lanthimos",
+        "producers": [
+          "Ceci Dempsey",
+          "Lee Magiday",
+          "Yorgos Lanthimos"
+        ],
+        "cast": [
+          "Colin Farrell",
+          "Rachel Weisz",
+          "Olivia Colman",
+          "Léa Seydoux",
+          "Michael Smiley"
+        ],
+        "posterPath": "/7Y9ILV1unpW9mLpGcqyGQU72LUy.jpg",
+        "backdropPath": "/iH2esZUZvt8qlJgu74WBvibDnfF.jpg",
+        "rating": 7,
+        "trailerKey": "LTNZmOJxuAc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 933260,
+        "title": "The Substance",
+        "year": 2024,
+        "runtime": 141,
+        "genres": [
+          "Horror",
+          "Science Fiction",
+          "Thriller"
+        ],
+        "synopsis": "A fading celebrity decides to use a black market drug, a cell-replicating substance that temporarily creates a younger, better version of herself.",
+        "director": "Coralie Fargeat",
+        "producers": [
+          "Coralie Fargeat",
+          "Eric Fellner",
+          "Tim Bevan"
+        ],
+        "cast": [
+          "Demi Moore",
+          "Margaret Qualley",
+          "Dennis Quaid",
+          "Edward Hamilton-Clark",
+          "Gore Abrams"
+        ],
+        "posterPath": "/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
+        "backdropPath": "/8ODNt5olCeIqBYTP3GgXEQYTfeX.jpg",
+        "rating": 7.1,
+        "trailerKey": "lR5nlovVgvQ"
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 6947,
+        "title": "The Village",
+        "year": 2004,
+        "runtime": 108,
+        "genres": [
+          "Drama",
+          "Mystery",
+          "Thriller"
+        ],
+        "synopsis": "When a willful young man tries to venture beyond his sequestered Pennsylvania hamlet, his actions set off a chain of chilling incidents that will alter the community forever.",
+        "director": "M. Night Shyamalan",
+        "producers": [
+          "M. Night Shyamalan",
+          "Sam Mercer",
+          "Scott Rudin"
+        ],
+        "cast": [
+          "Bryce Dallas Howard",
+          "Joaquin Phoenix",
+          "Adrien Brody",
+          "William Hurt",
+          "Sigourney Weaver"
+        ],
+        "posterPath": "/v7UvYtKfIVaHLaHwVgfalyrK7Ho.jpg",
+        "backdropPath": "/lxwCRTWWfCisuarrFFUhW43eBnW.jpg",
+        "rating": 6.5,
+        "trailerKey": "c7TL1BZegLo"
+      },
+      "status": "shortlisted"
+    }
+  ]
+}
