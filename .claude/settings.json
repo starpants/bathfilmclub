@@ -9,7 +9,10 @@
       "Bash(npm run *)",
       "Bash(npm ls *)",
       "Bash(cat)",
-      "Bash(node /tmp/check_factory.js)"
+      "Bash(node /tmp/check_factory.js)",
+      "Bash(git add *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:4321/)",
+      "Bash(npx playwright *)"
     ]
   }
 }
