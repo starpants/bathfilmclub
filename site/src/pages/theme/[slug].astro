@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import FilmPyramid from '../../components/FilmPyramid.astro';
-import { getAllThemes, formatMonth} from '../../utils/data';
+import { getAllThemes, formatMonth } from '../../utils/data';
 import type { Theme } from '@bathfilmclub/types';
 
 export async function getStaticPaths() {
@@ -16,78 +16,31 @@ export async function getStaticPaths() {
 interface Props { theme: Theme }
 const { theme } = Astro.props;
 
-// Group all themes by year for the sidebar
 const allThemes = await getAllThemes();
-const byYear = allThemes.reduce<Record<string, Theme[]>>((acc, t: Theme) => {
-  const year = t.month.split('-')[0] as string;
-  if (!acc[year]) acc[year] = [];
-  acc[year].push(t);
-  return acc;
-}, {});
-const years = Object.keys(byYear).sort((a, b) => parseInt(b) - parseInt(a));
 ---
 <Layout title={theme.title} description={theme.description ?? ''}>
-  <Header />
+  <Header themes={allThemes} currentSlug={theme.slug} />
   <div class="max-w-site mx-auto px-6 py-16">
-    <div class="flex gap-16">
+    <main class="space-y-12">
+      <div class="text-center">
+        <p class="section-label justify-center mb-4">{formatMonth(theme.month)}</p>
+        <h1 class="font-heading font-bold text-5xl leading-tight">{theme.title}</h1>
+        {theme.description && (
+          <p class="font-body text-neutral-400 mt-4 max-w-2xl leading-relaxed mx-auto">
+            {theme.description}
+          </p>
+        )}
+      </div>
 
-      <!-- Sidebar -->
-      <nav class="hidden lg:block w-52 shrink-0 sticky top-8 self-start space-y-6" aria-label="Theme navigation">
-        {years.map((year) => (
-          <div>
-            <p class="font-heading font-bold text-xs uppercase tracking-widest text-neutral-400 mb-2">
-              {year}
-            </p>
-            <ul class="space-y-1">
-              {byYear[year]?.map((t) => (
-                <li>
-                  <a
-                    href={`/theme/${t.slug}`}
-                    class:list={[
-                      'block font-body text-sm text-neutral-400 interactive-item',
-                      { active: t.slug === theme.slug, 'font-semibold': t.slug === theme.slug },
-                    ]}
-                  >
-                    {t.title}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </nav>
+      <div>
+        <FilmPyramid films={theme.films} />
+      </div>
 
-      <!-- Main content -->
-      <main class="flex-1 min-w-0 space-y-12">
-        <div class="">
-          <p class="section-label mb-4">{formatMonth(theme.month)}</p>
-          <h1 class="font-heading font-bold text-5xl leading-tight">{theme.title}</h1>
-          {theme.description && (
-            <p class="font-body text-neutral-400 mt-4 max-w-2xl leading-relaxed">
-              {theme.description}
-            </p>
-          )}
-        </div>
-<!-- 
-        {theme.meeting && (
-          <div>
-            <h2 class="section-label mb-3">Meeting</h2>
-            <p class="font-heading font-semibold text-lg">{formatMeetingDate(theme.meeting.date)}</p>
-          </div>
-        )} -->
-
-        <div>
-          <!-- <h2 class="section-label mb-8">Film Selection</h2> -->
-          <FilmPyramid films={theme.films} />
-        </div>
-
-        <div class="flex gap-4 pt-4 border-t border-neutral-600">
-          <a href="/archive" class="font-body text-sm text-neutral-400 hover:text-brand-red transition-colors">
-            ← Back to Archive
-          </a>
-        </div>
-      </main>
-
-    </div>
+      <div class="flex gap-4 pt-4 border-t border-neutral-600">
+        <a href="/archive" class="font-body text-sm text-neutral-400 hover:text-brand-red transition-colors">
+          ← Back to Archive
+        </a>
+      </div>
+    </main>
   </div>
 </Layout>
