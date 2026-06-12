@@ -16,6 +16,10 @@ export function ThemeDrawer({ themes, currentSlug }: Props) {
     acc[year].push(t);
     return acc;
   }, {});
+  // Sort each year's themes newest-first
+  for (const year of Object.keys(byYear)) {
+    byYear[year]!.sort((a, b) => b.month.localeCompare(a.month));
+  }
   const years = Object.keys(byYear).sort((a, b) => parseInt(b) - parseInt(a));
 
   useEffect(() => {
