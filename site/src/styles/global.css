@@ -32,7 +32,7 @@
 
   .section-label::before {
     content: '■';
-    @apply text-brand-red text-3xl leading-none;
+    @apply text-neutral-400 mb-[0.05em] text-3xl leading-none;
   }
 
   /* Consistent interactive element style: outline box on hover, filled on active */

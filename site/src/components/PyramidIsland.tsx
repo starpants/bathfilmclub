@@ -18,7 +18,7 @@ interface FilmRowProps {
 }
 
 function FilmRow({ films, label, onSelect, cardWidth = 'w-24 md:w-28', bgClass }: FilmRowProps) {
-  const statuses = new Set(films.map(f => f.status));
+  const statuses = new Set(films.map((f) => f.status));
   const hasMixedStatuses = statuses.size > 1;
 
   return (
@@ -32,10 +32,15 @@ function FilmRow({ films, label, onSelect, cardWidth = 'w-24 md:w-28', bgClass }
             Not yet determined
           </p>
         ) : (
-          <div className="flex flex-wrap gap-6 justify-center">
+          <div className="flex flex-wrap gap-12 justify-center">
             {films.map(({ film, status }) => (
               <div key={film.tmdbId} className={`${cardWidth} flex-shrink-0`}>
-                <FilmCard film={film} status={status} onSelect={onSelect} showTag={hasMixedStatuses} />
+                <FilmCard
+                  film={film}
+                  status={status}
+                  onSelect={onSelect}
+                  showTag={hasMixedStatuses}
+                />
               </div>
             ))}
           </div>

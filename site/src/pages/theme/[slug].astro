@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/Header.astro';
 import FilmPyramid from '../../components/FilmPyramid.astro';
-import { getAllThemes, formatMonth, formatMeetingDate } from '../../utils/data';
+import { getAllThemes, formatMonth} from '../../utils/data';
 import type { Theme } from '@bathfilmclub/types';
 
 export async function getStaticPaths() {
@@ -59,7 +59,7 @@ const years = Object.keys(byYear).sort((a, b) => parseInt(b) - parseInt(a));
 
       <!-- Main content -->
       <main class="flex-1 min-w-0 space-y-12">
-        <div>
+        <div class="">
           <p class="section-label mb-4">{formatMonth(theme.month)}</p>
           <h1 class="font-heading font-bold text-5xl leading-tight">{theme.title}</h1>
           {theme.description && (
@@ -68,16 +68,16 @@ const years = Object.keys(byYear).sort((a, b) => parseInt(b) - parseInt(a));
             </p>
           )}
         </div>
-
+<!-- 
         {theme.meeting && (
           <div>
             <h2 class="section-label mb-3">Meeting</h2>
             <p class="font-heading font-semibold text-lg">{formatMeetingDate(theme.meeting.date)}</p>
           </div>
-        )}
+        )} -->
 
         <div>
-          <h2 class="section-label mb-8">Film Selection</h2>
+          <!-- <h2 class="section-label mb-8">Film Selection</h2> -->
           <FilmPyramid films={theme.films} />
         </div>
 

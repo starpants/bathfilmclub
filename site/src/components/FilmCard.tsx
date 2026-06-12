@@ -10,11 +10,10 @@ interface Props {
 const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w342';
 
 export function FilmCard({ film, status, onSelect, showTag = true }: Props) {
-
   return (
     <button
       onClick={() => onSelect(film)}
-      className="group block w-full text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red"
+      className="group block w-full text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red"
       aria-label={`View details for ${film.title}`}
     >
       <div className="aspect-[2/3] overflow-hidden bg-neutral-800">
@@ -34,9 +33,7 @@ export function FilmCard({ film, status, onSelect, showTag = true }: Props) {
         )}
       </div>
       <div className="mt-1.5 h-9 overflow-hidden">
-        <p className="font-body text-xs text-neutral-300 leading-snug line-clamp-2">
-          {film.title}
-        </p>
+        <p className="font-body text-xs text-neutral-300 leading-snug line-clamp-2">{film.title}</p>
       </div>
       {showTag && status === 'selected' && (
         <span className="mt-1 inline-block border border-brand-green text-brand-green text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
