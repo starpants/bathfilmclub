@@ -13,7 +13,9 @@ export async function getStaticPaths() {
   }));
 }
 
-interface Props { theme: Theme }
+interface Props {
+  theme: Theme;
+}
 const { theme } = Astro.props;
 
 const allThemes = await getAllThemes();
@@ -21,48 +23,56 @@ const currentIndex = allThemes.findIndex((t) => t.slug === theme.slug);
 const olderTheme = allThemes[currentIndex + 1] ?? null;
 const newerTheme = allThemes[currentIndex - 1] ?? null;
 ---
+
 <Layout title={theme.title} description={theme.description ?? ''}>
   <Header themes={allThemes} currentSlug={theme.slug} />
   <div class="max-w-site mx-auto px-6 py-16">
     <main class="space-y-12">
       <div class="text-center">
         <p class="section-label justify-center mb-4">{formatMonth(theme.month)}</p>
-        <h1 class="font-heading font-bold text-5xl leading-tight">{theme.title}</h1>
-        {theme.description && (
-          <p class="font-body text-neutral-400 mt-4 max-w-2xl leading-relaxed mx-auto">
-            {theme.description}
-          </p>
-        )}
+        <div
+          class="flex justify-between items-center font-heading font-bold text-5xl leading-tight"
+        >
+          {
+            olderTheme ? (
+              <a
+                href={`/theme/${olderTheme.slug}`}
+                class="font-heading font-semibold text-neutral-400 hover:text-white transition-colors"
+                aria-label={`Older theme: ${olderTheme.title}`}
+              >
+                &lt;
+              </a>
+            ) : (
+              <span />
+            )
+          }
+          <h1 class="">{theme.title}</h1>
+          {
+            newerTheme ? (
+              <a
+                href={`/theme/${newerTheme.slug}`}
+                class="font-heading font-semibold text-neutral-400 hover:text-white transition-colors"
+                aria-label={`Newer theme: ${newerTheme.title}`}
+              >
+                &gt;
+              </a>
+            ) : (
+              <span />
+            )
+          }
+        </div>
+
+        {
+          theme.description && (
+            <p class="font-body text-neutral-400 mt-4 max-w-2xl leading-relaxed mx-auto">
+              {theme.description}
+            </p>
+          )
+        }
       </div>
 
       <div>
         <FilmPyramid films={theme.films} />
-      </div>
-
-      <div class="flex justify-between items-center pt-4 border-t border-neutral-600">
-        {olderTheme ? (
-          <a
-            href={`/theme/${olderTheme.slug}`}
-            class="font-heading font-semibold text-sm text-neutral-400 hover:text-white transition-colors"
-            aria-label={`Older theme: ${olderTheme.title}`}
-          >
-            ←
-          </a>
-        ) : (
-          <span />
-        )}
-        <span class="font-heading text-sm text-neutral-400">{theme.title}</span>
-        {newerTheme ? (
-          <a
-            href={`/theme/${newerTheme.slug}`}
-            class="font-heading font-semibold text-sm text-neutral-400 hover:text-white transition-colors"
-            aria-label={`Newer theme: ${newerTheme.title}`}
-          >
-            →
-          </a>
-        ) : (
-          <span />
-        )}
       </div>
     </main>
   </div>

@@ -15,17 +15,18 @@ interface FilmRowProps {
   onSelect: (film: Film) => void;
   cardWidth?: string;
   bgClass: string;
+  showCount?: boolean;
 }
 
-function FilmRow({ films, label, onSelect, cardWidth = 'w-24 md:w-28', bgClass }: FilmRowProps) {
+function FilmRow({ films, label, onSelect, cardWidth = 'w-24 md:w-28', bgClass, showCount = false }: FilmRowProps) {
   const statuses = new Set(films.map((f) => f.status));
   const hasMixedStatuses = statuses.size > 1;
 
   return (
     <div className={`py-10 ${bgClass}`}>
       <div className="max-w-[1200px] mx-auto px-6 space-y-3">
-        <h4 className="pyramid-subtitle text-xl justify-center p-2 bg-brand-red text-brand-white mb-12">
-          {label}
+        <h4 className={`pyramid-subtitle text-xl justify-center p-2 mb-12 ${films.length === 0 ? 'bg-neutral-800 text-neutral-500' : 'bg-brand-red text-brand-white'}`}>
+          {label}{showCount ? ` (${films.length})` : ''}
         </h4>
         {films.length === 0 ? (
           <p className="text-neutral-400 font-body text-sm italic text-center">
@@ -75,6 +76,7 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
           label="Nominated Films"
           onSelect={setActiveFilm}
           bgClass="bg-neutral-600/15"
+          showCount
         />
       </div>
       <FilmPanel film={activeFilm} onClose={() => setActiveFilm(null)} />
