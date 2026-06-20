@@ -8,8 +8,9 @@ interface Props {
 
 function shortMonth(month: string): string {
   const [year, m] = month.split('-');
-  return new Date(parseInt(year!), parseInt(m!) - 1, 1)
-    .toLocaleDateString('en-GB', { month: 'short' });
+  return new Date(parseInt(year!), parseInt(m!) - 1, 1).toLocaleDateString('en-GB', {
+    month: 'short',
+  });
 }
 
 export function ThemeDrawer({ themes, currentSlug }: Props) {
@@ -37,7 +38,9 @@ export function ThemeDrawer({ themes, currentSlug }: Props) {
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
-    return () => { document.body.style.overflow = ''; };
+    return () => {
+      document.body.style.overflow = '';
+    };
   }, [isOpen]);
 
   return (
@@ -45,7 +48,7 @@ export function ThemeDrawer({ themes, currentSlug }: Props) {
       {/* Trigger button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="font-heading font-semibold text-sm uppercase tracking-wide text-white interactive-item"
+        className="font-body font-semibold text-sm uppercase tracking-wide text-white interactive-item"
         aria-label="Browse themes"
       >
         Browse
@@ -71,7 +74,14 @@ export function ThemeDrawer({ themes, currentSlug }: Props) {
           className="absolute top-4 right-4 p-2 hover:text-brand-red transition-colors"
           aria-label="Close"
         >
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
             <path d="M4 4l12 12M16 4L4 16" />
           </svg>
         </button>
@@ -80,7 +90,7 @@ export function ThemeDrawer({ themes, currentSlug }: Props) {
         <nav className="p-6 pt-14 space-y-6">
           {years.map((year) => (
             <div key={year}>
-              <p className="font-heading font-bold text-xs uppercase tracking-widest text-neutral-400 mb-2">
+              <p className="font-heading font-bold uppercase tracking-widest text-neutral-400 mb-2">
                 {year}
               </p>
               <ul className="space-y-1">
@@ -88,7 +98,7 @@ export function ThemeDrawer({ themes, currentSlug }: Props) {
                   <li key={t.slug}>
                     <a
                       href={`/theme/${t.slug}`}
-                      className={`block font-body text-sm text-neutral-400 interactive-item${t.slug === currentSlug ? ' active' : ''}`}
+                      className={`block font-body text-neutral-400 interactive-item${t.slug === currentSlug ? ' active' : ''}`}
                     >
                       {shortMonth(t.month)} – {t.title}
                     </a>

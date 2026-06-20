@@ -1,15 +1,16 @@
 ---
 import SectionTitle from './SectionTitle.astro';
 ---
+
 <section>
+  <SectionTitle title="How It Works" class="mb-4" />
 
-    <SectionTitle title="How It Works" class="mb-4" />
-
-    <!-- <p class="font-body text-neutral-400 max-w-lg">
+  <!-- <p class="font-body text-neutral-400 max-w-lg">
       Bath Film Club is a monthly discussion group. Each month we explore a new theme through film.
     </p> -->
-    <ol class="flex flex-col md:flex-row">
-      {[
+  <ol class="flex flex-col md:flex-row">
+    {
+      [
         { step: '01', label: 'Theme', desc: 'A theme is chosen for the month.' },
         { step: '02', label: 'Nominations', desc: 'Members nominate up to two films.' },
         { step: '03', label: 'Shortlist', desc: 'Five films are selected at random.' },
@@ -18,9 +19,10 @@ import SectionTitle from './SectionTitle.astro';
       ].map(({ step, label, desc }) => (
         <li class="flex-1 border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0 last:border-b last:md:border-r">
           <span class="font-heading font-bold text-3xl text-neutral-700 block mb-2">{step}</span>
-          <span class="font-heading font-semibold text-sm block mb-1">{label}</span>
-          <span class="font-body text-xs text-neutral-400">{desc}</span>
+          <h3 class="font-heading font-extrabold text-2xl leading-tight">{label}</h3>
+          <p class="font-body text-neutral-400">{desc}</p>
         </li>
-      ))}
-    </ol>
+      ))
+    }
+  </ol>
 </section>

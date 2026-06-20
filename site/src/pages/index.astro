@@ -14,17 +14,15 @@ const allThemes = await getAllThemes();
   <Header themes={allThemes} />
 
   <!-- Hero -->
-  <section class="py-0">
+  <section class="py-8">
     <div class="max-w-site mx-auto px-6">
-      <div class="flex flex-col md:flex-row">
-        <div class="flex-[2] p-8 pl-0 flex items-center">
+      <div class="flex flex-col md:flex-row gap-8 items-end">
+        <div class="flex-[2] pl-0 flex items-center">
           <img src="/assets/BathFilmClub_Logo.svg" alt="Bath Film Club" class="w-full" />
         </div>
-        <div class="flex-[3] p-8 space-y-4 content-center">
-          <!-- <h1 class="font-heading font-bold text-5xl md:text-7xl leading-none tracking-tight">Bath Film Club</h1> -->
-  
-          <div class="flex flex-wrap h-1/2 content-between">
-            <p class="font-body text-neutral-300 text-xl md:text-2xl leading-relaxed">
+        <div class="flex-[3] p-0 mb-6 content-center">
+          <div class="">
+            <p class="font-body text-neutral-300 text-xl md:text-2xl leading-relaxed mb-16">
             A monthly film discussion group in Bath. Each month a new theme, a new selection, a new conversation.
           </p>
         <DiscordButton />
@@ -46,7 +44,7 @@ const allThemes = await getAllThemes();
           {cycle.description ? (
             <div class="flex flex-col md:flex-row">
               <div class="flex-[2] border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0">
-                <h3 class="font-heading font-bold text-2xl leading-tight">{cycle.title}</h3>
+                <h3 class="font-heading font-extrabold text-2xl leading-tight">{cycle.title}</h3>
               </div>
               <div class="flex-[3] border border-neutral-600 p-5">
                 <p class="font-body text-neutral-400 leading-relaxed">{cycle.description}</p>
@@ -54,7 +52,7 @@ const allThemes = await getAllThemes();
             </div>
           ) : (
             <div class="border border-neutral-600 p-5">
-              <h3 class="font-heading font-bold text-2xl leading-tight">{cycle.title}</h3>
+              <h3 class="font-heading font-extrabold text-2xl leading-tight">{cycle.title}</h3>
             </div>
           )}
         </section>
@@ -65,8 +63,8 @@ const allThemes = await getAllThemes();
             <SectionTitle title="Upcoming Meeting" class="mb-4" />
             <div class="flex flex-col md:flex-row">
               <div class="flex-[2] border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0">
-                <p class="font-heading font-semibold text-lg leading-tight">{formatMeetingDate(cycle.meeting.date)}</p>
-                <p class="font-body text-neutral-400 text-sm mt-1">{cycle.meeting.time}</p>
+                <h3 class="font-heading font-extrabold text-2xl leading-tight">{formatMeetingDate(cycle.meeting.date)}, <span class="">{cycle.meeting.time}</span></h3>
+                {/* <p class="font-body text-neutral-400 text-sm mt-1">{cycle.meeting.time}</p> */}
               </div>
               <div class="flex-[3] border border-neutral-600 p-5">
                 {cycle.meeting.venue ? (

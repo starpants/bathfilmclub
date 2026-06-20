@@ -25,8 +25,9 @@ export default {
         },
       },
       fontFamily: {
-        heading: ['Urbanist', 'sans-serif'],
-        body: ['Inter', 'sans-serif'],
+        heading: ['Barlow Condensed', 'sans-serif'],
+        display: ['Notable', 'sans-serif'],
+        body: ['Barlow Semi Condensed', 'sans-serif'],
       },
       maxWidth: {
         site: '1200px',

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Urbanist:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@600;700;800;900&family=Notable&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -8,6 +8,7 @@
   html {
     @apply font-body text-white bg-brand-black;
     -webkit-font-smoothing: antialiased;
+    font-size: 100%;
   }
 
   h1,
@@ -22,17 +23,17 @@
 
 @layer components {
   .pyramid-subtitle {
-    @apply flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-widest text-neutral-400;
+    @apply flex items-center gap-2 text-xs font-display uppercase tracking-widest text-neutral-400;
   }
 
   /* Square motif from logo — used as section markers */
   .section-label {
-    @apply flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-widest text-neutral-400;
+    @apply flex items-center gap-2 text-xs font-display uppercase tracking-widest text-neutral-400;
   }
 
   .section-label::before {
-    content: '■';
-    @apply text-neutral-400 mb-[0.05em] text-3xl leading-none;
+    content: '';
+    @apply block w-2 h-2 bg-neutral-400 flex-shrink-0;
   }
 
   /* Consistent interactive element style: outline box on hover, filled on active */
