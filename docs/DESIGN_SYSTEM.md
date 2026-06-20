@@ -10,13 +10,13 @@
 
 The Bath Film Club site visual design is built on a foundation of:
 
-- **Minimal aesthetic** — Let film posters drive the visual interest
-- **Editorial typography** — Strong hierarchy, contemporary typefaces
+- **Editorial boldness** — Strong typographic character, A24-influenced aesthetic
+- **Film-derived colour** — CMY (cyan/magenta/yellow) from colour darkroom printer lights
 - **Grid-based layout** — Alignment and consistency across all pages
 - **Iconic motif** — Square symbol from the logo, reused throughout
-- **Restrained colour palette** — Black, white, and a carefully chosen red
+- **Restrained palette** — Black base, white text, red brand accent, CMY for film tiers
 
-The site should feel like a **curated film archive** or **arts organisation**, not a commercial cinema or social platform.
+The site should feel like a **curated film archive** or **arts organisation** — editorial and bold, not commercial or social.
 
 ---
 
@@ -26,25 +26,42 @@ The site should feel like a **curated film archive** or **arts organisation**, n
 
 | Name | Hex | Usage |
 |------|-----|-------|
-| **Brand Red** | `#860909` | Buttons, accents, pyramid row headings |
+| **Brand Red** | `#860909` | Header border, footer border, ThemeDrawer bg, section label square, Discord button |
 | **Brand Black** | `#000000` | Page background |
-| **Brand White** | `#FFFFFF` | Primary text, active nav states, film panel background |
+| **Brand White** | `#FFFFFF` | Primary text, film panel background |
+
+### CMY Accent Colours (film tier identity)
+
+| Name | Hex | Usage |
+|------|-----|-------|
+| **Brand Cyan** | `#00AACC` | Shortlisted band (`/15` opacity background) |
+| **Brand Magenta** | `#CC0055` | Selected band (`/15` opacity background) |
+| **Brand Yellow** | `#F5C400` | Nominated band (`/15` opacity background) |
+
+CMY colours are derived from the three filtration channels used in colour darkroom printing (the "printer lights" of a colour enlarger head).
+
+### Status Tag Colours
+
+| Name | Hex | Usage |
+|------|-----|-------|
+| **Brand Green** | `#22C55E` | Selected film status tag (solid fill, black text) |
+| **Brand Mustard** | `#EABB16` | Shortlisted film status tag (solid fill, black text) |
 
 ### Supporting Greys (Neutral Scale)
 
 ```
-400  #A3A3A3  secondary text, labels, section markers
+300  #D4D4D4  film title text on white/light backgrounds
+400  #A3A3A3  secondary text, labels
 600  #525252  borders, dividers on dark backgrounds
-700  #404040  darker borders
-800  #262626  very dark backgrounds (e.g. poster placeholder)
-900  #171717  ThemeDrawer background (elevated surface above pure black)
+700  #404040  nominated tag fill
+800  #262626  poster placeholder background
+900  #171717  (reserved)
 ```
 
 **Usage patterns:**
 - **Text hierarchy**: white (primary) → neutral-400 (secondary) → neutral-600 (tertiary)
 - **Dividers**: neutral-600 on dark backgrounds
-- **Elevated surfaces**: neutral-900 (ThemeDrawer panel, one step above page black)
-- **Empty states**: neutral-800 (poster placeholder boxes)
+- **Empty pyramid states**: neutral-500 text, no background fill
 
 ### In Code
 
@@ -55,10 +72,13 @@ colors: {
     red: '#860909',
     black: '#000000',
     white: '#FFFFFF',
-    green: '#22C55E',     // selected film status tag
-    mustard: '#EABB16',   // shortlisted film status tag
+    green: '#22C55E',
+    mustard: '#EABB16',
+    cyan: '#00AACC',
+    magenta: '#CC0055',
+    yellow: '#F5C400',
   },
-  neutral: { 400, 600, 700, 800, 900 }
+  neutral: { 300, 400, 600, 700, 800, 900 }
 }
 ```
 
@@ -68,42 +88,52 @@ colors: {
 
 ### Fonts
 
-| Font | Stack | Usage | Weight |
-|------|-------|-------|--------|
-| **Urbanist** | Urbanist, sans-serif | Headings, labels, nav, UI elements | 500, 600, 700 |
-| **Inter** | Inter, sans-serif | Body text, descriptions, film metadata | 400, 500, 600 |
+Three fonts are in use, each with a distinct role:
 
-Both imported from Google Fonts.
+| Font | Tailwind class | Usage |
+|------|---------------|-------|
+| **Notable** | `font-display` | Nav title ("Bath Film Club"), pyramid row headings, section labels (`.section-label`, `.pyramid-subtitle`) |
+| **Barlow Condensed** | `font-heading` | All other headings, UI labels, buttons, filter pills, drawer nav, status tags |
+| **Barlow Semi Condensed** | `font-body` | Body text, descriptions, film metadata, captions, Browse button, nav title |
+
+All imported from Google Fonts:
+```css
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@600;700;800;900&family=Notable&display=swap');
+```
+
+**Notable** is a single-weight display font — `font-bold` / `font-black` etc. have no effect where it is used.
 
 ### Type Scale
 
-| Role | Font | Size | Weight | Tracking | Color |
-|------|------|------|--------|----------|-------|
-| **Page title** | Urbanist | 5xl (48px) | 700 | normal | white |
-| **Section title** | Urbanist | 2xl (24px) | 700 | normal | white |
-| **Nav / UI labels** | Urbanist | sm (14px) | 600 | wide | white |
-| **Section marker** | Urbanist | xs (12px) | 700 | widest | neutral-400 |
-| **Body paragraph** | Inter | base (16px) | 400 | normal | neutral-300/400 |
-| **Secondary text** | Inter | sm (14px) | 400 | normal | neutral-400 |
-| **Caption / meta** | Inter | xs (12px) | 400 | normal | neutral-400 |
+| Role | Font | Size | Weight | Notes |
+|------|------|------|--------|-------|
+| **Theme title** | Barlow Condensed | 5xl (48px) | 900 (black) | Centrepiece display heading |
+| **Search heading** | Barlow Condensed | 4xl | 800 (extrabold) | |
+| **Section headings** | Barlow Condensed | 2xl | 800 (extrabold) | Homepage sections |
+| **Section label** | Notable | xs | — | `.section-label` class, all caps, wide tracking |
+| **Pyramid row heading** | Notable | xl | — | `.pyramid-subtitle` class |
+| **Nav / UI labels** | Barlow Condensed | sm | 600 | Uppercase, wide tracking |
+| **Browse / Home nav** | Barlow Semi Condensed | sm | 600 | Uppercase, wide tracking |
+| **Body paragraph** | Barlow Semi Condensed | base–2xl | 400 | Hero text larger |
+| **Film title (card)** | Barlow Semi Condensed | xs | 400 | On white/80 background |
+| **Caption / meta** | Barlow Semi Condensed | xs–sm | 400 | neutral-400 |
 
 ### Section Label (Square Motif)
 
-The square from the Bath Film Club logo marks major sections.
+The square from the Bath Film Club logo marks major sections. Square is CSS-generated (not a Unicode character) for reliable vertical alignment in flex containers.
 
 ```html
 <p class="section-label">Film Selection</p>
-<!-- renders: ■ FILM SELECTION -->
+<!-- renders: ■ FILM SELECTION  (square is brand-red) -->
 ```
 
 ```css
 .section-label {
-  @apply flex items-center gap-2 text-xs font-heading font-bold
-         uppercase tracking-widest text-neutral-400;
+  @apply flex items-center gap-2 text-xs font-display uppercase tracking-widest text-neutral-400;
 }
 .section-label::before {
-  content: '■';
-  @apply text-neutral-400 mb-[0.05em] text-3xl leading-none;
+  content: '';
+  @apply block w-2 h-2 bg-brand-red flex-shrink-0;
 }
 ```
 
@@ -156,17 +186,16 @@ Three-column grid across all pages:
 └──────────────┴──────────────────┴──────────────┘
 ```
 
-- **Left cell** — ThemeDrawer trigger ("Browse") on all pages. Hidden when no themes data is available (edge case only).
-- **Centre cell** — "BATH FILM CLUB" in Urbanist bold, always links to `/`
-- **Right cell** — Magnifying glass icon SVG, links to `/search`. Active state filled white when on `/search`.
-
-Implemented with `grid grid-cols-3 items-center` so the centre is always truly centred regardless of left/right content width.
+- **Top edge**: 4px solid brand-red border (`border-b-4 border-b-brand-red`) — editorial brand stamp
+- **Left cell** — ThemeDrawer trigger ("Browse") — `font-body font-semibold`, `interactive-item`
+- **Centre cell** — "BATH FILM CLUB" in Barlow Semi Condensed, `interactive-item`, always links to `/`
+- **Right cell** — Magnifying glass SVG, links to `/search`. Active state filled white when on `/search`.
 
 ```astro
 <!-- Header.astro Props -->
 interface Props {
-  themes?: Theme[];    // passed from every page
-  currentSlug?: string; // only on theme detail pages (highlights active theme in drawer)
+  themes?: Theme[];
+  currentSlug?: string;
 }
 ```
 
@@ -174,24 +203,25 @@ interface Props {
 
 Slide-in panel from the left edge. Self-contained React island.
 
-- **Trigger:** "Browse" button in header left cell (all pages)
-- **Background:** `bg-neutral-900` — one step above page black, clearly distinct
-- **Border:** `border-r border-neutral-700`
+- **Trigger:** "Browse" button — Barlow Semi Condensed, `interactive-item`
+- **Background:** `bg-brand-red` — bold brand identity
+- **Border:** `border-r border-red-900`
 - **Width:** `w-72` (288px)
 - **Animation:** `transition-transform duration-300 ease-in-out`, slides from `-translate-x-full` to `translate-x-0`
-- **Close:** × button, click overlay, or Escape key
+- **Close:** × button (`text-white/70 hover:text-white`), click overlay, or Escape key
 - **Body scroll lock:** `document.body.style.overflow = 'hidden'` while open
+
+**Text colours on red background:**
+- Year labels: `text-white/60`
+- Theme links: `text-white/80`
+- Active theme: `.interactive-item.active` (white fill, black text)
 
 **Theme list structure:**
 - Grouped by year (descending — most recent year first)
 - Within each year: oldest month first (Jan at top, Dec at bottom)
 - Each link shows `[Mon] – [Theme Title]` e.g. "Jan – Favourite Films"
-- Active theme highlighted with `.interactive-item.active` (white fill) on theme detail pages
-- No active state on homepage or search page
 
 ### Interactive Item Pattern
-
-All clickable nav elements share the `.interactive-item` class:
 
 ```css
 .interactive-item {
@@ -210,19 +240,19 @@ All clickable nav elements share the `.interactive-item` class:
 ### Homepage (`/`)
 
 ```
-Header [Browse | Bath Film Club | 🔍]
+Header [border-b-4 red | Browse | Bath Film Club | 🔍]
   Hero (logo left, tagline + Discord CTA right)
   How It Works
   Current Theme (title + description)
   Upcoming Meeting (date, time, venue)
 [Film Pyramid — full viewport width]
-Footer
+Footer [Discord CTA | border-t-4 red | © | Home Search]
 ```
 
 ### Theme Detail Page (`/theme/[slug]`)
 
 ```
-Header [Browse (active highlight) | Bath Film Club | 🔍]
+Header [border-b-4 red | Browse (active highlight) | Bath Film Club | 🔍]
   ← Theme Title →    (prev/next chevron nav)
   Month label
   Description
@@ -230,12 +260,12 @@ Header [Browse (active highlight) | Bath Film Club | 🔍]
 Footer
 ```
 
-Prev/next chevrons: SVG with `stroke-linecap="square" stroke-linejoin="miter"` — straight-edged, no curves. Absent at chronological boundaries (oldest/newest theme).
+Prev/next chevrons: SVG with `stroke-linecap="square" stroke-linejoin="miter"` — straight-edged.
 
 ### Search Page (`/search`)
 
 ```
-Header [Browse | Bath Film Club | 🔍 (active)]
+Header [border-b-4 red | Browse | Bath Film Club | 🔍 (active)]
   "Search / Films & Themes" heading
   Text input
   Status filter pills: [Selected] [Shortlisted] [Nominated]
@@ -256,49 +286,61 @@ Footer
 
 ### Film Pyramid
 
-Displays films in a visual hierarchy matching the selection process. Two films selected, five shortlisted, variable number nominated.
+Displays films in a visual hierarchy matching the selection process.
 
 ```
-[Film] [Film]                   ← Selected (largest cards)
-[Film] [Film] [Film] [Film] [Film]  ← Shortlisted
-[Film] [Film] ... [Film]         ← Nominated (smallest, variable count)
+[Film] [Film]                       ← Selected (largest cards, magenta band)
+[Film] [Film] [Film] [Film] [Film]  ← Shortlisted (cyan band)
+[Film] [Film] ... [Film]            ← Nominated (yellow band, variable count)
 ```
 
-**Full-width bands:** The pyramid renders outside `max-w-site` so each row's background colour (`bg-neutral-600/25`, `/20`, `/15`) bleeds to the screen edge.
+**Full-width bands:** Pyramid renders outside `max-w-site`; band rows bleed to screen edge.
+
+**Band colours (CMY):**
+| Tier | Band background | Heading text |
+|------|----------------|-------------|
+| Selected | `bg-brand-magenta/15` | `text-white/90` |
+| Shortlisted | `bg-brand-cyan/15` | `text-white/90` |
+| Nominated | `bg-brand-yellow/15` | `text-white/90` |
 
 **Row headings:**
-- Active (films present): `bg-brand-red text-brand-white`
-- Empty (no films yet): `bg-neutral-800 text-neutral-500`
+- Active (films present): `text-white/90` via `accentClass` prop — no background fill
+- Empty (no films yet): `text-neutral-500` — no background fill
 - Nominated row only: count shown in heading e.g. "Nominated Films (12)"
 
 **Component split:**
 - `FilmPyramid.astro` — Astro wrapper, splits films into rows via `getPyramidRows()`
-- `PyramidIsland.tsx` — React island, manages `activeFilm` state, renders `FilmRow` × 3 + `FilmPanel`
+- `PyramidIsland.tsx` — React island, `FilmRow` accepts `bgClass` + `accentClass` props
 
 ### Film Card (`FilmCard.tsx`)
 
-Individual film poster. Used inside the pyramid.
+Individual film poster.
 
 - Aspect ratio: `2/3` (standard poster)
-- Hover: the **entire card container** scales up (`group-hover:scale-105` on the `aspect-[2/3]` div, not the `<img>`). This means the poster grows without cropping.
+- Hover: entire card container scales up (`group-hover:scale-110` on the `aspect-[2/3]` div)
 - Click: calls `onSelect(film)` to open FilmPanel
-- Status tag: colour-coded badge below poster (green = selected, mustard = shortlisted, neutral = nominated). Suppressed when all films in a row share the same status.
+- **Title box:** `h-12 bg-white/80 p-2` — fixed height, translucent white fill, `text-neutral-800`
+- **Status tags:** solid filled, not outlined:
+  - Selected: `bg-brand-green text-black`
+  - Shortlisted: `bg-brand-mustard text-black`
+  - Nominated: `bg-neutral-700 text-neutral-300`
+  - Tags suppressed when all films in a row share the same status
 
 ### Film Panel (`FilmPanel.tsx`)
 
-Slide-in detail drawer from the right. White background on dark page.
+Slide-in detail drawer from the right. White background.
 
 - **Width:** `max-w-lg` (512px)
 - **Animation:** 300ms ease-in-out from right
-- **Overlay:** `bg-black/60` behind panel, click to dismiss
+- **Overlay:** `bg-black/60`, click to dismiss
 - **Close:** × button, click overlay, or Escape
-- **Content:** poster (full width), title + year/runtime/rating, genres, synopsis, director/producers/cast, trailer link
+- **Content:** poster, title + year/runtime/rating, genres, synopsis, director/producers/cast, trailer link
 
 Used from: homepage pyramid, theme page pyramid, search page results and poster grid.
 
 ### SearchPage (`SearchPage.tsx`)
 
-React island. Three display modes driven by state:
+React island. Three display modes:
 
 | Mode | Condition | Display |
 |------|-----------|---------|
@@ -309,29 +351,17 @@ React island. Three display modes driven by state:
 **Filter pills:**
 - Inactive: `border-neutral-600 text-neutral-400 hover:border-neutral-400 hover:text-white`
 - Active: `bg-white text-black border-white`
-- Status and month filters combine: both must match for a film to appear
 
-**Result list items:** small poster thumbnail (48px) left, film title / theme link / director / date·status right. Click → FilmPanel. Theme-only matches (no film) show as links to theme page.
+**Result list items:** small poster thumbnail (48px) left, film title / theme link / director / date·status right. Click → FilmPanel.
 
-**Text search:** normalised (lowercase, strip punctuation), matches film title, director, or theme title. Theme title matches suppressed when a status filter is active.
+### DiscordButton (`DiscordButton.astro`)
 
-### Footer (`Footer.astro`)
+Reusable component. Discord URL is defined once inside this file.
 
+```astro
+<!-- Usage -->
+<DiscordButton />
 ```
-[padding top]
-Join on Discord  ← btn-discord (same size as homepage)
-
-─────────────────────────────────────────────
-© year Bath Film Club          Home  Search
-```
-
-- Discord button centred
-- Bottom bar: copyright left, nav links right
-- `mt-auto` via Layout flex column ensures footer is always at viewport bottom on short pages
-
-### Button Styles
-
-#### Discord CTA
 
 ```css
 .btn-discord {
@@ -341,14 +371,20 @@ Join on Discord  ← btn-discord (same size as homepage)
 }
 ```
 
-Used on homepage hero and footer.
+Used on: homepage hero, footer.
 
-#### Filter Pills
+### Footer (`Footer.astro`)
 
 ```
-inactive: border border-neutral-600 text-neutral-400 px-3 py-1 text-xs font-heading uppercase tracking-wide
-active:   bg-white text-black border-white (same padding/size)
+[Discord CTA — centred]
+
+━━━━━━━━━━━━━━━━━━━ (border-t-4 brand-red)
+© year Bath Film Club          Home  Search
 ```
+
+- Discord button centred above red border rule
+- Bottom bar: copyright left, nav links right
+- Sticky via Layout flex column (`flex-1` slot wrapper)
 
 ---
 
@@ -358,32 +394,32 @@ active:   bg-white text-black border-white (same padding/size)
 
 | Interaction | Effect | Duration |
 |-------------|--------|----------|
-| Nav hover | Border appears around item | 150ms |
+| Nav hover | White border box appears around item | 150ms |
 | Nav active | White fill, black text | — |
-| Film card hover | Entire card scales up 105% | 300ms |
+| Film card hover | Entire card scales up 110% | 300ms |
 | Poster grid hover | Opacity 80% | 150ms |
 | Panel/drawer open | Slide in from edge | 300ms ease-in-out |
 | Overlay | Fade in | 300ms |
 
-All scale transforms are on the container element, not inner images, so `overflow-hidden` clips with the scaling boundary rather than cropping the content.
+All scale transforms are on the container element, not inner images.
 
 ### Hover: Scale vs Opacity
 
 - **Film cards in pyramid** (`FilmCard.tsx`): scale the container — poster grows visually
-- **Poster grid in search page**: opacity fade — subtler, suits the grid context
-- **No bounce or playful effects** — aesthetic is editorial, not consumer
+- **Poster grid in search page**: opacity fade — subtler
+- **No bounce or playful effects** — aesthetic is editorial
 
 ### Whitespace
 
 - Between page sections: `py-12` (48px) minimum
 - Container padding: `px-6` (24px) sides
-- Line height in body text: 1.5 (relaxed)
+- Line height in body text: relaxed
 
 ---
 
 ## Accessibility
 
-- All text meets WCAG AA (4.5:1 minimum): white on black = 21:1, neutral-400 on black = 4.5:1
+- All text meets WCAG AA (4.5:1 minimum)
 - `<button>` for actions, `<a>` for navigation
 - `role="dialog"` + `aria-modal="true"` on ThemeDrawer and FilmPanel
 - `aria-label` on icon buttons (Browse, search icon, close buttons, prev/next chevrons)
@@ -397,17 +433,21 @@ All scale transforms are on the container element, not inner images, so `overflo
 | Decision | Rationale |
 |----------|-----------|
 | Black + white base | Maximum contrast, posters pop |
-| Urbanist headings | Geometric, contemporary, editorial |
-| Inter body | Highly readable, neutral |
-| Brand red sparingly | Accent only — pyramid headings, Discord button |
-| Square motif | Logo-derived visual signature |
-| No gradients or shadows | Editorial aesthetic |
-| Static site | Fast, cheap, maintenance-free |
-| ThemeDrawer on all pages | Consistent navigation, no context switching |
-| Full-width pyramid bands | Visual impact; colour bleeding matches homepage |
+| Notable for display | A24-influenced editorial display font; single-weight, distinctive |
+| Barlow Condensed for headings | Tight condensed grotesque; A24 aesthetic; multiple weights |
+| Barlow Semi Condensed for body | Shares design family with heading font; readable at small sizes |
+| CMY palette for pyramid | Derived from colour darkroom printer lights; thematically meaningful |
+| Magenta/Cyan/Yellow per tier | Selected (most prestigious) = magenta; shortlisted = cyan; nominated = yellow |
+| Solid status tags | More visible than outlined; colour registers clearly |
+| White/80 title box on cards | Consistent fixed-height box; readable over coloured pyramid bands |
+| Section label square in red | Brand colour anchor on every page |
+| Red border on header/footer | Editorial brand stamp; common in arts/film print design |
+| ThemeDrawer in brand red | Bold, memorable; red is consistent with header/footer accent |
+| White/90 pyramid headings | Readable on all CMY bands without needing a background fill |
 | Scale container not image | Hover grows poster without cropping |
 | Shortlisted films in search default | More films = richer grid; selected is always just 2 |
 | Footer always pinned | `flex flex-col` + `flex-1` slot wrapper |
+| current.json priority in getAllThemes() | Active theme always shows up-to-date film counts everywhere |
 
 ---
 
@@ -422,7 +462,7 @@ All scale transforms are on the container element, not inner images, so `overflo
 
 ### Change Colours
 
-Edit `site/tailwind.config.ts` → `theme.colors`. All colour usage is via Tailwind classes, so a single config change propagates everywhere.
+Edit `site/tailwind.config.ts` → `theme.colors.brand`. All colour usage is via Tailwind classes.
 
 ### Add a New Filter Type to Search
 
@@ -434,8 +474,8 @@ In `SearchPage.tsx`:
 ### Change ThemeDrawer Sort Order
 
 In `ThemeDrawer.tsx`:
-- Years: sort `Object.keys(byYear)` descending (current behaviour — most recent year first)
-- Within year: `byYear[year]!.sort((a, b) => a.month.localeCompare(b.month))` — oldest first (current, Jan at top)
+- Years: sort `Object.keys(byYear)` descending (current — most recent year first)
+- Within year: `byYear[year]!.sort((a, b) => a.month.localeCompare(b.month))` — oldest first
 
 ---
 
@@ -446,18 +486,18 @@ In `ThemeDrawer.tsx`:
 <p class="section-label">Film Selection</p>
 
 <!-- Discord CTA -->
-<a href="https://discord.gg/bathfilmclub" class="btn-discord">Join on Discord</a>
+<DiscordButton />
 
 <!-- Nav interactive item -->
-<a href="/" class="font-heading font-semibold text-sm uppercase tracking-wide text-white interactive-item">
-  Home
+<a href="/" class="font-body font-semibold text-sm uppercase tracking-wide text-white interactive-item">
+  Bath Film Club
 </a>
 
 <!-- Container pattern -->
 <div class="max-w-site mx-auto px-6 py-16">...</div>
 
 <!-- Full-width band (pyramid rows) — rendered outside container -->
-<div class="py-10 bg-neutral-600/25">
+<div class="py-10 bg-brand-magenta/15">
   <div class="max-w-[1200px] mx-auto px-6">...</div>
 </div>
 
