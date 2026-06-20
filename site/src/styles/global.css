@@ -33,7 +33,7 @@
 
   .section-label::before {
     content: '';
-    @apply block w-2 h-2 bg-neutral-400 flex-shrink-0;
+    @apply block w-2 h-2 bg-brand-red flex-shrink-0;
   }
 
   /* Consistent interactive element style: outline box on hover, filled on active */

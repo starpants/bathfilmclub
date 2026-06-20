@@ -32,21 +32,21 @@ export function FilmCard({ film, status, onSelect, showTag = true }: Props) {
           </div>
         )}
       </div>
-      <div className="mt-1.5 h-9 overflow-hidden">
-        <p className="font-body text-xs text-neutral-300 leading-snug line-clamp-2">{film.title}</p>
+      <div className="mt-1.5 h-12 overflow-hidden bg-white/80 p-2 ">
+        <p className="font-body text-xs text-neutral-800 leading-snug line-clamp-2">{film.title}</p>
       </div>
       {showTag && status === 'selected' && (
-        <span className="mt-1 inline-block border border-brand-green text-brand-green text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
+        <span className="mt-1 inline-block bg-brand-green text-black text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
           {status}
         </span>
       )}
       {showTag && status === 'shortlisted' && (
-        <span className="mt-1 inline-block border border-brand-mustard text-brand-mustard text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
+        <span className="mt-1 inline-block bg-brand-mustard text-black text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
           {status}
         </span>
       )}
       {showTag && status === 'nominated' && (
-        <span className="mt-1 inline-block border border-neutral-700 text-neutral-500 text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
+        <span className="mt-1 inline-block bg-neutral-700 text-neutral-300 text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
           {status}
         </span>
       )}

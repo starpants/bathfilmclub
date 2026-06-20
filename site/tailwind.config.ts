@@ -11,6 +11,9 @@ export default {
           white: '#FFFFFF',
           green: '#22C55E',
           mustard: '#EABB16',
+          cyan: '#00AACC',
+          magenta: '#CC0055',
+          yellow: '#F5C400',
         },
         neutral: {
           50: '#FAFAFA',

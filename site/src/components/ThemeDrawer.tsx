@@ -63,7 +63,7 @@ export function ThemeDrawer({ themes, currentSlug }: Props) {
 
       {/* Drawer */}
       <aside
-        className={`fixed left-0 top-0 h-full w-72 bg-neutral-900 border-r border-neutral-700 z-50 overflow-y-auto transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
+        className={`fixed left-0 top-0 h-full w-72 bg-brand-red border-r border-red-900 z-50 overflow-y-auto transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
         role="dialog"
         aria-modal="true"
         aria-label="Browse themes"
@@ -71,7 +71,7 @@ export function ThemeDrawer({ themes, currentSlug }: Props) {
         {/* Close button */}
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-4 right-4 p-2 hover:text-brand-red transition-colors"
+          className="absolute top-4 right-4 p-2 text-white/70 hover:text-white transition-colors"
           aria-label="Close"
         >
           <svg
@@ -90,7 +90,7 @@ export function ThemeDrawer({ themes, currentSlug }: Props) {
         <nav className="p-6 pt-14 space-y-6">
           {years.map((year) => (
             <div key={year}>
-              <p className="font-heading font-bold uppercase tracking-widest text-neutral-400 mb-2">
+              <p className="font-heading font-bold uppercase tracking-widest text-white/60 mb-2">
                 {year}
               </p>
               <ul className="space-y-1">
@@ -98,7 +98,7 @@ export function ThemeDrawer({ themes, currentSlug }: Props) {
                   <li key={t.slug}>
                     <a
                       href={`/theme/${t.slug}`}
-                      className={`block font-body text-neutral-400 interactive-item${t.slug === currentSlug ? ' active' : ''}`}
+                      className={`block font-body text-white/80 interactive-item${t.slug === currentSlug ? ' active' : ''}`}
                     >
                       {shortMonth(t.month)} – {t.title}
                     </a>

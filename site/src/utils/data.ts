@@ -11,9 +11,15 @@ export async function getCurrentCycle(): Promise<Theme | null> {
 
 export async function getAllThemes(): Promise<Theme[]> {
   const imports = import.meta.glob<{ default: Theme }>('../data/themes/*.json', { eager: true });
-  return Object.values(imports)
-    .map((m) => m.default)
-    .sort((a, b) => b.month.localeCompare(a.month)); // newest first
+  const archived = Object.values(imports).map((m) => m.default);
+
+  // current.json takes priority over any archived copy with the same slug
+  const current = await getCurrentCycle();
+  const themes = current
+    ? [current, ...archived.filter((t) => t.slug !== current.slug)]
+    : archived;
+
+  return themes.sort((a, b) => b.month.localeCompare(a.month));
 }
 
 export async function getThemeBySlug(slug: string): Promise<Theme | null> {
