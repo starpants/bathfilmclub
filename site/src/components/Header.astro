@@ -8,6 +8,7 @@ interface Props {
 }
 
 const { themes, currentSlug } = Astro.props;
+const isSearch = Astro.url.pathname === '/search';
 ---
 <header class="border-b border-neutral-600">
   <div class="max-w-site mx-auto px-6 h-16 flex items-center justify-end">
@@ -15,23 +16,25 @@ const { themes, currentSlug } = Astro.props;
       {themes && currentSlug && (
         <ThemeDrawer themes={themes} currentSlug={currentSlug} client:load />
       )}
-      {[
-        { href: '/', label: 'Home' },
-        { href: '/archive', label: 'Archive' },
-      ].map(({ href, label }) => {
-        const isActive = Astro.url.pathname === href;
-        return (
-          <a
-            href={href}
-            class:list={[
-              'font-heading font-semibold text-sm uppercase tracking-wide text-white interactive-item',
-              { active: isActive },
-            ]}
-          >
-            {label}
-          </a>
-        );
-      })}
+      <a
+        href="/"
+        class:list={[
+          'font-heading font-semibold text-sm uppercase tracking-wide text-white interactive-item',
+          { active: Astro.url.pathname === '/' },
+        ]}
+      >
+        Home
+      </a>
+      <a
+        href="/search"
+        class:list={['text-white interactive-item flex items-center', { active: isSearch }]}
+        aria-label="Search films and themes"
+      >
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="7.5" cy="7.5" r="5.5" />
+          <path d="M13 13l3 3" />
+        </svg>
+      </a>
     </nav>
   </div>
 </header>
