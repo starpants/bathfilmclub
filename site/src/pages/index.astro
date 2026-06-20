@@ -5,6 +5,7 @@ import FilmPyramid from '../components/FilmPyramid.astro';
 import HowItWorks from '../components/HowItWorks.astro';
 import SectionTitle from '../components/SectionTitle.astro';
 import { getCurrentCycle, getAllThemes, formatMeetingDate } from '../utils/data';
+import DiscordButton from '../components/DiscordButton.astro';
 
 const cycle = await getCurrentCycle();
 const allThemes = await getAllThemes();
@@ -26,14 +27,7 @@ const allThemes = await getAllThemes();
             <p class="font-body text-neutral-300 text-xl md:text-2xl leading-relaxed">
             A monthly film discussion group in Bath. Each month a new theme, a new selection, a new conversation.
           </p>
-        <a
-            href="https://discord.gg/bathfilmclub"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-discord"
-          >
-            Join on Discord
-          </a>
+        <DiscordButton />
           </div>
   
         </div>

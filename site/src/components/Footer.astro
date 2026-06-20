@@ -1,18 +1,12 @@
 ---
+import DiscordButton from './DiscordButton.astro';
 const year = new Date().getFullYear();
 ---
 
 <footer class="pt-8">
   <div class="max-w-site mx-auto px-6 py-12 space-y-10">
     <div class="flex items-center justify-center">
-      <a
-        href="https://discord.gg/bathfilmclub"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="btn-discord"
-      >
-        Join on Discord
-      </a>
+      <DiscordButton />
     </div>
 
     <div class="flex items-center justify-between pt-6 pb-16 border-t border-neutral-800">
