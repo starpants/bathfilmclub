@@ -6,6 +6,12 @@ interface Props {
   currentSlug: string;
 }
 
+function shortMonth(month: string): string {
+  const [year, m] = month.split('-');
+  return new Date(parseInt(year!), parseInt(m!) - 1, 1)
+    .toLocaleDateString('en-GB', { month: 'short' });
+}
+
 export function ThemeDrawer({ themes, currentSlug }: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -85,7 +91,7 @@ export function ThemeDrawer({ themes, currentSlug }: Props) {
                       href={`/theme/${t.slug}`}
                       className={`block font-body text-sm text-neutral-400 interactive-item${t.slug === currentSlug ? ' active' : ''}`}
                     >
-                      {t.title}
+                      {shortMonth(t.month)} – {t.title}
                     </a>
                   </li>
                 ))}
