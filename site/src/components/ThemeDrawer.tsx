@@ -3,7 +3,7 @@ import type { Theme } from '@bathfilmclub/types';
 
 interface Props {
   themes: Theme[];
-  currentSlug: string;
+  currentSlug?: string;
 }
 
 function shortMonth(month: string): string {
@@ -60,7 +60,7 @@ export function ThemeDrawer({ themes, currentSlug }: Props) {
 
       {/* Drawer */}
       <aside
-        className={`fixed left-0 top-0 h-full w-72 bg-brand-black border-r border-neutral-800 z-50 overflow-y-auto transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
+        className={`fixed left-0 top-0 h-full w-72 bg-neutral-900 border-r border-neutral-700 z-50 overflow-y-auto transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
         role="dialog"
         aria-modal="true"
         aria-label="Browse themes"

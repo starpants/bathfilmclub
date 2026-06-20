@@ -5,47 +5,26 @@ import type { Theme } from '@bathfilmclub/types';
 interface Props {
   themes?: Theme[];
   currentSlug?: string;
-  previousHref?: string;
 }
 
-const { themes, currentSlug, previousHref } = Astro.props;
+const { themes, currentSlug } = Astro.props;
 const isSearch = Astro.url.pathname === '/search';
 ---
 <header class="border-b border-neutral-600">
   <div class="max-w-site mx-auto px-6 h-16 grid grid-cols-3 items-center">
-    <!-- Left: drawer trigger on theme pages -->
     <div>
-      {themes && currentSlug && (
-        <ThemeDrawer themes={themes} currentSlug={currentSlug} client:load />
+      {themes && (
+        <ThemeDrawer themes={themes} {...(currentSlug ? { currentSlug } : {})} client:load />
       )}
     </div>
 
-    <!-- Centre: site name -->
     <div class="text-center">
       <a href="/" class="font-heading font-bold text-sm uppercase tracking-widest text-white">
         Bath Film Club
       </a>
     </div>
 
-    <!-- Right: nav links -->
-    <nav class="flex items-center justify-end gap-4">
-      <a
-        href="/"
-        class:list={[
-          'font-heading font-semibold text-sm uppercase tracking-wide text-white interactive-item',
-          { active: Astro.url.pathname === '/' },
-        ]}
-      >
-        Home
-      </a>
-      {previousHref && (
-        <a
-          href={previousHref}
-          class="font-heading font-semibold text-sm uppercase tracking-wide text-white interactive-item"
-        >
-          Previously
-        </a>
-      )}
+    <nav class="flex items-center justify-end">
       <a
         href="/search"
         class:list={['text-white interactive-item flex items-center', { active: isSearch }]}

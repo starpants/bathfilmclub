@@ -8,12 +8,9 @@ import { getCurrentCycle, getAllThemes, formatMeetingDate } from '../utils/data'
 
 const cycle = await getCurrentCycle();
 const allThemes = await getAllThemes();
-const previousTheme = cycle
-  ? (allThemes.find((t) => t.month < cycle.month) ?? null)
-  : null;
 ---
 <Layout>
-  <Header {...(previousTheme ? { previousHref: `/theme/${previousTheme.slug}` } : {})} />
+  <Header themes={allThemes} />
 
   <!-- Hero -->
   <section class="py-0">
