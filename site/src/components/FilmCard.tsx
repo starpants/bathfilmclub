@@ -16,7 +16,7 @@ export function FilmCard({ film, status, onSelect, showTag = true }: Props) {
       className="group block w-full text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red"
       aria-label={`View details for ${film.title}`}
     >
-      <div className="aspect-[2/3] overflow-hidden bg-neutral-800 transition-transform duration-300 group-hover:scale-105">
+      <div className="aspect-[2/3] overflow-hidden bg-neutral-800 transition-transform duration-300 group-hover:scale-110">
         {film.posterPath ? (
           <img
             src={`${TMDB_IMAGE_BASE}${film.posterPath}`}
