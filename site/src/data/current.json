@@ -1,680 +1,417 @@
 {
-  "slug": "2026-06-bottle-films",
-  "title": "Bottle Films",
-  "description": "Films set predominately in one location",
+  "slug": "2026-06-time-travel",
+  "title": "Black And White",
+  "description": "Main body of film is in black and white, either entirety or majority",
   "month": "2026-06",
   "meeting": {
-    "date": "2026-06-10",
+    "date": "2026-07-08",
     "time": "19:15",
-    "venue": "The Library, The Raven Pub, 7 Queen St, Bath BA1 1HE"
+    "venue": "The Raven Pub, 7 Queen St, Bath BA1 1HE"
   },
   "films": [
     {
       "film": {
-        "tmdbId": 333371,
-        "title": "10 Cloverfield Lane",
-        "year": 2016,
-        "runtime": 104,
+        "tmdbId": 588087,
+        "title": "A Girl Walks Home Alone at Night",
+        "year": 2011,
+        "runtime": 8,
         "genres": [
-          "Thriller",
-          "Science Fiction",
-          "Drama",
           "Horror"
         ],
-        "synopsis": "After a catastrophic car crash, a young woman wakes up in a survivalist's underground bunker, where he claims to have saved her from an apocalyptic attack that has left the outside world uninhabitable.",
-        "director": "Dan Trachtenberg",
-        "producers": [
-          "J.J. Abrams",
-          "Lindsey Weber"
-        ],
-        "cast": [
-          "John Goodman",
-          "Mary Elizabeth Winstead",
-          "John Gallagher Jr.",
-          "Douglas M. Griffin",
-          "Suzanne Cryer"
-        ],
-        "posterPath": "/q8A39vcBDruhvoDTJd6L8a4lnTi.jpg",
-        "backdropPath": "/dMERTVrObB7TkRVIFmcndR2sZFH.jpg",
-        "rating": 7,
-        "trailerKey": "yQy-ANhnUpE"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 389,
-        "title": "12 Angry Men",
-        "year": 1957,
-        "runtime": 97,
-        "genres": [
-          "Drama"
-        ],
-        "synopsis": "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other.",
-        "director": "Sidney Lumet",
-        "producers": [
-          "Henry Fonda",
-          "Reginald Rose"
-        ],
-        "cast": [
-          "Martin Balsam",
-          "John Fiedler",
-          "Lee J. Cobb",
-          "E.G. Marshall",
-          "Jack Klugman"
-        ],
-        "posterPath": "/zhG3vKWyDRaZYoaww1UVAi29T9h.jpg",
-        "backdropPath": "/w4bTBXcqXc2TUyS5Fc4h67uWbPn.jpg",
-        "rating": 8.6,
-        "trailerKey": "TEN-2uTi2c0"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 807196,
-        "title": "Boiling Point",
-        "year": 2021,
-        "runtime": 92,
-        "genres": [
-          "Drama",
-          "Thriller"
-        ],
-        "synopsis": "A head chef balances multiple personal and professional crises at a popular restaurant in London.",
-        "director": "Philip Barantini",
-        "producers": [
-          "Bart Ruspoli",
-          "Hester Ruoff"
-        ],
-        "cast": [
-          "Stephen Graham",
-          "Vinette Robinson",
-          "Alice May Feetham",
-          "Jason Flemyng",
-          "Hannah Walters"
-        ],
-        "posterPath": "/kdkk7OBnIL1peW2zwcAAp6O54Jo.jpg",
-        "backdropPath": "/he0XbwtxDiRnPERvboWMkvXFdAJ.jpg",
-        "rating": 7.2,
-        "trailerKey": "NX8J7_7_rLw"
-      },
-      "status": "shortlisted"
-    },
-    {
-      "film": {
-        "tmdbId": 220289,
-        "title": "Coherence",
-        "year": 2014,
-        "runtime": 89,
-        "genres": [
-          "Thriller",
-          "Science Fiction"
-        ],
-        "synopsis": "Four couples gather for dinner the night a mysterious and powerful comet passes overhead.",
-        "director": "James Ward Byrkit",
-        "producers": [
-          "Lene Bausager"
-        ],
-        "cast": [
-          "Emily Baldoni",
-          "Maury Sterling",
-          "Nicholas Brendon",
-          "Lorene Scafaria",
-          "Elizabeth Gracen"
-        ],
-        "posterPath": "/ezUtb9m5DeLwL2gxi4gktzNCvQv.jpg",
-        "backdropPath": "/cvGE73s935bXEAVt2W0zADPPegG.jpg",
-        "rating": 7.2,
-        "trailerKey": "YixSld-6PqM"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 12900,
-        "title": "Conspiracy",
-        "year": 2001,
-        "runtime": 96,
-        "genres": [
-          "History",
-          "Drama",
-          "War",
-          "TV Movie"
-        ],
-        "synopsis": "At the Wannsee Conference on January 20, 1942, senior Nazi officials meet to determine the manner in which the so-called \"Final Solution to the Jewish Question\" can be best implemented.",
-        "director": "Frank Pierson",
-        "producers": [
-          "Nick Gillott"
-        ],
-        "cast": [
-          "Kenneth Branagh",
-          "Stanley Tucci",
-          "Colin Firth",
-          "Jonathan Coy",
-          "Brendan Coyle"
-        ],
-        "posterPath": "/xKocKpTHaKcTuNRLu0rLbZWbLnH.jpg",
-        "backdropPath": "/iESnRGuIiXKeNo3pKMRaZStXyH6.jpg",
-        "rating": 7.3,
-        "trailerKey": "vWLvq0jC-c0"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 431,
-        "title": "Cube",
-        "year": 1998,
-        "runtime": 90,
-        "genres": [
-          "Thriller",
-          "Science Fiction",
-          "Mystery"
-        ],
-        "synopsis": "A group of strangers find themselves trapped in a maze-like prison. It soon becomes clear that each of them possesses the peculiar skills necessary to escape, if they don't wind up dead first.",
-        "director": "Vincenzo Natali",
-        "producers": [
-          "Mehra Meh",
-          "Betty Orr"
-        ],
-        "cast": [
-          "Nicole De Boer",
-          "Nicky Guadagni",
-          "Maurice Dean Wint",
-          "David Hewlett",
-          "Andrew Miller"
-        ],
-        "posterPath": "/x4BTjxdrOKC27FcSkBh8KPEgnum.jpg",
-        "backdropPath": "/3TimUBrXMVblpnTsyg4HssGVbBv.jpg",
-        "rating": 6.8,
-        "trailerKey": "HYoTGYT0-I4"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 1494,
-        "title": "Curse of the Golden Flower",
-        "year": 2006,
-        "runtime": 114,
-        "genres": [
-          "Action",
-          "Drama",
-          "Fantasy"
-        ],
-        "synopsis": "During China's Tang dynasty the emperor has taken the princess of a neighboring province as his wife. She has borne him two sons and raised his eldest. Now his control over his dominion is complete, including the royal family itself.",
-        "director": "Zhang Yimou",
-        "producers": [
-          "Bill Kong Chi-Keung",
-          "Zhang Weiping",
-          "Ronald Wong"
-        ],
-        "cast": [
-          "Chow Yun-Fat",
-          "Gong Li",
-          "Jay Chou",
-          "Liu Ye",
-          "Qin Junjie"
-        ],
-        "posterPath": "/gHkkDpfo5YnOrbVfwtDHi91BkrU.jpg",
-        "backdropPath": "/m3zGXY61pnFZ12gXnJgO0Mg0RWG.jpg",
-        "rating": 6.9,
-        "trailerKey": "c-W5dl98ZWA"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 521,
-        "title": "Dial M for Murder",
-        "year": 1954,
-        "runtime": 105,
-        "genres": [
-          "Thriller",
-          "Crime",
-          "Drama"
-        ],
-        "synopsis": "When her American lover visits London, a wealthy woman’s jealous husband hatches a plan to murder her and inherit her fortune.",
-        "director": "Alfred Hitchcock",
-        "producers": [
-          "Alfred Hitchcock"
-        ],
-        "cast": [
-          "Ray Milland",
-          "Grace Kelly",
-          "Robert Cummings",
-          "John Williams",
-          "Anthony Dawson"
-        ],
-        "posterPath": "/2gDCAgl2iBQNuJuk6p2xtuS1ewg.jpg",
-        "backdropPath": "/gTsiagZaMjJxr6Q12KfOfC556d6.jpg",
-        "rating": 8,
-        "trailerKey": "kR_NZuW28XE"
-      },
-      "status": "shortlisted"
-    },
-    {
-      "film": {
-        "tmdbId": 968,
-        "title": "Dog Day Afternoon",
-        "year": 1975,
-        "runtime": 125,
-        "genres": [
-          "Crime",
-          "Drama",
-          "Thriller"
-        ],
-        "synopsis": "Based on the true story of would-be Brooklyn bank robbers John Wojtowicz and Salvatore Naturile. Sonny and Sal attempt a bank heist which quickly turns sour and escalates into a hostage situation and stand-off with the police. As Sonny's motives for the robbery are slowly revealed and things become more complicated, the heist turns into a media circus.",
-        "director": "Sidney Lumet",
-        "producers": [
-          "Martin Elfand",
-          "Martin Bregman"
-        ],
-        "cast": [
-          "Al Pacino",
-          "John Cazale",
-          "Charles Durning",
-          "Chris Sarandon",
-          "James Broderick"
-        ],
-        "posterPath": "/mavrhr0ig2aCRR8d48yaxtD5aMQ.jpg",
-        "backdropPath": "/m10uqk0HI5JcITAbxNJIIiGA8HP.jpg",
-        "rating": 7.8,
-        "trailerKey": "nP4iEKNDAUM"
-      },
-      "status": "selected"
-    },
-    {
-      "film": {
-        "tmdbId": 985,
-        "title": "Eraserhead",
-        "year": 1977,
-        "runtime": 89,
-        "genres": [
-          "Horror",
-          "Science Fiction"
-        ],
-        "synopsis": "First-time father Henry Spencer tries to survive his industrial environment, his angry girlfriend, and the unbearable screams of his newly born mutant child.",
-        "director": "David Lynch",
-        "producers": [
-          "David Lynch"
-        ],
-        "cast": [
-          "Jack Nance",
-          "Charlotte Stewart",
-          "Allen Joseph",
-          "Jeanne Bates",
-          "Judith Roberts"
-        ],
-        "posterPath": "/mxveW3mGVc0DzLdOmtkZsgd7c3B.jpg",
-        "backdropPath": "/ApB0mF2d5Oqioi3yxjuogiotSLI.jpg",
-        "rating": 7.3,
-        "trailerKey": "zVJICfUx8M0"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 306650,
-        "title": "Kajaki",
-        "year": 2014,
-        "runtime": 108,
-        "genres": [
-          "Thriller",
-          "War",
-          "Adventure",
-          "Drama"
-        ],
-        "synopsis": "British soldiers guarding the Kajaki Dam set out to rescue a three-man team after one of them loses a leg to a landmine.",
-        "director": "Paul Katis",
-        "producers": [
-          "Andrew de Lotbiniere",
-          "Paul Katis",
-          "Gareth Unwin"
-        ],
-        "cast": [
-          "Mark Stanley",
-          "Malachi Kirby",
-          "Ali Cook",
-          "David Elliot",
-          "Paul Luebke"
-        ],
-        "posterPath": "/csL2D3ZbcxSoqoWyhYz4lDjdmk2.jpg",
-        "backdropPath": "/8jBDEjOdYFXE6D2o2sekLhe7Oo0.jpg",
-        "rating": 6.6,
-        "trailerKey": "t28VucECbZs"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 210479,
-        "title": "Locke",
-        "year": 2014,
-        "runtime": 85,
-        "genres": [
-          "Drama",
-          "Thriller"
-        ],
-        "synopsis": "Ivan Locke has worked hard to craft a good life for himself. Tonight, that life will collapse around him. On the eve of the biggest challenge of his career, Ivan receives a phone call that sets in motion a series of events that will unravel his family, job, and soul.",
-        "director": "Steven Knight",
-        "producers": [
-          "Guy Heeley",
-          "Paul Webster"
-        ],
-        "cast": [
-          "Tom Hardy",
-          "Ruth Wilson",
-          "Andrew Scott",
-          "Olivia Colman",
-          "Tom Holland"
-        ],
-        "posterPath": "/tTREq5tTyYwmSLDRMhybJ82zXcX.jpg",
-        "backdropPath": "/9LFk66Se0T3Uw2JPupYxAc6F2Gq.jpg",
-        "rating": 6.9,
-        "trailerKey": "TsBDYAYnQb0"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 25468,
-        "title": "My Dinner with Andre",
-        "year": 1981,
-        "runtime": 112,
-        "genres": [
-          "Drama",
-          "Comedy"
-        ],
-        "synopsis": "Two old friends meet for dinner; as one tells anecdotes detailing his experiences, the other notices their differing worldviews.",
-        "director": "Louis Malle",
-        "producers": [
-          "George W. George",
-          "Beverly Karp"
-        ],
-        "cast": [
-          "Andre Gregory",
-          "Wallace Shawn",
-          "Jean Lenauer",
-          "Roy Butler",
-          "Cindy Lou Adkins"
-        ],
-        "posterPath": "/8Dqga73kzWoitm9ML8lMzx1VK5O.jpg",
-        "backdropPath": "/r3zwnGMmRb7LaDNQluHVXAkZNoY.jpg",
-        "rating": 7.5,
-        "trailerKey": "n7hSY0QOkII"
-      },
-      "status": "selected"
-    },
-    {
-      "film": {
-        "tmdbId": 510,
-        "title": "One Flew Over the Cuckoo's Nest",
-        "year": 1975,
-        "runtime": 133,
-        "genres": [
-          "Drama"
-        ],
-        "synopsis": "A petty criminal fakes insanity to serve his sentence in a mental ward rather than prison. He soon finds himself as a leader to the other patients—and an enemy to the cruel, domineering nurse who runs the ward.",
-        "director": "Miloš Forman",
-        "producers": [
-          "Michael Douglas",
-          "Saul Zaentz"
-        ],
-        "cast": [
-          "Jack Nicholson",
-          "Brad Dourif",
-          "Louise Fletcher",
-          "Danny DeVito",
-          "William Redfield"
-        ],
-        "posterPath": "/kjWsMh72V6d8KRLV4EOoSJLT1H7.jpg",
-        "backdropPath": "/6Oa3zTiluBz2W8D2ou1MY16dUiF.jpg",
-        "rating": 8.4,
-        "trailerKey": "F4da9uRIg8c"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 4547,
-        "title": "Panic Room",
-        "year": 2002,
-        "runtime": 111,
-        "genres": [
-          "Crime",
-          "Drama",
-          "Thriller"
-        ],
-        "synopsis": "Trapped in their New York brownstone's panic room, a hidden chamber built as a sanctuary in the event of break-ins, newly divorced Meg Altman and her young daughter Sarah play a deadly game of cat-and-mouse with three intruders - Burnham, Raoul and Junior - during a brutal home invasion. But the room itself is the focal point because what the intruders really want is inside it.",
-        "director": "David Fincher",
-        "producers": [
-          "Ceán Chaffin",
-          "David Koepp",
-          "Gavin Polone"
-        ],
-        "cast": [
-          "Jodie Foster",
-          "Kristen Stewart",
-          "Forest Whitaker",
-          "Dwight Yoakam",
-          "Jared Leto"
-        ],
-        "posterPath": "/hANYbvfwxmkC9E4yY6YyJxYxlSJ.jpg",
-        "backdropPath": "/9G5bteYI8FXaY9EomnUP0kdHm66.jpg",
-        "rating": 6.8,
-        "trailerKey": "3niiZKd74oQ"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 23963,
-        "title": "Pontypool",
-        "year": 2009,
-        "runtime": 96,
-        "genres": [
-          "Horror",
-          "Mystery",
-          "Science Fiction"
-        ],
-        "synopsis": "When disc jockey Grant Mazzy reports to his basement radio station in the Canadian town of Pontypool, he thinks it's just another day at work. But when he hears reports of a virus that turns people into zombies, Mazzy barricades himself in the radio booth and tries to figure out a way to warn his listeners about the virus and its unlikely mode of transmission.",
-        "director": "Bruce McDonald",
-        "producers": [
-          "Jeffrey Coghlan",
-          "Ambrose Roche"
-        ],
-        "cast": [
-          "Stephen McHattie",
-          "Lisa Houle",
-          "Georgina Reilly",
-          "Hrant Alianak",
-          "Rick Roberts"
-        ],
-        "posterPath": "/uh4n9FSYYaeOWchP8gBPNtg7kD7.jpg",
-        "backdropPath": "/yxBmRVQ2Sa6P5Acqu3Ts32QudZC.jpg",
-        "rating": 6.5,
-        "trailerKey": "0W6y6pncMJQ"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 567,
-        "title": "Rear Window",
-        "year": 1954,
-        "runtime": 112,
-        "genres": [
-          "Thriller",
-          "Mystery",
-          "Drama"
-        ],
-        "synopsis": "A wheelchair-bound photographer spies on his neighbors from his apartment window and becomes convinced one of them has committed murder.",
-        "director": "Alfred Hitchcock",
+        "synopsis": "A girl walks home alone at night and a man follows her with insidious intentions, but when he gets to her apartment, she turns the tables in the most surprising way…with her fangs.",
+        "director": "Ana Lily Amirpour",
         "producers": [],
         "cast": [
-          "James Stewart",
-          "Grace Kelly",
-          "Wendell Corey",
-          "Thelma Ritter",
-          "Raymond Burr"
+          "Nazanin Boniadi",
+          "Marshall Manesh"
         ],
-        "posterPath": "/ILVF0eJxHMddjxeQhswFtpMtqx.jpg",
-        "backdropPath": "/zGs5tZOlvc9cprdcU6kDOVNpujf.jpg",
-        "rating": 8.3,
-        "trailerKey": "iZOTTxwzyMU"
+        "posterPath": "/Afa0eZ6XdwYLGM2eIANtnGMy03q.jpg",
+        "backdropPath": "/a5sWhjuumhxYiRDf0MU4wDyzve2.jpg",
+        "rating": 6.4
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 1580,
-        "title": "Rope",
-        "year": 1948,
-        "runtime": 81,
+        "tmdbId": 15,
+        "title": "Citizen Kane",
+        "year": 1941,
+        "runtime": 119,
         "genres": [
-          "Thriller",
-          "Crime",
+          "Mystery",
           "Drama"
         ],
-        "synopsis": "Two young men attempt to prove they committed the perfect murder by hosting a dinner party for the family of a classmate they just strangled to death.",
-        "director": "Alfred Hitchcock",
+        "synopsis": "Newspaper magnate Charles Foster Kane is taken from his mother as a boy and made the ward of a rich industrialist. As a result, every well-meaning, tyrannical or self-destructive move he makes for the rest of his life appears in some way to be a reaction to that deeply wounding event.",
+        "director": "Orson Welles",
         "producers": [
-          "Sidney Bernstein",
-          "Alfred Hitchcock"
+          "Orson Welles"
         ],
         "cast": [
-          "James Stewart",
-          "John Dall",
-          "Farley Granger",
-          "Cedric Hardwicke",
-          "Constance Collier"
+          "Orson Welles",
+          "Joseph Cotten",
+          "Dorothy Comingore",
+          "Ray Collins",
+          "George Coulouris"
         ],
-        "posterPath": "/9ar6rxLDB8kagAnXZKn6h9smscr.jpg",
-        "backdropPath": "/81LX4wktTXWEXjLNlkHTmJm7tRu.jpg",
-        "rating": 7.9,
-        "trailerKey": "mTmEraaEY20"
+        "posterPath": "/sav0jxhqiH0bPr2vZFU0Kjt2nZL.jpg",
+        "backdropPath": "/ruF3Lmd4A8MHbnEBE6lxPMbsHGL.jpg",
+        "rating": 8,
+        "trailerKey": "fAcLNMkzfTE"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 25050,
-        "title": "Still Walking",
-        "year": 2008,
-        "runtime": 114,
+        "tmdbId": 935,
+        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        "year": 1964,
+        "runtime": 95,
         "genres": [
-          "Drama",
-          "Family"
+          "Comedy",
+          "War"
         ],
-        "synopsis": "A family gathers together for a commemorative ritual whose nature only gradually becomes clear.",
-        "director": "Hirokazu Kore-eda",
+        "synopsis": "After the insane General Jack D. Ripper initiates a nuclear strike on the Soviet Union, a war room full of politicians, generals and a Russian diplomat all frantically try to stop it.",
+        "director": "Stanley Kubrick",
         "producers": [
-          "Yoshihiro Kato",
-          "Hijiri Taguchi",
-          "Satoshi Kono"
+          "Stanley Kubrick",
+          "Victor Lyndon"
         ],
         "cast": [
-          "Hiroshi Abe",
-          "Yui Natsukawa",
-          "YOU",
-          "Kazuya Takahashi",
-          "Shohei Tanaka"
+          "Peter Sellers",
+          "George C. Scott",
+          "Sterling Hayden",
+          "Keenan Wynn",
+          "Slim Pickens"
         ],
-        "posterPath": "/FWJbhAPdwiwKhUaAyz841jpYa1.jpg",
-        "backdropPath": "/lvSB0bnLzuxwrfTlI2l13gctWRn.jpg",
-        "rating": 7.8,
-        "trailerKey": "9gPbHqmjhNU"
+        "posterPath": "/6x7MzQ6BOMlRzam1StcmPO9v61g.jpg",
+        "backdropPath": "/7i0L2ee4Iy0aXV6vR5u1ZmblOrx.jpg",
+        "rating": 8.1,
+        "trailerKey": "XjLsIWZdWmc"
       },
-      "status": "shortlisted"
+      "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 10310,
-        "title": "The Bitter Tears of Petra von Kant",
-        "year": 1972,
-        "runtime": 124,
+        "tmdbId": 14320,
+        "title": "Great Expectations",
+        "year": 1946,
+        "runtime": 118,
         "genres": [
           "Drama",
           "Romance"
         ],
-        "synopsis": "Petra von Kant is a successful fashion designer -- arrogant, caustic, and self-satisfied. She mistreats Marlene (her secretary, maid, and co-designer). Enter Karin, a 23-year-old beauty who wants to be a model. Petra falls in love with Karin and invites her to move in.",
-        "director": "Rainer Werner Fassbinder",
+        "synopsis": "In this Dickens adaptation, orphan Pip discovers through lawyer Mr. Jaggers that a mysterious benefactor wishes to ensure that he becomes a gentleman. Reunited with his childhood patron, Miss Havisham, and his first love, the beautiful but emotionally cold Estella, he discovers that the elderly spinster has gone mad from having been left at the altar as a young woman, and has made her charge into a warped, unfeeling heartbreaker.",
+        "director": "David Lean",
         "producers": [
-          "Rainer Werner Fassbinder",
-          "Michael Fengler"
+          "Ronald Neame"
         ],
         "cast": [
-          "Margit Carstensen",
-          "Hanna Schygulla",
-          "Katrin Schaake",
-          "Eva Mattes",
-          "Gisela Fackeldey"
+          "John Mills",
+          "Valerie Hobson",
+          "Tony Wager",
+          "Jean Simmons",
+          "Bernard Miles"
         ],
-        "posterPath": "/bkxrRfXaoTvZObG1Gd91x2mnmFX.jpg",
-        "backdropPath": "/kyVtVCs493JAL3lxfSC8UrGbrwS.jpg",
-        "rating": 7.4,
-        "trailerKey": "eq0w_XsEAAU"
+        "posterPath": "/ynaFuVvW2jaG06pMV67dOhzMYfJ.jpg",
+        "backdropPath": "/5SdVucbeGF5xAHT496uPRPZVJD6.jpg",
+        "rating": 7.3,
+        "trailerKey": "ueGOsCoG5b8"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 2108,
-        "title": "The Breakfast Club",
-        "year": 1985,
-        "runtime": 98,
+        "tmdbId": 16284,
+        "title": "Ice Cold in Alex",
+        "year": 1958,
+        "runtime": 125,
+        "genres": [
+          "War",
+          "Adventure",
+          "Drama"
+        ],
+        "synopsis": "A group of army personnel and nurses attempt a dangerous and arduous trek across the deserts of North Africa during the second world war. The leader of the team dreams of his ice cold beer when he reaches Alexandria.",
+        "director": "J. Lee Thompson",
+        "producers": [
+          "W.A. Whittaker"
+        ],
+        "cast": [
+          "John Mills",
+          "Sylvia Syms",
+          "Anthony Quayle",
+          "Harry Andrews",
+          "Diane Clare"
+        ],
+        "posterPath": "/lkqTxSL9JwyyXDu5yeOoj5mzsVc.jpg",
+        "backdropPath": "/1fvSrGEt1UsxENnZ3wHYKuFT87n.jpg",
+        "rating": 7.3,
+        "trailerKey": "qaJ5UBi4z2c"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 19,
+        "title": "Metropolis",
+        "year": 1927,
+        "runtime": 148,
+        "genres": [
+          "Drama",
+          "Science Fiction"
+        ],
+        "synopsis": "In a futuristic city sharply divided between the rich and the poor, the son of the city's mastermind meets a prophet who predicts the coming of a savior to mediate their differences.",
+        "director": "Fritz Lang",
+        "producers": [
+          "Erich Pommer"
+        ],
+        "cast": [
+          "Gustav Fröhlich",
+          "Brigitte Helm",
+          "Alfred Abel",
+          "Rudolf Klein-Rogge",
+          "Theodor Loos"
+        ],
+        "posterPath": "/kr9wXRN23zLuWJIelahas1mtnYj.jpg",
+        "backdropPath": "/eeMoFKxjjiCi6iep2GEZtSAMYIr.jpg",
+        "rating": 8.1,
+        "trailerKey": "ZAvzaOxDt2c"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 144,
+        "title": "Wings of Desire",
+        "year": 1987,
+        "runtime": 128,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Romance"
+        ],
+        "synopsis": "Two angels, Damiel and Cassiel, glide through the streets of Berlin, observing the bustling population, providing invisible rays of hope to the distressed but never interacting with them. When Damiel falls in love with lonely trapeze artist Marion, the angel longs to experience life in the physical world, and finds — with some words of wisdom from actor Peter Falk — that it might be possible for him to take human form.",
+        "director": "Wim Wenders",
+        "producers": [
+          "Wim Wenders",
+          "Anatole Dauman"
+        ],
+        "cast": [
+          "Bruno Ganz",
+          "Solveig Dommartin",
+          "Otto Sander",
+          "Curt Bois",
+          "Peter Falk"
+        ],
+        "posterPath": "/iZQs2vUeCzvS1KfZJ6uYNCGJBBV.jpg",
+        "backdropPath": "/7TlGXrB4WQ3wbpOCUQnBXseCuOl.jpg",
+        "rating": 7.8,
+        "trailerKey": "0iAzYofuItM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 187,
+        "title": "Sin City",
+        "year": 2005,
+        "runtime": 124,
+        "genres": [
+          "Crime",
+          "Thriller"
+        ],
+        "synopsis": "Welcome to Sin City. This town beckons to the tough, the corrupt, the brokenhearted. Some call it dark… Hard-boiled. Then there are those who call it home — Crooked cops, sexy dames, desperate vigilantes. Some are seeking revenge, others lust after redemption, and then there are those hoping for a little of both. A universe of unlikely and reluctant heroes still trying to do the right thing in a city that refuses to care.",
+        "director": "Robert Rodriguez",
+        "producers": [
+          "Elizabeth Avellan"
+        ],
+        "cast": [
+          "Bruce Willis",
+          "Jessica Alba",
+          "Clive Owen",
+          "Mickey Rourke",
+          "Rutger Hauer"
+        ],
+        "posterPath": "/i66G50wATMmPrvpP95f0XP6ZdVS.jpg",
+        "backdropPath": "/t9kQnqiaxQ8TLB25rTzDKLd0fdM.jpg",
+        "rating": 7.5,
+        "trailerKey": "0p0h_YCinMs"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 10778,
+        "title": "The Man Who Wasn't There",
+        "year": 2001,
+        "runtime": 116,
+        "genres": [
+          "Crime",
+          "Drama"
+        ],
+        "synopsis": "A tale of murder, crime and punishment set in the summer of 1949. Ed Crane, a barber in a small California town, is dissatisfied with his life, but his wife Doris' infidelity and a mysterious opportunity presents him with a chance to change it.",
+        "director": "Joel Coen",
+        "producers": [
+          "Ethan Coen",
+          "Joel Coen"
+        ],
+        "cast": [
+          "Billy Bob Thornton",
+          "Frances McDormand",
+          "Michael Badalucco",
+          "James Gandolfini",
+          "Katherine Borowitz"
+        ],
+        "posterPath": "/lrCgt8NNMyFsfmXyXiSSCRXNH4u.jpg",
+        "backdropPath": "/xwjVHxKKk2hb6CJX46U4Cv0Zq0a.jpg",
+        "rating": 7.5,
+        "trailerKey": "vjO8u_9CqXI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 284,
+        "title": "The Apartment",
+        "year": 1960,
+        "runtime": 126,
         "genres": [
           "Comedy",
-          "Drama"
+          "Drama",
+          "Romance"
         ],
-        "synopsis": "Five high school students from different walks of life endure a Saturday detention under a power-hungry principal. The disparate group includes rebel John, princess Claire, outcast Allison, brainy Brian and Andrew, the jock. Each has a chance to tell his or her story, making the others see them a little differently -- and when the day ends, they question whether school will ever be the same.",
-        "director": "John Hughes",
+        "synopsis": "Bud Baxter is a minor clerk in a huge New York insurance company, until he discovers a quick way to climb the corporate ladder. He lends out his apartment to the executives as a place to take their mistresses. Although he often has to deal with the aftermath of their visits, one night he's left with a major problem to solve.",
+        "director": "Billy Wilder",
         "producers": [
-          "John Hughes",
-          "Ned Tanen"
+          "Billy Wilder"
         ],
         "cast": [
-          "Emilio Estevez",
-          "Judd Nelson",
-          "Molly Ringwald",
-          "Anthony Michael Hall",
-          "Ally Sheedy"
+          "Jack Lemmon",
+          "Shirley MacLaine",
+          "Fred MacMurray",
+          "Ray Walston",
+          "Jack Kruschen"
         ],
-        "posterPath": "/gp4zlj7wgbiofLMNsTPndMuO3PN.jpg",
-        "backdropPath": "/s5HDOmFZaPVQFjk9BxxDrLu1T0g.jpg",
-        "rating": 7.7,
-        "trailerKey": "OVdr9HiAStI"
+        "posterPath": "/hhSRt1KKfRT0yEhEtRW3qp31JFU.jpg",
+        "backdropPath": "/2L8U8rUyWeFTb6n1egTNeJsEsvj.jpg",
+        "rating": 8.2,
+        "trailerKey": "ekDkUUPSWuY"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 600354,
-        "title": "The Father",
-        "year": 2020,
-        "runtime": 97,
+        "tmdbId": 3112,
+        "title": "The Night of the Hunter",
+        "year": 1955,
+        "runtime": 93,
         "genres": [
-          "Drama"
+          "Crime",
+          "Drama",
+          "Thriller"
         ],
-        "synopsis": "A man refuses all assistance from his daughter as he ages and, as he tries to make sense of his changing circumstances, he begins to doubt his loved ones, his own mind and even the fabric of his reality.",
-        "director": "Florian Zeller",
+        "synopsis": "In Depression-era West Virginia, a serial-killing preacher hunts two young children who know the whereabouts of a stash of money.",
+        "director": "Charles Laughton",
         "producers": [
-          "David Parfitt",
-          "Jean-Louis Livi",
-          "Philippe Carcassonne"
+          "Paul Gregory"
         ],
         "cast": [
-          "Anthony Hopkins",
-          "Olivia Colman",
-          "Mark Gatiss",
-          "Olivia Williams",
-          "Imogen Poots"
+          "Robert Mitchum",
+          "Shelley Winters",
+          "Lillian Gish",
+          "Billy Chapin",
+          "Sally Jane Bruce"
         ],
-        "posterPath": "/pr3bEQ517uMb5loLvjFQi8uLAsp.jpg",
-        "backdropPath": "/h3weAFgg06GqchI2xDfufBgSFTj.jpg",
+        "posterPath": "/rBka0nFWiHxabHRLr0KfIA8Yiaq.jpg",
+        "backdropPath": "/7cVEnb4Pth3STa7YfVOk9RtzDLB.jpg",
+        "rating": 7.9,
+        "trailerKey": "GAxs6tChiKo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 289,
+        "title": "Casablanca",
+        "year": 1943,
+        "runtime": 102,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "In Casablanca, Morocco in December 1941, a cynical American expatriate meets a former lover, with unforeseen complications.",
+        "director": "Michael Curtiz",
+        "producers": [
+          "Hal B. Wallis"
+        ],
+        "cast": [
+          "Humphrey Bogart",
+          "Ingrid Bergman",
+          "Paul Henreid",
+          "Claude Rains",
+          "Conrad Veidt"
+        ],
+        "posterPath": "/lGCEKlJo2CnWydQj7aamY7s1S7Q.jpg",
+        "backdropPath": "/87wqeMeUeMRLjsE1IWNKJcPlpuC.jpg",
         "rating": 8.1,
-        "trailerKey": "g0ox9ExOA1M"
+        "trailerKey": "MF7JH_54d8c"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 3291,
+        "title": "Good Night, and Good Luck.",
+        "year": 2005,
+        "runtime": 92,
+        "genres": [
+          "Drama",
+          "History"
+        ],
+        "synopsis": "The story of journalist Edward R. Murrow's stand against Senator Joseph McCarthy's anti-communist witch-hunts in the early 1950s.",
+        "director": "George Clooney",
+        "producers": [
+          "Grant Heslov"
+        ],
+        "cast": [
+          "David Strathairn",
+          "Patricia Clarkson",
+          "George Clooney",
+          "Jeff Daniels",
+          "Robert Downey Jr."
+        ],
+        "posterPath": "/w4QSEno2xxHqMtSr3mPUhJpO3F2.jpg",
+        "backdropPath": "/t35dVtLN4H12XXtipJfIDEy2h7Y.jpg",
+        "rating": 7.1,
+        "trailerKey": "1Qg9ZahBu8c"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 914,
+        "title": "The Great Dictator",
+        "year": 1940,
+        "runtime": 125,
+        "genres": [
+          "Comedy",
+          "War"
+        ],
+        "synopsis": "Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel's regime.",
+        "director": "Charlie Chaplin",
+        "producers": [
+          "Charlie Chaplin"
+        ],
+        "cast": [
+          "Charlie Chaplin",
+          "Paulette Goddard",
+          "Jack Oakie",
+          "Reginald Gardiner",
+          "Henry Daniell"
+        ],
+        "posterPath": "/nhMXB8GTdswYMCL9nepDZymJCOr.jpg",
+        "backdropPath": "/c8Pi8F1FzpNebtgXcSjC9nWCdSW.jpg",
+        "rating": 8.3,
+        "trailerKey": "i1C6qZVeFtA"
       },
       "status": "nominated"
     },
@@ -712,181 +449,574 @@
     },
     {
       "film": {
-        "tmdbId": 593643,
-        "title": "The Menu",
-        "year": 2022,
-        "runtime": 107,
+        "tmdbId": 985,
+        "title": "Eraserhead",
+        "year": 1977,
+        "runtime": 89,
+        "genres": [
+          "Horror",
+          "Science Fiction"
+        ],
+        "synopsis": "First-time father Henry Spencer tries to survive his industrial environment, his angry girlfriend, and the unbearable screams of his newly born mutant child.",
+        "director": "David Lynch",
+        "producers": [
+          "David Lynch"
+        ],
+        "cast": [
+          "Jack Nance",
+          "Charlotte Stewart",
+          "Allen Joseph",
+          "Jeanne Bates",
+          "Judith Roberts"
+        ],
+        "posterPath": "/mxveW3mGVc0DzLdOmtkZsgd7c3B.jpg",
+        "backdropPath": "/ApB0mF2d5Oqioi3yxjuogiotSLI.jpg",
+        "rating": 7.3,
+        "trailerKey": "zVJICfUx8M0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 440298,
+        "title": "Cold War",
+        "year": 2018,
+        "runtime": 88,
+        "genres": [
+          "Romance",
+          "Music",
+          "Drama"
+        ],
+        "synopsis": "A man and a woman meet in the ruins of post-war Poland. With vastly different backgrounds and temperaments, they are fatally mismatched and yet drawn to each other.",
+        "director": "Paweł Pawlikowski",
+        "producers": [
+          "Ewa Puszczyńska",
+          "Tanya Seghatchian"
+        ],
+        "cast": [
+          "Joanna Kulig",
+          "Tomasz Kot",
+          "Borys Szyc",
+          "Agata Kulesza",
+          "Cédric Kahn"
+        ],
+        "posterPath": "/6rbS8oPIgUMhQgIX8oGVTtlNgLR.jpg",
+        "backdropPath": "/ed0qbGNeA8XMU85T9QS30UWJQNw.jpg",
+        "rating": 7.4,
+        "trailerKey": "FMqZ9qWD8xs"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 9442,
+        "title": "Dead Men Don't Wear Plaid",
+        "year": 1982,
+        "runtime": 89,
         "genres": [
           "Comedy",
-          "Horror"
-        ],
-        "synopsis": "A young couple travels to a remote island to eat at an exclusive restaurant where the chef has prepared a lavish menu, with some shocking surprises.",
-        "director": "Mark Mylod",
-        "producers": [
-          "Adam McKay",
-          "Betsy Koch",
-          "Katie Goodson"
-        ],
-        "cast": [
-          "Anya Taylor-Joy",
-          "Ralph Fiennes",
-          "Nicholas Hoult",
-          "Janet McTeer",
-          "Paul Adelstein"
-        ],
-        "posterPath": "/fPtUgMcLIboqlTlPrq0bQpKK8eq.jpg",
-        "backdropPath": "/4vSBj7BYsyuKCx96EJzGyp20WfY.jpg",
-        "rating": 7.2,
-        "trailerKey": "C_uTkUGcHv4"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 1933,
-        "title": "The Others",
-        "year": 2001,
-        "runtime": 101,
-        "genres": [
-          "Horror",
           "Mystery",
-          "Thriller"
-        ],
-        "synopsis": "Grace is a woman who lives in an old house kept dark because her two children, Anne and Nicholas, have a rare sensitivity to light. When the family begins to suspect the house is haunted, Grace fights to protect her children at any cost in the face of strange events and disturbing visions.",
-        "director": "Alejandro Amenábar",
-        "producers": [
-          "Sunmin Park",
-          "Fernando Bovaira",
-          "José Luis Cuerda"
-        ],
-        "cast": [
-          "Nicole Kidman",
-          "Alakina Mann",
-          "James Bentley",
-          "Fionnula Flanagan",
-          "Christopher Eccleston"
-        ],
-        "posterPath": "/p8g1vlTvpM6nr2hMMiZ1fUlKF0D.jpg",
-        "backdropPath": "/rbBe9WQ1OqCxzgwskOTnaY6JdUA.jpg",
-        "rating": 7.6,
-        "trailerKey": "GekkoBitLvM"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 94329,
-        "title": "The Raid",
-        "year": 2012,
-        "runtime": 101,
-        "genres": [
-          "Action",
-          "Thriller",
           "Crime"
         ],
-        "synopsis": "Deep in the heart of Jakarta's slums lies an impenetrable safe house for the world's most dangerous killers and gangsters. Until now, the run-down apartment block has been considered untouchable to even the bravest of police. Cloaked under the cover of pre-dawn darkness and silence, an elite swat team is tasked with raiding the safe house in order to take down the notorious drug lord that runs it.  But when a chance encounter with a spotter blows their cover and news of their assault reaches the drug lord, the building's lights are cut and all the exits blocked. Stranded on the sixth floor with no way out, the unit must fight their way through the city's worst to survive their mission. Starring Indonesian martial arts sensation Iko Uwais.",
-        "director": "Gareth Evans",
+        "synopsis": "Juliet Forrest is convinced that the reported death of her father in a mountain car crash was no accident. Her father was a prominent cheese scientist working on a secret recipe. To prove it was murder, she enlists the services of private eye Rigby Reardon. He finds a slip of paper containing a list of people who are 'The Friends and Enemies of Carlotta'.",
+        "director": "Carl Reiner",
         "producers": [
-          "Ario Sagantoro"
+          "David V. Picker",
+          "William E. McEuen"
         ],
         "cast": [
-          "Iko Uwais",
-          "Joe Taslim",
-          "Donny Alamsyah",
-          "Yayan Ruhian",
-          "Pierre Gruno"
+          "Steve Martin",
+          "Rachel Ward",
+          "Alan Ladd",
+          "Carl Reiner",
+          "Barbara Stanwyck"
         ],
-        "posterPath": "/Abnm1Ws3JH0ReCfEhLMPwPcMcGO.jpg",
-        "backdropPath": "/kFD6fVwnrHq085JIHCDXsSIqAZf.jpg",
-        "rating": 7.4,
-        "trailerKey": "GDYwcjhvD-Y"
+        "posterPath": "/cwYwZBEE73PakUWzbICzxYKlXAz.jpg",
+        "backdropPath": "/hhxrMW0WY30ulaCGMu5mVezktHQ.jpg",
+        "rating": 6.7,
+        "trailerKey": "OQMbPy1_5h8"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 785084,
-        "title": "The Whale",
-        "year": 2022,
-        "runtime": 117,
+        "tmdbId": 346,
+        "title": "Seven Samurai",
+        "year": 1954,
+        "runtime": 207,
         "genres": [
+          "Action",
           "Drama"
         ],
-        "synopsis": "A reclusive English teacher suffering from severe obesity attempts to reconnect with his estranged teenage daughter for one last chance at redemption.",
-        "director": "Darren Aronofsky",
+        "synopsis": "A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food.",
+        "director": "Akira Kurosawa",
         "producers": [
-          "Darren Aronofsky",
-          "Ari Handel",
-          "Jeremy Dawson"
+          "Sōjirō Motoki"
         ],
         "cast": [
-          "Brendan Fraser",
-          "Sadie Sink",
-          "Ty Simpkins",
-          "Hong Chau",
-          "Samantha Morton"
+          "Toshirō Mifune",
+          "Takashi Shimura",
+          "Yoshio Inaba",
+          "Seiji Miyaguchi",
+          "Minoru Chiaki"
         ],
-        "posterPath": "/jQ0gylJMxWSL490sy0RrPj1Lj7e.jpg",
-        "backdropPath": "/46FRuCeAn6TrS4F1P4F9zhyCpyo.jpg",
-        "rating": 7.8,
-        "trailerKey": "nWiQodhMvz4"
+        "posterPath": "/lOMGc8bnSwQhS4XyE1S99uH8NXf.jpg",
+        "backdropPath": "/qvZ91FwMq6O47VViAr8vZNQz3WI.jpg",
+        "rating": 8.4,
+        "trailerKey": "RsRN65PlaIM"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 396,
-        "title": "Who's Afraid of Virginia Woolf?",
-        "year": 1966,
-        "runtime": 131,
+        "tmdbId": 1019939,
+        "title": "Hundreds of Beavers",
+        "year": 2024,
+        "runtime": 108,
         "genres": [
-          "Drama"
+          "Comedy",
+          "Adventure"
         ],
-        "synopsis": "A history professor and his wife entertain a young couple who are new to the university's faculty. As the drinks flow, secrets come to light, and the middle-aged couple unload onto their guests the full force of the bitterness, dysfunction, and animosity that defines their marriage.",
-        "director": "Mike Nichols",
+        "synopsis": "In the 19th century, a drunken applejack salesman must go from zero to hero and become North America's greatest fur trapper by defeating hundreds of beavers.",
+        "director": "Mike Cheslik",
         "producers": [
-          "Ernest Lehman"
+          "Kurt Ravenwood",
+          "Matt Sabljak",
+          "Ryland Brickson Cole Tews"
         ],
         "cast": [
-          "Elizabeth Taylor",
-          "Richard Burton",
-          "George Segal",
-          "Sandy Dennis",
-          "Agnes Flanagan"
+          "Ryland Brickson Cole Tews",
+          "Olivia Graves",
+          "Doug Mancheski",
+          "Wes Tank",
+          "Luis Rico"
         ],
-        "posterPath": "/wF7ihB5V5gSm6zxjv3ZhHOpgREI.jpg",
-        "backdropPath": "/sZxPKiNCK8piKBtXAbm3Ucj6RQk.jpg",
-        "rating": 7.7,
-        "trailerKey": "EOR5mzZyyNw"
+        "posterPath": "/jBg64OA2QEWL0zaOFMoAGipeGjJ.jpg",
+        "backdropPath": "/krN2V7leYVBp6dOLzP11sM44eNb.jpg",
+        "rating": 7.2,
+        "trailerKey": "Dm5XHpQZvek"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 694,
-        "title": "The Shining",
-        "year": 1980,
-        "runtime": 144,
+        "tmdbId": 473,
+        "title": "Pi",
+        "year": 1998,
+        "runtime": 84,
         "genres": [
-          "Horror",
+          "Mystery",
+          "Drama",
           "Thriller"
         ],
-        "synopsis": "Jack Torrance accepts a caretaker job at the Overlook Hotel, where he, along with his wife Wendy and their son Danny, must live isolated from the rest of the world for the winter. But they aren't prepared for the madness that lurks within.",
-        "director": "Stanley Kubrick",
+        "synopsis": "A mathematical genius discovers a link between numbers and reality, and thus believes he can predict the future.",
+        "director": "Darren Aronofsky",
         "producers": [
-          "Stanley Kubrick"
+          "Eric Watson"
         ],
         "cast": [
-          "Jack Nicholson",
-          "Shelley Duvall",
-          "Danny Lloyd",
-          "Scatman Crothers",
-          "Barry Nelson"
+          "Sean Gullette",
+          "Mark Margolis",
+          "Ben Shenkman",
+          "Pamela Hart",
+          "Stephen Pearlman"
         ],
-        "posterPath": "/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
-        "backdropPath": "/mmd1HnuvAzFc4iuVJcnBrhDNEKr.jpg",
+        "posterPath": "/fJA22FjlAW8rzrOw9Mwanl6oTc9.jpg",
+        "backdropPath": "/pVmCanXNPYqE74cJoL0U6C9ONf5.jpg",
+        "rating": 7.1,
+        "trailerKey": "yRjkQT9xLZs"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 940721,
+        "title": "Godzilla Minus One",
+        "year": 2023,
+        "runtime": 125,
+        "genres": [
+          "Science Fiction",
+          "Horror",
+          "Action"
+        ],
+        "synopsis": "In postwar Japan, Godzilla brings new devastation to an already scorched landscape. With no military intervention or government help in sight, the survivors must join together in the face of despair and fight back against an unrelenting horror.",
+        "director": "Takashi Yamazaki",
+        "producers": [
+          "Kenji Yamada",
+          "Go Abe",
+          "Keichiiro Moriya"
+        ],
+        "cast": [
+          "Ryunosuke Kamiki",
+          "Minami Hamabe",
+          "Yuki Yamada",
+          "Munetaka Aoki",
+          "Hidetaka Yoshioka"
+        ],
+        "posterPath": "/2E2WTX0TJEflAged6kzErwqX1kt.jpg",
+        "backdropPath": "/vlmiJOeDMbiyaJCAjFPtlkDcOEv.jpg",
+        "rating": 7.6,
+        "trailerKey": "MSp68m8OJus"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1678,
+        "title": "Godzilla",
+        "year": 1954,
+        "runtime": 96,
+        "genres": [
+          "Thriller",
+          "Horror",
+          "Science Fiction"
+        ],
+        "synopsis": "Japan is thrown into a panic after several ships are sunk near Odo Island. An expedition to the island led by Dr. Kyohei Yamane soon discover something far more devastating than imagined in the form of a 50 meter tall monster whom the natives call Gojira. Now the monster begins a rampage that threatens to destroy not only Japan, but the rest of the world as well.",
+        "director": "Ishirō Honda",
+        "producers": [
+          "Tomoyuki Tanaka"
+        ],
+        "cast": [
+          "Akira Takarada",
+          "Momoko Kôchi",
+          "Akihiko Hirata",
+          "Takashi Shimura",
+          "Fuyuki Murakami"
+        ],
+        "posterPath": "/2W0Yw0qrgVMgdsSCZRKtfvaAh0i.jpg",
+        "backdropPath": "/UD0PBqGgXJOOqsNMOHeZ9Apjde.jpg",
+        "rating": 7.6,
+        "trailerKey": "IVONRrcn9TI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 426426,
+        "title": "Roma",
+        "year": 2018,
+        "runtime": 135,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "In 1970s Mexico City, two domestic workers help a mother of four while her husband is away for an extended period of time.",
+        "director": "Alfonso Cuarón",
+        "producers": [
+          "Nicolás Celis",
+          "Alfonso Cuarón",
+          "Gabriela Rodríguez"
+        ],
+        "cast": [
+          "Yalitza Aparicio",
+          "Marina de Tavira",
+          "Diego Cortina Autrey",
+          "Carlos Peralta",
+          "Marco Graf"
+        ],
+        "posterPath": "/dtIIyQyALk57ko5bjac7hi01YQ.jpg",
+        "backdropPath": "/zl9uqCl5iUSb50sTk2BPzw6bJnU.jpg",
+        "rating": 7.6,
+        "trailerKey": "6BS27ngZtxg"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 129670,
+        "title": "Nebraska",
+        "year": 2013,
+        "runtime": 115,
+        "genres": [
+          "Drama",
+          "Adventure"
+        ],
+        "synopsis": "An aging, booze-addled father takes a trip from Montana to Nebraska with his estranged son in order to claim what he believes to be a million-dollar sweepstakes prize.",
+        "director": "Alexander Payne",
+        "producers": [
+          "Albert Berger",
+          "Ron Yerxa"
+        ],
+        "cast": [
+          "Bruce Dern",
+          "Will Forte",
+          "June Squibb",
+          "Bob Odenkirk",
+          "Stacy Keach"
+        ],
+        "posterPath": "/o1t2Mw18EEBnl8v4Nby3PFjxnM1.jpg",
+        "backdropPath": "/yePsFcldyZ6VnxaBr8ZbVEaOt4W.jpg",
+        "rating": 7.5,
+        "trailerKey": "YvW_DmfKfSk"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1578,
+        "title": "Raging Bull",
+        "year": 1980,
+        "runtime": 129,
+        "genres": [
+          "Drama",
+          "History"
+        ],
+        "synopsis": "The life of boxer Jake LaMotta, whose violence and temper that led him to the top in the ring destroyed his life outside of it.",
+        "director": "Martin Scorsese",
+        "producers": [
+          "Robert Chartoff",
+          "Irwin Winkler"
+        ],
+        "cast": [
+          "Robert De Niro",
+          "Cathy Moriarty",
+          "Joe Pesci",
+          "Frank Vincent",
+          "Nicholas Colasanto"
+        ],
+        "posterPath": "/1WV7WlTS8LI1L5NkCgjWT9GSW3O.jpg",
+        "backdropPath": "/tvNuhRlpRozDgsX1zR9gQ2aHv1X.jpg",
+        "rating": 7.9,
+        "trailerKey": "G5RHRg6zEhY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 595,
+        "title": "To Kill a Mockingbird",
+        "year": 1962,
+        "runtime": 129,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "Scout Finch, 6, and her older brother Jem live in sleepy Maycomb, Alabama, spending much of their time with their friend Dill and spying on their reclusive and mysterious neighbor, Boo Radley. When Atticus, their widowed father and a respected lawyer, defends a black man named Tom Robinson against fabricated rape charges, the trial and tangent events expose the children to evils of racism and stereotyping.",
+        "director": "Robert Mulligan",
+        "producers": [
+          "Alan J. Pakula",
+          "Gregory Peck",
+          "Robert Mulligan"
+        ],
+        "cast": [
+          "Gregory Peck",
+          "Mary Badham",
+          "Phillip Alford",
+          "John Megna",
+          "Frank Overton"
+        ],
+        "posterPath": "/gZycFUMLx2110dzK3nBNai7gfpM.jpg",
+        "backdropPath": "/zP6pqpSRRiOCjjC5oWKZKkHqoSB.jpg",
+        "rating": 8,
+        "trailerKey": "4-CrrtYjrbM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 23160,
+        "title": "Werckmeister Harmonies",
+        "year": 2001,
+        "runtime": 139,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "A naive young man witnesses an escalation of violence in his small hometown following the arrival of a mysterious circus attraction.",
+        "director": "Béla Tarr",
+        "producers": [
+          "Franz Goëss",
+          "Paul Saadoun",
+          "Miklós Szita"
+        ],
+        "cast": [
+          "Lars Rudolph",
+          "Peter Fitz",
+          "Hanna Schygulla",
+          "Alfréd Járai",
+          "Gyula Pauer"
+        ],
+        "posterPath": "/ix3pquGqTkCW86UbVTdRcrhGEFm.jpg",
+        "backdropPath": "/pyCUjcPHZrMY125lWpWAxEexe7C.jpg",
+        "rating": 7.8,
+        "trailerKey": "-tJVdq_G_Go"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1955,
+        "title": "The Elephant Man",
+        "year": 1980,
+        "runtime": 124,
+        "genres": [
+          "Drama",
+          "History"
+        ],
+        "synopsis": "A Victorian surgeon rescues a heavily disfigured man being mistreated by his \"owner\" as a side-show freak. Behind his monstrous façade, there is revealed a person of great intelligence and sensitivity. Based on the true story of Joseph Merrick (called John Merrick in the film), a severely deformed man in 19th century London.",
+        "director": "David Lynch",
+        "producers": [
+          "Jonathan Sanger",
+          "Mel Brooks"
+        ],
+        "cast": [
+          "Anthony Hopkins",
+          "John Hurt",
+          "Anne Bancroft",
+          "John Gielgud",
+          "Wendy Hiller"
+        ],
+        "posterPath": "/u0wpPYjuSt8DIe1Y3Vapnh8jcKE.jpg",
+        "backdropPath": "/6huSptAsqYg3wbsi1jbMognSgmp.jpg",
+        "rating": 8,
+        "trailerKey": "kxb_1457gGs"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 5156,
+        "title": "Bicycle Thieves",
+        "year": 1948,
+        "runtime": 89,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "Unemployed Antonio is elated when he finally finds work hanging posters around war-torn Rome. However on his first day, his bicycle—essential to his work—gets stolen. His job is doomed unless he can find the thief. With the help of his son, Antonio combs the city, becoming desperate for justice.",
+        "director": "Vittorio De Sica",
+        "producers": [
+          "Vittorio De Sica",
+          "Giuseppe Amato"
+        ],
+        "cast": [
+          "Lamberto Maggiorani",
+          "Enzo Staiola",
+          "Lianella Carell",
+          "Gino Saltamerenda",
+          "Vittorio Antonucci"
+        ],
+        "posterPath": "/iPdVqIpmR3bRvOQJPrn4pr2KR3q.jpg",
+        "backdropPath": "/nd6ItWuWGmTKhHXuxVC8kp86CmQ.jpg",
         "rating": 8.2,
-        "trailerKey": "jAE7dNurHR4"
+        "trailerKey": "H2P4xo9kmPM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 121986,
+        "title": "Frances Ha",
+        "year": 2013,
+        "runtime": 86,
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "synopsis": "An aspiring dancer moves to New York City and becomes caught up in a whirlwind of flighty fair-weather friends, diminishing fortunes and career setbacks.",
+        "director": "Noah Baumbach",
+        "producers": [
+          "Scott Rudin",
+          "Rodrigo Teixeira",
+          "Lila Yacoub"
+        ],
+        "cast": [
+          "Greta Gerwig",
+          "Mickey Sumner",
+          "Michael Zegen",
+          "Adam Driver",
+          "Charlotte d'Amboise"
+        ],
+        "posterPath": "/jrq1NoKvsxWCcffVOjegiYwloFN.jpg",
+        "backdropPath": "/oUVd42KgJWW6YnZLfzI7SDTdcPL.jpg",
+        "rating": 7.3,
+        "trailerKey": "YdxCnCvCngk"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 631,
+        "title": "Sunrise: A Song of Two Humans",
+        "year": 1927,
+        "runtime": 94,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "A married farmer falls under the spell of a slatternly woman from the city, who tries to convince him to drown his wife.",
+        "director": "F. W. Murnau",
+        "producers": [
+          "William Fox"
+        ],
+        "cast": [
+          "George O'Brien",
+          "Janet Gaynor",
+          "Margaret Livingston",
+          "Bodil Rosing",
+          "J. Farrell MacDonald"
+        ],
+        "posterPath": "/5V9jDm4u2QemGHbqjUyP5HmFmzf.jpg",
+        "backdropPath": "/hKrrCigPFmhv1bg5IJl9nzjEaN4.jpg",
+        "rating": 7.8,
+        "trailerKey": "PCgbFay53BA"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 4024,
+        "title": "Last Year at Marienbad",
+        "year": 1961,
+        "runtime": 95,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "At a weekend gathering, a man tells a woman that they had spent time there together a year prior. But, the woman has no recollection whatsoever and is convinced that he is simply fabricating the encounter. The more he speaks about their activities the previous year however, the more compelling he becomes. The question remains however – did they meet previously or not?",
+        "director": "Alain Resnais",
+        "producers": [
+          "Pierre Courau",
+          "Raymond Froment",
+          "Anatole Dauman"
+        ],
+        "cast": [
+          "Delphine Seyrig",
+          "Giorgio Albertazzi",
+          "Sacha Pitoëff",
+          "Françoise Bertin",
+          "Luce Garcia-Ville"
+        ],
+        "posterPath": "/syIJCqiSkGRJTlyaBtyI5jqPtE7.jpg",
+        "backdropPath": "/h1ov8VcVCiZsnWRu4EjZ74R33GP.jpg",
+        "rating": 7.4,
+        "trailerKey": "p3Tvl1Fuxt8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 74643,
+        "title": "The Artist",
+        "year": 2011,
+        "runtime": 100,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Romance"
+        ],
+        "synopsis": "Hollywood, 1927: As silent movie star George Valentin wonders if the arrival of talking pictures will cause him to fade into oblivion, he sparks with Peppy Miller, a young dancer set for a big break.",
+        "director": "Michel Hazanavicius",
+        "producers": [
+          "Thomas Langmann"
+        ],
+        "cast": [
+          "Jean Dujardin",
+          "Bérénice Bejo",
+          "John Goodman",
+          "James Cromwell",
+          "Penelope Ann Miller"
+        ],
+        "posterPath": "/xYMYV8lMIeQMymuNPBvq3hOnqXw.jpg",
+        "backdropPath": "/bYimqNnizPUCnL5HOdoCW02IGmH.jpg",
+        "rating": 7.4,
+        "trailerKey": "qjCQmpNkBI4"
       },
       "status": "nominated"
     }

@@ -21,8 +21,10 @@ const {
     <title>{title === 'Bath Film Club' ? title : `${title} — Bath Film Club`}</title>
     <link rel="icon" type="image/jpeg" href="/assets/logo.jpg" />
   </head>
-  <body class="min-h-screen">
-    <slot />
+  <body class="min-h-screen flex flex-col">
+    <div class="flex-1">
+      <slot />
+    </div>
     <Footer />
   </body>
 </html>

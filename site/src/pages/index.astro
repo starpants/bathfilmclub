@@ -4,12 +4,16 @@ import Header from '../components/Header.astro';
 import FilmPyramid from '../components/FilmPyramid.astro';
 import HowItWorks from '../components/HowItWorks.astro';
 import SectionTitle from '../components/SectionTitle.astro';
-import { getCurrentCycle, formatMeetingDate } from '../utils/data';
+import { getCurrentCycle, getAllThemes, formatMeetingDate } from '../utils/data';
 
 const cycle = await getCurrentCycle();
+const allThemes = await getAllThemes();
+const previousTheme = cycle
+  ? (allThemes.find((t) => t.month < cycle.month) ?? null)
+  : null;
 ---
 <Layout>
-  <Header />
+  <Header {...(previousTheme ? { previousHref: `/theme/${previousTheme.slug}` } : {})} />
 
   <!-- Hero -->
   <section class="py-0">

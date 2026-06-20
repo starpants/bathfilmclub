@@ -24,7 +24,7 @@ export async function getThemeBySlug(slug: string): Promise<Theme | null> {
 export function formatMonth(month: string): string {
   // "2026-06" → "June 2026"
   const [year, m] = month.split('-');
-  const date = new Date(parseInt(year), parseInt(m) - 1, 1);
+  const date = new Date(parseInt(year!), parseInt(m!) - 1, 1);
   return date.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
 }
 
