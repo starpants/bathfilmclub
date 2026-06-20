@@ -38,7 +38,9 @@ export function SearchPage({ themes }: Props) {
         .map((f) => ({ film: f.film, slug: t.slug, themeTitle: t.title }))
     ), [themes]);
 
-  const sinceYear = themes[themes.length - 1]?.month.split('-')[0] ?? '';
+  const sinceYear = themes.length > 0
+    ? String(Math.min(...themes.map((t) => parseInt(t.month.split('-')[0]!))))
+    : '';
 
   const searchResults = useMemo<SearchResult[]>(() => {
     if (query.trim().length < 2) return [];
@@ -92,8 +94,8 @@ export function SearchPage({ themes }: Props) {
             <p className="font-body text-sm text-neutral-400 italic">No results found.</p>
           ) : (
             <ul className="divide-y divide-neutral-800">
-              {searchResults.map((r, i) => (
-                <li key={i} className="py-4">
+              {searchResults.map((r) => (
+                <li key={`${r.slug}-${r.filmTitle}-${r.status}`} className="py-4">
                   {r.filmTitle !== '—' && (
                     <p className="font-heading font-semibold text-base">{r.filmTitle}</p>
                   )}
