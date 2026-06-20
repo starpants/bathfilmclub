@@ -1,7 +1,7 @@
 # Bath Film Club — Technical Architecture
 
-**Last updated:** 2026-06-11  
-**Next review:** 2026-09-11 (quarterly)  
+**Last updated:** 2026-06-20
+**Next review:** 2026-09-20 (quarterly)
 **Maintainer:** Av
 
 ---
@@ -10,7 +10,7 @@
 
 Bath Film Club is a static website for a Discord-based film discussion group. It serves two purposes:
 
-1. **Public-facing website** — Shows the current film cycle, archive of past themes, and promotes Discord membership
+1. **Public-facing website** — Shows the current film cycle, past themes via a slide-in drawer, a search/filter page, and promotes Discord membership
 2. **Local admin tool** — Allows one administrator to manage themes and films via TMDb integration
 
 The site is designed to be lightweight, fast, and maintenance-free for the public, with all complexity isolated in the admin tool.
@@ -42,9 +42,10 @@ The site is designed to be lightweight, fast, and maintenance-free for the publi
 │                    (Static HTML/CSS/JS)                      │
 │                     Cloudflare Pages                         │
 │  - Homepage (current theme + pyramid)                        │
-│  - Archive (browse/search all themes)                        │
-│  - Theme detail page (full theme record)                     │
-│  - Film details panel (slide-in detail view)                │
+│  - Search page (filter + full-text search all films/themes) │
+│  - Theme detail page (full theme record + pyramid)           │
+│  - ThemeDrawer (slide-in nav, available on all pages)        │
+│  - FilmPanel (slide-in detail view, opened from any poster)  │
 └──────────────────┬──────────────────────────────────────────┘
                    │ reads
                    ↓
@@ -52,7 +53,7 @@ The site is designed to be lightweight, fast, and maintenance-free for the publi
 │                   DATA LAYER                                 │
 │            (JSON files, version controlled)                  │
 │  - site/src/data/current.json (active theme)                │
-│  - site/src/data/themes/*.json (archive)                    │
+│  - site/src/data/themes/*.json (archived themes)            │
 │  - packages/types/src/index.ts (TypeScript definitions)    │
 └──────────────────▲──────────────────────────────────────────┘
                    │ written by
@@ -83,7 +84,7 @@ The site is designed to be lightweight, fast, and maintenance-free for the publi
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
 | **Framework** | Astro 4 | Static site generation, pre-renders at build time |
-| **Interactive components** | React (islands) | Film panel, pyramid, interactive elements |
+| **Interactive components** | React 18 (islands) | ThemeDrawer, SearchPage, FilmPanel, PyramidIsland |
 | **Styling** | Tailwind CSS | Utility-first CSS, responsive design |
 | **Build target** | Cloudflare Pages | Deployment, no server cost |
 | **Dev server** | `npm run site:dev` → port 4321 | Local development |
@@ -104,12 +105,6 @@ The site is designed to be lightweight, fast, and maintenance-free for the publi
 | **Database** | None | File-based (JSON) |
 | **TMDb Integration** | Official API | Film metadata lookup |
 
-**Why Express + React?**
-- Minimal, familiar tooling for a local admin app
-- Express handles file I/O and TMDb proxying safely
-- React for interactive admin UI (search, form state, etc.)
-- No database = one less thing to manage
-
 ### Monorepo Structure
 
 | Package | Purpose |
@@ -117,11 +112,6 @@ The site is designed to be lightweight, fast, and maintenance-free for the publi
 | **site/** | Public Astro site |
 | **admin/** | Express backend + React UI |
 | **packages/types/** | Shared TypeScript definitions (Theme, Film, etc.) |
-
-**Why monorepo?**
-- Shared type definitions prevent drift between admin and site
-- Single `npm install`, easy to work on both simultaneously
-- Keeps related code together
 
 ---
 
@@ -203,7 +193,7 @@ interface Film {
    → Clears current.json for next theme
 
 6. Admin can edit/restore/delete archived themes
-   → Uses new management endpoints
+   → Uses management endpoints
 ```
 
 ### Displaying Content (Public Workflow)
@@ -211,20 +201,27 @@ interface Film {
 ```
 1. During build: Astro reads site/src/data/
    → Reads current.json (homepage)
-   → Reads themes/*.json (archive, theme detail pages)
+   → Reads themes/*.json (theme detail pages, search page, ThemeDrawer)
    → Pre-renders all pages to static HTML
 
 2. User visits site (on Cloudflare Pages)
    → Gets pre-rendered HTML (zero server calls)
-   → React islands hydrate for interactivity (film panel)
+   → React islands hydrate for interactivity (ThemeDrawer, SearchPage, FilmPanel)
 
 3. User clicks film poster
    → React opens FilmPanel component
    → All data already in page (no API call needed)
 
-4. User browses archive
-   → Searches by film title, theme title, director
-   → All data in memory (instant, no backend)
+4. User opens ThemeDrawer (Browse button, all pages)
+   → Slide-in panel lists all archived themes grouped by year
+   → Current theme highlighted (on theme detail pages)
+
+5. User visits search page
+   → Default view: poster grid of all shortlisted films
+   → Filter pills (status + month) narrow the poster grid or results list
+   → Text search (≥2 chars) finds films by title/director and themes by title
+   → Filters and text search combine
+   → Clicking any film result opens FilmPanel
 ```
 
 ---
@@ -236,22 +233,31 @@ bathfilmclub/
 ├── site/                          # Public website (Astro)
 │   ├── src/
 │   │   ├── pages/
-│   │   │   ├── index.astro        # Homepage
-│   │   │   ├── archive.astro      # Archive page
-│   │   │   └── theme/[slug].astro # Theme detail page
+│   │   │   ├── index.astro        # Homepage (current theme + pyramid)
+│   │   │   ├── search.astro       # Search & filter page
+│   │   │   └── theme/[slug].astro # Theme detail page (static paths)
 │   │   ├── components/
-│   │   │   ├── FilmPyramid.astro  # The pyramid visualization
-│   │   │   ├── FilmPanel.tsx      # Detail panel (React island)
-│   │   │   └── ...
+│   │   │   ├── Header.astro       # 3-column nav (Browse | title | search)
+│   │   │   ├── Footer.astro       # Discord CTA + nav links + copyright
+│   │   │   ├── ThemeDrawer.tsx    # Slide-in theme nav (React island)
+│   │   │   ├── SearchPage.tsx     # Search + filter UI (React island)
+│   │   │   ├── FilmPyramid.astro  # Pyramid visualization (Astro wrapper)
+│   │   │   ├── PyramidIsland.tsx  # Pyramid interactivity (React island)
+│   │   │   ├── FilmCard.tsx       # Individual film poster card
+│   │   │   ├── FilmPanel.tsx      # Slide-in film detail panel (React island)
+│   │   │   ├── HowItWorks.astro   # Process explanation section
+│   │   │   └── SectionTitle.astro # Reusable section label
 │   │   ├── layouts/
-│   │   │   └── Layout.astro       # Base template
+│   │   │   └── Layout.astro       # Base template (flex column for sticky footer)
 │   │   ├── utils/
-│   │   │   └── data.ts            # File I/O, data fetching
+│   │   │   ├── data.ts            # getAllThemes(), getCurrentCycle(), formatMonth()
+│   │   │   └── pyramid.ts         # getPyramidRows() — splits films by status
 │   │   └── data/
 │   │       ├── current.json       # Active theme (homepage)
-│   │       └── themes/            # Archive
-│   │           └── 2026-06-*.json
-│   └── astro.config.mjs
+│   │       └── themes/            # Archived themes
+│   │           └── 2026-*.json
+│   ├── astro.config.ts
+│   └── tailwind.config.ts
 │
 ├── admin/                         # Admin tool (Express + React)
 │   ├── server/
@@ -265,7 +271,7 @@ bathfilmclub/
 │   └── client/
 │       └── src/
 │           ├── components/
-│           │   ├── CurrentCycle.tsx # Edit active theme
+│           │   ├── CurrentCycle.tsx  # Edit active theme
 │           │   ├── ArchiveManager.tsx # Manage archived themes
 │           │   ├── FilmSearch.tsx    # TMDb search UI
 │           │   └── ThemeEditor.tsx   # Form for theme details
@@ -275,61 +281,10 @@ bathfilmclub/
 │   └── src/index.ts              # Shared TS definitions
 │
 └── docs/
-    ├── BathFilmClub_Brief.txt    # Design brief
     ├── ARCHITECTURE.md           # This file
+    ├── DESIGN_SYSTEM.md          # Visual language and component patterns
     └── superpowers/plans/        # Implementation plans
 ```
-
----
-
-## How to Extend
-
-### Add a New Field to Film Data
-
-1. **Update type definition** (`packages/types/src/index.ts`)
-   - Add field to `Film` interface
-   - Update JSDoc comment
-
-2. **Update TMDb fetcher** (`admin/server/tmdb.ts`)
-   - Extract new field from TMDb API response
-   - Handle missing values gracefully
-
-3. **Update theme editor** (`admin/client/src/components/ThemeEditor.tsx`)
-   - Add input field if admin should edit it
-   - Validate on submit
-
-4. **Update display** (`site/src/components/FilmPanel.tsx`)
-   - Add new field to detail panel
-   - Apply appropriate styling
-
-5. **Test end-to-end**
-   - Add a film in admin tool
-   - Verify it appears correctly on site
-
-### Add a New Page to the Site
-
-1. Create new `.astro` file in `site/src/pages/`
-   - Use Layout component
-   - Import data with `getAllThemes()` or `getCurrentCycle()`
-
-2. Use existing components (Header, Footer, FilmPyramid, etc.)
-
-3. Run `npm run site:dev` to test locally
-
-4. Deploy automatically on push (Cloudflare Pages integration)
-
-### Change How Themes Are Organized
-
-Currently organized by:
-- **Homepage** — current cycle only
-- **Archive** — all past themes, grouped by year, newest first
-- **Theme detail page** — full record for one theme
-
-To change (e.g., add filtering, different grouping):
-
-1. **Archive logic** → `site/src/pages/archive.astro`
-2. **Search** → `site/src/components/ArchiveSearch.tsx` (currently doesn't exist; would need building)
-3. **Data utility functions** → `site/src/utils/data.ts`
 
 ---
 
@@ -340,11 +295,39 @@ To change (e.g., add filtering, different grouping):
 | `packages/types/src/index.ts` | Film/Theme/Meeting types | Adding new data fields |
 | `site/src/data/current.json` | Active theme | Only via admin tool |
 | `site/src/data/themes/*.json` | Archived themes | Only via admin tool |
-| `admin/server/routes/themes.ts` | Theme CRUD API | Adding new admin features |
-| `admin/server/storage.ts` | File I/O logic | If changing how data is stored |
-| `admin/server/tmdb.ts` | TMDb API calls | If TMDb API changes or new fields needed |
+| `site/src/utils/data.ts` | Data fetching helpers | Adding new query patterns |
+| `site/src/components/Header.astro` | Global nav bar | Layout or nav changes |
+| `site/src/components/ThemeDrawer.tsx` | Theme navigation drawer | Drawer behaviour or styling |
+| `site/src/components/SearchPage.tsx` | Search + filter UI | New filter types, result layout |
 | `site/src/components/FilmPanel.tsx` | Film detail view | Visual tweaks or new fields |
-| `site/src/components/FilmPyramid.astro` | Pyramid visualization | Layout/styling of nominated/shortlisted/selected |
+| `site/src/components/FilmPyramid.astro` | Pyramid Astro wrapper | Rarely |
+| `site/src/components/PyramidIsland.tsx` | Pyramid React island | Pyramid layout/behaviour |
+| `site/src/layouts/Layout.astro` | Page shell | Global layout or meta changes |
+| `admin/server/routes/themes.ts` | Theme CRUD API | Adding new admin features |
+| `admin/server/tmdb.ts` | TMDb API calls | If TMDb API changes or new fields needed |
+
+---
+
+## How to Extend
+
+### Add a New Field to Film Data
+
+1. **Update type definition** (`packages/types/src/index.ts`)
+2. **Update TMDb fetcher** (`admin/server/tmdb.ts`) — extract field from API response
+3. **Update display** (`site/src/components/FilmPanel.tsx`) — add to detail panel
+
+### Add a New Page to the Site
+
+1. Create new `.astro` file in `site/src/pages/`
+2. Import `getAllThemes()` if needed; pass themes to `<Header>`
+3. Use Layout, Header, Footer components
+4. Run `npm run site:dev` to test locally
+
+### Change How Themes Are Organised
+
+- **ThemeDrawer** (`site/src/components/ThemeDrawer.tsx`) — controls grouping/sorting in the slide-in nav
+- **SearchPage** (`site/src/components/SearchPage.tsx`) — controls filter logic and result display
+- **Data utility** (`site/src/utils/data.ts`) — `getAllThemes()` sorts newest-first by month
 
 ---
 
@@ -363,69 +346,45 @@ Deployed to **Cloudflare Pages** via GitHub integration:
 
 ### Admin Tool
 
-**Local only** — runs on developer's machine (`npm run admin:dev`).
-
-Not deployed anywhere; used only by administrator locally.
+**Local only** — runs on developer's machine (`npm run admin:dev`). Not deployed anywhere.
 
 ---
 
 ## Security Considerations
 
 ### Admin Tool
-
 - **File validation** — slug validation prevents path traversal
 - **TMDb API key** — kept in `admin/.env`, never committed
 - **Local only** — no public access, runs on `localhost`
 
 ### Public Site
-
 - **Static HTML** — no server-side execution, minimal attack surface
 - **No user input** — no forms to exploit
 - **No authentication** — nothing to breach
 - **Read-only** — all edits happen offline, published as files
 
-### Data
-
-- **Version controlled** — all changes tracked in git
-- **No secrets in files** — API keys in `.env` only
-- **Backed up** — GitHub is the backup
-
 ---
 
 ## Maintenance
-
-### Regular Tasks
-
-| Task | Frequency | Owner | Notes |
-|------|-----------|-------|-------|
-| **Update this doc** | Quarterly | Av | Review tech decisions, add learnings |
-| **Update dependencies** | As needed | Av | Run `npm outdated`, update carefully |
-| **Monitor site performance** | Monthly | Av | Check Cloudflare analytics |
-| **Backup data** | Ongoing | Git | Commit theme changes regularly |
-| **Review TMDb API** | If issues arise | Av | Check for breaking changes |
 
 ### Monitoring Checklist
 
 - [ ] Site builds on push (check Cloudflare Pages)
 - [ ] No console errors in browser
-- [ ] Film panel displays correctly
-- [ ] Archive search works
+- [ ] ThemeDrawer opens on all pages, highlights current theme on theme pages
+- [ ] Film panel opens from posters on homepage, theme pages, and search page
+- [ ] Search page: poster grid loads, filters work, text search returns results
 - [ ] Admin tool can add/edit themes without errors
 
 ### Troubleshooting
 
 **"Theme not found" error in admin**
-- Check that `site/src/data/themes/` exists
 - Verify JSON files are valid (use `npm run site:build`)
+- Check that `site/src/data/themes/` exists
 
 **Missing film metadata on site**
 - Run admin tool, re-add film to refresh TMDb data
 - Check TMDb API key in `admin/.env`
-
-**Slow site**
-- Check Cloudflare Pages analytics
-- Verify images are being served from TMDb CDN
-- Consider image optimization if needed
 
 **Admin tool won't start**
 - Check `admin/.env` has `TMDB_API_KEY` and `DATA_DIR`
@@ -436,8 +395,6 @@ Not deployed anywhere; used only by administrator locally.
 
 ## Design Philosophy
 
-**Why we do it this way:**
-
 1. **Static HTML for public site** — Maximum speed, minimal hosting cost, zero maintenance
 2. **Local admin tool** — All complexity hidden from users, single admin can manage everything
 3. **File-based data** — Version control, no database to manage, easy backup
@@ -445,26 +402,7 @@ Not deployed anywhere; used only by administrator locally.
 5. **TypeScript everywhere** — Catch errors at compile time, safe refactoring
 6. **Monorepo** — Shared types prevent bugs, easier to maintain
 
-**Tradeoffs we've accepted:**
-
+**Tradeoffs accepted:**
 - **No real-time updates** — New themes require a rebuild (fine; themes change monthly)
 - **No user interaction** — All voting happens in Discord (intentional; keeps site simple)
 - **Single admin** — Not built for team collaboration (fine; one person runs the club)
-- **Static hosting only** — Can't do dynamic queries (fine; static site is fast and cheap)
-
----
-
-## Next Steps for Extensions
-
-If you want to add new features in the future, consider:
-
-- **Full-text search** → Would need build-time indexing (possible in Astro)
-- **Film detail pages** → Create `site/src/pages/film/[id].astro` using `films.map()` from all themes
-- **Export/import themes** → Add admin API endpoint for bulk operations
-- **Analytics** → Cloudflare has built-in analytics; check dashboard
-
----
-
-## Questions?
-
-If something in this doc is unclear or out of date, please update it and note the changes in git commit message.
