@@ -1,7 +1,7 @@
 # Bath Film Club — Technical Architecture
 
-**Last updated:** 2026-06-20
-**Next review:** 2026-09-20 (quarterly)
+**Last updated:** 2026-06-21
+**Next review:** 2026-09-21 (quarterly)
 **Maintainer:** Av
 
 ---
@@ -39,10 +39,10 @@ Bath Film Club is a static website for a Discord-based film discussion group. It
 │                     PUBLIC WEBSITE                           │
 │                    (Static HTML/CSS/JS)                      │
 │                     Cloudflare Pages                         │
-│  - Homepage (current theme + pyramid)                        │
+│  - Homepage (hero + intro + current theme + pyramid)         │
 │  - Search page (filter + full-text search all films/themes) │
 │  - Theme detail page (full theme record + pyramid)           │
-│  - ThemeDrawer (slide-in nav, available on all pages)        │
+│  - MenuDrawer (slide-in nav, available on all pages)         │
 │  - FilmPanel (slide-in detail view, opened from any poster)  │
 └──────────────────┬──────────────────────────────────────────┘
                    │ reads
@@ -80,7 +80,7 @@ Bath Film Club is a static website for a Discord-based film discussion group. It
 | Component | Technology | Purpose |
 |-----------|-----------|---------|
 | **Framework** | Astro 4 | Static site generation, pre-renders at build time |
-| **Interactive components** | React 18 (islands) | ThemeDrawer, SearchPage, FilmPanel, PyramidIsland |
+| **Interactive components** | React 18 (islands) | MenuDrawer, SearchPage, FilmPanel, PyramidIsland |
 | **Styling** | Tailwind CSS | Utility-first CSS, responsive design |
 | **Build target** | Cloudflare Pages | Deployment, no server cost |
 | **Dev server** | `npm run site:dev` → port 4321 | Local development |
@@ -173,7 +173,7 @@ export async function getAllThemes(): Promise<Theme[]> {
 }
 ```
 
-This ensures ThemeDrawer, search page, and theme detail pages always show the same film counts as the homepage. An archived copy of the active theme will never show stale data.
+This ensures MenuDrawer, search page, and theme detail pages always show the same film counts as the homepage.
 
 ### Adding a Film (Admin Workflow)
 
@@ -199,7 +199,7 @@ This ensures ThemeDrawer, search page, and theme detail pages always show the sa
 
 3. User clicks film poster → FilmPanel opens (data already in page)
 
-4. User opens ThemeDrawer → lists all themes including current cycle
+4. User opens MenuDrawer → lists all themes including current cycle
 
 5. User visits search page → filters + search across all films/themes
 ```
@@ -213,20 +213,26 @@ bathfilmclub/
 ├── site/                          # Public website (Astro)
 │   ├── src/
 │   │   ├── pages/
-│   │   │   ├── index.astro        # Homepage (current theme + pyramid)
+│   │   │   ├── index.astro        # Homepage
 │   │   │   ├── search.astro       # Search & filter page
 │   │   │   └── theme/[slug].astro # Theme detail page
 │   │   ├── components/
-│   │   │   ├── Header.astro       # 3-column nav (Browse | title | search icon)
-│   │   │   ├── Footer.astro       # Discord CTA + nav links + copyright
+│   │   │   ├── NavBar.astro       # Shared nav buttons (used in Header + Footer)
+│   │   │   ├── Header.astro       # Page header — wraps NavBar
+│   │   │   ├── Footer.astro       # Page footer — wraps NavBar + copyright
+│   │   │   ├── Hero.astro         # Homepage hero: logo + tagline + Discord CTA
+│   │   │   ├── Introduction.astro # "How it works" section (homepage)
+│   │   │   ├── NextEvent.astro    # Current theme + upcoming meeting (homepage)
+│   │   │   ├── LogoLandscape.astro # Inline SVG logo (landscape), fill-bfc-brand-fg
+│   │   │   ├── LogoStacked.astro  # Inline SVG logo (stacked), fill-bfc-brand-fg
 │   │   │   ├── DiscordButton.astro # Reusable Discord CTA (URL defined here)
-│   │   │   ├── ThemeDrawer.tsx    # Slide-in theme nav, brand-red bg (React island)
+│   │   │   ├── MenuDrawer.tsx     # Slide-in theme nav (React island)
 │   │   │   ├── SearchPage.tsx     # Search + filter UI (React island)
 │   │   │   ├── FilmPyramid.astro  # Pyramid wrapper (splits films by status)
 │   │   │   ├── PyramidIsland.tsx  # Pyramid interactivity (React island)
+│   │   │   ├── FilmStrip.tsx      # 4-square film negative motif (decorative)
 │   │   │   ├── FilmCard.tsx       # Individual film poster card
 │   │   │   ├── FilmPanel.tsx      # Slide-in film detail panel (React island)
-│   │   │   ├── HowItWorks.astro   # Process explanation section
 │   │   │   └── SectionTitle.astro # Reusable section label
 │   │   ├── layouts/
 │   │   │   └── Layout.astro       # Base template (flex column for sticky footer)
@@ -238,6 +244,7 @@ bathfilmclub/
 │   │   └── data/
 │   │       ├── current.json       # Active theme (authoritative)
 │   │       └── themes/            # Archived themes (*.json)
+│   ├── public/assets/             # Static assets (SVG logos, images)
 │   ├── astro.config.ts
 │   └── tailwind.config.ts
 │
@@ -249,19 +256,23 @@ bathfilmclub/
 │   │   ├── routes/search.ts
 │   │   ├── storage.ts
 │   │   └── tmdb.ts
-│   └── client/src/components/
-│       ├── CurrentCycle.tsx
-│       ├── ArchiveManager.tsx
-│       ├── FilmSearch.tsx
-│       └── ThemeEditor.tsx
+│   └── client/src/
+│       ├── index.css              # Brand colours + fonts (mirrors main site)
+│       ├── main.tsx
+│       ├── App.tsx
+│       └── components/
+│           ├── CurrentCycle.tsx
+│           ├── ArchiveManager.tsx
+│           ├── FilmSearch.tsx
+│           ├── FilmList.tsx
+│           └── ThemeEditor.tsx
 │
 ├── packages/types/
 │   └── src/index.ts              # Shared TS definitions
 │
 └── docs/
     ├── ARCHITECTURE.md           # This file
-    ├── DESIGN_SYSTEM.md          # Visual language and component patterns
-    └── superpowers/plans/        # Implementation plans
+    └── DESIGN_SYSTEM.md          # Visual language and component patterns
 ```
 
 ---
@@ -274,14 +285,16 @@ bathfilmclub/
 | `site/src/data/current.json` | Active theme | Only via admin tool |
 | `site/src/data/themes/*.json` | Archived themes | Only via admin tool |
 | `site/src/utils/data.ts` | Data fetching (current.json takes priority) | Adding new query patterns |
-| `site/src/styles/global.css` | Google Fonts import, base styles, `.section-label`, `.interactive-item`, `.btn-discord` | Global style changes |
-| `site/tailwind.config.ts` | Colour palette, font families, breakpoints | Colour/font changes |
-| `site/src/components/Header.astro` | 3-column nav bar | Layout or nav changes |
-| `site/src/components/ThemeDrawer.tsx` | Brand-red slide-in theme nav | Drawer behaviour or styling |
+| `site/src/styles/global.css` | Google Fonts import, base styles, `.section-label`, `.btn-discord` | Global style changes |
+| `site/tailwind.config.ts` | `bfc-*` colour tokens, font families, breakpoints | Colour/font changes |
+| `site/src/components/NavBar.astro` | Shared nav buttons with active/inactive state | Nav layout or button changes |
+| `site/src/components/Header.astro` | Page header wrapper | Header structural changes |
+| `site/src/components/Footer.astro` | Page footer wrapper | Footer structural changes |
+| `site/src/components/MenuDrawer.tsx` | Slide-in theme nav with accordion years | Drawer behaviour or styling |
 | `site/src/components/DiscordButton.astro` | Discord CTA — URL lives here | Changing Discord invite link |
 | `site/src/components/SearchPage.tsx` | Search + filter UI | New filter types, result layout |
 | `site/src/components/FilmPanel.tsx` | Film detail view | Visual tweaks or new fields |
-| `site/src/components/PyramidIsland.tsx` | Pyramid with CMY band colours | Pyramid layout/behaviour |
+| `site/src/components/PyramidIsland.tsx` | Pyramid with coloured band rows | Pyramid layout/behaviour |
 | `site/src/layouts/Layout.astro` | Page shell | Global layout or meta changes |
 
 ---
@@ -298,7 +311,7 @@ bathfilmclub/
 
 1. Create `.astro` file in `site/src/pages/`
 2. Import `getAllThemes()`; pass to `<Header themes={allThemes} />`
-3. Use Layout, Header, Footer, DiscordButton components as needed
+3. Use Layout, Header components as needed (Footer is included via Layout automatically)
 4. Run `npm run site:dev` to test locally
 
 ### Change Discord Invite Link
@@ -307,7 +320,7 @@ Edit `site/src/components/DiscordButton.astro` — `DISCORD_URL` constant at the
 
 ### Change Pyramid Band Colours
 
-In `site/src/components/PyramidIsland.tsx`, update the `bgClass` and `accentClass` props on each `FilmRow`. Colour values are defined in `tailwind.config.ts` under `brand`.
+In `site/src/components/PyramidIsland.tsx`, update the `bgClass` and `accentClass` props on each `FilmRow`. Colour values are defined in `tailwind.config.ts` under `bfc-tier`.
 
 ---
 
@@ -343,7 +356,7 @@ Admin tool is **local only** — not deployed.
 
 - [ ] Site builds on push (check Cloudflare Pages dashboard)
 - [ ] No console errors in browser
-- [ ] ThemeDrawer opens on all pages; highlights current theme on theme detail pages
+- [ ] MenuDrawer opens on all pages; highlights current theme on theme detail pages
 - [ ] Film pyramid shows same counts on homepage and theme detail page
 - [ ] Film panel opens from posters on homepage, theme pages, and search page
 - [ ] Search page: poster grid loads, filters work, text search returns results

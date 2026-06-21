@@ -70,7 +70,7 @@ export function FilmSearch({ onAdd }: Props) {
                     key={s}
                     disabled={pendingId === r.id}
                     onClick={() => add(r.id, s)}
-                    style={{ fontSize: '0.7rem', padding: '0.2rem 0.5rem', border: '1px solid #000', background: 'transparent', cursor: 'pointer', fontFamily: 'Space Grotesk, sans-serif', textTransform: 'capitalize' }}
+                    style={{ fontSize: '0.7rem', padding: '0.2rem 0.5rem', border: '1px solid #FFF7D6', color: '#FFF7D6', background: 'transparent', cursor: 'pointer', fontFamily: 'inherit', textTransform: 'capitalize' }}
                   >
                     {s}
                   </button>

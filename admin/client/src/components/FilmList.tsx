@@ -14,9 +14,11 @@ export function FilmList({ films, onUpdated }: Props) {
     return <p style={{ color: '#999', fontSize: '0.85rem', fontStyle: 'italic' }}>No films yet.</p>;
   }
 
-  const sorted = [...films].sort(
-    (a, b) => STATUS_ORDER.indexOf(b.status) - STATUS_ORDER.indexOf(a.status)
-  );
+  const sorted = [...films].sort((a, b) => {
+    const statusDiff = STATUS_ORDER.indexOf(b.status) - STATUS_ORDER.indexOf(a.status);
+    if (statusDiff !== 0) return statusDiff;
+    return a.film.title.localeCompare(b.film.title);
+  });
 
   const updateStatus = async (tmdbId: number, status: FilmStatus) => {
     try {

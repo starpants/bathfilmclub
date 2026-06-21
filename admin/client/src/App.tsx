@@ -8,9 +8,9 @@ export function App() {
   const [tab, setTab] = useState<Tab>('current');
 
   return (
-    <div style={{ fontFamily: 'Inter, sans-serif', maxWidth: 900, margin: '0 auto', padding: '2rem' }}>
-      <header style={{ borderBottom: '2px solid #000', paddingBottom: '1rem', marginBottom: '2rem' }}>
-        <h1 style={{ fontSize: '1.5rem', fontWeight: 700, fontFamily: 'Space Grotesk, sans-serif' }}>
+    <div style={{ maxWidth: 900, margin: '0 auto', padding: '2rem' }}>
+      <header style={{ borderBottom: '2px solid #8C3646', paddingBottom: '1rem', marginBottom: '2rem' }}>
+        <h1 style={{ fontSize: '1.5rem', fontWeight: 700 }}>
           ■ Bath Film Club Admin
         </h1>
         <nav style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
@@ -19,15 +19,15 @@ export function App() {
               key={t}
               onClick={() => setTab(t)}
               style={{
-                fontFamily: 'Space Grotesk, sans-serif',
+                fontFamily: 'inherit',
                 fontWeight: 600,
                 fontSize: '0.8rem',
                 textTransform: 'uppercase',
                 letterSpacing: '0.1em',
                 padding: '0.5rem 1rem',
-                background: tab === t ? '#000' : 'transparent',
-                color: tab === t ? '#fff' : '#000',
-                border: '1px solid #000',
+                background: tab === t ? '#8C3646' : 'rgba(255, 247, 214, 0.1)',
+                color: '#FFF7D6',
+                border: 'none',
                 cursor: 'pointer',
               }}
             >

@@ -86,14 +86,14 @@ function ArchivedThemeItem({ theme, onRefresh }: ArchivedThemeItemProps) {
       <div style={{ display: 'flex', gap: '0.5rem', fontSize: '0.75rem' }}>
         <button
           onClick={() => setIsEditing(true)}
-          style={{ color: '#000', background: 'none', border: '1px solid #000', padding: '0.3rem 0.75rem', cursor: 'pointer', fontFamily: 'Space Grotesk, sans-serif' }}
+          style={{ color: '#FFF7D6', background: 'none', border: '1px solid #FFF7D6', padding: '0.3rem 0.75rem', cursor: 'pointer', fontFamily: 'inherit' }}
         >
           Edit
         </button>
         <button
           onClick={handleRestore}
           disabled={isRestoring}
-          style={{ color: '#000', background: 'none', border: '1px solid #000', padding: '0.3rem 0.75rem', cursor: 'pointer', fontFamily: 'Space Grotesk, sans-serif' }}
+          style={{ color: '#FFF7D6', background: 'none', border: '1px solid #FFF7D6', padding: '0.3rem 0.75rem', cursor: 'pointer', fontFamily: 'inherit' }}
         >
           {isRestoring ? 'Restoring…' : 'Make Current'}
         </button>

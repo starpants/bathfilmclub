@@ -150,7 +150,7 @@ export function CurrentCyclePanel() {
           <button
             key={s}
             onClick={() => setSection(s)}
-            style={{ fontSize: '0.75rem', padding: '0.3rem 0.75rem', background: section === s ? '#000' : 'transparent', color: section === s ? '#fff' : '#000', border: '1px solid #000', cursor: 'pointer', fontFamily: 'Space Grotesk, sans-serif', textTransform: 'capitalize' }}
+            style={{ fontSize: '0.75rem', padding: '0.3rem 0.75rem', background: section === s ? '#8C3646' : 'transparent', color: '#FFF7D6', border: '1px solid #FFF7D6', cursor: 'pointer', fontFamily: 'inherit', textTransform: 'capitalize' }}
           >
             {s === 'theme' ? 'Theme Details' : 'Films'}
           </button>
