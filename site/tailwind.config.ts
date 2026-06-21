@@ -35,9 +35,9 @@ export default {
         test: '#2A8476',
       },
       fontFamily: {
-        heading: ['Barlow Semi Condensed', 'sans-serif'],
+        heading: ['Barlow Condensed', 'sans-serif'],
         display: ['Notable', 'sans-serif'],
-        body: ['Barlow Semi Condensed', 'sans-serif'],
+        body: ['Barlow Condensed', 'sans-serif'],
       },
       maxWidth: {
         site: '1200px',

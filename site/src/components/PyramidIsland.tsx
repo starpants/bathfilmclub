@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { ThemeFilm, Film } from '@bathfilmclub/types';
 import { FilmCard } from './FilmCard';
 import { FilmPanel } from './FilmPanel';
+import { FilmStrip } from './FilmStrip';
 
 interface Props {
   selected: ThemeFilm[];
@@ -17,6 +18,7 @@ interface FilmRowProps {
   bgClass: string;
   accentClass: string;
   showCount?: boolean;
+  showStrip?: boolean;
 }
 
 function FilmRow({
@@ -27,6 +29,7 @@ function FilmRow({
   bgClass,
   accentClass,
   showCount = false,
+  showStrip = false,
 }: FilmRowProps) {
   const statuses = new Set(films.map((f) => f.status));
   const hasMixedStatuses = statuses.size > 1;
@@ -58,6 +61,7 @@ function FilmRow({
             ))}
           </div>
         )}
+        {showStrip && <FilmStrip />}
       </div>
     </div>
   );
@@ -76,6 +80,7 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
           cardWidth="w-36 md:w-[200px]"
           bgClass="bg-bfc-tier-selected"
           accentClass="text-bfc-brand-fg/90"
+          showStrip
         />
         <FilmRow
           films={shortlisted}
@@ -84,6 +89,7 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
           cardWidth="w-[120px] md:w-[150px]"
           bgClass="bg-bfc-tier-shortlisted"
           accentClass="text-bfc-brand-fg/90"
+          showStrip
         />
         <FilmRow
           films={nominated}
