@@ -48,10 +48,10 @@ export function MenuDrawer({ themes, currentSlug }: Props) {
       {/* Trigger button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="font-body font-semibold text-sm uppercase tracking-wide text-bfc-brand-fg interactive-item"
-        aria-label="Open menu"
+        className="font-heading font-semibold text-xl px-5 py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors"
+        aria-label="Browse themes"
       >
-        Menu
+        Browse Themes
       </button>
 
       {/* Overlay */}

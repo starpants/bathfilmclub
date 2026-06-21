@@ -29,7 +29,7 @@ const previousTheme = allThemes[1] ?? null;
           <path d="M4 8v9h4v-5h4v5h4V8"></path>
         </svg>
       </a>
-      <DiscordButton />
+
       {
         previousTheme && (
           <a
@@ -46,9 +46,10 @@ const previousTheme = allThemes[1] ?? null;
       >
         Search Themes
       </a>
+      <DiscordButton />
     </div>
 
-    <div class="flex justify-center pt-6 pb-16 border-t-4 border-t-bfc-brand-accent">
+    <div class="flex justify-center pt-6 pb-8">
       <p class="font-body text-bfc-brand-fg/60 text-sm">
         &copy; {year} Bath Film Club
       </p>

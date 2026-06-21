@@ -1,5 +1,6 @@
 ---
 import { MenuDrawer } from './MenuDrawer';
+import DiscordButton from './DiscordButton.astro';
 import type { Theme } from '@bathfilmclub/types';
 
 interface Props {
@@ -8,34 +9,38 @@ interface Props {
 }
 
 const { themes, currentSlug } = Astro.props;
-const isHome = Astro.url.pathname === '/';
 ---
 
-<header class="border-b-4 border-b-bfc-brand-accent">
-  <div class="max-w-site mx-auto px-6 h-16 grid grid-cols-3 items-center">
-    <div>
-      {
-        themes && (
-          <MenuDrawer themes={themes} {...(currentSlug ? { currentSlug } : {})} client:load />
-        )
-      }
-    </div>
+<header class="border-b-4 border-b-bfc-brand-accent py-4">
+  <div class="max-w-site mx-auto px-6 h-16 flex items-center justify-center gap-4">
+    <a
+      href="/"
+      class="p-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors"
+      aria-label="Home"
+    >
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="square"
+        stroke-linejoin="miter"
+      >
+        <path d="M2 9L10 2l8 7"></path>
+        <path d="M4 8v9h4v-5h4v5h4V8"></path>
+      </svg>
+    </a>
 
-    <div class="text-center">
-      {isHome ? (
-        <span class="font-body font-semibold text-sm uppercase tracking-wide text-bfc-brand-fg px-2 py-1">
-          Bath Film Club
-        </span>
-      ) : (
-        <a
-          href="/"
-          class="font-body font-semibold text-sm uppercase tracking-wide text-bfc-brand-fg interactive-item"
-        >
-          Bath Film Club
-        </a>
-      )}
-    </div>
+    {themes && <MenuDrawer themes={themes} {...(currentSlug ? { currentSlug } : {})} client:load />}
 
-    <div></div>
+    <a
+      href="/search"
+      class="font-heading font-semibold text-xl px-5 py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors"
+    >
+      Search Themes
+    </a>
+    <DiscordButton />
   </div>
 </header>
