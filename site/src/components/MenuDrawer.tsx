@@ -88,15 +88,15 @@ export function MenuDrawer({ themes, currentSlug }: Props) {
 
         <nav className="p-6 pt-14 space-y-4">
           {/* Search link */}
-          <a
+          {/* <a
             href="/search"
             className="block font-body font-semibold text-bfc-brand-fg interactive-item"
           >
             Search Themes
-          </a>
+          </a> */}
 
           {/* Divider */}
-          <hr className="border-bfc-brand-fg/20" />
+          {/* <hr className="border-bfc-brand-fg/20" /> */}
 
           {/* Accordion year groups */}
           <div className="space-y-1">

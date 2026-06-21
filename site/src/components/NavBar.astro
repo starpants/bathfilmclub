@@ -1,0 +1,53 @@
+---
+import { MenuDrawer } from './MenuDrawer';
+import DiscordButton from './DiscordButton.astro';
+import type { Theme } from '@bathfilmclub/types';
+
+interface Props {
+  themes?: Theme[];
+  currentSlug?: string;
+}
+
+const { themes, currentSlug } = Astro.props;
+const path = Astro.url.pathname;
+const isHome = path === '/';
+const isSearch = path === '/search';
+const isTheme = path.startsWith('/theme/');
+
+const btnActive = 'py-4 px-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 cursor-default opacity-40';
+const btnInactive = 'py-4 px-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors';
+const textBtnActive = 'font-heading font-semibold text-xl px-5 py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 cursor-default opacity-40';
+const textBtnInactive = 'font-heading font-semibold text-xl px-5 py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors';
+---
+
+<div class="flex flex-wrap items-center justify-center gap-4">
+  {isHome ? (
+    <span class={btnActive} aria-label="Home" aria-current="page">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+        <path d="M2 9L10 2l8 7"></path>
+        <path d="M4 8v9h4v-5h4v5h4V8"></path>
+      </svg>
+    </span>
+  ) : (
+    <a href="/" class={btnInactive} aria-label="Home">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+        <path d="M2 9L10 2l8 7"></path>
+        <path d="M4 8v9h4v-5h4v5h4V8"></path>
+      </svg>
+    </a>
+  )}
+
+  {themes && (
+    <div class={isTheme ? 'opacity-40' : ''}>
+      <MenuDrawer themes={themes} {...(currentSlug ? { currentSlug } : {})} client:load />
+    </div>
+  )}
+
+  {isSearch ? (
+    <span class={textBtnActive} aria-current="page">Search Themes</span>
+  ) : (
+    <a href="/search" class={textBtnInactive}>Search Themes</a>
+  )}
+
+  <DiscordButton />
+</div>

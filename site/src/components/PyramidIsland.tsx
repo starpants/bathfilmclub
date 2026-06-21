@@ -98,6 +98,7 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
           bgClass="bg-bfc-tier-nominated"
           accentClass="text-bfc-brand-fg/90"
           showCount
+          showStrip
         />
       </div>
       <FilmPanel film={activeFilm} onClose={() => setActiveFilm(null)} />

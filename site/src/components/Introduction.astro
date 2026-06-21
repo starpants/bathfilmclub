@@ -1,6 +1,4 @@
 ---
-import { FilmStrip } from './FilmStrip';
-
 interface Props {
   bg?: string;
 }
@@ -28,6 +26,8 @@ const { bg = '' } = Astro.props;
       the menu and, if it sounds like something you'd enjoy, join us on Discord and come along to
       the next discussion.
     </p>
-    <FilmStrip />
+    <div class="flex justify-center gap-3 pt-10 text-amber-400/80 text-2xl">
+      <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+    </div>
   </div>
 </section>

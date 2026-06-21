@@ -1,53 +1,14 @@
 ---
-import DiscordButton from './DiscordButton.astro';
+import NavBar from './NavBar.astro';
 import { getAllThemes } from '../utils/data';
 
 const year = new Date().getFullYear();
 const allThemes = await getAllThemes();
-const previousTheme = allThemes[1] ?? null;
 ---
 
-<footer class="pt-8">
+<footer class="py-8 bg-bfc-brand-alt/10">
   <div class="max-w-site mx-auto px-6 py-12 space-y-10">
-    <div class="flex flex-wrap items-center justify-center gap-4">
-      <a
-        href="/"
-        class="p-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors"
-        aria-label="Home"
-      >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="square"
-          stroke-linejoin="miter"
-        >
-          <path d="M2 9L10 2l8 7"></path>
-          <path d="M4 8v9h4v-5h4v5h4V8"></path>
-        </svg>
-      </a>
-
-      {
-        previousTheme && (
-          <a
-            href={`/theme/${previousTheme.slug}`}
-            class="font-heading font-semibold text-xl px-5 py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors"
-          >
-            Browse Themes
-          </a>
-        )
-      }
-      <a
-        href="/search"
-        class="font-heading font-semibold text-xl px-5 py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors"
-      >
-        Search Themes
-      </a>
-      <DiscordButton />
-    </div>
+    <NavBar themes={allThemes} />
 
     <div class="flex justify-center pt-6 pb-8">
       <p class="font-body text-bfc-brand-fg/60 text-sm">
