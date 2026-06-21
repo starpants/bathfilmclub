@@ -5,16 +5,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: {
-          red: '#8C3646',
-          black: '#15262E',
-          white: '#FFF7D6',
-          green: '#22C55E',
-          mustard: '#EABB16',
-          cyan: '#175A70',
-          magenta: '#674967',
-          yellow: '#647A85',
-          orange: '#F39530',
+        'bfc-brand': {
+          accent: '#8C3646',
+          bg: '#15262E',
+          fg: '#FFF7D6',
+        },
+        'bfc-tier': {
+          selected: '#674967',
+          shortlisted: '#175A70',
+          nominatedorig: '#647A85',
+          nominated: '#4C685E',
+          event: '#2A8476',
+        },
+        'bfc-status': {
+          selected: '#22C55E',
+          shortlisted: '#EABB16',
         },
         neutral: {
           50: '#FAFAFA',
@@ -27,9 +32,10 @@ export default {
           800: '#262626',
           900: '#171717',
         },
+        test: '#2A8476',
       },
       fontFamily: {
-        heading: ['Barlow Condensed', 'sans-serif'],
+        heading: ['Barlow Semi Condensed', 'sans-serif'],
         display: ['Notable', 'sans-serif'],
         body: ['Barlow Semi Condensed', 'sans-serif'],
       },

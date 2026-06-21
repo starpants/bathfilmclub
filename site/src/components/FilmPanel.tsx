@@ -42,7 +42,7 @@ export function FilmPanel({ film, onClose }: Props) {
           <>
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 z-10 p-2 hover:text-brand-red transition-colors"
+              className="absolute top-4 right-4 z-10 p-2 hover:text-bfc-brand-accent transition-colors"
               aria-label="Close panel"
             >
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
@@ -106,7 +106,7 @@ export function FilmPanel({ film, onClose }: Props) {
                   href={`${YOUTUBE_BASE}${film.trailerKey}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-brand-red font-heading font-semibold text-sm hover:underline"
+                  className="inline-flex items-center gap-2 text-bfc-brand-accent font-heading font-semibold text-sm hover:underline"
                 >
                   Watch Trailer ↗
                 </a>

@@ -34,7 +34,7 @@ const newerTheme = allThemes[currentIndex - 1] ?? null;
           {olderTheme ? (
             <a
               href={`/theme/${olderTheme.slug}`}
-              class="text-neutral-400 hover:text-white transition-colors"
+              class="text-bfc-brand-fg/60 hover:text-bfc-brand-fg transition-colors"
               aria-label={`Older theme: ${olderTheme.title}`}
             >
               <svg width="16" height="28" viewBox="0 0 10 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
@@ -48,7 +48,7 @@ const newerTheme = allThemes[currentIndex - 1] ?? null;
           {newerTheme ? (
             <a
               href={`/theme/${newerTheme.slug}`}
-              class="text-neutral-400 hover:text-white transition-colors"
+              class="text-bfc-brand-fg/60 hover:text-bfc-brand-fg transition-colors"
               aria-label={`Newer theme: ${newerTheme.title}`}
             >
               <svg width="16" height="28" viewBox="0 0 10 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
@@ -60,7 +60,7 @@ const newerTheme = allThemes[currentIndex - 1] ?? null;
           )}
         </div>
         {theme.description && (
-          <p class="font-body text-neutral-400 mt-4 max-w-2xl leading-relaxed mx-auto">
+          <p class="font-body text-bfc-brand-fg/60 mt-4 max-w-2xl leading-relaxed mx-auto">
             {theme.description}
           </p>
         )}

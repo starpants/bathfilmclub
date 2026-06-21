@@ -131,7 +131,7 @@ export function SearchPage({ themes }: Props) {
   const pillBase =
     'px-3 py-1 font-heading font-semibold text-xs uppercase tracking-wide border transition-colors cursor-pointer';
   const pillActive = `${pillBase} bg-white text-black border-white`;
-  const pillInactive = `${pillBase} border-neutral-600 text-neutral-400 hover:text-white hover:border-neutral-400`;
+  const pillInactive = `${pillBase} border-neutral-600 text-bfc-brand-fg/60 hover:text-bfc-brand-fg hover:border-neutral-400`;
 
   const activeResults = isSearching ? searchResults : filteredFilms;
   const showDefault = !isSearching && !hasFilters;
@@ -144,7 +144,7 @@ export function SearchPage({ themes }: Props) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search by film, director, or theme…"
-          className="w-full border border-neutral-700 bg-transparent px-4 py-3 font-body text-sm focus:outline-none focus:border-white placeholder:text-neutral-500"
+          className="w-full border border-neutral-700 bg-transparent px-4 py-3 font-body text-sm focus:outline-none focus:border-white placeholder:text-bfc-brand-fg/40"
         />
 
         {/* Filter pills */}
@@ -175,7 +175,7 @@ export function SearchPage({ themes }: Props) {
 
         {showDefault ? (
           <div className="space-y-6">
-            <p className="font-body text-sm text-neutral-400">
+            <p className="font-body text-sm text-bfc-brand-fg/60">
               {themes.length} themes · {shortlistedFilms.length} films shortlisted · Since {sinceYear}
             </p>
             <div className="grid grid-cols-[repeat(auto-fill,minmax(96px,1fr))] gap-3">
@@ -208,7 +208,7 @@ export function SearchPage({ themes }: Props) {
               {activeResults.length} result{activeResults.length !== 1 ? 's' : ''}
             </p>
             {activeResults.length === 0 ? (
-              <p className="font-body text-sm text-neutral-400 italic">No results found.</p>
+              <p className="font-body text-sm text-bfc-brand-fg/60 italic">No results found.</p>
             ) : (
               <ul className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8">
                 {activeResults.map((r) => (
@@ -231,15 +231,15 @@ export function SearchPage({ themes }: Props) {
                           )}
                         </div>
                         <div className="min-w-0">
-                          <p className="font-heading font-semibold text-base group-hover:text-neutral-300 transition-colors">
+                          <p className="font-heading font-semibold text-base group-hover:text-bfc-brand-fg/80 transition-colors">
                             {r.filmTitle}
                           </p>
-                          <p className="font-body text-sm text-neutral-400">
+                          <p className="font-body text-sm text-bfc-brand-fg/60">
                             Theme:{' '}
-                            <span className="text-white">{r.themeTitle}</span>
+                            <span className="text-bfc-brand-fg">{r.themeTitle}</span>
                           </p>
-                          <p className="font-body text-sm text-neutral-400">Director: {r.director}</p>
-                          <p className="font-body text-xs text-neutral-400 mt-1">
+                          <p className="font-body text-sm text-bfc-brand-fg/60">Director: {r.director}</p>
+                          <p className="font-body text-xs text-bfc-brand-fg/60 mt-1">
                             {formatMonth(r.month)} · {r.status}
                           </p>
                         </div>
@@ -248,10 +248,10 @@ export function SearchPage({ themes }: Props) {
                       <a href={`/theme/${r.slug}`} className="py-4 flex gap-4 group">
                         <div className="flex-shrink-0 w-12 aspect-[2/3] bg-neutral-800" />
                         <div className="min-w-0 self-center">
-                          <p className="font-heading font-semibold text-base group-hover:text-neutral-300 transition-colors">
+                          <p className="font-heading font-semibold text-base group-hover:text-bfc-brand-fg/80 transition-colors">
                             {r.themeTitle}
                           </p>
-                          <p className="font-body text-xs text-neutral-400 mt-1">
+                          <p className="font-body text-xs text-bfc-brand-fg/60 mt-1">
                             {formatMonth(r.month)} · Theme
                           </p>
                         </div>

@@ -1,97 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Introduction from '../components/Introduction.astro';
+import NextEvent from '../components/NextEvent.astro';
 import FilmPyramid from '../components/FilmPyramid.astro';
-import HowItWorks from '../components/HowItWorks.astro';
-import SectionTitle from '../components/SectionTitle.astro';
-import { getCurrentCycle, getAllThemes, formatMeetingDate } from '../utils/data';
-import DiscordButton from '../components/DiscordButton.astro';
+import { getCurrentCycle, getAllThemes } from '../utils/data';
 
 const cycle = await getCurrentCycle();
 const allThemes = await getAllThemes();
 ---
+
 <Layout>
   <Header themes={allThemes} />
-
-  <!-- Hero -->
-  <section class="py-8">
-    <div class="max-w-site mx-auto px-6">
-      <div class="flex flex-col md:flex-row gap-8 items-end">
-        <div class="flex-[2] pl-0 flex items-center">
-          <img src="/assets/BathFilmClub_Logo.svg" alt="Bath Film Club" class="w-full" />
-        </div>
-        <div class="flex-[3] p-0 mb-6">
-          <div>
-            <p class="font-body text-neutral-300 text-xl md:text-2xl leading-relaxed mb-16">
-              Watch. Discuss. Discover.
-            </p>
-            <p class="font-body text-neutral-300 text-xl md:text-2xl leading-relaxed mb-16">
-              A monthly film club exploring a different theme every month.
-            </p>
-
-          </div>
-            <DiscordButton />
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <main class="max-w-site mx-auto px-6 py-16 space-y-16">
-    <HowItWorks />
-
-    {cycle ? (
-      <>
-        <!-- Current Theme -->
-        <section>
-          <SectionTitle title="Current Theme" class="mb-4" />
-          {cycle.description ? (
-            <div class="flex flex-col md:flex-row">
-              <div class="flex-[2] border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0">
-                <h3 class="font-heading font-extrabold text-2xl leading-tight">{cycle.title}</h3>
-              </div>
-              <div class="flex-[3] border border-neutral-600 p-5">
-                <p class="font-body text-neutral-400 leading-relaxed">{cycle.description}</p>
-              </div>
-            </div>
-          ) : (
-            <div class="border border-neutral-600 p-5">
-              <h3 class="font-heading font-extrabold text-2xl leading-tight">{cycle.title}</h3>
-            </div>
-          )}
-        </section>
-
-        <!-- Upcoming Meeting -->
-        {cycle.meeting && (
-          <section>
-            <SectionTitle title="Upcoming Meeting" class="mb-4" />
-            <div class="flex flex-col md:flex-row">
-              <div class="flex-[2] border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0">
-                <h3 class="font-heading font-extrabold text-2xl leading-tight">{formatMeetingDate(cycle.meeting.date)}, <span class="">{cycle.meeting.time}</span></h3>
-                {/* <p class="font-body text-neutral-400 text-sm mt-1">{cycle.meeting.time}</p> */}
-              </div>
-              <div class="flex-[3] border border-neutral-600 p-5">
-                {cycle.meeting.venue ? (
-                  <p class="font-body text-neutral-400 leading-relaxed">{cycle.meeting.venue}</p>
-                ) : (
-                  <p class="font-body text-neutral-500 italic text-sm">Venue to be confirmed.</p>
-                )}
-              </div>
-            </div>
-          </section>
-        )}
-
-      </>
-    ) : (
-      <section>
-        <h2 class="section-label mb-4">Current Theme</h2>
-        <p class="font-body text-neutral-400 italic">
-          The next theme hasn't been announced yet. Join Discord to be the first to know.
-        </p>
-      </section>
-    )}
-
-  </main>
-
+  <Hero />
+  <Introduction />
+  <NextEvent cycle={cycle} bg="bg-bfc-tier-event/10" />
   {cycle && <FilmPyramid films={cycle.films} />}
 </Layout>

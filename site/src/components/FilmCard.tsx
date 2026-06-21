@@ -13,7 +13,7 @@ export function FilmCard({ film, status, onSelect, showTag = true }: Props) {
   return (
     <button
       onClick={() => onSelect(film)}
-      className="group block w-full text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-red"
+      className="group block w-full text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-bfc-brand-accent"
       aria-label={`View details for ${film.title}`}
     >
       <div className="aspect-[2/3] overflow-hidden bg-neutral-800 transition-transform duration-300 group-hover:scale-110">
@@ -26,7 +26,7 @@ export function FilmCard({ film, status, onSelect, showTag = true }: Props) {
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-neutral-800">
-            <span className="font-heading text-neutral-400 text-xs text-center px-2">
+            <span className="font-heading text-bfc-brand-fg/60 text-xs text-center px-2">
               {film.title}
             </span>
           </div>
@@ -36,17 +36,17 @@ export function FilmCard({ film, status, onSelect, showTag = true }: Props) {
         <p className="font-body text-xs text-neutral-800 leading-snug line-clamp-2">{film.title}</p>
       </div>
       {showTag && status === 'selected' && (
-        <span className="mt-1 inline-block bg-brand-green text-black text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
+        <span className="mt-1 inline-block bg-bfc-status-selected text-black text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
           {status}
         </span>
       )}
       {showTag && status === 'shortlisted' && (
-        <span className="mt-1 inline-block bg-brand-mustard text-black text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
+        <span className="mt-1 inline-block bg-bfc-status-shortlisted text-black text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
           {status}
         </span>
       )}
       {showTag && status === 'nominated' && (
-        <span className="mt-1 inline-block bg-neutral-700 text-neutral-300 text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
+        <span className="mt-1 inline-block bg-neutral-700 text-bfc-brand-fg/80 text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
           {status}
         </span>
       )}

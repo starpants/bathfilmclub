@@ -1,0 +1,64 @@
+---
+import type { Theme } from '@bathfilmclub/types';
+import SectionTitle from './SectionTitle.astro';
+import { formatMeetingDate } from '../utils/data';
+
+interface Props {
+  cycle: Theme | null;
+  bg?: string;
+}
+
+const { cycle, bg = '' } = Astro.props;
+---
+<section class={bg}>
+  <div class="max-w-site mx-auto px-6 py-16 space-y-16">
+    {cycle ? (
+      <>
+        <div>
+          <SectionTitle title="Current Theme" class="mb-4" />
+          {cycle.description ? (
+            <div class="flex flex-col md:flex-row">
+              <div class="flex-[2] border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0">
+                <h3 class="font-heading font-extrabold text-2xl leading-tight">{cycle.title}</h3>
+              </div>
+              <div class="flex-[3] border border-neutral-600 p-5">
+                <p class="font-body text-bfc-brand-fg/60 leading-relaxed">{cycle.description}</p>
+              </div>
+            </div>
+          ) : (
+            <div class="border border-neutral-600 p-5">
+              <h3 class="font-heading font-extrabold text-2xl leading-tight">{cycle.title}</h3>
+            </div>
+          )}
+        </div>
+
+        {cycle.meeting && (
+          <div>
+            <SectionTitle title="Upcoming Meeting" class="mb-4" />
+            <div class="flex flex-col md:flex-row">
+              <div class="flex-[2] border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0">
+                <h3 class="font-heading font-extrabold text-2xl leading-tight">
+                  {formatMeetingDate(cycle.meeting.date)}, {cycle.meeting.time}
+                </h3>
+              </div>
+              <div class="flex-[3] border border-neutral-600 p-5">
+                {cycle.meeting.venue ? (
+                  <p class="font-body text-bfc-brand-fg/60 leading-relaxed">{cycle.meeting.venue}</p>
+                ) : (
+                  <p class="font-body text-bfc-brand-fg/40 italic text-sm">Venue to be confirmed.</p>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+      </>
+    ) : (
+      <div>
+        <h2 class="section-label mb-4">Current Theme</h2>
+        <p class="font-body text-bfc-brand-fg/60 italic">
+          The next theme hasn't been announced yet. Join Discord to be the first to know.
+        </p>
+      </div>
+    )}
+  </div>
+</section>

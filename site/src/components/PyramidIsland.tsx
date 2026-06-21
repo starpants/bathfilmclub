@@ -35,13 +35,13 @@ function FilmRow({
     <div className={`py-10 ${bgClass}`}>
       <div className="max-w-[1200px] mx-auto px-6 space-y-3">
         <h4
-          className={`pyramid-subtitle text-xl justify-center p-2 mb-12 ${films.length === 0 ? 'text-neutral-500' : accentClass}`}
+          className={`pyramid-subtitle text-xl justify-center p-2 mb-12 ${films.length === 0 ? 'text-bfc-brand-fg/40' : accentClass}`}
         >
           {label}
           {showCount ? ` (${films.length})` : ''}
         </h4>
         {films.length === 0 ? (
-          <p className="text-neutral-400 font-body text-sm italic text-center">
+          <p className="text-bfc-brand-fg/60 font-body text-sm italic text-center">
             Not yet determined
           </p>
         ) : (
@@ -74,23 +74,23 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
           label="Selected Films"
           onSelect={setActiveFilm}
           cardWidth="w-36 md:w-[200px]"
-          bgClass="bg-brand-magenta"
-          accentClass="text-white/90"
+          bgClass="bg-bfc-tier-selected"
+          accentClass="text-bfc-brand-fg/90"
         />
         <FilmRow
           films={shortlisted}
           label="Shortlisted Films"
           onSelect={setActiveFilm}
           cardWidth="w-[120px] md:w-[150px]"
-          bgClass="bg-brand-cyan"
-          accentClass="text-white/90"
+          bgClass="bg-bfc-tier-shortlisted"
+          accentClass="text-bfc-brand-fg/90"
         />
         <FilmRow
           films={nominated}
           label="Nominated Films"
           onSelect={setActiveFilm}
-          bgClass="bg-brand-yellow"
-          accentClass="text-white/90"
+          bgClass="bg-bfc-tier-nominated"
+          accentClass="text-bfc-brand-fg/90"
           showCount
         />
       </div>
