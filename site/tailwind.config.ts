@@ -6,14 +6,15 @@ export default {
     extend: {
       colors: {
         brand: {
-          red: '#860909',
-          black: '#000000',
-          white: '#FFFFFF',
+          red: '#8C3646',
+          black: '#15262E',
+          white: '#FFF7D6',
           green: '#22C55E',
           mustard: '#EABB16',
-          cyan: '#00AACC',
-          magenta: '#CC0055',
-          yellow: '#F5C400',
+          cyan: '#175A70',
+          magenta: '#674967',
+          yellow: '#647A85',
+          orange: '#F39530',
         },
         neutral: {
           50: '#FAFAFA',
