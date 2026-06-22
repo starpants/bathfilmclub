@@ -139,7 +139,11 @@ export function SearchPage({ themes }: Props) {
   return (
     <>
       <div className="space-y-8">
+        <label htmlFor="film-search" className="sr-only">
+          Search by film, director, or theme
+        </label>
         <input
+          id="film-search"
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -154,6 +158,7 @@ export function SearchPage({ themes }: Props) {
               <button
                 key={status}
                 onClick={() => toggleStatus(status)}
+                aria-pressed={activeStatuses.includes(status)}
                 className={activeStatuses.includes(status) ? pillActive : pillInactive}
               >
                 {STATUS_LABELS[status]}
@@ -165,6 +170,7 @@ export function SearchPage({ themes }: Props) {
               <button
                 key={label}
                 onClick={() => toggleMonth(i + 1)}
+                aria-pressed={activeMonths.includes(i + 1)}
                 className={activeMonths.includes(i + 1) ? pillActive : pillInactive}
               >
                 {label}
@@ -183,8 +189,8 @@ export function SearchPage({ themes }: Props) {
                 <button
                   key={`${slug}-${film.tmdbId}`}
                   onClick={() => setActiveFilm(film)}
-                  title={`${film.title} — ${themeTitle}`}
-                  className="group text-left focus:outline-none"
+                  aria-label={`${film.title} — ${themeTitle}`}
+                  className="group text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-bfc-brand-fg/60"
                 >
                   <div className="aspect-[2/3] overflow-hidden bg-neutral-800">
                     {film.posterPath ? (
@@ -216,7 +222,7 @@ export function SearchPage({ themes }: Props) {
                     {r.film ? (
                       <button
                         onClick={() => setActiveFilm(r.film)}
-                        className="w-full text-left py-4 flex gap-4 group focus:outline-none"
+                        className="w-full text-left py-4 flex gap-4 group focus:outline-none focus-visible:ring-2 focus-visible:ring-bfc-brand-fg/60"
                       >
                         <div className="flex-shrink-0 w-12 aspect-[2/3] overflow-hidden bg-neutral-800">
                           {r.film.posterPath ? (

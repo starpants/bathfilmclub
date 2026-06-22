@@ -46,6 +46,12 @@
   }
 
   .btn-discord {
-    @apply inline-flex items-center gap-2 bg-bfc-brand-accent text-bfc-brand-fg font-heading font-semibold text-xl px-5 py-3 hover:bg-bfc-brand-accent/80 transition-colors;
+    @apply inline-flex items-center gap-2 bg-bfc-brand-accent text-bfc-brand-fg font-heading font-semibold text-sm px-3 py-2 hover:bg-bfc-brand-accent/80 transition-colors;
+  }
+
+  @screen md {
+    .btn-discord {
+      @apply text-xl px-5 py-3;
+    }
   }
 }

@@ -25,7 +25,7 @@ function FilmRow({
   films,
   label,
   onSelect,
-  cardWidth = 'w-24 md:w-28',
+  cardWidth = 'w-full md:w-28',
   bgClass,
   accentClass,
   showCount = false,
@@ -48,7 +48,7 @@ function FilmRow({
             Not yet determined
           </p>
         ) : (
-          <div className="flex flex-wrap gap-12 justify-center">
+          <div className="grid grid-cols-2 gap-4 md:flex md:flex-wrap md:gap-12 md:justify-center">
             {films.map(({ film, status }) => (
               <div key={film.tmdbId} className={`${cardWidth} flex-shrink-0`}>
                 <FilmCard
@@ -77,7 +77,7 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
           films={selected}
           label="Selected Films"
           onSelect={setActiveFilm}
-          cardWidth="w-36 md:w-[200px]"
+          cardWidth="w-full md:w-[200px]"
           bgClass="bg-bfc-tier-selected"
           accentClass="text-bfc-brand-fg/90"
           showStrip
@@ -86,7 +86,7 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
           films={shortlisted}
           label="Shortlisted Films"
           onSelect={setActiveFilm}
-          cardWidth="w-[120px] md:w-[150px]"
+          cardWidth="w-full md:w-[150px]"
           bgClass="bg-bfc-tier-shortlisted"
           accentClass="text-bfc-brand-fg/90"
           showStrip

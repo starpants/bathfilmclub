@@ -11,6 +11,8 @@ const {
   title = 'Bath Film Club',
   description = 'A monthly film discussion group in Bath. Join us on Discord.',
 } = Astro.props;
+
+const pageTitle = title === 'Bath Film Club' ? title : `${title} — Bath Film Club`;
 ---
 <!doctype html>
 <html lang="en">
@@ -18,10 +20,30 @@ const {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <title>{title === 'Bath Film Club' ? title : `${title} — Bath Film Club`}</title>
-    <link rel="icon" type="image/jpeg" href="/assets/logo.jpg" />
+    <title>{pageTitle}</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/BathFilmClub_Logo.svg" />
+    <meta name="theme-color" content="#15262E" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bath Film Club" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    {Astro.site && <meta property="og:image" content={new URL('/assets/BathFilmClub.png', Astro.site).href} />}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    {Astro.site && <meta name="twitter:image" content={new URL('/assets/BathFilmClub.png', Astro.site).href} />}
   </head>
   <body class="min-h-screen flex flex-col">
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:bg-bfc-brand-accent focus:text-bfc-brand-fg focus:font-heading"
+    >
+      Skip to content
+    </a>
     <div class="flex-1">
       <slot />
     </div>

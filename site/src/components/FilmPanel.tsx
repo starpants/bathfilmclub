@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import type { Film } from '@bathfilmclub/types';
 
 interface Props {
@@ -11,6 +11,11 @@ const YOUTUBE_BASE = 'https://www.youtube.com/watch?v=';
 
 export function FilmPanel({ film, onClose }: Props) {
   const isOpen = film !== null;
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (isOpen) closeButtonRef.current?.focus();
+  }, [isOpen]);
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -41,8 +46,9 @@ export function FilmPanel({ film, onClose }: Props) {
         {film && (
           <>
             <button
+              ref={closeButtonRef}
               onClick={onClose}
-              className="absolute top-4 right-4 z-10 p-2 hover:text-bfc-brand-accent transition-colors"
+              className="absolute top-4 right-4 z-10 p-2.5 bg-bfc-brand-bg text-bfc-brand-fg/80 border border-bfc-brand-fg/40 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors"
               aria-label="Close panel"
             >
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">

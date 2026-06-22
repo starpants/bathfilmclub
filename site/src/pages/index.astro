@@ -13,8 +13,10 @@ const allThemes = await getAllThemes();
 
 <Layout>
   <Header themes={allThemes} />
-  <Hero />
-  <Introduction />
-  <NextEvent cycle={cycle} bg="bg-bfc-brand-alt/10" />
-  {cycle && <FilmPyramid films={cycle.films} />}
+  <main id="main-content">
+    <Hero />
+    <Introduction />
+    <NextEvent cycle={cycle} bg="bg-bfc-brand-alt/10" />
+    {cycle && <FilmPyramid films={cycle.films} />}
+  </main>
 </Layout>

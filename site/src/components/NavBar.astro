@@ -14,13 +14,13 @@ const isHome = path === '/';
 const isSearch = path === '/search';
 const isTheme = path.startsWith('/theme/');
 
-const btnActive = 'py-4 px-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 cursor-default opacity-40';
-const btnInactive = 'py-4 px-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors';
-const textBtnActive = 'font-heading font-semibold text-xl px-5 py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 cursor-default opacity-40';
-const textBtnInactive = 'font-heading font-semibold text-xl px-5 py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors';
+const btnActive = 'py-2 px-3 md:py-4 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 cursor-default opacity-40';
+const btnInactive = 'py-2 px-3 md:py-4 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors';
+const textBtnActive = 'font-heading font-semibold text-sm px-3 py-2 md:text-xl md:px-5 md:py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 cursor-default opacity-40';
+const textBtnInactive = 'font-heading font-semibold text-sm px-3 py-2 md:text-xl md:px-5 md:py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors';
 ---
 
-<div class="flex flex-wrap items-center justify-center gap-4">
+<div class="flex flex-wrap items-center justify-center gap-2 md:gap-4">
   {isHome ? (
     <span class={btnActive} aria-label="Home" aria-current="page">
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
@@ -44,9 +44,9 @@ const textBtnInactive = 'font-heading font-semibold text-xl px-5 py-3 border bor
   )}
 
   {isSearch ? (
-    <span class={textBtnActive} aria-current="page">Search Themes</span>
+    <span class={textBtnActive} aria-current="page"><span class="md:hidden">Search</span><span class="hidden md:inline">Search Themes</span></span>
   ) : (
-    <a href="/search" class={textBtnInactive}>Search Themes</a>
+    <a href="/search" class={textBtnInactive}><span class="md:hidden">Search</span><span class="hidden md:inline">Search Themes</span></a>
   )}
 
   <DiscordButton />

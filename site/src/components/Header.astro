@@ -11,7 +11,7 @@ const { themes, currentSlug } = Astro.props;
 ---
 
 <header class="border-b-4 border-b-bfc-brand-accent py-4">
-  <div class="max-w-site mx-auto px-6 h-16 flex items-center justify-center">
+  <div class="max-w-site mx-auto px-6 md:h-16 flex items-center justify-center">
     <NavBar {...(themes ? { themes } : {})} {...(currentSlug ? { currentSlug } : {})} />
   </div>
 </header>
