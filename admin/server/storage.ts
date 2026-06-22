@@ -7,7 +7,9 @@ export interface Storage {
   writeCurrentCycle(theme: Theme | null): Promise<void>;
   readAllThemes(): Promise<Theme[]>;
   readTheme(slug: string): Promise<Theme | null>;
+  readAnyTheme(slug: string): Promise<Theme | null>;
   writeTheme(theme: Theme): Promise<void>;
+  writeAnyTheme(theme: Theme): Promise<void>;
   deleteTheme(slug: string): Promise<void>;
   archiveCurrentCycle(): Promise<void>;
 }
@@ -64,9 +66,25 @@ export function createStorage(dataDir: string): Storage {
       }
     },
 
+    async readAnyTheme(slug) {
+      validateSlug(slug);
+      const current = await this.readCurrentCycle();
+      if (current?.slug === slug) return current;
+      return this.readTheme(slug);
+    },
+
     async writeTheme(theme) {
       await mkdir(themesDir(), { recursive: true });
       await writeFile(themePath(theme.slug), JSON.stringify(theme, null, 2));
+    },
+
+    async writeAnyTheme(theme) {
+      const current = await this.readCurrentCycle();
+      if (current?.slug === theme.slug) {
+        await this.writeCurrentCycle(theme);
+      } else {
+        await this.writeTheme(theme);
+      }
     },
 
     async deleteTheme(slug) {

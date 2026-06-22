@@ -1,7 +1,7 @@
 # Bath Film Club — Technical Architecture
 
-**Last updated:** 2026-06-21
-**Next review:** 2026-09-21 (quarterly)
+**Last updated:** 2026-06-22
+**Next review:** 2026-09-22 (quarterly)
 **Maintainer:** Av
 
 ---
@@ -82,7 +82,7 @@ Bath Film Club is a static website for a Discord-based film discussion group. It
 | **Framework** | Astro 4 | Static site generation, pre-renders at build time |
 | **Interactive components** | React 18 (islands) | MenuDrawer, SearchPage, FilmPanel, PyramidIsland |
 | **Styling** | Tailwind CSS | Utility-first CSS, responsive design |
-| **Build target** | Cloudflare Pages | Deployment, no server cost |
+| **Build target** | Cloudflare Workers (Static Assets) | Deployment, no server cost |
 | **Dev server** | `npm run site:dev` → port 4321 | Local development |
 
 ### Admin Tool (Local)
@@ -215,6 +215,7 @@ bathfilmclub/
 │   │   ├── pages/
 │   │   │   ├── index.astro        # Homepage
 │   │   │   ├── search.astro       # Search & filter page
+│   │   │   ├── 404.astro          # 404 page (no header/footer; standalone)
 │   │   │   └── theme/[slug].astro # Theme detail page
 │   │   ├── components/
 │   │   │   ├── NavBar.astro       # Shared nav buttons (used in Header + Footer)
@@ -244,9 +245,12 @@ bathfilmclub/
 │   │   └── data/
 │   │       ├── current.json       # Active theme (authoritative)
 │   │       └── themes/            # Archived themes (*.json)
-│   ├── public/assets/             # Static assets (SVG logos, images)
-│   ├── astro.config.ts
+│   ├── public/assets/             # Static assets (SVG logos, BathFilmClub.png OG image)
+│   ├── public/_headers            # Cloudflare cache-control rules
+│   ├── astro.config.ts            # site URL configured here (needed for og:image)
 │   └── tailwind.config.ts
+│
+├── wrangler.toml                  # Cloudflare Workers deploy config (repo root)
 │
 ├── admin/                         # Admin tool (Express + React, local only)
 │   ├── server/
@@ -295,7 +299,10 @@ bathfilmclub/
 | `site/src/components/SearchPage.tsx` | Search + filter UI | New filter types, result layout |
 | `site/src/components/FilmPanel.tsx` | Film detail view | Visual tweaks or new fields |
 | `site/src/components/PyramidIsland.tsx` | Pyramid with coloured band rows | Pyramid layout/behaviour |
-| `site/src/layouts/Layout.astro` | Page shell | Global layout or meta changes |
+| `site/src/layouts/Layout.astro` | Page shell, OG/Twitter meta tags | Global layout or meta changes |
+| `site/src/pages/404.astro` | Standalone 404 (no Layout) | 404 content or styling |
+| `site/astro.config.ts` | Site URL (used for og:image) | When deploying to a new domain |
+| `wrangler.toml` | Cloudflare Workers deploy config | Changing worker name or asset dir |
 
 ---
 
@@ -326,11 +333,14 @@ In `site/src/components/PyramidIsland.tsx`, update the `bgClass` and `accentClas
 
 ## Deployment
 
-Deployed to **Cloudflare Pages** via GitHub integration:
+Deployed to **Cloudflare Workers** (Static Assets) via GitHub integration:
 
 1. Push to `main` branch
 2. Cloudflare builds with `npm run site:build`
-3. Serves from `https://bathfilmclub.pages.dev` (or custom domain)
+3. Deploys with `npx wrangler deploy` (wrangler is a root devDependency — no download step)
+4. Config: `wrangler.toml` at repo root, `directory = "./site/dist"`, `not_found_handling = "404-page"`
+
+To update the site URL (needed for `og:image` absolute URL), edit `site` in `site/astro.config.ts`.
 
 Admin tool is **local only** — not deployed.
 

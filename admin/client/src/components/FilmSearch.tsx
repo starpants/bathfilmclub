@@ -55,14 +55,14 @@ export function FilmSearch({ onAdd }: Props) {
       {results.length > 0 && (
         <ul style={{ listStyle: 'none', padding: 0, margin: 0, border: '1px solid #eee' }}>
           {results.map((r) => (
-            <li key={r.id} style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.5rem', borderBottom: '1px solid #eee' }}>
+            <li key={r.id} style={{ display: 'flex', alignItems: 'center', gap: '1rem', padding: '0.75rem', borderBottom: '1px solid rgba(255,247,214,0.1)' }}>
               {r.poster_path ? (
-                <img src={`${TMDB_IMAGE_BASE}${r.poster_path}`} alt="" style={{ width: 30, height: 45, objectFit: 'cover' }} />
+                <img src={`${TMDB_IMAGE_BASE}${r.poster_path}`} alt="" style={{ width: 52, height: 79, objectFit: 'cover', flexShrink: 0 }} />
               ) : (
-                <div style={{ width: 30, height: 45, background: '#eee' }} />
+                <div style={{ width: 52, height: 79, background: 'rgba(255,247,214,0.1)', flexShrink: 0 }} />
               )}
-              <span style={{ flex: 1, fontSize: '0.85rem' }}>
-                {r.title} <span style={{ color: '#999' }}>({r.release_date?.slice(0, 4)})</span>
+              <span style={{ flex: 1, fontSize: '1.5rem' }}>
+                {r.title} <span style={{ color: 'rgba(255,247,214,0.4)' }}>({r.release_date?.slice(0, 4)})</span>
               </span>
               <div style={{ display: 'flex', gap: '0.25rem' }}>
                 {(['nominated', 'shortlisted', 'selected'] as FilmStatus[]).map((s) => (

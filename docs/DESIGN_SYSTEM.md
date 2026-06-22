@@ -1,7 +1,7 @@
 # Bath Film Club — Design System & Visual Language
 
-**Last updated:** 2026-06-21
-**Next review:** 2026-09-21 (quarterly)
+**Last updated:** 2026-06-22
+**Next review:** 2026-09-22 (quarterly)
 **Maintainer:** Av
 
 ---
@@ -182,10 +182,14 @@ Shared navigation used in both Header and Footer. Renders four buttons in a cent
 
 Active/inactive state via `Astro.url.pathname` (evaluated at build time — no hydration flash).
 
-**Outline button sizes:**
-- Icon button: `py-4 px-3` (matches height of text buttons)
-- Text button: `font-heading font-semibold text-xl px-5 py-3`
+**Outline button sizes (responsive):**
+- Icon button: `py-2 px-3 md:py-4` — padding reduces on mobile to match text button height
+- Text button: `text-sm px-3 py-2 md:text-xl md:px-5 md:py-3`
 - Both use `border border-bfc-brand-fg/40 text-bfc-brand-fg/80` inactive, `hover:border-bfc-brand-fg hover:text-bfc-brand-fg` on hover
+- Gap: `gap-2 md:gap-4`
+- Header inner div: `md:h-16` (no fixed height on mobile — allows wrap)
+
+**Mobile label shortening:** "Browse Themes" → "Browse" and "Search Themes" → "Search" on mobile only, using `<span class="md:hidden">` / `<span class="hidden md:inline">` inside the button. Full labels visible at `md:` and above.
 
 ### Header (`Header.astro`)
 
@@ -252,6 +256,21 @@ Footer [NavBar]
 ```
 
 Prev/next chevrons: SVG with `stroke-linecap="square" stroke-linejoin="miter"` — straight-edged.
+
+### 404 Page (`/404`)
+
+Standalone page — does **not** use `Layout.astro`. No header, no footer.
+
+```
+body (min-h-screen flex items-center justify-center)
+  "404" — h1 in Notable, text-[20vw] md:text-[12rem], bfc-brand-fg/20 (ghosted)
+  "Well, nobody's perfect." — blockquote, Barlow Condensed, text-4xl md:text-6xl
+  — The Apartment, Billy Wilder, 1960 — attribution in <cite>
+  "The page you're looking for doesn't exist." — muted body copy
+  [ Back to Home ] — standard outline nav button
+```
+
+The large "404" is decorative — deliberately ghosted (`/20` opacity) so the quote reads as the primary message. The quote functions as the communicative content; the number as the visual anchor.
 
 ### Search Page (`/search`)
 
@@ -322,9 +341,14 @@ Displays films in a visual hierarchy matching the selection process.
 
 Each band ends with a `<FilmStrip />` motif.
 
+**Card sizing (responsive):**
+- Mobile: `grid grid-cols-2 gap-4` — all cards `w-full`, equal size, 2 per row regardless of tier
+- Desktop: `flex flex-wrap gap-12 justify-center` with explicit per-tier widths: Selected `w-[200px]`, Shortlisted `w-[150px]`, Nominated `w-28`
+- The graduated desktop sizing (selected = largest) makes no sense as a visual cue on a 2-column mobile grid, hence the uniform mobile treatment
+
 **Component split:**
 - `FilmPyramid.astro` — Astro wrapper, splits films into rows via `getPyramidRows()`
-- `PyramidIsland.tsx` — React island, `FilmRow` accepts `bgClass` + `accentClass` props
+- `PyramidIsland.tsx` — React island, `FilmRow` accepts `bgClass` + `accentClass` + `cardWidth` props
 
 ### Film Card (`FilmCard.tsx`)
 
@@ -344,9 +368,10 @@ Individual film poster.
 
 Slide-in detail drawer from the right.
 
-- **Width:** `max-w-lg` (512px)
+- **Width:** `max-w-lg` (512px); full viewport width on mobile — overlay is completely covered, so the close button is the only dismiss mechanism on mobile
 - **Animation:** 300ms ease-in-out from right
-- **Overlay:** `bg-black/60`, click to dismiss
+- **Overlay:** `bg-black/60`, click to dismiss (desktop only where panel doesn't fill viewport)
+- **Close button:** solid `bg-bfc-brand-bg` fill, cream border + icon — always visible over any poster colour (light or dark). Auto-focused when the panel opens (`useRef` + `useEffect`) so keyboard/screen reader users land in the right place.
 - **Close:** × button, click overlay, or Escape
 - **Content:** poster, title + year/runtime/rating, genres, synopsis, director/producers/cast, trailer link
 
@@ -430,6 +455,14 @@ Styles are in `admin/client/src/index.css`.
 - `aria-label` on icon buttons (Home, close buttons, prev/next chevrons)
 - Escape key closes all drawers and panels
 - Keyboard tab order is logical
+- Skip-to-content link in Layout (visible on focus, jumps to `#main-content`)
+- All `<main>` elements have `id="main-content"` for skip link target
+- Search input has a visually hidden `<label>` (`sr-only`)
+- Filter pills (status + month) have `aria-pressed` to convey toggle state
+- Decorative stars in Introduction have `aria-hidden="true"`
+- FilmPanel auto-focuses close button on open (`useRef`)
+- Result buttons use `focus-visible:ring` rather than removing all focus styles
+- 404 `<h1>` has `aria-label="404 — Page not found"` (the visible text is just "404")
 
 ---
 

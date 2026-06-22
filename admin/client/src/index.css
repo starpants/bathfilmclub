@@ -12,3 +12,51 @@ html, body {
   font-family: 'Barlow Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+/* Outline button — matches public site nav bar style */
+.btn {
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  background: transparent;
+  color: rgba(255, 247, 214, 0.8);
+  border: 1px solid rgba(255, 247, 214, 0.4);
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+  letter-spacing: 0.025em;
+  line-height: 1;
+}
+.btn:hover:not(:disabled) {
+  border-color: #FFF7D6;
+  color: #FFF7D6;
+}
+.btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+.btn-sm {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.75rem;
+}
+.btn-accent {
+  background: #8C3646;
+  border-color: #8C3646;
+  color: #FFF7D6;
+}
+.btn-accent:hover:not(:disabled) {
+  background: rgba(140, 54, 70, 0.8);
+  border-color: rgba(140, 54, 70, 0.8);
+}
+.btn-danger {
+  border-color: rgba(177, 18, 38, 0.5);
+  color: rgba(177, 18, 38, 0.8);
+}
+.btn-danger:hover:not(:disabled) {
+  border-color: #B11226;
+  color: #B11226;
+}
+/* Dim — same as nav inactive state; still clickable so panels can be toggled closed */
+.btn-dimmed {
+  opacity: 0.4;
+}
