@@ -34,6 +34,10 @@ themesRouter.post('/new', async (req, res) => {
     return res.status(400).json({ error: 'title and month are required' });
   }
   const slug = `${month}-${title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`;
+  const existing = await storage.readAnyTheme(slug);
+  if (existing) {
+    return res.status(409).json({ error: `A theme with this title and month already exists (${slug})` });
+  }
   const newTheme: Theme = { slug, title, month, films: [] };
   await storage.writeTheme(newTheme);
   res.json(newTheme);

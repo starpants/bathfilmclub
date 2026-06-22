@@ -18,8 +18,9 @@ export default {
           nominated: '#4C685E',
         },
         'bfc-status': {
-          selected: '#22C55E',
+          selected: '#00A992',
           shortlisted: '#EABB16',
+          nominated: '#FFF8EA',
         },
         neutral: {
           50: '#FAFAFA',

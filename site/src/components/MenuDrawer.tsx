@@ -4,6 +4,7 @@ import type { Theme } from '@bathfilmclub/types';
 interface Props {
   themes: Theme[];
   currentSlug?: string;
+  dimmed?: boolean;
 }
 
 function shortMonth(month: string): string {
@@ -13,7 +14,7 @@ function shortMonth(month: string): string {
   });
 }
 
-export function MenuDrawer({ themes, currentSlug }: Props) {
+export function MenuDrawer({ themes, currentSlug, dimmed }: Props) {
   const byYear = themes.reduce<Record<string, Theme[]>>((acc, t) => {
     const year = t.month.split('-')[0] as string;
     if (!acc[year]) acc[year] = [];
@@ -48,7 +49,7 @@ export function MenuDrawer({ themes, currentSlug }: Props) {
       {/* Trigger button */}
       <button
         onClick={() => setIsOpen(true)}
-        className="font-heading font-semibold text-sm px-3 py-2 md:text-xl md:px-5 md:py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors"
+        className={`font-heading font-semibold text-sm px-3 py-2 md:text-xl md:px-5 md:py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors${dimmed ? ' opacity-40' : ''}`}
         aria-label="Browse themes"
       >
         <span className="md:hidden">Browse</span><span className="hidden md:inline">Browse Themes</span>

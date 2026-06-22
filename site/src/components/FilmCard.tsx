@@ -26,27 +26,27 @@ export function FilmCard({ film, status, onSelect, showTag = true }: Props) {
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-neutral-800">
-            <span className="font-heading text-bfc-brand-fg/60 text-xs text-center px-2">
+            <span className="font-heading text-bfc-brand-fg text-xs text-center px-2">
               {film.title}
             </span>
           </div>
         )}
       </div>
-      <div className="mt-1.5 h-12 overflow-hidden bg-white/80 p-2 ">
-        <p className="font-body text-xs text-neutral-800 leading-snug line-clamp-2">{film.title}</p>
+      <div className="mt-1.5 h-12 overflow-hidden p-2 mb-2 ">
+        <p className="font-body text-sm text-bfc-brand-fg line-clamp-2">{film.title}</p>
       </div>
       {showTag && status === 'selected' && (
-        <span className="mt-1 inline-block bg-bfc-status-selected text-black text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
+        <span className="mt-1 bg-bfc-status-selected text-black block w-full text-xs font-heading uppercase tracking-wider px-1.5 py-1">
           {status}
         </span>
       )}
       {showTag && status === 'shortlisted' && (
-        <span className="mt-1 inline-block bg-bfc-status-shortlisted text-black text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
+        <span className="mt-1 bg-bfc-status-shortlisted text-black block w-full text-xs font-heading uppercase tracking-wider px-1.5 py-1">
           {status}
         </span>
       )}
       {showTag && status === 'nominated' && (
-        <span className="mt-1 inline-block bg-neutral-700 text-bfc-brand-fg/80 text-[9px] font-heading uppercase tracking-wider px-1.5 py-0.5">
+        <span className="mt-1 bg-bfc-status-nominated text-black block w-full text-xs font-heading uppercase tracking-wider px-1.5 py-1">
           {status}
         </span>
       )}

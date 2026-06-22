@@ -38,9 +38,7 @@ const textBtnInactive = 'font-heading font-semibold text-sm px-3 py-2 md:text-xl
   )}
 
   {themes && (
-    <div class={isTheme ? 'opacity-40' : ''}>
-      <MenuDrawer themes={themes} {...(currentSlug ? { currentSlug } : {})} client:load />
-    </div>
+    <MenuDrawer themes={themes} dimmed={isTheme} {...(currentSlug ? { currentSlug } : {})} client:load />
   )}
 
   {isSearch ? (
