@@ -10,7 +10,20 @@ const STATUS_LABELS: Record<string, string> = {
   shortlisted: 'Shortlisted',
   nominated: 'Nominated',
 };
-const MONTH_LABELS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const MONTH_LABELS = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec',
+];
 
 interface Props {
   themes: Theme[];
@@ -56,16 +69,20 @@ export function SearchPage({ themes }: Props) {
     );
   }
 
-  const shortlistedFilms = useMemo(() =>
-    themes.flatMap((t) =>
-      t.films
-        .filter((f) => f.status === 'shortlisted')
-        .map((f) => ({ film: f.film, slug: t.slug, themeTitle: t.title }))
-    ), [themes]);
+  const shortlistedFilms = useMemo(
+    () =>
+      themes.flatMap((t) =>
+        t.films
+          .filter((f) => f.status === 'shortlisted')
+          .map((f) => ({ film: f.film, slug: t.slug, themeTitle: t.title }))
+      ),
+    [themes]
+  );
 
-  const sinceYear = themes.length > 0
-    ? String(Math.min(...themes.map((t) => parseInt(t.month.split('-')[0]!))))
-    : '';
+  const sinceYear =
+    themes.length > 0
+      ? String(Math.min(...themes.map((t) => parseInt(t.month.split('-')[0]!))))
+      : '';
 
   const isSearching = query.trim().length >= 2;
   const hasFilters = activeStatuses.length > 0 || activeMonths.length > 0;
@@ -129,7 +146,7 @@ export function SearchPage({ themes }: Props) {
   }, [query, themes, activeStatuses, activeMonths, isSearching]);
 
   const pillBase =
-    'px-3 py-1 font-heading font-semibold text-xs uppercase tracking-wide border transition-colors cursor-pointer';
+    'px-3 py-1 font-heading font-semibold text-base uppercase tracking-wide border transition-colors cursor-pointer';
   const pillActive = `${pillBase} bg-white text-black border-white`;
   const pillInactive = `${pillBase} border-neutral-600 text-bfc-brand-fg/60 hover:text-bfc-brand-fg hover:border-neutral-400`;
 
@@ -148,7 +165,7 @@ export function SearchPage({ themes }: Props) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search by film, director, or theme…"
-          className="w-full border border-neutral-700 bg-transparent px-4 py-3 font-body text-sm focus:outline-none focus:border-white placeholder:text-bfc-brand-fg/40"
+          className="w-full border border-neutral-700 bg-transparent px-4 py-3 font-body text-xl focus:outline-none focus:border-white placeholder:text-bfc-brand-fg/40"
         />
 
         {/* Filter pills */}
@@ -181,10 +198,11 @@ export function SearchPage({ themes }: Props) {
 
         {showDefault ? (
           <div className="space-y-6">
-            <p className="font-body text-sm text-bfc-brand-fg/60">
-              {themes.length} themes · {shortlistedFilms.length} films shortlisted · Since {sinceYear}
+            <p className="font-body text-xl text-bfc-brand-fg/60">
+              {themes.length} themes · {shortlistedFilms.length} films shortlisted · Since{' '}
+              {sinceYear}
             </p>
-            <div className="grid grid-cols-[repeat(auto-fill,minmax(96px,1fr))] gap-3">
+            <div className="grid grid-cols-[repeat(auto-fill,minmax(160px,1fr))] gap-6">
               {shortlistedFilms.map(({ film, slug, themeTitle }) => (
                 <button
                   key={`${slug}-${film.tmdbId}`}
@@ -192,7 +210,7 @@ export function SearchPage({ themes }: Props) {
                   aria-label={`${film.title} — ${themeTitle}`}
                   className="group text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-bfc-brand-fg/60"
                 >
-                  <div className="aspect-[2/3] overflow-hidden bg-neutral-800">
+                  <div className="aspect-[2/3] overflow-hidden transition duration-300 z-30 bg-neutral-800 hover:scale-110 hover:bfc-shadow">
                     {film.posterPath ? (
                       <img
                         src={`${TMDB_IMAGE_BASE}${film.posterPath}`}
@@ -218,13 +236,16 @@ export function SearchPage({ themes }: Props) {
             ) : (
               <ul className="grid grid-cols-1 md:grid-cols-2 md:gap-x-8">
                 {activeResults.map((r) => (
-                  <li key={`${r.slug}-${r.filmTitle}-${r.status}`} className="border-b border-neutral-800">
+                  <li
+                    key={`${r.slug}-${r.filmTitle}-${r.status}`}
+                    className="border-b border-neutral-800"
+                  >
                     {r.film ? (
                       <button
                         onClick={() => setActiveFilm(r.film)}
                         className="w-full text-left py-4 flex gap-4 group focus:outline-none focus-visible:ring-2 focus-visible:ring-bfc-brand-fg/60"
                       >
-                        <div className="flex-shrink-0 w-12 aspect-[2/3] overflow-hidden bg-neutral-800">
+                        <div className="flex-shrink-0 w-12 aspect-[2/3] overflow-hidden bg-neutral-800 transition duration-300 z-30 hover:scale-110 hover:bfc-shadow">
                           {r.film.posterPath ? (
                             <img
                               src={`${TMDB_IMAGE_BASE}${r.film.posterPath}`}
@@ -240,12 +261,11 @@ export function SearchPage({ themes }: Props) {
                           <p className="font-heading font-semibold text-base group-hover:text-bfc-brand-fg/80 transition-colors">
                             {r.filmTitle}
                           </p>
-                          <p className="font-body text-sm text-bfc-brand-fg/60">
-                            Theme:{' '}
-                            <span className="text-bfc-brand-fg">{r.themeTitle}</span>
+                          <p className="font-body text-bfc-brand-fg/60">
+                            Theme: <span className="text-bfc-brand-fg">{r.themeTitle}</span>
                           </p>
-                          <p className="font-body text-sm text-bfc-brand-fg/60">Director: {r.director}</p>
-                          <p className="font-body text-xs text-bfc-brand-fg/60 mt-1">
+                          <p className="font-body text-bfc-brand-fg/60">Director: {r.director}</p>
+                          <p className="font-body text-bfc-brand-fg/60 mt-1">
                             {formatMonth(r.month)} · {r.status}
                           </p>
                         </div>

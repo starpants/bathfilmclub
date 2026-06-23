@@ -31,10 +31,15 @@
     @apply flex items-center gap-2 text-xs font-display uppercase tracking-widest text-bfc-brand-fg/60;
   }
 
-  .section-label::before {
+  /* Drop shadow */
+  .bfc-shadow {
+    @apply shadow-[16px_16px_16px_0px_rgba(0,0,0,0.3)];
+  }
+
+  /* .section-label::before {
     content: '';
     @apply block w-2 h-2 bg-bfc-brand-accent flex-shrink-0;
-  }
+  } */
 
   /* Consistent interactive element style: outline box on hover, filled on active */
   .interactive-item {

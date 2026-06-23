@@ -25,7 +25,7 @@ function FilmRow({
   films,
   label,
   onSelect,
-  cardWidth = 'w-full md:w-28',
+  cardWidth = 'w-full md:w-40',
   bgClass,
   accentClass,
   showCount = false,
@@ -36,9 +36,9 @@ function FilmRow({
 
   return (
     <div className={`py-10 ${bgClass}`}>
-      <div className="max-w-[1200px] mx-auto px-6 space-y-3">
+      <div className="max-w-[1664px] mx-auto px-6 space-y-3">
         <h4
-          className={`pyramid-subtitle text-xl justify-center p-2 mb-12 ${films.length === 0 ? 'text-bfc-brand-fg/40' : accentClass}`}
+          className={`pyramid-subtitle text-2xl justify-center text-center p-2 mb-12 ${films.length === 0 ? 'text-bfc-brand-fg/40' : accentClass}`}
         >
           {label}
           {showCount ? ` (${films.length})` : ''}
@@ -77,7 +77,7 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
           films={selected}
           label="Selected Films"
           onSelect={setActiveFilm}
-          cardWidth="w-full md:w-[200px]"
+          cardWidth="w-full md:w-56"
           bgClass="bg-bfc-tier-selected"
           accentClass="text-bfc-brand-fg/90"
           showStrip
@@ -86,7 +86,7 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
           films={shortlisted}
           label="Shortlisted Films"
           onSelect={setActiveFilm}
-          cardWidth="w-full md:w-[150px]"
+          cardWidth="w-full md:w-48"
           bgClass="bg-bfc-tier-shortlisted"
           accentClass="text-bfc-brand-fg/90"
           showStrip

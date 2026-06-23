@@ -33,7 +33,7 @@ const newerTheme = allThemes[currentIndex - 1] ?? null;
   <div class="max-w-site mx-auto px-6 py-4">
     <main id="main-content">
       <div class="text-center">
-        <p class="section-label justify-center mb-4">{formatMonth(theme.month)}</p>
+        <p class="section-label text-base justify-center mb-4">{formatMonth(theme.month)}</p>
         <div
           class="flex justify-between items-center font-heading font-black text-5xl leading-tight"
         >
@@ -61,7 +61,7 @@ const newerTheme = allThemes[currentIndex - 1] ?? null;
               <span />
             )
           }
-          <h1>{theme.title}</h1>
+          <h1 class="font-light">{theme.title}</h1>
           {
             newerTheme ? (
               <a
@@ -89,7 +89,7 @@ const newerTheme = allThemes[currentIndex - 1] ?? null;
         </div>
         {
           theme.description && (
-            <p class="font-body text-bfc-brand-fg/60 mt-4 max-w-2xl leading-relaxed mx-auto">
+            <p class="font-body text-bfc-brand-fg/60 mt-4 max-w-2xl leading-relaxed mx-auto text-xl">
               {theme.description}
             </p>
           )

@@ -8,15 +8,17 @@ import { getAllThemes } from '../utils/data';
 const themes = await getAllThemes();
 ---
 
-<Layout title="Search" description="Search all Bath Film Club themes and films by title, director, status or month.">
+<Layout
+  title="Search"
+  description="Search all Bath Film Club themes and films by title, director, status or month."
+>
   <Header themes={themes} />
   <div class="max-w-site mx-auto px-6 pt-12 pb-4">
     <LogoLandscape class="w-full max-w-md mx-auto fill-bfc-brand-fg" />
   </div>
   <main id="main-content" class="max-w-site mx-auto px-6 pt-4 pb-24">
-    <div class="mb-12">
-      <h1 class="section-label mb-4 font-heading font-extrabold">Search</h1>
-      <p class="font-heading font-extrabold text-4xl">Films & Themes</p>
+    <div class="mb-6">
+      <h1 class="text-5xl text-center font-light">Films & Themes</h1>
     </div>
     <SearchPage themes={themes} client:load />
   </main>
