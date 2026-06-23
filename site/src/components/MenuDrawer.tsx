@@ -52,7 +52,8 @@ export function MenuDrawer({ themes, currentSlug, dimmed }: Props) {
         className={`font-heading font-semibold text-sm px-3 py-2 md:text-xl md:px-5 md:py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors${dimmed ? ' opacity-40' : ''}`}
         aria-label="Browse themes"
       >
-        <span className="md:hidden">Browse</span><span className="hidden md:inline">Browse Themes</span>
+        <span className="md:hidden">Browse</span>
+        <span className="hidden md:inline">Browse Themes</span>
       </button>
 
       {/* Overlay */}
@@ -87,18 +88,7 @@ export function MenuDrawer({ themes, currentSlug, dimmed }: Props) {
           </svg>
         </button>
 
-        <nav className="p-6 pt-14 space-y-4">
-          {/* Search link */}
-          {/* <a
-            href="/search"
-            className="block font-body font-semibold text-bfc-brand-fg interactive-item"
-          >
-            Search Themes
-          </a> */}
-
-          {/* Divider */}
-          {/* <hr className="border-bfc-brand-fg/20" /> */}
-
+        <nav className="p-6 pt-14 space-y-4 text-lg">
           {/* Accordion year groups */}
           <div className="space-y-1">
             {years.map((year) => (
@@ -121,20 +111,24 @@ export function MenuDrawer({ themes, currentSlug, dimmed }: Props) {
                     <path d="M2 4l4 4 4-4" />
                   </svg>
                 </button>
-                {openYear === year && (
-                  <ul className="mt-1 space-y-1">
-                    {byYear[year]?.map((t) => (
-                      <li key={t.slug}>
-                        <a
-                          href={`/theme/${t.slug}`}
-                          className={`block font-body text-bfc-brand-fg/80 interactive-item${t.slug === currentSlug ? ' active' : ''}`}
-                        >
-                          {shortMonth(t.month)} – {t.title}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                <div
+                  className={`grid transition-[grid-template-rows] duration-300 ease-in-out ${openYear === year ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'}`}
+                >
+                  <div className="overflow-hidden">
+                    <ul className="mt-1 space-y-1 pb-1">
+                      {byYear[year]?.map((t) => (
+                        <li key={t.slug}>
+                          <a
+                            href={`/theme/${t.slug}`}
+                            className={`block font-body text-bfc-brand-fg/80 interactive-item${t.slug === currentSlug ? ' active' : ''}`}
+                          >
+                            {shortMonth(t.month)} – {t.title}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

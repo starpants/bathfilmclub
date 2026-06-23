@@ -169,7 +169,7 @@ export function SearchPage({ themes }: Props) {
         />
 
         {/* Filter pills */}
-        <div className="space-y-3">
+        <div className="space-y-6">
           <div className="flex flex-wrap gap-2">
             {STATUS_OPTIONS.map((status) => (
               <button
@@ -228,7 +228,7 @@ export function SearchPage({ themes }: Props) {
           </div>
         ) : (
           <div className="space-y-2">
-            <p className="section-label">
+            <p className="section-label text-xl text-center w-full block my-16">
               {activeResults.length} result{activeResults.length !== 1 ? 's' : ''}
             </p>
             {activeResults.length === 0 ? (
@@ -245,7 +245,7 @@ export function SearchPage({ themes }: Props) {
                         onClick={() => setActiveFilm(r.film)}
                         className="w-full text-left py-4 flex gap-4 group focus:outline-none focus-visible:ring-2 focus-visible:ring-bfc-brand-fg/60"
                       >
-                        <div className="flex-shrink-0 w-12 aspect-[2/3] overflow-hidden bg-neutral-800 transition duration-300 z-30 hover:scale-110 hover:bfc-shadow">
+                        <div className="flex-shrink-0 w-40 aspect-[2/3] overflow-hidden bg-neutral-800">
                           {r.film.posterPath ? (
                             <img
                               src={`${TMDB_IMAGE_BASE}${r.film.posterPath}`}
@@ -257,27 +257,28 @@ export function SearchPage({ themes }: Props) {
                             <div className="w-full h-full bg-neutral-800" />
                           )}
                         </div>
-                        <div className="min-w-0">
-                          <p className="font-heading font-semibold text-base group-hover:text-bfc-brand-fg/80 transition-colors">
+                        <div className="min-w-0 flex-1 py-1">
+                          <p className="font-heading font-semibold text-xl group-hover:text-bfc-brand-fg/80 transition-colors mb-8">
                             {r.filmTitle}
                           </p>
-                          <p className="font-body text-bfc-brand-fg/60">
-                            Theme: <span className="text-bfc-brand-fg">{r.themeTitle}</span>
-                          </p>
-                          <p className="font-body text-bfc-brand-fg/60">Director: {r.director}</p>
-                          <p className="font-body text-bfc-brand-fg/60 mt-1">
-                            {formatMonth(r.month)} · {r.status}
-                          </p>
+                          <div className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1.5 font-body md:text-xl">
+                            <span className="text-bfc-brand-fg/40">Theme</span>
+                            <span className="text-bfc-brand-fg/60">{r.themeTitle}</span>
+                            <span className="text-bfc-brand-fg/40">Director</span>
+                            <span className="text-bfc-brand-fg/60">{r.director}</span>
+                            <span className="text-bfc-brand-fg/40">{formatMonth(r.month)}</span>
+                            <span className="text-bfc-brand-fg/60 capitalize">{r.status}</span>
+                          </div>
                         </div>
                       </button>
                     ) : (
                       <a href={`/theme/${r.slug}`} className="py-4 flex gap-4 group">
-                        <div className="flex-shrink-0 w-12 aspect-[2/3] bg-neutral-800" />
+                        <div className="flex-shrink-0 w-40 aspect-[2/3] bg-neutral-800" />
                         <div className="min-w-0 self-center">
-                          <p className="font-heading font-semibold text-base group-hover:text-bfc-brand-fg/80 transition-colors">
+                          <p className="font-heading font-semibold text-xl group-hover:text-bfc-brand-fg/80 transition-colors">
                             {r.themeTitle}
                           </p>
-                          <p className="font-body text-xs text-bfc-brand-fg/60 mt-1">
+                          <p className="font-body text-base text-bfc-brand-fg/60 mt-1">
                             {formatMonth(r.month)} · Theme
                           </p>
                         </div>
