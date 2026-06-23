@@ -1,6 +1,6 @@
 # Bath Film Club — Design System & Visual Language
 
-**Last updated:** 2026-06-22
+**Last updated:** 2026-06-23
 **Next review:** 2026-09-22 (quarterly)
 **Maintainer:** Av
 
@@ -92,33 +92,27 @@ Imported from Google Fonts in `site/src/styles/global.css`:
 
 | Role | Font | Size | Weight |
 |------|------|------|--------|
-| **Theme title** | Barlow Condensed | 5xl | 900 (black) |
-| **Search heading** | Barlow Condensed | 4xl | 800 |
+| **Theme title** | Barlow Condensed | 5xl | 300 (light) |
+| **Search heading** | Barlow Condensed | 5xl | 300 (light) |
 | **Section headings** | Barlow Condensed | 2xl | 800 |
 | **Section label** | Notable | xs | — |
-| **Pyramid row heading** | Notable | xl | — |
+| **Pyramid row heading** | Notable | 2xl | — |
 | **Nav / UI labels** | Barlow Condensed | xl | 600 |
-| **Body paragraph** | Barlow Condensed | lg | 400 |
-| **Film title (card)** | Barlow Condensed | xs | 400 |
-| **Caption / meta** | Barlow Condensed | xs–sm | 400 |
+| **Body paragraph** | Barlow Condensed | xl | 400 |
+| **Film title (card)** | Barlow Condensed | lg | 400 |
+| **Search result film title** | Barlow Condensed | xl | 600 |
+| **Search filter pills** | Barlow Condensed | base | 600 |
+| **Caption / meta** | Barlow Condensed | base | 400 |
 
-### Section Label (Square Motif)
+### Section Label
 
-The square from the Bath Film Club logo marks major sections. Square is CSS-generated (not a Unicode character) for reliable vertical alignment in flex containers.
-
-```html
-<p class="section-label">Film Selection</p>
-<!-- renders: ■ FILM SELECTION  (square is bfc-brand-accent) -->
-```
+Section labels use Notable (display font), uppercase, widely tracked, muted cream. The CSS `::before` accent square motif is currently disabled.
 
 ```css
 .section-label {
   @apply flex items-center gap-2 text-xs font-display uppercase tracking-widest text-bfc-brand-fg/60;
 }
-.section-label::before {
-  content: '';
-  @apply block w-2 h-2 bg-bfc-brand-accent flex-shrink-0;
-}
+/* ::before square currently commented out in global.css */
 ```
 
 ---
@@ -140,7 +134,7 @@ All page content uses:
 **Full-width band pattern:**
 ```html
 <div class="py-10 bg-bfc-tier-selected">               <!-- no max-w constraint -->
-  <div class="max-w-[1200px] mx-auto px-6">...</div>   <!-- inner container -->
+  <div class="max-w-[1664px] mx-auto px-6">...</div>   <!-- inner container (pyramid bands use wider max-w than standard max-w-site) -->
 </div>
 ```
 
@@ -226,7 +220,7 @@ Slide-in panel from the left edge. React island (`client:load`).
 - **Close:** × button, click overlay, or Escape key
 - **Body scroll lock:** `document.body.style.overflow = 'hidden'` while open
 - **Top item:** "Search Themes" link
-- **Themes:** Grouped by year in accordion; current year open by default
+- **Themes:** Grouped by year in accordion; current year open by default; accordion opens/closes with a smooth CSS grid row height transition (`grid-template-rows: 0fr → 1fr`, 300ms ease-in-out)
 - **Active theme:** Highlighted when `currentSlug` matches
 
 ---
@@ -301,11 +295,11 @@ Two inline SVG Astro components created from vector exports of the brand logo. P
 
 ### FilmStrip (`FilmStrip.tsx`)
 
-Four equally-spaced squares in a horizontal row — replicates the film negative hole motif from the logo. Used as section end markers in the film pyramid bands.
+Eight equally-spaced squares in a horizontal row — replicates the film negative hole motif from the logo. Used as section end markers in the film pyramid bands.
 
 ```tsx
 <FilmStrip />
-<!-- renders 4 × w-3 h-3 bg-bfc-brand-fg squares, centred, gap-6 -->
+<!-- renders 8 × w-3 h-3 bg-bfc-brand-fg squares, centred, gap-6 -->
 ```
 
 Used at the bottom of each pyramid band row (selected, shortlisted, nominated).
@@ -343,8 +337,9 @@ Each band ends with a `<FilmStrip />` motif.
 
 **Card sizing (responsive):**
 - Mobile: `grid grid-cols-2 gap-4` — all cards `w-full`, equal size, 2 per row regardless of tier
-- Desktop: `flex flex-wrap gap-12 justify-center` with explicit per-tier widths: Selected `w-[200px]`, Shortlisted `w-[150px]`, Nominated `w-28`
+- Desktop: `flex flex-wrap gap-12 justify-center` with explicit per-tier widths: Selected `w-56`, Shortlisted `w-48`, Nominated `w-40`
 - The graduated desktop sizing (selected = largest) makes no sense as a visual cue on a 2-column mobile grid, hence the uniform mobile treatment
+- Inner container: `max-w-[1664px]` (wider than the standard `max-w-site` to let more nominated films sit on a single row)
 
 **Component split:**
 - `FilmPyramid.astro` — Astro wrapper, splits films into rows via `getPyramidRows()`
@@ -355,10 +350,10 @@ Each band ends with a `<FilmStrip />` motif.
 Individual film poster.
 
 - Aspect ratio: `2/3` (standard poster)
-- Hover: poster container scales up (`group-hover:scale-110`) + `drop-shadow-2xl` on the `aspect-[2/3]` div
+- Hover: card wrapper scales up (`hover:scale-110`) using `.bfc-shadow` utility
 - Click: calls `onSelect(film)` to open FilmPanel
-- **Title box:** fixed height, translucent fill on `aspect-[2/3]` container
-- **Status tags:** solid filled, not outlined:
+- **Title box:** `h-24` below the poster, `text-lg` Barlow Condensed
+- **Status tags:** solid filled, `text-base`, not outlined:
   - Selected: `bg-bfc-status-selected`
   - Shortlisted: `bg-bfc-status-shortlisted`
   - Nominated: neutral fill
@@ -387,6 +382,14 @@ React island. Three display modes:
 | Filtered | Filters active, no query | Result list (2-col on md+) |
 | Search | Query ≥ 2 chars | Result list (2-col on md+), filters apply |
 
+**Default poster grid:** `grid-cols-[repeat(auto-fill,minmax(160px,1fr))]` — fills available width with 160px minimum cells.
+
+**Search/filter result rows:** Each row shows a 160px poster alongside a structured info block:
+- Film title (`text-xl font-semibold`) spanning full width above a 2-column label/value grid
+- Left column: "Theme", "Director", month — muted (`/40`)
+- Right column: theme title, director name, status — body cream (`/60` or full)
+- Grid is invisible (layout only), providing consistent vertical alignment across rows
+
 ### DiscordButton (`DiscordButton.astro`)
 
 Reusable component. Discord URL is defined once inside this file.
@@ -413,9 +416,12 @@ Reusable component. Discord URL is defined once inside this file.
 |-------------|--------|----------|
 | Nav button hover | Border and text brighten | 150ms |
 | Nav button active/dimmed | `opacity-40`, non-clickable | — |
-| Film card hover | Container scales 110% + drop shadow | 300ms |
+| Film card hover | Card scales 110% + `.bfc-shadow` | 300ms |
 | Panel/drawer open | Slide in from edge | 300ms ease-in-out |
 | Overlay | Fade in | 300ms |
+| MenuDrawer accordion | Grid row height `0fr → 1fr`, chevron rotates 180° | 300ms ease-in-out |
+
+`.bfc-shadow` is a global utility class in `global.css`: `shadow-[16px_16px_16px_0px_rgba(0,0,0,0.3)]`.
 
 All scale transforms are on the container element, not inner images. Drop shadow is applied to the poster `div`, not the outer button, so it appears above the title box.
 
@@ -524,7 +530,7 @@ Edit `site/tailwind.config.ts` → `theme.colors`. All colour usage is via `bfc-
 
 <!-- Full-width band (pyramid rows) -->
 <div class="py-10 bg-bfc-tier-selected">
-  <div class="max-w-[1200px] mx-auto px-6">...</div>
+  <div class="max-w-[1664px] mx-auto px-6">...</div>
 </div>
 
 <!-- Outline nav button (inactive) -->

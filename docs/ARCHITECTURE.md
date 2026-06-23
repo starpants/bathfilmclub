@@ -1,6 +1,6 @@
 # Bath Film Club — Technical Architecture
 
-**Last updated:** 2026-06-22
+**Last updated:** 2026-06-23
 **Next review:** 2026-09-22 (quarterly)
 **Maintainer:** Av
 
@@ -231,7 +231,7 @@ bathfilmclub/
 │   │   │   ├── SearchPage.tsx     # Search + filter UI (React island)
 │   │   │   ├── FilmPyramid.astro  # Pyramid wrapper (splits films by status)
 │   │   │   ├── PyramidIsland.tsx  # Pyramid interactivity (React island)
-│   │   │   ├── FilmStrip.tsx      # 4-square film negative motif (decorative)
+│   │   │   ├── FilmStrip.tsx      # 8-square film negative motif (decorative)
 │   │   │   ├── FilmCard.tsx       # Individual film poster card
 │   │   │   ├── FilmPanel.tsx      # Slide-in film detail panel (React island)
 │   │   │   └── SectionTitle.astro # Reusable section label
