@@ -9,6 +9,7 @@ import { getCurrentCycle, getAllThemes } from '../utils/data';
 
 const cycle = await getCurrentCycle();
 const allThemes = await getAllThemes();
+const prevTheme = allThemes.find((t) => t.slug !== cycle?.slug) ?? null;
 ---
 
 <Layout>
@@ -18,5 +19,17 @@ const allThemes = await getAllThemes();
     <Introduction />
     <NextEvent cycle={cycle} bg="bg-bfc-brand-alt/10" />
     {cycle && <FilmPyramid films={cycle.films} />}
+    {
+      prevTheme && (
+        <div class="flex justify-center py-12">
+          <a
+            href={`/theme/${prevTheme.slug}`}
+            class="font-heading font-semibold text-xl px-6 py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors"
+          >
+            View Previous Theme
+          </a>
+        </div>
+      )
+    }
   </main>
 </Layout>

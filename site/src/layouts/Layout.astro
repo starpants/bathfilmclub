@@ -32,7 +32,10 @@ const pageTitle = title === 'Bath Film Club' ? title : `${title} — Bath Film C
     <meta property="og:description" content={description} />
     {
       Astro.site && (
-        <meta property="og:image" content={new URL('/assets/BathFilmClub.png', Astro.site).href} />
+        <meta
+          property="og:image"
+          content={new URL('/assets/BathFilmClub_OpenGraph.png', Astro.site).href}
+        />
       )
     }
 
@@ -42,7 +45,10 @@ const pageTitle = title === 'Bath Film Club' ? title : `${title} — Bath Film C
     <meta name="twitter:description" content={description} />
     {
       Astro.site && (
-        <meta name="twitter:image" content={new URL('/assets/BathFilmClub.png', Astro.site).href} />
+        <meta
+          name="twitter:image"
+          content={new URL('/assets/BathFilmClub_OpenGraph.png', Astro.site).href}
+        />
       )
     }
     <!-- Favicon -->
