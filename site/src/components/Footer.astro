@@ -1,18 +1,26 @@
 ---
-import NavBar from './NavBar.astro';
-import { getAllThemes } from '../utils/data';
+// import NavBar from './NavBar.astro';
+// import { getAllThemes } from '../utils/data';
 
 const year = new Date().getFullYear();
-const allThemes = await getAllThemes();
+// const allThemes = await getAllThemes();
 ---
 
 <footer class="py-8 bg-bfc-brand-alt/10">
   <div class="max-w-site mx-auto px-6 py-12 space-y-10">
-    <NavBar themes={allThemes} />
+    <!-- <NavBar themes={allThemes} /> -->
 
-    <div class="flex justify-center pt-6 pb-8">
+    <div class="text-center pt-6 pb-8">
       <p class="font-body text-bfc-brand-fg/60 text-sm">
         &copy; {year} Bath Film Club
+      </p>
+      <p class="font-body text-bfc-brand-fg/60 text-sm">
+        Website designed and built by
+        <a
+          href="https://meafabula.co.uk"
+          class="text-bfc-brand-accent hover:text-bfc-brand-fg transition-colors duration-300"
+          >Mea Fabula Ltd</a
+        >
       </p>
     </div>
   </div>

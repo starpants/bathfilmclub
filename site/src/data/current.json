@@ -6,7 +6,7 @@
   "meeting": {
     "date": "2026-07-08",
     "time": "19:15",
-    "venue": "Bath"
+    "venue": "See Discord for venue details"
   },
   "films": [
     {
@@ -751,7 +751,7 @@
         "rating": 8,
         "trailerKey": "kxb_1457gGs"
       },
-      "status": "shortlisted"
+      "status": "selected"
     },
     {
       "film": {
@@ -842,7 +842,7 @@
         "rating": 7.5,
         "trailerKey": "vjO8u_9CqXI"
       },
-      "status": "shortlisted"
+      "status": "selected"
     },
     {
       "film": {
