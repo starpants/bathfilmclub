@@ -14,6 +14,7 @@ const {
 
 const pageTitle = title === 'Bath Film Club' ? title : `${title} — Bath Film Club`;
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -29,13 +30,28 @@ const pageTitle = title === 'Bath Film Club' ? title : `${title} — Bath Film C
     <meta property="og:site_name" content="Bath Film Club" />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
-    {Astro.site && <meta property="og:image" content={new URL('/assets/BathFilmClub.png', Astro.site).href} />}
+    {
+      Astro.site && (
+        <meta property="og:image" content={new URL('/assets/BathFilmClub.png', Astro.site).href} />
+      )
+    }
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
-    {Astro.site && <meta name="twitter:image" content={new URL('/assets/BathFilmClub.png', Astro.site).href} />}
+    {
+      Astro.site && (
+        <meta name="twitter:image" content={new URL('/assets/BathFilmClub.png', Astro.site).href} />
+      )
+    }
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png?v=20260623" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=20260623" />
+    <link rel="shortcut icon" href="/assets/favicon.ico?v=20260623" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png?v=20260623" />
+    <meta name="apple-mobile-web-app-title" content="BFC" />
+    <link rel="manifest" href="/assets/site.webmanifest?v=20260623" />
   </head>
   <body class="min-h-screen flex flex-col">
     <a
