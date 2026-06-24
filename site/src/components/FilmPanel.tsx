@@ -27,7 +27,9 @@ export function FilmPanel({ film, onClose }: Props) {
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
-    return () => { document.body.style.overflow = ''; };
+    return () => {
+      document.body.style.overflow = '';
+    };
   }, [isOpen]);
 
   return (
@@ -51,7 +53,14 @@ export function FilmPanel({ film, onClose }: Props) {
               className="absolute top-4 right-4 z-10 p-2.5 bg-bfc-brand-bg text-bfc-brand-fg/80 border border-bfc-brand-fg/40 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors"
               aria-label="Close panel"
             >
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
                 <path d="M4 4l12 12M16 4L4 16" />
               </svg>
             </button>
@@ -66,7 +75,9 @@ export function FilmPanel({ film, onClose }: Props) {
 
             <div className="p-6 space-y-6">
               <div>
-                <h2 className="font-heading font-bold text-2xl leading-tight">{film.title}</h2>
+                <h2 className="font-heading font-bold text-2xl leading-tight text-neutral-800">
+                  {film.title}
+                </h2>
                 <p className="font-body text-neutral-600 text-sm mt-1">
                   {film.year}
                   {film.runtime ? ` · ${film.runtime} min` : ''}
@@ -77,7 +88,10 @@ export function FilmPanel({ film, onClose }: Props) {
               {film.genres.length > 0 && (
                 <div className="flex flex-wrap gap-2">
                   {film.genres.map((g) => (
-                    <span key={g} className="text-xs font-heading uppercase tracking-wide border border-neutral-300 px-2 py-1 text-neutral-900">
+                    <span
+                      key={g}
+                      className="text-xs font-heading uppercase tracking-wide border border-neutral-300 px-2 py-1 text-neutral-900"
+                    >
                       {g}
                     </span>
                   ))}
@@ -85,23 +99,33 @@ export function FilmPanel({ film, onClose }: Props) {
               )}
 
               {film.synopsis && (
-                <p className="font-body text-sm leading-relaxed text-neutral-800">{film.synopsis}</p>
+                <p className="font-body text-sm leading-relaxed text-neutral-800">
+                  {film.synopsis}
+                </p>
               )}
 
               <dl className="space-y-3 text-sm">
                 <div>
-                  <dt className="font-heading font-semibold text-xs uppercase tracking-widest text-neutral-400">Director</dt>
+                  <dt className="font-heading font-semibold text-xs uppercase tracking-widest text-neutral-400">
+                    Director
+                  </dt>
                   <dd className="font-body mt-0.5 text-neutral-900">{film.director}</dd>
                 </div>
                 {film.producers.length > 0 && (
                   <div>
-                    <dt className="font-heading font-semibold text-xs uppercase tracking-widest text-neutral-400">Producers</dt>
-                    <dd className="font-body mt-0.5 text-neutral-900">{film.producers.join(', ')}</dd>
+                    <dt className="font-heading font-semibold text-xs uppercase tracking-widest text-neutral-400">
+                      Producers
+                    </dt>
+                    <dd className="font-body mt-0.5 text-neutral-900">
+                      {film.producers.join(', ')}
+                    </dd>
                   </div>
                 )}
                 {film.cast.length > 0 && (
                   <div>
-                    <dt className="font-heading font-semibold text-xs uppercase tracking-widest text-neutral-400">Cast</dt>
+                    <dt className="font-heading font-semibold text-xs uppercase tracking-widest text-neutral-400">
+                      Cast
+                    </dt>
                     <dd className="font-body mt-0.5 text-neutral-900">{film.cast.join(', ')}</dd>
                   </div>
                 )}
