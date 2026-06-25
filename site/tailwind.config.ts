@@ -14,8 +14,8 @@ export default {
         'bfc-tier': {
           selected: '#674967',
           shortlisted: '#175A70',
-          nominatedorig: '#647A85',
-          nominated: '#4C685E',
+          nominated: '#253A3C',
+          nominated2: '#4C685E',
         },
         'bfc-status': {
           selected: '#00A992',
