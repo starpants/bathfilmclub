@@ -93,7 +93,7 @@
         "rating": 7.2,
         "trailerKey": "NX8J7_7_rLw"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -854,7 +854,7 @@
         "rating": 7.3,
         "trailerKey": "zVJICfUx8M0"
       },
-      "status": "shortlisted"
+      "status": "nominated"
     }
   ]
 }
