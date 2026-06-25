@@ -1,13 +1,76 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
-.env
-.env.local
-.DS_Store
-*.log
-*.tsbuildinfo
+dist-ssr
+build
+out
+.cache
+.parcel-cache
+.turbo
+.next
+.nuxt
+
+# Astro
 site/.astro/
 
-.remember/
-.claude/
-.superpowers/
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment & secrets
+*.local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+
+# Testing
+coverage
+.nyc_output
+
+# TypeScript & tooling
+*.tsbuildinfo
+.eslintcache
+.stylelintcache
+*.tgz
+
+# Documentation (internal, not for remote)
 docs/
+
+# AI tools
+CLAUDE.md
+GEMINI.md
+.github/copilot-instructions.md
+.claude/
+.remember/
+.superpowers/
+.cursorrules
+.windsurfrules
+.aider*
+.continue
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.fleet
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*~
