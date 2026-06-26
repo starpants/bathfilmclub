@@ -38,11 +38,11 @@ const newerTheme = allThemes[currentIndex - 1] ?? null;
           class="flex justify-between items-center font-heading font-black text-5xl leading-tight"
         >
           {
-            olderTheme ? (
+            newerTheme ? (
               <a
-                href={`/theme/${olderTheme.slug}`}
+                href={`/theme/${newerTheme.slug}`}
                 class="text-bfc-brand-fg/60 hover:text-bfc-brand-fg transition-colors"
-                aria-label={`Older theme: ${olderTheme.title}`}
+                aria-label={`Newer theme: ${newerTheme.title}`}
               >
                 <svg
                   width="16"
@@ -63,11 +63,11 @@ const newerTheme = allThemes[currentIndex - 1] ?? null;
           }
           <h1 class="font-light">{theme.title}</h1>
           {
-            newerTheme ? (
+            olderTheme ? (
               <a
-                href={`/theme/${newerTheme.slug}`}
+                href={`/theme/${olderTheme.slug}`}
                 class="text-bfc-brand-fg/60 hover:text-bfc-brand-fg transition-colors"
-                aria-label={`Newer theme: ${newerTheme.title}`}
+                aria-label={`Older theme: ${olderTheme.title}`}
               >
                 <svg
                   width="16"
