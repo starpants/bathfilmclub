@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getPyramidRows } from './pyramid';
+import { getPyramidRows, getCyclePhase, getEmptyBandMessage } from './pyramid';
 import type { ThemeFilm } from '@bathfilmclub/types';
 
 function film(id: number): ThemeFilm['film'] {
@@ -63,5 +63,49 @@ describe('getPyramidRows', () => {
     expect(rows.selected).toHaveLength(2);
     expect(rows.shortlisted).toHaveLength(5);
     expect(rows.nominated).toHaveLength(7);
+  });
+});
+
+describe('getCyclePhase', () => {
+  it('is "awaiting" when there are no films', () => {
+    expect(getCyclePhase([])).toBe('awaiting');
+  });
+
+  it('is "nominating" when films exist but none are shortlisted or selected', () => {
+    const films: ThemeFilm[] = [
+      { film: film(1), status: 'nominated' },
+      { film: film(2), status: 'nominated' },
+    ];
+    expect(getCyclePhase(films)).toBe('nominating');
+  });
+
+  it('is "voting" as soon as one film is shortlisted, with none selected', () => {
+    const films: ThemeFilm[] = [
+      { film: film(1), status: 'nominated' },
+      { film: film(2), status: 'shortlisted' },
+    ];
+    expect(getCyclePhase(films)).toBe('voting');
+  });
+
+  it('is "complete" once any film is selected', () => {
+    const films: ThemeFilm[] = [
+      { film: film(1), status: 'nominated' },
+      { film: film(2), status: 'shortlisted' },
+      { film: film(3), status: 'selected' },
+    ];
+    expect(getCyclePhase(films)).toBe('complete');
+  });
+});
+
+describe('getEmptyBandMessage', () => {
+  it('maps each phase to its title-case message', () => {
+    expect(getEmptyBandMessage([])).toBe('Awaiting Nominations');
+    expect(getEmptyBandMessage([{ film: film(1), status: 'nominated' }])).toBe(
+      'Nominations In Progress'
+    );
+    expect(getEmptyBandMessage([{ film: film(1), status: 'shortlisted' }])).toBe(
+      'Voting In Progress'
+    );
+    expect(getEmptyBandMessage([{ film: film(1), status: 'selected' }])).toBe('');
   });
 });

@@ -1,6 +1,6 @@
 ---
 import type { ThemeFilm } from '@bathfilmclub/types';
-import { getPyramidRows } from '../utils/pyramid';
+import { getPyramidRows, getEmptyBandMessage } from '../utils/pyramid';
 import { PyramidIsland } from './PyramidIsland';
 
 interface Props {
@@ -9,10 +9,12 @@ interface Props {
 
 const { films } = Astro.props;
 const { selected, shortlisted, nominated } = getPyramidRows(films);
+const emptyMessage = getEmptyBandMessage(films);
 ---
 <PyramidIsland
   selected={selected}
   shortlisted={shortlisted}
   nominated={nominated}
+  emptyMessage={emptyMessage}
   client:load
 />

@@ -8,11 +8,13 @@ interface Props {
   selected: ThemeFilm[];
   shortlisted: ThemeFilm[];
   nominated: ThemeFilm[];
+  emptyMessage: string;
 }
 
 interface FilmRowProps {
   films: ThemeFilm[];
   label: string;
+  emptyMessage: string;
   onSelect: (film: Film) => void;
   cardWidth?: string;
   bgClass: string;
@@ -24,6 +26,7 @@ interface FilmRowProps {
 function FilmRow({
   films,
   label,
+  emptyMessage,
   onSelect,
   cardWidth = 'w-full md:w-40',
   bgClass,
@@ -45,7 +48,7 @@ function FilmRow({
         </h4>
         {films.length === 0 ? (
           <p className="text-bfc-brand-fg/60 font-body text-sm italic text-center">
-            Not yet determined
+            {emptyMessage}
           </p>
         ) : (
           <div className="grid grid-cols-2 gap-4 md:flex md:flex-wrap md:gap-12 md:justify-center">
@@ -67,7 +70,7 @@ function FilmRow({
   );
 }
 
-export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
+export function PyramidIsland({ selected, shortlisted, nominated, emptyMessage }: Props) {
   const [activeFilm, setActiveFilm] = useState<Film | null>(null);
 
   return (
@@ -76,6 +79,7 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
         <FilmRow
           films={selected}
           label="Selected Films"
+          emptyMessage={emptyMessage}
           onSelect={setActiveFilm}
           cardWidth="w-full md:w-56"
           bgClass="bg-bfc-tier-selected"
@@ -85,6 +89,7 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
         <FilmRow
           films={shortlisted}
           label="Shortlisted Films"
+          emptyMessage={emptyMessage}
           onSelect={setActiveFilm}
           cardWidth="w-full md:w-48"
           bgClass="bg-bfc-tier-shortlisted"
@@ -94,6 +99,7 @@ export function PyramidIsland({ selected, shortlisted, nominated }: Props) {
         <FilmRow
           films={nominated}
           label="Nominated Films"
+          emptyMessage={emptyMessage}
           onSelect={setActiveFilm}
           bgClass="bg-bfc-tier-nominated"
           accentClass="text-bfc-brand-fg/90"
