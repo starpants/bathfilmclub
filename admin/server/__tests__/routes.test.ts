@@ -14,7 +14,11 @@ vi.mock('../storage.js', () => ({
     readCurrentCycle: vi.fn().mockResolvedValue(theme),
     writeCurrentCycle: vi.fn().mockResolvedValue(undefined),
     readAllThemes: vi.fn().mockResolvedValue([theme]),
+    readTheme: vi.fn().mockResolvedValue(theme),
+    readAnyTheme: vi.fn().mockResolvedValue(theme),
     writeTheme: vi.fn().mockResolvedValue(undefined),
+    writeAnyTheme: vi.fn().mockResolvedValue(undefined),
+    deleteTheme: vi.fn().mockResolvedValue(undefined),
     archiveCurrentCycle: vi.fn().mockResolvedValue(undefined),
   },
 }));
@@ -51,18 +55,21 @@ describe('API routes', () => {
     expect(res.body.slug).toBe('2026-06-test');
   });
 
-  it('PUT /api/themes/current updates the cycle', async () => {
+  it('PUT /api/themes/:slug updates an existing theme', async () => {
     const res = await request(app)
-      .put('/api/themes/current')
+      .put('/api/themes/2026-06-test')
       .send({ title: 'Updated', month: '2026-07', films: [] });
     expect(res.status).toBe(200);
+    expect(res.body.title).toBe('Updated');
   });
 
-  it('PUT /api/themes/current rejects missing fields', async () => {
+  it('PUT /api/themes/:slug returns 404 for a theme that does not exist', async () => {
+    const { storage } = await import('../storage.js');
+    vi.mocked(storage.readAnyTheme).mockResolvedValueOnce(null);
     const res = await request(app)
-      .put('/api/themes/current')
-      .send({ title: 'No month' });
-    expect(res.status).toBe(400);
+      .put('/api/themes/2099-01-nope')
+      .send({ title: 'Nope', month: '2099-01' });
+    expect(res.status).toBe(404);
   });
 
   it('POST /api/themes/archive archives the cycle', async () => {
@@ -70,10 +77,11 @@ describe('API routes', () => {
     expect(res.status).toBe(200);
   });
 
-  it('GET /api/themes returns all archived themes', async () => {
+  it('GET /api/themes returns themes plus the current slug', async () => {
     const res = await request(app).get('/api/themes');
     expect(res.status).toBe(200);
-    expect(Array.isArray(res.body)).toBe(true);
+    expect(Array.isArray(res.body.themes)).toBe(true);
+    expect(res.body).toHaveProperty('currentSlug');
   });
 
   it('POST /api/films adds a film to the current cycle', async () => {

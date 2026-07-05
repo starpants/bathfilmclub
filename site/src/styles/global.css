@@ -1,8 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@600;700;800;900&family=Notable&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-bfc-brand-accent: #8c3646;
+  --color-bfc-brand-bg: #15262e;
+  --color-bfc-brand-fg: #fff7d6;
+  --color-bfc-brand-alt: #2a8476;
+
+  --color-bfc-tier-selected: #674967;
+  --color-bfc-tier-shortlisted: #175a70;
+  --color-bfc-tier-nominated: #253a3c;
+  --color-bfc-tier-nominated2: #4c685e;
+
+  --color-bfc-status-selected: #00a992;
+  --color-bfc-status-shortlisted: #eabb16;
+  --color-bfc-status-nominated: #fff8ea;
+
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d4d4d4;
+  --color-neutral-400: #a3a3a3;
+  --color-neutral-600: #525252;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #262626;
+  --color-neutral-900: #171717;
+
+  --font-heading: 'Barlow Condensed', sans-serif;
+  --font-display: 'Notable', sans-serif;
+  --font-body: 'Barlow Condensed', sans-serif;
+
+  --container-site: 1200px;
+}
 
 @layer base {
   html {
@@ -54,7 +84,7 @@
     @apply inline-flex items-center gap-2 bg-bfc-brand-accent text-bfc-brand-fg font-heading font-semibold text-sm px-3 py-2 hover:bg-bfc-brand-accent/80 transition-colors;
   }
 
-  @screen md {
+  @media (width >= 48rem) {
     .btn-discord {
       @apply text-xl px-5 py-3;
     }

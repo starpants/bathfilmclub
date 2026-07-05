@@ -14,11 +14,14 @@
     "admin:build": "npm run build --workspace=admin"
   },
   "engines": {
-    "node": ">=20.0.0",
+    "node": ">=22.12.0",
     "npm": ">=10.0.0"
   },
   "devDependencies": {
     "typescript": "^6.0.3",
     "wrangler": "^4.103.0"
+  },
+  "overrides": {
+    "vite": "^8.0.0"
   }
 }
