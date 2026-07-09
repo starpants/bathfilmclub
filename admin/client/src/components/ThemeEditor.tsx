@@ -36,7 +36,7 @@ export function ThemeEditor({ theme, onSaved }: Props) {
   const [month, setMonth] = useState(theme.month);
   const [meetingDate, setMeetingDate] = useState(theme.meeting?.date ?? '');
   const [meetingTime, setMeetingTime] = useState(theme.meeting?.time ?? '19:30');
-  const [meetingVenue, setMeetingVenue] = useState(theme.meeting?.venue ?? '');
+  const [meetingVenue, setMeetingVenue] = useState(theme.meeting?.venue ?? 'See Discord for venue details');
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
 
