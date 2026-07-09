@@ -210,7 +210,7 @@ export function SearchPage({ themes }: Props) {
                   aria-label={`${film.title} — ${themeTitle}`}
                   className="group text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-bfc-brand-fg/60"
                 >
-                  <div className="aspect-[2/3] overflow-hidden transition duration-300 z-30 bg-neutral-800 hover:scale-110 hover:bfc-shadow">
+                  <div className="aspect-2/3 overflow-hidden transition duration-300 z-30 bg-neutral-800 hover:scale-110 hover:bfc-shadow">
                     {film.posterPath ? (
                       <img
                         src={`${TMDB_IMAGE_BASE}${film.posterPath}`}
@@ -245,7 +245,7 @@ export function SearchPage({ themes }: Props) {
                         onClick={() => setActiveFilm(r.film)}
                         className="w-full text-left py-4 flex gap-4 group focus:outline-none focus-visible:ring-2 focus-visible:ring-bfc-brand-fg/60"
                       >
-                        <div className="flex-shrink-0 w-40 aspect-[2/3] overflow-hidden bg-neutral-800">
+                        <div className="shrink-0 w-40 aspect-2/3 overflow-hidden bg-neutral-800">
                           {r.film.posterPath ? (
                             <img
                               src={`${TMDB_IMAGE_BASE}${r.film.posterPath}`}
@@ -273,7 +273,7 @@ export function SearchPage({ themes }: Props) {
                       </button>
                     ) : (
                       <a href={`/theme/${r.slug}`} className="py-4 flex gap-4 group">
-                        <div className="flex-shrink-0 w-40 aspect-[2/3] bg-neutral-800" />
+                        <div className="shrink-0 w-40 aspect-2/3 bg-neutral-800" />
                         <div className="min-w-0 self-center">
                           <p className="font-heading font-semibold text-xl group-hover:text-bfc-brand-fg/80 transition-colors">
                             {r.themeTitle}

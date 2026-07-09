@@ -34,6 +34,11 @@
   --container-site: 1200px;
 }
 
+/* Poster drop shadow — @utility (not @layer components) so variants like hover: work in Tailwind v4 */
+@utility bfc-shadow {
+  box-shadow: 16px 16px 16px 0 rgb(0 0 0 / 0.3);
+}
+
 @layer base {
   html {
     @apply font-body text-bfc-brand-fg bg-bfc-brand-bg;
@@ -61,11 +66,6 @@
     @apply flex items-center gap-2 text-xs font-display uppercase tracking-widest text-bfc-brand-fg/60;
   }
 
-  /* Drop shadow */
-  .bfc-shadow {
-    @apply shadow-[16px_16px_16px_0px_rgba(0,0,0,0.3)];
-  }
-
   /* .section-label::before {
     content: '';
     @apply block w-2 h-2 bg-bfc-brand-accent flex-shrink-0;
@@ -81,12 +81,6 @@
   }
 
   .btn-discord {
-    @apply inline-flex items-center gap-2 bg-bfc-brand-accent text-bfc-brand-fg font-heading font-semibold text-sm px-3 py-2 hover:bg-bfc-brand-accent/80 transition-colors;
-  }
-
-  @media (width >= 48rem) {
-    .btn-discord {
-      @apply text-xl px-5 py-3;
-    }
+    @apply inline-flex items-center gap-2 bg-bfc-brand-accent text-bfc-brand-fg font-heading font-semibold text-sm px-3 py-2 hover:bg-bfc-brand-accent/80 transition-colors md:text-xl md:px-5 md:py-3;
   }
 }

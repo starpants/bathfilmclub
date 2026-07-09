@@ -69,7 +69,7 @@ export function FilmPanel({ film, onClose }: Props) {
               <img
                 src={`${TMDB_IMAGE_BASE}${film.posterPath}`}
                 alt={film.title}
-                className="w-full aspect-[2/3] object-cover"
+                className="w-full aspect-2/3 object-cover"
               />
             )}
 

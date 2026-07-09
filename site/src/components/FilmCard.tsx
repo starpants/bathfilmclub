@@ -17,7 +17,7 @@ export function FilmCard({ film, status, onSelect, showTag = true }: Props) {
       aria-label={`View details for ${film.title}`}
     >
       <div className="transition duration-300 z-30 hover:scale-110 hover:bfc-shadow">
-        <div className="mb-4 aspect-[2/3] overflow-hidden bg-neutral-800">
+        <div className="mb-4 aspect-2/3 overflow-hidden bg-neutral-800">
           {film.posterPath ? (
             <img
               src={`${TMDB_IMAGE_BASE}${film.posterPath}`}

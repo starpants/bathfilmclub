@@ -166,7 +166,7 @@ function ThemeRow({ theme, isCurrent, activePanel, onTogglePanel, onSetAsCurrent
             <button className="btn btn-sm" onClick={() => onTogglePanel('films')}>✕ Close</button>
           </div>
           {/* Full-bleed band in the pyramid's "nominated" colour — breaks out of the 1200px container */}
-          <div style={{ background: '#4C685E', margin: '0 calc(50% - 50vw) 1.25rem', padding: '1.25rem calc(50vw - 50%)' }}>
+          <div style={{ background: '#253A3C', margin: '0 calc(50% - 50vw) 1.25rem', padding: '1.25rem calc(50vw - 50%)' }}>
             <h3 style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,247,214,0.75)', margin: '0 0 0.75rem' }}>
               Add Film
             </h3>
