@@ -7,6 +7,8 @@
 html, body {
   margin: 0;
   padding: 0;
+  /* Full-bleed bands use 50vw, which includes the scrollbar gutter */
+  overflow-x: hidden;
   background-color: #15262E;
   color: #FFF7D6;
   font-family: 'Barlow Condensed', sans-serif;

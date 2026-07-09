@@ -8,5 +8,856 @@
     "time": "19:15",
     "venue": "See Discord for venue details"
   },
-  "films": []
+  "films": [
+    {
+      "film": {
+        "tmdbId": 19067,
+        "title": "The Duellists",
+        "year": 1977,
+        "runtime": 100,
+        "genres": [
+          "Drama",
+          "War"
+        ],
+        "synopsis": "In 1800, as Napoleon Bonaparte rises to power in France, a rivalry erupts between Armand and Gabriel, two lieutenants in the French Army, over a perceived insult. For over a decade, they engage in a series of duels amidst larger conflicts, including the failed French invasion of Russia in 1812, and shifts in the political and social systems of Europe.",
+        "director": "Ridley Scott",
+        "producers": [
+          "David Puttnam"
+        ],
+        "cast": [
+          "Keith Carradine",
+          "Harvey Keitel",
+          "Albert Finney",
+          "Edward Fox",
+          "Cristina Raines"
+        ],
+        "posterPath": "/nqjMYlUXnmmO8Jqucow4nj9alE5.jpg",
+        "backdropPath": "/xyVURBvbRIzsGJlD0h8vybkXjLs.jpg",
+        "rating": 7.2,
+        "trailerKey": "-yjl7u0Afqg"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 84175,
+        "title": "Beasts of the Southern Wild",
+        "year": 2012,
+        "runtime": 93,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Adventure"
+        ],
+        "synopsis": "Hushpuppy, an intrepid six-year-old girl, lives with her father, Wink, in 'the Bathtub', a southern Delta community at the edge of the world. Wink’s tough love prepares her for the unraveling of the universe—for a time when he’s no longer there to protect her. When Wink contracts a mysterious illness, nature flies out of whack—temperatures rise and the ice caps melt, unleashing an army of prehistoric creatures called aurochs. With the waters rising, the aurochs coming, and Wink’s health fading, Hushpuppy goes in search of her lost mother.",
+        "director": "Benh Zeitlin",
+        "producers": [
+          "Michael Gottwald",
+          "Dan Janvey",
+          "Josh Penn"
+        ],
+        "cast": [
+          "Quvenzhané Wallis",
+          "Dwight Henry",
+          "Levy Easterly",
+          "Gina Montana",
+          "Lowell Landes"
+        ],
+        "posterPath": "/nQJmWekGYlXhezGUb21xFfEfwhH.jpg",
+        "backdropPath": "/7LWLPvyfLSb2oOlgWwAwUqA8uKo.jpg",
+        "rating": 6.8,
+        "trailerKey": "pvqZzSMIZa0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 17473,
+        "title": "The Room",
+        "year": 2003,
+        "runtime": 100,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "Johnny is a successful banker with great respect for and dedication to the people in his life, especially his future wife Lisa. The happy-go-lucky guy sees his world being torn apart when his friends begin to betray him one-by-one.",
+        "director": "Tommy Wiseau",
+        "producers": [
+          "Tommy Wiseau"
+        ],
+        "cast": [
+          "Tommy Wiseau",
+          "Juliette Danielle",
+          "Greg Sestero",
+          "Philip Haldiman",
+          "Carolyn Minnott"
+        ],
+        "posterPath": "/9QscHN4pXj6Ja1k7e1ZT4vWDGnr.jpg",
+        "backdropPath": "/6OnOH5FIp0ZJQgPlu0ehDfXzVyp.jpg",
+        "rating": 4,
+        "trailerKey": "cG_e8k9PILM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 9905,
+        "title": "Shallow Grave",
+        "year": 1994,
+        "runtime": 93,
+        "genres": [
+          "Crime",
+          "Thriller"
+        ],
+        "synopsis": "When David, Juliet, and Alex find their new roommate dead with a large sum of money, they agree to hide the body and keep the cash. However, this newfound fortune gradually corrodes their friendship.",
+        "director": "Danny Boyle",
+        "producers": [
+          "Andrew Macdonald"
+        ],
+        "cast": [
+          "Ewan McGregor",
+          "Christopher Eccleston",
+          "Kerry Fox",
+          "Ken Stott",
+          "Keith Allen"
+        ],
+        "posterPath": "/gqvSKLbfIg1mja1ulVkVcLhdwWF.jpg",
+        "backdropPath": "/qPm2JWGq3LnoTmfbi8flzJRImbc.jpg",
+        "rating": 7,
+        "trailerKey": "xKrfUAho5as"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 389,
+        "title": "12 Angry Men",
+        "year": 1957,
+        "runtime": 97,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other.",
+        "director": "Sidney Lumet",
+        "producers": [
+          "Henry Fonda",
+          "Reginald Rose"
+        ],
+        "cast": [
+          "Martin Balsam",
+          "John Fiedler",
+          "Lee J. Cobb",
+          "E.G. Marshall",
+          "Jack Klugman"
+        ],
+        "posterPath": "/zhG3vKWyDRaZYoaww1UVAi29T9h.jpg",
+        "backdropPath": "/qqHQsStV6exghCM7zbObuYBiYxw.jpg",
+        "rating": 8.6,
+        "trailerKey": "TEN-2uTi2c0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 31646,
+        "title": "Piranha II: The Spawning",
+        "year": 1982,
+        "runtime": 94,
+        "genres": [
+          "Horror"
+        ],
+        "synopsis": "A scuba diving instructor, her biochemist boyfriend, and her police chief ex-husband try to link a series of bizarre deaths to a mutant strain of piranha fish whose lair is a sunken freighter ship off a Caribbean island resort.",
+        "director": "James Cameron",
+        "producers": [
+          "Hisako Tsukuba",
+          "Jeff Schechtman"
+        ],
+        "cast": [
+          "Tricia O'Neil",
+          "Steve Marachuk",
+          "Lance Henriksen",
+          "Ricky Paull Goldin",
+          "Ted Richert"
+        ],
+        "posterPath": "/rbcbLYbhc8ZmQmNHAt8E8knij88.jpg",
+        "backdropPath": "/27IZSY74Wmr4JrrhG8oDzO23mRE.jpg",
+        "rating": 4.3,
+        "trailerKey": "mLmnR-hHMj4"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 839,
+        "title": "Duel",
+        "year": 1971,
+        "runtime": 74,
+        "genres": [
+          "Action",
+          "Thriller",
+          "TV Movie"
+        ],
+        "synopsis": "Traveling businessman David Mann angers the driver of a rusty tanker while crossing the California desert. A simple trip turns deadly, as Mann struggles to stay on the road while the tanker plays cat and mouse with his life.",
+        "director": "Steven Spielberg",
+        "producers": [
+          "George Eckstein"
+        ],
+        "cast": [
+          "Dennis Weaver",
+          "Jacqueline Scott",
+          "Eddie Firestone",
+          "Gene Dynarski",
+          "Lucille Benson"
+        ],
+        "posterPath": "/w9Vk1Txx14vWvACELFYFlixrsfr.jpg",
+        "backdropPath": "/AoGLKkPvBcZP27jwSA85fY8emvJ.jpg",
+        "rating": 7.4,
+        "trailerKey": "Gdk1Igqu05Y"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 308640,
+        "title": "Songs My Brothers Taught Me",
+        "year": 2015,
+        "runtime": 93,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "This complex portrait of modern-day life on the Pine Ridge Indian Reservation explores the bond between a brother and his younger sister, who find themselves on separate paths to rediscovering the meaning of home.",
+        "director": "Chloé Zhao",
+        "producers": [
+          "Nina Yang Bongiovi",
+          "Angela C. Lee",
+          "Chloé Zhao"
+        ],
+        "cast": [
+          "John Reddy",
+          "Jashaun St. John",
+          "Irene Bedard",
+          "Eléonore Hendricks",
+          "Taysha Fuller"
+        ],
+        "posterPath": "/2DiiYoVGtNkvvM8mc5UMIalH7OC.jpg",
+        "backdropPath": "/cSVIQcChsIqaP7frfaiXTTH3vOM.jpg",
+        "rating": 6.9,
+        "trailerKey": "-Bcr2L8xNxc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 9964,
+        "title": "Bad Taste",
+        "year": 1987,
+        "runtime": 91,
+        "genres": [
+          "Action",
+          "Comedy",
+          "Horror",
+          "Science Fiction"
+        ],
+        "synopsis": "A team from the intergalactic fast food chain Crumb's Crunchy Delights descends on Earth, planning to make human flesh the newest taste sensation. After they wipe out the New Zealand town Kaihoro, the country’s Astro-Investigation and Defense Service (AIaDS) is called in to deal with the problem. Things are complicated due to Giles, an aid worker who comes to Kaihoro the same day to collect change from the residents. He is captured by the aliens, and AIaDS stages a rescue mission that quickly becomes an all-out assault on the aliens’ headquarters.",
+        "director": "Peter Jackson",
+        "producers": [
+          "Peter Jackson"
+        ],
+        "cast": [
+          "Terry Potter",
+          "Pete O'Herne",
+          "Craig Smith",
+          "Mike Minett",
+          "Peter Jackson"
+        ],
+        "posterPath": "/msttMX3undIiaeJLZbMRq94v1bw.jpg",
+        "backdropPath": "/ewacCZjc710KBjxztABTwoWMken.jpg",
+        "rating": 6.3,
+        "trailerKey": "7IHwKJOZZ6U"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 8077,
+        "title": "Alien³",
+        "year": 1992,
+        "runtime": 114,
+        "genres": [
+          "Science Fiction",
+          "Action",
+          "Horror"
+        ],
+        "synopsis": "After escaping with Newt and Hicks from the alien planet, Ripley crash lands on Fiorina 161, a prison planet and host to a correctional facility. Unfortunately, although Newt and Hicks do not survive the crash, a more unwelcome visitor does. The prison does not allow weapons of any kind, and with aid being a long time away, the prisoners must simply survive in any way they can.",
+        "director": "David Fincher",
+        "producers": [
+          "Gordon Carroll",
+          "Walter Hill",
+          "David Giler"
+        ],
+        "cast": [
+          "Sigourney Weaver",
+          "Charles S. Dutton",
+          "Charles Dance",
+          "Paul McGann",
+          "Brian Glover"
+        ],
+        "posterPath": "/xh5wI0UoW7DfS1IyLy3d2CgrCEP.jpg",
+        "backdropPath": "/lU0zVj8KcQVkPczdGGraYGiRC72.jpg",
+        "rating": 6.4,
+        "trailerKey": "e45rAwndek8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 159770,
+        "title": "The Dirties",
+        "year": 2013,
+        "runtime": 83,
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Crime"
+        ],
+        "synopsis": "The line between reality and fiction starts to blur when two best friends start making a movie about getting revenge on bullies.",
+        "director": "Matt Johnson",
+        "producers": [
+          "Matt Johnson",
+          "Matthew Miller",
+          "Evan Morgan"
+        ],
+        "cast": [
+          "Matt Johnson",
+          "Owen Williams",
+          "Krista Madison",
+          "Shailene Garnett",
+          "Jay McCarrol"
+        ],
+        "posterPath": "/1oPjkd0200Nt7sdLRqp5Ot1oPxK.jpg",
+        "backdropPath": "/3KoJythFhhwOJZOhbU6MOUbAWcP.jpg",
+        "rating": 6.3,
+        "trailerKey": "N7WwtPAlimc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1287141,
+        "title": "Pillion",
+        "year": 2025,
+        "runtime": 107,
+        "genres": [
+          "Romance",
+          "Drama",
+          "Comedy"
+        ],
+        "synopsis": "Colin, a timid gay man, is swept off his feet when Ray, an enigmatic and impossibly handsome biker, takes him on as his submissive in a crazy and erotic BDSM-focused relationship.",
+        "director": "Harry Lighton",
+        "producers": [
+          "Ed Guiney",
+          "Andrew Lowe",
+          "Emma Norton"
+        ],
+        "cast": [
+          "Harry Melling",
+          "Alexander Skarsgård",
+          "Lesley Sharp",
+          "Douglas Hodge",
+          "Jake Shears"
+        ],
+        "posterPath": "/7Pd6ChSQjSXy4snJiorSdzg2cG3.jpg",
+        "backdropPath": "/rBYrtkAy9YtRuFpX1g6JbcjRT8h.jpg",
+        "rating": 6.4,
+        "trailerKey": "Gl8n5I-IIHU"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 5544,
+        "title": "Hiroshima Mon Amour",
+        "year": 1959,
+        "runtime": 92,
+        "genres": [
+          "Drama",
+          "History",
+          "Romance"
+        ],
+        "synopsis": "The deep conversation between a Japanese architect and a French actress forms the basis of this celebrated French film, considered one of the vanguard productions of the French New Wave. Set in Hiroshima after the end of World War II, the couple -- lovers turned friends -- recount, over many hours, previous romances and life experiences. The two intertwine their stories about the past with pondering the devastation wrought by the atomic bomb dropped on the city.",
+        "director": "Alain Resnais",
+        "producers": [
+          "Anatole Dauman",
+          "Samy Halfon"
+        ],
+        "cast": [
+          "Emmanuelle Riva",
+          "Eiji Okada",
+          "Stella Dassas",
+          "Pierre Barbaud",
+          "Bernard Fresson"
+        ],
+        "posterPath": "/zieczjWnvalaxwX5EQASEx0on5f.jpg",
+        "backdropPath": "/4fynFAYPPYCkyIdt0bsCwWn3Hxv.jpg",
+        "rating": 7.7,
+        "trailerKey": "CLts830aLlw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 965150,
+        "title": "Aftersun",
+        "year": 2022,
+        "runtime": 101,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "Sophie reflects on the shared joy and private melancholy of a holiday she took with her father twenty years earlier. Memories fill the gaps between camcorder footages as she tries to reconcile the father she knew with the troubled man she didn't.",
+        "director": "Charlotte Wells",
+        "producers": [
+          "Adele Romanski",
+          "Barry Jenkins",
+          "Mark Ceryak"
+        ],
+        "cast": [
+          "Paul Mescal",
+          "Frankie Corio",
+          "Brooklyn Toulson",
+          "Celia Rowlson-Hall",
+          "Sally Messham"
+        ],
+        "posterPath": "/evKz85EKouVbIr51zy5fOtpNRPg.jpg",
+        "backdropPath": "/4jdduww9j5RyzO4ITRcuBFhqNN1.jpg",
+        "rating": 7.7,
+        "trailerKey": "4A34B1DIGl8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 650,
+        "title": "Boyz n the Hood",
+        "year": 1991,
+        "runtime": 112,
+        "genres": [
+          "Crime",
+          "Drama"
+        ],
+        "synopsis": "In the middle of the Los Angeles ghetto, drugs, robberies and shootings dominate everyday life. During these times, Furious tries to raise his son Tre to be a decent person. Tre's friends, on the other hand, have little regard for the law and drag the entire neighborhood into a street war...",
+        "director": "John Singleton",
+        "producers": [
+          "Steve Nicolaides"
+        ],
+        "cast": [
+          "Cuba Gooding Jr.",
+          "Laurence Fishburne",
+          "Ice Cube",
+          "Morris Chestnut",
+          "Angela Bassett"
+        ],
+        "posterPath": "/v4ox4aSCNT5vyLXl4Q71JiWwCXW.jpg",
+        "backdropPath": "/w9Buzxn7RjbttP2xm9leMfMdyCP.jpg",
+        "rating": 7.6,
+        "trailerKey": "OJ_qAPj0Tkk"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 73,
+        "title": "American History X",
+        "year": 1998,
+        "runtime": 119,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "Derek Vineyard is paroled after serving 3 years in prison for killing two African-American men. Through his brother, Danny Vineyard's narration, we learn that before going to prison, Derek was a skinhead and the leader of a violent white supremacist gang that committed acts of racial crime throughout L.A. and his actions greatly influenced Danny. Reformed and fresh out of prison, Derek severs contact with the gang and becomes determined to keep Danny from going down the same violent path as he did.",
+        "director": "Tony Kaye",
+        "producers": [
+          "John Morrissey"
+        ],
+        "cast": [
+          "Edward Norton",
+          "Edward Furlong",
+          "Beverly D'Angelo",
+          "Jennifer Lien",
+          "Ethan Suplee"
+        ],
+        "posterPath": "/x2drgoXYZ8484lqyDj7L1CEVR4T.jpg",
+        "backdropPath": "/6qHI1IYj7QlLSCwHRzkL62X175s.jpg",
+        "rating": 8.3,
+        "trailerKey": "el6JxnW2Tyg"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11660,
+        "title": "Following",
+        "year": 1999,
+        "runtime": 69,
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "synopsis": "Bill, an idle, unemployed aspiring writer, walks the crowded streets of London following randomly chosen strangers, a seemingly innocent entertainment that becomes dangerous when he crosses paths with a mysterious character.",
+        "director": "Christopher Nolan",
+        "producers": [
+          "Jeremy Theobald",
+          "Christopher Nolan",
+          "Emma Thomas"
+        ],
+        "cast": [
+          "Jeremy Theobald",
+          "Alex Haw",
+          "Lucy Russell",
+          "John Nolan",
+          "Dick Bradsell"
+        ],
+        "posterPath": "/3bX6VVSMf0dvzk5pMT4ALG5A92d.jpg",
+        "backdropPath": "/yf5I5VHllK4h5VdbxHfQ40RBTe8.jpg",
+        "rating": 7.1,
+        "trailerKey": "Xc1cMA4UryY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 10331,
+        "title": "Night of the Living Dead",
+        "year": 1968,
+        "runtime": 96,
+        "genres": [
+          "Horror",
+          "Thriller",
+          "Science Fiction"
+        ],
+        "synopsis": "A ragtag group barricade themselves in an old Pennsylvania farmhouse to remain safe from a horde of flesh-eating ghouls ravaging the Northeast.",
+        "director": "George A. Romero",
+        "producers": [
+          "Russell Streiner",
+          "Karl Hardman"
+        ],
+        "cast": [
+          "Judith O'Dea",
+          "Duane Jones",
+          "Marilyn Eastman",
+          "Karl Hardman",
+          "Judith Ridley"
+        ],
+        "posterPath": "/rb2NWyb008u1EcKCOyXs2Nmj0ra.jpg",
+        "backdropPath": "/5KtmBSqFtHY3I9t8lgH27Mc0bqY.jpg",
+        "rating": 7.6,
+        "trailerKey": "DIuI6T48Sj0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 492,
+        "title": "Being John Malkovich",
+        "year": 1999,
+        "runtime": 113,
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Fantasy"
+        ],
+        "synopsis": "One day at work, unsuccessful puppeteer Craig finds a portal into the head of actor John Malkovich. The portal soon becomes a passion for anybody who enters its mad and controlling world of overtaking another human body.",
+        "director": "Spike Jonze",
+        "producers": [
+          "Sandy Stern",
+          "Michael Stipe",
+          "Vincent Landay"
+        ],
+        "cast": [
+          "John Cusack",
+          "Cameron Diaz",
+          "John Malkovich",
+          "Catherine Keener",
+          "Orson Bean"
+        ],
+        "posterPath": "/31FGQu3OnwdmS4COquENe0vMZc0.jpg",
+        "backdropPath": "/1Nyjb7aeRKynWgmOl8he5ZcvWLm.jpg",
+        "rating": 7.4,
+        "trailerKey": "LEtlqumjXLw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11826,
+        "title": "Sexy Beast",
+        "year": 2001,
+        "runtime": 89,
+        "genres": [
+          "Crime",
+          "Thriller",
+          "Drama"
+        ],
+        "synopsis": "Ex-safecracker Gal Dove has served his time behind bars and is blissfully retired to a Spanish villa paradise with a wife he adores. The idyll is shattered by the arrival of his nemesis Don Logan, intent on persuading Gal to return to London for one last big job.",
+        "director": "Jonathan Glazer",
+        "producers": [
+          "Jeremy Thomas"
+        ],
+        "cast": [
+          "Ray Winstone",
+          "Ben Kingsley",
+          "Ian McShane",
+          "Amanda Redman",
+          "James Fox"
+        ],
+        "posterPath": "/xTfCZTzhgHNAR1pf5D49WH4buI5.jpg",
+        "backdropPath": "/yYUGy4MDM6jbJoamlfo3HT6Guhy.jpg",
+        "rating": 7,
+        "trailerKey": "osexRaPM_Gc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 264660,
+        "title": "Ex Machina",
+        "year": 2015,
+        "runtime": 108,
+        "genres": [
+          "Drama",
+          "Science Fiction"
+        ],
+        "synopsis": "Caleb, a coder at the world's largest internet company, wins a competition to spend a week at a private mountain retreat belonging to Nathan, the reclusive CEO of the company. But when Caleb arrives at the remote location he finds that he will have to participate in a strange and fascinating experiment in which he must interact with the world's first true artificial intelligence, housed in the body of a beautiful robot girl.",
+        "director": "Alex Garland",
+        "producers": [
+          "Allon Reich",
+          "Andrew Macdonald"
+        ],
+        "cast": [
+          "Domhnall Gleeson",
+          "Alicia Vikander",
+          "Oscar Isaac",
+          "Sonoya Mizuno",
+          "Corey Johnson"
+        ],
+        "posterPath": "/dmJW8IAKHKxFNiUnoDR7JfsK7Rp.jpg",
+        "backdropPath": "/uqOuJ50EtTj7kkDIXP8LCg7G45D.jpg",
+        "rating": 7.6,
+        "trailerKey": "sDkEF7Db7Gw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 9367,
+        "title": "El Mariachi",
+        "year": 1993,
+        "runtime": 81,
+        "genres": [
+          "Action",
+          "Crime",
+          "Thriller",
+          "Western"
+        ],
+        "synopsis": "El Mariachi just wants to play his guitar and carry on the family tradition. Unfortunately, the town he tries to find work in has another visitor, a killer who carries his guns in a guitar case. The drug lord and his henchmen mistake el Mariachi for the killer, Azul, and chase him around town trying to kill him and get his guitar case.",
+        "director": "Robert Rodriguez",
+        "producers": [
+          "Carlos Gallardo",
+          "Robert Rodriguez"
+        ],
+        "cast": [
+          "Carlos Gallardo",
+          "Consuelo Gómez",
+          "Jaime de Hoyos",
+          "Peter Marquardt",
+          "Reinol Martinez"
+        ],
+        "posterPath": "/zRh7K4SV1xQ419m8gzGITak51vc.jpg",
+        "backdropPath": "/zERY2aaCrLExpR6NQ1ceIs0WG8S.jpg",
+        "rating": 6.8,
+        "trailerKey": "QtNJsvpHye0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 9003,
+        "title": "Hellraiser",
+        "year": 1987,
+        "runtime": 93,
+        "genres": [
+          "Horror",
+          "Thriller"
+        ],
+        "synopsis": "A hedonistic man finds a mysterious puzzle box that summons a group of gruesome beings known as the Cenobites. These otherworldly entities open the doors to a dominion where pain and pleasure are indivisible.",
+        "director": "Clive Barker",
+        "producers": [
+          "Christopher Figg"
+        ],
+        "cast": [
+          "Andrew Robinson",
+          "Clare Higgins",
+          "Sean Chapman",
+          "Robert Hines",
+          "Ashley Laurence"
+        ],
+        "posterPath": "/3Z0oPHyLnk3Vx6ZMC1MiVwIrKhO.jpg",
+        "backdropPath": "/jInJNDIyzlYBV79nx8Qb5s2xjfM.jpg",
+        "rating": 6.9,
+        "trailerKey": "tOcth6-HjPg"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 391713,
+        "title": "Lady Bird",
+        "year": 2017,
+        "runtime": 94,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "synopsis": "Lady Bird McPherson, a strong willed, deeply opinionated, artistic 17 year old comes of age in Sacramento. Her relationship with her mother and her upbringing are questioned and tested as she plans to head off to college.",
+        "director": "Greta Gerwig",
+        "producers": [
+          "Eli Bush",
+          "Evelyn O'Neill",
+          "Scott Rudin"
+        ],
+        "cast": [
+          "Saoirse Ronan",
+          "Laurie Metcalf",
+          "Tracy Letts",
+          "Lucas Hedges",
+          "Timothée Chalamet"
+        ],
+        "posterPath": "/gl66K7zRdtNYGrxyS2YDUP5ASZd.jpg",
+        "backdropPath": "/jwBiY1kE5089i2WpfS1MHDYp3VO.jpg",
+        "rating": 7.3,
+        "trailerKey": "cNi_HC839Wo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 493922,
+        "title": "Hereditary",
+        "year": 2018,
+        "runtime": 128,
+        "genres": [
+          "Horror",
+          "Mystery",
+          "Thriller"
+        ],
+        "synopsis": "Following the death of the Leigh family matriarch, Annie and her children uncover disturbing secrets about their heritage. Their daily lives are not only impacted, but they also become entangled in a chilling fate from which they cannot escape, driving them to the brink of madness.",
+        "director": "Ari Aster",
+        "producers": [
+          "Buddy Patrick",
+          "Lars Knudsen",
+          "Kevin Scott Frakes"
+        ],
+        "cast": [
+          "Toni Collette",
+          "Alex Wolff",
+          "Gabriel Byrne",
+          "Milly Shapiro",
+          "Ann Dowd"
+        ],
+        "posterPath": "/4GFPuL14eXi66V96xBWY73Y9PfR.jpg",
+        "backdropPath": "/gJbTXKNTL6O7r7PzF6ZRkJGBlPp.jpg",
+        "rating": 7.3,
+        "trailerKey": "MJNR58zaStE"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 2061,
+        "title": "Pusher",
+        "year": 1996,
+        "runtime": 110,
+        "genres": [
+          "Action",
+          "Crime",
+          "Drama"
+        ],
+        "synopsis": "A drug pusher grows increasingly desperate after a botched deal leaves him with a large debt to a ruthless drug lord.",
+        "director": "Nicolas Winding Refn",
+        "producers": [
+          "Henrik Danstrup",
+          "Nicolas Winding Refn"
+        ],
+        "cast": [
+          "Kim Bodnia",
+          "Mads Mikkelsen",
+          "Laura Drasbæk",
+          "Zlatko Burić",
+          "Slavko Labović"
+        ],
+        "posterPath": "/9Myfvq4e2BySE5aosX8UzV9cUME.jpg",
+        "backdropPath": "/1ZJlf0fxLRRrAn39guNvJi4e7Im.jpg",
+        "rating": 7,
+        "trailerKey": "AEIwMsqee-A"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 8052,
+        "title": "Hard Eight",
+        "year": 1997,
+        "runtime": 102,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "synopsis": "A stranger mentors a young Reno gambler who weds a hooker and befriends a vulgar casino regular.",
+        "director": "Paul Thomas Anderson",
+        "producers": [
+          "Robert Jones",
+          "John S. Lyons"
+        ],
+        "cast": [
+          "Philip Baker Hall",
+          "John C. Reilly",
+          "Gwyneth Paltrow",
+          "Samuel L. Jackson",
+          "F. William Parker"
+        ],
+        "posterPath": "/1l5UaoP25Ak8PWCKIULQz70yF03.jpg",
+        "backdropPath": "/4rt35cuyJ3CwpZgeIdXm5fmCinx.jpg",
+        "rating": 6.8,
+        "trailerKey": "AwLWHNuJ-2M"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 76543,
+        "title": "Tyrannosaur",
+        "year": 2011,
+        "runtime": 93,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "The story of Joseph, a man plagued by violence and a rage that is driving him to self-destruction. As Joseph's life spirals into turmoil a chance of redemption appears in the form of Hannah, a Christian charity shop worker. Their relationship develops to reveal that Hannah is hiding a secret of her own with devastating results on both of their lives.",
+        "director": "Paddy Considine",
+        "producers": [
+          "Diarmid Scrimshaw"
+        ],
+        "cast": [
+          "Peter Mullan",
+          "Olivia Colman",
+          "Eddie Marsan",
+          "Ned Dennehy",
+          "Samuel Bottomley"
+        ],
+        "posterPath": "/p6PJGuO6K94YylUcAsTTn7Q4cQn.jpg",
+        "backdropPath": "/iPt0HhkT4RXM5LjfXtbGsLXNUbk.jpg",
+        "rating": 7.3,
+        "trailerKey": "nvyqXFmV-LI"
+      },
+      "status": "nominated"
+    }
+  ]
 }

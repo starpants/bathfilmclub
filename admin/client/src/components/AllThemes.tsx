@@ -165,8 +165,9 @@ function ThemeRow({ theme, isCurrent, activePanel, onTogglePanel, onSetAsCurrent
           <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
             <button className="btn btn-sm" onClick={() => onTogglePanel('films')}>✕ Close</button>
           </div>
-          <div style={{ marginBottom: '1.25rem' }}>
-            <h3 style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,247,214,0.5)', margin: '0 0 0.75rem' }}>
+          {/* Full-bleed band in the pyramid's "nominated" colour — breaks out of the 1200px container */}
+          <div style={{ background: '#4C685E', margin: '0 calc(50% - 50vw) 1.25rem', padding: '1.25rem calc(50vw - 50%)' }}>
+            <h3 style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,247,214,0.75)', margin: '0 0 0.75rem' }}>
               Add Film
             </h3>
             <FilmSearch
@@ -175,10 +176,13 @@ function ThemeRow({ theme, isCurrent, activePanel, onTogglePanel, onSetAsCurrent
               }
             />
           </div>
-          <h3 style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,247,214,0.5)', margin: '0 0 0.75rem' }}>
-            Films ({theme.films.length})
-          </h3>
-          <FilmList slug={theme.slug} films={theme.films} onUpdated={onFilmsChanged} />
+          {/* Full-bleed band in the pyramid's "shortlisted" colour — breaks out of the 1200px container */}
+          <div style={{ background: '#175A70', margin: '0 calc(50% - 50vw)', padding: '1.25rem calc(50vw - 50%)' }}>
+            <h3 style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,247,214,0.75)', margin: '0 0 0.75rem' }}>
+              Films ({theme.films.length})
+            </h3>
+            <FilmList slug={theme.slug} films={theme.films} onUpdated={onFilmsChanged} />
+          </div>
         </div>
       )}
     </li>
