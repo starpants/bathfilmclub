@@ -436,63 +436,6 @@
     },
     {
       "film": {
-        "tmdbId": 650,
-        "title": "Boyz n the Hood",
-        "year": 1991,
-        "runtime": 112,
-        "genres": [
-          "Crime",
-          "Drama"
-        ],
-        "synopsis": "In the middle of the Los Angeles ghetto, drugs, robberies and shootings dominate everyday life. During these times, Furious tries to raise his son Tre to be a decent person. Tre's friends, on the other hand, have little regard for the law and drag the entire neighborhood into a street war...",
-        "director": "John Singleton",
-        "producers": [
-          "Steve Nicolaides"
-        ],
-        "cast": [
-          "Cuba Gooding Jr.",
-          "Laurence Fishburne",
-          "Ice Cube",
-          "Morris Chestnut",
-          "Angela Bassett"
-        ],
-        "posterPath": "/v4ox4aSCNT5vyLXl4Q71JiWwCXW.jpg",
-        "backdropPath": "/w9Buzxn7RjbttP2xm9leMfMdyCP.jpg",
-        "rating": 7.6,
-        "trailerKey": "OJ_qAPj0Tkk"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 73,
-        "title": "American History X",
-        "year": 1998,
-        "runtime": 119,
-        "genres": [
-          "Drama"
-        ],
-        "synopsis": "Derek Vineyard is paroled after serving 3 years in prison for killing two African-American men. Through his brother, Danny Vineyard's narration, we learn that before going to prison, Derek was a skinhead and the leader of a violent white supremacist gang that committed acts of racial crime throughout L.A. and his actions greatly influenced Danny. Reformed and fresh out of prison, Derek severs contact with the gang and becomes determined to keep Danny from going down the same violent path as he did.",
-        "director": "Tony Kaye",
-        "producers": [
-          "John Morrissey"
-        ],
-        "cast": [
-          "Edward Norton",
-          "Edward Furlong",
-          "Beverly D'Angelo",
-          "Jennifer Lien",
-          "Ethan Suplee"
-        ],
-        "posterPath": "/x2drgoXYZ8484lqyDj7L1CEVR4T.jpg",
-        "backdropPath": "/6qHI1IYj7QlLSCwHRzkL62X175s.jpg",
-        "rating": 8.3,
-        "trailerKey": "el6JxnW2Tyg"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
         "tmdbId": 11660,
         "title": "Following",
         "year": 1999,
@@ -856,6 +799,123 @@
         "backdropPath": "/iPt0HhkT4RXM5LjfXtbGsLXNUbk.jpg",
         "rating": 7.3,
         "trailerKey": "nvyqXFmV-LI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11314,
+        "title": "Koyaanisqatsi",
+        "year": 1983,
+        "runtime": 86,
+        "genres": [
+          "Documentary",
+          "Music"
+        ],
+        "synopsis": "Takes us to locations all around the US and shows us the heavy toll that modern technology is having on humans and the earth. The visual tone poem contains neither dialogue nor a vocalized narration: its tone is set by the juxtaposition of images and the exceptional music by Philip Glass.",
+        "director": "Godfrey Reggio",
+        "producers": [
+          "Godfrey Reggio"
+        ],
+        "cast": [
+          "Ed Asner",
+          "Pat Benatar",
+          "Johnny Carson",
+          "Dick Cavett",
+          "Marilyn Chambers"
+        ],
+        "posterPath": "/6zCNciRcob8lwuydVXgq0esla8L.jpg",
+        "backdropPath": "/84E96lyR81OvUjCimcrfuzn9er5.jpg",
+        "rating": 7.9,
+        "trailerKey": "BRItSHelLr4"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 37495,
+        "title": "Four Lions",
+        "year": 2010,
+        "runtime": 97,
+        "genres": [
+          "Comedy",
+          "Crime",
+          "Drama"
+        ],
+        "synopsis": "Four Lions tells the story of a group of British jihadists who push their abstract dreams of glory to the breaking point. As the wheels fly off, and their competing ideologies clash, what emerges is an emotionally engaging (and entirely plausible) farce.",
+        "director": "Chris Morris",
+        "producers": [
+          "Mark Herbert",
+          "Derrin Schlesinger"
+        ],
+        "cast": [
+          "Riz Ahmed",
+          "Nigel Lindsay",
+          "Kayvan Novak",
+          "Adeel Akhtar",
+          "Arsher Ali"
+        ],
+        "posterPath": "/x4JzaRPXBs9wiHCe3e3ymXWuwfd.jpg",
+        "backdropPath": "/bVmDpF2VzVivzH8GVFXfVJeRPd7.jpg",
+        "rating": 7,
+        "trailerKey": "o_yOtVBR0CM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 500,
+        "title": "Reservoir Dogs",
+        "year": 1992,
+        "runtime": 99,
+        "genres": [
+          "Crime",
+          "Thriller"
+        ],
+        "synopsis": "A botched robbery indicates a police informant, and the pressure mounts in the aftermath at a warehouse. Crime begets violence as the survivors -- veteran Mr. White, newcomer Mr. Orange, psychopathic parolee Mr. Blonde, bickering weasel Mr. Pink and Nice Guy Eddie -- unravel.",
+        "director": "Quentin Tarantino",
+        "producers": [
+          "Lawrence Bender"
+        ],
+        "cast": [
+          "Harvey Keitel",
+          "Tim Roth",
+          "Michael Madsen",
+          "Chris Penn",
+          "Steve Buscemi"
+        ],
+        "posterPath": "/xi8Iu6qyTfyZVDVy60raIOYJJmk.jpg",
+        "backdropPath": "/jwt159hXWA9Q5xpBo8hWb3zwLi7.jpg",
+        "rating": 8.1,
+        "trailerKey": "2KLZ4fSXtgI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 55149,
+        "title": "84 Charlie Mopic",
+        "year": 1989,
+        "runtime": 90,
+        "genres": [
+          "War"
+        ],
+        "synopsis": "An Army cameraman is embedded with a reconnaissance patrol and charts their mission across territory controlled by the North Vietnamese.",
+        "director": "Patrick Sheane Duncan",
+        "producers": [
+          "Michael Nolin"
+        ],
+        "cast": [
+          "Jonathan Emerson",
+          "Nicholas Cascone",
+          "Jason Tomlins",
+          "Christopher Burgard",
+          "Glenn Morshower"
+        ],
+        "posterPath": "/vu5zyYcQlUJmGJzzUnrrXKsxnKd.jpg",
+        "backdropPath": "/lv8vz7uSzEMDiwgpCUB3O4d8eqH.jpg",
+        "rating": 6.2,
+        "trailerKey": "yrc3U4X2aZ0"
       },
       "status": "nominated"
     }
