@@ -1,13 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
-import type { Theme, FilmStatus } from '@bathfilmclub/types';
+import type { Theme } from '@bathfilmclub/types';
 import { api } from '../api';
-import { ThemeEditor } from './ThemeEditor';
-import { FilmSearch } from './FilmSearch';
-import { FilmList } from './FilmList';
 
 const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w92';
-
-type PanelMode = 'details' | 'films';
 
 function formatMonth(month: string): string {
   const [year, m] = month.split('-');
@@ -83,21 +78,19 @@ function NewThemeForm({ onCreated, onCancel }: NewThemeFormProps) {
 interface ThemeRowProps {
   theme: Theme;
   isCurrent: boolean;
-  activePanel: PanelMode | null;
-  onTogglePanel: (mode: PanelMode) => void;
+  onEdit: () => void;
   onSetAsCurrent: () => void;
-  onDelete: () => void;
-  onThemeUpdated: (theme: Theme) => void;
-  onFilmsChanged: () => void;
 }
 
-function ThemeRow({ theme, isCurrent, activePanel, onTogglePanel, onSetAsCurrent, onDelete, onThemeUpdated, onFilmsChanged }: ThemeRowProps) {
+function ThemeRow({ theme, isCurrent, onEdit, onSetAsCurrent }: ThemeRowProps) {
   const selected = theme.films.filter((f) => f.status === 'selected');
 
   return (
     <li style={{ borderBottom: '1px solid rgba(255,247,214,0.1)' }}>
-      {/* Theme summary row */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.875rem 0' }}>
+      <div
+        onClick={onEdit}
+        style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.875rem 0', cursor: 'pointer' }}
+      >
         {/* Mini poster strip */}
         <div style={{ display: 'flex', gap: '0.25rem', width: 52, flexShrink: 0 }}>
           {selected.slice(0, 2).map(({ film }) =>
@@ -109,82 +102,21 @@ function ThemeRow({ theme, isCurrent, activePanel, onTogglePanel, onSetAsCurrent
 
         {/* Title + meta */}
         <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-            <span style={{ fontWeight: 700, fontSize: '2rem' }}>{theme.title}</span>
-          </div>
+          <span style={{ fontWeight: 700, fontSize: '2rem' }}>{theme.title}</span>
           <p style={{ margin: 0, fontSize: '0.8rem', color: 'rgba(255,247,214,0.5)' }}>
             {formatMonth(theme.month)} · {theme.films.length} film{theme.films.length !== 1 ? 's' : ''}
           </p>
         </div>
 
-        {/* Action buttons */}
-        <div style={{ display: 'flex', gap: '0.5rem', flexShrink: 0 }}>
-          <button
-            className={`btn${activePanel === 'details' ? ' btn-dimmed' : ''}`}
-            style={{ width: '10rem', textAlign: 'center' }}
-            onClick={() => onTogglePanel('details')}
-          >
-            Edit Theme
-          </button>
-          <button
-            className={`btn${activePanel === 'films' ? ' btn-dimmed' : ''}`}
-            style={{ width: '10rem', textAlign: 'center' }}
-            onClick={() => onTogglePanel('films')}
-          >
-            Edit Films
-          </button>
+        {/* Set as current (stops row-click so it doesn't open the editor) */}
+        <div style={{ display: 'flex', gap: '0.5rem', flexShrink: 0 }} onClick={(e) => e.stopPropagation()}>
           {isCurrent ? (
-            <span className="btn btn-accent" style={{ width: '10rem', textAlign: 'center', cursor: 'default' }}>
-              Current
-            </span>
+            <span className="btn btn-accent" style={{ width: '10rem', textAlign: 'center', cursor: 'default' }}>Current</span>
           ) : (
-            <button className="btn" style={{ width: '10rem', textAlign: 'center' }} onClick={onSetAsCurrent}>
-              Set as Current
-            </button>
+            <button className="btn" style={{ width: '10rem', textAlign: 'center' }} onClick={onSetAsCurrent}>Set as Current</button>
           )}
-          <button className={`btn btn-danger${isCurrent ? ' btn-dimmed' : ''}`} style={{ width: '10rem', textAlign: 'center' }} onClick={isCurrent ? undefined : onDelete}>
-            Delete
-          </button>
         </div>
       </div>
-
-      {/* Inline panels */}
-      {activePanel === 'details' && (
-        <div style={{ padding: '1rem 0 1.5rem', borderTop: '1px solid rgba(255,247,214,0.1)' }}>
-          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
-            <button className="btn btn-sm" onClick={() => onTogglePanel('details')}>✕ Close</button>
-          </div>
-          <ThemeEditor
-            theme={theme}
-            onSaved={(updated) => { onThemeUpdated(updated); onTogglePanel('details'); }}
-          />
-        </div>
-      )}
-      {activePanel === 'films' && (
-        <div style={{ padding: '1rem 0 1.5rem', borderTop: '1px solid rgba(255,247,214,0.1)' }}>
-          <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '1rem' }}>
-            <button className="btn btn-sm" onClick={() => onTogglePanel('films')}>✕ Close</button>
-          </div>
-          {/* Full-bleed band in the pyramid's "nominated" colour — breaks out of the 1200px container */}
-          <div style={{ background: '#253A3C', margin: '0 calc(50% - 50vw) 1.25rem', padding: '1.25rem calc(50vw - 50%)' }}>
-            <h3 style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,247,214,0.75)', margin: '0 0 0.75rem' }}>
-              Add Film
-            </h3>
-            <FilmSearch
-              onAdd={(tmdbId: number, status: FilmStatus) =>
-                api.addFilmToTheme(theme.slug, tmdbId, status).then(() => onFilmsChanged())
-              }
-            />
-          </div>
-          {/* Full-bleed band in the pyramid's "shortlisted" colour — breaks out of the 1200px container */}
-          <div style={{ background: '#175A70', margin: '0 calc(50% - 50vw)', padding: '1.25rem calc(50vw - 50%)' }}>
-            <h3 style={{ fontSize: '0.7rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,247,214,0.75)', margin: '0 0 0.75rem' }}>
-              Films ({theme.films.length})
-            </h3>
-            <FilmList slug={theme.slug} films={theme.films} onUpdated={onFilmsChanged} />
-          </div>
-        </div>
-      )}
     </li>
   );
 }
@@ -192,16 +124,15 @@ function ThemeRow({ theme, isCurrent, activePanel, onTogglePanel, onSetAsCurrent
 interface Props {
   showNewForm: boolean;
   onNewFormClose: () => void;
+  onEdit: (slug: string) => void;
 }
 
-export function AllThemes({ showNewForm, onNewFormClose }: Props) {
+export function AllThemes({ showNewForm, onNewFormClose, onEdit }: Props) {
   const [themes, setThemes] = useState<Theme[]>([]);
   const [currentSlug, setCurrentSlug] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [openYears, setOpenYears] = useState<Set<string>>(new Set());
-  const [activeSlug, setActiveSlug] = useState<string | null>(null);
-  const [activeMode, setActiveMode] = useState<PanelMode | null>(null);
 
   const load = useCallback(async () => {
     try {
@@ -233,16 +164,6 @@ export function AllThemes({ showNewForm, onNewFormClose }: Props) {
     });
   };
 
-  const togglePanel = (slug: string, mode: PanelMode) => {
-    if (activeSlug === slug && activeMode === mode) {
-      setActiveSlug(null);
-      setActiveMode(null);
-    } else {
-      setActiveSlug(slug);
-      setActiveMode(mode);
-    }
-  };
-
   const handleSetAsCurrent = async (slug: string, title: string) => {
     if (currentSlug && !confirm(`Set "${title}" as current? "${themes.find(t => t.slug === currentSlug)?.title}" will be archived.`)) return;
     try {
@@ -251,21 +172,6 @@ export function AllThemes({ showNewForm, onNewFormClose }: Props) {
     } catch (e: any) {
       alert(`Error: ${e.message}`);
     }
-  };
-
-  const handleDelete = async (slug: string, title: string) => {
-    if (!confirm(`Delete "${title}"? This cannot be undone.`)) return;
-    try {
-      await api.deleteTheme(slug);
-      if (activeSlug === slug) { setActiveSlug(null); setActiveMode(null); }
-      await load();
-    } catch (e: any) {
-      alert(`Error: ${e.message}`);
-    }
-  };
-
-  const handleThemeUpdated = (updated: Theme) => {
-    setThemes((prev) => prev.map((t) => t.slug === updated.slug ? updated : t));
   };
 
   // Group themes by year
@@ -325,12 +231,8 @@ export function AllThemes({ showNewForm, onNewFormClose }: Props) {
                     key={theme.slug}
                     theme={theme}
                     isCurrent={theme.slug === currentSlug}
-                    activePanel={activeSlug === theme.slug ? activeMode : null}
-                    onTogglePanel={(mode) => togglePanel(theme.slug, mode)}
+                    onEdit={() => onEdit(theme.slug)}
                     onSetAsCurrent={() => handleSetAsCurrent(theme.slug, theme.title)}
-                    onDelete={() => handleDelete(theme.slug, theme.title)}
-                    onThemeUpdated={handleThemeUpdated}
-                    onFilmsChanged={load}
                   />
                 ))}
               </ul>
