@@ -24,10 +24,10 @@ const { cycle, bg = '' } = Astro.props;
             />
             {cycle.description ? (
               <div class="flex flex-col md:flex-row">
-                <div class="flex-[2] bg-bfc-brand-bg border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0">
+                <div class="flex-2 bg-bfc-brand-bg border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0">
                   <h3 class="font-heading font-extrabold text-2xl leading-tight">{cycle.title}</h3>
                 </div>
-                <div class="flex-[3] bg-bfc-brand-bg border border-neutral-600 p-5">
+                <div class="flex-3 bg-bfc-brand-bg border border-neutral-600 p-5">
                   <p class="font-body text-bfc-brand-fg/60 text-xl leading-relaxed">
                     {cycle.description}
                   </p>
@@ -47,12 +47,12 @@ const { cycle, bg = '' } = Astro.props;
                 class="font-heading text-bfc-brand-fg/80 font-extrabold mb-4"
               />
               <div class="flex flex-col md:flex-row">
-                <div class="flex-[2] bg-bfc-brand-bg border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0">
+                <div class="flex-2 bg-bfc-brand-bg border border-neutral-600 p-5 border-b-0 md:border-b md:border-r-0">
                   <h3 class="font-heading font-extrabold text-2xl leading-tight">
                     {formatMeetingDate(cycle.meeting.date)}
                   </h3>
                 </div>
-                <div class="flex-[3] bg-bfc-brand-bg border border-neutral-600 p-5">
+                <div class="flex-3 bg-bfc-brand-bg border border-neutral-600 p-5">
                   {cycle.meeting.venue ? (
                     <p class="font-body text-bfc-brand-fg/60 text-xl leading-relaxed">
                       {cycle.meeting.venue}
@@ -85,7 +85,7 @@ const { cycle, bg = '' } = Astro.props;
     background-repeat: repeat-x;
     background-position: center top;
     filter: grayscale(1);
-    opacity: 0.10;
+    opacity: 0.1;
   }
 
   @media (orientation: portrait) {

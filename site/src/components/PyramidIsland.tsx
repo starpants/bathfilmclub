@@ -53,7 +53,7 @@ function FilmRow({
         ) : (
           <div className="grid grid-cols-2 gap-4 md:flex md:flex-wrap md:gap-12 md:justify-center">
             {films.map(({ film, status }) => (
-              <div key={film.tmdbId} className={`${cardWidth} flex-shrink-0`}>
+              <div key={film.tmdbId} className={`${cardWidth} shrink-0`}>
                 <FilmCard
                   film={film}
                   status={status}
