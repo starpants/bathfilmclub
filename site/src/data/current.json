@@ -918,6 +918,36 @@
         "trailerKey": "yrc3U4X2aZ0"
       },
       "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 310131,
+        "title": "The Witch",
+        "year": 2016,
+        "runtime": 92,
+        "genres": [
+          "Horror"
+        ],
+        "synopsis": "In 1630, a farmer relocates his family to a remote plot of land on the edge of a forest where strange, unsettling things happen. With suspicion and paranoia mounting, each family member's faith, loyalty and love are tested in shocking ways.",
+        "director": "Robert Eggers",
+        "producers": [
+          "Daniel Bekerman",
+          "Jodi Redmond",
+          "Lars Knudsen"
+        ],
+        "cast": [
+          "Anya Taylor-Joy",
+          "Ralph Ineson",
+          "Kate Dickie",
+          "Harvey Scrimshaw",
+          "Ellie Grainger"
+        ],
+        "posterPath": "/zap5hpFCWSvdWSuPGAQyjUv2wAC.jpg",
+        "backdropPath": "/zi2oYYNSSv7t44iSt5YrxHX9PYs.jpg",
+        "rating": 7,
+        "trailerKey": "97OQ7MQC5Ck"
+      },
+      "status": "nominated"
     }
   ]
 }
