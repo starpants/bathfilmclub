@@ -115,7 +115,18 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
 
   return (
     <div>
-      <button className="btn btn-sm" onClick={onBack} style={{ marginBottom: '1.5rem' }}>← Back to themes</button>
+      <header style={{ borderBottom: `4px solid ${color.brandAccent}`, paddingBottom: '1rem', marginBottom: '2rem' }}>
+        <button
+          className="btn"
+          onClick={onBack}
+          style={{ height: '2.5rem', display: 'inline-flex', alignItems: 'center' }}
+        >
+          ← Back to themes
+        </button>
+      </header>
+      <h1 style={{ textAlign: 'center', fontFamily: font.display, fontSize: size.title, color: color.brandFg, margin: '0 0 2rem' }}>
+        Bath Film Club Admin
+      </h1>
 
       {/* Details */}
       <div style={{ marginBottom: '2rem' }}>
@@ -169,7 +180,12 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
         </div>
         {error && <p style={{ color: color.errorText, fontSize: '0.85rem', margin: '0.75rem 0 0' }}>{error}</p>}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginTop: '1.25rem' }}>
-          <button className="btn btn-sm" onClick={saveDetails} disabled={saveState === 'saving'} style={{ borderColor: color.brandFg }}>
+          <button
+            className="btn"
+            onClick={saveDetails}
+            disabled={saveState === 'saving'}
+            style={{ height: '2.5rem', display: 'inline-flex', alignItems: 'center', borderColor: color.brandFg }}
+          >
             {saveState === 'saving' ? 'Saving…' : 'Save Details'}
           </button>
           {saveState === 'saved' && <span style={{ fontSize: '0.85rem', color: fg.strong }}>Saved ✓</span>}

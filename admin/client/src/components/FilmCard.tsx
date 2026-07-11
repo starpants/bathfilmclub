@@ -71,7 +71,12 @@ export function FilmCard({ slug, film, status, onChanged }: Props) {
           disabled={busy}
           title="Remove"
           aria-label="Remove"
-          style={{ background: 'none', border: 'none', color: color.danger, cursor: 'pointer', fontSize: '0.9rem', padding: '0 0.25rem' }}
+          style={{
+            flexShrink: 0, width: '1.75rem', height: '1.75rem', padding: 0,
+            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+            background: color.brandBg, border: `1px solid ${fg.faint}`,
+            color: color.brandFg, cursor: 'pointer', fontSize: '0.9rem', lineHeight: 1,
+          }}
         >
           ✕
         </button>
