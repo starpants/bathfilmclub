@@ -12,7 +12,7 @@ export const color = {
   tierNominated: '#253A3C',
   danger: '#B11226',
   dangerBorder: 'rgba(177,18,38,0.5)',
-  errorOnAccent: '#FFD9DE',
+  errorText: '#FFD9DE',
 } as const;
 
 // Cream foreground at the opacity variants the site uses.

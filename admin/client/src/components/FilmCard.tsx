@@ -52,10 +52,7 @@ export function FilmCard({ slug, film, status, onChanged }: Props) {
           />
         )}
       </div>
-      <p style={{ margin: '0 0 0.35rem', fontFamily: font.body, fontSize: '1rem', color: fg.strong, lineHeight: 1.2 }}>
-        {film.title} <span style={{ color: fg.faint }}>({film.year})</span>
-      </p>
-      <div style={{ display: 'flex', gap: '0.25rem', alignItems: 'center' }}>
+      <div style={{ display: 'flex', gap: '0.25rem', alignItems: 'center', marginBottom: '0.5rem' }}>
         <select
           value={status}
           disabled={busy}
@@ -79,6 +76,9 @@ export function FilmCard({ slug, film, status, onChanged }: Props) {
           ✕
         </button>
       </div>
+      <p style={{ margin: 0, fontFamily: font.body, fontSize: '1rem', color: fg.strong, lineHeight: 1.2 }}>
+        {film.title} <span style={{ color: fg.faint }}>({film.year})</span>
+      </p>
     </div>
   );
 }

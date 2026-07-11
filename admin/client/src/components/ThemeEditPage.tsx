@@ -12,10 +12,15 @@ interface Props {
   onDeleted: () => void;
 }
 
+const MONTHS = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+];
+
 const bandInput: React.CSSProperties = {
-  width: '100%', fontFamily: 'inherit', color: color.brandFg,
+  width: '100%', fontFamily: 'inherit', fontSize: size.body, color: color.brandFg,
   background: fg.hairline, border: `1px solid ${fg.faint}`,
-  padding: '0.5rem', boxSizing: 'border-box',
+  padding: '0.5rem', height: '2.5rem', boxSizing: 'border-box',
 };
 
 function label(text: string) {
@@ -112,21 +117,41 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
     <div>
       <button className="btn btn-sm" onClick={onBack} style={{ marginBottom: '1.5rem' }}>← Back to themes</button>
 
-      {/* Details band (full-bleed accent) */}
-      <div style={{ background: color.brandAccent, margin: '0 calc(50% - 50vw) 2rem', padding: '2rem calc(50vw - 50%)' }}>
+      {/* Details */}
+      <div style={{ marginBottom: '2rem' }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}>
           <label style={{ flex: '1 1 240px' }}>
             {label('Title')}
-            <input style={{ ...bandInput, fontSize: size.heading, fontWeight: 700 }} value={title} onChange={(e) => setTitle(e.target.value)} placeholder="e.g. Time Travel" />
+            <input style={{ ...bandInput, fontWeight: 700 }} value={title} onChange={(e) => setTitle(e.target.value)} placeholder="e.g. Time Travel" />
           </label>
-          <label style={{ flex: '0 0 140px' }}>
-            {label('Month (YYYY-MM)')}
-            <input style={bandInput} value={month} onChange={(e) => setMonth(e.target.value)} placeholder="2026-07" pattern="\d{4}-\d{2}" />
+          <label style={{ flex: '0 0 220px' }}>
+            {label('Month')}
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <select
+                style={{ ...bandInput, flex: 1 }}
+                value={month.split('-')[1] ?? ''}
+                onChange={(e) => setMonth(`${month.split('-')[0] || ''}-${e.target.value}`)}
+              >
+                <option value="">Month…</option>
+                {MONTHS.map((name, i) => (
+                  <option key={name} value={String(i + 1).padStart(2, '0')}>{name}</option>
+                ))}
+              </select>
+              <input
+                type="number"
+                style={{ ...bandInput, flex: '0 0 5rem' }}
+                value={month.split('-')[0] ?? ''}
+                onChange={(e) => setMonth(`${e.target.value}-${month.split('-')[1] || ''}`)}
+                placeholder="Year"
+                min="2000"
+                max="2100"
+              />
+            </div>
           </label>
         </div>
         <label style={{ display: 'block', marginTop: '1rem' }}>
           {label('Description')}
-          <textarea style={{ ...bandInput, minHeight: 72, resize: 'vertical', fontSize: size.body }} value={description} onChange={(e) => setDescription(e.target.value)} />
+          <textarea style={{ ...bandInput, height: 'auto', minHeight: 72, resize: 'vertical' }} value={description} onChange={(e) => setDescription(e.target.value)} />
         </label>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', marginTop: '1rem' }}>
           <label style={{ flex: '0 0 160px' }}>
@@ -142,7 +167,7 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
             <input style={bandInput} value={meetingVenue} onChange={(e) => setMeetingVenue(e.target.value)} placeholder="e.g. The Raven Pub, Bath" />
           </label>
         </div>
-        {error && <p style={{ color: color.errorOnAccent, fontSize: '0.85rem', margin: '0.75rem 0 0' }}>{error}</p>}
+        {error && <p style={{ color: color.errorText, fontSize: '0.85rem', margin: '0.75rem 0 0' }}>{error}</p>}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginTop: '1.25rem' }}>
           <button className="btn btn-sm" onClick={saveDetails} disabled={saveState === 'saving'} style={{ borderColor: color.brandFg }}>
             {saveState === 'saving' ? 'Saving…' : 'Save Details'}
