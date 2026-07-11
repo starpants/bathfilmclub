@@ -54,8 +54,8 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
         setMeetingTime(t.meeting?.time ?? '19:30');
         setMeetingVenue(t.meeting?.venue ?? '');
       }
-    } catch (e: any) {
-      setError(e.message);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
     } finally {
       setLoading(false);
     }
@@ -85,8 +85,8 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
       setTheme(updated);
       setSaveState('saved');
       setTimeout(() => setSaveState('idle'), 2000);
-    } catch (e: any) {
-      setError(e.message);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e));
       setSaveState('idle');
     }
   };
@@ -97,8 +97,8 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
     try {
       await api.deleteTheme(theme.slug);
       onDeleted();
-    } catch (e: any) {
-      alert(`Error: ${e.message}`);
+    } catch (e) {
+      alert(`Error: ${e instanceof Error ? e.message : String(e)}`);
     }
   };
 
@@ -142,7 +142,7 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
             <input style={bandInput} value={meetingVenue} onChange={(e) => setMeetingVenue(e.target.value)} placeholder="e.g. The Raven Pub, Bath" />
           </label>
         </div>
-        {error && <p style={{ color: '#FFD9DE', fontSize: '0.85rem', margin: '0.75rem 0 0' }}>{error}</p>}
+        {error && <p style={{ color: color.errorOnAccent, fontSize: '0.85rem', margin: '0.75rem 0 0' }}>{error}</p>}
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginTop: '1.25rem' }}>
           <button className="btn btn-sm" onClick={saveDetails} disabled={saveState === 'saving'} style={{ borderColor: color.brandFg }}>
             {saveState === 'saving' ? 'Saving…' : 'Save Details'}
@@ -175,7 +175,7 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
       </PyramidBand>
 
       {/* Danger zone */}
-      <div style={{ marginTop: '2.5rem', border: '1px solid rgba(177,18,38,0.5)', padding: '1.25rem' }}>
+      <div style={{ marginTop: '2.5rem', border: `1px solid ${color.dangerBorder}`, padding: '1.25rem' }}>
         <h3 style={{ margin: '0 0 0.5rem', fontFamily: font.display, fontSize: '0.9rem', letterSpacing: '0.1em', color: color.danger }}>Danger Zone</h3>
         <p style={{ margin: '0 0 1rem', fontSize: '0.85rem', color: fg.muted }}>
           {isCurrent
