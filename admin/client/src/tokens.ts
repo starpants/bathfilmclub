@@ -18,6 +18,7 @@ export const fg = {
   strong: 'rgba(255,247,214,0.8)',
   muted: 'rgba(255,247,214,0.6)',
   faint: 'rgba(255,247,214,0.4)',
+  subtle: 'rgba(255,247,214,0.05)',
   hairline: 'rgba(255,247,214,0.1)',
 } as const;
 

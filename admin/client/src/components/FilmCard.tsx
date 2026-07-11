@@ -62,7 +62,7 @@ export function FilmCard({ slug, film, status, onChanged }: Props) {
           onChange={(e) => changeStatus(e.target.value as FilmStatus)}
           style={{
             flex: 1, fontFamily: 'inherit', fontSize: '0.75rem', padding: '0.2rem',
-            background: 'rgba(255,247,214,0.05)', color: color.brandFg, border: `1px solid ${fg.faint}`,
+            background: fg.subtle, color: color.brandFg, border: `1px solid ${fg.faint}`,
           }}
         >
           <option value="nominated">Nominated</option>
@@ -73,7 +73,8 @@ export function FilmCard({ slug, film, status, onChanged }: Props) {
           onClick={remove}
           disabled={busy}
           title="Remove"
-          style={{ background: 'none', border: 'none', color: 'rgba(177,18,38,0.85)', cursor: 'pointer', fontSize: '0.9rem', padding: '0 0.25rem' }}
+          aria-label="Remove"
+          style={{ background: 'none', border: 'none', color: color.danger, cursor: 'pointer', fontSize: '0.9rem', padding: '0 0.25rem' }}
         >
           ✕
         </button>
