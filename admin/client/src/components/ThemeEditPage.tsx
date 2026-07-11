@@ -115,18 +115,16 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
 
   return (
     <div>
-      <header style={{ borderBottom: `4px solid ${color.brandAccent}`, paddingBottom: '1rem', marginBottom: '2rem' }}>
-        <button
-          className="btn"
-          onClick={onBack}
-          style={{ height: '2.5rem', display: 'inline-flex', alignItems: 'center' }}
-        >
-          ← Back to themes
-        </button>
-      </header>
-      <h1 style={{ textAlign: 'center', fontFamily: font.display, fontSize: size.title, color: color.brandFg, margin: '0 0 2rem' }}>
+      <h1 style={{ textAlign: 'center', fontFamily: font.display, fontSize: size.title, color: color.brandFg, margin: '0 0 1.5rem' }}>
         Bath Film Club Admin
       </h1>
+      <button
+        className="btn"
+        onClick={onBack}
+        style={{ height: '2.5rem', display: 'inline-flex', alignItems: 'center', marginBottom: '2rem' }}
+      >
+        ← Back to themes
+      </button>
 
       {/* Details */}
       <div style={{ marginBottom: '2rem' }}>
