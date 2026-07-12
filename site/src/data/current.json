@@ -948,6 +948,67 @@
         "trailerKey": "97OQ7MQC5Ck"
       },
       "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 505600,
+        "title": "Booksmart",
+        "year": 2019,
+        "runtime": 102,
+        "genres": [
+          "Comedy"
+        ],
+        "synopsis": "Two academic teenage superstars realize, on the eve of their high school graduation, that they should have worked less and played more. Determined to never fall short of their peers, the girls set out on a mission to cram four years of fun into one night.",
+        "director": "Olivia Wilde",
+        "producers": [
+          "David Distenfeld",
+          "Chelsea Barnard",
+          "Megan Ellison"
+        ],
+        "cast": [
+          "Kaitlyn Dever",
+          "Beanie Feldstein",
+          "Jessica Williams",
+          "Jason Sudeikis",
+          "Lisa Kudrow"
+        ],
+        "posterPath": "/2aSxRDmisJP90H3S0aocyuQIe4z.jpg",
+        "backdropPath": "/cheDSO3mYmsAFQlRM91o7MK6Wcc.jpg",
+        "rating": 7,
+        "trailerKey": "noAtmtxgJYw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1443,
+        "title": "The Virgin Suicides",
+        "year": 2000,
+        "runtime": 97,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "A group of male friends become obsessed with five mysterious sisters who are sheltered by their strict, religious parents.",
+        "director": "Sofia Coppola",
+        "producers": [
+          "Dan Halsted",
+          "Chris Hanley",
+          "Francis Ford Coppola"
+        ],
+        "cast": [
+          "Kirsten Dunst",
+          "Josh Hartnett",
+          "James Woods",
+          "Kathleen Turner",
+          "Michael Paré"
+        ],
+        "posterPath": "/1NCQtXPQnaHRjOZVmktA9BSM35F.jpg",
+        "backdropPath": "/6b6UpsOXmjO8mJKYsGTG9HW49CN.jpg",
+        "rating": 7.1,
+        "trailerKey": "8kDcCGlaBwY"
+      },
+      "status": "nominated"
     }
   ]
 }
