@@ -81,6 +81,6 @@
   }
 
   .btn-discord {
-    @apply inline-flex items-center gap-2 bg-bfc-brand-accent text-bfc-brand-fg font-heading font-semibold text-sm px-3 py-2 hover:bg-bfc-brand-accent/80 transition-colors md:text-xl md:px-5 md:py-3;
+    @apply inline-flex items-center gap-2 bg-bfc-brand-accent text-bfc-brand-fg font-heading font-semibold text-sm px-3 py-2 hover:bg-bfc-brand-accent/80 transition md:text-xl md:px-5 md:py-3;
   }
 }

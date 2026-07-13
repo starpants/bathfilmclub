@@ -111,7 +111,11 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
   if (!theme) return <p style={{ color: color.danger }}>{error || 'Theme not found.'}</p>;
 
   const isCurrent = theme.slug === currentSlug;
-  const byStatus = (s: FilmStatus) => theme.films.filter((f) => f.status === s);
+  // Films sorted alphabetically by title within each status band (matches the site's pyramid ordering).
+  const byStatus = (s: FilmStatus) =>
+    theme.films
+      .filter((f) => f.status === s)
+      .sort((a, b) => a.film.title.localeCompare(b.film.title));
 
   return (
     <div>

@@ -9,16 +9,17 @@ interface Props {
 }
 
 const { themes, currentSlug } = Astro.props;
-const path = Astro.url.pathname;
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const isHome = path === '/';
 const isSearch = path === '/search';
 const isStats = path === '/stats';
 const isTheme = path.startsWith('/theme/');
 
 // Square icon buttons — echo the site's square motif (FilmStrip, section labels, delete box)
-const iconBtn = 'p-3 md:p-4 border border-bfc-brand-fg/40 text-bfc-brand-fg/80';
-const iconBtnActive = `${iconBtn} cursor-default opacity-40`;
-const iconBtnInactive = `${iconBtn} hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors`;
+// Current page reads as selected (full strength); other pages sit dimmed and brighten on hover.
+const iconBtn = 'p-3 md:p-4 border transition-colors';
+const iconBtnActive = `${iconBtn} cursor-default border-bfc-brand-fg text-bfc-brand-fg`;
+const iconBtnInactive = `${iconBtn} border-bfc-brand-fg/30 text-bfc-brand-fg/50 hover:border-bfc-brand-fg hover:text-bfc-brand-fg`;
 ---
 
 <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4">
@@ -85,5 +86,5 @@ const iconBtnInactive = `${iconBtn} hover:border-bfc-brand-fg hover:text-bfc-bra
     </a>
   )}
 
-  <DiscordButton />
+  <DiscordButton dim />
 </div>

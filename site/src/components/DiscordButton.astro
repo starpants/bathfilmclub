@@ -1,7 +1,17 @@
 ---
+interface Props {
+  /** Dim at rest, brighten on hover — matches the nav icons. Off by default (Hero CTA stays bright). */
+  dim?: boolean;
+}
+const { dim = false } = Astro.props;
 const DISCORD_URL = 'https://discord.gg/FXpgFuMGdP';
 ---
 
-<a href={DISCORD_URL} target="_blank" rel="noopener noreferrer" class="btn-discord">
+<a
+  href={DISCORD_URL}
+  target="_blank"
+  rel="noopener noreferrer"
+  class:list={['btn-discord', dim && 'opacity-50 hover:opacity-100']}
+>
   Join on Discord
 </a>
