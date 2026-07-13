@@ -1,0 +1,167 @@
+---
+import type { Theme, Film } from '@bathfilmclub/types';
+
+interface Props {
+  themes: Theme[];
+}
+const { themes } = Astro.props;
+
+// One entry per film-per-theme (a "nomination")
+const entries = themes.flatMap((t) => t.films);
+
+// Unique films across all themes, by tmdbId
+const uniqueMap = new Map<number, Film>();
+for (const e of entries) if (!uniqueMap.has(e.film.tmdbId)) uniqueMap.set(e.film.tmdbId, e.film);
+const films = [...uniqueMap.values()];
+const totalUnique = films.length;
+
+function topOf(counts: Map<string, number>): [string, number] {
+  return [...counts.entries()].sort((a, b) => b[1] - a[1])[0] ?? ['—', 0];
+}
+
+// Most-nominated director (by nomination count)
+const dirCounts = new Map<string, number>();
+for (const e of entries) {
+  if (e.film.director) dirCounts.set(e.film.director, (dirCounts.get(e.film.director) ?? 0) + 1);
+}
+const [topDirector, topDirectorCount] = topOf(dirCounts);
+
+// Most-nominated star (any top-5 billed appearance)
+const castCounts = new Map<string, number>();
+for (const e of entries) {
+  for (const c of e.film.cast ?? []) castCounts.set(c, (castCounts.get(c) ?? 0) + 1);
+}
+const [topStar] = topOf(castCounts);
+
+// --- Genre: share of unique films (films span multiple genres) ---
+const genreCounts = new Map<string, number>();
+for (const f of films)
+  for (const g of f.genres ?? []) genreCounts.set(g, (genreCounts.get(g) ?? 0) + 1);
+const GENRE_SHORT: Record<string, string> = { 'Science Fiction': 'Sci-Fi' };
+const genreRows = [...genreCounts.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 9)
+  .map(([name, count]) => ({ label: GENRE_SHORT[name] ?? name, value: count }));
+
+// --- Decade: unique films by release decade, continuous axis ---
+const decadeCounts = new Map<number, number>();
+for (const f of films) {
+  const d = Math.floor(f.year / 10) * 10;
+  decadeCounts.set(d, (decadeCounts.get(d) ?? 0) + 1);
+}
+const decadeKeys = [...decadeCounts.keys()];
+const decadeRows: { label: string; value: number }[] = [];
+for (let d = Math.min(...decadeKeys); d <= Math.max(...decadeKeys); d += 10) {
+  decadeRows.push({ label: `${d}s`, value: decadeCounts.get(d) ?? 0 });
+}
+
+// --- Rating: unique films by TMDb average ---
+const RATING_BUCKETS: { label: string; test: (r: number) => boolean }[] = [
+  { label: '< 6.0', test: (r) => r < 6 },
+  { label: '6.0–6.4', test: (r) => r >= 6 && r < 6.5 },
+  { label: '6.5–6.9', test: (r) => r >= 6.5 && r < 7 },
+  { label: '7.0–7.4', test: (r) => r >= 7 && r < 7.5 },
+  { label: '7.5–7.9', test: (r) => r >= 7.5 && r < 8 },
+  { label: '8.0–8.4', test: (r) => r >= 8 && r < 8.5 },
+  { label: '8.5 +', test: (r) => r >= 8.5 },
+];
+const rated = films.filter((f): f is Film & { rating: number } => typeof f.rating === 'number');
+const ratingRows = RATING_BUCKETS.map((b) => ({
+  label: b.label,
+  value: rated.filter((f) => b.test(f.rating)).length,
+}));
+
+type Row = { label: string; value: number };
+const chartMax = (rows: Row[]) => Math.max(...rows.map((r) => r.value), 1);
+
+const charts = [
+  {
+    title: 'By Genre',
+    rows: genreRows,
+    denom: totalUnique,
+    max: chartMax(genreRows),
+    note: `Share of ${totalUnique} films — many span more than one genre`,
+  },
+  {
+    title: 'By Decade',
+    rows: decadeRows,
+    denom: totalUnique,
+    max: chartMax(decadeRows),
+    note: `Share of ${totalUnique} films by release decade`,
+  },
+  {
+    title: 'By Rating',
+    rows: ratingRows,
+    denom: rated.length,
+    max: chartMax(ratingRows),
+    note: 'Share of films by TMDb score, out of 10',
+  },
+];
+
+const stats = [
+  { value: String(totalUnique), caption: 'Unique Films Nominated' },
+  { value: topDirector, caption: `Most-Nominated Director — ${topDirectorCount} Films` },
+  { value: topStar, caption: 'Most-Nominated Star' },
+];
+---
+
+<section aria-label="Bath Film Club by the numbers">
+  <!-- Press-quote pull stats -->
+  <div class="max-w-site mx-auto px-6 pb-16 text-center">
+    <p class="section-label text-2xl justify-center mb-12">Some stats so far</p>
+    <div class="space-y-14">
+      {
+        stats.map((s) => (
+          <div>
+            <p class="font-heading font-black uppercase leading-none text-5xl md:text-7xl">
+              {s.value}
+            </p>
+            <div class="mx-auto my-4 h-1 w-16 bg-bfc-brand-accent" aria-hidden="true" />
+            <p class="font-heading uppercase tracking-widest text-sm text-bfc-brand-fg/60">
+              {s.caption}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- Distribution bar charts -->
+  <div class="bg-bfc-brand-alt/10 py-16">
+    <div class="max-w-site mx-auto px-6 space-y-14">
+      {
+        charts.map((chart) => (
+          <div>
+            <p class="section-label justify-center text-xl mb-5">{chart.title}</p>
+            <div class="space-y-2.5">
+              {chart.rows.map((row) => {
+                const pct = (row.value / chart.denom) * 100; // label: true share of the whole
+                const barWidth = (row.value / (chart.max * 1.1)) * 100; // scaled to tallest bar, 10% margin
+                return (
+                  <div class="grid grid-cols-[5rem_1fr_2.75rem] md:grid-cols-[7rem_1fr_3rem] items-center gap-3 md:gap-4">
+                    <span class="text-right font-heading uppercase tracking-wide text-sm text-bfc-brand-fg/70">
+                      {row.label}
+                    </span>
+                    <span class="block h-3 w-full bg-bfc-brand-fg/10" aria-hidden="true">
+                      <span
+                        class:list={[
+                          'block h-full',
+                          row.value === chart.max ? 'bg-bfc-brand-accent' : 'bg-bfc-brand-fg',
+                        ]}
+                        style={`width: ${barWidth}%`}
+                      />
+                    </span>
+                    <span class="text-right font-heading font-semibold tabular-nums text-sm text-bfc-brand-fg">
+                      {Math.round(pct)}%
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+            <p class="font-body text-xs text-bfc-brand-fg/40 mt-3 text-center">{chart.note}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

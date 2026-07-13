@@ -1,4 +1,6 @@
 ---
+// import { FilmStrip } from './FilmStrip';
+
 interface Props {
   bg?: string;
 }
@@ -26,8 +28,23 @@ const { bg = '' } = Astro.props;
       the menu and, if it sounds like something you'd enjoy, join us on Discord and come along to
       the next discussion.
     </p>
-    <div class="flex justify-center gap-3 pt-10 text-amber-400/80 text-2xl" aria-hidden="true">
-      <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+    <div class="pt-10 text-center space-y-3 pb-8">
+      <div class="flex justify-center gap-3 text-amber-400/80 text-2xl" aria-hidden="true">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+      <p class="font-heading text-3xl italic uppercase mb-8 text-bfc-brand-fg">
+        "They had me at hello"
+      </p>
+
+      <!-- <p class="font-heading text-5xl text-bfc-brand-fg">Now this is a film club!</p>
+      <div class="flex justify-center mb-8 gap-3 text-amber-400/80 text-2xl" aria-hidden="true">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div> -->
+      <div class="flex justify-center gap-3 text-amber-400/80 text-2xl" aria-hidden="true">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+      <p class="font-heading text-3xl italic uppercase mb-8 text-bfc-brand-fg">"I'll be back"</p>
     </div>
+    <!-- <FilmStrip /> -->
   </div>
 </section>
