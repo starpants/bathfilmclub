@@ -12,6 +12,7 @@ const { themes, currentSlug } = Astro.props;
 const path = Astro.url.pathname;
 const isHome = path === '/';
 const isSearch = path === '/search';
+const isStats = path === '/stats';
 const isTheme = path.startsWith('/theme/');
 
 // Square icon buttons — echo the site's square motif (FilmStrip, section labels, delete box)
@@ -47,6 +48,26 @@ const iconBtnInactive = `${iconBtn} hover:border-bfc-brand-fg hover:text-bfc-bra
   ) : themes ? (
     <MenuDrawer themes={themes} variant="nav" {...(currentSlug ? { currentSlug } : {})} client:load />
   ) : null}
+
+  {isStats ? (
+    <span class={iconBtnActive} aria-label="Club statistics" aria-current="page" title="Statistics">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true">
+        <path d="M3 3v14h14"></path>
+        <path d="M7 17v-4"></path>
+        <path d="M11 17v-8"></path>
+        <path d="M15 17v-12"></path>
+      </svg>
+    </span>
+  ) : (
+    <a href="/stats" class={iconBtnInactive} aria-label="Club statistics" title="Statistics">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true">
+        <path d="M3 3v14h14"></path>
+        <path d="M7 17v-4"></path>
+        <path d="M11 17v-8"></path>
+        <path d="M15 17v-12"></path>
+      </svg>
+    </a>
+  )}
 
   {isSearch ? (
     <span class={iconBtnActive} aria-label="Search themes" aria-current="page" title="Search themes">

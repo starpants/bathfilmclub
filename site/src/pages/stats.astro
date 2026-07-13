@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import LogoLandscape from '../components/LogoLandscape.astro';
+import ClubStats from '../components/ClubStats.astro';
+import { getAllThemes } from '../utils/data';
+
+const themes = await getAllThemes();
+---
+
+<Layout
+  title="Stats"
+  description="Bath Film Club by the numbers — nominated films, most-nominated directors and stars, and how the shortlist breaks down by genre, decade and rating."
+>
+  <Header themes={themes} />
+  <div class="max-w-site mx-auto px-6 pt-12 pb-4">
+    <LogoLandscape class="w-full max-w-md mx-auto fill-bfc-brand-fg" />
+  </div>
+  <main id="main-content" class="pt-4 pb-24">
+    <div class="mb-6">
+      <h1 class="text-5xl text-center font-light">By the Numbers</h1>
+    </div>
+    <ClubStats themes={themes} />
+  </main>
+</Layout>

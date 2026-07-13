@@ -5,7 +5,6 @@ import Hero from '../components/Hero.astro';
 import Introduction from '../components/Introduction.astro';
 import NextEvent from '../components/NextEvent.astro';
 import FilmPyramid from '../components/FilmPyramid.astro';
-// import ClubStats from '../components/ClubStats.astro';
 import { getCurrentCycle, getAllThemes } from '../utils/data';
 
 const cycle = await getCurrentCycle();
@@ -18,7 +17,6 @@ const prevTheme = allThemes.find((t) => t.slug !== cycle?.slug) ?? null;
   <main id="main-content">
     <Hero />
     <Introduction />
-    <!-- <ClubStats themes={allThemes} /> -->
     <NextEvent cycle={cycle} bg="bg-bfc-brand-alt/10" />
     {cycle && <FilmPyramid films={cycle.films} />}
     {
