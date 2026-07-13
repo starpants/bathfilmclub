@@ -4,7 +4,7 @@ import type { Theme } from '@bathfilmclub/types';
 interface Props {
   themes: Theme[];
   currentSlug?: string;
-  dimmed?: boolean;
+  variant?: 'nav' | 'secondary';
 }
 
 function shortMonth(month: string): string {
@@ -14,7 +14,7 @@ function shortMonth(month: string): string {
   });
 }
 
-export function MenuDrawer({ themes, currentSlug, dimmed }: Props) {
+export function MenuDrawer({ themes, currentSlug, variant = 'nav' }: Props) {
   const byYear = themes.reduce<Record<string, Theme[]>>((acc, t) => {
     const year = t.month.split('-')[0] as string;
     if (!acc[year]) acc[year] = [];
@@ -46,15 +46,37 @@ export function MenuDrawer({ themes, currentSlug, dimmed }: Props) {
 
   return (
     <>
-      {/* Trigger button */}
-      <button
-        onClick={() => setIsOpen(true)}
-        className={`font-heading font-semibold text-sm px-3 py-2 md:text-xl md:px-5 md:py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors${dimmed ? ' opacity-40' : ''}`}
-        aria-label="Browse themes"
-      >
-        <span className="md:hidden">Browse</span>
-        <span className="hidden md:inline">Browse Themes</span>
-      </button>
+      {/* Trigger button — opens the theme list drawer */}
+      {variant === 'secondary' ? (
+        <button
+          onClick={() => setIsOpen(true)}
+          className="font-heading font-semibold text-sm px-3 py-1.5 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:bg-bfc-brand-fg hover:text-bfc-brand-bg hover:border-bfc-brand-fg transition-colors"
+        >
+          All Themes
+        </button>
+      ) : (
+        <button
+          onClick={() => setIsOpen(true)}
+          className="p-3 md:p-4 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors"
+          aria-label="Browse themes"
+          title="Browse themes"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M19 17V5a2 2 0 0 0-2-2H4" />
+            <path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" />
+          </svg>
+        </button>
+      )}
 
       {/* Overlay */}
       <div

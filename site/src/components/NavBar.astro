@@ -14,37 +14,54 @@ const isHome = path === '/';
 const isSearch = path === '/search';
 const isTheme = path.startsWith('/theme/');
 
-const btnActive = 'py-2 px-3 md:py-4 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 cursor-default opacity-40';
-const btnInactive = 'py-2 px-3 md:py-4 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors';
-const textBtnActive = 'font-heading font-semibold text-sm px-3 py-2 md:text-xl md:px-5 md:py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 cursor-default opacity-40';
-const textBtnInactive = 'font-heading font-semibold text-sm px-3 py-2 md:text-xl md:px-5 md:py-3 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors';
+// Square icon buttons — echo the site's square motif (FilmStrip, section labels, delete box)
+const iconBtn = 'p-3 md:p-4 border border-bfc-brand-fg/40 text-bfc-brand-fg/80';
+const iconBtnActive = `${iconBtn} cursor-default opacity-40`;
+const iconBtnInactive = `${iconBtn} hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors`;
 ---
 
 <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4">
   {isHome ? (
-    <span class={btnActive} aria-label="Home" aria-current="page">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+    <span class={iconBtnActive} aria-label="Home" aria-current="page" title="Home">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true">
         <path d="M2 9L10 2l8 7"></path>
         <path d="M4 8v9h4v-5h4v5h4V8"></path>
       </svg>
     </span>
   ) : (
-    <a href="/" class={btnInactive} aria-label="Home">
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter">
+    <a href="/" class={iconBtnInactive} aria-label="Home" title="Home">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true">
         <path d="M2 9L10 2l8 7"></path>
         <path d="M4 8v9h4v-5h4v5h4V8"></path>
       </svg>
     </a>
   )}
 
-  {themes && (
-    <MenuDrawer themes={themes} dimmed={isTheme} {...(currentSlug ? { currentSlug } : {})} client:load />
-  )}
+  {isTheme ? (
+    <span class={iconBtnActive} aria-label="Browse themes" aria-disabled="true" title="Browse themes">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M19 17V5a2 2 0 0 0-2-2H4"></path>
+        <path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"></path>
+      </svg>
+    </span>
+  ) : themes ? (
+    <MenuDrawer themes={themes} variant="nav" {...(currentSlug ? { currentSlug } : {})} client:load />
+  ) : null}
 
   {isSearch ? (
-    <span class={textBtnActive} aria-current="page"><span class="md:hidden">Search</span><span class="hidden md:inline">Search Themes</span></span>
+    <span class={iconBtnActive} aria-label="Search themes" aria-current="page" title="Search themes">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true">
+        <circle cx="8" cy="8" r="5"></circle>
+        <path d="M12 12l5 5"></path>
+      </svg>
+    </span>
   ) : (
-    <a href="/search" class={textBtnInactive}><span class="md:hidden">Search</span><span class="hidden md:inline">Search Themes</span></a>
+    <a href="/search" class={iconBtnInactive} aria-label="Search themes" title="Search themes">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true">
+        <circle cx="8" cy="8" r="5"></circle>
+        <path d="M12 12l5 5"></path>
+      </svg>
+    </a>
   )}
 
   <DiscordButton />
