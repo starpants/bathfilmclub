@@ -228,7 +228,7 @@ export function SearchPage({ themes }: Props) {
           </div>
         ) : (
           <div className="space-y-2">
-            <p className="section-label text-xl text-center w-full block my-16">
+            <p className="section-label text-xl text-center my-16">
               {activeResults.length} result{activeResults.length !== 1 ? 's' : ''}
             </p>
             {activeResults.length === 0 ? (

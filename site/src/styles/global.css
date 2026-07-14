@@ -58,18 +58,13 @@
 
 @layer components {
   .pyramid-subtitle {
-    @apply flex items-center gap-2 text-xs font-display uppercase tracking-widest text-bfc-brand-fg/60;
+    @apply text-xs font-display uppercase tracking-widest text-bfc-brand-fg/60;
   }
 
-  /* Square motif from logo — used as section markers */
+  /* Section marker headings */
   .section-label {
-    @apply flex items-center gap-2 text-xs font-display uppercase tracking-widest text-bfc-brand-fg/60;
+    @apply text-xs font-display uppercase tracking-widest text-bfc-brand-fg/60;
   }
-
-  /* .section-label::before {
-    content: '';
-    @apply block w-2 h-2 bg-bfc-brand-accent flex-shrink-0;
-  } */
 
   /* Consistent interactive element style: outline box on hover, filled on active */
   .interactive-item {

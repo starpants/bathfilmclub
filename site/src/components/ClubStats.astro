@@ -108,18 +108,18 @@ const stats = [
 <section aria-label="Bath Film Club by the numbers">
   <!-- Press-quote pull stats -->
   <div class="max-w-site mx-auto px-6 pb-16 text-center">
-    <p class="section-label text-2xl justify-center mb-12">Some stats so far</p>
+    <!-- <p class="section-label text-2xl text-center mb-12">Some stats so far</p> -->
     <div class="space-y-14">
       {
         stats.map((s) => (
           <div>
-            <p class="font-heading font-black uppercase leading-none text-5xl md:text-7xl">
-              {s.value}
-            </p>
-            <div class="mx-auto my-4 h-1 w-16 bg-bfc-brand-accent" aria-hidden="true" />
             <p class="font-heading uppercase tracking-widest text-sm text-bfc-brand-fg/60">
               {s.caption}
             </p>
+            <p class="font-heading font-black uppercase leading-none mb-8 text-5xl md:text-7xl">
+              {s.value}
+            </p>
+            <div class="mx-auto my-4 h-1 w-16 bg-bfc-brand-accent" aria-hidden="true" />
           </div>
         ))
       }
@@ -132,7 +132,7 @@ const stats = [
       {
         charts.map((chart) => (
           <div>
-            <p class="section-label justify-center text-xl mb-5">{chart.title}</p>
+            <p class="section-label text-center text-xl mb-5">{chart.title}</p>
             <div class="space-y-2.5">
               {chart.rows.map((row) => {
                 const pct = (row.value / chart.denom) * 100; // label: true share of the whole
@@ -147,6 +147,7 @@ const stats = [
                         class:list={[
                           'block h-full',
                           row.value === chart.max ? 'bg-bfc-brand-accent' : 'bg-bfc-brand-fg',
+                          // row.value === chart.max ? 'bg-bfc-brand-accent' : 'bg-bfc-brand-fg',
                         ]}
                         style={`width: ${barWidth}%`}
                       />

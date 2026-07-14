@@ -41,7 +41,7 @@ function FilmRow({
     <div className={`py-10 ${bgClass}`}>
       <div className="max-w-[1664px] mx-auto px-6 space-y-3">
         <h4
-          className={`pyramid-subtitle text-2xl justify-center text-center p-2 mb-12 ${films.length === 0 ? 'text-bfc-brand-fg/40' : accentClass}`}
+          className={`pyramid-subtitle text-2xl text-center p-2 mb-12 ${films.length === 0 ? 'text-bfc-brand-fg/40' : accentClass}`}
         >
           {label}
           {showCount ? ` (${films.length})` : ''}
