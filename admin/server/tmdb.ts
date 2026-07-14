@@ -51,6 +51,16 @@ export async function getFilmDetails(tmdbId: number): Promise<Film> {
     .sort((a, b) => a.order - b.order)
     .map((c) => c.name)
     .slice(0, 5);
+  // Exact job match: 'Compositor'/'Compositing *' are VFX roles, not music.
+  const composers = [
+    ...new Set(credits.crew.filter((c) => c.job === 'Original Music Composer').map((c) => c.name)),
+  ];
+  // 'Story'/'Author' excluded: on adaptations they credit the source novelist, not a screenwriter.
+  const writers = [
+    ...new Set(
+      credits.crew.filter((c) => c.job === 'Screenplay' || c.job === 'Writer').map((c) => c.name)
+    ),
+  ];
   const trailer = videos.results.find((v) => v.type === 'Trailer' && v.site === 'YouTube');
 
   return {
@@ -61,8 +71,10 @@ export async function getFilmDetails(tmdbId: number): Promise<Film> {
     genres: details.genres.map((g) => g.name),
     synopsis: details.overview,
     director,
+    writers: writers.length ? writers : undefined,
     producers,
     cast,
+    composers: composers.length ? composers : undefined,
     posterPath: details.poster_path ?? '',
     backdropPath: details.backdrop_path ?? undefined,
     rating: Math.round(details.vote_average * 10) / 10,

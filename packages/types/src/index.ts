@@ -6,8 +6,11 @@ export interface Film {
   genres: string[];
   synopsis: string;
   director: string;
+  writers?: string[];    // TMDb "Screenplay" + "Writer" jobs — excludes "Story"/"Author"
   producers: string[];   // up to 3
   cast: string[];        // top 5 billed
+  composers?: string[];  // TMDb "Original Music Composer"; absent when the film has no original score
+
   posterPath: string;    // TMDb path e.g. "/abc123.jpg" — prefix with TMDb image base URL
   backdropPath?: string;
   rating?: number;       // TMDb vote_average, one decimal place

@@ -2,11 +2,17 @@
 // import NavBar from './NavBar.astro';
 // import { getAllThemes } from '../utils/data';
 
+interface Props {
+  /** Explicit `undefined` allowed: Layout always forwards its own optional prop. */
+  bg?: string | undefined;
+}
+
+const { bg = 'bg-bfc-brand-alt/10' } = Astro.props;
 const year = new Date().getFullYear();
 // const allThemes = await getAllThemes();
 ---
 
-<footer class="py-8 bg-bfc-brand-alt/10">
+<footer class:list={['py-8', bg]}>
   <div class="max-w-site mx-auto px-6">
     <!-- <NavBar themes={allThemes} /> -->
 

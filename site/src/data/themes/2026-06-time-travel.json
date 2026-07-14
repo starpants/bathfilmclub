@@ -20,6 +20,9 @@
         ],
         "synopsis": "A girl walks home alone at night and a man follows her with insidious intentions, but when he gets to her apartment, she turns the tables in the most surprising way…with her fangs.",
         "director": "Ana Lily Amirpour",
+        "writers": [
+          "Ana Lily Amirpour"
+        ],
         "producers": [],
         "cast": [
           "Nazanin Boniadi",
@@ -43,6 +46,10 @@
         ],
         "synopsis": "Newspaper magnate Charles Foster Kane is taken from his mother as a boy and made the ward of a rich industrialist. As a result, every well-meaning, tyrannical or self-destructive move he makes for the rest of his life appears in some way to be a reaction to that deeply wounding event.",
         "director": "Orson Welles",
+        "writers": [
+          "Orson Welles",
+          "Herman J. Mankiewicz"
+        ],
         "producers": [
           "Orson Welles"
         ],
@@ -52,6 +59,9 @@
           "Dorothy Comingore",
           "Ray Collins",
           "George Coulouris"
+        ],
+        "composers": [
+          "Bernard Herrmann"
         ],
         "posterPath": "/sav0jxhqiH0bPr2vZFU0Kjt2nZL.jpg",
         "backdropPath": "/ruF3Lmd4A8MHbnEBE6lxPMbsHGL.jpg",
@@ -72,6 +82,11 @@
         ],
         "synopsis": "After the insane General Jack D. Ripper initiates a nuclear strike on the Soviet Union, a war room full of politicians, generals and a Russian diplomat all frantically try to stop it.",
         "director": "Stanley Kubrick",
+        "writers": [
+          "Terry Southern",
+          "Peter George",
+          "Stanley Kubrick"
+        ],
         "producers": [
           "Stanley Kubrick",
           "Victor Lyndon"
@@ -82,6 +97,9 @@
           "Sterling Hayden",
           "Keenan Wynn",
           "Slim Pickens"
+        ],
+        "composers": [
+          "Laurie Johnson"
         ],
         "posterPath": "/6x7MzQ6BOMlRzam1StcmPO9v61g.jpg",
         "backdropPath": "/7i0L2ee4Iy0aXV6vR5u1ZmblOrx.jpg",
@@ -103,6 +121,10 @@
         ],
         "synopsis": "A group of army personnel and nurses attempt a dangerous and arduous trek across the deserts of North Africa during the second world war. The leader of the team dreams of his ice cold beer when he reaches Alexandria.",
         "director": "J. Lee Thompson",
+        "writers": [
+          "T. J. Morrison",
+          "Christopher Landon"
+        ],
         "producers": [
           "W.A. Whittaker"
         ],
@@ -131,6 +153,15 @@
         ],
         "synopsis": "Unemployed Antonio is elated when he finally finds work hanging posters around war-torn Rome. However on his first day, his bicycle—essential to his work—gets stolen. His job is doomed unless he can find the thief. With the help of his son, Antonio combs the city, becoming desperate for justice.",
         "director": "Vittorio De Sica",
+        "writers": [
+          "Cesare Zavattini",
+          "Adolfo Franci",
+          "Suso Cecchi d'Amico",
+          "Oreste Biancoli",
+          "Gerardo Guerrieri",
+          "Vittorio De Sica",
+          "Gherardo Gherardi"
+        ],
         "producers": [
           "Vittorio De Sica",
           "Giuseppe Amato"
@@ -141,6 +172,9 @@
           "Lianella Carell",
           "Gino Saltamerenda",
           "Vittorio Antonucci"
+        ],
+        "composers": [
+          "Alessandro Cicognini"
         ],
         "posterPath": "/iPdVqIpmR3bRvOQJPrn4pr2KR3q.jpg",
         "backdropPath": "/nd6ItWuWGmTKhHXuxVC8kp86CmQ.jpg",
@@ -162,6 +196,10 @@
         ],
         "synopsis": "A man and a woman meet in the ruins of post-war Poland. With vastly different backgrounds and temperaments, they are fatally mismatched and yet drawn to each other.",
         "director": "Paweł Pawlikowski",
+        "writers": [
+          "Paweł Pawlikowski",
+          "Janusz Głowacki"
+        ],
         "producers": [
           "Ewa Puszczyńska",
           "Tanya Seghatchian"
@@ -193,6 +231,11 @@
         ],
         "synopsis": "Juliet Forrest is convinced that the reported death of her father in a mountain car crash was no accident. Her father was a prominent cheese scientist working on a secret recipe. To prove it was murder, she enlists the services of private eye Rigby Reardon. He finds a slip of paper containing a list of people who are 'The Friends and Enemies of Carlotta'.",
         "director": "Carl Reiner",
+        "writers": [
+          "George Gipe",
+          "Steve Martin",
+          "Carl Reiner"
+        ],
         "producers": [
           "David V. Picker",
           "William E. McEuen"
@@ -203,6 +246,9 @@
           "Alan Ladd",
           "Carl Reiner",
           "Barbara Stanwyck"
+        ],
+        "composers": [
+          "Miklós Rózsa"
         ],
         "posterPath": "/cwYwZBEE73PakUWzbICzxYKlXAz.jpg",
         "backdropPath": "/hhxrMW0WY30ulaCGMu5mVezktHQ.jpg",
@@ -223,6 +269,10 @@
         ],
         "synopsis": "An aspiring dancer moves to New York City and becomes caught up in a whirlwind of flighty fair-weather friends, diminishing fortunes and career setbacks.",
         "director": "Noah Baumbach",
+        "writers": [
+          "Greta Gerwig",
+          "Noah Baumbach"
+        ],
         "producers": [
           "Scott Rudin",
           "Rodrigo Teixeira",
@@ -255,6 +305,9 @@
         ],
         "synopsis": "Ford Brody, a Navy bomb expert, has just reunited with his family in San Francisco when he is forced to go to Japan to help his estranged father, Joe. Soon, both men are swept up in an escalating crisis when an ancient alpha predator arises from the sea to combat malevolent adversaries that threaten the survival of humanity. The creatures leave colossal destruction in their wake, as they make their way toward their final battleground: San Francisco.",
         "director": "Gareth Edwards",
+        "writers": [
+          "Max Borenstein"
+        ],
         "producers": [
           "Jon Jashni",
           "Brian Rogers",
@@ -266,6 +319,9 @@
           "Juliette Binoche",
           "Bryan Cranston",
           "Ken Watanabe"
+        ],
+        "composers": [
+          "Alexandre Desplat"
         ],
         "posterPath": "/tphkjmQq8WebuVwNXelmjLUXuPJ.jpg",
         "backdropPath": "/cHvwgJPaT59H1HiQsvBrGD5I46g.jpg",
@@ -287,6 +343,9 @@
         ],
         "synopsis": "In postwar Japan, Godzilla brings new devastation to an already scorched landscape. With no military intervention or government help in sight, the survivors must join together in the face of despair and fight back against an unrelenting horror.",
         "director": "Takashi Yamazaki",
+        "writers": [
+          "Takashi Yamazaki"
+        ],
         "producers": [
           "Go Abe",
           "Kazuaki Kishida",
@@ -298,6 +357,10 @@
           "Yuki Yamada",
           "Munetaka Aoki",
           "Hidetaka Yoshioka"
+        ],
+        "composers": [
+          "Naoki Sato",
+          "Akira Ifukube"
         ],
         "posterPath": "/2E2WTX0TJEflAged6kzErwqX1kt.jpg",
         "backdropPath": "/vlmiJOeDMbiyaJCAjFPtlkDcOEv.jpg",
@@ -318,6 +381,10 @@
         ],
         "synopsis": "The story of journalist Edward R. Murrow's stand against Senator Joseph McCarthy's anti-communist witch-hunts in the early 1950s.",
         "director": "George Clooney",
+        "writers": [
+          "Grant Heslov",
+          "George Clooney"
+        ],
         "producers": [
           "Grant Heslov"
         ],
@@ -327,6 +394,9 @@
           "George Clooney",
           "Jeff Daniels",
           "Robert Downey Jr."
+        ],
+        "composers": [
+          "Jim Papoulis"
         ],
         "posterPath": "/w4QSEno2xxHqMtSr3mPUhJpO3F2.jpg",
         "backdropPath": "/t35dVtLN4H12XXtipJfIDEy2h7Y.jpg",
@@ -348,6 +418,9 @@
         ],
         "synopsis": "Loosely based on the Charles Dickens' classic novel, \"Great Expectations\" is a sensual tale of a young man's unforgettable passage into manhood, and the three individuals who will undeniably change his life forever. Through the surprising interactions of these vivid characters, \"Great Expectations\" takes a unique and contemporary look at life's great coincidences.",
         "director": "Alfonso Cuarón",
+        "writers": [
+          "Mitch Glazer"
+        ],
         "producers": [
           "Art Linson"
         ],
@@ -357,6 +430,9 @@
           "Hank Azaria",
           "Chris Cooper",
           "Anne Bancroft"
+        ],
+        "composers": [
+          "Patrick Doyle"
         ],
         "posterPath": "/djLsfl3lm7BZKWsKfVZ2wM1ZMrP.jpg",
         "backdropPath": "/laXkVCU5DE8Dib0QVHUUUsE7FM6.jpg",
@@ -377,6 +453,10 @@
         ],
         "synopsis": "In the 19th century, a drunken applejack salesman must go from zero to hero and become North America's greatest fur trapper by defeating hundreds of beavers.",
         "director": "Mike Cheslik",
+        "writers": [
+          "Ryland Brickson Cole Tews",
+          "Mike Cheslik"
+        ],
         "producers": [
           "Kurt Ravenwood",
           "Matt Sabljak",
@@ -388,6 +468,9 @@
           "Doug Mancheski",
           "Wes Tank",
           "Luis Rico"
+        ],
+        "composers": [
+          "Chris Ryan"
         ],
         "posterPath": "/jBg64OA2QEWL0zaOFMoAGipeGjJ.jpg",
         "backdropPath": "/krN2V7leYVBp6dOLzP11sM44eNb.jpg",
@@ -408,6 +491,9 @@
         ],
         "synopsis": "At a weekend gathering, a man tells a woman that they had spent time there together a year prior. But, the woman has no recollection whatsoever and is convinced that he is simply fabricating the encounter. The more he speaks about their activities the previous year however, the more compelling he becomes. The question remains however – did they meet previously or not?",
         "director": "Alain Resnais",
+        "writers": [
+          "Alain Robbe-Grillet"
+        ],
         "producers": [
           "Raymond Froment",
           "Pierre Courau",
@@ -419,6 +505,9 @@
           "Sacha Pitoëff",
           "Françoise Bertin",
           "Luce Garcia-Ville"
+        ],
+        "composers": [
+          "Francis Seyrig"
         ],
         "posterPath": "/syIJCqiSkGRJTlyaBtyI5jqPtE7.jpg",
         "backdropPath": "/h1ov8VcVCiZsnWRu4EjZ74R33GP.jpg",
@@ -439,6 +528,10 @@
         ],
         "synopsis": "In a futuristic city sharply divided between the rich and the poor, the son of the city's mastermind meets a prophet who predicts the coming of a savior to mediate their differences.",
         "director": "Fritz Lang",
+        "writers": [
+          "Fritz Lang",
+          "Thea von Harbou"
+        ],
         "producers": [
           "Erich Pommer"
         ],
@@ -448,6 +541,10 @@
           "Alfred Abel",
           "Rudolf Klein-Rogge",
           "Theodor Loos"
+        ],
+        "composers": [
+          "Gottfried Huppertz",
+          "Otto Harzner"
         ],
         "posterPath": "/kr9wXRN23zLuWJIelahas1mtnYj.jpg",
         "backdropPath": "/eeMoFKxjjiCi6iep2GEZtSAMYIr.jpg",
@@ -468,6 +565,9 @@
         ],
         "synopsis": "An aging, booze-addled father takes a trip from Montana to Nebraska with his estranged son in order to claim what he believes to be a million-dollar sweepstakes prize.",
         "director": "Alexander Payne",
+        "writers": [
+          "Bob Nelson"
+        ],
         "producers": [
           "Albert Berger",
           "Ron Yerxa"
@@ -478,6 +578,9 @@
           "June Squibb",
           "Bob Odenkirk",
           "Stacy Keach"
+        ],
+        "composers": [
+          "Mark Orton"
         ],
         "posterPath": "/o1t2Mw18EEBnl8v4Nby3PFjxnM1.jpg",
         "backdropPath": "/yePsFcldyZ6VnxaBr8ZbVEaOt4W.jpg",
@@ -499,6 +602,9 @@
         ],
         "synopsis": "A mathematical genius discovers a link between numbers and reality, and thus believes he can predict the future.",
         "director": "Darren Aronofsky",
+        "writers": [
+          "Darren Aronofsky"
+        ],
         "producers": [
           "Eric Watson"
         ],
@@ -508,6 +614,9 @@
           "Ben Shenkman",
           "Pamela Hart",
           "Stephen Pearlman"
+        ],
+        "composers": [
+          "Clint Mansell"
         ],
         "posterPath": "/fJA22FjlAW8rzrOw9Mwanl6oTc9.jpg",
         "backdropPath": "/pVmCanXNPYqE74cJoL0U6C9ONf5.jpg",
@@ -528,6 +637,10 @@
         ],
         "synopsis": "The life of boxer Jake LaMotta, whose violence and temper that led him to the top in the ring destroyed his life outside of it.",
         "director": "Martin Scorsese",
+        "writers": [
+          "Paul Schrader",
+          "Mardik Martin"
+        ],
         "producers": [
           "Irwin Winkler",
           "Robert Chartoff"
@@ -557,6 +670,9 @@
         ],
         "synopsis": "In 1970s Mexico City, two domestic workers help a mother of four while her husband is away for an extended period of time.",
         "director": "Alfonso Cuarón",
+        "writers": [
+          "Alfonso Cuarón"
+        ],
         "producers": [
           "Alfonso Cuarón",
           "Gabriela Rodríguez",
@@ -588,6 +704,11 @@
         ],
         "synopsis": "A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food.",
         "director": "Akira Kurosawa",
+        "writers": [
+          "Shinobu Hashimoto",
+          "Hideo Oguni",
+          "Akira Kurosawa"
+        ],
         "producers": [
           "Sōjirō Motoki"
         ],
@@ -597,6 +718,9 @@
           "Yoshio Inaba",
           "Seiji Miyaguchi",
           "Minoru Chiaki"
+        ],
+        "composers": [
+          "Fumio Hayasaka"
         ],
         "posterPath": "/lOMGc8bnSwQhS4XyE1S99uH8NXf.jpg",
         "backdropPath": "/qvZ91FwMq6O47VViAr8vZNQz3WI.jpg",
@@ -627,6 +751,11 @@
           "Mickey Rourke",
           "Rutger Hauer"
         ],
+        "composers": [
+          "John Debney",
+          "Graeme Revell",
+          "Robert Rodriguez"
+        ],
         "posterPath": "/i66G50wATMmPrvpP95f0XP6ZdVS.jpg",
         "backdropPath": "/t9kQnqiaxQ8TLB25rTzDKLd0fdM.jpg",
         "rating": 7.5,
@@ -646,6 +775,9 @@
         ],
         "synopsis": "A married farmer falls under the spell of a slatternly woman from the city, who tries to convince him to drown his wife.",
         "director": "F. W. Murnau",
+        "writers": [
+          "Carl Mayer"
+        ],
         "producers": [
           "William Fox"
         ],
@@ -655,6 +787,9 @@
           "Margaret Livingston",
           "Bodil Rosing",
           "J. Farrell MacDonald"
+        ],
+        "composers": [
+          "Hugo Riesenfeld"
         ],
         "posterPath": "/5V9jDm4u2QemGHbqjUyP5HmFmzf.jpg",
         "backdropPath": "/hKrrCigPFmhv1bg5IJl9nzjEaN4.jpg",
@@ -676,6 +811,10 @@
         ],
         "synopsis": "Bud Baxter is a minor clerk in a huge New York insurance company, until he discovers a quick way to climb the corporate ladder. He lends out his apartment to the executives as a place to take their mistresses. Although he often has to deal with the aftermath of their visits, one night he's left with a major problem to solve.",
         "director": "Billy Wilder",
+        "writers": [
+          "Billy Wilder",
+          "I. A. L. Diamond"
+        ],
         "producers": [
           "Billy Wilder"
         ],
@@ -685,6 +824,9 @@
           "Fred MacMurray",
           "Ray Walston",
           "Jack Kruschen"
+        ],
+        "composers": [
+          "Adolph Deutsch"
         ],
         "posterPath": "/hhSRt1KKfRT0yEhEtRW3qp31JFU.jpg",
         "backdropPath": "/2L8U8rUyWeFTb6n1egTNeJsEsvj.jpg",
@@ -706,6 +848,9 @@
         ],
         "synopsis": "Hollywood, 1927: As silent movie star George Valentin wonders if the arrival of talking pictures will cause him to fade into oblivion, he sparks with Peppy Miller, a young dancer set for a big break.",
         "director": "Michel Hazanavicius",
+        "writers": [
+          "Michel Hazanavicius"
+        ],
         "producers": [
           "Thomas Langmann"
         ],
@@ -715,6 +860,9 @@
           "John Goodman",
           "James Cromwell",
           "Penelope Ann Miller"
+        ],
+        "composers": [
+          "Ludovic Bource"
         ],
         "posterPath": "/xYMYV8lMIeQMymuNPBvq3hOnqXw.jpg",
         "backdropPath": "/bYimqNnizPUCnL5HOdoCW02IGmH.jpg",
@@ -735,6 +883,11 @@
         ],
         "synopsis": "A Victorian surgeon rescues a heavily disfigured man being mistreated by his \"owner\" as a side-show freak. Behind his monstrous façade, there is revealed a person of great intelligence and sensitivity. Based on the true story of Joseph Merrick (called John Merrick in the film), a severely deformed man in 19th century London.",
         "director": "David Lynch",
+        "writers": [
+          "David Lynch",
+          "Christopher De Vore",
+          "Eric Bergren"
+        ],
         "producers": [
           "Jonathan Sanger",
           "Mel Brooks"
@@ -745,6 +898,9 @@
           "Anne Bancroft",
           "John Gielgud",
           "Wendy Hiller"
+        ],
+        "composers": [
+          "John Morris"
         ],
         "posterPath": "/u0wpPYjuSt8DIe1Y3Vapnh8jcKE.jpg",
         "backdropPath": "/6huSptAsqYg3wbsi1jbMognSgmp.jpg",
@@ -765,6 +921,9 @@
         ],
         "synopsis": "Dictator Adenoid Hynkel tries to expand his empire while a poor Jewish barber tries to avoid persecution from Hynkel's regime.",
         "director": "Charlie Chaplin",
+        "writers": [
+          "Charlie Chaplin"
+        ],
         "producers": [
           "Charlie Chaplin"
         ],
@@ -774,6 +933,10 @@
           "Jack Oakie",
           "Reginald Gardiner",
           "Henry Daniell"
+        ],
+        "composers": [
+          "Meredith Willson",
+          "Charlie Chaplin"
         ],
         "posterPath": "/nhMXB8GTdswYMCL9nepDZymJCOr.jpg",
         "backdropPath": "/c8Pi8F1FzpNebtgXcSjC9nWCdSW.jpg",
@@ -795,6 +958,10 @@
         ],
         "synopsis": "Two lighthouse keepers try to maintain their sanity while living on a remote and mysterious New England island in the 1890s.",
         "director": "Robert Eggers",
+        "writers": [
+          "Max Eggers",
+          "Robert Eggers"
+        ],
         "producers": [
           "Youree Henley",
           "Jay Van Hoy",
@@ -806,6 +973,9 @@
           "Valeriia Karaman",
           "Logan Hawkes",
           "Kyla Nicolle"
+        ],
+        "composers": [
+          "Mark Korven"
         ],
         "posterPath": "/f1tIYarTbkBdIT1aW0gzelDwknv.jpg",
         "backdropPath": "/sYLzRuEcwSz0L1Z92wQNrETHU9O.jpg",
@@ -826,6 +996,10 @@
         ],
         "synopsis": "A tale of murder, crime and punishment set in the summer of 1949. Ed Crane, a barber in a small California town, is dissatisfied with his life, but his wife Doris' infidelity and a mysterious opportunity presents him with a chance to change it.",
         "director": "Joel Coen",
+        "writers": [
+          "Joel Coen",
+          "Ethan Coen"
+        ],
         "producers": [
           "Ethan Coen",
           "Joel Coen"
@@ -836,6 +1010,9 @@
           "Michael Badalucco",
           "James Gandolfini",
           "Katherine Borowitz"
+        ],
+        "composers": [
+          "Carter Burwell"
         ],
         "posterPath": "/lrCgt8NNMyFsfmXyXiSSCRXNH4u.jpg",
         "backdropPath": "/xwjVHxKKk2hb6CJX46U4Cv0Zq0a.jpg",
@@ -857,6 +1034,10 @@
         ],
         "synopsis": "In Depression-era West Virginia, a serial-killing preacher hunts two young children who know the whereabouts of a stash of money.",
         "director": "Charles Laughton",
+        "writers": [
+          "James Agee",
+          "Charles Laughton"
+        ],
         "producers": [
           "Paul Gregory"
         ],
@@ -866,6 +1047,9 @@
           "Lillian Gish",
           "Billy Chapin",
           "Sally Jane Bruce"
+        ],
+        "composers": [
+          "Walter Schumann"
         ],
         "posterPath": "/rBka0nFWiHxabHRLr0KfIA8Yiaq.jpg",
         "backdropPath": "/7cVEnb4Pth3STa7YfVOk9RtzDLB.jpg",
@@ -885,6 +1069,9 @@
         ],
         "synopsis": "Scout Finch, 6, and her older brother Jem live in sleepy Maycomb, Alabama, spending much of their time with their friend Dill and spying on their reclusive and mysterious neighbor, Boo Radley. When Atticus, their widowed father and a respected lawyer, defends a black man named Tom Robinson against fabricated rape charges, the trial and tangent events expose the children to evils of racism and stereotyping.",
         "director": "Robert Mulligan",
+        "writers": [
+          "Horton Foote"
+        ],
         "producers": [
           "Alan J. Pakula",
           "Harper Lee",
@@ -896,6 +1083,9 @@
           "Phillip Alford",
           "John Megna",
           "Frank Overton"
+        ],
+        "composers": [
+          "Elmer Bernstein"
         ],
         "posterPath": "/gZycFUMLx2110dzK3nBNai7gfpM.jpg",
         "backdropPath": "/zP6pqpSRRiOCjjC5oWKZKkHqoSB.jpg",
@@ -915,6 +1105,9 @@
         ],
         "synopsis": "A naive young man witnesses an escalation of violence in his small hometown following the arrival of a mysterious circus attraction.",
         "director": "Béla Tarr",
+        "writers": [
+          "László Krasznahorkai"
+        ],
         "producers": [
           "Miklós Szita",
           "Franz Goëss",
@@ -947,6 +1140,12 @@
         ],
         "synopsis": "Two angels, Damiel and Cassiel, glide through the streets of Berlin, observing the bustling population, providing invisible rays of hope to the distressed but never interacting with them. When Damiel falls in love with lonely trapeze artist Marion, the angel longs to experience life in the physical world, and finds — with some words of wisdom from actor Peter Falk — that it might be possible for him to take human form.",
         "director": "Wim Wenders",
+        "writers": [
+          "Peter Handke",
+          "Richard Reitinger",
+          "Wim Wenders",
+          "Bernard Eisenschitz"
+        ],
         "producers": [
           "Anatole Dauman",
           "Wim Wenders"
@@ -957,6 +1156,9 @@
           "Otto Sander",
           "Curt Bois",
           "Peter Falk"
+        ],
+        "composers": [
+          "Jürgen Knieper"
         ],
         "posterPath": "/iZQs2vUeCzvS1KfZJ6uYNCGJBBV.jpg",
         "backdropPath": "/7TlGXrB4WQ3wbpOCUQnBXseCuOl.jpg",
@@ -977,6 +1179,9 @@
         ],
         "synopsis": "First-time father Henry Spencer tries to survive his industrial environment, his angry girlfriend, and the unbearable screams of his newly born mutant child.",
         "director": "David Lynch",
+        "writers": [
+          "David Lynch"
+        ],
         "producers": [
           "David Lynch"
         ],
@@ -986,6 +1191,10 @@
           "Allen Joseph",
           "Jeanne Bates",
           "Judith Roberts"
+        ],
+        "composers": [
+          "David Lynch",
+          "Peter Ivers"
         ],
         "posterPath": "/mxveW3mGVc0DzLdOmtkZsgd7c3B.jpg",
         "backdropPath": "/ApB0mF2d5Oqioi3yxjuogiotSLI.jpg",

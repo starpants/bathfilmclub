@@ -5,11 +5,14 @@ import Footer from '../components/Footer.astro';
 interface Props {
   title?: string;
   description?: string;
+  /** Footer background class; omit for the default tint. */
+  footerBg?: string;
 }
 
 const {
   title = 'Bath Film Club',
   description = 'A monthly film discussion group in Bath. Join us on Discord.',
+  footerBg,
 } = Astro.props;
 
 const pageTitle = title === 'Bath Film Club' ? title : `${title} — Bath Film Club`;
@@ -68,6 +71,6 @@ const pageTitle = title === 'Bath Film Club' ? title : `${title} — Bath Film C
     <div class="flex-1">
       <slot />
     </div>
-    <Footer />
+    <Footer bg={footerBg} />
   </body>
 </html>

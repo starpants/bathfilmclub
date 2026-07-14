@@ -22,6 +22,11 @@
         ],
         "synopsis": "Will Freeman is a good-looking, smooth-talking bachelor whose primary goal in life is avoiding any kind of responsibility. But when he invents an imaginary son in order to meet attractive single moms, Will gets a hilarious lesson about life from a bright, but hopelessly geeky 12-year-old named Marcus. Now, as Will struggles to teach Marcus the art of being cool, Marcus teaches Will that you're never too old to grow up.",
         "director": "Chris Weitz",
+        "writers": [
+          "Peter Hedges",
+          "Chris Weitz",
+          "Paul Weitz"
+        ],
         "producers": [
           "Tim Bevan",
           "Robert De Niro",
@@ -33,6 +38,9 @@
           "Toni Collette",
           "Rachel Weisz",
           "Natalia Tena"
+        ],
+        "composers": [
+          "Badly Drawn Boy"
         ],
         "posterPath": "/qoZ1bD0q9EFqcNiEYbEigsRcNCt.jpg",
         "backdropPath": "/xxiPjhXigJ4zPiqqrA77FK10ULo.jpg",
@@ -54,6 +62,9 @@
         ],
         "synopsis": "Taking place after alien crafts land around the world, an expert linguist is recruited by the military to determine whether they come in peace or are a threat.",
         "director": "Denis Villeneuve",
+        "writers": [
+          "Eric Heisserer"
+        ],
         "producers": [
           "Shawn Levy",
           "Karen Lunder",
@@ -65,6 +76,9 @@
           "Forest Whitaker",
           "Michael Stuhlbarg",
           "Mark O'Brien"
+        ],
+        "composers": [
+          "Jóhann Jóhannsson"
         ],
         "posterPath": "/x2FJsf1ElAgr63Y3PNPtJrcmpoe.jpg",
         "backdropPath": "/uKPbFF08QkRMvIAsgCh1soeyPhZ.jpg",
@@ -86,6 +100,10 @@
         ],
         "synopsis": "Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman.",
         "director": "Christopher Nolan",
+        "writers": [
+          "David S. Goyer",
+          "Christopher Nolan"
+        ],
         "producers": [
           "Emma Thomas",
           "Charles Roven",
@@ -97,6 +115,10 @@
           "Liam Neeson",
           "Katie Holmes",
           "Gary Oldman"
+        ],
+        "composers": [
+          "James Newton Howard",
+          "Hans Zimmer"
         ],
         "posterPath": "/sPX89Td70IDDjVr85jdSBb4rWGr.jpg",
         "backdropPath": "/9IIBboV7MCT0bTxzXHmWK1Hq558.jpg",
@@ -117,6 +139,9 @@
         ],
         "synopsis": "Deep in the forests of the Pacific Northwest, a father devoted to raising his six kids with a rigorous physical and intellectual education is forced to leave his paradise and enter the world, beginning a journey that challenges his idea of what it means to be a parent.",
         "director": "Matt Ross",
+        "writers": [
+          "Matt Ross"
+        ],
         "producers": [
           "Lynette Howell Taylor",
           "Monica Levinson",
@@ -128,6 +153,9 @@
           "Samantha Isler",
           "Annalise Basso",
           "Nicholas Hamilton"
+        ],
+        "composers": [
+          "Alex Somers"
         ],
         "posterPath": "/2sFME73GaD8UsUxPUKe60cPdLif.jpg",
         "backdropPath": "/d84M69u6Q202dm6EvhVxbiqrK9f.jpg",
@@ -148,6 +176,9 @@
         ],
         "synopsis": "Diana, a beautiful but shallow and easily distracted model and failed actress, toys with the affections of several men while attempting to gain fame and fortune in Swinging London.",
         "director": "John Schlesinger",
+        "writers": [
+          "Frederic Raphael"
+        ],
         "producers": [
           "Joseph Janni"
         ],
@@ -157,6 +188,9 @@
           "Laurence Harvey",
           "José Luis de Vilallonga",
           "Roland Curram"
+        ],
+        "composers": [
+          "John Dankworth"
         ],
         "posterPath": "/cBd5YO9xG7VmRuC8Q27uR3PV9mn.jpg",
         "backdropPath": "/8b6j2HY159XwnLn6Qh9HxrtYeR0.jpg",
@@ -178,6 +212,10 @@
         ],
         "synopsis": "A soldier returns to his small town and exacts a deadly revenge on the thugs who tormented his disabled brother while he was away.",
         "director": "Shane Meadows",
+        "writers": [
+          "Paddy Considine",
+          "Shane Meadows"
+        ],
         "producers": [
           "Mark Herbert"
         ],
@@ -187,6 +225,9 @@
           "Gary Stretch",
           "Stuart Wolfenden",
           "Neil Bell"
+        ],
+        "composers": [
+          "Aphex Twin"
         ],
         "posterPath": "/sCbXlGHmonE3QEOeM7I2PRkG8y6.jpg",
         "backdropPath": "/gaCrwIiqB2S0w6xDOSa76NUIawU.jpg",
@@ -206,6 +247,10 @@
         ],
         "synopsis": "Thirty years ago, aliens arrive on Earth. Not to conquer or give aid, but to find refuge from their dying planet. Separated from humans in a South African area called District 9, the aliens are managed by Multi-National United, which is unconcerned with the aliens' welfare but will do anything to master their advanced technology. When a company field agent contracts a mysterious virus that begins to alter his DNA, there is only one place he can hide: District 9.",
         "director": "Neill Blomkamp",
+        "writers": [
+          "Neill Blomkamp",
+          "Terri Tatchell"
+        ],
         "producers": [
           "Peter Jackson",
           "Carolynne Cunningham"
@@ -216,6 +261,9 @@
           "Nathalie Boltt",
           "Sylvaine Strike",
           "Elizabeth Mkandawie"
+        ],
+        "composers": [
+          "Clinton Shorter"
         ],
         "posterPath": "/tuGlQkqLxnodDSk6mp5c2wvxUEd.jpg",
         "backdropPath": "/jhM3wgWUrrOkz9r4xwV5cV5RhI4.jpg",
@@ -237,6 +285,10 @@
         ],
         "synopsis": "After a botched bank robbery lands his younger brother in prison, Connie Nikas embarks on a twisted odyssey through New York City's underworld to get his brother Nick out of jail.",
         "director": "Benny Safdie",
+        "writers": [
+          "Ronald Bronstein",
+          "Josh Safdie"
+        ],
         "producers": [
           "Oscar Boyson",
           "Sebastian Bear-McClard",
@@ -248,6 +300,9 @@
           "Buddy Duress",
           "Taliah Webster",
           "Jennifer Jason Leigh"
+        ],
+        "composers": [
+          "Daniel Lopatin"
         ],
         "posterPath": "/yE1c9hj5Hf8a9KplAdRdhADqUro.jpg",
         "backdropPath": "/5AhkjcqqRxBdpYZ0TeOuTCuOUYq.jpg",
@@ -268,6 +323,9 @@
         ],
         "synopsis": "After graduating from Emory University in 1992, top student and athlete Christopher McCandless abandons his possessions, gives his entire $24,000 savings account to charity, and hitchhikes to Alaska to live in the wilderness.",
         "director": "Sean Penn",
+        "writers": [
+          "Sean Penn"
+        ],
         "producers": [
           "Sean Penn",
           "Bill Pohlad",
@@ -279,6 +337,9 @@
           "William Hurt",
           "Jena Malone",
           "Brian H. Dierker"
+        ],
+        "composers": [
+          "Michael Brook"
         ],
         "posterPath": "/jnLnLYP5pGDfri04gxtAqAvkHMw.jpg",
         "backdropPath": "/87tmTU1NSR5EUGTKsF5rhLwZtZc.jpg",
@@ -300,6 +361,9 @@
         ],
         "synopsis": "In the future, an outbreak of canine flu leads the mayor of a Japanese city to banish all dogs to an island used as a garbage dump. The outcasts must soon embark on an epic journey when a 12-year-old boy arrives on the island to find his beloved pet.",
         "director": "Wes Anderson",
+        "writers": [
+          "Wes Anderson"
+        ],
         "producers": [
           "Wes Anderson",
           "Scott Rudin",
@@ -311,6 +375,9 @@
           "Bob Balaban",
           "Edward Norton",
           "Bill Murray"
+        ],
+        "composers": [
+          "Alexandre Desplat"
         ],
         "posterPath": "/c0nUX6Q1ZB0P2t1Jo6EeFSVnOGQ.jpg",
         "backdropPath": "/goMGTcitprGu7YD6VZS4lUUwzRA.jpg",
@@ -331,6 +398,9 @@
         ],
         "synopsis": "Jennifer, a gorgeous, seductive cheerleader takes evil to a whole new level after she's possessed by a sinister demon. Now it's up to her best friend to stop Jennifer's reign of terror before it's too late.",
         "director": "Karyn Kusama",
+        "writers": [
+          "Diablo Cody"
+        ],
         "producers": [
           "Daniel Dubiecki",
           "Mason Novick",
@@ -342,6 +412,10 @@
           "Johnny Simmons",
           "Adam Brody",
           "Sal Cortez"
+        ],
+        "composers": [
+          "Stephen Barton",
+          "Theodore Shapiro"
         ],
         "posterPath": "/wrkjsGcFJxcQqR56kJUYAEKKg2T.jpg",
         "backdropPath": "/rNvn89IcEJPqRKxIgwTAPXl9qjJ.jpg",
@@ -363,6 +437,12 @@
         ],
         "synopsis": "Twenty-two years after the events of Jurassic Park, Isla Nublar now features a fully functioning dinosaur theme park, Jurassic World, as originally envisioned by John Hammond.",
         "director": "Colin Trevorrow",
+        "writers": [
+          "Rick Jaffa",
+          "Amanda Silver",
+          "Derek Connolly",
+          "Colin Trevorrow"
+        ],
         "producers": [
           "Frank Marshall",
           "Patrick Crowley"
@@ -373,6 +453,9 @@
           "Irrfan Khan",
           "Vincent D'Onofrio",
           "Ty Simpkins"
+        ],
+        "composers": [
+          "Michael Giacchino"
         ],
         "posterPath": "/rhr4y79GpxQF9IsfJItRXVaoGs4.jpg",
         "backdropPath": "/s5QfDFqRO6sjgPtKkjxD0WqXQef.jpg",
@@ -394,6 +477,9 @@
         ],
         "synopsis": "In 1989, a misunderstood teenager has a high school crush — who just happens to be a handsome corpse! After a set of playfully horrific circumstances bring him back to life, the two embark on a murderous journey to find love, happiness…and a few missing body parts along the way.",
         "director": "Zelda Williams",
+        "writers": [
+          "Diablo Cody"
+        ],
         "producers": [
           "Diablo Cody",
           "Mason Novick"
@@ -404,6 +490,9 @@
           "Liza Soberano",
           "Henry Eikenberry",
           "Joe Chrest"
+        ],
+        "composers": [
+          "Isabella Summers"
         ],
         "posterPath": "/jAW7ZdIm4HLKB3g15uMOWYNdU8r.jpg",
         "backdropPath": "/tsDoiLwZyAbYewoIUDJKk1SJzTF.jpg",
@@ -425,6 +514,9 @@
         ],
         "synopsis": "A pregnant Colombian teenager becomes a drug mule to make some desperately needed money for her family.",
         "director": "Joshua Marston",
+        "writers": [
+          "Joshua Marston"
+        ],
         "producers": [
           "Paul S. Mezey"
         ],
@@ -434,6 +526,10 @@
           "Yenny Paola Vega",
           "Jhon Álex Toro",
           "Virgina Ariza"
+        ],
+        "composers": [
+          "Jacobo Lieberman",
+          "Leonardo Heiblum"
         ],
         "posterPath": "/30CImATfvHWLXy6a3KmHXnYXB6c.jpg",
         "backdropPath": "/q6xEN0Lx214QUXXXlQfLaoJS7EB.jpg",
@@ -455,6 +551,9 @@
         ],
         "synopsis": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
         "director": "Quentin Tarantino",
+        "writers": [
+          "Quentin Tarantino"
+        ],
         "producers": [
           "Lawrence Bender"
         ],
@@ -484,6 +583,9 @@
         ],
         "synopsis": "Two lads in Edinburgh embark on a non-violent spree of robberies. They dress up in clown masks and act as modern highwaymen, robbing coach loads of tourists in the highlands. In the process they become folk heroes to the locals.",
         "director": "Michael Hoffman",
+        "writers": [
+          "Ninian Dunnett"
+        ],
         "producers": [
           "Rick Stevenson"
         ],
@@ -493,6 +595,9 @@
           "Teri Lally",
           "Ned Beatty",
           "Robert Urquhart"
+        ],
+        "composers": [
+          "Stuart Adamson"
         ],
         "posterPath": "/HSgeevfF3pkh0okq3oO3A4DKw0.jpg",
         "backdropPath": "/jxQaxzwNanwhQVgSFA3Y4FPDpLO.jpg",
@@ -514,6 +619,9 @@
         ],
         "synopsis": "A wheelchair-bound young girl returns to her father's estate after ten years, and although she's told he's away, she keeps seeing his dead body on the estate.",
         "director": "Seth Holt",
+        "writers": [
+          "Jimmy Sangster"
+        ],
         "producers": [
           "Jimmy Sangster"
         ],
@@ -523,6 +631,9 @@
           "Ann Todd",
           "Christopher Lee",
           "John Serret"
+        ],
+        "composers": [
+          "Clifton Parker"
         ],
         "posterPath": "/k1Eq0XpDAsCkoGUGv5rV8c4uQUs.jpg",
         "backdropPath": "/jI2r5DoPdZHlRdIdYC8SbDh73At.jpg",
@@ -543,6 +654,11 @@
         ],
         "synopsis": "A Victorian surgeon rescues a heavily disfigured man being mistreated by his \"owner\" as a side-show freak. Behind his monstrous façade, there is revealed a person of great intelligence and sensitivity. Based on the true story of Joseph Merrick (called John Merrick in the film), a severely deformed man in 19th century London.",
         "director": "David Lynch",
+        "writers": [
+          "David Lynch",
+          "Christopher De Vore",
+          "Eric Bergren"
+        ],
         "producers": [
           "Jonathan Sanger",
           "Mel Brooks"
@@ -553,6 +669,9 @@
           "Anne Bancroft",
           "John Gielgud",
           "Wendy Hiller"
+        ],
+        "composers": [
+          "John Morris"
         ],
         "posterPath": "/u0wpPYjuSt8DIe1Y3Vapnh8jcKE.jpg",
         "backdropPath": "/6huSptAsqYg3wbsi1jbMognSgmp.jpg",
@@ -574,6 +693,10 @@
         ],
         "synopsis": "A mysterious story of two magicians whose intense rivalry leads them on a life-long battle for supremacy -- full of obsession, deceit and jealousy with dangerous and deadly consequences.",
         "director": "Christopher Nolan",
+        "writers": [
+          "Christopher Nolan",
+          "Jonathan Nolan"
+        ],
         "producers": [
           "Emma Thomas",
           "Aaron Ryder",
@@ -585,6 +708,9 @@
           "Michael Caine",
           "Piper Perabo",
           "Rebecca Hall"
+        ],
+        "composers": [
+          "David Julyan"
         ],
         "posterPath": "/Ag2B2KHKQPukjH7WutmgnnSNurZ.jpg",
         "backdropPath": "/z3br1ub7spqGMkxgjgJSdM4DC21.jpg",
@@ -607,6 +733,9 @@
         ],
         "synopsis": "A timid magazine photo manager who lives life vicariously through daydreams embarks on a true-life adventure when a negative goes missing.",
         "director": "Ben Stiller",
+        "writers": [
+          "Steven Conrad"
+        ],
         "producers": [
           "Ben Stiller",
           "John Goldwyn",
@@ -618,6 +747,9 @@
           "Sean Penn",
           "Shirley MacLaine",
           "Adam Scott"
+        ],
+        "composers": [
+          "Theodore Shapiro"
         ],
         "posterPath": "/iAo1hlzsPV9XpYcLQp6Ud065tGO.jpg",
         "backdropPath": "/pzMrxeP9XkKOtQVUBPTq5yk4ck5.jpg",
@@ -640,6 +772,9 @@
         ],
         "synopsis": "In New York, armed men hijack a subway car and demand a ransom for the passengers while the authorities question about the method of their escape.",
         "director": "Joseph Sargent",
+        "writers": [
+          "Peter Stone"
+        ],
         "producers": [
           "Edgar J. Scherick",
           "Gabriel Katzka"
@@ -650,6 +785,9 @@
           "Martin Balsam",
           "Héctor Elizondo",
           "Earl Hindman"
+        ],
+        "composers": [
+          "David Shire"
         ],
         "posterPath": "/vNhywp9w1DVG6BytxKp4kjtaaGC.jpg",
         "backdropPath": "/wDLUp63wIE6NeWHAcJkCijhI3M8.jpg",
@@ -670,6 +808,9 @@
         ],
         "synopsis": "In 1920s Ireland young doctor Damien O'Donovan prepares to depart for a new job in a London hospital. As he says his goodbyes at a friend's farm, British Black and Tans arrive, and a young man is killed. Damien joins his brother Teddy in the Irish Republican Army, but political events are soon set in motion that tear the brothers apart.",
         "director": "Ken Loach",
+        "writers": [
+          "Paul Laverty"
+        ],
         "producers": [
           "Rebecca O'Brien",
           "Gerardo Herrero",
@@ -681,6 +822,9 @@
           "Liam Cunningham",
           "Orla Fitzgerald",
           "Mary O'Riordan"
+        ],
+        "composers": [
+          "George Fenton"
         ],
         "posterPath": "/yCb4LweL6U7KTgSda3Wb7vHiA9J.jpg",
         "backdropPath": "/fKrFGB96kVeJ9uE83Jc4fIWBgqO.jpg",
@@ -701,6 +845,11 @@
         ],
         "synopsis": "In Casablanca, Morocco in December 1941, a cynical American expatriate meets a former lover, with unforeseen complications.",
         "director": "Michael Curtiz",
+        "writers": [
+          "Julius J. Epstein",
+          "Philip G. Epstein",
+          "Howard Koch"
+        ],
         "producers": [
           "Hal B. Wallis"
         ],
@@ -710,6 +859,9 @@
           "Paul Henreid",
           "Claude Rains",
           "Conrad Veidt"
+        ],
+        "composers": [
+          "Max Steiner"
         ],
         "posterPath": "/lGCEKlJo2CnWydQj7aamY7s1S7Q.jpg",
         "backdropPath": "/87wqeMeUeMRLjsE1IWNKJcPlpuC.jpg",
@@ -730,6 +882,10 @@
         ],
         "synopsis": "Jack Torrance accepts a caretaker job at the Overlook Hotel, where he, along with his wife Wendy and their son Danny, must live isolated from the rest of the world for the winter. But they aren't prepared for the madness that lurks within.",
         "director": "Stanley Kubrick",
+        "writers": [
+          "Diane Johnson",
+          "Stanley Kubrick"
+        ],
         "producers": [
           "Stanley Kubrick"
         ],
@@ -739,6 +895,10 @@
           "Danny Lloyd",
           "Scatman Crothers",
           "Barry Nelson"
+        ],
+        "composers": [
+          "Wendy Carlos",
+          "Rachel Elkind"
         ],
         "posterPath": "/uAR0AWqhQL1hQa69UDEbb2rE5Wx.jpg",
         "backdropPath": "/mmd1HnuvAzFc4iuVJcnBrhDNEKr.jpg",

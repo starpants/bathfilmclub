@@ -20,6 +20,9 @@
         ],
         "synopsis": "A sensitive portrayal of a young office worker who alleges sexual abuse by her employer. She loses her job as a result of her claims. This dramatised situation looks at the ways in which an employee can be victimised in an office environment without those around being aware of the situation.",
         "director": "Jane Campion",
+        "writers": [
+          "Jane Campion"
+        ],
         "producers": [],
         "cast": [
           "Anna Maria Monticelli",
@@ -47,6 +50,9 @@
         ],
         "synopsis": "In the ruins of a strange city, a young girl takes care of a large egg she holds carefully in her arms. She bonds with a boy who is searching for a bird he saw in a dream.",
         "director": "Mamoru Oshii",
+        "writers": [
+          "Mamoru Oshii"
+        ],
         "producers": [
           "Koki Miura",
           "Hiroshi Hasegawa",
@@ -56,6 +62,9 @@
           "Keiichi Noda",
           "Mako Hyodo",
           "Jinpachi Nezu"
+        ],
+        "composers": [
+          "Yoshihiro Kanno"
         ],
         "posterPath": "/dcEUGvckbePFzPKhGXnS9T3kZMG.jpg",
         "backdropPath": "/nZn384qWYugXu6U1N8Ya0Iv0NXE.jpg",
@@ -76,6 +85,10 @@
         ],
         "synopsis": "At the height of the Vietnam war, Captain Benjamin Willard is sent on a dangerous mission that, officially, \"does not exist, nor will it ever exist.\" His goal is to locate - and eliminate - a mysterious Green Beret Colonel named Walter Kurtz, who has been leading his personal army on illegal guerrilla missions into enemy territory.",
         "director": "Francis Ford Coppola",
+        "writers": [
+          "John Milius",
+          "Francis Ford Coppola"
+        ],
         "producers": [
           "Francis Ford Coppola"
         ],
@@ -85,6 +98,10 @@
           "Frederic Forrest",
           "Albert Hall",
           "Laurence Fishburne"
+        ],
+        "composers": [
+          "Carmine Coppola",
+          "Francis Ford Coppola"
         ],
         "posterPath": "/gQB8Y5RCMkv2zwzFHbUJX3kAhvA.jpg",
         "backdropPath": "/49fzLedFVKgGgFChLMuulDJBY1c.jpg",
@@ -106,6 +123,10 @@
         ],
         "synopsis": "When an asteroid threatens to collide with Earth, NASA honcho Dan Truman determines the only way to stop it is to drill into its surface and detonate a nuclear bomb. This leads him to renowned driller Harry Stamper, who agrees to helm the dangerous space mission provided he can bring along his own hotshot crew. Among them is the cocksure A.J. who Harry thinks isn't good enough for his daughter, until the mission proves otherwise.",
         "director": "Michael Bay",
+        "writers": [
+          "Jonathan Hensleigh",
+          "J.J. Abrams"
+        ],
         "producers": [
           "Jerry Bruckheimer",
           "Michael Bay",
@@ -117,6 +138,9 @@
           "Ben Affleck",
           "Liv Tyler",
           "Will Patton"
+        ],
+        "composers": [
+          "Trevor Rabin"
         ],
         "posterPath": "/eTM3qtGhDU8cvjpoa6KEt5E2auU.jpg",
         "backdropPath": "/1cO6OQJxz7YhTZ4V1OlkYfebeJa.jpg",
@@ -138,6 +162,9 @@
         ],
         "synopsis": "In the 22nd century, a paraplegic Marine is dispatched to the moon Pandora on a unique mission, but becomes torn between following orders and protecting an alien civilization.",
         "director": "James Cameron",
+        "writers": [
+          "James Cameron"
+        ],
         "producers": [
           "James Cameron",
           "Jon Landau"
@@ -148,6 +175,9 @@
           "Sigourney Weaver",
           "Stephen Lang",
           "Michelle Rodriguez"
+        ],
+        "composers": [
+          "James Horner"
         ],
         "posterPath": "/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg",
         "backdropPath": "/vL5LR6WdxWPjLPFRLe133jXWsh5.jpg",
@@ -167,6 +197,12 @@
         ],
         "synopsis": "Kazakh journalist Borat Sagdiyev travels to America to make a documentary. As he zigzags across the nation, Borat meets real people in real situations with hysterical consequences. His backwards behavior generates strong reactions around him exposing prejudices and hypocrisies in American culture.",
         "director": "Larry Charles",
+        "writers": [
+          "Dan Mazer",
+          "Sacha Baron Cohen",
+          "Anthony Hines",
+          "Peter Baynham"
+        ],
         "producers": [
           "Sacha Baron Cohen",
           "Jay Roach"
@@ -177,6 +213,9 @@
           "Luenell",
           "Pamela Anderson",
           "Bob Barr"
+        ],
+        "composers": [
+          "Erran Baron Cohen"
         ],
         "posterPath": "/kfkyALfD4G1mlBJI1lOt2QCra4i.jpg",
         "backdropPath": "/jJYOr36wS1B6EyGjLY17r9kNHHh.jpg",
@@ -197,6 +236,11 @@
         ],
         "synopsis": "Low-level bureaucrat Sam Lowry escapes the monotony of his day-to-day life through a recurring daydream of himself as a virtuous hero saving a beautiful damsel. Investigating a case that led to the wrongful arrest and eventual death of an innocent man instead of wanted terrorist Harry Tuttle, he meets the woman from his daydream, and in trying to help her gets caught in a web of mistaken identities, mindless bureaucracy and lies.",
         "director": "Terry Gilliam",
+        "writers": [
+          "Tom Stoppard",
+          "Terry Gilliam",
+          "Charles McKeown"
+        ],
         "producers": [
           "Patrick Cassavetti",
           "Arnon Milchan"
@@ -207,6 +251,9 @@
           "Katherine Helmond",
           "Ian Holm",
           "Bob Hoskins"
+        ],
+        "composers": [
+          "Michael Kamen"
         ],
         "posterPath": "/aewan59WcFThBimkTVVoNf2o5Vb.jpg",
         "backdropPath": "/9IYyCLf5NNAQFK9pNtqzEU9HWzM.jpg",
@@ -227,6 +274,9 @@
         ],
         "synopsis": "A car crash victim inexplicably finds himself aroused by car accidents and becomes involved with an underground subculture of like-minded souls.",
         "director": "David Cronenberg",
+        "writers": [
+          "David Cronenberg"
+        ],
         "producers": [
           "David Cronenberg"
         ],
@@ -236,6 +286,9 @@
           "Elias Koteas",
           "Deborah Kara Unger",
           "Rosanna Arquette"
+        ],
+        "composers": [
+          "Howard Shore"
         ],
         "posterPath": "/gpai5oUFyFGLHOCsYTvVMqlbY7A.jpg",
         "backdropPath": "/vQNknPEVSAui6IL6eUlDBPfUzcW.jpg",
@@ -257,6 +310,9 @@
         ],
         "synopsis": "A band of soldiers is dispatched to war games deep in the woods. When they stumble across a rival team slaughtered in camp, they realize they're not alone.",
         "director": "Neil Marshall",
+        "writers": [
+          "Neil Marshall"
+        ],
         "producers": [
           "David E. Allen",
           "Christopher Figg",
@@ -268,6 +324,9 @@
           "Emma Cleasby",
           "Liam Cunningham",
           "Thomas Lockyer"
+        ],
+        "composers": [
+          "Mark Thomas"
         ],
         "posterPath": "/fYHUYWglzq8Ax0EaDWqg9emjL7T.jpg",
         "backdropPath": "/direyV1rkzuPZNR8k6Z3mHWK3hJ.jpg",
@@ -289,6 +348,9 @@
         ],
         "synopsis": "Two astronomers go on a media tour to warn humankind of a planet-killing comet hurtling toward Earth. The response from a distracted world: Meh.",
         "director": "Adam McKay",
+        "writers": [
+          "Adam McKay"
+        ],
         "producers": [
           "Adam McKay",
           "Kevin J. Messick"
@@ -299,6 +361,9 @@
           "Meryl Streep",
           "Cate Blanchett",
           "Rob Morgan"
+        ],
+        "composers": [
+          "Nicholas Britell"
         ],
         "posterPath": "/th4E1yqsE8DGpAseLiUrI60Hf8V.jpg",
         "backdropPath": "/nvxrQQspxmSblCYDtvDAbVFX8Jt.jpg",
@@ -320,6 +385,9 @@
         ],
         "synopsis": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
         "director": "Ari Aster",
+        "writers": [
+          "Ari Aster"
+        ],
         "producers": [
           "Lars Knudsen",
           "Ari Aster",
@@ -331,6 +399,10 @@
           "Emma Stone",
           "Micheal Ward",
           "Pedro Pascal"
+        ],
+        "composers": [
+          "Daniel Pemberton",
+          "Bobby Krlic"
         ],
         "posterPath": "/4GIqZUgPZ146BhibsPHMHef2nXX.jpg",
         "backdropPath": "/5PJkK2iVXRO1ydrtgwuJdevmnOe.jpg",
@@ -352,6 +424,11 @@
         ],
         "synopsis": "After the death of Emperor Marcus Aurelius, his devious son takes power and demotes Maximus, one of Rome's most capable generals who Marcus preferred. Eventually, Maximus is forced to become a gladiator and battle to the death against other men for the amusement of paying audiences.",
         "director": "Ridley Scott",
+        "writers": [
+          "William Nicholson",
+          "John Logan",
+          "David Franzoni"
+        ],
         "producers": [
           "Branko Lustig",
           "Douglas Wick",
@@ -363,6 +440,10 @@
           "Connie Nielsen",
           "Oliver Reed",
           "Richard Harris"
+        ],
+        "composers": [
+          "Hans Zimmer",
+          "Lisa Gerrard"
         ],
         "posterPath": "/wN2xWp1eIwCKOD0BHTcErTBv1Uq.jpg",
         "backdropPath": "/jhk6D8pim3yaByu1801kMoxXFaX.jpg",
@@ -384,6 +465,9 @@
         ],
         "synopsis": "In the aftermath of a personal tragedy, Harper retreats alone to the beautiful English countryside, hoping to find a place to heal. But someone — or something — from the surrounding woods appears to be stalking her, and what begins as simmering dread becomes a fully-formed nightmare, inhabited by her darkest memories and fears.",
         "director": "Alex Garland",
+        "writers": [
+          "Alex Garland"
+        ],
         "producers": [
           "Allon Reich",
           "Andrew Macdonald"
@@ -394,6 +478,10 @@
           "Paapa Essiedu",
           "Gayle Rankin",
           "Sarah Twomey"
+        ],
+        "composers": [
+          "Ben Salisbury",
+          "Geoff Barrow"
         ],
         "posterPath": "/jo1Kv3P3UgDVk7JnUFr2Cl8WWUM.jpg",
         "backdropPath": "/4N2FuCTuqH3h4dw9XPFtsnDPSz7.jpg",
@@ -415,6 +503,11 @@
         ],
         "synopsis": "Ignacio, a disrespected cook at a Mexican monastery, can barely afford to feed the orphans who live there. Inspired by a local wrestling hero, he decides to moonlight as the not-so-famous Luchador \"Nacho Libre\" to earn money for the monastery -- not to mention the admiration of beautiful nun Sister Encarnación.",
         "director": "Jared Hess",
+        "writers": [
+          "Jared Hess",
+          "Jerusha Hess",
+          "Mike White"
+        ],
         "producers": [
           "Jack Black",
           "Mike White",
@@ -426,6 +519,9 @@
           "Héctor Jiménez",
           "Darius Rose",
           "Moisés Arias"
+        ],
+        "composers": [
+          "Danny Elfman"
         ],
         "posterPath": "/kh7B91bMl2lZ0mH9WhPfaNUIEQH.jpg",
         "backdropPath": "/nNCleqiADKVMKWDC5G7hjYcVCmv.jpg",
@@ -445,6 +541,10 @@
         ],
         "synopsis": "A listless and alienated teenager decides to help his new friend win the class presidency in their small western high school, while he must deal with his bizarre family life back home.",
         "director": "Jared Hess",
+        "writers": [
+          "Jared Hess",
+          "Jerusha Hess"
+        ],
         "producers": [
           "Sean Covel",
           "Jeremy Coon",
@@ -456,6 +556,9 @@
           "Tina Majorino",
           "Aaron Ruell",
           "Jon Gries"
+        ],
+        "composers": [
+          "John Swihart"
         ],
         "posterPath": "/6Iv6Uwa2SBLN0dSGM00rdrwN4MJ.jpg",
         "backdropPath": "/vVMMgWiQkXNB6YpE1ecs8FsXDh2.jpg",
@@ -477,6 +580,10 @@
         ],
         "synopsis": "Prince Amleth is on the verge of becoming a man when his father is brutally murdered by his uncle, who kidnaps the boy's mother. Two decades later, Amleth is now a Viking who's on a mission to save his mother, kill his uncle and avenge his father.",
         "director": "Robert Eggers",
+        "writers": [
+          "Robert Eggers",
+          "Sjón"
+        ],
         "producers": [
           "Robert Eggers",
           "Alexander Skarsgård",
@@ -488,6 +595,10 @@
           "Claes Bang",
           "Ethan Hawke",
           "Anya Taylor-Joy"
+        ],
+        "composers": [
+          "Sebastian Gainsborough",
+          "Robin Carolan"
         ],
         "posterPath": "/aSSJMnHknzKjlZ6zybwD7eyJ4Po.jpg",
         "backdropPath": "/fMiEp00v8gGWEceL4QeLu6H6z69.jpg",
@@ -508,6 +619,9 @@
         ],
         "synopsis": "Still reeling from a heartbreaking family event and his parents' subsequent divorce, Tyler Hawkins discovers a fresh lease on life when he meets Ally Craig, a gregarious beauty who witnessed her mother's death. But as the couple draws closer, the fallout from their separate tragedies jeopardizes their love.",
         "director": "Allen Coulter",
+        "writers": [
+          "Will Fetters"
+        ],
         "producers": [
           "Trevor Engelson",
           "Nick Osborne"
@@ -518,6 +632,9 @@
           "Pierce Brosnan",
           "Lena Olin",
           "Chris Cooper"
+        ],
+        "composers": [
+          "Marcelo Zarvos"
         ],
         "posterPath": "/j7umuMiLCHvWT7wYhFKJOTFSokF.jpg",
         "backdropPath": "/kbxk09QgBJfJjnp66ey3JCEshKf.jpg",
@@ -540,6 +657,9 @@
         ],
         "synopsis": "Spanning over one thousand years, and three parallel stories, The Fountain is a story of love, death, spirituality, and the fragility of our existence in this world.",
         "director": "Darren Aronofsky",
+        "writers": [
+          "Darren Aronofsky"
+        ],
         "producers": [
           "Arnon Milchan",
           "Iain Smith"
@@ -550,6 +670,9 @@
           "Ellen Burstyn",
           "Mark Margolis",
           "Stephen McHattie"
+        ],
+        "composers": [
+          "Clint Mansell"
         ],
         "posterPath": "/4XTf8GuCVLWolubANaKkpk62YPq.jpg",
         "backdropPath": "/9RNJ0pKYA8EQiMa0lFZ68gzeElH.jpg",
@@ -571,6 +694,9 @@
         ],
         "synopsis": "An epic fantasy adventure based on the timeless Arthurian legend, The Green Knight tells the story of Sir Gawain, King Arthur's reckless and headstrong nephew, who embarks on a daring quest to confront the eponymous Green Knight, a gigantic emerald-skinned stranger and tester of men.",
         "director": "David Lowery",
+        "writers": [
+          "David Lowery"
+        ],
         "producers": [
           "David Lowery",
           "Toby Halbrooks",
@@ -582,6 +708,9 @@
           "Joel Edgerton",
           "Sarita Choudhury",
           "Sean Harris"
+        ],
+        "composers": [
+          "Daniel Hart"
         ],
         "posterPath": "/if4hw3Ou5Sav9Em7WWHj66mnywp.jpg",
         "backdropPath": "/kIQc0kkqIYTo65x5XjlKgqdDQ6a.jpg",
@@ -603,6 +732,9 @@
         ],
         "synopsis": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.",
         "director": "Rian Johnson",
+        "writers": [
+          "Rian Johnson"
+        ],
         "producers": [
           "Ram Bergman",
           "Leifur B. Dagfinnsson",
@@ -614,6 +746,9 @@
           "Adam Driver",
           "Daisy Ridley",
           "John Boyega"
+        ],
+        "composers": [
+          "John Williams"
         ],
         "posterPath": "/ySaaKHOLAQU5HoZqWmzDIj1VvZ1.jpg",
         "backdropPath": "/bIUaCtWaRgd78SnoHJDI8TNf7Sd.jpg",
@@ -636,6 +771,10 @@
         ],
         "synopsis": "General Candy, who's overseeing an English squad in 1943, is a veteran leader who doesn't have the respect of the men he's training and is considered out-of-touch with what's needed to win the war. But it wasn't always this way. Flashing back to his early career in the Boer War and World War I, we see a dashing young officer whose life has been shaped by three different women, and by a lasting friendship with a German soldier.",
         "director": "Michael Powell",
+        "writers": [
+          "Emeric Pressburger",
+          "Michael Powell"
+        ],
         "producers": [
           "Michael Powell",
           "Emeric Pressburger"
@@ -646,6 +785,9 @@
           "Anton Walbrook",
           "Roland Culver",
           "James McKechnie"
+        ],
+        "composers": [
+          "Allan Gray"
         ],
         "posterPath": "/kgyd5uyndsXiLYKlVgH0sm7Jfkv.jpg",
         "backdropPath": "/ojYxYkbO939H9OSayf5IKvbFA6i.jpg",
@@ -666,6 +808,10 @@
         ],
         "synopsis": "In a dystopian near future, single people, according to the laws of The City, are taken to The Hotel, where they are obliged to find a romantic partner in forty-five days or are transformed into animals and sent off into The Woods.",
         "director": "Yorgos Lanthimos",
+        "writers": [
+          "Efthimis Filippou",
+          "Yorgos Lanthimos"
+        ],
         "producers": [
           "Ceci Dempsey",
           "Lee Magiday",
@@ -698,6 +844,9 @@
         ],
         "synopsis": "A fading celebrity decides to use a black market drug, a cell-replicating substance that temporarily creates a younger, better version of herself.",
         "director": "Coralie Fargeat",
+        "writers": [
+          "Coralie Fargeat"
+        ],
         "producers": [
           "Coralie Fargeat",
           "Eric Fellner",
@@ -709,6 +858,9 @@
           "Dennis Quaid",
           "Edward Hamilton-Clark",
           "Gore Abrams"
+        ],
+        "composers": [
+          "Raffertie"
         ],
         "posterPath": "/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
         "backdropPath": "/8ODNt5olCeIqBYTP3GgXEQYTfeX.jpg",
@@ -730,6 +882,9 @@
         ],
         "synopsis": "When a willful young man tries to venture beyond his sequestered Pennsylvania hamlet, his actions set off a chain of chilling incidents that will alter the community forever.",
         "director": "M. Night Shyamalan",
+        "writers": [
+          "M. Night Shyamalan"
+        ],
         "producers": [
           "M. Night Shyamalan",
           "Sam Mercer",
@@ -741,6 +896,9 @@
           "Adrien Brody",
           "William Hurt",
           "Sigourney Weaver"
+        ],
+        "composers": [
+          "James Newton Howard"
         ],
         "posterPath": "/v7UvYtKfIVaHLaHwVgfalyrK7Ho.jpg",
         "backdropPath": "/lxwCRTWWfCisuarrFFUhW43eBnW.jpg",

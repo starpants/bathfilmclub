@@ -15,23 +15,70 @@ for (const e of entries) if (!uniqueMap.has(e.film.tmdbId)) uniqueMap.set(e.film
 const films = [...uniqueMap.values()];
 const totalUnique = films.length;
 
+// Ties are broken alphabetically: Composer and Writer both currently tie, and
+// without a second key the winner would shift on unrelated data changes.
 function topOf(counts: Map<string, number>): [string, number] {
-  return [...counts.entries()].sort((a, b) => b[1] - a[1])[0] ?? ['—', 0];
+  return (
+    [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0] ?? ['—', 0]
+  );
 }
 
-// Most-nominated director (by nomination count)
-const dirCounts = new Map<string, number>();
-for (const e of entries) {
-  if (e.film.director) dirCounts.set(e.film.director, (dirCounts.get(e.film.director) ?? 0) + 1);
+function countAcross(pick: (f: Film) => string[] | undefined): Map<string, number> {
+  const counts = new Map<string, number>();
+  for (const e of entries)
+    for (const n of pick(e.film) ?? []) counts.set(n, (counts.get(n) ?? 0) + 1);
+  return counts;
 }
-const [topDirector, topDirectorCount] = topOf(dirCounts);
 
-// Most-nominated star (any top-5 billed appearance)
-const castCounts = new Map<string, number>();
-for (const e of entries) {
-  for (const c of e.film.cast ?? []) castCounts.set(c, (castCounts.get(c) ?? 0) + 1);
+// All by nomination count (a film in two themes counts twice)
+const [topDirector, topDirectorCount] = topOf(countAcross((f) => (f.director ? [f.director] : [])));
+// Screenplay/Writer credits only — see Film.writers
+const [topWriter, topWriterCount] = topOf(countAcross((f) => f.writers));
+// Every credited composer counts, not just the first billed
+const [topComposer, topComposerCount] = topOf(countAcross((f) => f.composers));
+// "Star" = any top-5 billed appearance
+const [topStar] = topOf(countAcross((f) => f.cast));
+const [topYear, topYearCount] = topOf(countAcross((f) => (f.year ? [String(f.year)] : [])));
+
+// --- How often the club returns to a director ---
+// Unique films per director, then how many directors sit at each tally.
+const filmsPerDirector = new Map<string, number>();
+for (const f of films) {
+  if (f.director) filmsPerDirector.set(f.director, (filmsPerDirector.get(f.director) ?? 0) + 1);
 }
-const [topStar] = topOf(castCounts);
+const directorsAtTally = new Map<number, number>();
+for (const n of filmsPerDirector.values()) {
+  directorsAtTally.set(n, (directorsAtTally.get(n) ?? 0) + 1);
+}
+
+// Clauses are generated from the data, so a new tally (a 6th film) adds itself.
+// Words run to ten so the next tier reads "six times", not "6 times"; beyond
+// that the numeric fallback is fine — it would be a remarkable director.
+const TIMES = [
+  'once',
+  'twice',
+  'three times',
+  'four times',
+  'five times',
+  'six times',
+  'seven times',
+  'eight times',
+  'nine times',
+  'ten times',
+];
+const timesWord = (n: number) => TIMES[n - 1] ?? `${n} times`;
+const clauses = [...directorsAtTally.entries()]
+  .sort((a, b) => a[0] - b[0])
+  .map(([tally, count], i) =>
+    i === 0
+      ? `${count} ${count === 1 ? 'appears' : 'appear'} ${timesWord(tally)}`
+      : `${count} ${timesWord(tally)}`
+  );
+const directorSummary = filmsPerDirector.size
+  ? `Of ${filmsPerDirector.size} director${filmsPerDirector.size === 1 ? '' : 's'}, ${
+      clauses.length > 1 ? `${clauses.slice(0, -1).join(', ')} and ${clauses.at(-1)}` : clauses[0]
+    }.`
+  : '';
 
 // --- Genre: share of unique films (films span multiple genres) ---
 const genreCounts = new Map<string, number>();
@@ -101,7 +148,10 @@ const charts = [
 const stats = [
   { value: String(totalUnique), caption: 'Unique Films Nominated' },
   { value: topDirector, caption: `Most-Nominated Director — ${topDirectorCount} Films` },
+  { value: topWriter, caption: `Most-Nominated Writer — ${topWriterCount} Films` },
+  { value: topComposer, caption: `Most-Nominated Composer — ${topComposerCount} Films` },
   { value: topStar, caption: 'Most-Nominated Star' },
+  { value: topYear, caption: `Most-Nominated Release Year — ${topYearCount} Films` },
 ];
 ---
 
@@ -126,6 +176,17 @@ const stats = [
     </div>
   </div>
 
+  <!-- Director repeat summary -->
+  {
+    directorSummary && (
+      <div class="max-w-site mx-auto px-6 pb-16">
+        <p class="font-body text-bfc-brand-fg/60 text-2xl leading-relaxed text-center max-w-xl mx-auto">
+          {directorSummary}
+        </p>
+      </div>
+    )
+  }
+
   <!-- Distribution bar charts -->
   <div class="bg-bfc-brand-alt/10 py-16">
     <div class="max-w-site mx-auto px-6 space-y-14">
@@ -147,7 +208,6 @@ const stats = [
                         class:list={[
                           'block h-full',
                           row.value === chart.max ? 'bg-bfc-brand-accent' : 'bg-bfc-brand-fg',
-                          // row.value === chart.max ? 'bg-bfc-brand-accent' : 'bg-bfc-brand-fg',
                         ]}
                         style={`width: ${barWidth}%`}
                       />

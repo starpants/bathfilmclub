@@ -22,6 +22,10 @@
         ],
         "synopsis": "Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world's most advanced super computer.",
         "director": "Stanley Kubrick",
+        "writers": [
+          "Stanley Kubrick",
+          "Arthur C. Clarke"
+        ],
         "producers": [
           "Victor Lyndon",
           "Stanley Kubrick"
@@ -52,6 +56,9 @@
         ],
         "synopsis": "During its return to the earth, commercial spaceship Nostromo intercepts a distress signal from a distant planet. When a three-member team of the crew discovers a chamber containing thousands of eggs on the planet, a creature inside one of the eggs attacks an explorer. The entire crew is unaware of the impending nightmare set to descend upon them when the alien parasite planted inside its unfortunate host is birthed.",
         "director": "Ridley Scott",
+        "writers": [
+          "Dan O'Bannon"
+        ],
         "producers": [
           "Gordon Carroll",
           "David Giler",
@@ -63,6 +70,9 @@
           "Veronica Cartwright",
           "Harry Dean Stanton",
           "John Hurt"
+        ],
+        "composers": [
+          "Jerry Goldsmith"
         ],
         "posterPath": "/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",
         "backdropPath": "/AmR3JG1VQVxU8TfAvljUhfSFUOx.jpg",
@@ -83,6 +93,10 @@
         ],
         "synopsis": "A ship carrying settlers to a new home on Mars after Earth is rendered uninhabitable is knocked off-course, causing the passengers to consider their place in the universe.",
         "director": "Pella Kågerman",
+        "writers": [
+          "Pella Kågerman",
+          "Hugo Lilja"
+        ],
         "producers": [
           "Annika Rogell"
         ],
@@ -92,6 +106,9 @@
           "Bianca Cruzeiro",
           "Anneli Martini",
           "Jennie Silfverhjelm"
+        ],
+        "composers": [
+          "Alexander Berg"
         ],
         "posterPath": "/pEpEJe8NTmwWL0hwYkZguTzEqzt.jpg",
         "backdropPath": "/mz8xBEIl1l18e2ToNlV1Tt5HVmJ.jpg",
@@ -113,6 +130,9 @@
         ],
         "synopsis": "A man narrates stories of his life as a 10-year-old boy in 1969 Houston, weaving tales of nostalgia with a fantastical account of a journey to the moon.",
         "director": "Richard Linklater",
+        "writers": [
+          "Richard Linklater"
+        ],
         "producers": [
           "Richard Linklater",
           "Mike Blizzard",
@@ -144,6 +164,10 @@
         ],
         "synopsis": "The true story of technical troubles that scuttle the Apollo 13 lunar mission in 1970, risking the lives of astronaut Jim Lovell and his crew, with the failed journey turning into a thrilling saga of heroism. Drifting more than 200,000 miles from Earth, the astronauts work furiously with the ground crew to avert tragedy.",
         "director": "Ron Howard",
+        "writers": [
+          "Al Reinert",
+          "William Broyles Jr."
+        ],
         "producers": [
           "Brian Grazer"
         ],
@@ -153,6 +177,9 @@
           "Kevin Bacon",
           "Gary Sinise",
           "Ed Harris"
+        ],
+        "composers": [
+          "James Horner"
         ],
         "posterPath": "/tVeKscCm2fY1xDXZk8PgnZ87h9S.jpg",
         "backdropPath": "/n0FDJI9c0uWiZwm8wgXVjaMBn96.jpg",
@@ -175,6 +202,9 @@
         ],
         "synopsis": "In order to protect the reputation of the American space program, a team of NASA administrators turn the first Mars mission into a phony Mars landing. Under threat of harm to their families the astronauts play their part in the deception on a staged set in a deserted military base. But once the real ship returns to Earth and burns up on re-entry, the astronauts become liabilities. Now, with the help of a crusading reporter, they must battle a sinister conspiracy that will stop at nothing to keep the truth hidden.",
         "director": "Peter Hyams",
+        "writers": [
+          "Peter Hyams"
+        ],
         "producers": [
           "Paul Lazarus III"
         ],
@@ -184,6 +214,9 @@
           "Brenda Vaccaro",
           "Sam Waterston",
           "O. J. Simpson"
+        ],
+        "composers": [
+          "Jerry Goldsmith"
         ],
         "posterPath": "/bxsCARg2rxQ2PzFW5ZsADLT9e9c.jpg",
         "backdropPath": "/d4qAHbs8wLBnRatYCPvtp3F48bO.jpg",
@@ -205,6 +238,10 @@
         ],
         "synopsis": "A radio astronomer receives the first extraterrestrial radio signal ever picked up on Earth. As the world powers scramble to decipher the message and decide upon a course of action, she must make some difficult decisions between her beliefs, the truth, and reality.",
         "director": "Robert Zemeckis",
+        "writers": [
+          "Michael Goldenberg",
+          "James V. Hart"
+        ],
         "producers": [
           "Steve Starkey",
           "Robert Zemeckis"
@@ -215,6 +252,9 @@
           "James Woods",
           "John Hurt",
           "Tom Skerritt"
+        ],
+        "composers": [
+          "Alan Silvestri"
         ],
         "posterPath": "/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg",
         "backdropPath": "/yFkUPqBuUnbhYbQL8VFpTrAT9za.jpg",
@@ -235,6 +275,10 @@
         ],
         "synopsis": "A group of scientists are sent on a mission to destroy unstable planets. Twenty years into their mission, they have to battle their alien mascot as well as a \"sensitive\" and intelligent bombing device that starts to question the meaning of its existence.",
         "director": "John Carpenter",
+        "writers": [
+          "Dan O'Bannon",
+          "John Carpenter"
+        ],
         "producers": [
           "John Carpenter"
         ],
@@ -244,6 +288,9 @@
           "Dan O'Bannon",
           "Dre Pahich",
           "Adam Beckenbaugh"
+        ],
+        "composers": [
+          "John Carpenter"
         ],
         "posterPath": "/aiqLBiH0IWrog2Q78dZTT8Ad9Sp.jpg",
         "backdropPath": "/5I6yjyIKzAeQd5C1ynJnfWCK22u.jpg",
@@ -265,6 +312,9 @@
         ],
         "synopsis": "In 2047, a group of astronauts are sent to investigate and salvage the starship Event Horizon which disappeared mysteriously seven years before on its maiden voyage. However, it soon becomes evident that something sinister resides in its corridors.",
         "director": "Paul W. S. Anderson",
+        "writers": [
+          "Philip Eisner"
+        ],
         "producers": [
           "Lawrence Gordon",
           "Jeremy Bolt",
@@ -276,6 +326,12 @@
           "Kathleen Quinlan",
           "Joely Richardson",
           "Richard T. Jones"
+        ],
+        "composers": [
+          "Michael Kamen",
+          "Phil Hartnoll",
+          "Paul Hartnoll",
+          "Orbital"
         ],
         "posterPath": "/qfluaDXv0cIdLwgQWzNB2piHL2q.jpg",
         "backdropPath": "/nByMcYBhChTs2TF9fEFcTSsjme5.jpg",
@@ -296,6 +352,9 @@
         ],
         "synopsis": "A look at the life of the astronaut, Neil Armstrong, and the legendary space mission that led him to become the first man to walk on the Moon on July 20, 1969.",
         "director": "Damien Chazelle",
+        "writers": [
+          "Josh Singer"
+        ],
         "producers": [
           "Isaac Klausner",
           "Marty Bowen",
@@ -307,6 +366,9 @@
           "Jason Clarke",
           "Kyle Chandler",
           "Corey Stoll"
+        ],
+        "composers": [
+          "Justin Hurwitz"
         ],
         "posterPath": "/i91mfvFcPPlaegcbOyjGgiWfZzh.jpg",
         "backdropPath": "/jrudoaXcoLyHRPdolyOGemXgPEs.jpg",
@@ -328,6 +390,10 @@
         ],
         "synopsis": "Dr Ryan Stone, an engineer on her first space mission, and Matt Kowalski, an astronaut on his final expedition, have to survive in space after they are hit by debris while spacewalking.",
         "director": "Alfonso Cuarón",
+        "writers": [
+          "Alfonso Cuarón",
+          "Jonás Cuarón"
+        ],
         "producers": [
           "Alfonso Cuarón",
           "David Heyman"
@@ -338,6 +404,9 @@
           "Ed Harris",
           "Orto Ignatiussen",
           "Phaldut Sharma"
+        ],
+        "composers": [
+          "Steven Price"
         ],
         "posterPath": "/kZ2nZw8D681aphje8NJi8EfbL1U.jpg",
         "backdropPath": "/a2n6bKD7qhCPCAEALgsAhWOAQcc.jpg",
@@ -359,6 +428,10 @@
         ],
         "synopsis": "The adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.",
         "director": "Christopher Nolan",
+        "writers": [
+          "Jonathan Nolan",
+          "Christopher Nolan"
+        ],
         "producers": [
           "Christopher Nolan",
           "Lynda Obst",
@@ -370,6 +443,9 @@
           "Michael Caine",
           "Jessica Chastain",
           "Casey Affleck"
+        ],
+        "composers": [
+          "Hans Zimmer"
         ],
         "posterPath": "/yQvGrMoipbRoddT0ZR8tPoR7NfX.jpg",
         "backdropPath": "/2ssWTSVklAEc98frZUQhgtGHx7s.jpg",
@@ -390,6 +466,9 @@
         ],
         "synopsis": "With only three weeks left in his three-year contract, Sam Bell is eager to return to Earth. Stationed alone at a Moon-based facility with his computer assistant GERTY, an unexpected accident sets off a series of unsettling events that shake his isolation.",
         "director": "Duncan Jones",
+        "writers": [
+          "Nathan Parker"
+        ],
         "producers": [
           "Stuart Fenegan",
           "Trudie Styler",
@@ -401,6 +480,9 @@
           "Dominique McElligott",
           "Rosie Shaw",
           "Adrienne Shaw"
+        ],
+        "composers": [
+          "Clint Mansell"
         ],
         "posterPath": "/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg",
         "backdropPath": "/mvUAo9ACgmLpS4Ofc2IwD4n7WCt.jpg",
@@ -421,6 +503,9 @@
         ],
         "synopsis": "A small group of cosmic explorers, including a woman, leaves Earth to start a new civilization. They do not realize that within themselves they carry the end of their own dream. They die one by one, while their children revert to a primitive native culture, creating new myths and a new god.",
         "director": "Andrzej Żuławski",
+        "writers": [
+          "Andrzej Żuławski"
+        ],
         "producers": [],
         "cast": [
           "Andrzej Seweryn",
@@ -428,6 +513,9 @@
           "Jerzy Trela",
           "Grażyna Dyląg",
           "Maria Pakulnis"
+        ],
+        "composers": [
+          "Andrzej Korzyński"
         ],
         "posterPath": "/4zzam82e6rCY2Ktm0fyRoseHhkh.jpg",
         "backdropPath": "/5nZ0ax5n5k9MogcGX3IxVjlCMRt.jpg",
@@ -451,6 +539,9 @@
         ],
         "synopsis": "On the sunless moon Io, Marshall William T. O’Niel goes toe-to-toe with the corrupt manager of a mining colony and his gang of roughnecks while investigating a rash of worker suicides.",
         "director": "Peter Hyams",
+        "writers": [
+          "Peter Hyams"
+        ],
         "producers": [
           "Richard A. Roth"
         ],
@@ -460,6 +551,9 @@
           "Frances Sternhagen",
           "James B. Sikking",
           "Kika Markham"
+        ],
+        "composers": [
+          "Jerry Goldsmith"
         ],
         "posterPath": "/qmjlDkV8CfCboa8WV06ytZaThqx.jpg",
         "backdropPath": "/6m1ol0YFN35kXQ2KNz5LDWwaD56.jpg",
@@ -480,6 +574,9 @@
         ],
         "synopsis": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
         "director": "Phil Lord",
+        "writers": [
+          "Drew Goddard"
+        ],
         "producers": [
           "Rachel O'Connor",
           "Ryan Gosling",
@@ -491,6 +588,9 @@
           "James Ortiz",
           "Lionel Boyce",
           "Milana Vayntrub"
+        ],
+        "composers": [
+          "Daniel Pemberton"
         ],
         "posterPath": "/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
         "backdropPath": "/2I1OFQJ0L9T0dpU6FobKFWV2PxX.jpg",
@@ -511,6 +611,9 @@
         ],
         "synopsis": "On a future Earth, war between the Kingdom of Honneamise and its rival, The Republic, is inevitable. As evolving technology creates new ways to wage war, a small group seeks to propel mankind into space in their world’s first spaceflight program. For astronaut candidate Shirotsugh Lhadatt, it’s a personal odyssey as he grows from an aimless young man into a leader willing to put everything on the line in order to move the human race forward and away from the brink of Armageddon.",
         "director": "Hiroyuki Yamaga",
+        "writers": [
+          "Hiroyuki Yamaga"
+        ],
         "producers": [
           "Hiroaki Inoue",
           "Hirohiko Sueyoshi"
@@ -521,6 +624,9 @@
           "Aya Murata",
           "Kazuyuki Sogabe",
           "Masato Hirano"
+        ],
+        "composers": [
+          "Ryuichi Sakamoto"
         ],
         "posterPath": "/h5naABij9ghj6CLcpBYBkxMGYGX.jpg",
         "backdropPath": "/sCPRp4j5YzLTCIG72PRZM8LLgHh.jpg",
@@ -542,6 +648,11 @@
         ],
         "synopsis": "After the entire flora goes extinct, ecologist Lowell maintains a greenhouse aboard a space station for the future with his android companions. However, he rebels after being ordered to destroy the greenhouse in favor of carrying cargo, a decision that puts him at odds with everyone but his mechanical companions.",
         "director": "Douglas Trumbull",
+        "writers": [
+          "Deric Washburn",
+          "Michael Cimino",
+          "Steven Bochco"
+        ],
         "producers": [
           "Marty Hornstein",
           "Michael Gruskoff",
@@ -553,6 +664,9 @@
           "Ron Rifkin",
           "Jesse Vint",
           "Mark Persons"
+        ],
+        "composers": [
+          "Peter Schickele"
         ],
         "posterPath": "/ahasZ5HILZHtlrl6cbXgpfk0y8H.jpg",
         "backdropPath": "/5QTwfS9vcr22Nl7PCcUro7dEMFq.jpg",
@@ -574,6 +688,10 @@
         ],
         "synopsis": "A psychologist is sent to a space station orbiting a planet called Solaris to investigate the death of a doctor and the mental problems of cosmonauts on the station. He soon discovers that the water on the planet is a type of brain which brings out repressed memories and obsessions.",
         "director": "Andrei Tarkovsky",
+        "writers": [
+          "Andrei Tarkovsky",
+          "Fridrikh Gorenshteyn"
+        ],
         "producers": [],
         "cast": [
           "Natalya Bondarchuk",
@@ -581,6 +699,10 @@
           "Jüri Järvet",
           "Vladislav Dvorzhetsky",
           "Mykola Hrynko"
+        ],
+        "composers": [
+          "Vyacheslav Ovchinnikov",
+          "Eduard Artemyev"
         ],
         "posterPath": "/pgqj7QoBPWFLLKtLEpPmFYFRMgB.jpg",
         "backdropPath": "/jZv1u7uzpOE5JOc2MmrvPUZWoyb.jpg",
@@ -603,6 +725,9 @@
         ],
         "synopsis": "Set in the future, the story follows a young soldier named Johnny Rico and his exploits in the Mobile Infantry. Rico's military career progresses from recruit to non-commissioned officer and finally to officer against the backdrop of an interstellar war between mankind and an arachnoid species known as \"the Bugs.\"",
         "director": "Paul Verhoeven",
+        "writers": [
+          "Edward Neumeier"
+        ],
         "producers": [
           "Jon Davison",
           "Alan Marshall"
@@ -613,6 +738,9 @@
           "Denise Richards",
           "Jake Busey",
           "Neil Patrick Harris"
+        ],
+        "composers": [
+          "Basil Poledouris"
         ],
         "posterPath": "/cxCmv23O7p3hyHwqoktHYkZcGsY.jpg",
         "backdropPath": "/7iEfnj3rfyunky6BzvnlwqfoEF0.jpg",
@@ -633,6 +761,9 @@
         ],
         "synopsis": "Fifty years into the future, the sun is dying, and Earth is threatened by arctic temperatures. A team of astronauts is sent to revive the Sun — but the mission fails. Seven years later, a new team is sent to finish the mission as mankind’s last hope.",
         "director": "Danny Boyle",
+        "writers": [
+          "Alex Garland"
+        ],
         "producers": [
           "Andrew Macdonald"
         ],
@@ -642,6 +773,9 @@
           "Chris Evans",
           "Michelle Yeoh",
           "Cliff Curtis"
+        ],
+        "composers": [
+          "John Murphy"
         ],
         "posterPath": "/oKGGeJ8qvm0UmClz43VJ31fzPP7.jpg",
         "backdropPath": "/5AIAnucJKZ3sHpm7r1ykFVIoUHK.jpg",
@@ -663,6 +797,9 @@
         ],
         "synopsis": "An alien and a robot land on Earth after World War II and tell mankind to be peaceful or face destruction.",
         "director": "Robert Wise",
+        "writers": [
+          "Edmund H. North"
+        ],
         "producers": [
           "Julian Blaustein"
         ],
@@ -672,6 +809,9 @@
           "Billy Gray",
           "Sam Jaffe",
           "Hugh Marlowe"
+        ],
+        "composers": [
+          "Bernard Herrmann"
         ],
         "posterPath": "/eslDNzf0LF1m9GsgUXlmyfTcC6Y.jpg",
         "backdropPath": "/qwZRvb0DJ5IwDoRuKDRCBuHWzkw.jpg",
@@ -693,6 +833,9 @@
         ],
         "synopsis": "During a manned mission to Mars, Astronaut Mark Watney is presumed dead after a fierce storm and left behind by his crew. But Watney has survived and finds himself stranded and alone on the hostile planet. With only meager supplies, he must draw upon his ingenuity, wit and spirit to subsist and find a way to signal to Earth that he is alive.",
         "director": "Ridley Scott",
+        "writers": [
+          "Drew Goddard"
+        ],
         "producers": [
           "Aditya Sood",
           "Simon Kinberg",
@@ -704,6 +847,9 @@
           "Kristen Wiig",
           "Jeff Daniels",
           "Michael Peña"
+        ],
+        "composers": [
+          "Harry Gregson-Williams"
         ],
         "posterPath": "/fASz8A0yFE3QB6LgGoOfwvFSseV.jpg",
         "backdropPath": "/lzMS0CI3FLQYC5EgJoWeIaEt0lm.jpg",
@@ -725,6 +871,10 @@
         ],
         "synopsis": "After hundreds of years doing what he was built for, WALL•E— a robot designed to clean up the earth—discovers a new purpose in life when he meets a sleek search robot named EVE. EVE comes to realize that WALL•E has inadvertently stumbled upon the key to the planet's future, and races back to space to report to the humans. Meanwhile, WALL•E chases EVE across the galaxy and sets into motion one of the most imaginative adventures ever brought to the big screen.",
         "director": "Andrew Stanton",
+        "writers": [
+          "Jim Reardon",
+          "Andrew Stanton"
+        ],
         "producers": [
           "Jim Morris",
           "Lindsey Collins"
@@ -735,6 +885,9 @@
           "Jeff Garlin",
           "Fred Willard",
           "John Ratzenberger"
+        ],
+        "composers": [
+          "Thomas Newman"
         ],
         "posterPath": "/hbhFnRzzg6ZDmm8YAmxBnQpQIPh.jpg",
         "backdropPath": "/nYs4ZwnJBK4AgljhvzwNz7fpr3E.jpg",
