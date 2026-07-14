@@ -159,6 +159,16 @@ const stats = [
   <!-- Press-quote pull stats -->
   <div class="max-w-site mx-auto px-6 pb-16 text-center">
     <!-- <p class="section-label text-2xl text-center mb-12">Some stats so far</p> -->
+    <!-- Director repeat summary -->
+    {
+      directorSummary && (
+        <div class="max-w-site mx-auto px-6 pb-16">
+          <p class="font-body text-bfc-brand-fg/60 text-2xl leading-relaxed text-center max-w-xl mx-auto">
+            {directorSummary}
+          </p>
+        </div>
+      )
+    }
     <div class="space-y-14">
       {
         stats.map((s) => (
@@ -175,17 +185,6 @@ const stats = [
       }
     </div>
   </div>
-
-  <!-- Director repeat summary -->
-  {
-    directorSummary && (
-      <div class="max-w-site mx-auto px-6 pb-16">
-        <p class="font-body text-bfc-brand-fg/60 text-2xl leading-relaxed text-center max-w-xl mx-auto">
-          {directorSummary}
-        </p>
-      </div>
-    )
-  }
 
   <!-- Distribution bar charts -->
   <div class="bg-bfc-brand-alt/10 py-16">
