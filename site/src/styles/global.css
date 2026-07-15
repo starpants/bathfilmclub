@@ -78,4 +78,23 @@
   .btn-discord {
     @apply inline-flex items-center gap-2 bg-bfc-brand-accent text-bfc-brand-fg font-heading font-semibold text-sm px-3 py-2 hover:bg-bfc-brand-accent/80 transition md:text-xl md:px-5 md:py-3;
   }
+
+  /* Square nav icon button. Shared by NavBar.astro and MenuDrawer.tsx's nav trigger
+     (the Browse icon), which is why it lives here rather than in either component.
+     Pair the base with exactly one state: `icon-btn icon-btn-active|icon-btn-inactive`.
+     Colour belongs in the state classes, never the base — a base colour would tie on
+     specificity and be decided by source order instead of the state. */
+  .icon-btn {
+    @apply p-3 md:p-4 border transition-colors;
+  }
+
+  /* Current page: full strength, non-clickable */
+  .icon-btn-active {
+    @apply cursor-default border-bfc-brand-fg text-bfc-brand-fg;
+  }
+
+  /* Other pages: dimmed, brightening on hover */
+  .icon-btn-inactive {
+    @apply border-bfc-brand-fg/30 text-bfc-brand-fg/50 hover:border-bfc-brand-fg hover:text-bfc-brand-fg;
+  }
 }

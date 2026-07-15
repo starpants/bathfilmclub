@@ -15,11 +15,11 @@ const isSearch = path === '/search';
 const isStats = path === '/stats';
 const isTheme = path.startsWith('/theme/');
 
-// Square icon buttons — echo the site's square motif (FilmStrip, section labels, delete box)
+// Square icon buttons — echo the site's square motif (FilmStrip, section labels, delete box).
 // Current page reads as selected (full strength); other pages sit dimmed and brighten on hover.
-const iconBtn = 'p-3 md:p-4 border transition-colors';
-const iconBtnActive = `${iconBtn} cursor-default border-bfc-brand-fg text-bfc-brand-fg`;
-const iconBtnInactive = `${iconBtn} border-bfc-brand-fg/30 text-bfc-brand-fg/50 hover:border-bfc-brand-fg hover:text-bfc-brand-fg`;
+// Styles are defined in global.css so MenuDrawer's Browse trigger shares them.
+const iconBtnActive = 'icon-btn icon-btn-active';
+const iconBtnInactive = 'icon-btn icon-btn-inactive';
 ---
 
 <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4">

@@ -57,7 +57,7 @@ export function MenuDrawer({ themes, currentSlug, variant = 'nav' }: Props) {
       ) : (
         <button
           onClick={() => setIsOpen(true)}
-          className="p-3 md:p-4 border border-bfc-brand-fg/40 text-bfc-brand-fg/80 hover:border-bfc-brand-fg hover:text-bfc-brand-fg transition-colors"
+          className="icon-btn icon-btn-inactive"
           aria-label="Browse themes"
           title="Browse themes"
         >
