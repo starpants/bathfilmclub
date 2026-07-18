@@ -42,7 +42,7 @@
         "rating": 7.2,
         "trailerKey": "-yjl7u0Afqg"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -82,7 +82,7 @@
         "rating": 6.8,
         "trailerKey": "pvqZzSMIZa0"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -373,7 +373,7 @@
         "rating": 6.4,
         "trailerKey": "e45rAwndek8"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -850,7 +850,7 @@
         "rating": 7.3,
         "trailerKey": "MJNR58zaStE"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -1072,7 +1072,7 @@
         "rating": 8.1,
         "trailerKey": "2KLZ4fSXtgI"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -1218,6 +1218,157 @@
         "backdropPath": "/6b6UpsOXmjO8mJKYsGTG9HW49CN.jpg",
         "rating": 7.1,
         "trailerKey": "8kDcCGlaBwY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11368,
+        "title": "Blood Simple",
+        "year": 1985,
+        "runtime": 97,
+        "genres": [
+          "Crime",
+          "Drama",
+          "Thriller"
+        ],
+        "synopsis": "The owner of a seedy small-town Texas bar discovers that one of his employees is having an affair with his wife. A chaotic chain of misunderstandings, lies and mischief ensues after he devises a plot to have them murdered.",
+        "director": "Joel Coen",
+        "writers": [
+          "Joel Coen",
+          "Ethan Coen"
+        ],
+        "producers": [
+          "Ethan Coen"
+        ],
+        "cast": [
+          "John Getz",
+          "Frances McDormand",
+          "Dan Hedaya",
+          "Samm-Art Williams",
+          "M. Emmet Walsh"
+        ],
+        "composers": [
+          "Carter Burwell"
+        ],
+        "posterPath": "/1DuCXzYWMAE9oGpxIrFWMn1NS0W.jpg",
+        "backdropPath": "/rGPoNNk4fvgG2mvkNAxJJPlszOu.jpg",
+        "rating": 7.3,
+        "trailerKey": "B1IFJC4Y8kU"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11524,
+        "title": "Thief",
+        "year": 1981,
+        "runtime": 123,
+        "genres": [
+          "Crime",
+          "Thriller",
+          "Drama"
+        ],
+        "synopsis": "Frank is an expert professional safecracker, specialized in high-profile diamond heists. He plans to use his ill-gotten income to retire from crime and build a nice life for himself complete with a home, wife and kids. To accelerate the process, he signs on with a top gangster for a big score.",
+        "director": "Michael Mann",
+        "writers": [
+          "Michael Mann"
+        ],
+        "producers": [
+          "Jerry Bruckheimer",
+          "Ronnie Caan"
+        ],
+        "cast": [
+          "James Caan",
+          "Tuesday Weld",
+          "Robert Prosky",
+          "Willie Nelson",
+          "Jim Belushi"
+        ],
+        "composers": [
+          "Edgar Froese",
+          "Christopher Franke",
+          "Johannes Schmölling",
+          "Klaus Krüger"
+        ],
+        "posterPath": "/bpjRGwfYJ71bU0hNhLIz7g3t6Oy.jpg",
+        "backdropPath": "/3pYudqkEC8rkjqpBw8pqoLUtGHe.jpg",
+        "rating": 7.2,
+        "trailerKey": "YDa_z0op7iU"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 141,
+        "title": "Donnie Darko",
+        "year": 2001,
+        "runtime": 114,
+        "genres": [
+          "Fantasy",
+          "Drama",
+          "Mystery"
+        ],
+        "synopsis": "After narrowly escaping a bizarre accident, a troubled teenager is plagued by visions of a large bunny rabbit that manipulates him to commit a series of crimes.",
+        "director": "Richard Kelly",
+        "writers": [
+          "Richard Kelly"
+        ],
+        "producers": [
+          "Adam Fields",
+          "Nancy Juvonen",
+          "Sean McKittrick"
+        ],
+        "cast": [
+          "Jake Gyllenhaal",
+          "Jena Malone",
+          "James Duval",
+          "Drew Barrymore",
+          "Beth Grant"
+        ],
+        "composers": [
+          "Michael Andrews"
+        ],
+        "posterPath": "/j2AtZFsflxiluaNtajMTI0Avm8C.jpg",
+        "backdropPath": "/msCHK5Kh1YbdZ0zPJ2nzPUhhSN9.jpg",
+        "rating": 7.8,
+        "trailerKey": "71RaE7JYTUU"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 4960,
+        "title": "Synecdoche, New York",
+        "year": 2008,
+        "runtime": 124,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "A theater director struggles with his work, and the women in his life, as he attempts to create a life-size replica of New York inside a warehouse as part of his new play.",
+        "director": "Charlie Kaufman",
+        "writers": [
+          "Charlie Kaufman"
+        ],
+        "producers": [
+          "Anthony Bregman",
+          "Spike Jonze",
+          "Charlie Kaufman"
+        ],
+        "cast": [
+          "Philip Seymour Hoffman",
+          "Samantha Morton",
+          "Michelle Williams",
+          "Catherine Keener",
+          "Emily Watson"
+        ],
+        "composers": [
+          "Jon Brion"
+        ],
+        "posterPath": "/5UwdhrjXhUgsiDhe1dpS9z4yj7q.jpg",
+        "backdropPath": "/insPcjOIWFf6Uc9DR0ORgXATqSM.jpg",
+        "rating": 7.5,
+        "trailerKey": "i2q8F0yRmrs"
       },
       "status": "nominated"
     }
