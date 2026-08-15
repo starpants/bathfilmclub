@@ -6,20 +6,21 @@ export interface PyramidRows {
   nominated: ThemeFilm[];
 }
 
-function sortByStatusThenTitle(films: ThemeFilm[]): ThemeFilm[] {
-  const statusOrder = { selected: 0, shortlisted: 1, nominated: 2 };
-  return [...films].sort((a, b) => {
-    const statusDiff = statusOrder[a.status] - statusOrder[b.status];
-    if (statusDiff !== 0) return statusDiff;
-    return a.film.title.localeCompare(b.film.title);
-  });
+function byTitle(films: ThemeFilm[]): ThemeFilm[] {
+  return [...films].sort((a, b) => a.film.title.localeCompare(b.film.title));
 }
 
+/**
+ * Every band is sorted by title alone. Bands are cumulative, so the lower ones
+ * mix statuses — but a film's standing is already legible from the band above
+ * (and from its status tag), so grouping by status here would only fragment the
+ * alphabet readers use to find a title.
+ */
 export function getPyramidRows(films: ThemeFilm[]): PyramidRows {
   return {
-    selected: films.filter((f) => f.status === 'selected').sort((a, b) => a.film.title.localeCompare(b.film.title)),
-    shortlisted: sortByStatusThenTitle(films.filter((f) => f.status === 'shortlisted' || f.status === 'selected')),
-    nominated: sortByStatusThenTitle(films),
+    selected: byTitle(films.filter((f) => f.status === 'selected')),
+    shortlisted: byTitle(films.filter((f) => f.status === 'shortlisted' || f.status === 'selected')),
+    nominated: byTitle(films),
   };
 }
 

@@ -2,10 +2,10 @@ import { describe, it, expect } from 'vitest';
 import { getPyramidRows, getCyclePhase, getEmptyBandMessage } from './pyramid';
 import type { ThemeFilm } from '@bathfilmclub/types';
 
-function film(id: number): ThemeFilm['film'] {
+function film(id: number, title = `Film ${id}`): ThemeFilm['film'] {
   return {
     tmdbId: id,
-    title: `Film ${id}`,
+    title,
     year: 2024,
     runtime: 90,
     genres: [],
@@ -63,6 +63,39 @@ describe('getPyramidRows', () => {
     expect(rows.selected).toHaveLength(2);
     expect(rows.shortlisted).toHaveLength(5);
     expect(rows.nominated).toHaveLength(7);
+  });
+
+  // Titles are chosen so alphabetical order contradicts status order: the
+  // selected film sorts last, the nominated film first.
+  const mixedOrderFilms: ThemeFilm[] = [
+    { film: film(1, 'Zodiac'), status: 'selected' },
+    { film: film(2, 'Memento'), status: 'shortlisted' },
+    { film: film(3, 'Amelie'), status: 'nominated' },
+  ];
+
+  it('sorts the nominated band by title, not by status', () => {
+    const rows = getPyramidRows(mixedOrderFilms);
+    expect(rows.nominated.map((f) => f.film.title)).toEqual([
+      'Amelie',
+      'Memento',
+      'Zodiac',
+    ]);
+  });
+
+  it('sorts the shortlisted band by title, not by status', () => {
+    const rows = getPyramidRows(mixedOrderFilms);
+    expect(rows.shortlisted.map((f) => f.film.title)).toEqual(['Memento', 'Zodiac']);
+  });
+
+  it('sorts the selected band by title', () => {
+    const films: ThemeFilm[] = [
+      { film: film(1, 'Solaris'), status: 'selected' },
+      { film: film(2, 'Rashomon'), status: 'selected' },
+    ];
+    expect(getPyramidRows(films).selected.map((f) => f.film.title)).toEqual([
+      'Rashomon',
+      'Solaris',
+    ]);
   });
 });
 
