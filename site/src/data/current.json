@@ -77,7 +77,7 @@
         "rating": 6.9,
         "trailerKey": "c-W5dl98ZWA"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -496,7 +496,7 @@
         "rating": 8.5,
         "trailerKey": "RsRN65PlaIM"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -532,7 +532,7 @@
         "rating": 7.8,
         "trailerKey": "0_sV9luPnMk"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -718,7 +718,7 @@
         "rating": 7.3,
         "trailerKey": "zU9aZo8EdjI"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -856,7 +856,7 @@
         "rating": 8.1,
         "trailerKey": "FKwcXt3JIaU"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -966,6 +966,373 @@
         "backdropPath": "/8gT3UKtglLVpu0YfccwbmXZ5Eis.jpg",
         "rating": 8,
         "trailerKey": "zIKu9k50SDo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 4588,
+        "title": "Lust, Caution",
+        "year": 2007,
+        "runtime": 158,
+        "genres": [
+          "Action",
+          "Drama",
+          "Romance",
+          "Thriller"
+        ],
+        "synopsis": "During World War II, a secret agent must seduce, then assassinate an official  who works for the Japanese puppet government in Shanghai. Her mission becomes clouded when she finds herself falling in love with the man she is assigned to kill.",
+        "director": "Ang Lee",
+        "writers": [
+          "Wang Huiling",
+          "James Schamus"
+        ],
+        "producers": [
+          "Ang Lee",
+          "Bill Kong",
+          "David Lee"
+        ],
+        "cast": [
+          "Tang Wei",
+          "Tony Leung Chiu-wai",
+          "Leehom Wang",
+          "Joan Chen",
+          "Tou Tsung-hua"
+        ],
+        "composers": [
+          "Alexandre Desplat"
+        ],
+        "posterPath": "/6c1tqfJEBuIyhQC19SLlLQAUAvJ.jpg",
+        "backdropPath": "/lU1fQews2gye23PocVE48CsTmOQ.jpg",
+        "rating": 7.3,
+        "trailerKey": "XPUIXdpImF0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 37903,
+        "title": "The White Ribbon",
+        "year": 2009,
+        "runtime": 144,
+        "genres": [
+          "Drama",
+          "Mystery"
+        ],
+        "synopsis": "An aged tailor recalls his life as the schoolteacher of a small village in Northern Germany that was struck by a series of strange events in the year leading up to WWI.",
+        "director": "Michael Haneke",
+        "writers": [
+          "Michael Haneke"
+        ],
+        "producers": [
+          "Veit Heiduschka",
+          "Andrea Occhipinti",
+          "Stefan Arndt"
+        ],
+        "cast": [
+          "Christian Friedel",
+          "Ernst Jacobi",
+          "Leonie Benesch",
+          "Ulrich Tukur",
+          "Fion Mutert"
+        ],
+        "posterPath": "/54dlnGDexrwAFlDb8HWKfmmX4LB.jpg",
+        "backdropPath": "/9Cxi5RQzYAlkNI5FROWkoKgiNkJ.jpg",
+        "rating": 7.5,
+        "trailerKey": "9JOXs8KEiDY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 26275,
+        "title": "Kamikaze Girls",
+        "year": 2004,
+        "runtime": 102,
+        "genres": [
+          "Comedy"
+        ],
+        "synopsis": "Momoko, a strange and seemingly emotionless girl obsessed with 18th century France, befriends a Yanki biker and the two experience the ups and downs of their unusual lives in a rural Japanese town.",
+        "director": "Tetsuya Nakashima",
+        "writers": [
+          "Tetsuya Nakashima"
+        ],
+        "producers": [
+          "Yûji Ishida",
+          "Satoru Ogura",
+          "Takashi Hirano"
+        ],
+        "cast": [
+          "Kyoko Fukada",
+          "Anna Tsuchiya",
+          "Hiroyuki Miyasako",
+          "Ryoko Shinohara",
+          "Sadao Abe"
+        ],
+        "composers": [
+          "Yoko Kanno"
+        ],
+        "posterPath": "/7CJTjqJW2Dd5frfogRBYI1fxCDN.jpg",
+        "backdropPath": "/4QCs7akSCJPOs2IYnLOTDvHFdVh.jpg",
+        "rating": 7.1,
+        "trailerKey": "CTR4gBMmqC8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1671548,
+        "title": "Dear You",
+        "year": 2026,
+        "runtime": 118,
+        "genres": [
+          "Drama",
+          "Family",
+          "Comedy"
+        ],
+        "synopsis": "Xiaowei travels to Thailand to find his \"billionaire grandfather\" who is out of contact due to debt problems, but unexpectedly find the one who has been corresponding with his grandmother for years is not her husband.",
+        "director": "Lan Hongchun",
+        "writers": [
+          "Lan Hongchun",
+          "Zheng Xuanxuan",
+          "Yang Leng",
+          "Zhu Liyun"
+        ],
+        "producers": [
+          "Xie Ying",
+          "Chen Xiaofen"
+        ],
+        "cast": [
+          "Li Sitong",
+          "Wang Yantong",
+          "Wu Shaoqing",
+          "Zheng Runqi",
+          "Wang Xiaohui"
+        ],
+        "composers": [
+          "Wu Zehua",
+          "Li Yihan",
+          "Yang Leng"
+        ],
+        "posterPath": "/rjmhzdVS3Ia535pFawju857e2Na.jpg",
+        "backdropPath": "/AwmlL79nKTcX5tzAhyoV298xXlz.jpg",
+        "rating": 9.2,
+        "trailerKey": "kDPgu6Hxgaw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 491584,
+        "title": "Burning",
+        "year": 2018,
+        "runtime": 148,
+        "genres": [
+          "Mystery",
+          "Drama",
+          "Thriller"
+        ],
+        "synopsis": "Deliveryman Jong-su is out on a job when he runs into Hae-mi, a girl who once lived in his neighborhood. She asks if he'd mind looking after her cat while she's away on a trip to Africa. On her return, she introduces to Jong-su an enigmatic young man named Ben, who she met during her trip. One day Ben tells Jong-su about his most unusual hobby.",
+        "director": "Lee Chang-dong",
+        "writers": [
+          "Oh Jung-mi",
+          "Lee Chang-dong"
+        ],
+        "producers": [
+          "Ok Gwang-hee"
+        ],
+        "cast": [
+          "Yoo Ah-in",
+          "Steven Yeun",
+          "Jeon Jong-seo",
+          "Kim Soo-kyung",
+          "Choe Seung-ho"
+        ],
+        "composers": [
+          "Mowg"
+        ],
+        "posterPath": "/kXiF80o74fE9gf3Utf9moAI7ar0.jpg",
+        "backdropPath": "/qQEt2FqF8McryFBNX30dyDJKiEK.jpg",
+        "rating": 7.4,
+        "trailerKey": "irBLY-Ev9vo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 8416,
+        "title": "The Conformist",
+        "year": 1971,
+        "runtime": 108,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "A weak-willed Italian man becomes a fascist flunky who goes abroad to arrange the assassination of his old teacher, now a political dissident.",
+        "director": "Bernardo Bertolucci",
+        "writers": [
+          "Bernardo Bertolucci"
+        ],
+        "producers": [
+          "Maurizio Lodi-Fè"
+        ],
+        "cast": [
+          "Jean-Louis Trintignant",
+          "Stefania Sandrelli",
+          "Gastone Moschin",
+          "Dominique Sanda",
+          "Enzo Tarascio"
+        ],
+        "composers": [
+          "Georges Delerue"
+        ],
+        "posterPath": "/nLJjFRqIJAK8qz0OKYnpKCblZNK.jpg",
+        "backdropPath": "/xKhnjQA5wrAUaopEKegdKD3Yi26.jpg",
+        "rating": 7.6,
+        "trailerKey": "04kMeEjVGIk"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11986,
+        "title": "Betty Blue",
+        "year": 1986,
+        "runtime": 120,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "A lackadaisical handyman and aspiring novelist tries to support his younger girlfriend as she slowly succumbs to madness.",
+        "director": "Jean-Jacques Beineix",
+        "writers": [
+          "Jean-Jacques Beineix"
+        ],
+        "producers": [
+          "Jean-Jacques Beineix"
+        ],
+        "cast": [
+          "Jean-Hugues Anglade",
+          "Béatrice Dalle",
+          "Gérard Darmon",
+          "Consuelo De Haviland",
+          "Clémentine Célarié"
+        ],
+        "composers": [
+          "Gabriel Yared"
+        ],
+        "posterPath": "/dGkxgj2ozlD4yRtsJL35EUXegFv.jpg",
+        "backdropPath": "/hZVBkgxgezyKEkWIbPVLiWAOsrl.jpg",
+        "rating": 7.2,
+        "trailerKey": "lRvPEJsM3aE"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 109,
+        "title": "Three Colors: White",
+        "year": 1994,
+        "runtime": 92,
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Mystery"
+        ],
+        "synopsis": "Polish immigrant Karol Karol finds himself out of a marriage, a job and a country when his French wife, Dominique, divorces him after six months due to his impotence. Forced to leave France after losing the business they jointly owned, Karol enlists fellow Polish expatriate Mikołaj to smuggle him back to their homeland.",
+        "director": "Krzysztof Kieślowski",
+        "writers": [
+          "Krzysztof Piesiewicz",
+          "Krzysztof Kieślowski"
+        ],
+        "producers": [
+          "Marin Karmitz"
+        ],
+        "cast": [
+          "Zbigniew Zamachowski",
+          "Julie Delpy",
+          "Janusz Gajos",
+          "Jerzy Stuhr",
+          "Grzegorz Warchoł"
+        ],
+        "composers": [
+          "Zbigniew Preisner"
+        ],
+        "posterPath": "/6r09mQLfJmQes0uFD4yTa8NAKPj.jpg",
+        "backdropPath": "/37dhpIAmHf7xUhOI9o059sqPnm8.jpg",
+        "rating": 7.4,
+        "trailerKey": "mfw46ZiSScw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 17962,
+        "title": "After Life",
+        "year": 1999,
+        "runtime": 118,
+        "genres": [
+          "Fantasy",
+          "Drama"
+        ],
+        "synopsis": "On a cold Monday morning, a group of counselors clock in at an old-fashioned social services office. Their task is to interview the recently deceased, record their personal details, then, over the course of the week, assist them in choosing a single memory to keep for eternity.",
+        "director": "Hirokazu Kore-eda",
+        "writers": [
+          "Hirokazu Kore-eda"
+        ],
+        "producers": [
+          "Shiho Sato",
+          "Masayuki Akieda"
+        ],
+        "cast": [
+          "Arata Iura",
+          "Erika Oda",
+          "Susumu Terajima",
+          "Takashi Naito",
+          "Kei Tani"
+        ],
+        "composers": [
+          "Yasuhiro Kasamatsu"
+        ],
+        "posterPath": "/bs2M1hqAQl5LeAOPPRV4drwouZS.jpg",
+        "backdropPath": "/pXOsdvH4xuprxGmZMiCJsRAowi7.jpg",
+        "rating": 7.2,
+        "trailerKey": "f8K_YxtdzRo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 54898,
+        "title": "The Green Ray",
+        "year": 1986,
+        "runtime": 99,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "A lonely Parisian woman comes to terms with her isolation and anxieties during a long summer vacation.",
+        "director": "Éric Rohmer",
+        "writers": [
+          "Marie Rivière",
+          "Éric Rohmer"
+        ],
+        "producers": [
+          "Margaret Ménégoz"
+        ],
+        "cast": [
+          "Marie Rivière",
+          "Rosette",
+          "Béatrice Romand",
+          "Carita",
+          "Vincent Gauthier"
+        ],
+        "composers": [
+          "Jean-Louis Valéro"
+        ],
+        "posterPath": "/1E3pliSC7lXWw6zJhMvG6ba0UNX.jpg",
+        "backdropPath": "/jfDTQuovn57QIBvoGDom6FNQrkl.jpg",
+        "rating": 7.5,
+        "trailerKey": "D7mPj2AkFfI"
       },
       "status": "nominated"
     }
