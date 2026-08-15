@@ -1,7 +1,13 @@
 {
   "slug": "2026-09-foreign-language",
   "title": "Foreign Language",
+  "description": "Films predominantly in a non-English language",
   "month": "2026-09",
+  "meeting": {
+    "date": "2026-09-03",
+    "time": "19:15",
+    "venue": "See Discord for venue details"
+  },
   "films": [
     {
       "film": {
