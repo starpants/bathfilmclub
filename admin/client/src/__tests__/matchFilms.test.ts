@@ -20,6 +20,7 @@ const candidates: Film[] = [
   film(1, 'Paris, Texas', 1984),
   film(2, 'The Apartment', 1960),
   film(3, 'The Third Man', 1949),
+  film(4, 'Amélie', 2001),
 ];
 
 describe('matchFilms', () => {
@@ -49,5 +50,13 @@ describe('matchFilms', () => {
 
   it('preserves input order across multiple matches', () => {
     expect(matchFilms(candidates, 'the').map((f) => f.tmdbId)).toEqual([2, 3]);
+  });
+
+  it('matches an accented title from an unaccented query', () => {
+    expect(matchFilms(candidates, 'amelie').map((f) => f.tmdbId)).toEqual([4]);
+  });
+
+  it('matches an accented title from an accented query', () => {
+    expect(matchFilms(candidates, 'amélie').map((f) => f.tmdbId)).toEqual([4]);
   });
 });

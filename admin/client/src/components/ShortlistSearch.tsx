@@ -55,7 +55,7 @@ export function ShortlistSearch({ candidates, onPromote }: Props) {
       )}
 
       {matches.length > 0 && (
-        <ul style={{ listStyle: 'none', padding: 0, margin: '0.5rem 0 0', border: `1px solid ${fg.hairline}` }}>
+        <ul style={{ listStyle: 'none', padding: 0, margin: '0.5rem 0 0', border: `1px solid ${fg.hairline}`, maxHeight: '15rem', overflowY: 'auto' }}>
           {matches.map((f) => (
             <li key={f.tmdbId}>
               <button
