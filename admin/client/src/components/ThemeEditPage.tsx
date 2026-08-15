@@ -5,6 +5,7 @@ import { color, fg, font, size } from '../tokens';
 import { FilmSearch } from './FilmSearch';
 import { FilmCard } from './FilmCard';
 import { PyramidBand } from './PyramidBand';
+import { ShortlistSearch } from './ShortlistSearch';
 
 interface Props {
   slug: string;
@@ -206,7 +207,18 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
           <FilmCard key={film.tmdbId} slug={theme.slug} film={film} status={status} onChanged={reloadFilms} />
         ))}
       </PyramidBand>
-      <PyramidBand title="Shortlisted" color={color.tierShortlisted}>
+      <PyramidBand
+        title="Shortlisted"
+        color={color.tierShortlisted}
+        toolbar={
+          <ShortlistSearch
+            candidates={byStatus('nominated').map((f) => f.film)}
+            onPromote={(tmdbId) =>
+              api.updateFilmStatus(theme.slug, tmdbId, 'shortlisted').then(reloadFilms)
+            }
+          />
+        }
+      >
         {byStatus('shortlisted').map(({ film, status }) => (
           <FilmCard key={film.tmdbId} slug={theme.slug} film={film} status={status} onChanged={reloadFilms} />
         ))}
