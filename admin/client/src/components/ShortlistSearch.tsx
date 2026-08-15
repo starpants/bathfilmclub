@@ -38,12 +38,13 @@ export function ShortlistSearch({ candidates, onPromote }: Props) {
         type="search"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="Shortlist a nominated film…"
-        aria-label="Shortlist a nominated film"
+        placeholder="Search Nominated Films"
+        aria-label="Search nominated films"
         style={{
+          // Styled to match the TMDb "Add Film" input in FilmSearch.tsx:
+          // default white field, default text colour, plain grey border.
           width: '100%', fontFamily: 'inherit', fontSize: '0.9rem',
-          color: color.brandFg, background: fg.hairline,
-          border: `1px solid ${fg.faint}`, padding: '0.5rem',
+          border: '1px solid #ccc', padding: '0.5rem',
           height: '2.5rem', boxSizing: 'border-box',
         }}
       />
