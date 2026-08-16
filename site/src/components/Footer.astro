@@ -15,25 +15,6 @@ const year = new Date().getFullYear();
 
 <footer class:list={['py-12', bg]}>
   <div class="max-w-site mx-auto px-6">
-    <!-- <NavBar themes={allThemes} /> -->
-
-    <div
-      class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mx-auto max-w-80 pb-4"
-    >
-      <a
-        href="https://www.themoviedb.org"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300"
-        aria-label="The Movie Database"
-      >
-        <TmdbLogo class="w-20 h-auto" />
-      </a>
-      <p class="font-body text-bfc-brand-fg/60 text-sm text-center sm:text-left max-w-xs">
-        This product uses the TMDB API but is not endorsed or certified by TMDB.
-      </p>
-    </div>
-
     <div class="text-center pb-8 capitalize">
       <p class="font-body text-bfc-brand-fg/60 text-sm mb-2">
         &copy; {year} Bath Film Club. All rights reserved.
@@ -47,6 +28,20 @@ const year = new Date().getFullYear();
             >Mea Fabula Studio</a
           >
         </div>
+      </p>
+    </div>
+    <div class="flex flex-row items-center justify-center gap-3 mx-auto max-w-80 pb-4">
+      <a
+        href="https://www.themoviedb.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300"
+        aria-label="The Movie Database"
+      >
+        <TmdbLogo class="w-20 h-auto" />
+      </a>
+      <p class="font-body text-bfc-brand-fg/60 text-sm text-left max-w-xs">
+        This product uses the TMDB API but is not endorsed or certified by TMDB.
       </p>
     </div>
   </div>

@@ -138,7 +138,18 @@ export function FilmPanel({ film, onClose }: Props) {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-bfc-brand-accent font-heading font-semibold text-sm hover:underline"
                 >
-                  Watch Trailer ↗
+                  Watch Trailer<span className="sr-only"> (opens in a new tab)</span>
+                  {/* External-link mark. Same path as DiscordButton.astro. */}
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 32 32"
+                    fill="currentColor"
+                    className="shrink-0"
+                    aria-hidden="true"
+                  >
+                    <path d="M18 5v2h5.563L11.28 19.281l1.438 1.438L25 8.437V14h2V5ZM5 9v18h18V14l-2 2v9H7V11h9l2-2Z" />
+                  </svg>
                 </a>
               )}
             </div>
