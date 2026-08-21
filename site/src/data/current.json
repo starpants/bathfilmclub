@@ -4,7 +4,7 @@
   "description": "Films predominantly in a non-English language",
   "month": "2026-09",
   "meeting": {
-    "date": "2026-09-03",
+    "date": "2026-09-02",
     "time": "19:15",
     "venue": "See Discord for venue details"
   },
@@ -538,7 +538,7 @@
         "rating": 7.8,
         "trailerKey": "0_sV9luPnMk"
       },
-      "status": "shortlisted"
+      "status": "selected"
     },
     {
       "film": {
@@ -862,7 +862,7 @@
         "rating": 8.1,
         "trailerKey": "FKwcXt3JIaU"
       },
-      "status": "shortlisted"
+      "status": "selected"
     },
     {
       "film": {
