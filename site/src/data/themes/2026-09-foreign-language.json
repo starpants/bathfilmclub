@@ -1,0 +1,1346 @@
+{
+  "slug": "2026-09-foreign-language",
+  "title": "Foreign Language",
+  "description": "Films predominantly in a non-English language",
+  "month": "2026-09",
+  "meeting": {
+    "date": "2026-09-02",
+    "time": "19:15",
+    "venue": "See Discord for venue details"
+  },
+  "films": [
+    {
+      "film": {
+        "tmdbId": 11075,
+        "title": "Audition",
+        "year": 2000,
+        "runtime": 115,
+        "genres": [
+          "Horror",
+          "Drama"
+        ],
+        "synopsis": "Seven years after the death of his wife, widower Shigeharu seeks advice on how to find a new wife from a colleague. Taking advantage of their position as a film company, they stage an audition. Interviewing a series of women, Shigeharu is enchanted by the quiet Asami. But soon things take a twisted turn as Asami isn’t what she seems to be.",
+        "director": "Takashi Miike",
+        "writers": [
+          "Daisuke Tengan"
+        ],
+        "producers": [
+          "Satoshi Fukushima",
+          "Akemi Suyama"
+        ],
+        "cast": [
+          "Ryo Ishibashi",
+          "Eihi Shiina",
+          "Jun Kunimura",
+          "Tetsu Sawaki",
+          "Renji Ishibashi"
+        ],
+        "composers": [
+          "Koji Endo"
+        ],
+        "posterPath": "/zwGaUMm0wAqi0wkO7LJDlwoA5LP.jpg",
+        "backdropPath": "/xmtmZc5aylqDMRKYlU8pmsgG0HF.jpg",
+        "rating": 7.1,
+        "trailerKey": "2wr_om5LsuI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1494,
+        "title": "Curse of the Golden Flower",
+        "year": 2006,
+        "runtime": 114,
+        "genres": [
+          "Action",
+          "Drama",
+          "Fantasy"
+        ],
+        "synopsis": "During China's Tang dynasty the emperor has taken the princess of a neighboring province as his wife. She has borne him two sons and raised his eldest. Now his control over his dominion is complete, including the royal family itself.",
+        "director": "Zhang Yimou",
+        "writers": [
+          "Bian Zhihong",
+          "Zhang Yimou",
+          "Wu Nan"
+        ],
+        "producers": [
+          "Bill Kong",
+          "Zhang Weiping",
+          "Ronald Wong"
+        ],
+        "cast": [
+          "Chow Yun-Fat",
+          "Gong Li",
+          "Jay Chou",
+          "Liu Ye",
+          "Qin Junjie"
+        ],
+        "composers": [
+          "Shigeru Umebayashi"
+        ],
+        "posterPath": "/gHkkDpfo5YnOrbVfwtDHi91BkrU.jpg",
+        "backdropPath": "/m3zGXY61pnFZ12gXnJgO0Mg0RWG.jpg",
+        "rating": 6.9,
+        "trailerKey": "c-W5dl98ZWA"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 94329,
+        "title": "The Raid",
+        "year": 2012,
+        "runtime": 101,
+        "genres": [
+          "Action",
+          "Thriller",
+          "Crime"
+        ],
+        "synopsis": "Deep in the heart of Jakarta's slums lies an impenetrable safe house for the world's most dangerous killers and gangsters. Until now, the run-down apartment block has been considered untouchable to even the bravest of police. Cloaked under the cover of pre-dawn darkness and silence, an elite swat team is tasked with raiding the safe house in order to take down the notorious drug lord that runs it.  But when a chance encounter with a spotter blows their cover and news of their assault reaches the drug lord, the building's lights are cut and all the exits blocked. Stranded on the sixth floor with no way out, the unit must fight their way through the city's worst to survive their mission. Starring Indonesian martial arts sensation Iko Uwais.",
+        "director": "Gareth Evans",
+        "writers": [
+          "Gareth Evans"
+        ],
+        "producers": [
+          "Ario Sagantoro"
+        ],
+        "cast": [
+          "Iko Uwais",
+          "Joe Taslim",
+          "Donny Alamsyah",
+          "Yayan Ruhian",
+          "Pierre Gruno"
+        ],
+        "composers": [
+          "Mike Shinoda",
+          "Joseph Trapanese",
+          "Aria Prayogi",
+          "Fajar Yuskemal"
+        ],
+        "posterPath": "/Abnm1Ws3JH0ReCfEhLMPwPcMcGO.jpg",
+        "backdropPath": "/3wf5wV222vqTmz10y1vbrPgrGDf.jpg",
+        "rating": 7.4,
+        "trailerKey": "GDYwcjhvD-Y"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 58857,
+        "title": "13 Assassins",
+        "year": 2010,
+        "runtime": 141,
+        "genres": [
+          "Adventure",
+          "Drama",
+          "Action"
+        ],
+        "synopsis": "A bravado period action film set at the end of Japan's feudal era in which a group of unemployed samurai are enlisted to bring down a sadistic lord and prevent him from ascending to the throne and plunging the country into a war-torn future.",
+        "director": "Takashi Miike",
+        "writers": [
+          "Daisuke Tengan"
+        ],
+        "producers": [
+          "Minami Ichikawa",
+          "Tōichirō Shiraishi",
+          "Shigeji Maeda"
+        ],
+        "cast": [
+          "Koji Yakusho",
+          "Takayuki Yamada",
+          "Yūsuke Iseya",
+          "Goro Inagaki",
+          "Kazue Fukiishi"
+        ],
+        "composers": [
+          "Koji Endo"
+        ],
+        "posterPath": "/yUsVsiVXUwClk4vSCx80vrdO6MV.jpg",
+        "backdropPath": "/bz95FrtRKCJ2ZKXJU7ZAXxvl4Xb.jpg",
+        "rating": 7.3,
+        "trailerKey": "Xpm007vne54"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11220,
+        "title": "Fallen Angels",
+        "year": 1995,
+        "runtime": 98,
+        "genres": [
+          "Action",
+          "Romance",
+          "Crime"
+        ],
+        "synopsis": "An indifferent hitman, his infatuated business partner and an ex-convict search for love and meaning as their lives cross paths in Hong Kong.",
+        "director": "Wong Kar-Wai",
+        "writers": [
+          "Wong Kar-Wai"
+        ],
+        "producers": [
+          "Jeffrey Lau Chun-Wai"
+        ],
+        "cast": [
+          "Leon Lai Ming",
+          "Michele Reis",
+          "Takeshi Kaneshiro",
+          "Charlie Yeung Choi-Nei",
+          "Karen Mok Man-Wai"
+        ],
+        "composers": [
+          "Roel A. García",
+          "Frankie Chan Fan-Kei"
+        ],
+        "posterPath": "/yyM9BPdwttK5LKZSLvHae7QPKo1.jpg",
+        "backdropPath": "/lInQVVbPjKFGX7GDcxNMXALy2Y4.jpg",
+        "rating": 7.7,
+        "trailerKey": "uxaT19BlH0M"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 104,
+        "title": "Run Lola Run",
+        "year": 1998,
+        "runtime": 80,
+        "genres": [
+          "Action",
+          "Drama",
+          "Thriller"
+        ],
+        "synopsis": "Lola receives a phone call from her boyfriend Manni. He lost 100,000 DM in a subway train that belongs to a very bad guy. She has 20 minutes to raise this amount and meet Manni. Otherwise, he will rob a store to get the money. Three different alternatives may happen depending on some minor event along Lola's run.",
+        "director": "Tom Tykwer",
+        "writers": [
+          "Tom Tykwer"
+        ],
+        "producers": [
+          "Stefan Arndt",
+          "Gebhard Henke",
+          "Andreas Schreitmüller"
+        ],
+        "cast": [
+          "Franka Potente",
+          "Moritz Bleibtreu",
+          "Herbert Knaup",
+          "Nina Petri",
+          "Armin Rohde"
+        ],
+        "composers": [
+          "Johnny Klimek",
+          "Tom Tykwer",
+          "Reinhold Heil"
+        ],
+        "posterPath": "/v0giIi4bTILVhNhJajet3WWY3FA.jpg",
+        "backdropPath": "/wRcm3iwi4BeMN59U4fjO7u3dOVI.jpg",
+        "rating": 7.3,
+        "trailerKey": "ZCYnsUdO6H0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 36095,
+        "title": "Cure",
+        "year": 1997,
+        "runtime": 111,
+        "genres": [
+          "Crime",
+          "Thriller",
+          "Horror",
+          "Mystery"
+        ],
+        "synopsis": "A frustrated detective deals with the case of several gruesome murders committed by people who have no recollection of what they've done.",
+        "director": "Kiyoshi Kurosawa",
+        "writers": [
+          "Kiyoshi Kurosawa"
+        ],
+        "producers": [
+          "Satoshi Kanno",
+          "Tsutomu Tsuchikawa",
+          "Tetsuya Ikeda"
+        ],
+        "cast": [
+          "Koji Yakusho",
+          "Masato Hagiwara",
+          "Tsuyoshi Ujiki",
+          "Anna Nakagawa",
+          "Yukijiro Hotaru"
+        ],
+        "composers": [
+          "Gary Ashiya"
+        ],
+        "posterPath": "/xNVJr9q6AtSbjosS6Ed9YirOkSo.jpg",
+        "backdropPath": "/xxIRKSd9LmHojUD5grvMuGypwVC.jpg",
+        "rating": 7.6,
+        "trailerKey": "pv91E5L6_Tw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 103663,
+        "title": "The Hunt",
+        "year": 2012,
+        "runtime": 116,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "A teacher lives a lonely life, all the while struggling over his son’s custody. His life slowly gets better as he finds love and receives good news from his son, but his new luck is about to be brutally shattered by an innocent little lie.",
+        "director": "Thomas Vinterberg",
+        "writers": [
+          "Thomas Vinterberg",
+          "Tobias Lindholm"
+        ],
+        "producers": [
+          "Sisse Graum Jørgensen",
+          "Morten Kaufmann",
+          "Thomas Vinterberg"
+        ],
+        "cast": [
+          "Mads Mikkelsen",
+          "Thomas Bo Larsen",
+          "Annika",
+          "Lasse Fogelstrøm",
+          "Susse Wold"
+        ],
+        "composers": [
+          "Nikolaj Egelund"
+        ],
+        "posterPath": "/jkixsXzRh28q3PCqFoWcf7unghT.jpg",
+        "backdropPath": "/jmVWlCZ8hRtmrQGbKXXFHsrSohp.jpg",
+        "rating": 8.1,
+        "trailerKey": "BSVDnUgJVYY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 483184,
+        "title": "Dogman",
+        "year": 2018,
+        "runtime": 103,
+        "genres": [
+          "Crime",
+          "Drama",
+          "Thriller"
+        ],
+        "synopsis": "Marcello, a small and gentle dog groomer, finds himself involved in a dangerous relationship of subjugation with Simone, a former violent boxer who terrorizes the entire neighborhood. In an effort to reaffirm his dignity, Marcello will submit to an unexpected act of vengeance.",
+        "director": "Matteo Garrone",
+        "writers": [
+          "Matteo Garrone",
+          "Massimo Gaudioso",
+          "Ugo Chiti"
+        ],
+        "producers": [
+          "Jean Labadie",
+          "Matteo Garrone",
+          "Paolo Del Brocco"
+        ],
+        "cast": [
+          "Marcello Fonte",
+          "Edoardo Pesce",
+          "Nunzia Schiano",
+          "Adamo Dionisi",
+          "Francesco Acquaroli"
+        ],
+        "posterPath": "/eaZq1G8sJHv9f9a5IzioQlS3REX.jpg",
+        "backdropPath": "/mgfxkCJLvudtnTOJml5mFbHWbk0.jpg",
+        "rating": 7.5,
+        "trailerKey": "ewh0lBcEb2U"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 670,
+        "title": "Oldboy",
+        "year": 2003,
+        "runtime": 120,
+        "genres": [
+          "Thriller",
+          "Mystery"
+        ],
+        "synopsis": "With no clue how he came to be imprisoned, drugged and tortured for 15 years, a desperate man seeks revenge on his captors.",
+        "director": "Park Chan-wook",
+        "writers": [
+          "Hwang Jo-yoon",
+          "Lim Joon-hyung",
+          "Park Chan-wook"
+        ],
+        "producers": [
+          "Syd Lim"
+        ],
+        "cast": [
+          "Choi Min-sik",
+          "Yoo Ji-tae",
+          "Kang Hye-jung",
+          "Kim Byeong-ok",
+          "Ji Dae-han"
+        ],
+        "composers": [
+          "Choi Seung-hyun",
+          "Shim Hyun-jung",
+          "Lee Ji-soo",
+          "Jo Yeong-wook"
+        ],
+        "posterPath": "/pWDtjs568ZfOTMbURQBYuT4Qxka.jpg",
+        "backdropPath": "/sdwjQEM869JFwMytTmvr6ggvaUl.jpg",
+        "rating": 8.2,
+        "trailerKey": "tAaBkFChaRg"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 660120,
+        "title": "The Worst Person in the World",
+        "year": 2021,
+        "runtime": 128,
+        "genres": [
+          "Drama",
+          "Romance",
+          "Comedy"
+        ],
+        "synopsis": "The chronicles of four years in the life of Julie, a young woman who navigates the troubled waters of her love life and struggles to find her career path, leading her to take a realistic look at who she really is.",
+        "director": "Joachim Trier",
+        "writers": [
+          "Eskil Vogt",
+          "Joachim Trier"
+        ],
+        "producers": [
+          "Andrea Berentsen Ottmar",
+          "Thomas Robsahm"
+        ],
+        "cast": [
+          "Renate Reinsve",
+          "Anders Danielsen Lie",
+          "Herbert Nordrum",
+          "Hans Olav Brenner",
+          "Helene Bjørneby"
+        ],
+        "composers": [
+          "Ola Fløttum"
+        ],
+        "posterPath": "/1NxGNQchGBTHXJ6RShLY1IlZqWn.jpg",
+        "backdropPath": "/woYGBHERSMhIHqmkkRCbCXp81l4.jpg",
+        "rating": 7.4,
+        "trailerKey": "gpkQgk1Fi1Q"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 467244,
+        "title": "The Zone of Interest",
+        "year": 2023,
+        "runtime": 105,
+        "genres": [
+          "Drama",
+          "History",
+          "War"
+        ],
+        "synopsis": "The commandant of Auschwitz, Rudolf Höss, and his wife Hedwig, strive to build a dream life for their family in a house and garden next to the camp.",
+        "director": "Jonathan Glazer",
+        "writers": [
+          "Jonathan Glazer"
+        ],
+        "producers": [
+          "Ewa Puszczyńska",
+          "James Wilson"
+        ],
+        "cast": [
+          "Christian Friedel",
+          "Sandra Hüller",
+          "Johann Karthaus",
+          "Luis Noah Witte",
+          "Nele Ahrensmeier"
+        ],
+        "composers": [
+          "Mica Levi"
+        ],
+        "posterPath": "/hUu9zyZmDd8VZegKi1iK1Vk0RYS.jpg",
+        "backdropPath": "/pnTSOKcYnvdpQNQElAtJM1rWOxH.jpg",
+        "rating": 7,
+        "trailerKey": "GFNtVaAuVYY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 346,
+        "title": "Seven Samurai",
+        "year": 1954,
+        "runtime": 207,
+        "genres": [
+          "Action",
+          "Drama"
+        ],
+        "synopsis": "A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food.",
+        "director": "Akira Kurosawa",
+        "writers": [
+          "Hideo Oguni",
+          "Shinobu Hashimoto",
+          "Akira Kurosawa"
+        ],
+        "producers": [
+          "Sōjirō Motoki"
+        ],
+        "cast": [
+          "Toshirō Mifune",
+          "Takashi Shimura",
+          "Yoshio Inaba",
+          "Seiji Miyaguchi",
+          "Minoru Chiaki"
+        ],
+        "composers": [
+          "Fumio Hayasaka"
+        ],
+        "posterPath": "/lOMGc8bnSwQhS4XyE1S99uH8NXf.jpg",
+        "backdropPath": "/qvZ91FwMq6O47VViAr8vZNQz3WI.jpg",
+        "rating": 8.5,
+        "trailerKey": "RsRN65PlaIM"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 396535,
+        "title": "Train to Busan",
+        "year": 2016,
+        "runtime": 118,
+        "genres": [
+          "Action",
+          "Horror",
+          "Thriller"
+        ],
+        "synopsis": "When a zombie virus pushes Korea into a state of emergency, those trapped on an express train to Busan must fight for their own survival.",
+        "director": "Yeon Sang-ho",
+        "writers": [
+          "Park Joo-suk"
+        ],
+        "producers": [
+          "Kim Yeon-ho"
+        ],
+        "cast": [
+          "Gong Yoo",
+          "Kim Su-an",
+          "Jung Yu-mi",
+          "Don Lee",
+          "Choi Woo-shik"
+        ],
+        "composers": [
+          "Jang Young-gyu"
+        ],
+        "posterPath": "/vNVFt6dtcqnI7hqa6LFBUibuFiw.jpg",
+        "backdropPath": "/brnfCYyz8EMbBrHgmh8sCwBi5i1.jpg",
+        "rating": 7.8,
+        "trailerKey": "0_sV9luPnMk"
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 149,
+        "title": "Akira",
+        "year": 1988,
+        "runtime": 124,
+        "genres": [
+          "Animation",
+          "Science Fiction",
+          "Action"
+        ],
+        "synopsis": "A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath that only two teenagers and a group of psychics can stop.",
+        "director": "Katsuhiro Otomo",
+        "writers": [
+          "Izo Hashimoto",
+          "Katsuhiro Otomo"
+        ],
+        "producers": [
+          "Shunzo Kato",
+          "Ryohei Suzuki"
+        ],
+        "cast": [
+          "Mitsuo Iwata",
+          "Nozomu Sasaki",
+          "Mami Koyama",
+          "Taro Ishida",
+          "Mizuho Suzuki"
+        ],
+        "composers": [
+          "Shoji Yamashiro"
+        ],
+        "posterPath": "/neZ0ykEsPqxamsX6o5QNUFILQrz.jpg",
+        "backdropPath": "/fK40VGYIm7hmKrLJ26fgPQU0qRG.jpg",
+        "rating": 7.9,
+        "trailerKey": "Jq4ER-P6NCQ"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 797,
+        "title": "Persona",
+        "year": 1966,
+        "runtime": 85,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "A young nurse, Alma, is put in charge of Elisabeth Vogler: an actress who is seemingly healthy in all respects, but will not talk. As they spend time together, Alma speaks to Elisabeth constantly, never receiving any answer.",
+        "director": "Ingmar Bergman",
+        "writers": [
+          "Ingmar Bergman"
+        ],
+        "producers": [
+          "Ingmar Bergman"
+        ],
+        "cast": [
+          "Bibi Andersson",
+          "Liv Ullmann",
+          "Margaretha Krook",
+          "Gunnar Björnstrand",
+          "Jörgen Lindström"
+        ],
+        "composers": [
+          "Lars Johan Werle"
+        ],
+        "posterPath": "/hloUDKausII3Zf8ROsEZJHSkXza.jpg",
+        "backdropPath": "/amr72SENYz7AM4Hq5WBXxFBJEY6.jpg",
+        "rating": 8.1,
+        "trailerKey": "8ZO01M8k1mg"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 598,
+        "title": "City of God",
+        "year": 2002,
+        "runtime": 129,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "synopsis": "In the poverty-stricken favelas of Rio de Janeiro in the 1970s, two young men choose different paths. Rocket is a budding photographer who documents the increasing drug-related violence of his neighborhood, while José “Zé” Pequeno is an ambitious drug dealer diving into a dangerous life of crime.",
+        "director": "Fernando Meirelles",
+        "writers": [
+          "Bráulio Mantovani"
+        ],
+        "producers": [
+          "Hank Levine",
+          "Juliette Renaud",
+          "Mauricio Andrade Ramos"
+        ],
+        "cast": [
+          "Alexandre Rodrigues",
+          "Leandro Firmino",
+          "Phellipe Haagensen",
+          "Douglas Silva",
+          "Jonathan Haagensen"
+        ],
+        "composers": [
+          "Ed Cortês",
+          "Antonio Pinto"
+        ],
+        "posterPath": "/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
+        "backdropPath": "/uvitbjFU4JqvMwIkMWHp69bmUzG.jpg",
+        "rating": 8.4,
+        "trailerKey": "dcUOO4Itgmw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 5842,
+        "title": "Versus",
+        "year": 2000,
+        "runtime": 120,
+        "genres": [
+          "Horror",
+          "Fantasy",
+          "Action",
+          "Thriller",
+          "Adventure"
+        ],
+        "synopsis": "A group of ruthless gangsters, an unknown woman and an escaped convict have met, in The Forest of Resurrection, the 444th portal to the other side. Their troubles start when those once killed and buried in the forest come back from the dead.",
+        "director": "Ryuhei Kitamura",
+        "writers": [
+          "Yudai Yamaguchi",
+          "Ryuhei Kitamura"
+        ],
+        "producers": [
+          "Keishiro Shin"
+        ],
+        "cast": [
+          "Tak Sakaguchi",
+          "Hideo Sakaki",
+          "Kenji Matsuda",
+          "Minoru Matsumoto",
+          "Yuichiro Arai"
+        ],
+        "composers": [
+          "Nobuhiko Morino"
+        ],
+        "posterPath": "/dEk6Fpm4lkEBQBVpzTOLau7qgR9.jpg",
+        "backdropPath": "/rZjRoASxOOyafFruGRuDBzL7dZ8.jpg",
+        "rating": 6.2,
+        "trailerKey": "wg7ljhZuJJc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 535356,
+        "title": "Elisa & Marcela",
+        "year": 2019,
+        "runtime": 118,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "The film tells the true story of Elisa Sánchez Loriga and Marcela Gracia Ibeas, two women in 1901 Spain who fell deeply in love. To overcome societal and legal barriers to their relationship, Elisa assumes a male identity, enabling the pair to marry in secret. Their daring act makes them the first recorded same-sex couple to marry in Spain, but their love is tested as they face relentless persecution and sacrifice.",
+        "director": "Isabel Coixet",
+        "writers": [
+          "Isabel Coixet"
+        ],
+        "producers": [
+          "José Carmona",
+          "Zaza Ceballos",
+          "Joaquín Padró"
+        ],
+        "cast": [
+          "Natalia de Molina",
+          "Greta Fernández",
+          "Sara Casasnovas",
+          "Tamar Novas",
+          "María Pujalte"
+        ],
+        "composers": [
+          "Sofía Oriana Infante"
+        ],
+        "posterPath": "/zOd1CB3TgV1RLtnCHtDSPeC9tId.jpg",
+        "backdropPath": "/yxfWuiH3qfAiV4GSHEhXz7uC8sk.jpg",
+        "rating": 7.3,
+        "trailerKey": "zU9aZo8EdjI"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 5589,
+        "title": "The Terribly Sad Princess",
+        "year": 1968,
+        "runtime": 73,
+        "genres": [
+          "Music",
+          "Comedy",
+          "Family"
+        ],
+        "synopsis": "Like a fairy tale, King Henry and King Good-thought decided long ago that their only children should marry and so prevent war arising between their kingdoms ever again. But the young prince is wary of marrying anyone he doesn’t know.",
+        "director": "Bořivoj Zeman",
+        "writers": [
+          "František Vlček",
+          "Bořivoj Zeman"
+        ],
+        "producers": [],
+        "cast": [
+          "Helena Vondráčková",
+          "Václav Neckář",
+          "Bohuš Záhorský",
+          "Jaroslav Marvan",
+          "Josef Kemr"
+        ],
+        "composers": [
+          "Jan Hammer"
+        ],
+        "posterPath": "/l0i8MtHc39vwYmOj51dIG4MOGEH.jpg",
+        "backdropPath": "/xRmCrXglh2g2J0lM3f37DEUn5vu.jpg",
+        "rating": 7.4
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 194,
+        "title": "Amélie",
+        "year": 2001,
+        "runtime": 122,
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "synopsis": "At a tiny Parisian café, the adorable yet painfully shy Amélie accidentally discovers a gift for helping others. Soon Amelie is spending her days as a matchmaker, guardian angel, and all-around do-gooder. But when she bumps into a handsome stranger, will she find the courage to become the star of her very own love story?",
+        "director": "Jean-Pierre Jeunet",
+        "writers": [
+          "Guillaume Laurant",
+          "Jean-Pierre Jeunet"
+        ],
+        "producers": [
+          "Claudie Ossard",
+          "Arne Meerkamp van Embden"
+        ],
+        "cast": [
+          "Audrey Tautou",
+          "Mathieu Kassovitz",
+          "Rufus",
+          "Serge Merlin",
+          "Jamel Debbouze"
+        ],
+        "composers": [
+          "Yann Tiersen"
+        ],
+        "posterPath": "/nSxDa3M9aMvGVLoItzWTepQ5h5d.jpg",
+        "backdropPath": "/6n53UI4mX9QMfe2S0Pgt8mGebY1.jpg",
+        "rating": 7.9,
+        "trailerKey": "555A7T_kmIc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 16859,
+        "title": "Kiki's Delivery Service",
+        "year": 1989,
+        "runtime": 103,
+        "genres": [
+          "Animation",
+          "Family",
+          "Fantasy"
+        ],
+        "synopsis": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
+        "director": "Hayao Miyazaki",
+        "writers": [
+          "Hayao Miyazaki"
+        ],
+        "producers": [
+          "Hayao Miyazaki"
+        ],
+        "cast": [
+          "Minami Takayama",
+          "Rei Sakuma",
+          "Kappei Yamaguchi",
+          "Keiko Toda",
+          "Mieko Nobusawa"
+        ],
+        "composers": [
+          "Joe Hisaishi"
+        ],
+        "posterPath": "/Aufa4YdZIv4AXpR9rznwVA5SEfd.jpg",
+        "backdropPath": "/ooGaNXI2OYszAajCFdIXLr73E1S.jpg",
+        "rating": 7.8,
+        "trailerKey": "nu4OX6RKeLY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 406,
+        "title": "La Haine",
+        "year": 1995,
+        "runtime": 98,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "After a chaotic night of rioting in a marginal suburb of Paris, three young friends, Vinz, Hubert and Saïd, wander around unoccupied waiting for news about the state of health of a mutual friend who has been seriously injured when confronting the police.",
+        "director": "Mathieu Kassovitz",
+        "writers": [
+          "Mathieu Kassovitz"
+        ],
+        "producers": [
+          "Christophe Rossignon"
+        ],
+        "cast": [
+          "Vincent Cassel",
+          "Hubert Koundé",
+          "Saïd Taghmaoui",
+          "Abdel Ahmed Ghili",
+          "Solo"
+        ],
+        "posterPath": "/hY4exng4s29RzDbtQInjx9MA3PZ.jpg",
+        "backdropPath": "/viGCwLxupyoaLsa6hrnu1gYrB0B.jpg",
+        "rating": 8.1,
+        "trailerKey": "FKwcXt3JIaU"
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 1456349,
+        "title": "It Was Just an Accident",
+        "year": 2025,
+        "runtime": 104,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Crime",
+          "Mystery"
+        ],
+        "synopsis": "An unassuming mechanic is reminded of his time in an Iranian prison when he encounters a man he suspects to be his sadistic jailhouse captor.",
+        "director": "Jafar Panahi",
+        "writers": [
+          "Jafar Panahi"
+        ],
+        "producers": [
+          "Jafar Panahi",
+          "Philippe Martin"
+        ],
+        "cast": [
+          "Vahid Mobasseri",
+          "Mariam Afshari",
+          "Ebrahim Azizi",
+          "Hadis Pakbaten",
+          "Majid Panahi"
+        ],
+        "posterPath": "/eNYGj2DG3n8OrVPTfYunpPW9uas.jpg",
+        "backdropPath": "/zhoMwQofjgVec5Sin05hWECJtVQ.jpg",
+        "rating": 7.2,
+        "trailerKey": "9oHw2ubyWE4"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 436,
+        "title": "Maria Full of Grace",
+        "year": 2004,
+        "runtime": 101,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Crime"
+        ],
+        "synopsis": "A pregnant Colombian teenager becomes a drug mule to make some desperately needed money for her family.",
+        "director": "Joshua Marston",
+        "writers": [
+          "Joshua Marston"
+        ],
+        "producers": [
+          "Paul S. Mezey"
+        ],
+        "cast": [
+          "Catalina Sandino Moreno",
+          "Guilied Lopez",
+          "Yenny Paola Vega",
+          "Jhon Álex Toro",
+          "Virgina Ariza"
+        ],
+        "composers": [
+          "Leonardo Heiblum",
+          "Jacobo Lieberman"
+        ],
+        "posterPath": "/30CImATfvHWLXy6a3KmHXnYXB6c.jpg",
+        "backdropPath": "/q6xEN0Lx214QUXXXlQfLaoJS7EB.jpg",
+        "rating": 7.2,
+        "trailerKey": "FkdFcCtrFzI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 20453,
+        "title": "3 Idiots",
+        "year": 2009,
+        "runtime": 171,
+        "genres": [
+          "Drama",
+          "Comedy"
+        ],
+        "synopsis": "Rascal. Joker. Dreamer. Genius... You've never met a college student quite like \"Rancho.\" From the moment he arrives at India's most prestigious university, Rancho's outlandish schemes turn the campus upside down—along with the lives of his two newfound best friends. Together, they make life miserable for \"Virus,\" the school’s uptight and heartless dean. But when Rancho catches the eye of the dean's daughter, Virus sets his sights on flunking out the \"3 idiots\" once and for all.",
+        "director": "Rajkumar Hirani",
+        "writers": [
+          "Rajkumar Hirani",
+          "Vidhu Vinod Chopra",
+          "Abhijat Joshi"
+        ],
+        "producers": [
+          "Vidhu Vinod Chopra"
+        ],
+        "cast": [
+          "Aamir Khan",
+          "R. Madhavan",
+          "Sharman Joshi",
+          "Kareena Kapoor Khan",
+          "Boman Irani"
+        ],
+        "composers": [
+          "Shantanu Moitra",
+          "Sanjay Wandrekar",
+          "Atul Raninga"
+        ],
+        "posterPath": "/66A9MqXOyVFCssoloscw79z8Tew.jpg",
+        "backdropPath": "/8gT3UKtglLVpu0YfccwbmXZ5Eis.jpg",
+        "rating": 8,
+        "trailerKey": "zIKu9k50SDo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 4588,
+        "title": "Lust, Caution",
+        "year": 2007,
+        "runtime": 158,
+        "genres": [
+          "Action",
+          "Drama",
+          "Romance",
+          "Thriller"
+        ],
+        "synopsis": "During World War II, a secret agent must seduce, then assassinate an official  who works for the Japanese puppet government in Shanghai. Her mission becomes clouded when she finds herself falling in love with the man she is assigned to kill.",
+        "director": "Ang Lee",
+        "writers": [
+          "Wang Huiling",
+          "James Schamus"
+        ],
+        "producers": [
+          "Ang Lee",
+          "Bill Kong",
+          "David Lee"
+        ],
+        "cast": [
+          "Tang Wei",
+          "Tony Leung Chiu-wai",
+          "Leehom Wang",
+          "Joan Chen",
+          "Tou Tsung-hua"
+        ],
+        "composers": [
+          "Alexandre Desplat"
+        ],
+        "posterPath": "/6c1tqfJEBuIyhQC19SLlLQAUAvJ.jpg",
+        "backdropPath": "/lU1fQews2gye23PocVE48CsTmOQ.jpg",
+        "rating": 7.3,
+        "trailerKey": "XPUIXdpImF0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 37903,
+        "title": "The White Ribbon",
+        "year": 2009,
+        "runtime": 144,
+        "genres": [
+          "Drama",
+          "Mystery"
+        ],
+        "synopsis": "An aged tailor recalls his life as the schoolteacher of a small village in Northern Germany that was struck by a series of strange events in the year leading up to WWI.",
+        "director": "Michael Haneke",
+        "writers": [
+          "Michael Haneke"
+        ],
+        "producers": [
+          "Veit Heiduschka",
+          "Andrea Occhipinti",
+          "Stefan Arndt"
+        ],
+        "cast": [
+          "Christian Friedel",
+          "Ernst Jacobi",
+          "Leonie Benesch",
+          "Ulrich Tukur",
+          "Fion Mutert"
+        ],
+        "posterPath": "/54dlnGDexrwAFlDb8HWKfmmX4LB.jpg",
+        "backdropPath": "/9Cxi5RQzYAlkNI5FROWkoKgiNkJ.jpg",
+        "rating": 7.5,
+        "trailerKey": "9JOXs8KEiDY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 26275,
+        "title": "Kamikaze Girls",
+        "year": 2004,
+        "runtime": 102,
+        "genres": [
+          "Comedy"
+        ],
+        "synopsis": "Momoko, a strange and seemingly emotionless girl obsessed with 18th century France, befriends a Yanki biker and the two experience the ups and downs of their unusual lives in a rural Japanese town.",
+        "director": "Tetsuya Nakashima",
+        "writers": [
+          "Tetsuya Nakashima"
+        ],
+        "producers": [
+          "Yûji Ishida",
+          "Satoru Ogura",
+          "Takashi Hirano"
+        ],
+        "cast": [
+          "Kyoko Fukada",
+          "Anna Tsuchiya",
+          "Hiroyuki Miyasako",
+          "Ryoko Shinohara",
+          "Sadao Abe"
+        ],
+        "composers": [
+          "Yoko Kanno"
+        ],
+        "posterPath": "/7CJTjqJW2Dd5frfogRBYI1fxCDN.jpg",
+        "backdropPath": "/4QCs7akSCJPOs2IYnLOTDvHFdVh.jpg",
+        "rating": 7.1,
+        "trailerKey": "CTR4gBMmqC8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1671548,
+        "title": "Dear You",
+        "year": 2026,
+        "runtime": 118,
+        "genres": [
+          "Drama",
+          "Family",
+          "Comedy"
+        ],
+        "synopsis": "Xiaowei travels to Thailand to find his \"billionaire grandfather\" who is out of contact due to debt problems, but unexpectedly find the one who has been corresponding with his grandmother for years is not her husband.",
+        "director": "Lan Hongchun",
+        "writers": [
+          "Lan Hongchun",
+          "Zheng Xuanxuan",
+          "Yang Leng",
+          "Zhu Liyun"
+        ],
+        "producers": [
+          "Xie Ying",
+          "Chen Xiaofen"
+        ],
+        "cast": [
+          "Li Sitong",
+          "Wang Yantong",
+          "Wu Shaoqing",
+          "Zheng Runqi",
+          "Wang Xiaohui"
+        ],
+        "composers": [
+          "Wu Zehua",
+          "Li Yihan",
+          "Yang Leng"
+        ],
+        "posterPath": "/rjmhzdVS3Ia535pFawju857e2Na.jpg",
+        "backdropPath": "/AwmlL79nKTcX5tzAhyoV298xXlz.jpg",
+        "rating": 9.2,
+        "trailerKey": "kDPgu6Hxgaw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 491584,
+        "title": "Burning",
+        "year": 2018,
+        "runtime": 148,
+        "genres": [
+          "Mystery",
+          "Drama",
+          "Thriller"
+        ],
+        "synopsis": "Deliveryman Jong-su is out on a job when he runs into Hae-mi, a girl who once lived in his neighborhood. She asks if he'd mind looking after her cat while she's away on a trip to Africa. On her return, she introduces to Jong-su an enigmatic young man named Ben, who she met during her trip. One day Ben tells Jong-su about his most unusual hobby.",
+        "director": "Lee Chang-dong",
+        "writers": [
+          "Oh Jung-mi",
+          "Lee Chang-dong"
+        ],
+        "producers": [
+          "Ok Gwang-hee"
+        ],
+        "cast": [
+          "Yoo Ah-in",
+          "Steven Yeun",
+          "Jeon Jong-seo",
+          "Kim Soo-kyung",
+          "Choe Seung-ho"
+        ],
+        "composers": [
+          "Mowg"
+        ],
+        "posterPath": "/kXiF80o74fE9gf3Utf9moAI7ar0.jpg",
+        "backdropPath": "/qQEt2FqF8McryFBNX30dyDJKiEK.jpg",
+        "rating": 7.4,
+        "trailerKey": "irBLY-Ev9vo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 8416,
+        "title": "The Conformist",
+        "year": 1971,
+        "runtime": 108,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "A weak-willed Italian man becomes a fascist flunky who goes abroad to arrange the assassination of his old teacher, now a political dissident.",
+        "director": "Bernardo Bertolucci",
+        "writers": [
+          "Bernardo Bertolucci"
+        ],
+        "producers": [
+          "Maurizio Lodi-Fè"
+        ],
+        "cast": [
+          "Jean-Louis Trintignant",
+          "Stefania Sandrelli",
+          "Gastone Moschin",
+          "Dominique Sanda",
+          "Enzo Tarascio"
+        ],
+        "composers": [
+          "Georges Delerue"
+        ],
+        "posterPath": "/nLJjFRqIJAK8qz0OKYnpKCblZNK.jpg",
+        "backdropPath": "/xKhnjQA5wrAUaopEKegdKD3Yi26.jpg",
+        "rating": 7.6,
+        "trailerKey": "04kMeEjVGIk"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11986,
+        "title": "Betty Blue",
+        "year": 1986,
+        "runtime": 120,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "A lackadaisical handyman and aspiring novelist tries to support his younger girlfriend as she slowly succumbs to madness.",
+        "director": "Jean-Jacques Beineix",
+        "writers": [
+          "Jean-Jacques Beineix"
+        ],
+        "producers": [
+          "Jean-Jacques Beineix"
+        ],
+        "cast": [
+          "Jean-Hugues Anglade",
+          "Béatrice Dalle",
+          "Gérard Darmon",
+          "Consuelo De Haviland",
+          "Clémentine Célarié"
+        ],
+        "composers": [
+          "Gabriel Yared"
+        ],
+        "posterPath": "/dGkxgj2ozlD4yRtsJL35EUXegFv.jpg",
+        "backdropPath": "/hZVBkgxgezyKEkWIbPVLiWAOsrl.jpg",
+        "rating": 7.2,
+        "trailerKey": "lRvPEJsM3aE"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 109,
+        "title": "Three Colors: White",
+        "year": 1994,
+        "runtime": 92,
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Mystery"
+        ],
+        "synopsis": "Polish immigrant Karol Karol finds himself out of a marriage, a job and a country when his French wife, Dominique, divorces him after six months due to his impotence. Forced to leave France after losing the business they jointly owned, Karol enlists fellow Polish expatriate Mikołaj to smuggle him back to their homeland.",
+        "director": "Krzysztof Kieślowski",
+        "writers": [
+          "Krzysztof Piesiewicz",
+          "Krzysztof Kieślowski"
+        ],
+        "producers": [
+          "Marin Karmitz"
+        ],
+        "cast": [
+          "Zbigniew Zamachowski",
+          "Julie Delpy",
+          "Janusz Gajos",
+          "Jerzy Stuhr",
+          "Grzegorz Warchoł"
+        ],
+        "composers": [
+          "Zbigniew Preisner"
+        ],
+        "posterPath": "/6r09mQLfJmQes0uFD4yTa8NAKPj.jpg",
+        "backdropPath": "/37dhpIAmHf7xUhOI9o059sqPnm8.jpg",
+        "rating": 7.4,
+        "trailerKey": "mfw46ZiSScw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 17962,
+        "title": "After Life",
+        "year": 1999,
+        "runtime": 118,
+        "genres": [
+          "Fantasy",
+          "Drama"
+        ],
+        "synopsis": "On a cold Monday morning, a group of counselors clock in at an old-fashioned social services office. Their task is to interview the recently deceased, record their personal details, then, over the course of the week, assist them in choosing a single memory to keep for eternity.",
+        "director": "Hirokazu Kore-eda",
+        "writers": [
+          "Hirokazu Kore-eda"
+        ],
+        "producers": [
+          "Shiho Sato",
+          "Masayuki Akieda"
+        ],
+        "cast": [
+          "Arata Iura",
+          "Erika Oda",
+          "Susumu Terajima",
+          "Takashi Naito",
+          "Kei Tani"
+        ],
+        "composers": [
+          "Yasuhiro Kasamatsu"
+        ],
+        "posterPath": "/bs2M1hqAQl5LeAOPPRV4drwouZS.jpg",
+        "backdropPath": "/pXOsdvH4xuprxGmZMiCJsRAowi7.jpg",
+        "rating": 7.2,
+        "trailerKey": "f8K_YxtdzRo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 54898,
+        "title": "The Green Ray",
+        "year": 1986,
+        "runtime": 99,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "A lonely Parisian woman comes to terms with her isolation and anxieties during a long summer vacation.",
+        "director": "Éric Rohmer",
+        "writers": [
+          "Marie Rivière",
+          "Éric Rohmer"
+        ],
+        "producers": [
+          "Margaret Ménégoz"
+        ],
+        "cast": [
+          "Marie Rivière",
+          "Rosette",
+          "Béatrice Romand",
+          "Carita",
+          "Vincent Gauthier"
+        ],
+        "composers": [
+          "Jean-Louis Valéro"
+        ],
+        "posterPath": "/1E3pliSC7lXWw6zJhMvG6ba0UNX.jpg",
+        "backdropPath": "/jfDTQuovn57QIBvoGDom6FNQrkl.jpg",
+        "rating": 7.5,
+        "trailerKey": "D7mPj2AkFfI"
+      },
+      "status": "nominated"
+    }
+  ]
+}
