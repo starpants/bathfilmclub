@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import type { Theme, FilmStatus } from '@bathfilmclub/types';
 import { api } from '../api';
 import { color, fg, font, size } from '../tokens';
+import { MONTHS } from '../months';
 import { FilmSearch } from './FilmSearch';
 import { FilmCard } from './FilmCard';
 import { PyramidBand } from './PyramidBand';
@@ -13,10 +14,9 @@ interface Props {
   onDeleted: () => void;
 }
 
-const MONTHS = [
-  'January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December',
-];
+// A theme with no meeting yet has never been scheduled — start it off with the
+// club's usual line rather than an empty box.
+const DEFAULT_VENUE = 'See Discord for venue details';
 
 const bandInput: React.CSSProperties = {
   width: '100%', fontFamily: 'inherit', fontSize: size.body, color: color.brandFg,
@@ -58,7 +58,7 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
         setDescription(t.description ?? '');
         setMeetingDate(t.meeting?.date ?? '');
         setMeetingTime(t.meeting?.time ?? '19:30');
-        setMeetingVenue(t.meeting?.venue ?? '');
+        setMeetingVenue(t.meeting ? t.meeting.venue ?? '' : DEFAULT_VENUE);
       }
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e));

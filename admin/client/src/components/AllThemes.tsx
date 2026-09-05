@@ -1,6 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { Theme } from '@bathfilmclub/types';
 import { api } from '../api';
+import { MONTHS, nextMonth } from '../months';
+import { thumbnailFilms } from '../thumbnailFilms';
 
 const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w92';
 
@@ -22,7 +24,8 @@ interface NewThemeFormProps {
 
 function NewThemeForm({ onCreated, onCancel }: NewThemeFormProps) {
   const [title, setTitle] = useState('');
-  const [month, setMonth] = useState('');
+  // "YYYY-MM", split across the two controls below. Defaults to next month.
+  const [month, setMonth] = useState(nextMonth());
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
 
@@ -36,7 +39,8 @@ function NewThemeForm({ onCreated, onCancel }: NewThemeFormProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!title.trim() || !month.trim()) { setError('Both fields are required.'); return; }
+    if (!title.trim()) { setError('A title is required.'); return; }
+    if (!/^\d{4}-\d{2}$/.test(month)) { setError('Pick both a month and a year.'); return; }
     setSaving(true);
     setError('');
     try {
@@ -59,9 +63,29 @@ function NewThemeForm({ onCreated, onCancel }: NewThemeFormProps) {
           <span style={{ display: 'block', fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.3rem', color: 'rgba(255,247,214,0.5)' }}>Title</span>
           <input style={inputStyle} value={title} onChange={(e) => setTitle(e.target.value)} placeholder="e.g. Time Travel" />
         </label>
-        <label style={{ flex: '0 0 140px' }}>
-          <span style={{ display: 'block', fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.3rem', color: 'rgba(255,247,214,0.5)' }}>Month (YYYY-MM)</span>
-          <input style={inputStyle} value={month} onChange={(e) => setMonth(e.target.value)} placeholder="2026-07" pattern="\d{4}-\d{2}" />
+        <label style={{ flex: '0 0 220px' }}>
+          <span style={{ display: 'block', fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.3rem', color: 'rgba(255,247,214,0.5)' }}>Month</span>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <select
+              style={{ ...inputStyle, flex: 1 }}
+              value={month.split('-')[1] ?? ''}
+              onChange={(e) => setMonth(`${month.split('-')[0] || ''}-${e.target.value}`)}
+            >
+              <option value="">Month…</option>
+              {MONTHS.map((name, i) => (
+                <option key={name} value={String(i + 1).padStart(2, '0')}>{name}</option>
+              ))}
+            </select>
+            <input
+              type="number"
+              style={{ ...inputStyle, flex: '0 0 5rem' }}
+              value={month.split('-')[0] ?? ''}
+              onChange={(e) => setMonth(`${e.target.value}-${month.split('-')[1] || ''}`)}
+              placeholder="Year"
+              min="2000"
+              max="2100"
+            />
+          </div>
         </label>
       </div>
       {error && <p style={{ color: '#B11226', fontSize: '0.85rem', marginBottom: '0.75rem' }}>{error}</p>}
@@ -83,7 +107,7 @@ interface ThemeRowProps {
 }
 
 function ThemeRow({ theme, isCurrent, onEdit, onSetAsCurrent }: ThemeRowProps) {
-  const selected = theme.films.filter((f) => f.status === 'selected');
+  const thumbnails = thumbnailFilms(theme.films);
 
   return (
     <li style={{ borderBottom: '1px solid rgba(255,247,214,0.1)' }}>
@@ -91,9 +115,9 @@ function ThemeRow({ theme, isCurrent, onEdit, onSetAsCurrent }: ThemeRowProps) {
         onClick={onEdit}
         style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', padding: '0.875rem 0', cursor: 'pointer' }}
       >
-        {/* Mini poster strip */}
+        {/* Mini poster strip: selected films, else the shortlist, else newest nominations */}
         <div style={{ display: 'flex', gap: '0.25rem', width: 52, flexShrink: 0 }}>
-          {selected.slice(0, 2).map(({ film }) =>
+          {thumbnails.map(({ film }) =>
             film.posterPath ? (
               <img key={film.tmdbId} src={`${TMDB_IMAGE_BASE}${film.posterPath}`} alt="" style={{ width: 24, height: 36, objectFit: 'cover' }} />
             ) : null
