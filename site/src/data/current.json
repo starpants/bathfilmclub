@@ -925,6 +925,338 @@
         "trailerKey": "YM8zgY7sG_g"
       },
       "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 346698,
+        "title": "Barbie",
+        "year": 2023,
+        "runtime": 114,
+        "genres": [
+          "Comedy",
+          "Adventure",
+          "Fantasy"
+        ],
+        "synopsis": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+        "director": "Greta Gerwig",
+        "writers": [
+          "Noah Baumbach",
+          "Greta Gerwig"
+        ],
+        "producers": [
+          "Robbie Brenner",
+          "David Heyman",
+          "Tom Ackerley"
+        ],
+        "cast": [
+          "Margot Robbie",
+          "Ryan Gosling",
+          "America Ferrera",
+          "Ariana Greenblatt",
+          "Issa Rae"
+        ],
+        "composers": [
+          "Andrew Wyatt",
+          "Mark Ronson"
+        ],
+        "posterPath": "/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+        "backdropPath": "/1esAE8sLJRWWFsLLeh5r3g2WanI.jpg",
+        "rating": 6.9,
+        "trailerKey": "Y1IgAEejvqM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1088,
+        "title": "Whale Rider",
+        "year": 2003,
+        "runtime": 101,
+        "genres": [
+          "Drama",
+          "Family"
+        ],
+        "synopsis": "A contemporary story of love, rejection, and triumph as a young Māori girl fights to fulfill a destiny her grandfather refuses to recognize.",
+        "director": "Niki Caro",
+        "writers": [
+          "Niki Caro"
+        ],
+        "producers": [
+          "Tim Sanders",
+          "Frank Hübner",
+          "John Barnett"
+        ],
+        "cast": [
+          "Keisha Castle-Hughes",
+          "Rawiri Paratene",
+          "Vicky Haughton",
+          "Cliff Curtis",
+          "Grant Roa"
+        ],
+        "composers": [
+          "Lisa Gerrard"
+        ],
+        "posterPath": "/cVBZQZq091KtwBm2qObOv0JTFcH.jpg",
+        "backdropPath": "/dLJ6qwEXg2AglBSClRV5iVYZI1b.jpg",
+        "rating": 7,
+        "trailerKey": "0PPmfCx91d8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 930564,
+        "title": "Saltburn",
+        "year": 2023,
+        "runtime": 131,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Thriller"
+        ],
+        "synopsis": "Struggling to find his place at Oxford University, student Oliver Quick finds himself drawn into the world of the charming and aristocratic Felix Catton, who invites him to Saltburn, his eccentric family's sprawling estate, for a summer never to be forgotten.",
+        "director": "Emerald Fennell",
+        "writers": [
+          "Emerald Fennell"
+        ],
+        "producers": [
+          "Josey McNamara",
+          "Emerald Fennell",
+          "Margot Robbie"
+        ],
+        "cast": [
+          "Barry Keoghan",
+          "Jacob Elordi",
+          "Rosamund Pike",
+          "Richard E. Grant",
+          "Alison Oliver"
+        ],
+        "composers": [
+          "Anthony B. Willis"
+        ],
+        "posterPath": "/zGTfMwG112BC66mpaveVxoWPOaB.jpg",
+        "backdropPath": "/bAtFhmRHp0f6aHqj1UGTZoPcmQo.jpg",
+        "rating": 6.9,
+        "trailerKey": "s8l0llLj1uM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 96936,
+        "title": "The Bling Ring",
+        "year": 2013,
+        "runtime": 90,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "synopsis": "Lured by stardom, a crew of aimless teens breaks into celebrity homes for a string of high-profile robberies and fame by appropriation.",
+        "director": "Sofia Coppola",
+        "writers": [
+          "Sofia Coppola"
+        ],
+        "producers": [
+          "Youree Henley",
+          "Sofia Coppola",
+          "Roman Coppola"
+        ],
+        "cast": [
+          "Katie Chang",
+          "Emma Watson",
+          "Taissa Farmiga",
+          "Claire Julien",
+          "Israel Broussard"
+        ],
+        "composers": [
+          "Daniel Lopatin",
+          "Brian Reitzell"
+        ],
+        "posterPath": "/6yh55qCcdgPRJweDWM2CiEubJCL.jpg",
+        "backdropPath": "/ouN0GyE7mtIT6wyJeilaggyvgNj.jpg",
+        "rating": 5.4,
+        "trailerKey": "NcE2fj-EtJY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 950028,
+        "title": "The Invite",
+        "year": 2026,
+        "runtime": 107,
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+        "director": "Olivia Wilde",
+        "writers": [
+          "Rashida Jones",
+          "Will McCormack"
+        ],
+        "producers": [
+          "David Permut",
+          "Megan Ellison",
+          "Ben Browning"
+        ],
+        "cast": [
+          "Seth Rogen",
+          "Olivia Wilde",
+          "Penélope Cruz",
+          "Edward Norton",
+          "Skip Howland"
+        ],
+        "composers": [
+          "Devonté Hynes"
+        ],
+        "posterPath": "/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+        "backdropPath": "/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
+        "rating": 7.3,
+        "trailerKey": "nelkiuezJxg"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 473019,
+        "title": "The Souvenir",
+        "year": 2019,
+        "runtime": 120,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "A shy but ambitious film student falls into an intense, emotionally fraught relationship with a charismatic but untrustworthy older man.",
+        "director": "Joanna Hogg",
+        "writers": [
+          "Joanna Hogg"
+        ],
+        "producers": [
+          "Joanna Hogg",
+          "Luke Schiller"
+        ],
+        "cast": [
+          "Honor Swinton Byrne",
+          "Tom Burke",
+          "Tilda Swinton",
+          "Richard Ayoade",
+          "Ariane Labed"
+        ],
+        "posterPath": "/2Nj04HsZ0lNkv07JnfBZ0bAIECn.jpg",
+        "backdropPath": "/kIu6aYaUxBUUfJ0l0sLNW1qh45u.jpg",
+        "rating": 6.1,
+        "trailerKey": "t9Al2nC0vzY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1401281,
+        "title": "The Testament of Ann Lee",
+        "year": 2025,
+        "runtime": 137,
+        "genres": [
+          "History",
+          "Drama",
+          "Music"
+        ],
+        "synopsis": "The extraordinary true legend of Ann Lee, founder of the devotional sect known as the Shakers, who preached gender and social equality and was revered by her followers as the female Christ.",
+        "director": "Mona Fastvold",
+        "writers": [
+          "Mona Fastvold",
+          "Brady Corbet"
+        ],
+        "producers": [
+          "Andrew Morrison",
+          "Joshua Horsfield",
+          "Viktória Petrányi"
+        ],
+        "cast": [
+          "Amanda Seyfried",
+          "Lewis Pullman",
+          "Thomasin McKenzie",
+          "Matthew Beard",
+          "Christopher Abbott"
+        ],
+        "composers": [
+          "Daniel Blumberg"
+        ],
+        "posterPath": "/hBGg3IGRM7LM6ydMmDrl8mEx33Y.jpg",
+        "backdropPath": "/jZNR5onRZijwyGr5iWbs3J9QcYr.jpg",
+        "rating": 6.3,
+        "trailerKey": "Rb0ZhiDD9J0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1160360,
+        "title": "If I Had Legs I'd Kick You",
+        "year": 2025,
+        "runtime": 113,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "With her life crashing down around her, Linda attempts to navigate her child's mysterious illness, her absent husband, a missing person, and an increasingly hostile relationship with her therapist.",
+        "director": "Mary Bronstein",
+        "writers": [
+          "Mary Bronstein"
+        ],
+        "producers": [
+          "Sara Murphy",
+          "Ryan Zacarias",
+          "Josh Safdie"
+        ],
+        "cast": [
+          "Rose Byrne",
+          "Conan O'Brien",
+          "A$AP Rocky",
+          "Danielle Macdonald",
+          "Delaney Quinn"
+        ],
+        "posterPath": "/va0TQ9WprMXRqQAzY56vyqY0Yd5.jpg",
+        "backdropPath": "/eLVKuHGx9k8JgLk5JINQDmh9tRH.jpg",
+        "rating": 6.3,
+        "trailerKey": "-oDLBRLkflo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 837335,
+        "title": "La Chimera",
+        "year": 2023,
+        "runtime": 131,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Comedy"
+        ],
+        "synopsis": "Everyone has their own Chimera, something they try to achieve but never manage to find. For Arthur, the Chimera looks like the woman he lost, Beniamina. In an adventurous journey between the living and the dead, between forests and cities, between celebrations and solitudes, the intertwined destinies of these characters unfold, all in search of the Chimera.",
+        "director": "Alice Rohrwacher",
+        "writers": [
+          "Alice Rohrwacher"
+        ],
+        "producers": [
+          "Carlo Cresto-Dina",
+          "Michela Pini",
+          "Pierre-François Piet"
+        ],
+        "cast": [
+          "Josh O'Connor",
+          "Carol Duarte",
+          "Alba Rohrwacher",
+          "Isabella Rossellini",
+          "Vincenzo Nemolato"
+        ],
+        "posterPath": "/dV6SYHmmFLXQU7oKRfK4pOFCX6M.jpg",
+        "backdropPath": "/ovtTn2GkzOYsMvAVWl6Bt0jN4Ye.jpg",
+        "rating": 7.3,
+        "trailerKey": "TkIC8YI9-eU"
+      },
+      "status": "nominated"
     }
   ]
 }
