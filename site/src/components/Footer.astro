@@ -14,12 +14,14 @@ const year = new Date().getFullYear();
 ---
 
 <footer class:list={['py-12', bg]}>
-  <div class="max-w-site mx-auto px-6">
-    <div class="text-center pb-8 capitalize">
-      <p class="font-body text-bfc-brand-fg/60 text-sm mb-2">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 items-start justify-center gap-3 pb-4 max-w-60 md:max-w-lg mx-auto"
+  >
+    <div class="text-center capitalize mx-auto">
+      <p class="font-body text-bfc-brand-fg/60 text-sm">
         &copy; {year} Bath Film Club. All rights reserved.
       </p>
-      <p class="font-body text-bfc-brand-fg/60 text-sm">
+      <p class="font-body text-bfc-brand-fg/60 text-sm md:mb-4">
         Website Designed And Built by
         <div>
           <a
@@ -30,19 +32,19 @@ const year = new Date().getFullYear();
         </div>
       </p>
     </div>
-    <div class="flex flex-row items-center justify-center gap-3 mx-auto max-w-80 pb-4">
+    <div class="text-center">
+      <p class="font-body text-bfc-brand-fg/60 text-sm mb-4">
+        This product uses the TMDB API but is not endorsed or certified by TMDB.
+      </p>
       <a
         href="https://www.themoviedb.org"
         target="_blank"
         rel="noopener noreferrer"
-        class="shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300"
+        class="inline-block shrink-0 opacity-70 hover:opacity-100 transition-opacity duration-300"
         aria-label="The Movie Database"
       >
         <TmdbLogo class="w-20 h-auto" />
       </a>
-      <p class="font-body text-bfc-brand-fg/60 text-sm text-left max-w-xs">
-        This product uses the TMDB API but is not endorsed or certified by TMDB.
-      </p>
     </div>
   </div>
 </footer>
