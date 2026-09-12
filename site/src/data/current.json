@@ -1257,6 +1257,155 @@
         "trailerKey": "TkIC8YI9-eU"
       },
       "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 508947,
+        "title": "Turning Red",
+        "year": 2022,
+        "runtime": 100,
+        "genres": [
+          "Animation",
+          "Family",
+          "Comedy",
+          "Fantasy"
+        ],
+        "synopsis": "Thirteen-year-old Mei is experiencing the awkwardness of being a teenager with a twist – when she gets too excited, she transforms into a giant red panda.",
+        "director": "Domee Shi",
+        "writers": [
+          "Domee Shi",
+          "Julia Cho"
+        ],
+        "producers": [
+          "Lindsey Collins"
+        ],
+        "cast": [
+          "Rosalie Chiang",
+          "Sandra Oh",
+          "Ava Morse",
+          "Hyein Park",
+          "Maitreyi Ramakrishnan"
+        ],
+        "composers": [
+          "Ludwig Göransson"
+        ],
+        "posterPath": "/qsdjk9oAKSQMWs0Vt5Pyfh6O4GZ.jpg",
+        "backdropPath": "/fOy2Jurz9k6RnJnMUMRDAgBwru2.jpg",
+        "rating": 7.3,
+        "trailerKey": "XdKzUbAiswE"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 616827,
+        "title": "Rare Beasts",
+        "year": 2021,
+        "runtime": 92,
+        "genres": [
+          "Romance",
+          "Comedy",
+          "Drama"
+        ],
+        "synopsis": "Mandy is a mother, a writer, a nihilist. Mandy is a modern woman in a crisis. Raising a son in the midst of a female revolution, mining the pain of her parents' separation and professionally writing about a love that no longer exists, she falls upon a troubled man, Pete, who’s searching for a sense of worth, belonging and ‘restored’ Male identity.",
+        "director": "Billie Piper",
+        "writers": [
+          "Billie Piper"
+        ],
+        "producers": [
+          "Vaughan Sivell"
+        ],
+        "cast": [
+          "Billie Piper",
+          "Leo Bill",
+          "Kerry Fox",
+          "Toby Woolf",
+          "David Thewlis"
+        ],
+        "composers": [
+          "Johnny Lloyd",
+          "Nathan Coen"
+        ],
+        "posterPath": "/fnxlaEzzFe1dJPqcgOjGS1oM2dJ.jpg",
+        "backdropPath": "/ggHEdlGBoUxdKpFbcsyBU9MoRga.jpg",
+        "rating": 5.5,
+        "trailerKey": "6uxkaPUZMoc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 13787,
+        "title": "Holy Smoke",
+        "year": 1999,
+        "runtime": 115,
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "synopsis": "While on a journey of discovery in exotic India, beautiful young Ruth Barron falls under the influence of a charismatic religious guru. Her desperate parents then hire PJ Waters, a macho cult de-programmer who confronts Ruth in a remote desert hideaway. But PJ quickly learns that he's met his match in the sexy, intelligent and iron-willed Ruth.",
+        "director": "Jane Campion",
+        "writers": [
+          "Jane Campion",
+          "Anna Campion"
+        ],
+        "producers": [
+          "Mark Turnbull",
+          "Tabrez Noorani",
+          "Jan Chapman"
+        ],
+        "cast": [
+          "Kate Winslet",
+          "Harvey Keitel",
+          "Julie Hamilton",
+          "Sophie Lee",
+          "Dan Wyllie"
+        ],
+        "composers": [
+          "Angelo Badalamenti"
+        ],
+        "posterPath": "/xcovgjKOnNsJTz8uADbCVF98wS1.jpg",
+        "backdropPath": "/2BzfOwehPOdnAm4puhTU52EIICr.jpg",
+        "rating": 5.7,
+        "trailerKey": "YvVi4-vlYxQ"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 524635,
+        "title": "The Chronology of Water",
+        "year": 2025,
+        "runtime": 128,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "Plagued by an abusive childhood, a woman finds escape in competitive swimming, sexual experimentation, toxic relationships, and addiction before ultimately finding her voice through writing.",
+        "director": "Kristen Stewart",
+        "writers": [
+          "Kristen Stewart"
+        ],
+        "producers": [
+          "Michael A. Pruss",
+          "Andy Mingo",
+          "Charles Gillibert"
+        ],
+        "cast": [
+          "Imogen Poots",
+          "Thora Birch",
+          "Jim Belushi",
+          "Tom Sturridge",
+          "Earl Cave"
+        ],
+        "composers": [
+          "Paris Hurley"
+        ],
+        "posterPath": "/pU3GZI6C9lxzxUnBccIQLThDLVY.jpg",
+        "backdropPath": "/vTiI8auKiV8KnewOqySCZkXB19t.jpg",
+        "rating": 6.7,
+        "trailerKey": "Og1hVn5umZI"
+      },
+      "status": "nominated"
     }
   ]
 }
