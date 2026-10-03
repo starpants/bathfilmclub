@@ -1,0 +1,1411 @@
+{
+  "slug": "2026-10-female-directors",
+  "title": "Female Directors",
+  "description": "Films directed by women",
+  "month": "2026-10",
+  "meeting": {
+    "date": "2026-09-30",
+    "time": "19:15",
+    "venue": "See Discord for venue"
+  },
+  "films": [
+    {
+      "film": {
+        "tmdbId": 915935,
+        "title": "Anatomy of a Fall",
+        "year": 2023,
+        "runtime": 151,
+        "genres": [
+          "Thriller",
+          "Mystery",
+          "Crime"
+        ],
+        "synopsis": "A woman is suspected of her husband's murder, and their blind son faces a moral dilemma as the sole witness.",
+        "director": "Justine Triet",
+        "writers": [
+          "Arthur Harari",
+          "Justine Triet"
+        ],
+        "producers": [
+          "Marie-Ange Luciani",
+          "David Thion"
+        ],
+        "cast": [
+          "Sandra Hüller",
+          "Swann Arlaud",
+          "Milo Machado-Graner",
+          "Antoine Reinartz",
+          "Samuel Theis"
+        ],
+        "posterPath": "/1ho0d4LNZw3Y0voeKmSvPSgJOJ2.jpg",
+        "backdropPath": "/lDVl2jf6VB8ODl1olZ6FLvOV1gX.jpg",
+        "rating": 7.5,
+        "trailerKey": "_MdTMA0PetA"
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 71859,
+        "title": "We Need to Talk About Kevin",
+        "year": 2011,
+        "runtime": 113,
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "synopsis": "After her son Kevin commits a horrific act, troubled mother Eva reflects on her complicated relationship with her disturbed son as he grew from a toddler into a teenager.",
+        "director": "Lynne Ramsay",
+        "writers": [
+          "Rory Stewart Kinnear",
+          "Lynne Ramsay"
+        ],
+        "producers": [
+          "Luc Roeg",
+          "Jennifer Fox",
+          "Robert Salerno"
+        ],
+        "cast": [
+          "Tilda Swinton",
+          "John C. Reilly",
+          "Ezra Miller",
+          "Siobhan Fallon Hogan",
+          "Alex Manette"
+        ],
+        "composers": [
+          "Jonny Greenwood"
+        ],
+        "posterPath": "/AtdYbs1SqYwFOLyi2v6ldVTawbn.jpg",
+        "backdropPath": "/k7lwdrpZ92BDahx6TLdkPE65cpJ.jpg",
+        "rating": 7.5,
+        "trailerKey": "bV7Y5cylhNc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 630240,
+        "title": "Titane",
+        "year": 2021,
+        "runtime": 108,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "Horror"
+        ],
+        "synopsis": "A woman with a metal plate in her head from a childhood car accident embarks on a bizarre journey, bringing her into contact with a firefighter who's reunited with his missing son after 10 years.",
+        "director": "Julia Ducournau",
+        "writers": [
+          "Julia Ducournau"
+        ],
+        "producers": [
+          "Amaury Ovise",
+          "Jean-Christophe Reymond"
+        ],
+        "cast": [
+          "Vincent Lindon",
+          "Agathe Rousselle",
+          "Garance Marillier",
+          "Laïs Salameh",
+          "Mara Cissé"
+        ],
+        "composers": [
+          "Jim Williams"
+        ],
+        "posterPath": "/mBlpouG3gqB8WLdP65LCOXb3jFb.jpg",
+        "backdropPath": "/dVOlJVHYRWx7DhMQRNLnbf5bT1q.jpg",
+        "rating": 6.3,
+        "trailerKey": "_DmFHh7KsWc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 46919,
+        "title": "Daisies",
+        "year": 1966,
+        "runtime": 76,
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "synopsis": "Two teenage girls embark on a series of destructive pranks in which they consume and destroy the world around them.",
+        "director": "Věra Chytilová",
+        "writers": [
+          "Věra Chytilová",
+          "Ester Krumbachová"
+        ],
+        "producers": [],
+        "cast": [
+          "Jitka Cerhová",
+          "Ivana Karbanová",
+          "Helena Anýžová",
+          "Julius Albert",
+          "Jan Klusák"
+        ],
+        "composers": [
+          "Jiří Šust",
+          "Jiří Šlitr"
+        ],
+        "posterPath": "/8sxMhdn3i1Pn8OlGCBBjr9rjP1y.jpg",
+        "backdropPath": "/A1Ajyl9qdUvK94ABteqEelk6M1Q.jpg",
+        "rating": 7.3,
+        "trailerKey": "9vBGo95SJz4"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 8872,
+        "title": "Wayne's World",
+        "year": 1992,
+        "runtime": 94,
+        "genres": [
+          "Comedy",
+          "Music"
+        ],
+        "synopsis": "The adventures of two amiably aimless metal-head friends, Wayne and Garth. From Wayne's basement, the pair broadcast a talk-show called \"Wayne's World\" on local public access television. The show comes to the attention of a sleazy network executive who wants to produce a big-budget version of \"Wayne's World\"—and he also wants Wayne's girlfriend, a rock singer named Cassandra. Wayne and Garth have to battle the executive not only to save their show, but also Cassandra.",
+        "director": "Penelope Spheeris",
+        "writers": [
+          "Bonnie Turner",
+          "Mike Myers",
+          "Terry Turner"
+        ],
+        "producers": [
+          "Lorne Michaels"
+        ],
+        "cast": [
+          "Mike Myers",
+          "Dana Carvey",
+          "Rob Lowe",
+          "Tia Carrere",
+          "Lara Flynn Boyle"
+        ],
+        "composers": [
+          "J. Peter Robinson"
+        ],
+        "posterPath": "/fHwZnFNWR7PaS9t5EBwTvGPeoYQ.jpg",
+        "backdropPath": "/lAvf5zzyOgTZmpRBRJFa7IVVqCK.jpg",
+        "rating": 6.7,
+        "trailerKey": "j881Yzb3LP4"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 965150,
+        "title": "Aftersun",
+        "year": 2022,
+        "runtime": 101,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "Sophie reflects on the shared joy and private melancholy of a holiday she took with her father twenty years earlier. Memories fill the gaps between camcorder footages as she tries to reconcile the father she knew with the troubled man she didn't.",
+        "director": "Charlotte Wells",
+        "writers": [
+          "Charlotte Wells"
+        ],
+        "producers": [
+          "Adele Romanski",
+          "Barry Jenkins",
+          "Mark Ceryak"
+        ],
+        "cast": [
+          "Paul Mescal",
+          "Frankie Corio",
+          "Brooklyn Toulson",
+          "Celia Rowlson-Hall",
+          "Sally Messham"
+        ],
+        "composers": [
+          "Oliver Coates"
+        ],
+        "posterPath": "/evKz85EKouVbIr51zy5fOtpNRPg.jpg",
+        "backdropPath": "/4jdduww9j5RyzO4ITRcuBFhqNN1.jpg",
+        "rating": 7.6,
+        "trailerKey": "4A34B1DIGl8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 453278,
+        "title": "The Rider",
+        "year": 2018,
+        "runtime": 103,
+        "genres": [
+          "Drama",
+          "Western"
+        ],
+        "synopsis": "Once a rising star of the rodeo circuit, and a gifted horse trainer, young cowboy Brady is warned that his riding days are over after a horse crushed his skull at a rodeo. In an attempt to regain control of his own fate, Brady undertakes a search for a new identity and what it means to be a man in the heartland of the United States.",
+        "director": "Chloé Zhao",
+        "writers": [
+          "Chloé Zhao"
+        ],
+        "producers": [
+          "Mollye Asher",
+          "Bert Hamelinck",
+          "Sacha Ben Harroche"
+        ],
+        "cast": [
+          "Brady Jandreau",
+          "Tim Jandreau",
+          "Lilly Jandreau",
+          "Cat Clifford",
+          "Terri Dawn Pourier"
+        ],
+        "composers": [
+          "Nathan Halpern"
+        ],
+        "posterPath": "/cFsrA0Is5xode2INrPj1VJcQ18n.jpg",
+        "backdropPath": "/oaAyNmnqbB8Ad3O2t9iymZ2gEJa.jpg",
+        "rating": 7.3,
+        "trailerKey": "l5A9Lp5oOHw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 505600,
+        "title": "Booksmart",
+        "year": 2019,
+        "runtime": 102,
+        "genres": [
+          "Comedy"
+        ],
+        "synopsis": "Two academic teenage superstars realize, on the eve of their high school graduation, that they should have worked less and played more. Determined to never fall short of their peers, the girls set out on a mission to cram four years of fun into one night.",
+        "director": "Olivia Wilde",
+        "writers": [
+          "Sarah Haskins",
+          "Emily Halpern",
+          "Katie Silberman",
+          "Susanna Fogel"
+        ],
+        "producers": [
+          "David Distenfeld",
+          "Chelsea Barnard",
+          "Megan Ellison"
+        ],
+        "cast": [
+          "Kaitlyn Dever",
+          "Beanie Feldstein",
+          "Jessica Williams",
+          "Jason Sudeikis",
+          "Lisa Kudrow"
+        ],
+        "composers": [
+          "Dan the Automator"
+        ],
+        "posterPath": "/2aSxRDmisJP90H3S0aocyuQIe4z.jpg",
+        "backdropPath": "/cheDSO3mYmsAFQlRM91o7MK6Wcc.jpg",
+        "rating": 7,
+        "trailerKey": "noAtmtxgJYw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 8913,
+        "title": "Pet Sematary",
+        "year": 1989,
+        "runtime": 103,
+        "genres": [
+          "Horror"
+        ],
+        "synopsis": "After the Creed family's cat is accidentally killed, a friendly neighbor advises its burial in a mysterious nearby cemetery.",
+        "director": "Mary Lambert",
+        "writers": [
+          "Stephen King"
+        ],
+        "producers": [
+          "Richard P. Rubinstein"
+        ],
+        "cast": [
+          "Dale Midkiff",
+          "Fred Gwynne",
+          "Denise Crosby",
+          "Brad Greenquist",
+          "Michael Lombard"
+        ],
+        "composers": [
+          "Elliot Goldenthal"
+        ],
+        "posterPath": "/8ZtH1V4rhrtP53ezlEWrCaMALXF.jpg",
+        "backdropPath": "/xWq3T9P4NU2pTdZ3hXFygsNnAq4.jpg",
+        "rating": 6.7,
+        "trailerKey": "JMao8sg4DPA"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1359,
+        "title": "American Psycho",
+        "year": 2000,
+        "runtime": 102,
+        "genres": [
+          "Thriller",
+          "Drama",
+          "Crime"
+        ],
+        "synopsis": "A wealthy New York investment banking executive hides his alternate psychopathic ego from his co-workers and friends as he escalates deeper into his illogical, gratuitous fantasies.",
+        "director": "Mary Harron",
+        "writers": [
+          "Mary Harron",
+          "Guinevere Turner"
+        ],
+        "producers": [
+          "Christian Halsey Solomon",
+          "Chris Hanley",
+          "Edward R. Pressman"
+        ],
+        "cast": [
+          "Christian Bale",
+          "Justin Theroux",
+          "Josh Lucas",
+          "Bill Sage",
+          "Chloë Sevigny"
+        ],
+        "composers": [
+          "John Cale"
+        ],
+        "posterPath": "/9uGHEgsiUXjCNq8wdq4r49YL8A1.jpg",
+        "backdropPath": "/5oaMV2q0qzxkIW2ukU3lldLu5q2.jpg",
+        "rating": 7.4,
+        "trailerKey": "81mibtQWWBg"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 666277,
+        "title": "Past Lives",
+        "year": 2023,
+        "runtime": 106,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "After decades apart, childhood friends Nora and Hae Sung are reunited in New York for one fateful weekend as they confront notions of destiny, love, and the choices that make a life.",
+        "director": "Celine Song",
+        "writers": [
+          "Celine Song"
+        ],
+        "producers": [
+          "Pamela Koffler",
+          "David Hinojosa",
+          "Christine Vachon"
+        ],
+        "cast": [
+          "Greta Lee",
+          "Teo Yoo",
+          "John Magaro",
+          "Moon Seung-ah",
+          "Leem Seung-min"
+        ],
+        "composers": [
+          "Christopher Bear",
+          "Daniel Rossen"
+        ],
+        "posterPath": "/k3waqVXSnvCZWfJYNtdamTgTtTA.jpg",
+        "backdropPath": "/7HR38hMBl23lf38MAN63y4pKsHz.jpg",
+        "rating": 7.7,
+        "trailerKey": "kA244xewjcI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 2011,
+        "title": "Persepolis",
+        "year": 2007,
+        "runtime": 95,
+        "genres": [
+          "Animation",
+          "Drama"
+        ],
+        "synopsis": "In 1970s Iran, Marjane 'Marji' Satrapi watches events through her young eyes and her idealistic family of a long dream being fulfilled of the hated Shah's defeat in the Iranian Revolution of 1979. However as Marji grows up, she witnesses first hand how the new Iran, now ruled by Islamic fundamentalists, has become a repressive tyranny on its own.",
+        "director": "Vincent Paronnaud",
+        "writers": [
+          "Vincent Paronnaud"
+        ],
+        "producers": [
+          "Marc-Antoine Robert",
+          "Xavier Rigault"
+        ],
+        "cast": [
+          "Chiara Mastroianni",
+          "Danielle Darrieux",
+          "Catherine Deneuve",
+          "Simon Abkarian",
+          "Gabrielle Lopes Benites"
+        ],
+        "composers": [
+          "Olivier Bernet"
+        ],
+        "posterPath": "/aU8i2QAdTyRR1nYb36Gq51xXP8p.jpg",
+        "backdropPath": "/4pfb85bv0rKkmslTp2hzAqA7RT4.jpg",
+        "rating": 7.9,
+        "trailerKey": "pr-ffssDVgI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 12162,
+        "title": "The Hurt Locker",
+        "year": 2008,
+        "runtime": 131,
+        "genres": [
+          "Drama",
+          "Thriller",
+          "War"
+        ],
+        "synopsis": "During the Iraq War, a Sergeant recently assigned to an army bomb squad is put at odds with his squad mates due to his maverick way of handling his work.",
+        "director": "Kathryn Bigelow",
+        "writers": [
+          "Mark Boal"
+        ],
+        "producers": [
+          "Kathryn Bigelow",
+          "Mark Boal",
+          "Nicolas Chartier"
+        ],
+        "cast": [
+          "Jeremy Renner",
+          "Anthony Mackie",
+          "Brian Geraghty",
+          "David Morse",
+          "Guy Pearce"
+        ],
+        "composers": [
+          "Marco Beltrami",
+          "Buck Sanders"
+        ],
+        "posterPath": "/io2dfBJhasvGbgkCX9cCGVOiA99.jpg",
+        "backdropPath": "/off0xgvtfHY82l3MC4mDpCk1APY.jpg",
+        "rating": 7.3,
+        "trailerKey": "4mgWq9wZs2o"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 59143,
+        "title": "Mikey and Nicky",
+        "year": 1976,
+        "runtime": 106,
+        "genres": [
+          "Crime",
+          "Drama"
+        ],
+        "synopsis": "Nick is desperate, holed up in a cheap hotel, suffering from an ulcer and convinced that a local mob boss wants him killed. Terrified, he calls Mikey, his friend since childhood and a fellow gangster. So begins a long night…",
+        "director": "Elaine May",
+        "writers": [
+          "Elaine May"
+        ],
+        "producers": [
+          "Michael Hausman"
+        ],
+        "cast": [
+          "Peter Falk",
+          "John Cassavetes",
+          "Ned Beatty",
+          "Rose Arrick",
+          "Carol Grace"
+        ],
+        "composers": [
+          "John Strauss"
+        ],
+        "posterPath": "/fnHC1OJ1EbdOX97nmXVYrXFgiQT.jpg",
+        "backdropPath": "/pzST8cae4CTsfj0nPP63YOdPLiO.jpg",
+        "rating": 6.9,
+        "trailerKey": "ipCY7DhWb6g"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 858017,
+        "title": "I Saw the TV Glow",
+        "year": 2024,
+        "runtime": 100,
+        "genres": [
+          "Drama",
+          "Horror"
+        ],
+        "synopsis": "In late-90s suburbia, a lonely teenager meets a girl at school who introduces him to a mysterious late-night T.V. show — a vision of a supernatural world pulsing beneath their own. As time goes on, however, questions begin to arise about why the show sometimes seems more real than their own lives. In the pale glow of the television, their view of reality begins to crack.",
+        "director": "Jane Schoenbrun",
+        "writers": [
+          "Jane Schoenbrun"
+        ],
+        "producers": [
+          "Luca Intili",
+          "Sarah Winshall",
+          "Emma Stone"
+        ],
+        "cast": [
+          "Justice Smith",
+          "Jack Haven",
+          "Ian Foreman",
+          "Helena Howard",
+          "Lindsey Jordan"
+        ],
+        "composers": [
+          "Alex G"
+        ],
+        "posterPath": "/hS4GYkYpN1rfl4GIxyc02sCyfAj.jpg",
+        "backdropPath": "/jKulL2hdp5S7dVbpoItAtdCyzXI.jpg",
+        "rating": 6.2,
+        "trailerKey": "kymDzCgPwj0"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 1887,
+        "title": "Marie Antoinette",
+        "year": 2006,
+        "runtime": 123,
+        "genres": [
+          "Drama",
+          "History"
+        ],
+        "synopsis": "A retelling of the story of France’s iconic but ill-fated queen, Marie Antoinette - from her betrothal and marriage to Louis XVI at fifteen to her reign as queen at nineteen and ultimately the fall of Versailles.",
+        "director": "Sofia Coppola",
+        "writers": [
+          "Sofia Coppola"
+        ],
+        "producers": [
+          "Sofia Coppola",
+          "Ross Katz"
+        ],
+        "cast": [
+          "Kirsten Dunst",
+          "Jason Schwartzman",
+          "Steve Coogan",
+          "Judy Davis",
+          "Rip Torn"
+        ],
+        "composers": [
+          "Dustin O'Halloran"
+        ],
+        "posterPath": "/cybXGmv8Rjd5Os8Xml6YxMBQ0Zt.jpg",
+        "backdropPath": "/9hxBNoRjEDZGjyR1JpmmtxJWmVU.jpg",
+        "rating": 6.7,
+        "trailerKey": "yBWyKRoh98U"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 252171,
+        "title": "A Girl Walks Home Alone at Night",
+        "year": 2014,
+        "runtime": 101,
+        "genres": [
+          "Horror",
+          "Romance"
+        ],
+        "synopsis": "In the Iranian ghost-town Bad City, a place that reeks of death and loneliness, the townspeople are unaware they are being stalked by a lonesome vampire.",
+        "director": "Ana Lily Amirpour",
+        "writers": [
+          "Ana Lily Amirpour"
+        ],
+        "producers": [
+          "Ana Lily Amirpour",
+          "Justin Begnaud",
+          "Sina Sayyah"
+        ],
+        "cast": [
+          "Sheila Vand",
+          "Arash Marandi",
+          "Marshall Manesh",
+          "Mozhan Navabi",
+          "Dominic Rains"
+        ],
+        "composers": [
+          "Bei Ru",
+          "Johnny Jewel"
+        ],
+        "posterPath": "/cd2rCE1nun7CESjBI8PGNEof1tb.jpg",
+        "backdropPath": "/5mUTmmBFbsXlJE66XOumJSzYK7M.jpg",
+        "rating": 6.8,
+        "trailerKey": "2zyGQuEkDT8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 296096,
+        "title": "Me Before You",
+        "year": 2016,
+        "runtime": 110,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "Lou Clark, a directionless 26-year-old from the English countryside, takes a job at the local castle as a caregiver and companion to a wealthy young banker, Will Traynor. Wheelchair-bound from an accident two years prior, the once adventurous Will has all but given up — that is until Lou determines to show him that life is worth living.",
+        "director": "Thea Sharrock",
+        "writers": [
+          "Michael H. Weber",
+          "Scott Neustadter",
+          "Jojo Moyes"
+        ],
+        "producers": [
+          "Alison Owen",
+          "Karen Rosenfelt"
+        ],
+        "cast": [
+          "Emilia Clarke",
+          "Sam Claflin",
+          "Janet McTeer",
+          "Charles Dance",
+          "Brendan Coyle"
+        ],
+        "composers": [
+          "Craig Armstrong"
+        ],
+        "posterPath": "/Ia3dzj5LnCj1ZBdlVeJrbKJQxG.jpg",
+        "backdropPath": "/3WK7p9EdZmmvB1IbB2Vw9Rf4lXH.jpg",
+        "rating": 7.9,
+        "trailerKey": "T0MmkG_nG1U"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 9494,
+        "title": "Look Who's Talking",
+        "year": 1989,
+        "runtime": 96,
+        "genres": [
+          "Comedy",
+          "Romance"
+        ],
+        "synopsis": "After a single, career-minded woman is left on her own to give birth to the child of a married man, she finds a new romantic chance in a cab driver. Meanwhile, the point-of-view of the newborn baby is narrated through voice-over.",
+        "director": "Amy Heckerling",
+        "writers": [
+          "Amy Heckerling"
+        ],
+        "producers": [
+          "Jonathan D. Krane"
+        ],
+        "cast": [
+          "John Travolta",
+          "Kirstie Alley",
+          "Olympia Dukakis",
+          "George Segal",
+          "Abe Vigoda"
+        ],
+        "composers": [
+          "David Kitay"
+        ],
+        "posterPath": "/uVM0D7Q6U9H6xMSZmMdfwECih5h.jpg",
+        "backdropPath": "/q6EN30g9zFkYuKujLVfv9EKZnZB.jpg",
+        "rating": 6.3
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 858024,
+        "title": "Hamnet",
+        "year": 2025,
+        "runtime": 125,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "The powerful story of love and loss that inspired the creation of Shakespeare's timeless masterpiece, Hamlet.",
+        "director": "Chloé Zhao",
+        "writers": [
+          "Chloé Zhao",
+          "Maggie O'Farrell"
+        ],
+        "producers": [
+          "Liza Marshall",
+          "Sam Mendes",
+          "Pippa Harris"
+        ],
+        "cast": [
+          "Jessie Buckley",
+          "Paul Mescal",
+          "Emily Watson",
+          "Joe Alwyn",
+          "Jacobi Jupe"
+        ],
+        "composers": [
+          "Max Richter"
+        ],
+        "posterPath": "/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
+        "backdropPath": "/73BClq9FOcrWrutnpiqhCNEWEwJ.jpg",
+        "rating": 7.7,
+        "trailerKey": "xYcgQMxQwmk"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 9300,
+        "title": "Orlando",
+        "year": 1992,
+        "runtime": 94,
+        "genres": [
+          "Drama",
+          "Fantasy"
+        ],
+        "synopsis": "England, 1600. Queen Elizabeth I promises Orlando, a young nobleman obsessed with poetry, that she will grant him land and fortune if he agrees to satisfy a very particular request.",
+        "director": "Sally Potter",
+        "writers": [
+          "Sally Potter"
+        ],
+        "producers": [
+          "Christopher Sheppard"
+        ],
+        "cast": [
+          "Tilda Swinton",
+          "Billy Zane",
+          "Lothaire Bluteau",
+          "John Wood",
+          "Charlotte Valandrey"
+        ],
+        "composers": [
+          "Sally Potter",
+          "David Motion"
+        ],
+        "posterPath": "/seRawEs8eQ8rWfkBm6QC39EQEAU.jpg",
+        "backdropPath": "/AoMYwa8yRvXcbRKdD5s8VwIN3NA.jpg",
+        "rating": 6.9,
+        "trailerKey": "MorOaD61KUI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 24469,
+        "title": "Fish Tank",
+        "year": 2009,
+        "runtime": 123,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "Fifteen-year-old Mia is in a constant state of war with her family and the world around her. When she meets her party-girl mother’s charming new boyfriend Connor, she is amazed to find he returns her attention, and believes he might help her start to make sense of her life.",
+        "director": "Andrea Arnold",
+        "writers": [
+          "Andrea Arnold"
+        ],
+        "producers": [
+          "Nick Laws",
+          "Kees Kasander"
+        ],
+        "cast": [
+          "Katie Jarvis",
+          "Michael Fassbender",
+          "Kierston Wareing",
+          "Rebecca Griffiths",
+          "Harry Treadaway"
+        ],
+        "composers": [
+          "Phonso Martin"
+        ],
+        "posterPath": "/rI3MKBDsWzQHi9PWDAMKkgmYcff.jpg",
+        "backdropPath": "/4VgiVdd2I3AktHkOpCeSjtP4t8b.jpg",
+        "rating": 6.9,
+        "trailerKey": "xf5VOvB5MHA"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 499,
+        "title": "Cléo from 5 to 7",
+        "year": 1962,
+        "runtime": 90,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "Agnès Varda eloquently captures Paris in the sixties with this real-time portrait of a singer set adrift in the city as she awaits test results of a biopsy. A chronicle of the minutes of one woman’s life, Cléo from 5 to 7 is a spirited mix of vivid vérité and melodrama, featuring a score by Michel Legrand and cameos by Jean-Luc Godard and Anna Karina.",
+        "director": "Agnès Varda",
+        "writers": [
+          "Agnès Varda"
+        ],
+        "producers": [
+          "Carlo Ponti",
+          "Georges de Beauregard"
+        ],
+        "cast": [
+          "Corinne Marchand",
+          "Antoine Bourseiller",
+          "Dominique Davray",
+          "Dorothée Blanck",
+          "Michel Legrand"
+        ],
+        "composers": [
+          "Michel Legrand"
+        ],
+        "posterPath": "/oelBStY4xpguaplRv15P3Za7Xsr.jpg",
+        "backdropPath": "/oyatchDPpS4I9jpIIezFJGrmXcR.jpg",
+        "rating": 7.7,
+        "trailerKey": "sRR0_VJFqwg"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1089,
+        "title": "Point Break",
+        "year": 1991,
+        "runtime": 122,
+        "genres": [
+          "Action",
+          "Thriller",
+          "Crime"
+        ],
+        "synopsis": "In Los Angeles, a gang of bank robbers who call themselves The Ex-Presidents commit their crimes while wearing masks of Reagan, Carter, Nixon and Johnson. Believing that the members of the gang could be surfers, the F.B.I. sends young agent Johnny Utah to the beach undercover to mix with the surfers and gather information.",
+        "director": "Kathryn Bigelow",
+        "writers": [
+          "W. Peter Iliff"
+        ],
+        "producers": [
+          "Peter Abrams",
+          "Robert L. Levy"
+        ],
+        "cast": [
+          "Keanu Reeves",
+          "Patrick Swayze",
+          "Lori Petty",
+          "Gary Busey",
+          "John C. McGinley"
+        ],
+        "composers": [
+          "Mark Isham"
+        ],
+        "posterPath": "/tlbERIghrQ4oofqlbF7H0K0EYnx.jpg",
+        "backdropPath": "/yGOHbICOQwlJ20UjK8F2ChGJjvl.jpg",
+        "rating": 7.2,
+        "trailerKey": "KywiWyPjrOg"
+      },
+      "status": "selected"
+    },
+    {
+      "film": {
+        "tmdbId": 2280,
+        "title": "Big",
+        "year": 1988,
+        "runtime": 104,
+        "genres": [
+          "Fantasy",
+          "Drama",
+          "Comedy"
+        ],
+        "synopsis": "When a young boy makes a wish at a carnival machine to be big, he wakes up the following morning to find that it has been granted and his body has grown older overnight, but he is still the same 13-year-old boy inside. Now he must learn how to cope with the unfamiliar world of grown-ups, including getting a job and having his first romantic encounter with a woman.",
+        "director": "Penny Marshall",
+        "writers": [
+          "Anne Spielberg",
+          "Gary Ross"
+        ],
+        "producers": [
+          "James L. Brooks",
+          "Robert Greenhut"
+        ],
+        "cast": [
+          "Tom Hanks",
+          "Elizabeth Perkins",
+          "Robert Loggia",
+          "John Heard",
+          "Jared Rushton"
+        ],
+        "composers": [
+          "Howard Shore"
+        ],
+        "posterPath": "/eWhCDJiwxvx3YXkAFRiHjimnF0j.jpg",
+        "backdropPath": "/bi9ihIMB9DoXs7odkS5oKkHoK2o.jpg",
+        "rating": 7.2,
+        "trailerKey": "YM8zgY7sG_g"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 346698,
+        "title": "Barbie",
+        "year": 2023,
+        "runtime": 114,
+        "genres": [
+          "Comedy",
+          "Adventure",
+          "Fantasy"
+        ],
+        "synopsis": "Barbie and Ken are having the time of their lives in the colorful and seemingly perfect world of Barbie Land. However, when they get a chance to go to the real world, they soon discover the joys and perils of living among humans.",
+        "director": "Greta Gerwig",
+        "writers": [
+          "Noah Baumbach",
+          "Greta Gerwig"
+        ],
+        "producers": [
+          "Robbie Brenner",
+          "David Heyman",
+          "Tom Ackerley"
+        ],
+        "cast": [
+          "Margot Robbie",
+          "Ryan Gosling",
+          "America Ferrera",
+          "Ariana Greenblatt",
+          "Issa Rae"
+        ],
+        "composers": [
+          "Andrew Wyatt",
+          "Mark Ronson"
+        ],
+        "posterPath": "/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+        "backdropPath": "/1esAE8sLJRWWFsLLeh5r3g2WanI.jpg",
+        "rating": 6.9,
+        "trailerKey": "Y1IgAEejvqM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1088,
+        "title": "Whale Rider",
+        "year": 2003,
+        "runtime": 101,
+        "genres": [
+          "Drama",
+          "Family"
+        ],
+        "synopsis": "A contemporary story of love, rejection, and triumph as a young Māori girl fights to fulfill a destiny her grandfather refuses to recognize.",
+        "director": "Niki Caro",
+        "writers": [
+          "Niki Caro"
+        ],
+        "producers": [
+          "Tim Sanders",
+          "Frank Hübner",
+          "John Barnett"
+        ],
+        "cast": [
+          "Keisha Castle-Hughes",
+          "Rawiri Paratene",
+          "Vicky Haughton",
+          "Cliff Curtis",
+          "Grant Roa"
+        ],
+        "composers": [
+          "Lisa Gerrard"
+        ],
+        "posterPath": "/cVBZQZq091KtwBm2qObOv0JTFcH.jpg",
+        "backdropPath": "/dLJ6qwEXg2AglBSClRV5iVYZI1b.jpg",
+        "rating": 7,
+        "trailerKey": "0PPmfCx91d8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 930564,
+        "title": "Saltburn",
+        "year": 2023,
+        "runtime": 131,
+        "genres": [
+          "Drama",
+          "Comedy",
+          "Thriller"
+        ],
+        "synopsis": "Struggling to find his place at Oxford University, student Oliver Quick finds himself drawn into the world of the charming and aristocratic Felix Catton, who invites him to Saltburn, his eccentric family's sprawling estate, for a summer never to be forgotten.",
+        "director": "Emerald Fennell",
+        "writers": [
+          "Emerald Fennell"
+        ],
+        "producers": [
+          "Josey McNamara",
+          "Emerald Fennell",
+          "Margot Robbie"
+        ],
+        "cast": [
+          "Barry Keoghan",
+          "Jacob Elordi",
+          "Rosamund Pike",
+          "Richard E. Grant",
+          "Alison Oliver"
+        ],
+        "composers": [
+          "Anthony B. Willis"
+        ],
+        "posterPath": "/zGTfMwG112BC66mpaveVxoWPOaB.jpg",
+        "backdropPath": "/bAtFhmRHp0f6aHqj1UGTZoPcmQo.jpg",
+        "rating": 6.9,
+        "trailerKey": "s8l0llLj1uM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 96936,
+        "title": "The Bling Ring",
+        "year": 2013,
+        "runtime": 90,
+        "genres": [
+          "Drama",
+          "Crime"
+        ],
+        "synopsis": "Lured by stardom, a crew of aimless teens breaks into celebrity homes for a string of high-profile robberies and fame by appropriation.",
+        "director": "Sofia Coppola",
+        "writers": [
+          "Sofia Coppola"
+        ],
+        "producers": [
+          "Youree Henley",
+          "Sofia Coppola",
+          "Roman Coppola"
+        ],
+        "cast": [
+          "Katie Chang",
+          "Emma Watson",
+          "Taissa Farmiga",
+          "Claire Julien",
+          "Israel Broussard"
+        ],
+        "composers": [
+          "Daniel Lopatin",
+          "Brian Reitzell"
+        ],
+        "posterPath": "/6yh55qCcdgPRJweDWM2CiEubJCL.jpg",
+        "backdropPath": "/ouN0GyE7mtIT6wyJeilaggyvgNj.jpg",
+        "rating": 5.4,
+        "trailerKey": "NcE2fj-EtJY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 950028,
+        "title": "The Invite",
+        "year": 2026,
+        "runtime": 107,
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+        "director": "Olivia Wilde",
+        "writers": [
+          "Rashida Jones",
+          "Will McCormack"
+        ],
+        "producers": [
+          "David Permut",
+          "Megan Ellison",
+          "Ben Browning"
+        ],
+        "cast": [
+          "Seth Rogen",
+          "Olivia Wilde",
+          "Penélope Cruz",
+          "Edward Norton",
+          "Skip Howland"
+        ],
+        "composers": [
+          "Devonté Hynes"
+        ],
+        "posterPath": "/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+        "backdropPath": "/lEwqBGNR65KZv6Ej5ufcmhZu2y2.jpg",
+        "rating": 7.3,
+        "trailerKey": "nelkiuezJxg"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 473019,
+        "title": "The Souvenir",
+        "year": 2019,
+        "runtime": 120,
+        "genres": [
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "A shy but ambitious film student falls into an intense, emotionally fraught relationship with a charismatic but untrustworthy older man.",
+        "director": "Joanna Hogg",
+        "writers": [
+          "Joanna Hogg"
+        ],
+        "producers": [
+          "Joanna Hogg",
+          "Luke Schiller"
+        ],
+        "cast": [
+          "Honor Swinton Byrne",
+          "Tom Burke",
+          "Tilda Swinton",
+          "Richard Ayoade",
+          "Ariane Labed"
+        ],
+        "posterPath": "/2Nj04HsZ0lNkv07JnfBZ0bAIECn.jpg",
+        "backdropPath": "/kIu6aYaUxBUUfJ0l0sLNW1qh45u.jpg",
+        "rating": 6.1,
+        "trailerKey": "t9Al2nC0vzY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1401281,
+        "title": "The Testament of Ann Lee",
+        "year": 2025,
+        "runtime": 137,
+        "genres": [
+          "History",
+          "Drama",
+          "Music"
+        ],
+        "synopsis": "The extraordinary true legend of Ann Lee, founder of the devotional sect known as the Shakers, who preached gender and social equality and was revered by her followers as the female Christ.",
+        "director": "Mona Fastvold",
+        "writers": [
+          "Mona Fastvold",
+          "Brady Corbet"
+        ],
+        "producers": [
+          "Andrew Morrison",
+          "Joshua Horsfield",
+          "Viktória Petrányi"
+        ],
+        "cast": [
+          "Amanda Seyfried",
+          "Lewis Pullman",
+          "Thomasin McKenzie",
+          "Matthew Beard",
+          "Christopher Abbott"
+        ],
+        "composers": [
+          "Daniel Blumberg"
+        ],
+        "posterPath": "/hBGg3IGRM7LM6ydMmDrl8mEx33Y.jpg",
+        "backdropPath": "/jZNR5onRZijwyGr5iWbs3J9QcYr.jpg",
+        "rating": 6.3,
+        "trailerKey": "Rb0ZhiDD9J0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 1160360,
+        "title": "If I Had Legs I'd Kick You",
+        "year": 2025,
+        "runtime": 113,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "With her life crashing down around her, Linda attempts to navigate her child's mysterious illness, her absent husband, a missing person, and an increasingly hostile relationship with her therapist.",
+        "director": "Mary Bronstein",
+        "writers": [
+          "Mary Bronstein"
+        ],
+        "producers": [
+          "Sara Murphy",
+          "Ryan Zacarias",
+          "Josh Safdie"
+        ],
+        "cast": [
+          "Rose Byrne",
+          "Conan O'Brien",
+          "A$AP Rocky",
+          "Danielle Macdonald",
+          "Delaney Quinn"
+        ],
+        "posterPath": "/va0TQ9WprMXRqQAzY56vyqY0Yd5.jpg",
+        "backdropPath": "/eLVKuHGx9k8JgLk5JINQDmh9tRH.jpg",
+        "rating": 6.3,
+        "trailerKey": "-oDLBRLkflo"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 837335,
+        "title": "La Chimera",
+        "year": 2023,
+        "runtime": 131,
+        "genres": [
+          "Drama",
+          "Fantasy",
+          "Comedy"
+        ],
+        "synopsis": "Everyone has their own Chimera, something they try to achieve but never manage to find. For Arthur, the Chimera looks like the woman he lost, Beniamina. In an adventurous journey between the living and the dead, between forests and cities, between celebrations and solitudes, the intertwined destinies of these characters unfold, all in search of the Chimera.",
+        "director": "Alice Rohrwacher",
+        "writers": [
+          "Alice Rohrwacher"
+        ],
+        "producers": [
+          "Carlo Cresto-Dina",
+          "Michela Pini",
+          "Pierre-François Piet"
+        ],
+        "cast": [
+          "Josh O'Connor",
+          "Carol Duarte",
+          "Alba Rohrwacher",
+          "Isabella Rossellini",
+          "Vincenzo Nemolato"
+        ],
+        "posterPath": "/dV6SYHmmFLXQU7oKRfK4pOFCX6M.jpg",
+        "backdropPath": "/ovtTn2GkzOYsMvAVWl6Bt0jN4Ye.jpg",
+        "rating": 7.3,
+        "trailerKey": "TkIC8YI9-eU"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 508947,
+        "title": "Turning Red",
+        "year": 2022,
+        "runtime": 100,
+        "genres": [
+          "Animation",
+          "Family",
+          "Comedy",
+          "Fantasy"
+        ],
+        "synopsis": "Thirteen-year-old Mei is experiencing the awkwardness of being a teenager with a twist – when she gets too excited, she transforms into a giant red panda.",
+        "director": "Domee Shi",
+        "writers": [
+          "Domee Shi",
+          "Julia Cho"
+        ],
+        "producers": [
+          "Lindsey Collins"
+        ],
+        "cast": [
+          "Rosalie Chiang",
+          "Sandra Oh",
+          "Ava Morse",
+          "Hyein Park",
+          "Maitreyi Ramakrishnan"
+        ],
+        "composers": [
+          "Ludwig Göransson"
+        ],
+        "posterPath": "/qsdjk9oAKSQMWs0Vt5Pyfh6O4GZ.jpg",
+        "backdropPath": "/fOy2Jurz9k6RnJnMUMRDAgBwru2.jpg",
+        "rating": 7.3,
+        "trailerKey": "XdKzUbAiswE"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 616827,
+        "title": "Rare Beasts",
+        "year": 2021,
+        "runtime": 92,
+        "genres": [
+          "Romance",
+          "Comedy",
+          "Drama"
+        ],
+        "synopsis": "Mandy is a mother, a writer, a nihilist. Mandy is a modern woman in a crisis. Raising a son in the midst of a female revolution, mining the pain of her parents' separation and professionally writing about a love that no longer exists, she falls upon a troubled man, Pete, who’s searching for a sense of worth, belonging and ‘restored’ Male identity.",
+        "director": "Billie Piper",
+        "writers": [
+          "Billie Piper"
+        ],
+        "producers": [
+          "Vaughan Sivell"
+        ],
+        "cast": [
+          "Billie Piper",
+          "Leo Bill",
+          "Kerry Fox",
+          "Toby Woolf",
+          "David Thewlis"
+        ],
+        "composers": [
+          "Johnny Lloyd",
+          "Nathan Coen"
+        ],
+        "posterPath": "/fnxlaEzzFe1dJPqcgOjGS1oM2dJ.jpg",
+        "backdropPath": "/ggHEdlGBoUxdKpFbcsyBU9MoRga.jpg",
+        "rating": 5.5,
+        "trailerKey": "6uxkaPUZMoc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 13787,
+        "title": "Holy Smoke",
+        "year": 1999,
+        "runtime": 115,
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "synopsis": "While on a journey of discovery in exotic India, beautiful young Ruth Barron falls under the influence of a charismatic religious guru. Her desperate parents then hire PJ Waters, a macho cult de-programmer who confronts Ruth in a remote desert hideaway. But PJ quickly learns that he's met his match in the sexy, intelligent and iron-willed Ruth.",
+        "director": "Jane Campion",
+        "writers": [
+          "Jane Campion",
+          "Anna Campion"
+        ],
+        "producers": [
+          "Mark Turnbull",
+          "Tabrez Noorani",
+          "Jan Chapman"
+        ],
+        "cast": [
+          "Kate Winslet",
+          "Harvey Keitel",
+          "Julie Hamilton",
+          "Sophie Lee",
+          "Dan Wyllie"
+        ],
+        "composers": [
+          "Angelo Badalamenti"
+        ],
+        "posterPath": "/xcovgjKOnNsJTz8uADbCVF98wS1.jpg",
+        "backdropPath": "/2BzfOwehPOdnAm4puhTU52EIICr.jpg",
+        "rating": 5.7,
+        "trailerKey": "YvVi4-vlYxQ"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 524635,
+        "title": "The Chronology of Water",
+        "year": 2025,
+        "runtime": 128,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "Plagued by an abusive childhood, a woman finds escape in competitive swimming, sexual experimentation, toxic relationships, and addiction before ultimately finding her voice through writing.",
+        "director": "Kristen Stewart",
+        "writers": [
+          "Kristen Stewart"
+        ],
+        "producers": [
+          "Michael A. Pruss",
+          "Andy Mingo",
+          "Charles Gillibert"
+        ],
+        "cast": [
+          "Imogen Poots",
+          "Thora Birch",
+          "Jim Belushi",
+          "Tom Sturridge",
+          "Earl Cave"
+        ],
+        "composers": [
+          "Paris Hurley"
+        ],
+        "posterPath": "/pU3GZI6C9lxzxUnBccIQLThDLVY.jpg",
+        "backdropPath": "/vTiI8auKiV8KnewOqySCZkXB19t.jpg",
+        "rating": 6.7,
+        "trailerKey": "Og1hVn5umZI"
+      },
+      "status": "nominated"
+    }
+  ]
+}
