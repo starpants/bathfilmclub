@@ -45,7 +45,7 @@
         "rating": 7.3,
         "trailerKey": "MJNR58zaStE"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -264,7 +264,7 @@
         "rating": 7,
         "trailerKey": "vJ0Kg8UyHK0"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -789,6 +789,492 @@
         "backdropPath": "/r9leYNa8nTRCceZrZhP1DXkgKVb.jpg",
         "rating": 8.1,
         "trailerKey": "GigeANz21rk"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 763,
+        "title": "Braindead",
+        "year": 1992,
+        "runtime": 103,
+        "genres": [
+          "Horror",
+          "Comedy"
+        ],
+        "synopsis": "When a Sumatran rat-monkey bites Lionel Cosgrove's mother, she's transformed into a zombie and begins killing (and transforming) the entire town while Lionel races to keep things under control.",
+        "director": "Peter Jackson",
+        "writers": [
+          "Fran Walsh",
+          "Stephen Sinclair",
+          "Peter Jackson"
+        ],
+        "producers": [
+          "Jim Booth"
+        ],
+        "cast": [
+          "Timothy Balme",
+          "Diana Peñalver",
+          "Elizabeth Moody",
+          "Ian Watkin",
+          "Brenda Kendall"
+        ],
+        "composers": [
+          "Peter Dasent"
+        ],
+        "posterPath": "/pa39D8TQs6aNw3hiUs4jLjHVUB0.jpg",
+        "backdropPath": "/z07GWpT24sV7PDaaRKm71W63yAC.jpg",
+        "rating": 7.4,
+        "trailerKey": "Ytg1JFrI2AA"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 76341,
+        "title": "Mad Max: Fury Road",
+        "year": 2015,
+        "runtime": 121,
+        "genres": [
+          "Action",
+          "Adventure",
+          "Science Fiction"
+        ],
+        "synopsis": "An apocalyptic story set in the furthest reaches of our planet, in a stark desert landscape where humanity is broken, and most everyone is crazed fighting for the necessities of life. Within this world exist two rebels on the run who just might be able to restore order.",
+        "director": "George Miller",
+        "writers": [
+          "Nico Lathouris",
+          "George Miller",
+          "Brendan McCarthy"
+        ],
+        "producers": [
+          "Doug Mitchell",
+          "George Miller",
+          "P.J. Voeten"
+        ],
+        "cast": [
+          "Tom Hardy",
+          "Charlize Theron",
+          "Nicholas Hoult",
+          "Hugh Keays-Byrne",
+          "Josh Helman"
+        ],
+        "composers": [
+          "Tom Holkenborg"
+        ],
+        "posterPath": "/ulcAi4dKpAjHwYGS08vNyx9H6I9.jpg",
+        "backdropPath": "/gqrnQA6Xppdl8vIb2eJc58VC1tW.jpg",
+        "rating": 7.6,
+        "trailerKey": "MonFNCgK4WE"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 927,
+        "title": "Gremlins",
+        "year": 1984,
+        "runtime": 106,
+        "genres": [
+          "Fantasy",
+          "Horror",
+          "Comedy"
+        ],
+        "synopsis": "After receiving an exotic small animal as a Christmas gift, a young man inadvertently breaks three important rules concerning his new pet, which unleashes a horde of malevolently mischievous creatures on a small town.",
+        "director": "Joe Dante",
+        "writers": [
+          "Chris Columbus"
+        ],
+        "producers": [
+          "Michael Finnell"
+        ],
+        "cast": [
+          "Zach Galligan",
+          "Phoebe Cates",
+          "Hoyt Axton",
+          "Frances Lee McCain",
+          "Corey Feldman"
+        ],
+        "composers": [
+          "Noel Regney",
+          "Jerry Goldsmith"
+        ],
+        "posterPath": "/6m0F7fsXjQvUbCZrPWcJNrjvIui.jpg",
+        "backdropPath": "/5UX6M0aEphiW6Xmy5rpYX75glbo.jpg",
+        "rating": 7.1,
+        "trailerKey": "PXXZx6skXrw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 33061,
+        "title": "Troll",
+        "year": 1986,
+        "runtime": 83,
+        "genres": [
+          "Fantasy",
+          "Horror"
+        ],
+        "synopsis": "When a family moves into a San Francisco apartment, an opportunistic troll decides to make his move and take possession of little Wendy, thereby paving the way for new troll recruits, the first in his army that will take eventual control of the planet. We soon discover Torok is the ex-husband of Eunice St. Clair, a resident in the building who was married to Torok.",
+        "director": "John Carl Buechler",
+        "writers": [
+          "Ed Naha"
+        ],
+        "producers": [
+          "Albert Band"
+        ],
+        "cast": [
+          "Noah Hathaway",
+          "Jenny Beck",
+          "Phil Fondacaro",
+          "Michael Moriarty",
+          "Shelley Hack"
+        ],
+        "composers": [
+          "Richard Band"
+        ],
+        "posterPath": "/rqU0HnCty94ds8e4At4TzEH3CcY.jpg",
+        "backdropPath": "/oDKhYf1ROWqvvHUDOebNUQysuGx.jpg",
+        "rating": 5.1,
+        "trailerKey": "2LuiOcbDNKk"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11864,
+        "title": "Enemy Mine",
+        "year": 1985,
+        "runtime": 108,
+        "genres": [
+          "Drama",
+          "Science Fiction"
+        ],
+        "synopsis": "A soldier from Earth crashlands on an alien world after sustaining battle damage. Eventually he encounters another survivor, but from the enemy species he was fighting; they band together to survive on this hostile world. In the end the human finds himself caring for his enemy in a completely unexpected way.",
+        "director": "Wolfgang Petersen",
+        "writers": [
+          "Edward Khmara"
+        ],
+        "producers": [
+          "Stephen J. Friedman"
+        ],
+        "cast": [
+          "Dennis Quaid",
+          "Louis Gossett Jr.",
+          "Brion James",
+          "Richard Marcus",
+          "Carolyn McCormick"
+        ],
+        "composers": [
+          "Maurice Jarre"
+        ],
+        "posterPath": "/a3dr9L8VIjhEvivzQ2M12VQDere.jpg",
+        "backdropPath": "/dMjNyPk3aBwXYYfAuSAwSRz1ewa.jpg",
+        "rating": 7,
+        "trailerKey": "J8wLPApYGOw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 19,
+        "title": "Metropolis",
+        "year": 1927,
+        "runtime": 148,
+        "genres": [
+          "Drama",
+          "Science Fiction"
+        ],
+        "synopsis": "In a futuristic city sharply divided between the rich and the poor, the son of the city's mastermind meets a prophet who predicts the coming of a savior to mediate their differences.",
+        "director": "Fritz Lang",
+        "writers": [
+          "Fritz Lang",
+          "Thea von Harbou"
+        ],
+        "producers": [
+          "Erich Pommer"
+        ],
+        "cast": [
+          "Gustav Fröhlich",
+          "Brigitte Helm",
+          "Alfred Abel",
+          "Rudolf Klein-Rogge",
+          "Theodor Loos"
+        ],
+        "composers": [
+          "Gottfried Huppertz",
+          "Otto Harzner"
+        ],
+        "posterPath": "/kr9wXRN23zLuWJIelahas1mtnYj.jpg",
+        "backdropPath": "/eeMoFKxjjiCi6iep2GEZtSAMYIr.jpg",
+        "rating": 8.1,
+        "trailerKey": "ZAvzaOxDt2c"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 830,
+        "title": "Forbidden Planet",
+        "year": 1956,
+        "runtime": 98,
+        "genres": [
+          "Science Fiction",
+          "Adventure"
+        ],
+        "synopsis": "Starship C57D travels to planet Altair 4 in search of the crew of spaceship \"Bellerophon,\" a scientific expedition that has been missing for twenty years. They find themselves unwelcome by the expedition's lone survivor and warned of destruction by an invisible force if they don't turn back immediately.",
+        "director": "Fred M. Wilcox",
+        "writers": [
+          "Cyril Hume"
+        ],
+        "producers": [
+          "Nicholas Nayfack"
+        ],
+        "cast": [
+          "Walter Pidgeon",
+          "Anne Francis",
+          "Leslie Nielsen",
+          "Warren Stevens",
+          "Jack Kelly"
+        ],
+        "composers": [
+          "Bebe Barron",
+          "Louis Barron"
+        ],
+        "posterPath": "/aq0OQfRS7hDDI8vyD0ICbH9eguC.jpg",
+        "backdropPath": "/o2Vx6xE0IHizkYMFqXau2YKLfQp.jpg",
+        "rating": 7.3,
+        "trailerKey": "_jnHydCeYcc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 992,
+        "title": "Sherlock Jr.",
+        "year": 1924,
+        "runtime": 45,
+        "genres": [
+          "Action",
+          "Comedy",
+          "Mystery"
+        ],
+        "synopsis": "A film projectionist longs to be a detective, and puts his meager skills to work when he is framed by a rival for stealing his girlfriend's father's pocketwatch.",
+        "director": "Buster Keaton",
+        "writers": [
+          "Clyde Bruckman"
+        ],
+        "producers": [
+          "Buster Keaton",
+          "Joseph M. Schenck"
+        ],
+        "cast": [
+          "Buster Keaton",
+          "Kathryn McGuire",
+          "Joe Keaton",
+          "Erwin Connelly",
+          "Ward Crane"
+        ],
+        "posterPath": "/1G9r3rqtbFAQuyWKOZm4Y5J5s7Q.jpg",
+        "backdropPath": "/tSipsYTp565LkopntX1lZNLPYHP.jpg",
+        "rating": 8,
+        "trailerKey": "JSEK1NUPrGA"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 39410,
+        "title": "Mothra",
+        "year": 1961,
+        "runtime": 101,
+        "genres": [
+          "Adventure",
+          "Science Fiction",
+          "Fantasy"
+        ],
+        "synopsis": "Shipwreck survivors found on the presumably uninhabited Infant Island leads to a scientific expedition that discovers a surviving native population along with the Shobijin, tiny twin fairy priestesses of the island's mythical deity called Mothra. After the fairies are kidnapped by an exploitative businessman named Clark Nelson, Mothra sets out to rescue them.",
+        "director": "Ishirō Honda",
+        "writers": [
+          "Shinichi Sekizawa"
+        ],
+        "producers": [
+          "Tomoyuki Tanaka"
+        ],
+        "cast": [
+          "Frankie Sakai",
+          "Hiroshi Koizumi",
+          "Kyōko Kagawa",
+          "Jerry Itō",
+          "Ken Uehara"
+        ],
+        "composers": [
+          "Yūji Koseki",
+          "Koji Kajita"
+        ],
+        "posterPath": "/87hiAyyGFHPuuJ3iXHK8xZSMcRP.jpg",
+        "backdropPath": "/fyYBmshYHUwjdVG7CaKCSMDOa7s.jpg",
+        "rating": 7.2,
+        "trailerKey": "83j8YlkU7J8"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11533,
+        "title": "Jason and the Argonauts",
+        "year": 1963,
+        "runtime": 104,
+        "genres": [
+          "Adventure",
+          "Family",
+          "Fantasy"
+        ],
+        "synopsis": "Jason, a fearless sailor and explorer, returns to his home land of Thessaly after a long voyage to claim his rightful throne. He learns, however, that he must first find the magical Golden Fleece. To do so, he must embark on an epic quest fraught with fantastic monsters and terrible perils.",
+        "director": "Don Chaffey",
+        "writers": [
+          "Jan Read",
+          "Beverley Cross"
+        ],
+        "producers": [
+          "Charles H. Schneer"
+        ],
+        "cast": [
+          "Todd Armstrong",
+          "Nancy Kovack",
+          "Gary Raymond",
+          "Laurence Naismith",
+          "Niall MacGinnis"
+        ],
+        "composers": [
+          "Bernard Herrmann"
+        ],
+        "posterPath": "/xHVxIgqD5CxlOI5GHxvVSt5Zh5Y.jpg",
+        "backdropPath": "/xdefSJpYARFdW4jPhPsuvUlmt2M.jpg",
+        "rating": 7.2,
+        "trailerKey": "WbWmMsyqf6k"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 10719,
+        "title": "Elf",
+        "year": 2003,
+        "runtime": 97,
+        "genres": [
+          "Comedy",
+          "Family",
+          "Fantasy"
+        ],
+        "synopsis": "When young Buddy falls into Santa's gift sack on Christmas Eve, he's transported back to the North Pole and raised as a toy-making elf by Santa's helpers. But as he grows into adulthood, he can't shake the nagging feeling that he doesn't belong. Buddy vows to visit Manhattan and find his real dad, a workaholic.",
+        "director": "Jon Favreau",
+        "writers": [
+          "David Berenbaum",
+          "Jon Favreau"
+        ],
+        "producers": [
+          "Todd Komarnicki",
+          "Jon Berg",
+          "Shauna Robertson"
+        ],
+        "cast": [
+          "Will Ferrell",
+          "James Caan",
+          "Bob Newhart",
+          "Ed Asner",
+          "Mary Steenburgen"
+        ],
+        "composers": [
+          "John Debney"
+        ],
+        "posterPath": "/oOleziEempUPu96jkGs0Pj6tKxj.jpg",
+        "backdropPath": "/5nhp41gx49vXjwXuDXJwQrRFsng.jpg",
+        "rating": 6.7,
+        "trailerKey": "14o38xfHlXc"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 6114,
+        "title": "Bram Stoker's Dracula",
+        "year": 1992,
+        "runtime": 128,
+        "genres": [
+          "Romance",
+          "Horror"
+        ],
+        "synopsis": "Count Dracula, a 15th-century prince, is condemned to live off the blood of the living for eternity. Young lawyer Jonathan Harker is sent to Dracula's castle to finalise a land deal, but when the Count sees a photo of Harker's fiancée, Mina, the spitting image of his dead wife, he imprisons him and sets off for London to track her down.",
+        "director": "Francis Ford Coppola",
+        "writers": [
+          "James V. Hart"
+        ],
+        "producers": [
+          "Francis Ford Coppola",
+          "Fred Fuchs",
+          "Charles Mulvehill"
+        ],
+        "cast": [
+          "Gary Oldman",
+          "Winona Ryder",
+          "Anthony Hopkins",
+          "Keanu Reeves",
+          "Sadie Frost"
+        ],
+        "composers": [
+          "Wojciech Kilar"
+        ],
+        "posterPath": "/wpRrdm6g8zWtJnzVqME5QwSKkn7.jpg",
+        "backdropPath": "/fGuhbAlDpvmNuC0vkz1vsIzYwsq.jpg",
+        "rating": 7.4,
+        "trailerKey": "xD6JMxOGBLQ"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 841,
+        "title": "Dune",
+        "year": 1984,
+        "runtime": 136,
+        "genres": [
+          "Action",
+          "Science Fiction",
+          "Adventure"
+        ],
+        "synopsis": "In the year 10,191, the most precious substance in the universe is the spice Melange. The spice extends life. The spice expands consciousness. The spice is vital to space travel.  The spice exists on only one planet in the entire universe, the vast desert planet Arrakis, also known as Dune.  Its native inhabitants, the Fremen, have long held a prophecy that a man would come, a messiah who would lead them to true freedom.",
+        "director": "David Lynch",
+        "writers": [
+          "David Lynch"
+        ],
+        "producers": [
+          "Raffaella De Laurentiis",
+          "Dino De Laurentiis"
+        ],
+        "cast": [
+          "Kyle MacLachlan",
+          "Francesca Annis",
+          "Patrick Stewart",
+          "Linda Hunt",
+          "José Ferrer"
+        ],
+        "composers": [
+          "Brian Eno",
+          "David Paich",
+          "Jeff Porcaro",
+          "Mike Porcaro",
+          "Steve Porcaro",
+          "Marty Paich",
+          "Steve Lukather",
+          "Daniel Lanois",
+          "Roger Eno"
+        ],
+        "posterPath": "/4kJmUCE7mkVJjXa7A0g2rY4IGTm.jpg",
+        "backdropPath": "/5wJ2tckpvwcxGCAgZiccodwEJpf.jpg",
+        "rating": 6.2,
+        "trailerKey": "hjRG8kvMFw0"
       },
       "status": "nominated"
     }
