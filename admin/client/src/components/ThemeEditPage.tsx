@@ -198,7 +198,7 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
       {/* Add film */}
       <div style={{ marginBottom: '1.5rem' }}>
         <h3 style={{ margin: '0 0 0.75rem', fontFamily: font.display, fontSize: '0.9rem', letterSpacing: '0.1em', color: fg.strong }}>Add Film</h3>
-        <FilmSearch onAdd={(tmdbId, status) => api.addFilmToTheme(theme.slug, tmdbId, status).then(reloadFilms)} />
+        <FilmSearch existing={theme.films} onAdd={(tmdbId, status) => api.addFilmToTheme(theme.slug, tmdbId, status).then(reloadFilms)} />
       </div>
 
       {/* Pyramid bands (top → bottom: selected, shortlisted, nominated) */}

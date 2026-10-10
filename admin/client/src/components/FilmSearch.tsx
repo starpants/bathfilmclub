@@ -3,16 +3,19 @@ import type { FilmStatus } from '@bathfilmclub/types';
 import { api, type TmdbSearchResult } from '../api';
 
 interface Props {
+  existing: { film: { tmdbId: number }; status: FilmStatus }[];
   onAdd: (tmdbId: number, status: FilmStatus) => Promise<void>;
 }
 
 const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w92';
 
-export function FilmSearch({ onAdd }: Props) {
+export function FilmSearch({ existing, onAdd }: Props) {
+  const statusById = new Map(existing.map((e) => [e.film.tmdbId, e.status]));
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<TmdbSearchResult[]>([]);
   const [loading, setLoading] = useState(false);
   const [pendingId, setPendingId] = useState<number | null>(null);
+  const [error, setError] = useState('');
   const debounce = useRef<ReturnType<typeof setTimeout>>();
 
   useEffect(() => () => clearTimeout(debounce.current), []);
@@ -33,10 +36,13 @@ export function FilmSearch({ onAdd }: Props) {
 
   const add = async (id: number, status: FilmStatus) => {
     setPendingId(id);
+    setError('');
     try {
       await onAdd(id, status);
       setQuery('');
       setResults([]);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : 'Could not add film');
     } finally {
       setPendingId(null);
     }
@@ -51,6 +57,7 @@ export function FilmSearch({ onAdd }: Props) {
         placeholder="Search TMDb…"
         style={{ width: '100%', padding: '0.5rem', border: '1px solid #ccc', fontSize: '0.9rem', fontFamily: 'inherit', boxSizing: 'border-box', marginBottom: '0.5rem' }}
       />
+      {error && <p style={{ fontSize: '0.8rem', color: '#ff8a80' }}>{error}</p>}
       {loading && <p style={{ fontSize: '0.8rem', color: '#666' }}>Searching…</p>}
       {results.length > 0 && (
         <ul style={{ listStyle: 'none', padding: 0, margin: 0, border: '1px solid #eee' }}>
@@ -64,6 +71,11 @@ export function FilmSearch({ onAdd }: Props) {
               <span style={{ flex: 1, fontSize: '1.5rem' }}>
                 {r.title} <span style={{ color: 'rgba(255,247,214,0.4)' }}>({r.release_date?.slice(0, 4)})</span>
               </span>
+              {statusById.has(r.id) ? (
+                <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'rgba(255,247,214,0.6)', whiteSpace: 'nowrap' }}>
+                  Already {statusById.get(r.id)}
+                </span>
+              ) : (
               <div style={{ display: 'flex', gap: '0.25rem' }}>
                 {(['nominated', 'shortlisted', 'selected'] as FilmStatus[]).map((s) => (
                   <button
@@ -76,6 +88,7 @@ export function FilmSearch({ onAdd }: Props) {
                   </button>
                 ))}
               </div>
+              )}
             </li>
           ))}
         </ul>
