@@ -258,15 +258,19 @@ export function SearchPage({ themes }: Props) {
                           )}
                         </div>
                         <div className="min-w-0 flex-1 py-1">
-                          <p className="font-heading font-semibold text-xl group-hover:text-bfc-brand-fg/80 transition-colors mb-8">
+                          <p className="font-heading font-semibold text-xl group-hover:text-bfc-brand-fg/80 transition-colors mb-3">
                             {r.filmTitle}
                           </p>
-                          <div className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1.5 font-body md:text-xl">
-                            <span className="text-bfc-brand-fg/40">Theme</span>
+                          <div className="grid grid-cols-1 md:grid-cols-[auto_1fr] md:gap-x-4 md:gap-y-1.5 font-body md:text-xl">
+                            <span className="text-bfc-brand-fg/40 mt-3 first:mt-0 md:mt-0">
+                              Theme
+                            </span>
                             <span className="text-bfc-brand-fg/60">{r.themeTitle}</span>
-                            <span className="text-bfc-brand-fg/40">Director</span>
+                            <span className="text-bfc-brand-fg/40 mt-3 md:mt-0">Director</span>
                             <span className="text-bfc-brand-fg/60">{r.director}</span>
-                            <span className="text-bfc-brand-fg/40">{formatMonth(r.month)}</span>
+                            <span className="text-bfc-brand-fg/40 mt-3 md:mt-0">
+                              {formatMonth(r.month)}
+                            </span>
                             <span className="text-bfc-brand-fg/60 capitalize">{r.status}</span>
                           </div>
                         </div>
