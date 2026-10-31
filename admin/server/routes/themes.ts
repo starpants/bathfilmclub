@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { storage } from '../storage.js';
 import { getFilmDetails } from '../tmdb.js';
-import type { Theme, FilmStatus, ThemeFilm } from '@bathfilmclub/types';
+import type { Theme, FilmStatus, ThemeFilm, ClubRating } from '@bathfilmclub/types';
 
 export const themesRouter = Router();
 
@@ -148,6 +148,37 @@ themesRouter.patch('/:slug/films/:tmdbId/status', async (req, res) => {
   const theme = await storage.readAnyTheme(slug);
   if (!theme) return res.status(404).json({ error: 'Theme not found' });
   const updated = { ...theme, films: theme.films.map((f) => f.film.tmdbId === tmdbId ? { ...f, status } : f) };
+  await storage.writeAnyTheme(updated);
+  res.json(updated);
+});
+
+// PATCH /themes/:slug/films/:tmdbId/rating — set or clear (null) a selected film's club rating
+themesRouter.patch('/:slug/films/:tmdbId/rating', async (req, res) => {
+  const { slug } = req.params;
+  const tmdbId = parseInt(req.params.tmdbId);
+  if (!/^[a-z0-9-]+$/.test(slug)) {
+    return res.status(400).json({ error: 'Invalid slug' });
+  }
+  const { clubRating } = req.body as { clubRating: unknown };
+  const isRating = Number.isInteger(clubRating) && (clubRating as number) >= 1 && (clubRating as number) <= 5;
+  if (clubRating !== null && !isRating) {
+    return res.status(400).json({ error: 'clubRating must be a whole number from 1 to 5, or null' });
+  }
+  const theme = await storage.readAnyTheme(slug);
+  if (!theme) return res.status(404).json({ error: 'Theme not found' });
+  const entry = theme.films.find((f) => f.film.tmdbId === tmdbId);
+  if (!entry) return res.status(404).json({ error: 'Film not in theme' });
+  if (clubRating !== null && entry.status !== 'selected') {
+    return res.status(409).json({ error: 'Only selected films can be rated' });
+  }
+  const updated = {
+    ...theme,
+    films: theme.films.map((f) => {
+      if (f !== entry) return f;
+      const { clubRating: _old, ...rest } = f;
+      return clubRating === null ? rest : { ...rest, clubRating: clubRating as ClubRating };
+    }),
+  };
   await storage.writeAnyTheme(updated);
   res.json(updated);
 });

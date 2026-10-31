@@ -19,9 +19,12 @@ export interface Film {
 
 export type FilmStatus = 'nominated' | 'shortlisted' | 'selected';
 
+export type ClubRating = 1 | 2 | 3 | 4 | 5;
+
 export interface ThemeFilm {
   film: Film;
   status: FilmStatus;
+  clubRating?: ClubRating; // the meeting's vote — only shown while status is 'selected'; not TMDb's Film.rating
 }
 
 export interface Meeting {
