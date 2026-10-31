@@ -1,1280 +1,764 @@
 {
-  "slug": "2026-11-films-renowned-for-their-practical-effects",
-  "title": "Films Renowned for Their Practical Effects",
-  "description": "A look at films celebrated for their practical effects and the craftsmanship behind them.",
-  "month": "2026-11",
+  "slug": "2026-12-low-budget-films",
+  "title": "Low Budget Films",
+  "description": "Films where £1 million goes a long way, but you can tell they were made on a tight budget.",
+  "month": "2026-12",
   "meeting": {
-    "date": "2026-10-28",
+    "date": "2026-11-25",
     "time": "19:15",
     "venue": "See Discord for venue details"
   },
   "films": [
     {
       "film": {
-        "tmdbId": 493922,
-        "title": "Hereditary",
-        "year": 2018,
-        "runtime": 128,
-        "genres": [
-          "Horror",
-          "Mystery",
-          "Thriller"
-        ],
-        "synopsis": "Following the death of the Leigh family matriarch, Annie and her children uncover disturbing secrets about their heritage. Their daily lives are not only impacted, but they also become entangled in a chilling fate from which they cannot escape, driving them to the brink of madness.",
-        "director": "Ari Aster",
-        "writers": [
-          "Ari Aster"
-        ],
-        "producers": [
-          "Kevin Scott Frakes",
-          "Lars Knudsen",
-          "Buddy Patrick"
-        ],
-        "cast": [
-          "Toni Collette",
-          "Alex Wolff",
-          "Gabriel Byrne",
-          "Milly Shapiro",
-          "Ann Dowd"
-        ],
-        "composers": [
-          "Colin Stetson"
-        ],
-        "posterPath": "/4GFPuL14eXi66V96xBWY73Y9PfR.jpg",
-        "backdropPath": "/gJbTXKNTL6O7r7PzF6ZRkJGBlPp.jpg",
-        "rating": 7.3,
-        "trailerKey": "MJNR58zaStE"
-      },
-      "status": "selected"
-    },
-    {
-      "film": {
-        "tmdbId": 62,
-        "title": "2001: A Space Odyssey",
-        "year": 1968,
-        "runtime": 149,
+        "tmdbId": 14337,
+        "title": "Primer",
+        "year": 2004,
+        "runtime": 77,
         "genres": [
           "Science Fiction",
-          "Mystery",
-          "Adventure"
-        ],
-        "synopsis": "Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world's most advanced super computer.",
-        "director": "Stanley Kubrick",
-        "writers": [
-          "Stanley Kubrick",
-          "Arthur C. Clarke"
-        ],
-        "producers": [
-          "Stanley Kubrick",
-          "Victor Lyndon"
-        ],
-        "cast": [
-          "Keir Dullea",
-          "Gary Lockwood",
-          "William Sylvester",
-          "Douglas Rain",
-          "Daniel Richter"
-        ],
-        "posterPath": "/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
-        "backdropPath": "/w5IDXtifKntw0ajv2co7jFlTQDM.jpg",
-        "rating": 8,
-        "trailerKey": "kR2r-A9H3Kg"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 11639,
-        "title": "The Dark Crystal",
-        "year": 1982,
-        "runtime": 93,
-        "genres": [
-          "Adventure",
-          "Family",
-          "Fantasy"
-        ],
-        "synopsis": "On another planet in the distant past, a Gelfling embarks on a quest to find the missing shard of a magical crystal and restore order to his world, before the grotesque race of Skeksis find and use the crystal for evil.",
-        "director": "Frank Oz",
-        "writers": [
-          "David Odell"
-        ],
-        "producers": [
-          "Jim Henson",
-          "Gary Kurtz"
-        ],
-        "cast": [
-          "Jim Henson",
-          "Kathryn Mullen",
-          "Frank Oz",
-          "Dave Goelz",
-          "Steve Whitmire"
-        ],
-        "composers": [
-          "Trevor Jones"
-        ],
-        "posterPath": "/fZPxRaa6gvCyGCh9Xk5kyPqz7fp.jpg",
-        "backdropPath": "/dlIkuHYT977POygUBGZyOszFUB.jpg",
-        "rating": 7.2,
-        "trailerKey": "P5Dj3jhy7xM"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 9426,
-        "title": "The Fly",
-        "year": 1986,
-        "runtime": 96,
-        "genres": [
-          "Horror",
-          "Science Fiction"
-        ],
-        "synopsis": "When brilliant, eccentric scientist Seth Brundle makes a huge technological breakthrough in teleportation, he decides to test it on himself. Unbeknownst to him, a common housefly manages to get inside the device and the two become one.",
-        "director": "David Cronenberg",
-        "writers": [
-          "David Cronenberg",
-          "Charles Edward Pogue"
-        ],
-        "producers": [
-          "Stuart Cornfeld"
-        ],
-        "cast": [
-          "Jeff Goldblum",
-          "Geena Davis",
-          "John Getz",
-          "Joy Boushel",
-          "Leslie Carlson"
-        ],
-        "composers": [
-          "Howard Shore"
-        ],
-        "posterPath": "/8gZWMhJHRvaXdXsNhERtqNHYpH3.jpg",
-        "backdropPath": "/g1FzhbtWYKk9WMJYi1X26kf2Q4Q.jpg",
-        "rating": 7.4,
-        "trailerKey": "YPhM5T1DViw"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 11880,
-        "title": "Dog Soldiers",
-        "year": 2002,
-        "runtime": 105,
-        "genres": [
-          "Horror",
-          "Action",
+          "Drama",
           "Thriller"
         ],
-        "synopsis": "A band of soldiers is dispatched to war games deep in the woods. When they stumble across a rival team slaughtered in camp, they realize they're not alone.",
-        "director": "Neil Marshall",
+        "synopsis": "A group of fledgling inventors discover a complex method to manipulate reality. At first, they successfully game the stock market with it, but the consequences of the invention start to catch up with them.",
+        "director": "Shane Carruth",
         "writers": [
-          "Neil Marshall"
+          "Shane Carruth"
         ],
         "producers": [
-          "David E. Allen",
-          "Tom Reeve",
-          "Christopher Figg"
+          "Shane Carruth"
         ],
         "cast": [
-          "Sean Pertwee",
-          "Kevin McKidd",
-          "Emma Cleasby",
-          "Liam Cunningham",
-          "Thomas Lockyer"
+          "Shane Carruth",
+          "David Sullivan",
+          "Casey Gooden",
+          "Anand Upadhyaya",
+          "Carrie Crawford"
         ],
-        "composers": [
-          "Mark Thomas"
-        ],
-        "posterPath": "/ydqx6Q30hloZPDBNSBOylD8D520.jpg",
-        "backdropPath": "/bZVVaZK4ig2CMwbMcBfkqwK5mQU.jpg",
+        "posterPath": "/xEoq2WmDzpzxhkHEsmOYOg6BPg6.jpg",
+        "backdropPath": "/blSQbKAreIqcu2AWGDNjR8k3fAy.jpg",
         "rating": 6.7,
-        "trailerKey": "PQ6nNs0Wl7s"
+        "trailerKey": "-vD-yj9o664"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 435615,
-        "title": "Possessor",
-        "year": 2020,
-        "runtime": 103,
-        "genres": [
-          "Horror",
-          "Thriller",
-          "Science Fiction"
-        ],
-        "synopsis": "Tasya Vos, an elite corporate assassin, uses brain-implant technology to take control of other people’s bodies to terminate high profile targets. As she sinks deeper into her latest assignment, Vos becomes trapped inside a mind that threatens to obliterate her.",
-        "director": "Brandon Cronenberg",
-        "writers": [
-          "Brandon Cronenberg"
-        ],
-        "producers": [
-          "Niv Fichman",
-          "Andrew Starke",
-          "Fraser Ash"
-        ],
-        "cast": [
-          "Andrea Riseborough",
-          "Christopher Abbott",
-          "Jennifer Jason Leigh",
-          "Sean Bean",
-          "Tuppence Middleton"
-        ],
-        "composers": [
-          "Jim Williams"
-        ],
-        "posterPath": "/xC9GZeJZ3NagdkGg9nLQx0aPG6J.jpg",
-        "backdropPath": "/owTL741kAuvJDKYnXKJCgTRGRud.jpg",
-        "rating": 6.4,
-        "trailerKey": "ahn56QWkD0Y"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 9392,
-        "title": "The Descent",
-        "year": 2005,
-        "runtime": 100,
-        "genres": [
-          "Adventure",
-          "Horror"
-        ],
-        "synopsis": "After a personal tragedy, Sarah joins her friends on a caving expedition in the Appalachian Mountains. But when a rockfall traps them deep underground, their adventure turns into a nightmare. As they search for a way out, the group discovers they are not alone—lurking in the darkness are savage, cave-dwelling creatures. With rising tension and dwindling trust, the women must fight to survive against both the predators and each other.",
-        "director": "Neil Marshall",
-        "writers": [
-          "Neil Marshall"
-        ],
-        "producers": [
-          "Christian Colson"
-        ],
-        "cast": [
-          "Shauna Macdonald",
-          "Natalie Mendoza",
-          "Alex Reid",
-          "Saskia Mulder",
-          "MyAnna Buring"
-        ],
-        "composers": [
-          "David Julyan"
-        ],
-        "posterPath": "/mxFPI4KYBk5ri9cPteIS8jiDFgj.jpg",
-        "backdropPath": "/9T5D5RGuCsC6CeqYZJTv4rT4RPy.jpg",
-        "rating": 7,
-        "trailerKey": "vJ0Kg8UyHK0"
-      },
-      "status": "shortlisted"
-    },
-    {
-      "film": {
-        "tmdbId": 472269,
-        "title": "Possum",
-        "year": 2018,
-        "runtime": 85,
-        "genres": [
-          "Drama",
-          "Horror",
-          "Thriller"
-        ],
-        "synopsis": "A disgraced children's puppeteer returns to his childhood home and is forced to confront his wicked stepfather and the secrets that have tortured him his entire life.",
-        "director": "Matthew Holness",
-        "writers": [
-          "Matthew Holness"
-        ],
-        "producers": [
-          "Wayne Marc Godfrey",
-          "Robert Jones",
-          "Mark Lane"
-        ],
-        "cast": [
-          "Sean Harris",
-          "Alun Armstrong",
-          "Andy Blithe",
-          "Ryan Enever",
-          "Charlie Eales"
-        ],
-        "composers": [
-          "The Radiophonic Workshop"
-        ],
-        "posterPath": "/5QOFKSpE7KacBriU95fxG6hmmvr.jpg",
-        "backdropPath": "/yB70SrspWic4RM8yi1w27FDSvIN.jpg",
-        "rating": 6.2,
-        "trailerKey": "O5jaqmQyAJw"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 41428,
-        "title": "Tetsuo: The Iron Man",
-        "year": 1989,
-        "runtime": 67,
-        "genres": [
-          "Horror",
-          "Science Fiction"
-        ],
-        "synopsis": "A \"metal fetishist\", driven mad by the maggots wriggling in the wound he's made to embed metal into his flesh, runs out into the night and is accidentally run down by a Japanese businessman and his girlfriend. The pair dispose of the corpse in hopes of quietly moving on with their lives. However, the businessman soon finds that he is now plagued by a vicious curse that transforms his flesh into iron.",
-        "director": "Shinya Tsukamoto",
-        "writers": [
-          "Shinya Tsukamoto"
-        ],
-        "producers": [
-          "Shinya Tsukamoto"
-        ],
-        "cast": [
-          "Tomorowo Taguchi",
-          "Shinya Tsukamoto",
-          "Kei Fujiwara",
-          "Nobu Kanaoka",
-          "Naomasa Musaka"
-        ],
-        "composers": [
-          "Chu Ishikawa"
-        ],
-        "posterPath": "/lARc59hUAKW3ziWddftUnZ99R8c.jpg",
-        "backdropPath": "/xt75NSIlfzwPwuBsuarB3i1mBxj.jpg",
-        "rating": 7,
-        "trailerKey": "xZZ-79n0D5g"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 1381,
-        "title": "The Fountain",
-        "year": 2006,
-        "runtime": 96,
-        "genres": [
-          "Drama",
-          "Adventure",
-          "Science Fiction",
-          "Romance"
-        ],
-        "synopsis": "Spanning over one thousand years, and three parallel stories, The Fountain is a story of love, death, spirituality, and the fragility of our existence in this world.",
-        "director": "Darren Aronofsky",
-        "writers": [
-          "Darren Aronofsky"
-        ],
-        "producers": [
-          "Arnon Milchan",
-          "Iain Smith",
-          "Eric Watson"
-        ],
-        "cast": [
-          "Hugh Jackman",
-          "Rachel Weisz",
-          "Ellen Burstyn",
-          "Mark Margolis",
-          "Stephen McHattie"
-        ],
-        "composers": [
-          "Clint Mansell"
-        ],
-        "posterPath": "/4XTf8GuCVLWolubANaKkpk62YPq.jpg",
-        "backdropPath": "/9RNJ0pKYA8EQiMa0lFZ68gzeElH.jpg",
-        "rating": 6.9,
-        "trailerKey": "pT1B1ykme2M"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 578,
-        "title": "Jaws",
-        "year": 1975,
-        "runtime": 124,
-        "genres": [
-          "Horror",
-          "Thriller",
-          "Adventure"
-        ],
-        "synopsis": "When the seaside community of Amity finds itself under attack by a dangerous great white shark, the town's chief of police, a young marine biologist, and a grizzled shark hunter embark on a desperate quest to kill the beast before it strikes again.",
-        "director": "Steven Spielberg",
-        "writers": [
-          "Carl Gottlieb",
-          "Peter Benchley"
-        ],
-        "producers": [
-          "Richard D. Zanuck",
-          "David Brown"
-        ],
-        "cast": [
-          "Roy Scheider",
-          "Robert Shaw",
-          "Richard Dreyfuss",
-          "Lorraine Gary",
-          "Murray Hamilton"
-        ],
-        "composers": [
-          "John Williams"
-        ],
-        "posterPath": "/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",
-        "backdropPath": "/i1yf91svRHX45l9BXL8rVFzLoPH.jpg",
-        "rating": 7.7,
-        "trailerKey": "N9hzLQUGr34"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 814,
-        "title": "An American Werewolf in London",
-        "year": 1981,
-        "runtime": 97,
-        "genres": [
-          "Comedy",
-          "Horror",
-          "Fantasy"
-        ],
-        "synopsis": "American tourists David and Jack are savagely attacked by an unidentified animal while hiking on the Yorkshire Moors. After retiring to the home of a beautiful nurse to recuperate, David soon begins experiencing disturbing changes to his body and mind.",
-        "director": "John Landis",
-        "writers": [
-          "John Landis"
-        ],
-        "producers": [
-          "George Folsey Jr."
-        ],
-        "cast": [
-          "David Naughton",
-          "Griffin Dunne",
-          "Jenny Agutter",
-          "John Woodvine",
-          "Don McKillop"
-        ],
-        "composers": [
-          "Elmer Bernstein"
-        ],
-        "posterPath": "/hVEqUASJmCQaolkKFEySCHZ8uKG.jpg",
-        "backdropPath": "/4js6VLf6qHWUbW42BpXiQKPBP7t.jpg",
-        "rating": 7.4,
-        "trailerKey": "EM9quAtFUH4"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 9362,
-        "title": "Tremors",
-        "year": 1990,
-        "runtime": 96,
-        "genres": [
-          "Comedy",
-          "Horror",
-          "Science Fiction"
-        ],
-        "synopsis": "Val McKee and Earl Bassett are in a fight for their lives when they discover that their desolate town has been infested with gigantic, man-eating creatures that live below the ground.",
-        "director": "Ron Underwood",
-        "writers": [
-          "S.S. Wilson",
-          "Brent Maddock"
-        ],
-        "producers": [
-          "Brent Maddock",
-          "S.S. Wilson"
-        ],
-        "cast": [
-          "Kevin Bacon",
-          "Fred Ward",
-          "Finn Carter",
-          "Michael Gross",
-          "Reba McEntire"
-        ],
-        "composers": [
-          "Ernest Troost"
-        ],
-        "posterPath": "/cA4ggkZ3r1d5r9hOAUWC8x5ul2i.jpg",
-        "backdropPath": "/3L3DUwfRLW18OUiLSdmovfICyY3.jpg",
-        "rating": 7,
-        "trailerKey": "7RrT44WRr-4"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 14900,
-        "title": "The Great Muppet Caper",
-        "year": 1981,
-        "runtime": 97,
-        "genres": [
-          "Comedy",
-          "Crime",
-          "Family",
-          "Mystery",
-          "Romance"
-        ],
-        "synopsis": "Kermit and Fozzie are newspaper reporters sent to London to interview Lady Holiday, a wealthy fashion designer whose priceless diamond necklace is stolen. Kermit meets and falls in love with her secretary, Miss Piggy. The jewel thieves strike again, and this time frame Miss Piggy. It's up to Kermit and the rest of the Muppets to bring the real culprits to justice.",
-        "director": "Jim Henson",
-        "writers": [
-          "Jack Rose",
-          "Jay Tarses",
-          "Jerry Juhl",
-          "Tom Patchett"
-        ],
-        "producers": [
-          "Frank Oz",
-          "David Lazer"
-        ],
-        "cast": [
-          "Jim Henson",
-          "Frank Oz",
-          "Dave Goelz",
-          "Jerry Nelson",
-          "Richard Hunt"
-        ],
-        "composers": [
-          "Joe Raposo"
-        ],
-        "posterPath": "/lnJc4B4njeyNHWqG00ozuUIhtu5.jpg",
-        "backdropPath": "/p5qPj9klS3IKXBbnWurZYlmSpHx.jpg",
-        "rating": 6.9,
-        "trailerKey": "Niz03jeeqoQ"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 840889,
-        "title": "Stopmotion",
-        "year": 2024,
-        "runtime": 94,
-        "genres": [
-          "Horror",
-          "Thriller"
-        ],
-        "synopsis": "Ella Blake, a stop-motion animator struggling to control her demons after the loss of her overbearing mother, embarks upon the creation of a film that becomes the battleground for her sanity. As Ella’s mind starts to fracture, the characters in her project take on a life of their own.",
-        "director": "Robert Morgan",
-        "writers": [
-          "Robert Morgan",
-          "Robin King"
-        ],
-        "producers": [
-          "Alain de la Mata",
-          "Christopher Granier-Deferre"
-        ],
-        "cast": [
-          "Aisling Franciosi",
-          "Stella Gonet",
-          "Tom York",
-          "Therica Wilson-Read",
-          "Bridgitta Roy"
-        ],
-        "composers": [
-          "Lola de la Mata"
-        ],
-        "posterPath": "/kWzWZEctPcZ0dATbtcYy6lIJgGj.jpg",
-        "backdropPath": "/shS6buEDnEDoHTdLbGzCoDIZ9ur.jpg",
-        "rating": 6.1,
-        "trailerKey": "Debr5KI1QIU"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 11969,
-        "title": "Tombstone",
-        "year": 1993,
-        "runtime": 130,
-        "genres": [
-          "Western",
-          "Action"
-        ],
-        "synopsis": "Legendary marshal Wyatt Earp, now a weary gunfighter, joins his brothers Morgan and Virgil to pursue their collective fortune in the thriving mining town of Tombstone. But Earp is forced to don a badge again and get help from his notorious pal Doc Holliday when a gang of renegade brigands and rustlers begins terrorizing the town.",
-        "director": "George P. Cosmatos",
-        "writers": [
-          "Kevin Jarre"
-        ],
-        "producers": [
-          "Sean Daniel",
-          "James Jacks",
-          "Bob Misiorowski"
-        ],
-        "cast": [
-          "Kurt Russell",
-          "Val Kilmer",
-          "Michael Biehn",
-          "Powers Boothe",
-          "Robert John Burke"
-        ],
-        "composers": [
-          "Bruce Broughton"
-        ],
-        "posterPath": "/wGFCvylul8iEQhJOKfwZGGvXMzA.jpg",
-        "backdropPath": "/djPXXv9pPyTLGl9kMPCTyiBmIA5.jpg",
-        "rating": 7.6,
-        "trailerKey": "XTWYKf5hXIg"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 2614,
-        "title": "Innerspace",
-        "year": 1987,
+        "tmdbId": 5842,
+        "title": "Versus",
+        "year": 2000,
         "runtime": 120,
         "genres": [
-          "Action",
-          "Comedy",
-          "Science Fiction"
-        ],
-        "synopsis": "Test pilot Tuck Pendleton volunteers to test a special vessel for a miniaturization experiment. Accidentally injected into a neurotic hypochondriac, Jack Putter, Tuck must convince Jack to find his ex-girlfriend, Lydia Maxwell, to help him extract Tuck and his ship and re-enlarge them before his oxygen runs out.",
-        "director": "Joe Dante",
-        "writers": [
-          "Chip Proser",
-          "Jeffrey Boam"
-        ],
-        "producers": [
-          "Michael Finnell"
-        ],
-        "cast": [
-          "Dennis Quaid",
-          "Martin Short",
-          "Meg Ryan",
-          "Kevin McCarthy",
-          "Fiona Lewis"
-        ],
-        "composers": [
-          "Jerry Goldsmith"
-        ],
-        "posterPath": "/nuK4HEeIByWg1BSJrXAAQ4pIAJW.jpg",
-        "backdropPath": "/pM4tWr37Y2cOB0mVGmvbshKpvmP.jpg",
-        "rating": 6.8,
-        "trailerKey": "_2qGnuDw9WE"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 11976,
-        "title": "Legend",
-        "year": 1985,
-        "runtime": 94,
-        "genres": [
-          "Adventure",
-          "Fantasy"
-        ],
-        "synopsis": "Set in a timeless mythical forest inhabited by fairies, goblins, unicorns and mortals, this fantastic story follows a mystical forest dweller, chosen by fate, to undertake a heroic quest. He must save the beautiful Princess  Lili and defeat the demonic Lord of Darkness, or the world will be plunged into a never-ending ice age.",
-        "director": "Ridley Scott",
-        "writers": [
-          "William Hjortsberg"
-        ],
-        "producers": [
-          "Arnon Milchan"
-        ],
-        "cast": [
-          "Tom Cruise",
-          "Mia Sara",
-          "Tim Curry",
-          "David Bennent",
-          "Alice Playten"
-        ],
-        "composers": [
-          "Jerry Goldsmith"
-        ],
-        "posterPath": "/6n3PQSYpZRK5YPk2w8JEwED7AZk.jpg",
-        "backdropPath": "/3g8rLMw0SbA0h2GHiOCBoqFTXVq.jpg",
-        "rating": 6.3,
-        "trailerKey": "ybnoJErfDas"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 5548,
-        "title": "RoboCop",
-        "year": 1987,
-        "runtime": 102,
-        "genres": [
+          "Horror",
+          "Fantasy",
           "Action",
           "Thriller",
-          "Science Fiction"
+          "Adventure"
         ],
-        "synopsis": "In a violent, near-apocalyptic Detroit, evil corporation Omni Consumer Products wins a contract from the city government to privatize the police force. To test their crime-eradicating cyborgs, the company leads street cop Alex Murphy into an armed confrontation with crime lord Boddicker so they can use his body to support their untested RoboCop prototype. But when RoboCop learns of the company's nefarious plans, he turns on his masters.",
-        "director": "Paul Verhoeven",
+        "synopsis": "A group of ruthless gangsters, an unknown woman and an escaped convict have met, in The Forest of Resurrection, the 444th portal to the other side. Their troubles start when those once killed and buried in the forest come back from the dead.",
+        "director": "Ryuhei Kitamura",
         "writers": [
-          "Michael Miner",
-          "Edward Neumeier"
+          "Ryuhei Kitamura",
+          "Yudai Yamaguchi"
         ],
         "producers": [
-          "Arne Schmidt"
+          "Keishiro Shin"
         ],
         "cast": [
-          "Peter Weller",
-          "Nancy Allen",
-          "Dan O'Herlihy",
-          "Ronny Cox",
-          "Kurtwood Smith"
+          "Tak Sakaguchi",
+          "Hideo Sakaki",
+          "Kenji Matsuda",
+          "Minoru Matsumoto",
+          "Yuichiro Arai"
         ],
         "composers": [
-          "Basil Poledouris"
+          "Nobuhiko Morino"
         ],
-        "posterPath": "/hHtOgGb3NihlyRATHlKPaFApbrd.jpg",
-        "backdropPath": "/xcaX6BZ1JUPSVMH2gBkWIckLLaA.jpg",
-        "rating": 7.4,
-        "trailerKey": "NC7Dzlh2EWk"
+        "posterPath": "/dEk6Fpm4lkEBQBVpzTOLau7qgR9.jpg",
+        "backdropPath": "/rZjRoASxOOyafFruGRuDBzL7dZ8.jpg",
+        "rating": 6.2,
+        "trailerKey": "wg7ljhZuJJc"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 68,
-        "title": "Brazil",
-        "year": 1985,
-        "runtime": 143,
-        "genres": [
-          "Comedy",
-          "Science Fiction"
-        ],
-        "synopsis": "Low-level bureaucrat Sam Lowry escapes the monotony of his day-to-day life through a recurring daydream of himself as a virtuous hero saving a beautiful damsel. Investigating a case that led to the wrongful arrest and eventual death of an innocent man instead of wanted terrorist Harry Tuttle, he meets the woman from his daydream, and in trying to help her gets caught in a web of mistaken identities, mindless bureaucracy and lies.",
-        "director": "Terry Gilliam",
-        "writers": [
-          "Tom Stoppard",
-          "Charles McKeown",
-          "Terry Gilliam"
-        ],
-        "producers": [
-          "Arnon Milchan",
-          "Patrick Cassavetti"
-        ],
-        "cast": [
-          "Jonathan Pryce",
-          "Robert De Niro",
-          "Katherine Helmond",
-          "Ian Holm",
-          "Bob Hoskins"
-        ],
-        "composers": [
-          "Michael Kamen"
-        ],
-        "posterPath": "/2w09J0KUnVtJvqPYu8N63XjAyCR.jpg",
-        "backdropPath": "/9IYyCLf5NNAQFK9pNtqzEU9HWzM.jpg",
-        "rating": 7.7,
-        "trailerKey": "A_7ATU9dslE"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 1091,
-        "title": "The Thing",
-        "year": 1982,
-        "runtime": 109,
-        "genres": [
-          "Horror",
-          "Mystery",
-          "Science Fiction"
-        ],
-        "synopsis": "A research team in Antarctica is hunted by a shape-shifting alien that assumes the appearance of its victims.",
-        "director": "John Carpenter",
-        "writers": [
-          "Bill Lancaster"
-        ],
-        "producers": [
-          "David Foster",
-          "Lawrence Turman"
-        ],
-        "cast": [
-          "Kurt Russell",
-          "Wilford Brimley",
-          "T.K. Carter",
-          "David Clennon",
-          "Keith David"
-        ],
-        "composers": [
-          "Ennio Morricone",
-          "John Carpenter",
-          "Alan Howarth"
-        ],
-        "posterPath": "/tzGY49kseSE9QAKk47uuDGwnSCu.jpg",
-        "backdropPath": "/r9leYNa8nTRCceZrZhP1DXkgKVb.jpg",
-        "rating": 8.1,
-        "trailerKey": "GigeANz21rk"
-      },
-      "status": "selected"
-    },
-    {
-      "film": {
-        "tmdbId": 763,
-        "title": "Braindead",
-        "year": 1992,
-        "runtime": 103,
-        "genres": [
-          "Horror",
-          "Comedy"
-        ],
-        "synopsis": "When a Sumatran rat-monkey bites Lionel Cosgrove's mother, she's transformed into a zombie and begins killing (and transforming) the entire town while Lionel races to keep things under control.",
-        "director": "Peter Jackson",
-        "writers": [
-          "Fran Walsh",
-          "Stephen Sinclair",
-          "Peter Jackson"
-        ],
-        "producers": [
-          "Jim Booth"
-        ],
-        "cast": [
-          "Timothy Balme",
-          "Diana Peñalver",
-          "Elizabeth Moody",
-          "Ian Watkin",
-          "Brenda Kendall"
-        ],
-        "composers": [
-          "Peter Dasent"
-        ],
-        "posterPath": "/pa39D8TQs6aNw3hiUs4jLjHVUB0.jpg",
-        "backdropPath": "/z07GWpT24sV7PDaaRKm71W63yAC.jpg",
-        "rating": 7.4,
-        "trailerKey": "Ytg1JFrI2AA"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 76341,
-        "title": "Mad Max: Fury Road",
-        "year": 2015,
-        "runtime": 121,
+        "tmdbId": 9367,
+        "title": "El Mariachi",
+        "year": 1993,
+        "runtime": 81,
         "genres": [
           "Action",
-          "Adventure",
-          "Science Fiction"
+          "Crime",
+          "Thriller"
         ],
-        "synopsis": "An apocalyptic story set in the furthest reaches of our planet, in a stark desert landscape where humanity is broken, and most everyone is crazed fighting for the necessities of life. Within this world exist two rebels on the run who just might be able to restore order.",
-        "director": "George Miller",
+        "synopsis": "El Mariachi just wants to play his guitar and carry on the family tradition. Unfortunately, the town he tries to find work in has another visitor, a killer who carries his guns in a guitar case. The drug lord and his henchmen mistake el Mariachi for the killer, Azul, and chase him around town trying to kill him and get his guitar case.",
+        "director": "Robert Rodriguez",
         "writers": [
-          "Nico Lathouris",
-          "George Miller",
-          "Brendan McCarthy"
+          "Robert Rodriguez"
         ],
         "producers": [
-          "Doug Mitchell",
-          "George Miller",
-          "P.J. Voeten"
+          "Carlos Gallardo",
+          "Robert Rodriguez"
         ],
         "cast": [
-          "Tom Hardy",
-          "Charlize Theron",
-          "Nicholas Hoult",
-          "Hugh Keays-Byrne",
-          "Josh Helman"
+          "Carlos Gallardo",
+          "Consuelo Gómez",
+          "Jaime de Hoyos",
+          "Peter Marquardt",
+          "Reinol Martinez"
         ],
-        "composers": [
-          "Tom Holkenborg"
-        ],
-        "posterPath": "/ulcAi4dKpAjHwYGS08vNyx9H6I9.jpg",
-        "backdropPath": "/gqrnQA6Xppdl8vIb2eJc58VC1tW.jpg",
-        "rating": 7.6,
-        "trailerKey": "MonFNCgK4WE"
-      },
-      "status": "shortlisted"
-    },
-    {
-      "film": {
-        "tmdbId": 927,
-        "title": "Gremlins",
-        "year": 1984,
-        "runtime": 106,
-        "genres": [
-          "Fantasy",
-          "Horror",
-          "Comedy"
-        ],
-        "synopsis": "After receiving an exotic small animal as a Christmas gift, a young man inadvertently breaks three important rules concerning his new pet, which unleashes a horde of malevolently mischievous creatures on a small town.",
-        "director": "Joe Dante",
-        "writers": [
-          "Chris Columbus"
-        ],
-        "producers": [
-          "Michael Finnell"
-        ],
-        "cast": [
-          "Zach Galligan",
-          "Phoebe Cates",
-          "Hoyt Axton",
-          "Frances Lee McCain",
-          "Corey Feldman"
-        ],
-        "composers": [
-          "Noel Regney",
-          "Jerry Goldsmith"
-        ],
-        "posterPath": "/6m0F7fsXjQvUbCZrPWcJNrjvIui.jpg",
-        "backdropPath": "/5UX6M0aEphiW6Xmy5rpYX75glbo.jpg",
-        "rating": 7.1,
-        "trailerKey": "PXXZx6skXrw"
+        "posterPath": "/zRh7K4SV1xQ419m8gzGITak51vc.jpg",
+        "backdropPath": "/zERY2aaCrLExpR6NQ1ceIs0WG8S.jpg",
+        "rating": 6.7,
+        "trailerKey": "QtNJsvpHye0"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 33061,
-        "title": "Troll",
-        "year": 1986,
-        "runtime": 83,
-        "genres": [
-          "Fantasy",
-          "Horror"
-        ],
-        "synopsis": "When a family moves into a San Francisco apartment, an opportunistic troll decides to make his move and take possession of little Wendy, thereby paving the way for new troll recruits, the first in his army that will take eventual control of the planet. We soon discover Torok is the ex-husband of Eunice St. Clair, a resident in the building who was married to Torok.",
-        "director": "John Carl Buechler",
-        "writers": [
-          "Ed Naha"
-        ],
-        "producers": [
-          "Albert Band"
-        ],
-        "cast": [
-          "Noah Hathaway",
-          "Jenny Beck",
-          "Phil Fondacaro",
-          "Michael Moriarty",
-          "Shelley Hack"
-        ],
-        "composers": [
-          "Richard Band"
-        ],
-        "posterPath": "/rqU0HnCty94ds8e4At4TzEH3CcY.jpg",
-        "backdropPath": "/oDKhYf1ROWqvvHUDOebNUQysuGx.jpg",
-        "rating": 5.1,
-        "trailerKey": "2LuiOcbDNKk"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 11864,
-        "title": "Enemy Mine",
-        "year": 1985,
+        "tmdbId": 1019939,
+        "title": "Hundreds of Beavers",
+        "year": 2024,
         "runtime": 108,
         "genres": [
-          "Drama",
-          "Science Fiction"
-        ],
-        "synopsis": "A soldier from Earth crashlands on an alien world after sustaining battle damage. Eventually he encounters another survivor, but from the enemy species he was fighting; they band together to survive on this hostile world. In the end the human finds himself caring for his enemy in a completely unexpected way.",
-        "director": "Wolfgang Petersen",
-        "writers": [
-          "Edward Khmara"
-        ],
-        "producers": [
-          "Stephen J. Friedman"
-        ],
-        "cast": [
-          "Dennis Quaid",
-          "Louis Gossett Jr.",
-          "Brion James",
-          "Richard Marcus",
-          "Carolyn McCormick"
-        ],
-        "composers": [
-          "Maurice Jarre"
-        ],
-        "posterPath": "/a3dr9L8VIjhEvivzQ2M12VQDere.jpg",
-        "backdropPath": "/dMjNyPk3aBwXYYfAuSAwSRz1ewa.jpg",
-        "rating": 7,
-        "trailerKey": "J8wLPApYGOw"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 19,
-        "title": "Metropolis",
-        "year": 1927,
-        "runtime": 148,
-        "genres": [
-          "Drama",
-          "Science Fiction"
-        ],
-        "synopsis": "In a futuristic city sharply divided between the rich and the poor, the son of the city's mastermind meets a prophet who predicts the coming of a savior to mediate their differences.",
-        "director": "Fritz Lang",
-        "writers": [
-          "Fritz Lang",
-          "Thea von Harbou"
-        ],
-        "producers": [
-          "Erich Pommer"
-        ],
-        "cast": [
-          "Gustav Fröhlich",
-          "Brigitte Helm",
-          "Alfred Abel",
-          "Rudolf Klein-Rogge",
-          "Theodor Loos"
-        ],
-        "composers": [
-          "Gottfried Huppertz",
-          "Otto Harzner"
-        ],
-        "posterPath": "/kr9wXRN23zLuWJIelahas1mtnYj.jpg",
-        "backdropPath": "/eeMoFKxjjiCi6iep2GEZtSAMYIr.jpg",
-        "rating": 8.1,
-        "trailerKey": "ZAvzaOxDt2c"
-      },
-      "status": "shortlisted"
-    },
-    {
-      "film": {
-        "tmdbId": 830,
-        "title": "Forbidden Planet",
-        "year": 1956,
-        "runtime": 98,
-        "genres": [
-          "Science Fiction",
+          "Comedy",
           "Adventure"
         ],
-        "synopsis": "Starship C57D travels to planet Altair 4 in search of the crew of spaceship \"Bellerophon,\" a scientific expedition that has been missing for twenty years. They find themselves unwelcome by the expedition's lone survivor and warned of destruction by an invisible force if they don't turn back immediately.",
-        "director": "Fred M. Wilcox",
+        "synopsis": "In the 19th century, a drunken applejack salesman must go from zero to hero and become North America's greatest fur trapper by defeating hundreds of beavers.",
+        "director": "Mike Cheslik",
         "writers": [
-          "Cyril Hume"
+          "Mike Cheslik",
+          "Ryland Brickson Cole Tews"
         ],
         "producers": [
-          "Nicholas Nayfack"
+          "Kurt Ravenwood",
+          "Matt Sabljak",
+          "Ryland Brickson Cole Tews"
         ],
         "cast": [
-          "Walter Pidgeon",
-          "Anne Francis",
-          "Leslie Nielsen",
-          "Warren Stevens",
-          "Jack Kelly"
+          "Ryland Brickson Cole Tews",
+          "Olivia Graves",
+          "Doug Mancheski",
+          "Wes Tank",
+          "Luis Rico"
         ],
         "composers": [
-          "Bebe Barron",
-          "Louis Barron"
+          "Chris Ryan"
         ],
-        "posterPath": "/aq0OQfRS7hDDI8vyD0ICbH9eguC.jpg",
-        "backdropPath": "/o2Vx6xE0IHizkYMFqXau2YKLfQp.jpg",
+        "posterPath": "/jBg64OA2QEWL0zaOFMoAGipeGjJ.jpg",
+        "backdropPath": "/krN2V7leYVBp6dOLzP11sM44eNb.jpg",
         "rating": 7.3,
-        "trailerKey": "_jnHydCeYcc"
+        "trailerKey": "Dm5XHpQZvek"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 992,
-        "title": "Sherlock Jr.",
-        "year": 1924,
-        "runtime": 45,
+        "tmdbId": 15322,
+        "title": "I.D.",
+        "year": 1995,
+        "runtime": 107,
         "genres": [
-          "Action",
-          "Comedy",
-          "Mystery"
+          "Crime",
+          "Drama"
         ],
-        "synopsis": "A film projectionist longs to be a detective, and puts his meager skills to work when he is framed by a rival for stealing his girlfriend's father's pocketwatch.",
-        "director": "Buster Keaton",
+        "synopsis": "Four policemen go undercover and infiltrate a gang of football hooligans hoping to route out their leaders. For one of the four, the line between 'job' and 'yob' becomes more unclear as time passes . . .",
+        "director": "Phil Davis",
         "writers": [
-          "Clyde Bruckman"
+          "Vincent O'Connell"
         ],
         "producers": [
-          "Buster Keaton",
-          "Joseph M. Schenck"
+          "Luciano Gloor",
+          "Christina Kallas",
+          "Sally Hibbin"
         ],
         "cast": [
-          "Buster Keaton",
-          "Kathryn McGuire",
-          "Joe Keaton",
-          "Erwin Connelly",
-          "Ward Crane"
+          "Reece Dinsdale",
+          "Richard Graham",
+          "Perry Fenwick",
+          "Philip Glenister",
+          "Warren Clarke"
         ],
-        "posterPath": "/1G9r3rqtbFAQuyWKOZm4Y5J5s7Q.jpg",
-        "backdropPath": "/tSipsYTp565LkopntX1lZNLPYHP.jpg",
-        "rating": 8,
-        "trailerKey": "JSEK1NUPrGA"
+        "posterPath": "/hcDZx4VTA9QzquHvWOdoOSeSB2t.jpg",
+        "backdropPath": "/3jlYVxDpPZg7s8Vn61OfKzlBS8r.jpg",
+        "rating": 6.6,
+        "trailerKey": "5Y26VMm4L7o"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 39410,
-        "title": "Mothra",
-        "year": 1961,
-        "runtime": 101,
-        "genres": [
-          "Adventure",
-          "Science Fiction",
-          "Fantasy"
-        ],
-        "synopsis": "Shipwreck survivors found on the presumably uninhabited Infant Island leads to a scientific expedition that discovers a surviving native population along with the Shobijin, tiny twin fairy priestesses of the island's mythical deity called Mothra. After the fairies are kidnapped by an exploitative businessman named Clark Nelson, Mothra sets out to rescue them.",
-        "director": "Ishirō Honda",
-        "writers": [
-          "Shinichi Sekizawa"
-        ],
-        "producers": [
-          "Tomoyuki Tanaka"
-        ],
-        "cast": [
-          "Frankie Sakai",
-          "Hiroshi Koizumi",
-          "Kyōko Kagawa",
-          "Jerry Itō",
-          "Ken Uehara"
-        ],
-        "composers": [
-          "Yūji Koseki",
-          "Koji Kajita"
-        ],
-        "posterPath": "/87hiAyyGFHPuuJ3iXHK8xZSMcRP.jpg",
-        "backdropPath": "/fyYBmshYHUwjdVG7CaKCSMDOa7s.jpg",
-        "rating": 7.2,
-        "trailerKey": "83j8YlkU7J8"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 11533,
-        "title": "Jason and the Argonauts",
-        "year": 1963,
-        "runtime": 104,
-        "genres": [
-          "Adventure",
-          "Family",
-          "Fantasy"
-        ],
-        "synopsis": "Jason, a fearless sailor and explorer, returns to his home land of Thessaly after a long voyage to claim his rightful throne. He learns, however, that he must first find the magical Golden Fleece. To do so, he must embark on an epic quest fraught with fantastic monsters and terrible perils.",
-        "director": "Don Chaffey",
-        "writers": [
-          "Jan Read",
-          "Beverley Cross"
-        ],
-        "producers": [
-          "Charles H. Schneer"
-        ],
-        "cast": [
-          "Todd Armstrong",
-          "Nancy Kovack",
-          "Gary Raymond",
-          "Laurence Naismith",
-          "Niall MacGinnis"
-        ],
-        "composers": [
-          "Bernard Herrmann"
-        ],
-        "posterPath": "/xHVxIgqD5CxlOI5GHxvVSt5Zh5Y.jpg",
-        "backdropPath": "/xdefSJpYARFdW4jPhPsuvUlmt2M.jpg",
-        "rating": 7.2,
-        "trailerKey": "WbWmMsyqf6k"
-      },
-      "status": "nominated"
-    },
-    {
-      "film": {
-        "tmdbId": 10719,
-        "title": "Elf",
-        "year": 2003,
-        "runtime": 97,
+        "tmdbId": 1122099,
+        "title": "The Ballad of Wallis Island",
+        "year": 2025,
+        "runtime": 100,
         "genres": [
           "Comedy",
-          "Family",
-          "Fantasy"
+          "Drama",
+          "Music"
         ],
-        "synopsis": "When young Buddy falls into Santa's gift sack on Christmas Eve, he's transported back to the North Pole and raised as a toy-making elf by Santa's helpers. But as he grows into adulthood, he can't shake the nagging feeling that he doesn't belong. Buddy vows to visit Manhattan and find his real dad, a workaholic.",
-        "director": "Jon Favreau",
+        "synopsis": "An eccentric lottery winner who lives alone on a remote island tries to make his fantasies come true by getting his favourite musicians to perform at his home.",
+        "director": "James Griffiths",
         "writers": [
-          "David Berenbaum",
-          "Jon Favreau"
+          "Tom Basden",
+          "Tim Key"
         ],
         "producers": [
-          "Todd Komarnicki",
-          "Jon Berg",
-          "Shauna Robertson"
+          "Rupert Majendie"
         ],
         "cast": [
-          "Will Ferrell",
-          "James Caan",
-          "Bob Newhart",
-          "Ed Asner",
-          "Mary Steenburgen"
+          "Tom Basden",
+          "Tim Key",
+          "Carey Mulligan",
+          "Sian Clifford",
+          "Akemnji Ndifornyen"
         ],
         "composers": [
-          "John Debney"
+          "Adem Ilhan"
         ],
-        "posterPath": "/oOleziEempUPu96jkGs0Pj6tKxj.jpg",
-        "backdropPath": "/5nhp41gx49vXjwXuDXJwQrRFsng.jpg",
-        "rating": 6.7,
-        "trailerKey": "14o38xfHlXc"
+        "posterPath": "/haS6bnqDqZoi5sYcCPJWaj2yMbB.jpg",
+        "backdropPath": "/1nn7nCFRTKeWOXbtjrFxfSvf1EI.jpg",
+        "rating": 7.3,
+        "trailerKey": "GjbVZWVWzPU"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 6114,
-        "title": "Bram Stoker's Dracula",
-        "year": 1992,
-        "runtime": 128,
+        "tmdbId": 250574,
+        "title": "Creep",
+        "year": 2014,
+        "runtime": 78,
         "genres": [
-          "Romance",
-          "Horror"
+          "Horror",
+          "Thriller"
         ],
-        "synopsis": "Count Dracula, a 15th-century prince, is condemned to live off the blood of the living for eternity. Young lawyer Jonathan Harker is sent to Dracula's castle to finalise a land deal, but when the Count sees a photo of Harker's fiancée, Mina, the spitting image of his dead wife, he imprisons him and sets off for London to track her down.",
-        "director": "Francis Ford Coppola",
-        "writers": [
-          "James V. Hart"
-        ],
+        "synopsis": "Looking for work, Aaron comes across a cryptic online ad: \"$1,000 for the day. Filming service. Discretion is appreciated.\" Low on cash and full of naiveté, he decides to go for it. He drives to a cabin in a remote mountain town where he meets Josef, his cinematic subject for the day. Josef is sincere and the project seems heartfelt, so Aaron begins to film. But as the day goes on, it becomes clear that Josef is not who he says, and his intentions are not at all pure.",
+        "director": "Patrick Brice",
         "producers": [
-          "Francis Ford Coppola",
-          "Fred Fuchs",
-          "Charles Mulvehill"
+          "Jason Blum",
+          "Mark Duplass"
         ],
         "cast": [
-          "Gary Oldman",
-          "Winona Ryder",
-          "Anthony Hopkins",
-          "Keanu Reeves",
-          "Sadie Frost"
+          "Mark Duplass",
+          "Patrick Brice",
+          "Katie Aselton"
         ],
         "composers": [
-          "Wojciech Kilar"
+          "Eric Andrew Kuhn",
+          "Kyle Field"
         ],
-        "posterPath": "/wpRrdm6g8zWtJnzVqME5QwSKkn7.jpg",
-        "backdropPath": "/fGuhbAlDpvmNuC0vkz1vsIzYwsq.jpg",
-        "rating": 7.4,
-        "trailerKey": "xD6JMxOGBLQ"
+        "posterPath": "/qn53D574tT0YRyLgirEFHQwGUXw.jpg",
+        "backdropPath": "/AvrGwToWkP6fp13lzpxsyzoq9JH.jpg",
+        "rating": 6.4,
+        "trailerKey": "o2yjZWZtGlo"
       },
       "status": "nominated"
     },
     {
       "film": {
-        "tmdbId": 841,
-        "title": "Dune",
-        "year": 1984,
-        "runtime": 136,
+        "tmdbId": 13168,
+        "title": "Smiley Face",
+        "year": 2007,
+        "runtime": 85,
         "genres": [
-          "Action",
-          "Science Fiction",
-          "Adventure"
+          "Comedy"
         ],
-        "synopsis": "In the year 10,191, the most precious substance in the universe is the spice Melange. The spice extends life. The spice expands consciousness. The spice is vital to space travel.  The spice exists on only one planet in the entire universe, the vast desert planet Arrakis, also known as Dune.  Its native inhabitants, the Fremen, have long held a prophecy that a man would come, a messiah who would lead them to true freedom.",
+        "synopsis": "Jane, a struggling but perpetually stoned actress, has a busy day ahead. She has several important tasks on her list, including buying more marijuana. Even though she already has a good start on the day's planned drug use, she eats her roommate's pot-laced cupcakes and embarks on a series of misadventures all over Los Angeles.",
+        "director": "Gregg Araki",
+        "writers": [
+          "Dylan Haggerty"
+        ],
+        "producers": [
+          "Gregg Araki",
+          "Steve Golin",
+          "Alix Madigan"
+        ],
+        "cast": [
+          "Anna Faris",
+          "John Krasinski",
+          "Adam Brody",
+          "Jane Lynch",
+          "Roscoe Lee Browne"
+        ],
+        "composers": [
+          "David Kitay"
+        ],
+        "posterPath": "/kGQZGujjw8S6NKs5C8nugsMtol.jpg",
+        "backdropPath": "/yjlXPFU5TsmPtyPRWmGC1Jkkoqo.jpg",
+        "rating": 6.1,
+        "trailerKey": "I8SzujSn3CY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 985,
+        "title": "Eraserhead",
+        "year": 1977,
+        "runtime": 89,
+        "genres": [
+          "Horror",
+          "Science Fiction"
+        ],
+        "synopsis": "First-time father Henry Spencer tries to survive his industrial environment, his angry girlfriend, and the unbearable screams of his newly born mutant child.",
         "director": "David Lynch",
         "writers": [
           "David Lynch"
         ],
         "producers": [
-          "Raffaella De Laurentiis",
-          "Dino De Laurentiis"
+          "David Lynch"
         ],
         "cast": [
-          "Kyle MacLachlan",
-          "Francesca Annis",
-          "Patrick Stewart",
-          "Linda Hunt",
-          "José Ferrer"
+          "Jack Nance",
+          "Charlotte Stewart",
+          "Allen Joseph",
+          "Jeanne Bates",
+          "Judith Roberts"
         ],
         "composers": [
-          "Brian Eno",
-          "David Paich",
-          "Jeff Porcaro",
-          "Mike Porcaro",
-          "Steve Porcaro",
-          "Marty Paich",
-          "Steve Lukather",
-          "Daniel Lanois",
-          "Roger Eno"
+          "David Lynch",
+          "Peter Ivers"
         ],
-        "posterPath": "/4kJmUCE7mkVJjXa7A0g2rY4IGTm.jpg",
-        "backdropPath": "/5wJ2tckpvwcxGCAgZiccodwEJpf.jpg",
-        "rating": 6.2,
-        "trailerKey": "hjRG8kvMFw0"
+        "posterPath": "/mxveW3mGVc0DzLdOmtkZsgd7c3B.jpg",
+        "backdropPath": "/ApB0mF2d5Oqioi3yxjuogiotSLI.jpg",
+        "rating": 7.3,
+        "trailerKey": "zVJICfUx8M0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 11660,
+        "title": "Following",
+        "year": 1999,
+        "runtime": 69,
+        "genres": [
+          "Drama",
+          "Thriller"
+        ],
+        "synopsis": "Bill, an idle, unemployed aspiring writer, walks the crowded streets of London following randomly chosen strangers, a seemingly innocent entertainment that becomes dangerous when he crosses paths with a mysterious character.",
+        "director": "Christopher Nolan",
+        "writers": [
+          "Christopher Nolan"
+        ],
+        "producers": [
+          "Jeremy Theobald",
+          "Christopher Nolan",
+          "Emma Thomas"
+        ],
+        "cast": [
+          "Jeremy Theobald",
+          "Alex Haw",
+          "Lucy Russell",
+          "John Nolan",
+          "Dick Bradsell"
+        ],
+        "composers": [
+          "David Julyan"
+        ],
+        "posterPath": "/3bX6VVSMf0dvzk5pMT4ALG5A92d.jpg",
+        "backdropPath": "/yf5I5VHllK4h5VdbxHfQ40RBTe8.jpg",
+        "rating": 7.1,
+        "trailerKey": "Xc1cMA4UryY"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 37736,
+        "title": "Take Out",
+        "year": 2008,
+        "runtime": 88,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "An illegal Chinese immigrant falls behind on payments on an enormous smuggling debt. Ming Ding has only until the end of the day to come up with the money.",
+        "director": "Tsou Shih-ching",
+        "writers": [
+          "Tsou Shih-ching",
+          "Sean Baker"
+        ],
+        "producers": [
+          "Sean Baker",
+          "Tsou Shih-ching"
+        ],
+        "cast": [
+          "Charles Jang",
+          "Jeng-Hua Yu",
+          "Wang-Thye Lee",
+          "Justin Wan",
+          "Jeff Huang"
+        ],
+        "posterPath": "/hBpAozLANehQQnvTPcCHcKQt2vP.jpg",
+        "backdropPath": "/mwxYdfqvT7ovX281WOZIySJUanf.jpg",
+        "rating": 7,
+        "trailerKey": "u8Bp1c_9ejQ"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 220289,
+        "title": "Coherence",
+        "year": 2014,
+        "runtime": 89,
+        "genres": [
+          "Thriller",
+          "Science Fiction"
+        ],
+        "synopsis": "Four couples gather for dinner the night a mysterious and powerful comet passes overhead.",
+        "director": "James Ward Byrkit",
+        "writers": [
+          "James Ward Byrkit"
+        ],
+        "producers": [
+          "Lene Bausager"
+        ],
+        "cast": [
+          "Emily Baldoni",
+          "Maury Sterling",
+          "Nicholas Brendon",
+          "Lauren Maher",
+          "Elizabeth Gracen"
+        ],
+        "composers": [
+          "Kristin Øhrn Dyrud"
+        ],
+        "posterPath": "/ezUtb9m5DeLwL2gxi4gktzNCvQv.jpg",
+        "backdropPath": "/cvGE73s935bXEAVt2W0zADPPegG.jpg",
+        "rating": 7.2,
+        "trailerKey": "YixSld-6PqM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 473,
+        "title": "Pi",
+        "year": 1998,
+        "runtime": 84,
+        "genres": [
+          "Mystery",
+          "Drama",
+          "Thriller"
+        ],
+        "synopsis": "A mathematical genius discovers a link between numbers and reality, and thus believes he can predict the future.",
+        "director": "Darren Aronofsky",
+        "writers": [
+          "Darren Aronofsky"
+        ],
+        "producers": [
+          "Eric Watson"
+        ],
+        "cast": [
+          "Sean Gullette",
+          "Mark Margolis",
+          "Ben Shenkman",
+          "Pamela Hart",
+          "Stephen Pearlman"
+        ],
+        "composers": [
+          "Clint Mansell"
+        ],
+        "posterPath": "/fJA22FjlAW8rzrOw9Mwanl6oTc9.jpg",
+        "backdropPath": "/pVmCanXNPYqE74cJoL0U6C9ONf5.jpg",
+        "rating": 7.1,
+        "trailerKey": "yRjkQT9xLZs"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 27374,
+        "title": "Lake Mungo",
+        "year": 2009,
+        "runtime": 87,
+        "genres": [
+          "Horror",
+          "Thriller"
+        ],
+        "synopsis": "After 16-year-old Alice Palmer drowns at a local dam, her family experiences a series of strange, inexplicable events centered in and around their home. Unsettled, the Palmers seek the help of a psychic and parapsychologist, who discovers that Alice led a secret, double life. At Lake Mungo, Alice's secret past emerges.",
+        "director": "Joel Anderson",
+        "writers": [
+          "Joel Anderson"
+        ],
+        "producers": [
+          "Georgie Nevile",
+          "David Rapsey"
+        ],
+        "cast": [
+          "Rosie Traynor",
+          "David Pledger",
+          "Martin Sharpe",
+          "Talia Zucker",
+          "Tania Lentini"
+        ],
+        "composers": [
+          "David Paterson"
+        ],
+        "posterPath": "/5IaGu8r0t6bBaydkR6z9l9tJsCg.jpg",
+        "backdropPath": "/5eaS62YjA5Z7WPcf4quyZa5VpeO.jpg",
+        "rating": 6.1,
+        "trailerKey": "s-KnomEI6NE"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 307,
+        "title": "Rome, Open City",
+        "year": 1945,
+        "runtime": 104,
+        "genres": [
+          "Drama",
+          "War"
+        ],
+        "synopsis": "During the Nazi occupation of 1944 Rome, Resistance leader Giorgio Manfredi is pursued by the Nazis as he seeks refuge and a means of escape.",
+        "director": "Roberto Rossellini",
+        "writers": [
+          "Sergio Amidei",
+          "Roberto Rossellini",
+          "Federico Fellini"
+        ],
+        "producers": [
+          "Rod E. Geiger",
+          "Giuseppe Amato",
+          "Roberto Rossellini"
+        ],
+        "cast": [
+          "Aldo Fabrizi",
+          "Marcello Pagliero",
+          "Harry Feist",
+          "Anna Magnani",
+          "Maria Michi"
+        ],
+        "composers": [
+          "Renzo Rossellini"
+        ],
+        "posterPath": "/ijGV4v8JxgbNzgEhqKdzHdaZn8a.jpg",
+        "backdropPath": "/tt1YwEB5UVDKxCYwZEtpNUaDJIi.jpg",
+        "rating": 8,
+        "trailerKey": "5uzXxXnGfVs"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 513434,
+        "title": "One Cut of the Dead",
+        "year": 2017,
+        "runtime": 96,
+        "genres": [
+          "Comedy",
+          "Horror",
+          "Drama"
+        ],
+        "synopsis": "Real zombies arrive and terrorize the crew of a zombie film being shot in an abandoned warehouse, said to be the site of military experiments on humans.",
+        "director": "Shinichiro Ueda",
+        "writers": [
+          "Shinichiro Ueda"
+        ],
+        "producers": [
+          "Koji Ichihashi"
+        ],
+        "cast": [
+          "Takayuki Hamatsu",
+          "Yuzuki Akiyama",
+          "Kazuaki Nagaya",
+          "Harumi Shuhama",
+          "Mao"
+        ],
+        "composers": [
+          "Nobuhiro Suzuki",
+          "Shôma Itô",
+          "Kyle Nagai"
+        ],
+        "posterPath": "/rws34k2bqYVo2B5MkhKAbV8925j.jpg",
+        "backdropPath": "/oslUsPw3PUhDVK7a5soTvCAuaO7.jpg",
+        "rating": 7.6,
+        "trailerKey": "Du2XfUDfjN0"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 316776,
+        "title": "Who Killed Captain Alex?",
+        "year": 2010,
+        "runtime": 68,
+        "genres": [
+          "Action",
+          "Comedy",
+          "Drama"
+        ],
+        "synopsis": "War erupts between a mafia group and soldiers.",
+        "director": "Nabwana IGG",
+        "writers": [
+          "Nabwana IGG"
+        ],
+        "producers": [],
+        "cast": [
+          "Kakule William",
+          "Sserunya Ernest",
+          "G. Puffs",
+          "Bukenya Charles",
+          "Kavubu Muhammed"
+        ],
+        "composers": [
+          "Kizito Vicent"
+        ],
+        "posterPath": "/2GYBwJJMOrWsEmJRvRl48mQDyTI.jpg",
+        "backdropPath": "/dezFPyUmRguvXr8ot6HSXGaCGrV.jpg",
+        "rating": 6.5,
+        "trailerKey": "BymeLkZ7GqM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 664300,
+        "title": "Shiva Baby",
+        "year": 2021,
+        "runtime": 78,
+        "genres": [
+          "Comedy",
+          "Drama"
+        ],
+        "synopsis": "College student Danielle must cover her tracks when she unexpectedly runs into her sugar daddy at a shiva - with her parents, ex-girlfriend and family friends also in attendance.",
+        "director": "Emma Seligman",
+        "writers": [
+          "Emma Seligman"
+        ],
+        "producers": [
+          "Emma Seligman",
+          "Lizzie Shapiro",
+          "Katie Schiller"
+        ],
+        "cast": [
+          "Rachel Sennott",
+          "Molly Gordon",
+          "Polly Draper",
+          "Danny Deferrari",
+          "Fred Melamed"
+        ],
+        "composers": [
+          "Ariel Marx"
+        ],
+        "posterPath": "/4sdqVsT6SHqtbCYZS7bhVoEftlL.jpg",
+        "backdropPath": "/feQvRl67oc4AOWN4LhAwkrMWdX4.jpg",
+        "rating": 7.1,
+        "trailerKey": "1ribuR9hVv4"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 72766,
+        "title": "Newlyweds",
+        "year": 2011,
+        "runtime": 85,
+        "genres": [
+          "Comedy",
+          "Romance",
+          "Drama"
+        ],
+        "synopsis": "A newlywed couple's honeymoon is upended by the arrivals of their respective sisters.",
+        "director": "Edward Burns",
+        "writers": [
+          "Edward Burns"
+        ],
+        "producers": [
+          "Edward Burns",
+          "William Rexer",
+          "Aaron Lubin"
+        ],
+        "cast": [
+          "Edward Burns",
+          "Caitlin FitzGerald",
+          "Kerry Bishé",
+          "Marsha Dietlein",
+          "Dara Coleman"
+        ],
+        "composers": [
+          "PT Walkley"
+        ],
+        "posterPath": "/t09NlDBh0z1HEhPu6Xs5c4hRk64.jpg",
+        "backdropPath": "/ek5Yac53PCliZVpIVRLRRSseRjr.jpg",
+        "rating": 5.8,
+        "trailerKey": "xl1Q4TnAWiw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 762,
+        "title": "Monty Python and the Holy Grail",
+        "year": 1975,
+        "runtime": 91,
+        "genres": [
+          "Adventure",
+          "Comedy",
+          "Fantasy"
+        ],
+        "synopsis": "King Arthur, accompanied by his squire, recruits his Knights of the Round Table, including Sir Bedevere the Wise, Sir Lancelot the Brave, Sir Robin the Not-Quite-So-Brave-As-Sir-Lancelot and Sir Galahad the Pure. On the way, Arthur battles the Black Knight who, despite having had all his limbs chopped off, insists he can still fight. They reach Camelot, but Arthur decides not  to enter, as \"it is a silly place\".",
+        "director": "Terry Gilliam",
+        "writers": [
+          "Graham Chapman",
+          "John Cleese",
+          "Eric Idle",
+          "Terry Gilliam",
+          "Terry Jones",
+          "Michael Palin"
+        ],
+        "producers": [
+          "Mark Forstater",
+          "Michael White"
+        ],
+        "cast": [
+          "Graham Chapman",
+          "John Cleese",
+          "Eric Idle",
+          "Terry Gilliam",
+          "Terry Jones"
+        ],
+        "posterPath": "/7nTkHjETdGMYK1phHwDbPsrzbYl.jpg",
+        "backdropPath": "/1KgXxv6tHXOnakqYvMPvFwYKWiw.jpg",
+        "rating": 7.8,
+        "trailerKey": "4b52A3sKz-I"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 2292,
+        "title": "Clerks",
+        "year": 1994,
+        "runtime": 92,
+        "genres": [
+          "Comedy"
+        ],
+        "synopsis": "Convenience and video store clerks Dante and Randal are sharp-witted, potty-mouthed and bored out of their minds. So in between needling customers, the counter jockeys play hockey on the roof, visit a funeral home and deal with their love lives.",
+        "director": "Kevin Smith",
+        "writers": [
+          "Kevin Smith"
+        ],
+        "producers": [
+          "Scott Mosier",
+          "Kevin Smith"
+        ],
+        "cast": [
+          "Brian O'Halloran",
+          "Jeff Anderson",
+          "Marilyn Ghigliotti",
+          "Lisa Spoonauer",
+          "Jason Mewes"
+        ],
+        "posterPath": "/9IiSgiq4h4siTIS9H3o4nZ3h5L9.jpg",
+        "backdropPath": "/sjfbZVKRGh84lNxhqvuhdvovh18.jpg",
+        "rating": 7.4,
+        "trailerKey": "f8yqQkABBjY"
       },
       "status": "nominated"
     }
