@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import type { Film, FilmStatus } from '@bathfilmclub/types';
+import type { ClubRating, Film, FilmStatus } from '@bathfilmclub/types';
 import { api } from '../api';
 import { color, fg, font } from '../tokens';
+import { ClubRatingControl } from './ClubRatingControl';
 
 const TMDB_POSTER_BASE = 'https://image.tmdb.org/t/p/w342';
 
@@ -9,10 +10,11 @@ interface Props {
   slug: string;
   film: Film;
   status: FilmStatus;
+  clubRating?: ClubRating | undefined;
   onChanged: () => void;
 }
 
-export function FilmCard({ slug, film, status, onChanged }: Props) {
+export function FilmCard({ slug, film, status, clubRating, onChanged }: Props) {
   const [busy, setBusy] = useState(false);
 
   const changeStatus = async (next: FilmStatus) => {
@@ -23,6 +25,18 @@ export function FilmCard({ slug, film, status, onChanged }: Props) {
       onChanged();
     } catch (e) {
       alert(`Failed to update status: ${e instanceof Error ? e.message : String(e)}`);
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  const changeRating = async (next: ClubRating | null) => {
+    setBusy(true);
+    try {
+      await api.updateFilmRating(slug, film.tmdbId, next);
+      onChanged();
+    } catch (e) {
+      alert(`Failed to update rating: ${e instanceof Error ? e.message : String(e)}`);
     } finally {
       setBusy(false);
     }
@@ -81,6 +95,9 @@ export function FilmCard({ slug, film, status, onChanged }: Props) {
           ✕
         </button>
       </div>
+      {status === 'selected' && (
+        <ClubRatingControl value={clubRating} disabled={busy} onChange={changeRating} />
+      )}
       <p style={{ margin: 0, fontFamily: font.body, fontSize: '1rem', color: fg.strong, lineHeight: 1.2 }}>
         {film.title} <span style={{ color: fg.faint }}>({film.year})</span>
       </p>

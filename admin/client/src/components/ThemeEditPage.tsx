@@ -203,8 +203,8 @@ export function ThemeEditPage({ slug, onBack, onDeleted }: Props) {
 
       {/* Pyramid bands (top → bottom: selected, shortlisted, nominated) */}
       <PyramidBand title="Selected" color={color.tierSelected}>
-        {byStatus('selected').map(({ film, status }) => (
-          <FilmCard key={film.tmdbId} slug={theme.slug} film={film} status={status} onChanged={reloadFilms} />
+        {byStatus('selected').map(({ film, status, clubRating }) => (
+          <FilmCard key={film.tmdbId} slug={theme.slug} film={film} status={status} clubRating={clubRating} onChanged={reloadFilms} />
         ))}
       </PyramidBand>
       <PyramidBand

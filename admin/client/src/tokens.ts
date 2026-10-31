@@ -10,6 +10,7 @@ export const color = {
   tierSelected: '#674967',
   tierShortlisted: '#175A70',
   tierNominated: '#253A3C',
+  clubRating: '#FBBF24', // mirrors the site's --color-bfc-club-rating
   danger: '#B11226',
   dangerBorder: 'rgba(177,18,38,0.5)',
   errorText: '#FFD9DE',
