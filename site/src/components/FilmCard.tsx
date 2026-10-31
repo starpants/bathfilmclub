@@ -1,5 +1,6 @@
 import type { ClubRating as Rating, Film, FilmStatus } from '@bathfilmclub/types';
 import { ClubRating } from './ClubRating';
+import { filmCardLabel } from '../utils/clubRating';
 
 interface Props {
   film: Film;
@@ -16,7 +17,7 @@ export function FilmCard({ film, status, onSelect, showTag = true, clubRating }:
     <button
       onClick={() => onSelect(film)}
       className="block w-full text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-bfc-brand-accent"
-      aria-label={`View details for ${film.title}`}
+      aria-label={filmCardLabel(film.title, clubRating)}
     >
       <div className="transition duration-300 z-30 hover:scale-110 hover:bfc-shadow">
         <div className="mb-4 aspect-2/3 overflow-hidden bg-neutral-800">

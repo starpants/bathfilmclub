@@ -8,3 +8,9 @@ import type { ClubRating, ThemeFilm } from '@bathfilmclub/types';
 export function displayedClubRating(entry: ThemeFilm): ClubRating | undefined {
   return entry.status === 'selected' ? entry.clubRating : undefined;
 }
+
+/** The film card's accessible name. Its aria-label masks the visual rating, so the score is spoken here. */
+export function filmCardLabel(title: string, clubRating: ClubRating | undefined): string {
+  const base = `View details for ${title}`;
+  return clubRating ? `${base}, club rating ${clubRating} out of 5` : base;
+}
