@@ -17,6 +17,8 @@
   --color-bfc-status-shortlisted: #eabb16;
   --color-bfc-status-nominated: #fff8ea;
 
+  --color-bfc-club-rating: #fbbf24; /* club meeting score clapperboards — filled /80, empty /30 */
+
   --color-neutral-50: #fafafa;
   --color-neutral-100: #f5f5f5;
   --color-neutral-200: #e5e5e5;

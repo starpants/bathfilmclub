@@ -1,15 +1,17 @@
-import type { Film, FilmStatus } from '@bathfilmclub/types';
+import type { ClubRating as Rating, Film, FilmStatus } from '@bathfilmclub/types';
+import { ClubRating } from './ClubRating';
 
 interface Props {
   film: Film;
   status: FilmStatus;
   onSelect: (film: Film) => void;
   showTag?: boolean;
+  clubRating?: Rating | undefined;
 }
 
 const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w342';
 
-export function FilmCard({ film, status, onSelect, showTag = true }: Props) {
+export function FilmCard({ film, status, onSelect, showTag = true, clubRating }: Props) {
   return (
     <button
       onClick={() => onSelect(film)}
@@ -50,7 +52,13 @@ export function FilmCard({ film, status, onSelect, showTag = true }: Props) {
         </span>
       )}
       <div className="mt-1.5 h-24 overflow-hidden p-2 mb-2 ">
-        <p className="font-body text-lg text-bfc-brand-fg">{film.title}</p>
+        {/* A rated card clamps its title to two lines so the rating always fits the fixed box. */}
+        <p className={`font-body text-lg text-bfc-brand-fg${clubRating ? ' line-clamp-2' : ''}`}>{film.title}</p>
+        {clubRating && (
+          <div className="mt-1.5">
+            <ClubRating value={clubRating} />
+          </div>
+        )}
       </div>
     </button>
   );

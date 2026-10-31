@@ -3,6 +3,7 @@ import type { ThemeFilm, Film } from '@bathfilmclub/types';
 import { FilmCard } from './FilmCard';
 import { FilmPanel } from './FilmPanel';
 import { FilmStrip } from './FilmStrip';
+import { displayedClubRating } from '../utils/clubRating';
 
 interface Props {
   selected: ThemeFilm[];
@@ -21,6 +22,7 @@ interface FilmRowProps {
   accentClass: string;
   showCount?: boolean;
   showStrip?: boolean;
+  showClubRating?: boolean;
 }
 
 function FilmRow({
@@ -33,6 +35,7 @@ function FilmRow({
   accentClass,
   showCount = false,
   showStrip = false,
+  showClubRating = false,
 }: FilmRowProps) {
   const statuses = new Set(films.map((f) => f.status));
   const hasMixedStatuses = statuses.size > 1;
@@ -52,13 +55,14 @@ function FilmRow({
           </p>
         ) : (
           <div className="grid grid-cols-2 gap-4 md:flex md:flex-wrap md:gap-12 md:justify-center">
-            {films.map(({ film, status }) => (
-              <div key={film.tmdbId} className={`${cardWidth} shrink-0`}>
+            {films.map((entry) => (
+              <div key={entry.film.tmdbId} className={`${cardWidth} shrink-0`}>
                 <FilmCard
-                  film={film}
-                  status={status}
+                  film={entry.film}
+                  status={entry.status}
                   onSelect={onSelect}
                   showTag={hasMixedStatuses}
+                  clubRating={showClubRating ? displayedClubRating(entry) : undefined}
                 />
               </div>
             ))}
@@ -85,6 +89,7 @@ export function PyramidIsland({ selected, shortlisted, nominated, emptyMessage }
           bgClass="bg-bfc-tier-selected"
           accentClass="text-bfc-brand-fg/90"
           showStrip
+          showClubRating
         />
         <FilmRow
           films={shortlisted}
