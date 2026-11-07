@@ -760,7 +760,7 @@
         "rating": 7.4,
         "trailerKey": "f8yqQkABBjY"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -1079,44 +1079,6 @@
         "backdropPath": "/AiADW9ru9v1DLbFo4Ac76CtlXjK.jpg",
         "rating": 7.2,
         "trailerKey": "5kVkRhXt3S4"
-      },
-      "status": "shortlisted"
-    },
-    {
-      "film": {
-        "tmdbId": 36196,
-        "title": "Party Girl",
-        "year": 1995,
-        "runtime": 94,
-        "genres": [
-          "Comedy",
-          "Drama",
-          "Romance"
-        ],
-        "synopsis": "Although Mary has little income, she still finds ways to spend her nights at clubs. After being arrested for throwing an illegal rave, she asks her aunt Judy for bail money. Judy then finds Mary a job at her library so that Mary can repay her. Initially, Mary finds the job as a clerk boring and stifling, and prefers to get to know a street food vendor whom she likes. However, Mary must refocus her life once she loses her job and apartment.",
-        "director": "Daisy von Scherler Mayer",
-        "writers": [
-          "Harry Birckmayer",
-          "Daisy von Scherler Mayer"
-        ],
-        "producers": [
-          "Stephanie Koules",
-          "Harry Birckmayer"
-        ],
-        "cast": [
-          "Parker Posey",
-          "Anthony DeSando",
-          "Guillermo Díaz",
-          "Donna Mitchell",
-          "Liev Schreiber"
-        ],
-        "composers": [
-          "Anton Sanko"
-        ],
-        "posterPath": "/cfGEUftQVjvJHTTc3OKbzfsBamT.jpg",
-        "backdropPath": "/sMiMYF7sf8h6s8R0a3r1bO1Y3Wk.jpg",
-        "rating": 6.6,
-        "trailerKey": "9y-TvmzQ8qA"
       },
       "status": "shortlisted"
     }
