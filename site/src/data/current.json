@@ -40,7 +40,7 @@
         "rating": 6.7,
         "trailerKey": "-vD-yj9o664"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -431,7 +431,7 @@
         "rating": 7.2,
         "trailerKey": "YixSld-6PqM"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -467,7 +467,7 @@
         "rating": 7.1,
         "trailerKey": "yRjkQT9xLZs"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -542,7 +542,7 @@
         "rating": 8,
         "trailerKey": "5uzXxXnGfVs"
       },
-      "status": "nominated"
+      "status": "shortlisted"
     },
     {
       "film": {
@@ -761,6 +761,364 @@
         "trailerKey": "f8yqQkABBjY"
       },
       "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 416920,
+        "title": "Dead Man's Shoes",
+        "year": 1940,
+        "runtime": 70,
+        "genres": [
+          "Crime",
+          "Drama"
+        ],
+        "synopsis": "An amnesia victim is a well liked and respected member of his community--until one day someone from his past shows up with evidence that in \"the old days\" he had been a notorious criminal, and threatens to expose him unless he pays off.",
+        "director": "Thomas Bentley",
+        "writers": [
+          "Nina Jarvis",
+          "John H. Kafka"
+        ],
+        "producers": [
+          "Walter C. Mycroft"
+        ],
+        "cast": [
+          "Leslie Banks",
+          "Joan Marion",
+          "Geoffrey Atkins",
+          "Wilfrid Lawson",
+          "Judy Kelly"
+        ],
+        "posterPath": "/gTelBX06gumRgnGpjVjxITGoLb1.jpg",
+        "rating": 7
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 55149,
+        "title": "84 Charlie Mopic",
+        "year": 1989,
+        "runtime": 90,
+        "genres": [
+          "War"
+        ],
+        "synopsis": "An Army cameraman is embedded with a reconnaissance patrol and charts their mission across territory controlled by the North Vietnamese.",
+        "director": "Patrick Sheane Duncan",
+        "writers": [
+          "Patrick Sheane Duncan"
+        ],
+        "producers": [
+          "Michael Nolin"
+        ],
+        "cast": [
+          "Jonathan Emerson",
+          "Nicholas Cascone",
+          "Jason Tomlins",
+          "Christopher Burgard",
+          "Glenn Morshower"
+        ],
+        "composers": [
+          "Donovan"
+        ],
+        "posterPath": "/vu5zyYcQlUJmGJzzUnrrXKsxnKd.jpg",
+        "backdropPath": "/lv8vz7uSzEMDiwgpCUB3O4d8eqH.jpg",
+        "rating": 6.3,
+        "trailerKey": "yrc3U4X2aZ0"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 7859,
+        "title": "Half Nelson",
+        "year": 2006,
+        "runtime": 107,
+        "genres": [
+          "Drama"
+        ],
+        "synopsis": "Despite his dedication to the junior-high students who fill his classroom, idealistic teacher Dan Dunne leads a secret life of addiction that the majority of his students will never know. But things change when a troubled student Drey makes a startling discovery of his secret life, causing a tenuous bond between the two that could either end disastrously or provide a catalyst of hope.",
+        "director": "Ryan Fleck",
+        "writers": [
+          "Anna Boden",
+          "Ryan Fleck"
+        ],
+        "producers": [
+          "Anna Boden",
+          "Lynette Howell Taylor",
+          "Rosanne Korenberg"
+        ],
+        "cast": [
+          "Ryan Gosling",
+          "Shareeka Epps",
+          "Anthony Mackie",
+          "Jeff Lima",
+          "Monique Gabriela Curnen"
+        ],
+        "composers": [
+          "Kevin Drew"
+        ],
+        "posterPath": "/fdUCisMpTwy0oJOGwM7NrFFs400.jpg",
+        "backdropPath": "/1yl0AzGp7A5jbHbKDdPvem3niVk.jpg",
+        "rating": 6.7,
+        "trailerKey": "BNdg2Ds3Fpw"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 9270,
+        "title": "Brick",
+        "year": 2006,
+        "runtime": 110,
+        "genres": [
+          "Drama",
+          "Mystery",
+          "Crime"
+        ],
+        "synopsis": "A teenage loner pushes his way into the underworld of a high school crime ring to investigate the disappearance of his ex-girlfriend.",
+        "director": "Rian Johnson",
+        "writers": [
+          "Rian Johnson"
+        ],
+        "producers": [
+          "Ram Bergman",
+          "Mark G. Mathis"
+        ],
+        "cast": [
+          "Joseph Gordon-Levitt",
+          "Nora Zehetner",
+          "Matt O'Leary",
+          "Noah Fleiss",
+          "Lukas Haas"
+        ],
+        "composers": [
+          "Nathan Johnson"
+        ],
+        "posterPath": "/5WVk8JpNIxepn4fpZzQeCumkOL5.jpg",
+        "backdropPath": "/sDr2KjWpEbJ8M1F88rEmhoczLkX.jpg",
+        "rating": 6.8,
+        "trailerKey": "awbOgB7yB_Q"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 5801,
+        "title": "Pather Panchali",
+        "year": 1955,
+        "runtime": 125,
+        "genres": [
+          "Drama",
+          "History"
+        ],
+        "synopsis": "Impoverished priest Harihar Ray, dreaming of a better life for himself and his family, leaves his rural Bengal village in search of work. Alone, his wife, Sarbojaya, looks after her rebellious daughter, Durga, and her young son, Apu, as well as Harihar's elderly aunt Indir. The children enjoy the small pleasures of their difficult life, while their parents suffer the daily indignities heaped upon them.",
+        "director": "Satyajit Ray",
+        "writers": [
+          "Satyajit Ray"
+        ],
+        "producers": [
+          "Satyajit Ray",
+          "Bansi Chandragupta"
+        ],
+        "cast": [
+          "Kanu Bannerjee",
+          "Karuna Banerjee",
+          "Subir Banerjee",
+          "Runki Banerjee",
+          "Uma Dasgupta"
+        ],
+        "composers": [
+          "Ravi Shankar"
+        ],
+        "posterPath": "/frZj5djlU9hFEjMcL21RJZVuG5O.jpg",
+        "backdropPath": "/wadoNHCMPElgYuOqLxqDQqXpTMx.jpg",
+        "rating": 7.8,
+        "trailerKey": "mgv68E_o6VM"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 269,
+        "title": "Breathless",
+        "year": 1960,
+        "runtime": 90,
+        "genres": [
+          "Drama",
+          "Crime",
+          "Romance"
+        ],
+        "synopsis": "A small-time thief steals a car and impulsively murders a motorcycle policeman. Wanted by the authorities, he attempts to persuade a girl to run away to Italy with him.",
+        "director": "Jean-Luc Godard",
+        "writers": [
+          "Jean-Luc Godard"
+        ],
+        "producers": [
+          "Georges de Beauregard"
+        ],
+        "cast": [
+          "Jean-Paul Belmondo",
+          "Jean Seberg",
+          "Daniel Boulanger",
+          "Henri-Jacques Huet",
+          "Roger Hanin"
+        ],
+        "composers": [
+          "Martial Solal"
+        ],
+        "posterPath": "/9Wx0Wdn2EOqeCZU4SP6tlS3LOml.jpg",
+        "backdropPath": "/4WGuyWf1f94CsEeVIIqDKGw5rmO.jpg",
+        "rating": 7.5,
+        "trailerKey": "UoICuMPOWrk"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 500,
+        "title": "Reservoir Dogs",
+        "year": 1992,
+        "runtime": 99,
+        "genres": [
+          "Crime",
+          "Thriller"
+        ],
+        "synopsis": "A botched robbery indicates a police informant, and the pressure mounts in the aftermath at a warehouse. Crime begets violence as the survivors -- veteran Mr. White, newcomer Mr. Orange, psychopathic parolee Mr. Blonde, bickering weasel Mr. Pink and Nice Guy Eddie -- unravel.",
+        "director": "Quentin Tarantino",
+        "writers": [
+          "Quentin Tarantino"
+        ],
+        "producers": [
+          "Lawrence Bender"
+        ],
+        "cast": [
+          "Harvey Keitel",
+          "Tim Roth",
+          "Michael Madsen",
+          "Chris Penn",
+          "Steve Buscemi"
+        ],
+        "posterPath": "/xi8Iu6qyTfyZVDVy60raIOYJJmk.jpg",
+        "backdropPath": "/jwt159hXWA9Q5xpBo8hWb3zwLi7.jpg",
+        "rating": 8.1,
+        "trailerKey": "2KLZ4fSXtgI"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 9964,
+        "title": "Bad Taste",
+        "year": 1987,
+        "runtime": 91,
+        "genres": [
+          "Action",
+          "Comedy",
+          "Horror",
+          "Science Fiction"
+        ],
+        "synopsis": "A team from the intergalactic fast food chain Crumb's Crunchy Delights descends on Earth, planning to make human flesh the newest taste sensation. After they wipe out the New Zealand town Kaihoro, the country’s Astro-Investigation and Defense Service (AIaDS) is called in to deal with the problem. Things are complicated due to Giles, an aid worker who comes to Kaihoro the same day to collect change from the residents. He is captured by the aliens, and AIaDS stages a rescue mission that quickly becomes an all-out assault on the aliens’ headquarters.",
+        "director": "Peter Jackson",
+        "writers": [
+          "Peter Jackson"
+        ],
+        "producers": [
+          "Peter Jackson"
+        ],
+        "cast": [
+          "Terry Potter",
+          "Pete O'Herne",
+          "Craig Smith",
+          "Mike Minett",
+          "Peter Jackson"
+        ],
+        "composers": [
+          "Michelle Scullion"
+        ],
+        "posterPath": "/msttMX3undIiaeJLZbMRq94v1bw.jpg",
+        "backdropPath": "/HUnVuk7xCe9bZE5YZcVwMV8xea.jpg",
+        "rating": 6.3,
+        "trailerKey": "7IHwKJOZZ6U"
+      },
+      "status": "nominated"
+    },
+    {
+      "film": {
+        "tmdbId": 9261,
+        "title": "The Wedding Banquet",
+        "year": 1993,
+        "runtime": 108,
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "A Taiwanese-American man is happily settled in New York with his American boyfriend. He plans a marriage of convenience to a Chinese woman in order to keep his parents off his back and to get the woman a green card. Chaos follows when his parents arrive in New York for the wedding.",
+        "director": "Ang Lee",
+        "writers": [
+          "Ang Lee",
+          "Neil Peng",
+          "James Schamus"
+        ],
+        "producers": [
+          "Ted Hope",
+          "James Schamus",
+          "Ang Lee"
+        ],
+        "cast": [
+          "Gua Ah-leh",
+          "Lung Sihung",
+          "May Chin",
+          "Winston Chao Wen-hsuan",
+          "Mitchell Lichtenstein"
+        ],
+        "composers": [
+          "Mader"
+        ],
+        "posterPath": "/arWCA8lg0rbdlwHUMvI46LNDhnL.jpg",
+        "backdropPath": "/AiADW9ru9v1DLbFo4Ac76CtlXjK.jpg",
+        "rating": 7.2,
+        "trailerKey": "5kVkRhXt3S4"
+      },
+      "status": "shortlisted"
+    },
+    {
+      "film": {
+        "tmdbId": 36196,
+        "title": "Party Girl",
+        "year": 1995,
+        "runtime": 94,
+        "genres": [
+          "Comedy",
+          "Drama",
+          "Romance"
+        ],
+        "synopsis": "Although Mary has little income, she still finds ways to spend her nights at clubs. After being arrested for throwing an illegal rave, she asks her aunt Judy for bail money. Judy then finds Mary a job at her library so that Mary can repay her. Initially, Mary finds the job as a clerk boring and stifling, and prefers to get to know a street food vendor whom she likes. However, Mary must refocus her life once she loses her job and apartment.",
+        "director": "Daisy von Scherler Mayer",
+        "writers": [
+          "Harry Birckmayer",
+          "Daisy von Scherler Mayer"
+        ],
+        "producers": [
+          "Stephanie Koules",
+          "Harry Birckmayer"
+        ],
+        "cast": [
+          "Parker Posey",
+          "Anthony DeSando",
+          "Guillermo Díaz",
+          "Donna Mitchell",
+          "Liev Schreiber"
+        ],
+        "composers": [
+          "Anton Sanko"
+        ],
+        "posterPath": "/cfGEUftQVjvJHTTc3OKbzfsBamT.jpg",
+        "backdropPath": "/sMiMYF7sf8h6s8R0a3r1bO1Y3Wk.jpg",
+        "rating": 6.6,
+        "trailerKey": "9y-TvmzQ8qA"
+      },
+      "status": "shortlisted"
     }
   ]
 }
