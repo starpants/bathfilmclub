@@ -23,7 +23,13 @@ interface FilmRowProps {
   showCount?: boolean;
   showStrip?: boolean;
   showClubRating?: boolean;
+  /** Above 5 films, wrap at 4 per row on desktop (4+3, 4+4) instead of 6+1. */
+  fourPerRowWhenMany?: boolean;
 }
+
+// Width of exactly four w-48 cards plus three gap-12 gaps (4×12rem + 3×3rem).
+// Keep in sync with the shortlisted row's cardWidth if that changes.
+const FOUR_W48_CARDS = 'md:max-w-[57rem] md:mx-auto';
 
 function FilmRow({
   films,
@@ -36,9 +42,11 @@ function FilmRow({
   showCount = false,
   showStrip = false,
   showClubRating = false,
+  fourPerRowWhenMany = false,
 }: FilmRowProps) {
   const statuses = new Set(films.map((f) => f.status));
   const hasMixedStatuses = statuses.size > 1;
+  const rowWidthClass = fourPerRowWhenMany && films.length > 5 ? FOUR_W48_CARDS : '';
 
   return (
     <div className={`py-10 ${bgClass}`}>
@@ -54,7 +62,7 @@ function FilmRow({
             {emptyMessage}
           </p>
         ) : (
-          <div className="grid grid-cols-2 gap-4 md:flex md:flex-wrap md:gap-12 md:justify-center">
+          <div className={`grid grid-cols-2 gap-4 md:flex md:flex-wrap md:gap-12 md:justify-center ${rowWidthClass}`}>
             {films.map((entry) => (
               <div key={entry.film.tmdbId} className={`${cardWidth} shrink-0`}>
                 <FilmCard
@@ -100,6 +108,7 @@ export function PyramidIsland({ selected, shortlisted, nominated, emptyMessage }
           bgClass="bg-bfc-tier-shortlisted"
           accentClass="text-bfc-brand-fg/90"
           showStrip
+          fourPerRowWhenMany
         />
         <FilmRow
           films={nominated}
