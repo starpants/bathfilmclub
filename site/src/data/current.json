@@ -431,7 +431,7 @@
         "rating": 7.2,
         "trailerKey": "YixSld-6PqM"
       },
-      "status": "shortlisted"
+      "status": "selected"
     },
     {
       "film": {
@@ -1080,7 +1080,7 @@
         "rating": 7.2,
         "trailerKey": "5kVkRhXt3S4"
       },
-      "status": "shortlisted"
+      "status": "selected"
     }
   ]
 }
