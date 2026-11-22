@@ -1,6 +1,6 @@
 import { readFile, writeFile, readdir, mkdir, rm } from 'fs/promises';
 import path from 'path';
-import type { Theme } from '@bathfilmclub/types';
+import type { Theme, SiteSettings } from '@bathfilmclub/types';
 
 export interface Storage {
   readCurrentCycle(): Promise<Theme | null>;
@@ -12,11 +12,14 @@ export interface Storage {
   writeAnyTheme(theme: Theme): Promise<void>;
   deleteTheme(slug: string): Promise<void>;
   archiveCurrentCycle(): Promise<void>;
+  readSettings(): Promise<SiteSettings>;
+  writeSettings(s: SiteSettings): Promise<void>;
 }
 
 export function createStorage(dataDir: string): Storage {
   const currentPath = () => path.join(dataDir, 'current.json');
   const themePath = (slug: string) => path.join(dataDir, 'themes', `${slug}.json`);
+  const settingsPath = () => path.join(dataDir, 'settings.json');
   const themesDir = () => path.join(dataDir, 'themes');
 
   const validateSlug = (slug: string) => {
@@ -97,6 +100,23 @@ export function createStorage(dataDir: string): Storage {
       if (!current) throw new Error('No current cycle to archive');
       await this.writeTheme(current);
       await this.writeCurrentCycle(null);
+    },
+
+    async readSettings() {
+      try {
+        const raw = await readFile(settingsPath(), 'utf-8');
+        const parsed = JSON.parse(raw);
+        if (typeof parsed?.yearInReview === 'boolean') {
+          return { yearInReview: parsed.yearInReview };
+        }
+      } catch {
+        // fall through to defaults
+      }
+      return { yearInReview: false };
+    },
+
+    async writeSettings(s) {
+      await writeFile(settingsPath(), JSON.stringify(s, null, 2));
     },
   };
 }

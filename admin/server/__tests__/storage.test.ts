@@ -86,4 +86,25 @@ describe('storage', () => {
       await expect(storage.archiveCurrentCycle()).rejects.toThrow('No current cycle');
     });
   });
+
+  describe('settings', () => {
+    it('readSettings returns defaults when settings.json does not exist', async () => {
+      expect(await storage.readSettings()).toEqual({ yearInReview: false });
+    });
+
+    it('readSettings returns defaults when settings.json is malformed', async () => {
+      await writeFile(path.join(tmpDir, 'settings.json'), 'not json');
+      expect(await storage.readSettings()).toEqual({ yearInReview: false });
+    });
+
+    it('readSettings returns defaults when yearInReview is not a boolean', async () => {
+      await writeFile(path.join(tmpDir, 'settings.json'), '{"yearInReview":"yes"}');
+      expect(await storage.readSettings()).toEqual({ yearInReview: false });
+    });
+
+    it('writeSettings then readSettings round-trips', async () => {
+      await storage.writeSettings({ yearInReview: true });
+      expect(await storage.readSettings()).toEqual({ yearInReview: true });
+    });
+  });
 });

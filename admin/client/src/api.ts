@@ -1,4 +1,4 @@
-import type { Theme, ThemeFilm, FilmStatus, ClubRating } from '@bathfilmclub/types';
+import type { Theme, ThemeFilm, FilmStatus, ClubRating, SiteSettings } from '@bathfilmclub/types';
 
 export interface TmdbSearchResult {
   id: number;
@@ -44,6 +44,10 @@ export const api = {
     apiFetch<Theme>(`/themes/${slug}/films/${tmdbId}/rating`, { method: 'PATCH', body: JSON.stringify({ clubRating }) }),
   removeFilm: (slug: string, tmdbId: number) =>
     apiFetch<Theme>(`/themes/${slug}/films/${tmdbId}`, { method: 'DELETE' }),
+
+  getSettings: () => apiFetch<SiteSettings>('/settings'),
+  updateSettings: (s: SiteSettings) =>
+    apiFetch<SiteSettings>('/settings', { method: 'PUT', body: JSON.stringify(s) }),
 
   search: (q: string) => apiFetch<TmdbSearchResult[]>(`/search?q=${encodeURIComponent(q)}`),
 };

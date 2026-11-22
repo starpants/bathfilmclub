@@ -20,6 +20,8 @@ vi.mock('../storage.js', () => ({
     writeAnyTheme: vi.fn().mockResolvedValue(undefined),
     deleteTheme: vi.fn().mockResolvedValue(undefined),
     archiveCurrentCycle: vi.fn().mockResolvedValue(undefined),
+    readSettings: vi.fn().mockResolvedValue({ yearInReview: false }),
+    writeSettings: vi.fn().mockResolvedValue(undefined),
   },
 }));
 
@@ -219,5 +221,46 @@ describe('PATCH /api/themes/:slug/films/:tmdbId/rating', () => {
     const res = await request(app).patch('/api/themes/2026-06-test/films/603/status').send({ status: 'shortlisted' });
     expect(res.status).toBe(200);
     expect(writtenEntry(storage, 603)).toMatchObject({ status: 'shortlisted', clubRating: 4 });
+  });
+});
+
+describe('settings routes', () => {
+  let app: typeof import('../index.js')['app'];
+  let storage: typeof import('../storage.js')['storage'];
+
+  beforeEach(async () => {
+    vi.clearAllMocks();
+    app = (await import('../index.js')).app;
+    storage = (await import('../storage.js')).storage;
+  });
+
+  it('GET /api/settings returns current settings', async () => {
+    const res = await request(app).get('/api/settings');
+    expect(res.status).toBe(200);
+    expect(res.body).toEqual({ yearInReview: false });
+  });
+
+  it('PUT /api/settings saves a boolean', async () => {
+    const res = await request(app).put('/api/settings').send({ yearInReview: true });
+    expect(res.status).toBe(200);
+    expect(res.body).toEqual({ yearInReview: true });
+    expect(storage.writeSettings).toHaveBeenCalledWith({ yearInReview: true });
+  });
+
+  it('PUT /api/settings rejects a non-boolean', async () => {
+    const res = await request(app).put('/api/settings').send({ yearInReview: 'yes' });
+    expect(res.status).toBe(400);
+    expect(res.body.error).toBe('yearInReview must be a boolean');
+    expect(storage.writeSettings).not.toHaveBeenCalled();
+  });
+
+  it('PUT /api/settings rejects a missing field', async () => {
+    const res = await request(app).put('/api/settings').send({});
+    expect(res.status).toBe(400);
+  });
+
+  it('PUT /api/settings ignores extra fields', async () => {
+    await request(app).put('/api/settings').send({ yearInReview: true, evil: 1 });
+    expect(storage.writeSettings).toHaveBeenCalledWith({ yearInReview: true });
   });
 });

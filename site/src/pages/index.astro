@@ -5,10 +5,16 @@ import Hero from '../components/Hero.astro';
 import Introduction from '../components/Introduction.astro';
 import NextEvent from '../components/NextEvent.astro';
 import FilmPyramid from '../components/FilmPyramid.astro';
-import { getCurrentCycle, getAllThemes } from '../utils/data';
+import NoMeeting from '../components/NoMeeting.astro';
+import { YearInReview } from '../components/YearInReview';
+import { getCurrentCycle, getAllThemes, getSettings } from '../utils/data';
+import { getYearSummary } from '../utils/yearInReview';
 
 const cycle = await getCurrentCycle();
 const allThemes = await getAllThemes();
+const settings = getSettings();
+const summary = getYearSummary(allThemes);
+const reviewMode = settings.yearInReview && summary.months.length > 0;
 const prevTheme = allThemes.find((t) => t.slug !== cycle?.slug) ?? null;
 ---
 
@@ -17,8 +23,19 @@ const prevTheme = allThemes.find((t) => t.slug !== cycle?.slug) ?? null;
   <main id="main-content">
     <Hero />
     <Introduction />
-    <NextEvent cycle={cycle} bg="bg-bfc-brand-alt/10" />
-    {cycle && <FilmPyramid films={cycle.films} />}
+    {
+      reviewMode ? (
+        <>
+          <NoMeeting />
+          <YearInReview summary={summary} client:load />
+        </>
+      ) : (
+        <>
+          <NextEvent cycle={cycle} bg="bg-bfc-brand-alt/10" />
+          {cycle && <FilmPyramid films={cycle.films} />}
+        </>
+      )
+    }
     {
       prevTheme && (
         <div class="flex justify-center py-12 bg-bfc-brand-alt/30">

@@ -4,6 +4,7 @@ import cors from 'cors';
 import { themesRouter } from './routes/themes.js';
 import { filmsRouter } from './routes/films.js';
 import { searchRouter } from './routes/search.js';
+import { settingsRouter } from './routes/settings.js';
 
 const app = express();
 const PORT = process.env.PORT ?? 3001;
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use('/api/themes', themesRouter);
 app.use('/api/films', filmsRouter);
 app.use('/api/search', searchRouter);
+app.use('/api/settings', settingsRouter);
 
 app.get('/api/health', (_req, res) => res.json({ ok: true }));
 

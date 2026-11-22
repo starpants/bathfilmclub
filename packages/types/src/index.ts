@@ -41,3 +41,7 @@ export interface Theme {
   meeting?: Meeting;
   films: ThemeFilm[]; // all films regardless of status
 }
+
+export interface SiteSettings {
+  yearInReview: boolean;
+}

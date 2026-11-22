@@ -1,4 +1,5 @@
-import type { Theme } from '@bathfilmclub/types';
+import type { SiteSettings, Theme } from '@bathfilmclub/types';
+import { parseSettings } from './yearInReview';
 
 export async function getCurrentCycle(): Promise<Theme | null> {
   try {
@@ -32,6 +33,11 @@ export function formatMonth(month: string): string {
   const [year, m] = month.split('-');
   const date = new Date(parseInt(year!), parseInt(m!) - 1, 1);
   return date.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+}
+
+export function getSettings(): SiteSettings {
+  const imports = import.meta.glob('../data/settings.json', { eager: true, import: 'default' });
+  return parseSettings(Object.values(imports)[0]);
 }
 
 export function formatMeetingDate(isoDate: string): string {
