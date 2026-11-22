@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Footer from '../components/Footer.astro';
+import Snow from '../components/Snow.astro';
 
 interface Props {
   title?: string;
@@ -16,10 +17,14 @@ const {
 } = Astro.props;
 
 const pageTitle = title === 'Bath Film Club' ? title : `${title} — Bath Film Club`;
+
+// Christmas theme: on for builds made in December, or force with PUBLIC_CHRISTMAS=true.
+const isChristmas =
+  new Date().getMonth() === 11 || import.meta.env.PUBLIC_CHRISTMAS === 'true';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class:list={[{ christmas: isChristmas }]}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,5 +77,6 @@ const pageTitle = title === 'Bath Film Club' ? title : `${title} — Bath Film C
       <slot />
     </div>
     <Footer bg={footerBg} />
+    {isChristmas && <Snow />}
   </body>
 </html>

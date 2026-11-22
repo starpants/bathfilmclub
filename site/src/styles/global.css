@@ -38,6 +38,107 @@
   --container-site: 1200px;
 }
 
+/* Christmas palette — applied only inside .festive wrappers (NextEvent, FilmPyramid,
+   Footer) when <html class="christmas">. Everything else keeps the brand colours.
+   Toggled at build time in Layout.astro (December, or PUBLIC_CHRISTMAS=true). */
+html.christmas .festive {
+  --color-bfc-brand-accent: #b3202f; /* holly red */
+  --color-bfc-brand-bg: #0f2a22; /* deep evergreen night */
+  --color-bfc-brand-fg: #fff7e6; /* snow cream */
+  --color-bfc-brand-alt: #1f6b4a; /* pine */
+
+  --color-bfc-tier-selected: #7a2233; /* cranberry */
+  --color-bfc-tier-shortlisted: #1d5a45; /* spruce */
+  --color-bfc-tier-nominated: #1b3a30;
+  --color-bfc-tier-nominated2: #4f6b55;
+
+  --color-bfc-status-selected: #3fbf7f;
+  --color-bfc-status-shortlisted: #e8b93a; /* tinsel gold */
+  --color-bfc-status-nominated: #fff8ea;
+
+  --color-bfc-club-rating: #f4d35e;
+
+  /* sections' own translucent tints layer over this */
+  background-color: var(--color-bfc-brand-bg);
+}
+
+
+/* Snow — one fixed element, two tiled layers drifting at different speeds. CSS only. */
+.snow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+  overflow: hidden;
+}
+.snow::before,
+.snow::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-repeat: repeat;
+  animation: snow-fall linear infinite;
+}
+/* small, distant flakes */
+.snow::before {
+  --tile: 220px;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgb(255 255 255 / 0.7) 1px, transparent 2px),
+    radial-gradient(circle at 45% 60%, rgb(255 255 255 / 0.6) 1px, transparent 2px),
+    radial-gradient(circle at 70% 10%, rgb(255 255 255 / 0.7) 1.2px, transparent 2.2px),
+    radial-gradient(circle at 85% 75%, rgb(255 255 255 / 0.5) 1px, transparent 2px),
+    radial-gradient(circle at 30% 90%, rgb(255 255 255 / 0.6) 1px, transparent 2px);
+  background-size: var(--tile) var(--tile);
+  animation-duration: 18s;
+  opacity: 0.6;
+}
+/* larger, nearer flakes */
+.snow::after {
+  --tile: 380px;
+  background-image:
+    radial-gradient(circle at 20% 40%, rgb(255 255 255 / 0.85) 2px, transparent 3.5px),
+    radial-gradient(circle at 65% 15%, rgb(255 255 255 / 0.8) 2.5px, transparent 4px),
+    radial-gradient(circle at 80% 65%, rgb(255 255 255 / 0.75) 2px, transparent 3.5px);
+  background-size: var(--tile) var(--tile);
+  animation-duration: 14s;
+  opacity: 0.5;
+}
+@keyframes snow-fall {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: var(--tile) var(--tile);
+  }
+}
+/* Large fractal flakes, drifting down slowly and turning */
+.snowflake-big {
+  position: absolute;
+  top: 0;
+  width: var(--size);
+  height: var(--size);
+  animation: flake-fall linear infinite;
+}
+@media (max-width: 767px) {
+  .snowflake-big {
+    width: calc(var(--size) * 0.6);
+    height: calc(var(--size) * 0.6);
+  }
+}
+@keyframes flake-fall {
+  from {
+    transform: translateY(-40vh) rotate(0deg);
+  }
+  to {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .snow {
+    display: none;
+  }
+}
+
 /* Poster drop shadow — @utility (not @layer components) so variants like hover: work in Tailwind v4 */
 @utility bfc-shadow {
   box-shadow: 16px 16px 16px 0 rgb(0 0 0 / 0.3);

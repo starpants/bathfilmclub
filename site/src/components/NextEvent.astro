@@ -11,6 +11,7 @@ interface Props {
 const { cycle, bg = '' } = Astro.props;
 ---
 
+<div class="festive">
 <section class={`${bg} relative border-y-2 border-bfc-brand-fg/20`}>
   <div class="film-stills-bg absolute inset-0" aria-hidden="true"></div>
   <div class="max-w-site mx-auto px-6 py-16 space-y-16 relative">
@@ -82,6 +83,7 @@ const { cycle, bg = '' } = Astro.props;
     }
   </div>
 </section>
+</div>
 
 <style>
   .film-stills-bg {

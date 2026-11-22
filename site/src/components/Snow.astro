@@ -1,0 +1,65 @@
+---
+// Christmas snow overlay: tiled CSS snow plus a few large fractal snowflakes.
+// The flake is generated recursively at build time — each branch sprouts
+// three pairs of smaller branches at ±60°, down to DEPTH levels — then one
+// arm is reused six times via <use>, so the SVG stays small.
+
+const DEPTH = 3;
+const ARM = 92; // arm length in viewBox units (viewBox is -100..100)
+const SPROUTS = [0.4, 0.62, 0.82]; // where side branches leave a branch
+const RATIO = 0.42; // side branch length relative to parent
+
+const WIDTHS = [2.2, 1.3, 0.75, 0.45]; // stroke per level — finer towards the tips
+
+// Collects one path string per level so each level gets its own stroke width.
+const levels: string[] = Array(DEPTH + 1).fill('');
+
+function branch(x: number, y: number, angle: number, len: number, depth: number) {
+  const ex = x + len * Math.sin(angle);
+  const ey = y - len * Math.cos(angle);
+  levels[DEPTH - depth] += `M${x.toFixed(2)} ${y.toFixed(2)}L${ex.toFixed(2)} ${ey.toFixed(2)}`;
+  if (depth === 0) return;
+  for (const t of SPROUTS) {
+    const sx = x + (ex - x) * t;
+    const sy = y + (ey - y) * t;
+    const sub = len * RATIO * (1 - t * 0.6); // shorter towards the tip
+    branch(sx, sy, angle - Math.PI / 3, sub, depth - 1);
+    branch(sx, sy, angle + Math.PI / 3, sub, depth - 1);
+  }
+}
+
+branch(0, 0, 0, ARM, DEPTH);
+
+// size (px), left (%), fall duration (s), delay (s, negative = already mid-fall), opacity
+const flakes = [
+  { size: 260, left: 8, dur: 48, delay: -20, opacity: 0.35 },
+  { size: 180, left: 68, dur: 38, delay: -6, opacity: 0.45 },
+  { size: 140, left: 86, dur: 32, delay: -27, opacity: 0.4 },
+];
+---
+
+<div class="snow" aria-hidden="true">
+  <svg width="0" height="0" class="absolute">
+    <defs>
+      <g id="snowflake-arm">
+        {levels.map((d, i) => <path d={d} stroke-width={WIDTHS[i]} />)}
+      </g>
+      <symbol id="snowflake" viewBox="-100 -100 200 200">
+        <g fill="none" stroke="white" stroke-linecap="round">
+          {[0, 60, 120, 180, 240, 300].map((r) => <use href="#snowflake-arm" transform={`rotate(${r})`} />)}
+          <polygon stroke-width="1.6" points="0,-9 7.8,-4.5 7.8,4.5 0,9 -7.8,4.5 -7.8,-4.5" />
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+  {
+    flakes.map((f) => (
+      <svg
+        class="snowflake-big"
+        style={`--size:${f.size}px; left:${f.left}%; animation-duration:${f.dur}s; animation-delay:${f.delay}s; opacity:${f.opacity};`}
+      >
+        <use href="#snowflake" />
+      </svg>
+    ))
+  }
+</div>
