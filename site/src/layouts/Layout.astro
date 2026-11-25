@@ -19,8 +19,9 @@ const {
 const pageTitle = title === 'Bath Film Club' ? title : `${title} — Bath Film Club`;
 
 // Christmas theme: on for builds made in December, or force with PUBLIC_CHRISTMAS=true.
-const isChristmas =
-  new Date().getMonth() === 11 || import.meta.env.PUBLIC_CHRISTMAS === 'true';
+// const isChristmas =
+//   new Date().getMonth() === 11 || import.meta.env.PUBLIC_CHRISTMAS === 'true';
+const isChristmas = true;
 ---
 
 <!doctype html>
@@ -37,27 +38,23 @@ const isChristmas =
     <meta property="og:site_name" content="Bath Film Club" />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
-    {
-      Astro.site && (
-        <meta
-          property="og:image"
-          content={new URL('/assets/BathFilmClub_OpenGraph.png', Astro.site).href}
-        />
-      )
-    }
+    {Astro.site && (
+      <meta
+        property="og:image"
+        content={new URL('/assets/BathFilmClub_OpenGraph.png', Astro.site).href}
+      />
+    )}
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
-    {
-      Astro.site && (
-        <meta
-          name="twitter:image"
-          content={new URL('/assets/BathFilmClub_OpenGraph.png', Astro.site).href}
-        />
-      )
-    }
+    {Astro.site && (
+      <meta
+        name="twitter:image"
+        content={new URL('/assets/BathFilmClub_OpenGraph.png', Astro.site).href}
+      />
+    )}
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/assets/favicon-96x96.png?v=20260623" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v=20260623" />
